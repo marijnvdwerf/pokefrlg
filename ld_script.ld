@@ -130,7 +130,7 @@ SECTIONS {
     ALIGN(4)
     {
         .gfx_data = .;
-        asm/data.s.o(.gfx_data);
+        data/graphics.s.o(.gfx_data);
     }
 
     /* DWARF 2 sections */

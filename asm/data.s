@@ -31,9 +31,3 @@ Data2:
     .global Data3
 Data3:
 .incbin "baserom.gba", 0x6FC2F0, 0x71A23C - 0x6FC2F0
-
-
-    .section .gfx_data, "aw", %progbits
-    .global GfxData
-GfxData:
-.incbin "baserom.gba", 0xD00000, 0x1B0B20
