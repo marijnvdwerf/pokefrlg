@@ -166,8 +166,9 @@ macro(add_rom NAME)
         if (${ASM_NAME} MATCHES "^data/")
             add_custom_command(
                     OUTPUT "${ASM_OUT}"
+                    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
                     COMMAND ${CMAKE_COMMAND} -E make_directory "${DIR}"
-                    COMMAND ${PREPROC} "${ASM_IN}" "${CMAKE_CURRENT_SOURCE_DIR}/charmap.txt" | ${AS} ${AS_FLAGS} -I${CMAKE_CURRENT_BINARY_DIR}/${NAME} -I${CMAKE_SOURCE_DIR} -o "${ASM_OUT}" -
+                    COMMAND ${PREPROC} "${ASM_IN}" "${CMAKE_CURRENT_SOURCE_DIR}/charmap.txt" | ${AS} ${AS_FLAGS} -I${CMAKE_CURRENT_BINARY_DIR}/${NAME} -I${CMAKE_SOURCE_DIR} -I${CMAKE_CURRENT_BINARY_DIR} -o "${ASM_OUT}" -
                     DEPENDS "${ASM_IN}" ${DEPS}
             )
         else ()

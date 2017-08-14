@@ -1,19 +1,6 @@
 
     .text
 
-    .global Script
-Script:
-.incbin "baserom.gba", 0x15F9B4, 0x1BB8A7-0x15F9B4
-
-    .global Script2
-Script2:
-.incbin "baserom.gba", 0x1BB8A7, 0x1C55C9-0x1BB8A7
-
-    .global Script3
-Script3:
-.incbin "baserom.gba", 0x1C55C9, 0x1DBD34-0x1C55C9
-    .global Script3_End
-Script3_End:
 
 
 

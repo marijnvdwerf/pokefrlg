@@ -16,3 +16,7 @@
 	.include "constants/berry_constants.inc"
 	.include "constants/field_object_constants.inc"
 	.include "constants/contest_move_effects.inc"
+	.include "constants/battle.inc"
+	.include "constants/battle_text.inc"
+	.include "constants/battle_move_effects.inc"
+	.include "constants/hold_effects.inc"

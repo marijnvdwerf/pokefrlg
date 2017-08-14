@@ -4,7 +4,6 @@
 	.include "asm/macros/pokemon_data.inc"
 	.include "asm/macros/ec.inc"
 	.include "asm/macros/map.inc"
-	.include "asm/macros/field_effect_script.inc"
 
 	.macro region_map_entry x, y, width, height, name
 	.byte \x

@@ -83,7 +83,13 @@ SECTIONS {
     .script_data :
     ALIGN(4)
     {
-        asm/data.s.o(.text);
+        data/event_scripts.s.o(.text);
+        data/battle_anim_scripts.s.o(.text);
+        data/battle_scripts_1.s.o(.text);
+        data/field_effect_scripts.s.o(.text);
+        data/battle_scripts_2.s.o(.text);
+        data/battle_ai_scripts.s.o(.text);
+        data/mystery_event_script_cmd_table.s.o(.text);
 
         lib/gcnmultiboot/libgcnmultiboot.s.o(.text);
         lib/m4a/m4a_1.s.o(.text);
