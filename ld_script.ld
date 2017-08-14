@@ -124,10 +124,10 @@ SECTIONS {
     .rodata :
     ALIGN(4)
     {
-        asm/data.s.o(.rodata);
+        data/data.s.o(.rodata);
         ${LIBGCC_A}:_divdi3.o(.rodata);
         ${LIBGCC_A}:_udivdi3.o(.rodata);
-        asm/data.s.o(.rodata3);
+        data/data.s.o(.rodata3);
     } =0
 
     . = 0x8D00000;
