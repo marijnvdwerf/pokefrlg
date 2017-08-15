@@ -16379,11 +16379,11 @@ kUnkGfx_8EA1A50:: @ 0x8EA1A50 (LZ)
     .incbin "graphics/unknown/unknown_8ea1a50.4bpp.lz"
 
     .align 2
-kUnkPal_8EA1B68:: @ 0x8EA1B68
+TilesetPalettes_8EA1B68:: @ 0x8EA1B68
     .incbin "graphics/unknown/unknown_8ea1b68.gbapal"
 
     .align 2
-kUnkGfx_8EA1D68:: @ 0x8EA1D68 (LZ)
+TilesetTiles_8EA1D68:: @ 0x8EA1D68 (LZ)
     .incbin "graphics/unknown/unknown_8ea1d68.4bpp.lz"
 
     .align 2
@@ -16459,19 +16459,19 @@ kBerryProgramUpdateTilemap_5:: @ 0x8EA9588 (LZ)
     .incbin "graphics/berry_program_update/5.bin.lz"
 
     .align 2
-kUnkPal_8EA97F4:: @ 0x8EA97F4
+TilesetPalettes_8EA97F4:: @ 0x8EA97F4
     .incbin "graphics/unknown/unknown_8ea97f4.gbapal"
 
     .align 2
-kUnkGfx_8EA99F4:: @ 0x8EA99F4 (LZ)
+TilesetTiles_8EA99F4:: @ 0x8EA99F4 (LZ)
     .incbin "graphics/unknown/unknown_8ea99f4.4bpp.lz"
 
     .align 2
-kUnkPal_8EA9D88:: @ 0x8EA9D88
+TilesetPalettes_8EA9D88:: @ 0x8EA9D88
     .incbin "graphics/unknown/unknown_8ea9d88.gbapal"
 
     .align 2
-kUnkGfx_8EA9F88:: @ 0x8EA9F88 (LZ)
+TilesetTiles_8EA9F88:: @ 0x8EA9F88 (LZ)
     .incbin "graphics/unknown/unknown_8ea9f88.4bpp.lz"
 
     .align 2

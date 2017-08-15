@@ -1,5 +1,6 @@
     .include "asm/macros.inc"
 	.include "asm/macros/event.inc"
+	.include "asm/macros/movement.inc"
 	.include "constants/constants.inc"
 
     .text

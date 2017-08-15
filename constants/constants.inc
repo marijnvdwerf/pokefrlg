@@ -20,3 +20,4 @@
 	.include "constants/battle_text.inc"
 	.include "constants/battle_move_effects.inc"
 	.include "constants/hold_effects.inc"
+	.include "constants/variables.inc"

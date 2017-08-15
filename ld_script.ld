@@ -12,27 +12,10 @@ rfuFixed     = 0x3007468     ;
 gUnknown_030078A0 = 0x3007470;
 STWI_status = 0x03007438;
 gUnknown_03007868 = 0x03007438;
-gUnknown_089A324C = 0x86FC068;
-gUnknown_089A3258 = 0x86FC074;
 gIntrTable = 0x3003540;
 gUnknown_030000F0 = 0x30000F0;
 gUnknown_030000FA = 0x30000FA;
-gUnknown_089A3220 = 0x86FC03C;
-gSongTable = 0x84A32CC;
-gMPlayTable = 0x84A329C;
-gScaleTable = 0x8489A08 ;
-gFreqTable = 0x8489ABC ;
-gXcmdTable = 0x8489C54;
-gCgbScaleTable = 0x8489B04;
-gCgbFreqTable = 0x8489B88;
-gNoiseTable = 0x8489BA0;
-gMPlayJumpTableTemplate = 0x08489968;
-gCgb3Vol = 0x8489BDC;
-gClockTable = 0x8489BEC;
-gPcmSamplesPerVBlankTable = 0x8489AEC;
-gDeltaEncodingTable = 0x84899F8;
 gMPlayMemAccArea = 0x30073C0;
-sSetupInfos = 0x86FBF24;
 
 ProgramFlashByte =  0x3007424;
 ProgramFlashSector =  0x300741C;
@@ -42,7 +25,6 @@ WaitForFlashWrite =  0x3007418;
 gFlashMaxTime =  0x3007434;
 gFlash =  0x3007420;
 
-gPokemonCrySongTemplate = 0x8489C20;
 gCgbChans = 0x3007080;
 gPokemonCryMusicPlayers = 0x3006F70;
 gPokemonCrySong = 0x30072C0;
@@ -125,6 +107,11 @@ SECTIONS {
     ALIGN(4)
     {
         data/data.s.o(.rodata);
+        lib/flash/agb_flash.c.o(.rodata);
+        lib/flash/agb_flash_1m.c.o(.rodata);
+        lib/flash/agb_flash_mx.c.o(.rodata);
+        lib/flash/agb_flash_le.c.o(.rodata);
+        data/data.s.o(.rodata2);
         ${LIBGCC_A}:_divdi3.o(.rodata);
         ${LIBGCC_A}:_udivdi3.o(.rodata);
         data/data.s.o(.rodata3);

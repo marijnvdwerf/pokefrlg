@@ -25,6 +25,16 @@
 	.2byte 0@ padding
 	.endm
 
+	.macro spr_template tile_tag, pal_tag, oam, anims, images, affine_anims, callback
+	.2byte \tile_tag
+	.2byte \pal_tag
+	.4byte \oam
+	.4byte \anims
+	.4byte \images
+	.4byte \affine_anims
+	.4byte \callback
+	.endm
+
 @ Berry trees have a table defining the palette slot used for each of their 5
 @ stages. However, the first 2 stages always use the same slots regardless of
 @ the type of tree and the slots of the last 3 stages always equal each other.

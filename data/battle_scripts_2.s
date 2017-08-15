@@ -72,7 +72,7 @@ BattleScript_1D9A63: @ 81D9A63
 	setbyte 0x2023e82, 0
 	capturesomethingf3 BattleScript_1D9A80
 	catchpoke
-	printfromtable 0x83FE654
+	printfromtable BattleTextList_83FE654
 	waitmessage 64
 	jump BattleScript_1D9A81
 
@@ -86,7 +86,7 @@ BattleScript_1D9A81: @ 81D9A81
 	setbyte 0x2023e8a, 7
 	atk57
 	activesidesomething
-	printfromtable 0x83FE5F2
+	printfromtable BattleTextList_83FE5F2
 	waitmessage 64
 	jumpifword 5, 0x2022b4c, 0x80, BattleScript_1D9AC0
 	jumpifbyte 1, 0x2039994, 0, BattleScript_1D9AC0
@@ -136,7 +136,7 @@ BattleScript_81D9B14:: @ 81D9B14
 	printstring BATTLE_TEXT_Used2
 	waitmessage 64
 	atk75
-	printfromtable 0x83FE628
+	printfromtable BattleTextList_83FE628
 	waitmessage 64
 	atk98 1
 	setbyte 0x2023fd8, 15
@@ -150,7 +150,7 @@ BattleScript_81D9B38:: @ 81D9B38
 	printstring BATTLE_TEXT_Used2
 	waitmessage 64
 	atk75
-	printfromtable 0x83FE57C
+	printfromtable BattleTextList_83FE57C
 	waitmessage 64
 	setbyte 0x2023fd8, 15
 	atk49 1, 0
@@ -163,7 +163,7 @@ BattleScript_81D9B5A:: @ 81D9B5A
 	printstring BATTLE_TEXT_Used2
 	waitmessage 64
 	atk75
-	printfromtable 0x83FE5AC
+	printfromtable BattleTextList_83FE5AC
 	waitmessage 64
 	setbyte 0x2023fd8, 15
 	atk49 1, 0
@@ -193,7 +193,7 @@ BattleScript_1D9BB4: @ 81D9BB4
 	atkf6
 
 BattleScript_81D9BB5:: @ 81D9BB5
-	printfromtable 0x83FE622
+	printfromtable BattleTextList_83FE622
 	waitmessage 64
 	playanimation 12, 27, 0x0
 	end2

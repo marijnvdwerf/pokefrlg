@@ -416,12 +416,11 @@
 	.endm
 
 	@ Clone of warp3, except that this writes data to different offsets...
-	.macro warp4 map, warp, X, Y
+	.macro warpplace2 b1, b2, offset, b3, b4
 	.byte 0x40
-	map \map
-	.byte \warp
-	.2byte \X
-	.2byte \Y
+	.byte \b1, \b2
+	.4byte \offset
+	.byte \b3, \b4
 	.endm
 
 	@ Clone of warp3, except that this writes data to different offsets...
@@ -1389,13 +1388,16 @@
 	.byte \location
 	.endm
 
-	.macro event_d3 unknown
+	.macro braillemsg2 unknown
 	.byte 0xd3
-	.2byte \unknown
+	.4byte \unknown
 	.endm
 
-	.macro event_d4
+	.macro bufferitems buffer var var2
 	.byte 0xd4
+	.byte \buffer
+	.2byte \var
+	.2byte \var2
 	.endm
 
 	@ In FireRed, this command is a nop.

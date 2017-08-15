@@ -118,29 +118,44 @@ function(poke_require_file PATH OUT_PATH OUT_STATUS)
 
 endfunction()
 
+# 'hasmap'
+set(DEP_CACHE)
 function(scaninc FILE OUT_DEPS)
-    set(DEPS)
-    execute_process(
-            COMMAND ${SCANINC} ${FILE}
-            OUTPUT_VARIABLE SCANINC_OUT
-            OUTPUT_STRIP_TRAILING_WHITESPACE
-            WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-    )
+    if (DEFINED DEP_CACHE_${FILE})
+        set(DEPS ${DEP_CACHE_${FILE}})
+    else ()
+        set(DEPS)
+        execute_process(
+                COMMAND ${SCANINC} ${FILE}
+                OUTPUT_VARIABLE SCANINC_OUT
+                OUTPUT_STRIP_TRAILING_WHITESPACE
+                WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+        )
 
-    string(REPLACE "\n" ";" SCANINC_OUT "${SCANINC_OUT}")
-    foreach (LINE ${SCANINC_OUT})
-        list(APPEND DEPS ${LINE})
-    endforeach ()
+        string(REPLACE "\n" ";" SCANINC_OUT "${SCANINC_OUT}")
+        foreach (LINE ${SCANINC_OUT})
+            list(APPEND DEPS ${LINE})
+        endforeach ()
+
+        SET(DEP_CACHE_${FILE} ${DEPS})
+    endif ()
 
     set(${OUT_DEPS} ${DEPS} PARENT_SCOPE)
 endfunction()
 
 
-macro(add_rom NAME)
-    set(OUT_GBA "${CMAKE_CURRENT_BINARY_DIR}/${NAME}.gba")
-    set(OUT_ELF "${CMAKE_CURRENT_BINARY_DIR}/${NAME}/rom.elf")
-    set(OUT_MAP "${CMAKE_CURRENT_BINARY_DIR}/${NAME}/rom.map")
-    set(OUT_LD_SCRIPT "${CMAKE_CURRENT_BINARY_DIR}/${NAME}/ld_script.ld")
+function(add_rom ROM_NAME)
+    set(oneValueArgs VERSION REVISION)
+
+    cmake_parse_arguments(ROM "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
+    if (NOT DEFINED ROM_REVISION)
+        set(ROM_REVISION 0)
+    endif ()
+
+    set(OUT_GBA "${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME}.gba")
+    set(OUT_ELF "${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME}/rom.elf")
+    set(OUT_MAP "${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME}/rom.map")
+    set(OUT_LD_SCRIPT "${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME}/ld_script.ld")
 
     configure_file("${CMAKE_CURRENT_SOURCE_DIR}/ld_script.ld" "${OUT_LD_SCRIPT}")
 
@@ -149,7 +164,7 @@ macro(add_rom NAME)
 
     foreach (ASM_NAME ${ASM_SOURCES})
         # Generate output file name
-        set(ASM_OUT "${CMAKE_CURRENT_BINARY_DIR}/${NAME}/${ASM_NAME}.o")
+        set(ASM_OUT "${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME}/${ASM_NAME}.o")
 
         # Generate input file name
         set(ASM_IN "${CMAKE_CURRENT_SOURCE_DIR}/${ASM_NAME}")
@@ -168,14 +183,14 @@ macro(add_rom NAME)
                     OUTPUT "${ASM_OUT}"
                     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
                     COMMAND ${CMAKE_COMMAND} -E make_directory "${DIR}"
-                    COMMAND ${PREPROC} "${ASM_IN}" "${CMAKE_CURRENT_SOURCE_DIR}/charmap.txt" | ${AS} ${AS_FLAGS} -I${CMAKE_CURRENT_BINARY_DIR}/${NAME} -I${CMAKE_SOURCE_DIR} -I${CMAKE_CURRENT_BINARY_DIR} -o "${ASM_OUT}" -
+                    COMMAND ${PREPROC} "${ASM_IN}" "${CMAKE_CURRENT_SOURCE_DIR}/charmap.txt" | ${AS} ${AS_FLAGS} -I${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME} -I${CMAKE_SOURCE_DIR} -I${CMAKE_CURRENT_BINARY_DIR} --defsym REVISION=${ROM_REVISION} -o "${ASM_OUT}" -
                     DEPENDS "${ASM_IN}" ${DEPS}
             )
         else ()
             add_custom_command(
                     OUTPUT "${ASM_OUT}"
                     COMMAND ${CMAKE_COMMAND} -E make_directory "${DIR}"
-                    COMMAND ${AS} ${AS_FLAGS} -I${CMAKE_CURRENT_BINARY_DIR}/${NAME} -I${CMAKE_SOURCE_DIR} -o "${ASM_OUT}" "${ASM_IN}"
+                    COMMAND ${AS} ${AS_FLAGS} -I${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME} -I${CMAKE_SOURCE_DIR} --defsym REVISION=${ROM_REVISION} -o "${ASM_OUT}" "${ASM_IN}"
                     DEPENDS "${ASM_IN}" ${DEPS}
             )
         endif ()
@@ -186,9 +201,9 @@ macro(add_rom NAME)
 
     foreach (C_NAME ${C_SOURCES})
         # Generate output file name
-        set(C_INT "${CMAKE_CURRENT_BINARY_DIR}/${NAME}/${C_NAME}.i")
-        set(C_ASM "${CMAKE_CURRENT_BINARY_DIR}/${NAME}/${C_NAME}.s")
-        set(C_OBJ "${CMAKE_CURRENT_BINARY_DIR}/${NAME}/${C_NAME}.o")
+        set(C_INT "${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME}/${C_NAME}.i")
+        set(C_ASM "${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME}/${C_NAME}.s")
+        set(C_OBJ "${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME}/${C_NAME}.o")
 
         set(CC ${CC1})
         set(FLAGS "${C_FLAGS}")
@@ -215,7 +230,7 @@ macro(add_rom NAME)
                 OUTPUT "${C_OBJ}"
                 BYPRODUCTS ${C_INT} ${C_ASM}
                 COMMAND ${CMAKE_COMMAND} -E make_directory "${DIR}"
-                COMMAND ${CPP} ${CPP_FLAGS} "${C_SRC}" -o "${C_INT}"
+                COMMAND ${CPP} ${CPP_FLAGS} "${C_SRC}" -DREVISION=${ROM_REVISION} -o "${C_INT}"
                 COMMAND ${CC} ${FLAGS} -o "${C_ASM}" "${C_INT}"
                 COMMAND ${CMAKE_COMMAND} -E echo ".text" >> ${C_ASM}
                 COMMAND ${CMAKE_COMMAND} -E echo ".align 2, 0" >> ${C_ASM}
@@ -231,7 +246,7 @@ macro(add_rom NAME)
     add_custom_command(
             OUTPUT ${OUT_ELF}
             COMMAND ${LD} -T ${OUT_LD_SCRIPT} -Map ${OUT_MAP} -o ${OUT_ELF} ${LIBGCC_A}
-            WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/${NAME}"
+            WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME}"
             DEPENDS ${OUT_LD_SCRIPT} ${ASM_OBJS} ${C_OBJS}
             BYPRODUCTS ${OUT_MAP}
     )
@@ -240,7 +255,8 @@ macro(add_rom NAME)
             COMMAND ${OBJCOPY} -O binary --gap-fill 0xFF --pad-to 0x9000000 ${OUT_ELF} ${OUT_GBA}
             DEPENDS ${OUT_ELF}
     )
-    add_custom_target(${NAME} DEPENDS ${OUT_GBA})
-endmacro()
+    add_custom_target(${ROM_NAME} DEPENDS ${OUT_GBA})
+endfunction()
 
-add_rom(firered)
+add_rom(firered VERSION firered)
+add_rom(firered-1.1 VERSION firered REVISION 1)

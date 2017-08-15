@@ -56,10 +56,18 @@ RomHeaderReserved1:
 	.space 7
 
 RomHeaderSoftwareVersion:
+.ifeq (REVISION - 0)
 	.byte 0
+.else
+	.byte 1
+.endif
 
 RomHeaderChecksum:
+.ifeq (REVISION - 0)
 	.byte 0x68
+.else
+	.byte 0x67
+.endif
 
 RomHeaderReserved2:
 	.space 2
@@ -99,16 +107,16 @@ GPIOPortReadEnable: @ 80000C8
 	.4byte          2
 	.ascii "pokemon red version"
 	.space 13
-	.4byte 0x82350AC
-	.4byte 0x823654C
-	.4byte 0x823730C
-	.4byte 0x82380CC
-	.4byte 0x83D37A0
-	.4byte 0x83D3E80
-	.4byte 0x83D4038
-	.4byte 0x8245EE0
-	.4byte 0x8247094
-	.4byte 0x84556F8
+	.4byte UNK_82350AC
+	.4byte UNK_823654C
+	.4byte UNK_823730C
+	.4byte UNK_82380CC
+	.4byte unk_83D37A0
+	.4byte UNK_83D3E80
+	.4byte borg_83D4038
+	.4byte UNK_8245EE0
+	.4byte UNK_8247094
+	.4byte kDecorations
 	.4byte 0xEE0
 	.4byte 0x1000
 	.4byte 0x18
@@ -136,13 +144,13 @@ GPIOPortReadEnable: @ 80000C8
 	.4byte 0x30BB
 	.4byte 0x30A7
 	.4byte 0
-	.4byte 0x8254784
-	.4byte 0x824FC40
-	.4byte 0x824FB08
-	.4byte 0x83DB028
-	.4byte 0x8250C04
-	.4byte 0x826056C
-	.4byte 0x82605CC
+	.4byte UNK_8254784
+	.4byte UNK_824FC40
+	.4byte List_824FB08
+	.4byte kItems
+	.4byte UNK_8250C04
+	.4byte UNK_826056C
+	.4byte UNK_82605CC
 	.4byte 0xA8
 	.4byte 0x82C
 	.4byte 0x83B
