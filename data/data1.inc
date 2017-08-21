@@ -443,49 +443,43 @@ GfxTable_82346F8: @ 82346F8
 
     .incbin "baserom.gba", 0x2346F8, 0x20
 
-    .global GfxTable_8234718
-GfxTable_8234718: @ 8234718
-    .4byte 0x8E69EBC, 0x800
-    .4byte 0x8E6A6BC, 0x800
-    .4byte 0x8E6AEBC, 0x800
-    .4byte 0x8E6B6BC, 0x800
-    .4byte 0x8E6BEBC, 0x800
+GfxTable_8234718:: @ 8234718
+    .4byte kUnkGfx_8E69EBC, 0x800
+    .4byte kUnkGfx_8E69EBC+0x800, 0x800
+    .4byte kUnkGfx_8E69EBC+0x1000, 0x800
+    .4byte kUnkGfx_8E69EBC+0x1800, 0x800
+    .4byte kUnkGfx_8E69EBC+0x2000, 0x800
 
-    .global GfxTable_8234740
-GfxTable_8234740: @ 8234740
-    .4byte 0x8E6C6BC, 0x800
-    .4byte 0x8E6CEBC, 0x800
-    .4byte 0x8E6D6BC, 0x800
-    .4byte 0x8E6DEBC, 0x800
-    .4byte 0x8E6E6BC, 0x800
+GfxTable_8234740:: @ 8234740
+    .4byte kUnkGfx_8E6C6BC, 0x800
+    .4byte kUnkGfx_8E6C6BC+0x800, 0x800
+    .4byte kUnkGfx_8E6C6BC+0x1000, 0x800
+    .4byte kUnkGfx_8E6C6BC+0x1800, 0x800
+    .4byte kUnkGfx_8E6C6BC+0x2000, 0x800
 
-    .global GfxTable_8234768
-GfxTable_8234768: @ 8234768
-    .4byte 0x8E6EEBC, 0x800
-    .4byte 0x8E6F6BC, 0x800
-    .4byte 0x8E6FEBC, 0x800
-    .4byte 0x8E706BC, 0x800
+GfxTable_8234768:: @ 8234768
+    .4byte kUnkGfx_8E6EEBC, 0x800
+    .4byte kUnkGfx_8E6EEBC+0x800, 0x800
+    .4byte kUnkGfx_8E6EEBC+0x1000, 0x800
+    .4byte kUnkGfx_8E6EEBC+0x1800, 0x800
 
-    .global GfxTable_8234788
-GfxTable_8234788: @ 8234788
-    .4byte 0x8E70EBC, 0x800
-    .4byte 0x8E716BC, 0x800
-    .4byte 0x8E71EBC, 0x800
-    .4byte 0x8E726BC, 0x800
+GfxTable_8234788:: @ 8234788
+    .4byte kUnkGfx_8E70EBC, 0x800
+    .4byte kUnkGfx_8E70EBC+0x800, 0x800
+    .4byte kUnkGfx_8E70EBC+0x1000, 0x800
+    .4byte kUnkGfx_8E70EBC+0x1800, 0x800
 
-    .global GfxTable_82347A8
-GfxTable_82347A8: @ 82347A8
-    .4byte 0x8E72EBC, 0x800
-    .4byte 0x8E736BC, 0x800
-    .4byte 0x8E73EBC, 0x800
-    .4byte 0x8E746BC, 0x800
+GfxTable_82347A8:: @ 82347A8
+    .4byte kUnkGfx_8E72EBC, 0x800
+    .4byte kUnkGfx_8E72EBC+0x800, 0x800
+    .4byte kUnkGfx_8E72EBC+0x1000, 0x800
+    .4byte kUnkGfx_8E72EBC+0x1800, 0x800
 
-    .global GfxTable_82347C8
-GfxTable_82347C8: @ 82347C8
-    .4byte 0x8E74EBC, 0x800
-    .4byte 0x8E756BC, 0x800
-    .4byte 0x8E75EBC, 0x800
-    .4byte 0x8E766BC, 0x800
+GfxTable_82347C8:: @ 82347C8
+    .4byte kUnkGfx_8E74EBC, 0x800
+    .4byte kUnkGfx_8E74EBC+0x800, 0x800
+    .4byte kUnkGfx_8E74EBC+0x1000, 0x800
+    .4byte kUnkGfx_8E74EBC+0x1800, 0x800
 
     .global AnimCmd_82347E8
 AnimCmd_82347E8: @ 82347E8
@@ -611,40 +605,3541 @@ AnimCmds_82349BC: @ 82349BC
     .4byte AnimCmd_82349AC
     .4byte AnimCmd_82349B4
 
-    .global UNK_82349CC
-UNK_82349CC: @ 82349CC
+UNK_82349CC:: @ 82349CC
     .incbin "baserom.gba", 0x2349CC, 0x6E0
 
-    .global UNK_82350AC
-UNK_82350AC: @ 82350AC
-    .incbin "baserom.gba", 0x2350AC, 0xE8
+kMonFrontPicTable:: @ 82350AC
+    .4byte kUnkGfx_8D00748
+    .2byte 0x0800, 0x0000
+    .4byte kMonFrontPic_Bulbasaur
+    .2byte 0x0800, 0x0001
+    .4byte kMonFrontPic_Ivysaur
+    .2byte 0x0800, 0x0002
+    .4byte kMonFrontPic_Venusaur
+    .2byte 0x0800, 0x0003
+    .4byte kMonFrontPic_Charmander
+    .2byte 0x0800, 0x0004
+    .4byte kMonFrontPic_Charmeleon
+    .2byte 0x0800, 0x0005
+    .4byte kMonFrontPic_Charizard
+    .2byte 0x0800, 0x0006
+    .4byte kMonFrontPic_Squirtle
+    .2byte 0x0800, 0x0007
+    .4byte kMonFrontPic_Wartortle
+    .2byte 0x0800, 0x0008
+    .4byte kMonFrontPic_Blastoise
+    .2byte 0x0800, 0x0009
+    .4byte kMonFrontPic_Caterpie
+    .2byte 0x0800, 0x000A
+    .4byte kMonFrontPic_Metapod
+    .2byte 0x0800, 0x000B
+    .4byte kMonFrontPic_Butterfree
+    .2byte 0x0800, 0x000C
+    .4byte kMonFrontPic_Weedle
+    .2byte 0x0800, 0x000D
+    .4byte kMonFrontPic_Kakuna
+    .2byte 0x0800, 0x000E
+    .4byte kMonFrontPic_Beedrill
+    .2byte 0x0800, 0x000F
+    .4byte kMonFrontPic_Pidgey
+    .2byte 0x0800, 0x0010
+    .4byte kMonFrontPic_Pidgeotto
+    .2byte 0x0800, 0x0011
+    .4byte kMonFrontPic_Pidgeot
+    .2byte 0x0800, 0x0012
+    .4byte kMonFrontPic_Rattata
+    .2byte 0x0800, 0x0013
+    .4byte kMonFrontPic_Raticate
+    .2byte 0x0800, 0x0014
+    .4byte kMonFrontPic_Spearow
+    .2byte 0x0800, 0x0015
+    .4byte kMonFrontPic_Fearow
+    .2byte 0x0800, 0x0016
+    .4byte kMonFrontPic_Ekans
+    .2byte 0x0800, 0x0017
+    .4byte kMonFrontPic_Arbok
+    .2byte 0x0800, 0x0018
+    .4byte kMonFrontPic_Pikachu
+    .2byte 0x0800, 0x0019
+    .4byte kMonFrontPic_Raichu
+    .2byte 0x0800, 0x001A
+    .4byte kMonFrontPic_Sandshrew
+    .2byte 0x0800, 0x001B
+    .4byte kMonFrontPic_Sandslash
+    .2byte 0x0800, 0x001C
+    .4byte kMonFrontPic_NidoranF
+    .2byte 0x0800, 0x001D
+    .4byte kMonFrontPic_Nidorina
+    .2byte 0x0800, 0x001E
+    .4byte kMonFrontPic_Nidoqueen
+    .2byte 0x0800, 0x001F
+    .4byte kMonFrontPic_NidoranM
+    .2byte 0x0800, 0x0020
+    .4byte kMonFrontPic_Nidorino
+    .2byte 0x0800, 0x0021
+    .4byte kMonFrontPic_Nidoking
+    .2byte 0x0800, 0x0022
+    .4byte kMonFrontPic_Clefairy
+    .2byte 0x0800, 0x0023
+    .4byte kMonFrontPic_Clefable
+    .2byte 0x0800, 0x0024
+    .4byte kMonFrontPic_Vulpix
+    .2byte 0x0800, 0x0025
+    .4byte kMonFrontPic_Ninetales
+    .2byte 0x0800, 0x0026
+    .4byte kMonFrontPic_Jigglypuff
+    .2byte 0x0800, 0x0027
+    .4byte kMonFrontPic_Wigglytuff
+    .2byte 0x0800, 0x0028
+    .4byte kMonFrontPic_Zubat
+    .2byte 0x0800, 0x0029
+    .4byte kMonFrontPic_Golbat
+    .2byte 0x0800, 0x002A
+    .4byte kMonFrontPic_Oddish
+    .2byte 0x0800, 0x002B
+    .4byte kMonFrontPic_Gloom
+    .2byte 0x0800, 0x002C
+    .4byte kMonFrontPic_Vileplume
+    .2byte 0x0800, 0x002D
+    .4byte kMonFrontPic_Paras
+    .2byte 0x0800, 0x002E
+    .4byte kMonFrontPic_Parasect
+    .2byte 0x0800, 0x002F
+    .4byte kMonFrontPic_Venonat
+    .2byte 0x0800, 0x0030
+    .4byte kMonFrontPic_Venomoth
+    .2byte 0x0800, 0x0031
+    .4byte kMonFrontPic_Diglett
+    .2byte 0x0800, 0x0032
+    .4byte kMonFrontPic_Dugtrio
+    .2byte 0x0800, 0x0033
+    .4byte kMonFrontPic_Meowth
+    .2byte 0x0800, 0x0034
+    .4byte kMonFrontPic_Persian
+    .2byte 0x0800, 0x0035
+    .4byte kMonFrontPic_Psyduck
+    .2byte 0x0800, 0x0036
+    .4byte kMonFrontPic_Golduck
+    .2byte 0x0800, 0x0037
+    .4byte kMonFrontPic_Mankey
+    .2byte 0x0800, 0x0038
+    .4byte kMonFrontPic_Primeape
+    .2byte 0x0800, 0x0039
+    .4byte kMonFrontPic_Growlithe
+    .2byte 0x0800, 0x003A
+    .4byte kMonFrontPic_Arcanine
+    .2byte 0x0800, 0x003B
+    .4byte kMonFrontPic_Poliwag
+    .2byte 0x0800, 0x003C
+    .4byte kMonFrontPic_Poliwhirl
+    .2byte 0x0800, 0x003D
+    .4byte kMonFrontPic_Poliwrath
+    .2byte 0x0800, 0x003E
+    .4byte kMonFrontPic_Abra
+    .2byte 0x0800, 0x003F
+    .4byte kMonFrontPic_Kadabra
+    .2byte 0x0800, 0x0040
+    .4byte kMonFrontPic_Alakazam
+    .2byte 0x0800, 0x0041
+    .4byte kMonFrontPic_Machop
+    .2byte 0x0800, 0x0042
+    .4byte kMonFrontPic_Machoke
+    .2byte 0x0800, 0x0043
+    .4byte kMonFrontPic_Machamp
+    .2byte 0x0800, 0x0044
+    .4byte kMonFrontPic_Bellsprout
+    .2byte 0x0800, 0x0045
+    .4byte kMonFrontPic_Weepinbell
+    .2byte 0x0800, 0x0046
+    .4byte kMonFrontPic_Victreebel
+    .2byte 0x0800, 0x0047
+    .4byte kMonFrontPic_Tentacool
+    .2byte 0x0800, 0x0048
+    .4byte kMonFrontPic_Tentacruel
+    .2byte 0x0800, 0x0049
+    .4byte kMonFrontPic_Geodude
+    .2byte 0x0800, 0x004A
+    .4byte kMonFrontPic_Graveler
+    .2byte 0x0800, 0x004B
+    .4byte kMonFrontPic_Golem
+    .2byte 0x0800, 0x004C
+    .4byte kMonFrontPic_Ponyta
+    .2byte 0x0800, 0x004D
+    .4byte kMonFrontPic_Rapidash
+    .2byte 0x0800, 0x004E
+    .4byte kMonFrontPic_Slowpoke
+    .2byte 0x0800, 0x004F
+    .4byte kMonFrontPic_Slowbro
+    .2byte 0x0800, 0x0050
+    .4byte kMonFrontPic_Magnemite
+    .2byte 0x0800, 0x0051
+    .4byte kMonFrontPic_Magneton
+    .2byte 0x0800, 0x0052
+    .4byte kMonFrontPic_Farfetchd
+    .2byte 0x0800, 0x0053
+    .4byte kMonFrontPic_Doduo
+    .2byte 0x0800, 0x0054
+    .4byte kMonFrontPic_Dodrio
+    .2byte 0x0800, 0x0055
+    .4byte kMonFrontPic_Seel
+    .2byte 0x0800, 0x0056
+    .4byte kMonFrontPic_Dewgong
+    .2byte 0x0800, 0x0057
+    .4byte kMonFrontPic_Grimer
+    .2byte 0x0800, 0x0058
+    .4byte kMonFrontPic_Muk
+    .2byte 0x0800, 0x0059
+    .4byte kMonFrontPic_Shellder
+    .2byte 0x0800, 0x005A
+    .4byte kMonFrontPic_Cloyster
+    .2byte 0x0800, 0x005B
+    .4byte kMonFrontPic_Gastly
+    .2byte 0x0800, 0x005C
+    .4byte kMonFrontPic_Haunter
+    .2byte 0x0800, 0x005D
+    .4byte kMonFrontPic_Gengar
+    .2byte 0x0800, 0x005E
+    .4byte kMonFrontPic_Onix
+    .2byte 0x0800, 0x005F
+    .4byte kMonFrontPic_Drowzee
+    .2byte 0x0800, 0x0060
+    .4byte kMonFrontPic_Hypno
+    .2byte 0x0800, 0x0061
+    .4byte kMonFrontPic_Krabby
+    .2byte 0x0800, 0x0062
+    .4byte kMonFrontPic_Kingler
+    .2byte 0x0800, 0x0063
+    .4byte kMonFrontPic_Voltorb
+    .2byte 0x0800, 0x0064
+    .4byte kMonFrontPic_Electrode
+    .2byte 0x0800, 0x0065
+    .4byte kMonFrontPic_Exeggcute
+    .2byte 0x0800, 0x0066
+    .4byte kMonFrontPic_Exeggutor
+    .2byte 0x0800, 0x0067
+    .4byte kMonFrontPic_Cubone
+    .2byte 0x0800, 0x0068
+    .4byte kMonFrontPic_Marowak
+    .2byte 0x0800, 0x0069
+    .4byte kMonFrontPic_Hitmonlee
+    .2byte 0x0800, 0x006A
+    .4byte kMonFrontPic_Hitmonchan
+    .2byte 0x0800, 0x006B
+    .4byte kMonFrontPic_Lickitung
+    .2byte 0x0800, 0x006C
+    .4byte kMonFrontPic_Koffing
+    .2byte 0x0800, 0x006D
+    .4byte kMonFrontPic_Weezing
+    .2byte 0x0800, 0x006E
+    .4byte kMonFrontPic_Rhyhorn
+    .2byte 0x0800, 0x006F
+    .4byte kMonFrontPic_Rhydon
+    .2byte 0x0800, 0x0070
+    .4byte kMonFrontPic_Chansey
+    .2byte 0x0800, 0x0071
+    .4byte kMonFrontPic_Tangela
+    .2byte 0x0800, 0x0072
+    .4byte kMonFrontPic_Kangaskhan
+    .2byte 0x0800, 0x0073
+    .4byte kMonFrontPic_Horsea
+    .2byte 0x0800, 0x0074
+    .4byte kMonFrontPic_Seadra
+    .2byte 0x0800, 0x0075
+    .4byte kMonFrontPic_Goldeen
+    .2byte 0x0800, 0x0076
+    .4byte kMonFrontPic_Seaking
+    .2byte 0x0800, 0x0077
+    .4byte kMonFrontPic_Staryu
+    .2byte 0x0800, 0x0078
+    .4byte kMonFrontPic_Starmie
+    .2byte 0x0800, 0x0079
+    .4byte kMonFrontPic_MrMime
+    .2byte 0x0800, 0x007A
+    .4byte kMonFrontPic_Scyther
+    .2byte 0x0800, 0x007B
+    .4byte kMonFrontPic_Jynx
+    .2byte 0x0800, 0x007C
+    .4byte kMonFrontPic_Electabuzz
+    .2byte 0x0800, 0x007D
+    .4byte kMonFrontPic_Magmar
+    .2byte 0x0800, 0x007E
+    .4byte kMonFrontPic_Pinsir
+    .2byte 0x0800, 0x007F
+    .4byte kMonFrontPic_Tauros
+    .2byte 0x0800, 0x0080
+    .4byte kMonFrontPic_Magikarp
+    .2byte 0x0800, 0x0081
+    .4byte kMonFrontPic_Gyarados
+    .2byte 0x0800, 0x0082
+    .4byte kMonFrontPic_Lapras
+    .2byte 0x0800, 0x0083
+    .4byte kMonFrontPic_Ditto
+    .2byte 0x0800, 0x0084
+    .4byte kMonFrontPic_Eevee
+    .2byte 0x0800, 0x0085
+    .4byte kMonFrontPic_Vaporeon
+    .2byte 0x0800, 0x0086
+    .4byte kMonFrontPic_Jolteon
+    .2byte 0x0800, 0x0087
+    .4byte kMonFrontPic_Flareon
+    .2byte 0x0800, 0x0088
+    .4byte kMonFrontPic_Porygon
+    .2byte 0x0800, 0x0089
+    .4byte kMonFrontPic_Omanyte
+    .2byte 0x0800, 0x008A
+    .4byte kMonFrontPic_Omastar
+    .2byte 0x0800, 0x008B
+    .4byte kMonFrontPic_Kabuto
+    .2byte 0x0800, 0x008C
+    .4byte kMonFrontPic_Kabutops
+    .2byte 0x0800, 0x008D
+    .4byte kMonFrontPic_Aerodactyl
+    .2byte 0x0800, 0x008E
+    .4byte kMonFrontPic_Snorlax
+    .2byte 0x0800, 0x008F
+    .4byte kMonFrontPic_Articuno
+    .2byte 0x0800, 0x0090
+    .4byte kMonFrontPic_Zapdos
+    .2byte 0x0800, 0x0091
+    .4byte kMonFrontPic_Moltres
+    .2byte 0x0800, 0x0092
+    .4byte kMonFrontPic_Dratini
+    .2byte 0x0800, 0x0093
+    .4byte kMonFrontPic_Dragonair
+    .2byte 0x0800, 0x0094
+    .4byte kMonFrontPic_Dragonite
+    .2byte 0x0800, 0x0095
+    .4byte kMonFrontPic_Mewtwo
+    .2byte 0x0800, 0x0096
+    .4byte kMonFrontPic_Mew
+    .2byte 0x0800, 0x0097
+    .4byte kMonFrontPic_Chikorita
+    .2byte 0x0800, 0x0098
+    .4byte kMonFrontPic_Bayleef
+    .2byte 0x0800, 0x0099
+    .4byte kMonFrontPic_Meganium
+    .2byte 0x0800, 0x009A
+    .4byte kMonFrontPic_Cyndaquil
+    .2byte 0x0800, 0x009B
+    .4byte kMonFrontPic_Quilava
+    .2byte 0x0800, 0x009C
+    .4byte kMonFrontPic_Typhlosion
+    .2byte 0x0800, 0x009D
+    .4byte kMonFrontPic_Totodile
+    .2byte 0x0800, 0x009E
+    .4byte kMonFrontPic_Croconaw
+    .2byte 0x0800, 0x009F
+    .4byte kMonFrontPic_Feraligatr
+    .2byte 0x0800, 0x00A0
+    .4byte kMonFrontPic_Sentret
+    .2byte 0x0800, 0x00A1
+    .4byte kMonFrontPic_Furret
+    .2byte 0x0800, 0x00A2
+    .4byte kMonFrontPic_Hoothoot
+    .2byte 0x0800, 0x00A3
+    .4byte kMonFrontPic_Noctowl
+    .2byte 0x0800, 0x00A4
+    .4byte kMonFrontPic_Ledyba
+    .2byte 0x0800, 0x00A5
+    .4byte kMonFrontPic_Ledian
+    .2byte 0x0800, 0x00A6
+    .4byte kMonFrontPic_Spinarak
+    .2byte 0x0800, 0x00A7
+    .4byte kMonFrontPic_Ariados
+    .2byte 0x0800, 0x00A8
+    .4byte kMonFrontPic_Crobat
+    .2byte 0x0800, 0x00A9
+    .4byte kMonFrontPic_Chinchou
+    .2byte 0x0800, 0x00AA
+    .4byte kMonFrontPic_Lanturn
+    .2byte 0x0800, 0x00AB
+    .4byte kMonFrontPic_Pichu
+    .2byte 0x0800, 0x00AC
+    .4byte kMonFrontPic_Cleffa
+    .2byte 0x0800, 0x00AD
+    .4byte kMonFrontPic_Igglybuff
+    .2byte 0x0800, 0x00AE
+    .4byte kMonFrontPic_Togepi
+    .2byte 0x0800, 0x00AF
+    .4byte kMonFrontPic_Togetic
+    .2byte 0x0800, 0x00B0
+    .4byte kMonFrontPic_Natu
+    .2byte 0x0800, 0x00B1
+    .4byte kMonFrontPic_Xatu
+    .2byte 0x0800, 0x00B2
+    .4byte kMonFrontPic_Mareep
+    .2byte 0x0800, 0x00B3
+    .4byte kMonFrontPic_Flaaffy
+    .2byte 0x0800, 0x00B4
+    .4byte kMonFrontPic_Ampharos
+    .2byte 0x0800, 0x00B5
+    .4byte kMonFrontPic_Bellossom
+    .2byte 0x0800, 0x00B6
+    .4byte kMonFrontPic_Marill
+    .2byte 0x0800, 0x00B7
+    .4byte kMonFrontPic_Azumarill
+    .2byte 0x0800, 0x00B8
+    .4byte kMonFrontPic_Sudowoodo
+    .2byte 0x0800, 0x00B9
+    .4byte kMonFrontPic_Politoed
+    .2byte 0x0800, 0x00BA
+    .4byte kMonFrontPic_Hoppip
+    .2byte 0x0800, 0x00BB
+    .4byte kMonFrontPic_Skiploom
+    .2byte 0x0800, 0x00BC
+    .4byte kMonFrontPic_Jumpluff
+    .2byte 0x0800, 0x00BD
+    .4byte kMonFrontPic_Aipom
+    .2byte 0x0800, 0x00BE
+    .4byte kMonFrontPic_Sunkern
+    .2byte 0x0800, 0x00BF
+    .4byte kMonFrontPic_Sunflora
+    .2byte 0x0800, 0x00C0
+    .4byte kMonFrontPic_Yanma
+    .2byte 0x0800, 0x00C1
+    .4byte kMonFrontPic_Wooper
+    .2byte 0x0800, 0x00C2
+    .4byte kMonFrontPic_Quagsire
+    .2byte 0x0800, 0x00C3
+    .4byte kMonFrontPic_Espeon
+    .2byte 0x0800, 0x00C4
+    .4byte kMonFrontPic_Umbreon
+    .2byte 0x0800, 0x00C5
+    .4byte kMonFrontPic_Murkrow
+    .2byte 0x0800, 0x00C6
+    .4byte kMonFrontPic_Slowking
+    .2byte 0x0800, 0x00C7
+    .4byte kMonFrontPic_Misdreavus
+    .2byte 0x0800, 0x00C8
+    .4byte kMonFrontPic_Unown
+    .2byte 0x0800, 0x00C9
+    .4byte kMonFrontPic_Wobbuffet
+    .2byte 0x0800, 0x00CA
+    .4byte kMonFrontPic_Girafarig
+    .2byte 0x0800, 0x00CB
+    .4byte kMonFrontPic_Pineco
+    .2byte 0x0800, 0x00CC
+    .4byte kMonFrontPic_Forretress
+    .2byte 0x0800, 0x00CD
+    .4byte kMonFrontPic_Dunsparce
+    .2byte 0x0800, 0x00CE
+    .4byte kMonFrontPic_Gligar
+    .2byte 0x0800, 0x00CF
+    .4byte kMonFrontPic_Steelix
+    .2byte 0x0800, 0x00D0
+    .4byte kMonFrontPic_Snubbull
+    .2byte 0x0800, 0x00D1
+    .4byte kMonFrontPic_Granbull
+    .2byte 0x0800, 0x00D2
+    .4byte kMonFrontPic_Qwilfish
+    .2byte 0x0800, 0x00D3
+    .4byte kMonFrontPic_Scizor
+    .2byte 0x0800, 0x00D4
+    .4byte kMonFrontPic_Shuckle
+    .2byte 0x0800, 0x00D5
+    .4byte kMonFrontPic_Heracross
+    .2byte 0x0800, 0x00D6
+    .4byte kMonFrontPic_Sneasel
+    .2byte 0x0800, 0x00D7
+    .4byte kMonFrontPic_Teddiursa
+    .2byte 0x0800, 0x00D8
+    .4byte kMonFrontPic_Ursaring
+    .2byte 0x0800, 0x00D9
+    .4byte kMonFrontPic_Slugma
+    .2byte 0x0800, 0x00DA
+    .4byte kMonFrontPic_Magcargo
+    .2byte 0x0800, 0x00DB
+    .4byte kMonFrontPic_Swinub
+    .2byte 0x0800, 0x00DC
+    .4byte kMonFrontPic_Piloswine
+    .2byte 0x0800, 0x00DD
+    .4byte kMonFrontPic_Corsola
+    .2byte 0x0800, 0x00DE
+    .4byte kMonFrontPic_Remoraid
+    .2byte 0x0800, 0x00DF
+    .4byte kMonFrontPic_Octillery
+    .2byte 0x0800, 0x00E0
+    .4byte kMonFrontPic_Delibird
+    .2byte 0x0800, 0x00E1
+    .4byte kMonFrontPic_Mantine
+    .2byte 0x0800, 0x00E2
+    .4byte kMonFrontPic_Skarmory
+    .2byte 0x0800, 0x00E3
+    .4byte kMonFrontPic_Houndour
+    .2byte 0x0800, 0x00E4
+    .4byte kMonFrontPic_Houndoom
+    .2byte 0x0800, 0x00E5
+    .4byte kMonFrontPic_Kingdra
+    .2byte 0x0800, 0x00E6
+    .4byte kMonFrontPic_Phanpy
+    .2byte 0x0800, 0x00E7
+    .4byte kMonFrontPic_Donphan
+    .2byte 0x0800, 0x00E8
+    .4byte kMonFrontPic_Porygon2
+    .2byte 0x0800, 0x00E9
+    .4byte kMonFrontPic_Stantler
+    .2byte 0x0800, 0x00EA
+    .4byte kMonFrontPic_Smeargle
+    .2byte 0x0800, 0x00EB
+    .4byte kMonFrontPic_Tyrogue
+    .2byte 0x0800, 0x00EC
+    .4byte kMonFrontPic_Hitmontop
+    .2byte 0x0800, 0x00ED
+    .4byte kMonFrontPic_Smoochum
+    .2byte 0x0800, 0x00EE
+    .4byte kMonFrontPic_Elekid
+    .2byte 0x0800, 0x00EF
+    .4byte kMonFrontPic_Magby
+    .2byte 0x0800, 0x00F0
+    .4byte kMonFrontPic_Miltank
+    .2byte 0x0800, 0x00F1
+    .4byte kMonFrontPic_Blissey
+    .2byte 0x0800, 0x00F2
+    .4byte kMonFrontPic_Raikou
+    .2byte 0x0800, 0x00F3
+    .4byte kMonFrontPic_Entei
+    .2byte 0x0800, 0x00F4
+    .4byte kMonFrontPic_Suicune
+    .2byte 0x0800, 0x00F5
+    .4byte kMonFrontPic_Larvitar
+    .2byte 0x0800, 0x00F6
+    .4byte kMonFrontPic_Pupitar
+    .2byte 0x0800, 0x00F7
+    .4byte kMonFrontPic_Tyranitar
+    .2byte 0x0800, 0x00F8
+    .4byte kMonFrontPic_Lugia
+    .2byte 0x0800, 0x00F9
+    .4byte kMonFrontPic_HoOh
+    .2byte 0x0800, 0x00FA
+    .4byte kMonFrontPic_Celebi
+    .2byte 0x0800, 0x00FB
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x00FC
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x00FD
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x00FE
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x00FF
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0100
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0101
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0102
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0103
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0104
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0105
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0106
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0107
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0108
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0109
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x010A
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x010B
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x010C
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x010D
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x010E
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x010F
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0110
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0111
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0112
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0113
+    .4byte kMonFrontPic_OldUnownB
+    .2byte 0x0800, 0x0114
+    .4byte kMonFrontPic_Treecko
+    .2byte 0x0800, 0x0115
+    .4byte kMonFrontPic_Grovyle
+    .2byte 0x0800, 0x0116
+    .4byte kMonFrontPic_Sceptile
+    .2byte 0x0800, 0x0117
+    .4byte kMonFrontPic_Torchic
+    .2byte 0x0800, 0x0118
+    .4byte kMonFrontPic_Combusken
+    .2byte 0x0800, 0x0119
+    .4byte kMonFrontPic_Blaziken
+    .2byte 0x0800, 0x011A
+    .4byte kMonFrontPic_Mudkip
+    .2byte 0x0800, 0x011B
+    .4byte kMonFrontPic_Marshtomp
+    .2byte 0x0800, 0x011C
+    .4byte kMonFrontPic_Swampert
+    .2byte 0x0800, 0x011D
+    .4byte kMonFrontPic_Poochyena
+    .2byte 0x0800, 0x011E
+    .4byte kMonFrontPic_Mightyena
+    .2byte 0x0800, 0x011F
+    .4byte kMonFrontPic_Zigzagoon
+    .2byte 0x0800, 0x0120
+    .4byte kMonFrontPic_Linoone
+    .2byte 0x0800, 0x0121
+    .4byte kMonFrontPic_Wurmple
+    .2byte 0x0800, 0x0122
+    .4byte kMonFrontPic_Silcoon
+    .2byte 0x0800, 0x0123
+    .4byte kMonFrontPic_Beautifly
+    .2byte 0x0800, 0x0124
+    .4byte kMonFrontPic_Cascoon
+    .2byte 0x0800, 0x0125
+    .4byte kMonFrontPic_Dustox
+    .2byte 0x0800, 0x0126
+    .4byte kMonFrontPic_Lotad
+    .2byte 0x0800, 0x0127
+    .4byte kMonFrontPic_Lombre
+    .2byte 0x0800, 0x0128
+    .4byte kMonFrontPic_Ludicolo
+    .2byte 0x0800, 0x0129
+    .4byte kMonFrontPic_Seedot
+    .2byte 0x0800, 0x012A
+    .4byte kMonFrontPic_Nuzleaf
+    .2byte 0x0800, 0x012B
+    .4byte kMonFrontPic_Shiftry
+    .2byte 0x0800, 0x012C
+    .4byte kMonFrontPic_Nincada
+    .2byte 0x0800, 0x012D
+    .4byte kMonFrontPic_Ninjask
+    .2byte 0x0800, 0x012E
+    .4byte kMonFrontPic_Shedinja
+    .2byte 0x0800, 0x012F
+    .4byte kMonFrontPic_Taillow
+    .2byte 0x0800, 0x0130
+    .4byte kMonFrontPic_Swellow
+    .2byte 0x0800, 0x0131
+    .4byte kMonFrontPic_Shroomish
+    .2byte 0x0800, 0x0132
+    .4byte kMonFrontPic_Breloom
+    .2byte 0x0800, 0x0133
+    .4byte kMonFrontPic_Spinda
+    .2byte 0x0800, 0x0134
+    .4byte kMonFrontPic_Wingull
+    .2byte 0x0800, 0x0135
+    .4byte kMonFrontPic_Pelipper
+    .2byte 0x0800, 0x0136
+    .4byte kMonFrontPic_Surskit
+    .2byte 0x0800, 0x0137
+    .4byte kMonFrontPic_Masquerain
+    .2byte 0x0800, 0x0138
+    .4byte kMonFrontPic_Wailmer
+    .2byte 0x0800, 0x0139
+    .4byte kMonFrontPic_Wailord
+    .2byte 0x0800, 0x013A
+    .4byte kMonFrontPic_Skitty
+    .2byte 0x0800, 0x013B
+    .4byte kMonFrontPic_Delcatty
+    .2byte 0x0800, 0x013C
+    .4byte kMonFrontPic_Kecleon
+    .2byte 0x0800, 0x013D
+    .4byte kMonFrontPic_Baltoy
+    .2byte 0x0800, 0x013E
+    .4byte kMonFrontPic_Claydol
+    .2byte 0x0800, 0x013F
+    .4byte kMonFrontPic_Nosepass
+    .2byte 0x0800, 0x0140
+    .4byte kMonFrontPic_Torkoal
+    .2byte 0x0800, 0x0141
+    .4byte kMonFrontPic_Sableye
+    .2byte 0x0800, 0x0142
+    .4byte kMonFrontPic_Barboach
+    .2byte 0x0800, 0x0143
+    .4byte kMonFrontPic_Whiscash
+    .2byte 0x0800, 0x0144
+    .4byte kMonFrontPic_Luvdisc
+    .2byte 0x0800, 0x0145
+    .4byte kMonFrontPic_Corphish
+    .2byte 0x0800, 0x0146
+    .4byte kMonFrontPic_Crawdaunt
+    .2byte 0x0800, 0x0147
+    .4byte kMonFrontPic_Feebas
+    .2byte 0x0800, 0x0148
+    .4byte kMonFrontPic_Milotic
+    .2byte 0x0800, 0x0149
+    .4byte kMonFrontPic_Carvanha
+    .2byte 0x0800, 0x014A
+    .4byte kMonFrontPic_Sharpedo
+    .2byte 0x0800, 0x014B
+    .4byte kMonFrontPic_Trapinch
+    .2byte 0x0800, 0x014C
+    .4byte kMonFrontPic_Vibrava
+    .2byte 0x0800, 0x014D
+    .4byte kMonFrontPic_Flygon
+    .2byte 0x0800, 0x014E
+    .4byte kMonFrontPic_Makuhita
+    .2byte 0x0800, 0x014F
+    .4byte kMonFrontPic_Hariyama
+    .2byte 0x0800, 0x0150
+    .4byte kMonFrontPic_Electrike
+    .2byte 0x0800, 0x0151
+    .4byte kMonFrontPic_Manectric
+    .2byte 0x0800, 0x0152
+    .4byte kMonFrontPic_Numel
+    .2byte 0x0800, 0x0153
+    .4byte kMonFrontPic_Camerupt
+    .2byte 0x0800, 0x0154
+    .4byte kMonFrontPic_Spheal
+    .2byte 0x0800, 0x0155
+    .4byte kMonFrontPic_Sealeo
+    .2byte 0x0800, 0x0156
+    .4byte kMonFrontPic_Walrein
+    .2byte 0x0800, 0x0157
+    .4byte kMonFrontPic_Cacnea
+    .2byte 0x0800, 0x0158
+    .4byte kMonFrontPic_Cacturne
+    .2byte 0x0800, 0x0159
+    .4byte kMonFrontPic_Snorunt
+    .2byte 0x0800, 0x015A
+    .4byte kMonFrontPic_Glalie
+    .2byte 0x0800, 0x015B
+    .4byte kMonFrontPic_Lunatone
+    .2byte 0x0800, 0x015C
+    .4byte kMonFrontPic_Solrock
+    .2byte 0x0800, 0x015D
+    .4byte kMonFrontPic_Azurill
+    .2byte 0x0800, 0x015E
+    .4byte kMonFrontPic_Spoink
+    .2byte 0x0800, 0x015F
+    .4byte kMonFrontPic_Grumpig
+    .2byte 0x0800, 0x0160
+    .4byte kMonFrontPic_Plusle
+    .2byte 0x0800, 0x0161
+    .4byte kMonFrontPic_Minun
+    .2byte 0x0800, 0x0162
+    .4byte kMonFrontPic_Mawile
+    .2byte 0x0800, 0x0163
+    .4byte kMonFrontPic_Meditite
+    .2byte 0x0800, 0x0164
+    .4byte kMonFrontPic_Medicham
+    .2byte 0x0800, 0x0165
+    .4byte kMonFrontPic_Swablu
+    .2byte 0x0800, 0x0166
+    .4byte kMonFrontPic_Altaria
+    .2byte 0x0800, 0x0167
+    .4byte kMonFrontPic_Wynaut
+    .2byte 0x0800, 0x0168
+    .4byte kMonFrontPic_Duskull
+    .2byte 0x0800, 0x0169
+    .4byte kMonFrontPic_Dusclops
+    .2byte 0x0800, 0x016A
+    .4byte kMonFrontPic_Roselia
+    .2byte 0x0800, 0x016B
+    .4byte kMonFrontPic_Slakoth
+    .2byte 0x0800, 0x016C
+    .4byte kMonFrontPic_Vigoroth
+    .2byte 0x0800, 0x016D
+    .4byte kMonFrontPic_Slaking
+    .2byte 0x0800, 0x016E
+    .4byte kMonFrontPic_Gulpin
+    .2byte 0x0800, 0x016F
+    .4byte kMonFrontPic_Swalot
+    .2byte 0x0800, 0x0170
+    .4byte kMonFrontPic_Tropius
+    .2byte 0x0800, 0x0171
+    .4byte kMonFrontPic_Whismur
+    .2byte 0x0800, 0x0172
+    .4byte kMonFrontPic_Loudred
+    .2byte 0x0800, 0x0173
+    .4byte kMonFrontPic_Exploud
+    .2byte 0x0800, 0x0174
+    .4byte kMonFrontPic_Clamperl
+    .2byte 0x0800, 0x0175
+    .4byte kMonFrontPic_Huntail
+    .2byte 0x0800, 0x0176
+    .4byte kMonFrontPic_Gorebyss
+    .2byte 0x0800, 0x0177
+    .4byte kMonFrontPic_Absol
+    .2byte 0x0800, 0x0178
+    .4byte kMonFrontPic_Shuppet
+    .2byte 0x0800, 0x0179
+    .4byte kMonFrontPic_Banette
+    .2byte 0x0800, 0x017A
+    .4byte kMonFrontPic_Seviper
+    .2byte 0x0800, 0x017B
+    .4byte kMonFrontPic_Zangoose
+    .2byte 0x0800, 0x017C
+    .4byte kMonFrontPic_Relicanth
+    .2byte 0x0800, 0x017D
+    .4byte kMonFrontPic_Aron
+    .2byte 0x0800, 0x017E
+    .4byte kMonFrontPic_Lairon
+    .2byte 0x0800, 0x017F
+    .4byte kMonFrontPic_Aggron
+    .2byte 0x0800, 0x0180
+    .4byte kMonFrontPic_Castform
+    .2byte 0x0800, 0x0181
+    .4byte kMonFrontPic_Volbeat
+    .2byte 0x0800, 0x0182
+    .4byte kMonFrontPic_Illumise
+    .2byte 0x0800, 0x0183
+    .4byte kMonFrontPic_Lileep
+    .2byte 0x0800, 0x0184
+    .4byte kMonFrontPic_Cradily
+    .2byte 0x0800, 0x0185
+    .4byte kMonFrontPic_Anorith
+    .2byte 0x0800, 0x0186
+    .4byte kMonFrontPic_Armaldo
+    .2byte 0x0800, 0x0187
+    .4byte kMonFrontPic_Ralts
+    .2byte 0x0800, 0x0188
+    .4byte kMonFrontPic_Kirlia
+    .2byte 0x0800, 0x0189
+    .4byte kMonFrontPic_Gardevoir
+    .2byte 0x0800, 0x018A
+    .4byte kMonFrontPic_Bagon
+    .2byte 0x0800, 0x018B
+    .4byte kMonFrontPic_Shelgon
+    .2byte 0x0800, 0x018C
+    .4byte kMonFrontPic_Salamence
+    .2byte 0x0800, 0x018D
+    .4byte kMonFrontPic_Beldum
+    .2byte 0x0800, 0x018E
+    .4byte kMonFrontPic_Metang
+    .2byte 0x0800, 0x018F
+    .4byte kMonFrontPic_Metagross
+    .2byte 0x0800, 0x0190
+    .4byte kMonFrontPic_Regirock
+    .2byte 0x0800, 0x0191
+    .4byte kMonFrontPic_Regice
+    .2byte 0x0800, 0x0192
+    .4byte kMonFrontPic_Registeel
+    .2byte 0x0800, 0x0193
+    .4byte kMonFrontPic_Kyogre
+    .2byte 0x0800, 0x0194
+    .4byte kMonFrontPic_Groudon
+    .2byte 0x0800, 0x0195
+    .4byte kMonFrontPic_Rayquaza
+    .2byte 0x0800, 0x0196
+    .4byte kMonFrontPic_Latias
+    .2byte 0x0800, 0x0197
+    .4byte kMonFrontPic_Latios
+    .2byte 0x0800, 0x0198
+    .4byte kMonFrontPic_Jirachi
+    .2byte 0x0800, 0x0199
+    .4byte kMonFrontPic_Deoxys
+    .2byte 0x0800, 0x019A
+    .4byte kMonFrontPic_Chimecho
+    .2byte 0x0800, 0x019B
+    .4byte kMonFrontPic_Egg
+    .2byte 0x0800, 0x019C
+    .4byte kMonFrontPic_UnownB
+    .2byte 0x0800, 0x019D
+    .4byte kMonFrontPic_UnownC
+    .2byte 0x0800, 0x019E
+    .4byte kMonFrontPic_UnownD
+    .2byte 0x0800, 0x019F
+    .4byte kMonFrontPic_UnownE
+    .2byte 0x0800, 0x01A0
+    .4byte kMonFrontPic_UnownF
+    .2byte 0x0800, 0x01A1
+    .4byte kMonFrontPic_UnownG
+    .2byte 0x0800, 0x01A2
+    .4byte kMonFrontPic_UnownH
+    .2byte 0x0800, 0x01A3
+    .4byte kMonFrontPic_UnownI
+    .2byte 0x0800, 0x01A4
+    .4byte kMonFrontPic_UnownJ
+    .2byte 0x0800, 0x01A5
+    .4byte kMonFrontPic_UnownK
+    .2byte 0x0800, 0x01A6
+    .4byte kMonFrontPic_UnownL
+    .2byte 0x0800, 0x01A7
+    .4byte kMonFrontPic_UnownM
+    .2byte 0x0800, 0x01A8
+    .4byte kMonFrontPic_UnownN
+    .2byte 0x0800, 0x01A9
+    .4byte kMonFrontPic_UnownO
+    .2byte 0x0800, 0x01AA
+    .4byte kMonFrontPic_UnownP
+    .2byte 0x0800, 0x01AB
+    .4byte kMonFrontPic_UnownQ
+    .2byte 0x0800, 0x01AC
+    .4byte kMonFrontPic_UnownR
+    .2byte 0x0800, 0x01AD
+    .4byte kMonFrontPic_UnownS
+    .2byte 0x0800, 0x01AE
+    .4byte kMonFrontPic_UnownT
+    .2byte 0x0800, 0x01AF
+    .4byte kMonFrontPic_UnownU
+    .2byte 0x0800, 0x01B0
+    .4byte kMonFrontPic_UnownV
+    .2byte 0x0800, 0x01B1
+    .4byte kMonFrontPic_UnownW
+    .2byte 0x0800, 0x01B2
+    .4byte kMonFrontPic_UnownX
+    .2byte 0x0800, 0x01B3
+    .4byte kMonFrontPic_UnownY
+    .2byte 0x0800, 0x01B4
+    .4byte kMonFrontPic_UnownZ
+    .2byte 0x0800, 0x01B5
+    .4byte kMonFrontPic_UnownEmark
+    .2byte 0x0800, 0x01B6
+    .4byte kMonFrontPic_UnownQmark
+    .2byte 0x0800, 0x01B7
 
-    .global UNK_8235194
-UNK_8235194: @ 8235194
-    .incbin "baserom.gba", 0x235194, 0xCD8
-
-    .global UNK_8235E6C
-UNK_8235E6C: @ 8235E6C
+UNK_8235E6C:: @ 8235E6C
     .incbin "baserom.gba", 0x235E6C, 0x6E0
 
-    .global UNK_823654C
-UNK_823654C: @ 823654C
-    .incbin "baserom.gba", 0x23654C, 0xDC0
+kMonBackPicTable:: @ 823654C
+    .4byte kUnkGfx_8D0098C
+    .2byte 0x0800, 0x0000
+    .4byte kMonBackPic_Bulbasaur
+    .2byte 0x0800, 0x0001
+    .4byte kMonBackPic_Ivysaur
+    .2byte 0x0800, 0x0002
+    .4byte kMonBackPic_Venusaur
+    .2byte 0x0800, 0x0003
+    .4byte kMonBackPic_Charmander
+    .2byte 0x0800, 0x0004
+    .4byte kMonBackPic_Charmeleon
+    .2byte 0x0800, 0x0005
+    .4byte kMonBackPic_Charizard
+    .2byte 0x0800, 0x0006
+    .4byte kMonBackPic_Squirtle
+    .2byte 0x0800, 0x0007
+    .4byte kMonBackPic_Wartortle
+    .2byte 0x0800, 0x0008
+    .4byte kMonBackPic_Blastoise
+    .2byte 0x0800, 0x0009
+    .4byte kMonBackPic_Caterpie
+    .2byte 0x0800, 0x000A
+    .4byte kMonBackPic_Metapod
+    .2byte 0x0800, 0x000B
+    .4byte kMonBackPic_Butterfree
+    .2byte 0x0800, 0x000C
+    .4byte kMonBackPic_Weedle
+    .2byte 0x0800, 0x000D
+    .4byte kMonBackPic_Kakuna
+    .2byte 0x0800, 0x000E
+    .4byte kMonBackPic_Beedrill
+    .2byte 0x0800, 0x000F
+    .4byte kMonBackPic_Pidgey
+    .2byte 0x0800, 0x0010
+    .4byte kMonBackPic_Pidgeotto
+    .2byte 0x0800, 0x0011
+    .4byte kMonBackPic_Pidgeot
+    .2byte 0x0800, 0x0012
+    .4byte kMonBackPic_Rattata
+    .2byte 0x0800, 0x0013
+    .4byte kMonBackPic_Raticate
+    .2byte 0x0800, 0x0014
+    .4byte kMonBackPic_Spearow
+    .2byte 0x0800, 0x0015
+    .4byte kMonBackPic_Fearow
+    .2byte 0x0800, 0x0016
+    .4byte kMonBackPic_Ekans
+    .2byte 0x0800, 0x0017
+    .4byte kMonBackPic_Arbok
+    .2byte 0x0800, 0x0018
+    .4byte kMonBackPic_Pikachu
+    .2byte 0x0800, 0x0019
+    .4byte kMonBackPic_Raichu
+    .2byte 0x0800, 0x001A
+    .4byte kMonBackPic_Sandshrew
+    .2byte 0x0800, 0x001B
+    .4byte kMonBackPic_Sandslash
+    .2byte 0x0800, 0x001C
+    .4byte kMonBackPic_NidoranF
+    .2byte 0x0800, 0x001D
+    .4byte kMonBackPic_Nidorina
+    .2byte 0x0800, 0x001E
+    .4byte kMonBackPic_Nidoqueen
+    .2byte 0x0800, 0x001F
+    .4byte kMonBackPic_NidoranM
+    .2byte 0x0800, 0x0020
+    .4byte kMonBackPic_Nidorino
+    .2byte 0x0800, 0x0021
+    .4byte kMonBackPic_Nidoking
+    .2byte 0x0800, 0x0022
+    .4byte kMonBackPic_Clefairy
+    .2byte 0x0800, 0x0023
+    .4byte kMonBackPic_Clefable
+    .2byte 0x0800, 0x0024
+    .4byte kMonBackPic_Vulpix
+    .2byte 0x0800, 0x0025
+    .4byte kMonBackPic_Ninetales
+    .2byte 0x0800, 0x0026
+    .4byte kMonBackPic_Jigglypuff
+    .2byte 0x0800, 0x0027
+    .4byte kMonBackPic_Wigglytuff
+    .2byte 0x0800, 0x0028
+    .4byte kMonBackPic_Zubat
+    .2byte 0x0800, 0x0029
+    .4byte kMonBackPic_Golbat
+    .2byte 0x0800, 0x002A
+    .4byte kMonBackPic_Oddish
+    .2byte 0x0800, 0x002B
+    .4byte kMonBackPic_Gloom
+    .2byte 0x0800, 0x002C
+    .4byte kMonBackPic_Vileplume
+    .2byte 0x0800, 0x002D
+    .4byte kMonBackPic_Paras
+    .2byte 0x0800, 0x002E
+    .4byte kMonBackPic_Parasect
+    .2byte 0x0800, 0x002F
+    .4byte kMonBackPic_Venonat
+    .2byte 0x0800, 0x0030
+    .4byte kMonBackPic_Venomoth
+    .2byte 0x0800, 0x0031
+    .4byte kMonBackPic_Diglett
+    .2byte 0x0800, 0x0032
+    .4byte kMonBackPic_Dugtrio
+    .2byte 0x0800, 0x0033
+    .4byte kMonBackPic_Meowth
+    .2byte 0x0800, 0x0034
+    .4byte kMonBackPic_Persian
+    .2byte 0x0800, 0x0035
+    .4byte kMonBackPic_Psyduck
+    .2byte 0x0800, 0x0036
+    .4byte kMonBackPic_Golduck
+    .2byte 0x0800, 0x0037
+    .4byte kMonBackPic_Mankey
+    .2byte 0x0800, 0x0038
+    .4byte kMonBackPic_Primeape
+    .2byte 0x0800, 0x0039
+    .4byte kMonBackPic_Growlithe
+    .2byte 0x0800, 0x003A
+    .4byte kMonBackPic_Arcanine
+    .2byte 0x0800, 0x003B
+    .4byte kMonBackPic_Poliwag
+    .2byte 0x0800, 0x003C
+    .4byte kMonBackPic_Poliwhirl
+    .2byte 0x0800, 0x003D
+    .4byte kMonBackPic_Poliwrath
+    .2byte 0x0800, 0x003E
+    .4byte kMonBackPic_Abra
+    .2byte 0x0800, 0x003F
+    .4byte kMonBackPic_Kadabra
+    .2byte 0x0800, 0x0040
+    .4byte kMonBackPic_Alakazam
+    .2byte 0x0800, 0x0041
+    .4byte kMonBackPic_Machop
+    .2byte 0x0800, 0x0042
+    .4byte kMonBackPic_Machoke
+    .2byte 0x0800, 0x0043
+    .4byte kMonBackPic_Machamp
+    .2byte 0x0800, 0x0044
+    .4byte kMonBackPic_Bellsprout
+    .2byte 0x0800, 0x0045
+    .4byte kMonBackPic_Weepinbell
+    .2byte 0x0800, 0x0046
+    .4byte kMonBackPic_Victreebel
+    .2byte 0x0800, 0x0047
+    .4byte kMonBackPic_Tentacool
+    .2byte 0x0800, 0x0048
+    .4byte kMonBackPic_Tentacruel
+    .2byte 0x0800, 0x0049
+    .4byte kMonBackPic_Geodude
+    .2byte 0x0800, 0x004A
+    .4byte kMonBackPic_Graveler
+    .2byte 0x0800, 0x004B
+    .4byte kMonBackPic_Golem
+    .2byte 0x0800, 0x004C
+    .4byte kMonBackPic_Ponyta
+    .2byte 0x0800, 0x004D
+    .4byte kMonBackPic_Rapidash
+    .2byte 0x0800, 0x004E
+    .4byte kMonBackPic_Slowpoke
+    .2byte 0x0800, 0x004F
+    .4byte kMonBackPic_Slowbro
+    .2byte 0x0800, 0x0050
+    .4byte kMonBackPic_Magnemite
+    .2byte 0x0800, 0x0051
+    .4byte kMonBackPic_Magneton
+    .2byte 0x0800, 0x0052
+    .4byte kMonBackPic_Farfetchd
+    .2byte 0x0800, 0x0053
+    .4byte kMonBackPic_Doduo
+    .2byte 0x0800, 0x0054
+    .4byte kMonBackPic_Dodrio
+    .2byte 0x0800, 0x0055
+    .4byte kMonBackPic_Seel
+    .2byte 0x0800, 0x0056
+    .4byte kMonBackPic_Dewgong
+    .2byte 0x0800, 0x0057
+    .4byte kMonBackPic_Grimer
+    .2byte 0x0800, 0x0058
+    .4byte kMonBackPic_Muk
+    .2byte 0x0800, 0x0059
+    .4byte kMonBackPic_Shellder
+    .2byte 0x0800, 0x005A
+    .4byte kMonBackPic_Cloyster
+    .2byte 0x0800, 0x005B
+    .4byte kMonBackPic_Gastly
+    .2byte 0x0800, 0x005C
+    .4byte kMonBackPic_Haunter
+    .2byte 0x0800, 0x005D
+    .4byte kMonBackPic_Gengar
+    .2byte 0x0800, 0x005E
+    .4byte kMonBackPic_Onix
+    .2byte 0x0800, 0x005F
+    .4byte kMonBackPic_Drowzee
+    .2byte 0x0800, 0x0060
+    .4byte kMonBackPic_Hypno
+    .2byte 0x0800, 0x0061
+    .4byte kMonBackPic_Krabby
+    .2byte 0x0800, 0x0062
+    .4byte kMonBackPic_Kingler
+    .2byte 0x0800, 0x0063
+    .4byte kMonBackPic_Voltorb
+    .2byte 0x0800, 0x0064
+    .4byte kMonBackPic_Electrode
+    .2byte 0x0800, 0x0065
+    .4byte kMonBackPic_Exeggcute
+    .2byte 0x0800, 0x0066
+    .4byte kMonBackPic_Exeggutor
+    .2byte 0x0800, 0x0067
+    .4byte kMonBackPic_Cubone
+    .2byte 0x0800, 0x0068
+    .4byte kMonBackPic_Marowak
+    .2byte 0x0800, 0x0069
+    .4byte kMonBackPic_Hitmonlee
+    .2byte 0x0800, 0x006A
+    .4byte kMonBackPic_Hitmonchan
+    .2byte 0x0800, 0x006B
+    .4byte kMonBackPic_Lickitung
+    .2byte 0x0800, 0x006C
+    .4byte kMonBackPic_Koffing
+    .2byte 0x0800, 0x006D
+    .4byte kMonBackPic_Weezing
+    .2byte 0x0800, 0x006E
+    .4byte kMonBackPic_Rhyhorn
+    .2byte 0x0800, 0x006F
+    .4byte kMonBackPic_Rhydon
+    .2byte 0x0800, 0x0070
+    .4byte kMonBackPic_Chansey
+    .2byte 0x0800, 0x0071
+    .4byte kMonBackPic_Tangela
+    .2byte 0x0800, 0x0072
+    .4byte kMonBackPic_Kangaskhan
+    .2byte 0x0800, 0x0073
+    .4byte kMonBackPic_Horsea
+    .2byte 0x0800, 0x0074
+    .4byte kMonBackPic_Seadra
+    .2byte 0x0800, 0x0075
+    .4byte kMonBackPic_Goldeen
+    .2byte 0x0800, 0x0076
+    .4byte kMonBackPic_Seaking
+    .2byte 0x0800, 0x0077
+    .4byte kMonBackPic_Staryu
+    .2byte 0x0800, 0x0078
+    .4byte kMonBackPic_Starmie
+    .2byte 0x0800, 0x0079
+    .4byte kMonBackPic_MrMime
+    .2byte 0x0800, 0x007A
+    .4byte kMonBackPic_Scyther
+    .2byte 0x0800, 0x007B
+    .4byte kMonBackPic_Jynx
+    .2byte 0x0800, 0x007C
+    .4byte kMonBackPic_Electabuzz
+    .2byte 0x0800, 0x007D
+    .4byte kMonBackPic_Magmar
+    .2byte 0x0800, 0x007E
+    .4byte kMonBackPic_Pinsir
+    .2byte 0x0800, 0x007F
+    .4byte kMonBackPic_Tauros
+    .2byte 0x0800, 0x0080
+    .4byte kMonBackPic_Magikarp
+    .2byte 0x0800, 0x0081
+    .4byte kMonBackPic_Gyarados
+    .2byte 0x0800, 0x0082
+    .4byte kMonBackPic_Lapras
+    .2byte 0x0800, 0x0083
+    .4byte kMonBackPic_Ditto
+    .2byte 0x0800, 0x0084
+    .4byte kMonBackPic_Eevee
+    .2byte 0x0800, 0x0085
+    .4byte kMonBackPic_Vaporeon
+    .2byte 0x0800, 0x0086
+    .4byte kMonBackPic_Jolteon
+    .2byte 0x0800, 0x0087
+    .4byte kMonBackPic_Flareon
+    .2byte 0x0800, 0x0088
+    .4byte kMonBackPic_Porygon
+    .2byte 0x0800, 0x0089
+    .4byte kMonBackPic_Omanyte
+    .2byte 0x0800, 0x008A
+    .4byte kMonBackPic_Omastar
+    .2byte 0x0800, 0x008B
+    .4byte kMonBackPic_Kabuto
+    .2byte 0x0800, 0x008C
+    .4byte kMonBackPic_Kabutops
+    .2byte 0x0800, 0x008D
+    .4byte kMonBackPic_Aerodactyl
+    .2byte 0x0800, 0x008E
+    .4byte kMonBackPic_Snorlax
+    .2byte 0x0800, 0x008F
+    .4byte kMonBackPic_Articuno
+    .2byte 0x0800, 0x0090
+    .4byte kMonBackPic_Zapdos
+    .2byte 0x0800, 0x0091
+    .4byte kMonBackPic_Moltres
+    .2byte 0x0800, 0x0092
+    .4byte kMonBackPic_Dratini
+    .2byte 0x0800, 0x0093
+    .4byte kMonBackPic_Dragonair
+    .2byte 0x0800, 0x0094
+    .4byte kMonBackPic_Dragonite
+    .2byte 0x0800, 0x0095
+    .4byte kMonBackPic_Mewtwo
+    .2byte 0x0800, 0x0096
+    .4byte kMonBackPic_Mew
+    .2byte 0x0800, 0x0097
+    .4byte kMonBackPic_Chikorita
+    .2byte 0x0800, 0x0098
+    .4byte kMonBackPic_Bayleef
+    .2byte 0x0800, 0x0099
+    .4byte kMonBackPic_Meganium
+    .2byte 0x0800, 0x009A
+    .4byte kMonBackPic_Cyndaquil
+    .2byte 0x0800, 0x009B
+    .4byte kMonBackPic_Quilava
+    .2byte 0x0800, 0x009C
+    .4byte kMonBackPic_Typhlosion
+    .2byte 0x0800, 0x009D
+    .4byte kMonBackPic_Totodile
+    .2byte 0x0800, 0x009E
+    .4byte kMonBackPic_Croconaw
+    .2byte 0x0800, 0x009F
+    .4byte kMonBackPic_Feraligatr
+    .2byte 0x0800, 0x00A0
+    .4byte kMonBackPic_Sentret
+    .2byte 0x0800, 0x00A1
+    .4byte kMonBackPic_Furret
+    .2byte 0x0800, 0x00A2
+    .4byte kMonBackPic_Hoothoot
+    .2byte 0x0800, 0x00A3
+    .4byte kMonBackPic_Noctowl
+    .2byte 0x0800, 0x00A4
+    .4byte kMonBackPic_Ledyba
+    .2byte 0x0800, 0x00A5
+    .4byte kMonBackPic_Ledian
+    .2byte 0x0800, 0x00A6
+    .4byte kMonBackPic_Spinarak
+    .2byte 0x0800, 0x00A7
+    .4byte kMonBackPic_Ariados
+    .2byte 0x0800, 0x00A8
+    .4byte kMonBackPic_Crobat
+    .2byte 0x0800, 0x00A9
+    .4byte kMonBackPic_Chinchou
+    .2byte 0x0800, 0x00AA
+    .4byte kMonBackPic_Lanturn
+    .2byte 0x0800, 0x00AB
+    .4byte kMonBackPic_Pichu
+    .2byte 0x0800, 0x00AC
+    .4byte kMonBackPic_Cleffa
+    .2byte 0x0800, 0x00AD
+    .4byte kMonBackPic_Igglybuff
+    .2byte 0x0800, 0x00AE
+    .4byte kMonBackPic_Togepi
+    .2byte 0x0800, 0x00AF
+    .4byte kMonBackPic_Togetic
+    .2byte 0x0800, 0x00B0
+    .4byte kMonBackPic_Natu
+    .2byte 0x0800, 0x00B1
+    .4byte kMonBackPic_Xatu
+    .2byte 0x0800, 0x00B2
+    .4byte kMonBackPic_Mareep
+    .2byte 0x0800, 0x00B3
+    .4byte kMonBackPic_Flaaffy
+    .2byte 0x0800, 0x00B4
+    .4byte kMonBackPic_Ampharos
+    .2byte 0x0800, 0x00B5
+    .4byte kMonBackPic_Bellossom
+    .2byte 0x0800, 0x00B6
+    .4byte kMonBackPic_Marill
+    .2byte 0x0800, 0x00B7
+    .4byte kMonBackPic_Azumarill
+    .2byte 0x0800, 0x00B8
+    .4byte kMonBackPic_Sudowoodo
+    .2byte 0x0800, 0x00B9
+    .4byte kMonBackPic_Politoed
+    .2byte 0x0800, 0x00BA
+    .4byte kMonBackPic_Hoppip
+    .2byte 0x0800, 0x00BB
+    .4byte kMonBackPic_Skiploom
+    .2byte 0x0800, 0x00BC
+    .4byte kMonBackPic_Jumpluff
+    .2byte 0x0800, 0x00BD
+    .4byte kMonBackPic_Aipom
+    .2byte 0x0800, 0x00BE
+    .4byte kMonBackPic_Sunkern
+    .2byte 0x0800, 0x00BF
+    .4byte kMonBackPic_Sunflora
+    .2byte 0x0800, 0x00C0
+    .4byte kMonBackPic_Yanma
+    .2byte 0x0800, 0x00C1
+    .4byte kMonBackPic_Wooper
+    .2byte 0x0800, 0x00C2
+    .4byte kMonBackPic_Quagsire
+    .2byte 0x0800, 0x00C3
+    .4byte kMonBackPic_Espeon
+    .2byte 0x0800, 0x00C4
+    .4byte kMonBackPic_Umbreon
+    .2byte 0x0800, 0x00C5
+    .4byte kMonBackPic_Murkrow
+    .2byte 0x0800, 0x00C6
+    .4byte kMonBackPic_Slowking
+    .2byte 0x0800, 0x00C7
+    .4byte kMonBackPic_Misdreavus
+    .2byte 0x0800, 0x00C8
+    .4byte kMonBackPic_Unown
+    .2byte 0x0800, 0x00C9
+    .4byte kMonBackPic_Wobbuffet
+    .2byte 0x0800, 0x00CA
+    .4byte kMonBackPic_Girafarig
+    .2byte 0x0800, 0x00CB
+    .4byte kMonBackPic_Pineco
+    .2byte 0x0800, 0x00CC
+    .4byte kMonBackPic_Forretress
+    .2byte 0x0800, 0x00CD
+    .4byte kMonBackPic_Dunsparce
+    .2byte 0x0800, 0x00CE
+    .4byte kMonBackPic_Gligar
+    .2byte 0x0800, 0x00CF
+    .4byte kMonBackPic_Steelix
+    .2byte 0x0800, 0x00D0
+    .4byte kMonBackPic_Snubbull
+    .2byte 0x0800, 0x00D1
+    .4byte kMonBackPic_Granbull
+    .2byte 0x0800, 0x00D2
+    .4byte kMonBackPic_Qwilfish
+    .2byte 0x0800, 0x00D3
+    .4byte kMonBackPic_Scizor
+    .2byte 0x0800, 0x00D4
+    .4byte kMonBackPic_Shuckle
+    .2byte 0x0800, 0x00D5
+    .4byte kMonBackPic_Heracross
+    .2byte 0x0800, 0x00D6
+    .4byte kMonBackPic_Sneasel
+    .2byte 0x0800, 0x00D7
+    .4byte kMonBackPic_Teddiursa
+    .2byte 0x0800, 0x00D8
+    .4byte kMonBackPic_Ursaring
+    .2byte 0x0800, 0x00D9
+    .4byte kMonBackPic_Slugma
+    .2byte 0x0800, 0x00DA
+    .4byte kMonBackPic_Magcargo
+    .2byte 0x0800, 0x00DB
+    .4byte kMonBackPic_Swinub
+    .2byte 0x0800, 0x00DC
+    .4byte kMonBackPic_Piloswine
+    .2byte 0x0800, 0x00DD
+    .4byte kMonBackPic_Corsola
+    .2byte 0x0800, 0x00DE
+    .4byte kMonBackPic_Remoraid
+    .2byte 0x0800, 0x00DF
+    .4byte kMonBackPic_Octillery
+    .2byte 0x0800, 0x00E0
+    .4byte kMonBackPic_Delibird
+    .2byte 0x0800, 0x00E1
+    .4byte kMonBackPic_Mantine
+    .2byte 0x0800, 0x00E2
+    .4byte kMonBackPic_Skarmory
+    .2byte 0x0800, 0x00E3
+    .4byte kMonBackPic_Houndour
+    .2byte 0x0800, 0x00E4
+    .4byte kMonBackPic_Houndoom
+    .2byte 0x0800, 0x00E5
+    .4byte kMonBackPic_Kingdra
+    .2byte 0x0800, 0x00E6
+    .4byte kMonBackPic_Phanpy
+    .2byte 0x0800, 0x00E7
+    .4byte kMonBackPic_Donphan
+    .2byte 0x0800, 0x00E8
+    .4byte kMonBackPic_Porygon2
+    .2byte 0x0800, 0x00E9
+    .4byte kMonBackPic_Stantler
+    .2byte 0x0800, 0x00EA
+    .4byte kMonBackPic_Smeargle
+    .2byte 0x0800, 0x00EB
+    .4byte kMonBackPic_Tyrogue
+    .2byte 0x0800, 0x00EC
+    .4byte kMonBackPic_Hitmontop
+    .2byte 0x0800, 0x00ED
+    .4byte kMonBackPic_Smoochum
+    .2byte 0x0800, 0x00EE
+    .4byte kMonBackPic_Elekid
+    .2byte 0x0800, 0x00EF
+    .4byte kMonBackPic_Magby
+    .2byte 0x0800, 0x00F0
+    .4byte kMonBackPic_Miltank
+    .2byte 0x0800, 0x00F1
+    .4byte kMonBackPic_Blissey
+    .2byte 0x0800, 0x00F2
+    .4byte kMonBackPic_Raikou
+    .2byte 0x0800, 0x00F3
+    .4byte kMonBackPic_Entei
+    .2byte 0x0800, 0x00F4
+    .4byte kMonBackPic_Suicune
+    .2byte 0x0800, 0x00F5
+    .4byte kMonBackPic_Larvitar
+    .2byte 0x0800, 0x00F6
+    .4byte kMonBackPic_Pupitar
+    .2byte 0x0800, 0x00F7
+    .4byte kMonBackPic_Tyranitar
+    .2byte 0x0800, 0x00F8
+    .4byte kMonBackPic_Lugia
+    .2byte 0x0800, 0x00F9
+    .4byte kMonBackPic_HoOh
+    .2byte 0x0800, 0x00FA
+    .4byte kMonBackPic_Celebi
+    .2byte 0x0800, 0x00FB
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x00FC
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x00FD
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x00FE
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x00FF
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0100
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0101
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0102
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0103
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0104
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0105
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0106
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0107
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0108
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0109
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x010A
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x010B
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x010C
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x010D
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x010E
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x010F
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0110
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0111
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0112
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0113
+    .4byte kMonBackPic_OldUnownB
+    .2byte 0x0800, 0x0114
+    .4byte kMonBackPic_Treecko
+    .2byte 0x0800, 0x0115
+    .4byte kMonBackPic_Grovyle
+    .2byte 0x0800, 0x0116
+    .4byte kMonBackPic_Sceptile
+    .2byte 0x0800, 0x0117
+    .4byte kMonBackPic_Torchic
+    .2byte 0x0800, 0x0118
+    .4byte kMonBackPic_Combusken
+    .2byte 0x0800, 0x0119
+    .4byte kMonBackPic_Blaziken
+    .2byte 0x0800, 0x011A
+    .4byte kMonBackPic_Mudkip
+    .2byte 0x0800, 0x011B
+    .4byte kMonBackPic_Marshtomp
+    .2byte 0x0800, 0x011C
+    .4byte kMonBackPic_Swampert
+    .2byte 0x0800, 0x011D
+    .4byte kMonBackPic_Poochyena
+    .2byte 0x0800, 0x011E
+    .4byte kMonBackPic_Mightyena
+    .2byte 0x0800, 0x011F
+    .4byte kMonBackPic_Zigzagoon
+    .2byte 0x0800, 0x0120
+    .4byte kMonBackPic_Linoone
+    .2byte 0x0800, 0x0121
+    .4byte kMonBackPic_Wurmple
+    .2byte 0x0800, 0x0122
+    .4byte kMonBackPic_Silcoon
+    .2byte 0x0800, 0x0123
+    .4byte kMonBackPic_Beautifly
+    .2byte 0x0800, 0x0124
+    .4byte kMonBackPic_Cascoon
+    .2byte 0x0800, 0x0125
+    .4byte kMonBackPic_Dustox
+    .2byte 0x0800, 0x0126
+    .4byte kMonBackPic_Lotad
+    .2byte 0x0800, 0x0127
+    .4byte kMonBackPic_Lombre
+    .2byte 0x0800, 0x0128
+    .4byte kMonBackPic_Ludicolo
+    .2byte 0x0800, 0x0129
+    .4byte kMonBackPic_Seedot
+    .2byte 0x0800, 0x012A
+    .4byte kMonBackPic_Nuzleaf
+    .2byte 0x0800, 0x012B
+    .4byte kMonBackPic_Shiftry
+    .2byte 0x0800, 0x012C
+    .4byte kMonBackPic_Nincada
+    .2byte 0x0800, 0x012D
+    .4byte kMonBackPic_Ninjask
+    .2byte 0x0800, 0x012E
+    .4byte kMonBackPic_Shedinja
+    .2byte 0x0800, 0x012F
+    .4byte kMonBackPic_Taillow
+    .2byte 0x0800, 0x0130
+    .4byte kMonBackPic_Swellow
+    .2byte 0x0800, 0x0131
+    .4byte kMonBackPic_Shroomish
+    .2byte 0x0800, 0x0132
+    .4byte kMonBackPic_Breloom
+    .2byte 0x0800, 0x0133
+    .4byte kMonBackPic_Spinda
+    .2byte 0x0800, 0x0134
+    .4byte kMonBackPic_Wingull
+    .2byte 0x0800, 0x0135
+    .4byte kMonBackPic_Pelipper
+    .2byte 0x0800, 0x0136
+    .4byte kMonBackPic_Surskit
+    .2byte 0x0800, 0x0137
+    .4byte kMonBackPic_Masquerain
+    .2byte 0x0800, 0x0138
+    .4byte kMonBackPic_Wailmer
+    .2byte 0x0800, 0x0139
+    .4byte kMonBackPic_Wailord
+    .2byte 0x0800, 0x013A
+    .4byte kMonBackPic_Skitty
+    .2byte 0x0800, 0x013B
+    .4byte kMonBackPic_Delcatty
+    .2byte 0x0800, 0x013C
+    .4byte kMonBackPic_Kecleon
+    .2byte 0x0800, 0x013D
+    .4byte kMonBackPic_Baltoy
+    .2byte 0x0800, 0x013E
+    .4byte kMonBackPic_Claydol
+    .2byte 0x0800, 0x013F
+    .4byte kMonBackPic_Nosepass
+    .2byte 0x0800, 0x0140
+    .4byte kMonBackPic_Torkoal
+    .2byte 0x0800, 0x0141
+    .4byte kMonBackPic_Sableye
+    .2byte 0x0800, 0x0142
+    .4byte kMonBackPic_Barboach
+    .2byte 0x0800, 0x0143
+    .4byte kMonBackPic_Whiscash
+    .2byte 0x0800, 0x0144
+    .4byte kMonBackPic_Luvdisc
+    .2byte 0x0800, 0x0145
+    .4byte kMonBackPic_Corphish
+    .2byte 0x0800, 0x0146
+    .4byte kMonBackPic_Crawdaunt
+    .2byte 0x0800, 0x0147
+    .4byte kMonBackPic_Feebas
+    .2byte 0x0800, 0x0148
+    .4byte kMonBackPic_Milotic
+    .2byte 0x0800, 0x0149
+    .4byte kMonBackPic_Carvanha
+    .2byte 0x0800, 0x014A
+    .4byte kMonBackPic_Sharpedo
+    .2byte 0x0800, 0x014B
+    .4byte kMonBackPic_Trapinch
+    .2byte 0x0800, 0x014C
+    .4byte kMonBackPic_Vibrava
+    .2byte 0x0800, 0x014D
+    .4byte kMonBackPic_Flygon
+    .2byte 0x0800, 0x014E
+    .4byte kMonBackPic_Makuhita
+    .2byte 0x0800, 0x014F
+    .4byte kMonBackPic_Hariyama
+    .2byte 0x0800, 0x0150
+    .4byte kMonBackPic_Electrike
+    .2byte 0x0800, 0x0151
+    .4byte kMonBackPic_Manectric
+    .2byte 0x0800, 0x0152
+    .4byte kMonBackPic_Numel
+    .2byte 0x0800, 0x0153
+    .4byte kMonBackPic_Camerupt
+    .2byte 0x0800, 0x0154
+    .4byte kMonBackPic_Spheal
+    .2byte 0x0800, 0x0155
+    .4byte kMonBackPic_Sealeo
+    .2byte 0x0800, 0x0156
+    .4byte kMonBackPic_Walrein
+    .2byte 0x0800, 0x0157
+    .4byte kMonBackPic_Cacnea
+    .2byte 0x0800, 0x0158
+    .4byte kMonBackPic_Cacturne
+    .2byte 0x0800, 0x0159
+    .4byte kMonBackPic_Snorunt
+    .2byte 0x0800, 0x015A
+    .4byte kMonBackPic_Glalie
+    .2byte 0x0800, 0x015B
+    .4byte kMonBackPic_Lunatone
+    .2byte 0x0800, 0x015C
+    .4byte kMonBackPic_Solrock
+    .2byte 0x0800, 0x015D
+    .4byte kMonBackPic_Azurill
+    .2byte 0x0800, 0x015E
+    .4byte kMonBackPic_Spoink
+    .2byte 0x0800, 0x015F
+    .4byte kMonBackPic_Grumpig
+    .2byte 0x0800, 0x0160
+    .4byte kMonBackPic_Plusle
+    .2byte 0x0800, 0x0161
+    .4byte kMonBackPic_Minun
+    .2byte 0x0800, 0x0162
+    .4byte kMonBackPic_Mawile
+    .2byte 0x0800, 0x0163
+    .4byte kMonBackPic_Meditite
+    .2byte 0x0800, 0x0164
+    .4byte kMonBackPic_Medicham
+    .2byte 0x0800, 0x0165
+    .4byte kMonBackPic_Swablu
+    .2byte 0x0800, 0x0166
+    .4byte kMonBackPic_Altaria
+    .2byte 0x0800, 0x0167
+    .4byte kMonBackPic_Wynaut
+    .2byte 0x0800, 0x0168
+    .4byte kMonBackPic_Duskull
+    .2byte 0x0800, 0x0169
+    .4byte kMonBackPic_Dusclops
+    .2byte 0x0800, 0x016A
+    .4byte kMonBackPic_Roselia
+    .2byte 0x0800, 0x016B
+    .4byte kMonBackPic_Slakoth
+    .2byte 0x0800, 0x016C
+    .4byte kMonBackPic_Vigoroth
+    .2byte 0x0800, 0x016D
+    .4byte kMonBackPic_Slaking
+    .2byte 0x0800, 0x016E
+    .4byte kMonBackPic_Gulpin
+    .2byte 0x0800, 0x016F
+    .4byte kMonBackPic_Swalot
+    .2byte 0x0800, 0x0170
+    .4byte kMonBackPic_Tropius
+    .2byte 0x0800, 0x0171
+    .4byte kMonBackPic_Whismur
+    .2byte 0x0800, 0x0172
+    .4byte kMonBackPic_Loudred
+    .2byte 0x0800, 0x0173
+    .4byte kMonBackPic_Exploud
+    .2byte 0x0800, 0x0174
+    .4byte kMonBackPic_Clamperl
+    .2byte 0x0800, 0x0175
+    .4byte kMonBackPic_Huntail
+    .2byte 0x0800, 0x0176
+    .4byte kMonBackPic_Gorebyss
+    .2byte 0x0800, 0x0177
+    .4byte kMonBackPic_Absol
+    .2byte 0x0800, 0x0178
+    .4byte kMonBackPic_Shuppet
+    .2byte 0x0800, 0x0179
+    .4byte kMonBackPic_Banette
+    .2byte 0x0800, 0x017A
+    .4byte kMonBackPic_Seviper
+    .2byte 0x0800, 0x017B
+    .4byte kMonBackPic_Zangoose
+    .2byte 0x0800, 0x017C
+    .4byte kMonBackPic_Relicanth
+    .2byte 0x0800, 0x017D
+    .4byte kMonBackPic_Aron
+    .2byte 0x0800, 0x017E
+    .4byte kMonBackPic_Lairon
+    .2byte 0x0800, 0x017F
+    .4byte kMonBackPic_Aggron
+    .2byte 0x0800, 0x0180
+    .4byte kMonBackPic_Castform
+    .2byte 0x0800, 0x0181
+    .4byte kMonBackPic_Volbeat
+    .2byte 0x0800, 0x0182
+    .4byte kMonBackPic_Illumise
+    .2byte 0x0800, 0x0183
+    .4byte kMonBackPic_Lileep
+    .2byte 0x0800, 0x0184
+    .4byte kMonBackPic_Cradily
+    .2byte 0x0800, 0x0185
+    .4byte kMonBackPic_Anorith
+    .2byte 0x0800, 0x0186
+    .4byte kMonBackPic_Armaldo
+    .2byte 0x0800, 0x0187
+    .4byte kMonBackPic_Ralts
+    .2byte 0x0800, 0x0188
+    .4byte kMonBackPic_Kirlia
+    .2byte 0x0800, 0x0189
+    .4byte kMonBackPic_Gardevoir
+    .2byte 0x0800, 0x018A
+    .4byte kMonBackPic_Bagon
+    .2byte 0x0800, 0x018B
+    .4byte kMonBackPic_Shelgon
+    .2byte 0x0800, 0x018C
+    .4byte kMonBackPic_Salamence
+    .2byte 0x0800, 0x018D
+    .4byte kMonBackPic_Beldum
+    .2byte 0x0800, 0x018E
+    .4byte kMonBackPic_Metang
+    .2byte 0x0800, 0x018F
+    .4byte kMonBackPic_Metagross
+    .2byte 0x0800, 0x0190
+    .4byte kMonBackPic_Regirock
+    .2byte 0x0800, 0x0191
+    .4byte kMonBackPic_Regice
+    .2byte 0x0800, 0x0192
+    .4byte kMonBackPic_Registeel
+    .2byte 0x0800, 0x0193
+    .4byte kMonBackPic_Kyogre
+    .2byte 0x0800, 0x0194
+    .4byte kMonBackPic_Groudon
+    .2byte 0x0800, 0x0195
+    .4byte kMonBackPic_Rayquaza
+    .2byte 0x0800, 0x0196
+    .4byte kMonBackPic_Latias
+    .2byte 0x0800, 0x0197
+    .4byte kMonBackPic_Latios
+    .2byte 0x0800, 0x0198
+    .4byte kMonBackPic_Jirachi
+    .2byte 0x0800, 0x0199
+    .4byte kMonBackPic_Deoxys
+    .2byte 0x0800, 0x019A
+    .4byte kMonBackPic_Chimecho
+    .2byte 0x0800, 0x019B
+    .4byte kMonFrontPic_Egg
+    .2byte 0x0800, 0x019C
+    .4byte kMonBackPic_UnownB
+    .2byte 0x0800, 0x019D
+    .4byte kMonBackPic_UnownC
+    .2byte 0x0800, 0x019E
+    .4byte kMonBackPic_UnownD
+    .2byte 0x0800, 0x019F
+    .4byte kMonBackPic_UnownE
+    .2byte 0x0800, 0x01A0
+    .4byte kMonBackPic_UnownF
+    .2byte 0x0800, 0x01A1
+    .4byte kMonBackPic_UnownG
+    .2byte 0x0800, 0x01A2
+    .4byte kMonBackPic_UnownH
+    .2byte 0x0800, 0x01A3
+    .4byte kMonBackPic_UnownI
+    .2byte 0x0800, 0x01A4
+    .4byte kMonBackPic_UnownJ
+    .2byte 0x0800, 0x01A5
+    .4byte kMonBackPic_UnownK
+    .2byte 0x0800, 0x01A6
+    .4byte kMonBackPic_UnownL
+    .2byte 0x0800, 0x01A7
+    .4byte kMonBackPic_UnownM
+    .2byte 0x0800, 0x01A8
+    .4byte kMonBackPic_UnownN
+    .2byte 0x0800, 0x01A9
+    .4byte kMonBackPic_UnownO
+    .2byte 0x0800, 0x01AA
+    .4byte kMonBackPic_UnownP
+    .2byte 0x0800, 0x01AB
+    .4byte kMonBackPic_UnownQ
+    .2byte 0x0800, 0x01AC
+    .4byte kMonBackPic_UnownR
+    .2byte 0x0800, 0x01AD
+    .4byte kMonBackPic_UnownS
+    .2byte 0x0800, 0x01AE
+    .4byte kMonBackPic_UnownT
+    .2byte 0x0800, 0x01AF
+    .4byte kMonBackPic_UnownU
+    .2byte 0x0800, 0x01B0
+    .4byte kMonBackPic_UnownV
+    .2byte 0x0800, 0x01B1
+    .4byte kMonBackPic_UnownW
+    .2byte 0x0800, 0x01B2
+    .4byte kMonBackPic_UnownX
+    .2byte 0x0800, 0x01B3
+    .4byte kMonBackPic_UnownY
+    .2byte 0x0800, 0x01B4
+    .4byte kMonBackPic_UnownZ
+    .2byte 0x0800, 0x01B5
+    .4byte kMonBackPic_UnownEmark
+    .2byte 0x0800, 0x01B6
+    .4byte kMonBackPic_UnownQmark
+    .2byte 0x0800, 0x01B7
 
-    .global UNK_823730C
-UNK_823730C: @ 823730C
-    .incbin "baserom.gba", 0x23730C, 0xE8
+kMonPaletteTable:: @ 823730C
+    .4byte kUnkPal_8D00BD0
+    .2byte 0x0000, 0x0000
+    .4byte kMonPalette_Bulbasaur
+    .2byte 0x0001, 0x0000
+    .4byte kMonPalette_Ivysaur
+    .2byte 0x0002, 0x0000
+    .4byte kMonPalette_Venusaur
+    .2byte 0x0003, 0x0000
+    .4byte kMonPalette_Charmander
+    .2byte 0x0004, 0x0000
+    .4byte kMonPalette_Charmeleon
+    .2byte 0x0005, 0x0000
+    .4byte kMonPalette_Charizard
+    .2byte 0x0006, 0x0000
+    .4byte kMonPalette_Squirtle
+    .2byte 0x0007, 0x0000
+    .4byte kMonPalette_Wartortle
+    .2byte 0x0008, 0x0000
+    .4byte kMonPalette_Blastoise
+    .2byte 0x0009, 0x0000
+    .4byte kMonPalette_Caterpie
+    .2byte 0x000A, 0x0000
+    .4byte kMonPalette_Metapod
+    .2byte 0x000B, 0x0000
+    .4byte kMonPalette_Butterfree
+    .2byte 0x000C, 0x0000
+    .4byte kMonPalette_Weedle
+    .2byte 0x000D, 0x0000
+    .4byte kMonPalette_Kakuna
+    .2byte 0x000E, 0x0000
+    .4byte kMonPalette_Beedrill
+    .2byte 0x000F, 0x0000
+    .4byte kMonPalette_Pidgey
+    .2byte 0x0010, 0x0000
+    .4byte kMonPalette_Pidgeotto
+    .2byte 0x0011, 0x0000
+    .4byte kMonPalette_Pidgeot
+    .2byte 0x0012, 0x0000
+    .4byte kMonPalette_Rattata
+    .2byte 0x0013, 0x0000
+    .4byte kMonPalette_Raticate
+    .2byte 0x0014, 0x0000
+    .4byte kMonPalette_Spearow
+    .2byte 0x0015, 0x0000
+    .4byte kMonPalette_Fearow
+    .2byte 0x0016, 0x0000
+    .4byte kMonPalette_Ekans
+    .2byte 0x0017, 0x0000
+    .4byte kMonPalette_Arbok
+    .2byte 0x0018, 0x0000
+    .4byte kMonPalette_Pikachu
+    .2byte 0x0019, 0x0000
+    .4byte kMonPalette_Raichu
+    .2byte 0x001A, 0x0000
+    .4byte kMonPalette_Sandshrew
+    .2byte 0x001B, 0x0000
+    .4byte kMonPalette_Sandslash
+    .2byte 0x001C, 0x0000
+    .4byte kMonPalette_NidoranF
+    .2byte 0x001D, 0x0000
+    .4byte kMonPalette_Nidorina
+    .2byte 0x001E, 0x0000
+    .4byte kMonPalette_Nidoqueen
+    .2byte 0x001F, 0x0000
+    .4byte kMonPalette_NidoranM
+    .2byte 0x0020, 0x0000
+    .4byte kMonPalette_Nidorino
+    .2byte 0x0021, 0x0000
+    .4byte kMonPalette_Nidoking
+    .2byte 0x0022, 0x0000
+    .4byte kMonPalette_Clefairy
+    .2byte 0x0023, 0x0000
+    .4byte kMonPalette_Clefable
+    .2byte 0x0024, 0x0000
+    .4byte kMonPalette_Vulpix
+    .2byte 0x0025, 0x0000
+    .4byte kMonPalette_Ninetales
+    .2byte 0x0026, 0x0000
+    .4byte kMonPalette_Jigglypuff
+    .2byte 0x0027, 0x0000
+    .4byte kMonPalette_Wigglytuff
+    .2byte 0x0028, 0x0000
+    .4byte kMonPalette_Zubat
+    .2byte 0x0029, 0x0000
+    .4byte kMonPalette_Golbat
+    .2byte 0x002A, 0x0000
+    .4byte kMonPalette_Oddish
+    .2byte 0x002B, 0x0000
+    .4byte kMonPalette_Gloom
+    .2byte 0x002C, 0x0000
+    .4byte kMonPalette_Vileplume
+    .2byte 0x002D, 0x0000
+    .4byte kMonPalette_Paras
+    .2byte 0x002E, 0x0000
+    .4byte kMonPalette_Parasect
+    .2byte 0x002F, 0x0000
+    .4byte kMonPalette_Venonat
+    .2byte 0x0030, 0x0000
+    .4byte kMonPalette_Venomoth
+    .2byte 0x0031, 0x0000
+    .4byte kMonPalette_Diglett
+    .2byte 0x0032, 0x0000
+    .4byte kMonPalette_Dugtrio
+    .2byte 0x0033, 0x0000
+    .4byte kMonPalette_Meowth
+    .2byte 0x0034, 0x0000
+    .4byte kMonPalette_Persian
+    .2byte 0x0035, 0x0000
+    .4byte kMonPalette_Psyduck
+    .2byte 0x0036, 0x0000
+    .4byte kMonPalette_Golduck
+    .2byte 0x0037, 0x0000
+    .4byte kMonPalette_Mankey
+    .2byte 0x0038, 0x0000
+    .4byte kMonPalette_Primeape
+    .2byte 0x0039, 0x0000
+    .4byte kMonPalette_Growlithe
+    .2byte 0x003A, 0x0000
+    .4byte kMonPalette_Arcanine
+    .2byte 0x003B, 0x0000
+    .4byte kMonPalette_Poliwag
+    .2byte 0x003C, 0x0000
+    .4byte kMonPalette_Poliwhirl
+    .2byte 0x003D, 0x0000
+    .4byte kMonPalette_Poliwrath
+    .2byte 0x003E, 0x0000
+    .4byte kMonPalette_Abra
+    .2byte 0x003F, 0x0000
+    .4byte kMonPalette_Kadabra
+    .2byte 0x0040, 0x0000
+    .4byte kMonPalette_Alakazam
+    .2byte 0x0041, 0x0000
+    .4byte kMonPalette_Machop
+    .2byte 0x0042, 0x0000
+    .4byte kMonPalette_Machoke
+    .2byte 0x0043, 0x0000
+    .4byte kMonPalette_Machamp
+    .2byte 0x0044, 0x0000
+    .4byte kMonPalette_Bellsprout
+    .2byte 0x0045, 0x0000
+    .4byte kMonPalette_Weepinbell
+    .2byte 0x0046, 0x0000
+    .4byte kMonPalette_Victreebel
+    .2byte 0x0047, 0x0000
+    .4byte kMonPalette_Tentacool
+    .2byte 0x0048, 0x0000
+    .4byte kMonPalette_Tentacruel
+    .2byte 0x0049, 0x0000
+    .4byte kMonPalette_Geodude
+    .2byte 0x004A, 0x0000
+    .4byte kMonPalette_Graveler
+    .2byte 0x004B, 0x0000
+    .4byte kMonPalette_Golem
+    .2byte 0x004C, 0x0000
+    .4byte kMonPalette_Ponyta
+    .2byte 0x004D, 0x0000
+    .4byte kMonPalette_Rapidash
+    .2byte 0x004E, 0x0000
+    .4byte kMonPalette_Slowpoke
+    .2byte 0x004F, 0x0000
+    .4byte kMonPalette_Slowbro
+    .2byte 0x0050, 0x0000
+    .4byte kMonPalette_Magnemite
+    .2byte 0x0051, 0x0000
+    .4byte kMonPalette_Magneton
+    .2byte 0x0052, 0x0000
+    .4byte kMonPalette_Farfetchd
+    .2byte 0x0053, 0x0000
+    .4byte kMonPalette_Doduo
+    .2byte 0x0054, 0x0000
+    .4byte kMonPalette_Dodrio
+    .2byte 0x0055, 0x0000
+    .4byte kMonPalette_Seel
+    .2byte 0x0056, 0x0000
+    .4byte kMonPalette_Dewgong
+    .2byte 0x0057, 0x0000
+    .4byte kMonPalette_Grimer
+    .2byte 0x0058, 0x0000
+    .4byte kMonPalette_Muk
+    .2byte 0x0059, 0x0000
+    .4byte kMonPalette_Shellder
+    .2byte 0x005A, 0x0000
+    .4byte kMonPalette_Cloyster
+    .2byte 0x005B, 0x0000
+    .4byte kMonPalette_Gastly
+    .2byte 0x005C, 0x0000
+    .4byte kMonPalette_Haunter
+    .2byte 0x005D, 0x0000
+    .4byte kMonPalette_Gengar
+    .2byte 0x005E, 0x0000
+    .4byte kMonPalette_Onix
+    .2byte 0x005F, 0x0000
+    .4byte kMonPalette_Drowzee
+    .2byte 0x0060, 0x0000
+    .4byte kMonPalette_Hypno
+    .2byte 0x0061, 0x0000
+    .4byte kMonPalette_Krabby
+    .2byte 0x0062, 0x0000
+    .4byte kMonPalette_Kingler
+    .2byte 0x0063, 0x0000
+    .4byte kMonPalette_Voltorb
+    .2byte 0x0064, 0x0000
+    .4byte kMonPalette_Electrode
+    .2byte 0x0065, 0x0000
+    .4byte kMonPalette_Exeggcute
+    .2byte 0x0066, 0x0000
+    .4byte kMonPalette_Exeggutor
+    .2byte 0x0067, 0x0000
+    .4byte kMonPalette_Cubone
+    .2byte 0x0068, 0x0000
+    .4byte kMonPalette_Marowak
+    .2byte 0x0069, 0x0000
+    .4byte kMonPalette_Hitmonlee
+    .2byte 0x006A, 0x0000
+    .4byte kMonPalette_Hitmonchan
+    .2byte 0x006B, 0x0000
+    .4byte kMonPalette_Lickitung
+    .2byte 0x006C, 0x0000
+    .4byte kMonPalette_Koffing
+    .2byte 0x006D, 0x0000
+    .4byte kMonPalette_Weezing
+    .2byte 0x006E, 0x0000
+    .4byte kMonPalette_Rhyhorn
+    .2byte 0x006F, 0x0000
+    .4byte kMonPalette_Rhydon
+    .2byte 0x0070, 0x0000
+    .4byte kMonPalette_Chansey
+    .2byte 0x0071, 0x0000
+    .4byte kMonPalette_Tangela
+    .2byte 0x0072, 0x0000
+    .4byte kMonPalette_Kangaskhan
+    .2byte 0x0073, 0x0000
+    .4byte kMonPalette_Horsea
+    .2byte 0x0074, 0x0000
+    .4byte kMonPalette_Seadra
+    .2byte 0x0075, 0x0000
+    .4byte kMonPalette_Goldeen
+    .2byte 0x0076, 0x0000
+    .4byte kMonPalette_Seaking
+    .2byte 0x0077, 0x0000
+    .4byte kMonPalette_Staryu
+    .2byte 0x0078, 0x0000
+    .4byte kMonPalette_Starmie
+    .2byte 0x0079, 0x0000
+    .4byte kMonPalette_MrMime
+    .2byte 0x007A, 0x0000
+    .4byte kMonPalette_Scyther
+    .2byte 0x007B, 0x0000
+    .4byte kMonPalette_Jynx
+    .2byte 0x007C, 0x0000
+    .4byte kMonPalette_Electabuzz
+    .2byte 0x007D, 0x0000
+    .4byte kMonPalette_Magmar
+    .2byte 0x007E, 0x0000
+    .4byte kMonPalette_Pinsir
+    .2byte 0x007F, 0x0000
+    .4byte kMonPalette_Tauros
+    .2byte 0x0080, 0x0000
+    .4byte kMonPalette_Magikarp
+    .2byte 0x0081, 0x0000
+    .4byte kMonPalette_Gyarados
+    .2byte 0x0082, 0x0000
+    .4byte kMonPalette_Lapras
+    .2byte 0x0083, 0x0000
+    .4byte kMonPalette_Ditto
+    .2byte 0x0084, 0x0000
+    .4byte kMonPalette_Eevee
+    .2byte 0x0085, 0x0000
+    .4byte kMonPalette_Vaporeon
+    .2byte 0x0086, 0x0000
+    .4byte kMonPalette_Jolteon
+    .2byte 0x0087, 0x0000
+    .4byte kMonPalette_Flareon
+    .2byte 0x0088, 0x0000
+    .4byte kMonPalette_Porygon
+    .2byte 0x0089, 0x0000
+    .4byte kMonPalette_Omanyte
+    .2byte 0x008A, 0x0000
+    .4byte kMonPalette_Omastar
+    .2byte 0x008B, 0x0000
+    .4byte kMonPalette_Kabuto
+    .2byte 0x008C, 0x0000
+    .4byte kMonPalette_Kabutops
+    .2byte 0x008D, 0x0000
+    .4byte kMonPalette_Aerodactyl
+    .2byte 0x008E, 0x0000
+    .4byte kMonPalette_Snorlax
+    .2byte 0x008F, 0x0000
+    .4byte kMonPalette_Articuno
+    .2byte 0x0090, 0x0000
+    .4byte kMonPalette_Zapdos
+    .2byte 0x0091, 0x0000
+    .4byte kMonPalette_Moltres
+    .2byte 0x0092, 0x0000
+    .4byte kMonPalette_Dratini
+    .2byte 0x0093, 0x0000
+    .4byte kMonPalette_Dragonair
+    .2byte 0x0094, 0x0000
+    .4byte kMonPalette_Dragonite
+    .2byte 0x0095, 0x0000
+    .4byte kMonPalette_Mewtwo
+    .2byte 0x0096, 0x0000
+    .4byte kMonPalette_Mew
+    .2byte 0x0097, 0x0000
+    .4byte kMonPalette_Chikorita
+    .2byte 0x0098, 0x0000
+    .4byte kMonPalette_Bayleef
+    .2byte 0x0099, 0x0000
+    .4byte kMonPalette_Meganium
+    .2byte 0x009A, 0x0000
+    .4byte kMonPalette_Cyndaquil
+    .2byte 0x009B, 0x0000
+    .4byte kMonPalette_Quilava
+    .2byte 0x009C, 0x0000
+    .4byte kMonPalette_Typhlosion
+    .2byte 0x009D, 0x0000
+    .4byte kMonPalette_Totodile
+    .2byte 0x009E, 0x0000
+    .4byte kMonPalette_Croconaw
+    .2byte 0x009F, 0x0000
+    .4byte kMonPalette_Feraligatr
+    .2byte 0x00A0, 0x0000
+    .4byte kMonPalette_Sentret
+    .2byte 0x00A1, 0x0000
+    .4byte kMonPalette_Furret
+    .2byte 0x00A2, 0x0000
+    .4byte kMonPalette_Hoothoot
+    .2byte 0x00A3, 0x0000
+    .4byte kMonPalette_Noctowl
+    .2byte 0x00A4, 0x0000
+    .4byte kMonPalette_Ledyba
+    .2byte 0x00A5, 0x0000
+    .4byte kMonPalette_Ledian
+    .2byte 0x00A6, 0x0000
+    .4byte kMonPalette_Spinarak
+    .2byte 0x00A7, 0x0000
+    .4byte kMonPalette_Ariados
+    .2byte 0x00A8, 0x0000
+    .4byte kMonPalette_Crobat
+    .2byte 0x00A9, 0x0000
+    .4byte kMonPalette_Chinchou
+    .2byte 0x00AA, 0x0000
+    .4byte kMonPalette_Lanturn
+    .2byte 0x00AB, 0x0000
+    .4byte kMonPalette_Pichu
+    .2byte 0x00AC, 0x0000
+    .4byte kMonPalette_Cleffa
+    .2byte 0x00AD, 0x0000
+    .4byte kMonPalette_Igglybuff
+    .2byte 0x00AE, 0x0000
+    .4byte kMonPalette_Togepi
+    .2byte 0x00AF, 0x0000
+    .4byte kMonPalette_Togetic
+    .2byte 0x00B0, 0x0000
+    .4byte kMonPalette_Natu
+    .2byte 0x00B1, 0x0000
+    .4byte kMonPalette_Xatu
+    .2byte 0x00B2, 0x0000
+    .4byte kMonPalette_Mareep
+    .2byte 0x00B3, 0x0000
+    .4byte kMonPalette_Flaaffy
+    .2byte 0x00B4, 0x0000
+    .4byte kMonPalette_Ampharos
+    .2byte 0x00B5, 0x0000
+    .4byte kMonPalette_Bellossom
+    .2byte 0x00B6, 0x0000
+    .4byte kMonPalette_Marill
+    .2byte 0x00B7, 0x0000
+    .4byte kMonPalette_Azumarill
+    .2byte 0x00B8, 0x0000
+    .4byte kMonPalette_Sudowoodo
+    .2byte 0x00B9, 0x0000
+    .4byte kMonPalette_Politoed
+    .2byte 0x00BA, 0x0000
+    .4byte kMonPalette_Hoppip
+    .2byte 0x00BB, 0x0000
+    .4byte kMonPalette_Skiploom
+    .2byte 0x00BC, 0x0000
+    .4byte kMonPalette_Jumpluff
+    .2byte 0x00BD, 0x0000
+    .4byte kMonPalette_Aipom
+    .2byte 0x00BE, 0x0000
+    .4byte kMonPalette_Sunkern
+    .2byte 0x00BF, 0x0000
+    .4byte kMonPalette_Sunflora
+    .2byte 0x00C0, 0x0000
+    .4byte kMonPalette_Yanma
+    .2byte 0x00C1, 0x0000
+    .4byte kMonPalette_Wooper
+    .2byte 0x00C2, 0x0000
+    .4byte kMonPalette_Quagsire
+    .2byte 0x00C3, 0x0000
+    .4byte kMonPalette_Espeon
+    .2byte 0x00C4, 0x0000
+    .4byte kMonPalette_Umbreon
+    .2byte 0x00C5, 0x0000
+    .4byte kMonPalette_Murkrow
+    .2byte 0x00C6, 0x0000
+    .4byte kMonPalette_Slowking
+    .2byte 0x00C7, 0x0000
+    .4byte kMonPalette_Misdreavus
+    .2byte 0x00C8, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x00C9, 0x0000
+    .4byte kMonPalette_Wobbuffet
+    .2byte 0x00CA, 0x0000
+    .4byte kMonPalette_Girafarig
+    .2byte 0x00CB, 0x0000
+    .4byte kMonPalette_Pineco
+    .2byte 0x00CC, 0x0000
+    .4byte kMonPalette_Forretress
+    .2byte 0x00CD, 0x0000
+    .4byte kMonPalette_Dunsparce
+    .2byte 0x00CE, 0x0000
+    .4byte kMonPalette_Gligar
+    .2byte 0x00CF, 0x0000
+    .4byte kMonPalette_Steelix
+    .2byte 0x00D0, 0x0000
+    .4byte kMonPalette_Snubbull
+    .2byte 0x00D1, 0x0000
+    .4byte kMonPalette_Granbull
+    .2byte 0x00D2, 0x0000
+    .4byte kMonPalette_Qwilfish
+    .2byte 0x00D3, 0x0000
+    .4byte kMonPalette_Scizor
+    .2byte 0x00D4, 0x0000
+    .4byte kMonPalette_Shuckle
+    .2byte 0x00D5, 0x0000
+    .4byte kMonPalette_Heracross
+    .2byte 0x00D6, 0x0000
+    .4byte kMonPalette_Sneasel
+    .2byte 0x00D7, 0x0000
+    .4byte kMonPalette_Teddiursa
+    .2byte 0x00D8, 0x0000
+    .4byte kMonPalette_Ursaring
+    .2byte 0x00D9, 0x0000
+    .4byte kMonPalette_Slugma
+    .2byte 0x00DA, 0x0000
+    .4byte kMonPalette_Magcargo
+    .2byte 0x00DB, 0x0000
+    .4byte kMonPalette_Swinub
+    .2byte 0x00DC, 0x0000
+    .4byte kMonPalette_Piloswine
+    .2byte 0x00DD, 0x0000
+    .4byte kMonPalette_Corsola
+    .2byte 0x00DE, 0x0000
+    .4byte kMonPalette_Remoraid
+    .2byte 0x00DF, 0x0000
+    .4byte kMonPalette_Octillery
+    .2byte 0x00E0, 0x0000
+    .4byte kMonPalette_Delibird
+    .2byte 0x00E1, 0x0000
+    .4byte kMonPalette_Mantine
+    .2byte 0x00E2, 0x0000
+    .4byte kMonPalette_Skarmory
+    .2byte 0x00E3, 0x0000
+    .4byte kMonPalette_Houndour
+    .2byte 0x00E4, 0x0000
+    .4byte kMonPalette_Houndoom
+    .2byte 0x00E5, 0x0000
+    .4byte kMonPalette_Kingdra
+    .2byte 0x00E6, 0x0000
+    .4byte kMonPalette_Phanpy
+    .2byte 0x00E7, 0x0000
+    .4byte kMonPalette_Donphan
+    .2byte 0x00E8, 0x0000
+    .4byte kMonPalette_Porygon2
+    .2byte 0x00E9, 0x0000
+    .4byte kMonPalette_Stantler
+    .2byte 0x00EA, 0x0000
+    .4byte kMonPalette_Smeargle
+    .2byte 0x00EB, 0x0000
+    .4byte kMonPalette_Tyrogue
+    .2byte 0x00EC, 0x0000
+    .4byte kMonPalette_Hitmontop
+    .2byte 0x00ED, 0x0000
+    .4byte kMonPalette_Smoochum
+    .2byte 0x00EE, 0x0000
+    .4byte kMonPalette_Elekid
+    .2byte 0x00EF, 0x0000
+    .4byte kMonPalette_Magby
+    .2byte 0x00F0, 0x0000
+    .4byte kMonPalette_Miltank
+    .2byte 0x00F1, 0x0000
+    .4byte kMonPalette_Blissey
+    .2byte 0x00F2, 0x0000
+    .4byte kMonPalette_Raikou
+    .2byte 0x00F3, 0x0000
+    .4byte kMonPalette_Entei
+    .2byte 0x00F4, 0x0000
+    .4byte kMonPalette_Suicune
+    .2byte 0x00F5, 0x0000
+    .4byte kMonPalette_Larvitar
+    .2byte 0x00F6, 0x0000
+    .4byte kMonPalette_Pupitar
+    .2byte 0x00F7, 0x0000
+    .4byte kMonPalette_Tyranitar
+    .2byte 0x00F8, 0x0000
+    .4byte kMonPalette_Lugia
+    .2byte 0x00F9, 0x0000
+    .4byte kMonPalette_HoOh
+    .2byte 0x00FA, 0x0000
+    .4byte kMonPalette_Celebi
+    .2byte 0x00FB, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x00FC, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x00FD, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x00FE, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x00FF, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0100, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0101, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0102, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0103, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0104, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0105, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0106, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0107, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0108, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0109, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x010A, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x010B, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x010C, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x010D, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x010E, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x010F, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0110, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0111, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0112, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0113, 0x0000
+    .4byte kMonPalette_OldUnownB
+    .2byte 0x0114, 0x0000
+    .4byte kMonPalette_Treecko
+    .2byte 0x0115, 0x0000
+    .4byte kMonPalette_Grovyle
+    .2byte 0x0116, 0x0000
+    .4byte kMonPalette_Sceptile
+    .2byte 0x0117, 0x0000
+    .4byte kMonPalette_Torchic
+    .2byte 0x0118, 0x0000
+    .4byte kMonPalette_Combusken
+    .2byte 0x0119, 0x0000
+    .4byte kMonPalette_Blaziken
+    .2byte 0x011A, 0x0000
+    .4byte kMonPalette_Mudkip
+    .2byte 0x011B, 0x0000
+    .4byte kMonPalette_Marshtomp
+    .2byte 0x011C, 0x0000
+    .4byte kMonPalette_Swampert
+    .2byte 0x011D, 0x0000
+    .4byte kMonPalette_Poochyena
+    .2byte 0x011E, 0x0000
+    .4byte kMonPalette_Mightyena
+    .2byte 0x011F, 0x0000
+    .4byte kMonPalette_Zigzagoon
+    .2byte 0x0120, 0x0000
+    .4byte kMonPalette_Linoone
+    .2byte 0x0121, 0x0000
+    .4byte kMonPalette_Wurmple
+    .2byte 0x0122, 0x0000
+    .4byte kMonPalette_Silcoon
+    .2byte 0x0123, 0x0000
+    .4byte kMonPalette_Beautifly
+    .2byte 0x0124, 0x0000
+    .4byte kMonPalette_Cascoon
+    .2byte 0x0125, 0x0000
+    .4byte kMonPalette_Dustox
+    .2byte 0x0126, 0x0000
+    .4byte kMonPalette_Lotad
+    .2byte 0x0127, 0x0000
+    .4byte kMonPalette_Lombre
+    .2byte 0x0128, 0x0000
+    .4byte kMonPalette_Ludicolo
+    .2byte 0x0129, 0x0000
+    .4byte kMonPalette_Seedot
+    .2byte 0x012A, 0x0000
+    .4byte kMonPalette_Nuzleaf
+    .2byte 0x012B, 0x0000
+    .4byte kMonPalette_Shiftry
+    .2byte 0x012C, 0x0000
+    .4byte kMonPalette_Nincada
+    .2byte 0x012D, 0x0000
+    .4byte kMonPalette_Ninjask
+    .2byte 0x012E, 0x0000
+    .4byte kMonPalette_Shedinja
+    .2byte 0x012F, 0x0000
+    .4byte kMonPalette_Taillow
+    .2byte 0x0130, 0x0000
+    .4byte kMonPalette_Swellow
+    .2byte 0x0131, 0x0000
+    .4byte kMonPalette_Shroomish
+    .2byte 0x0132, 0x0000
+    .4byte kMonPalette_Breloom
+    .2byte 0x0133, 0x0000
+    .4byte kMonPalette_Spinda
+    .2byte 0x0134, 0x0000
+    .4byte kMonPalette_Wingull
+    .2byte 0x0135, 0x0000
+    .4byte kMonPalette_Pelipper
+    .2byte 0x0136, 0x0000
+    .4byte kMonPalette_Surskit
+    .2byte 0x0137, 0x0000
+    .4byte kMonPalette_Masquerain
+    .2byte 0x0138, 0x0000
+    .4byte kMonPalette_Wailmer
+    .2byte 0x0139, 0x0000
+    .4byte kMonPalette_Wailord
+    .2byte 0x013A, 0x0000
+    .4byte kMonPalette_Skitty
+    .2byte 0x013B, 0x0000
+    .4byte kMonPalette_Delcatty
+    .2byte 0x013C, 0x0000
+    .4byte kMonPalette_Kecleon
+    .2byte 0x013D, 0x0000
+    .4byte kMonPalette_Baltoy
+    .2byte 0x013E, 0x0000
+    .4byte kMonPalette_Claydol
+    .2byte 0x013F, 0x0000
+    .4byte kMonPalette_Nosepass
+    .2byte 0x0140, 0x0000
+    .4byte kMonPalette_Torkoal
+    .2byte 0x0141, 0x0000
+    .4byte kMonPalette_Sableye
+    .2byte 0x0142, 0x0000
+    .4byte kMonPalette_Barboach
+    .2byte 0x0143, 0x0000
+    .4byte kMonPalette_Whiscash
+    .2byte 0x0144, 0x0000
+    .4byte kMonPalette_Luvdisc
+    .2byte 0x0145, 0x0000
+    .4byte kMonPalette_Corphish
+    .2byte 0x0146, 0x0000
+    .4byte kMonPalette_Crawdaunt
+    .2byte 0x0147, 0x0000
+    .4byte kMonPalette_Feebas
+    .2byte 0x0148, 0x0000
+    .4byte kMonPalette_Milotic
+    .2byte 0x0149, 0x0000
+    .4byte kMonPalette_Carvanha
+    .2byte 0x014A, 0x0000
+    .4byte kMonPalette_Sharpedo
+    .2byte 0x014B, 0x0000
+    .4byte kMonPalette_Trapinch
+    .2byte 0x014C, 0x0000
+    .4byte kMonPalette_Vibrava
+    .2byte 0x014D, 0x0000
+    .4byte kMonPalette_Flygon
+    .2byte 0x014E, 0x0000
+    .4byte kMonPalette_Makuhita
+    .2byte 0x014F, 0x0000
+    .4byte kMonPalette_Hariyama
+    .2byte 0x0150, 0x0000
+    .4byte kMonPalette_Electrike
+    .2byte 0x0151, 0x0000
+    .4byte kMonPalette_Manectric
+    .2byte 0x0152, 0x0000
+    .4byte kMonPalette_Numel
+    .2byte 0x0153, 0x0000
+    .4byte kMonPalette_Camerupt
+    .2byte 0x0154, 0x0000
+    .4byte kMonPalette_Spheal
+    .2byte 0x0155, 0x0000
+    .4byte kMonPalette_Sealeo
+    .2byte 0x0156, 0x0000
+    .4byte kMonPalette_Walrein
+    .2byte 0x0157, 0x0000
+    .4byte kMonPalette_Cacnea
+    .2byte 0x0158, 0x0000
+    .4byte kMonPalette_Cacturne
+    .2byte 0x0159, 0x0000
+    .4byte kMonPalette_Snorunt
+    .2byte 0x015A, 0x0000
+    .4byte kMonPalette_Glalie
+    .2byte 0x015B, 0x0000
+    .4byte kMonPalette_Lunatone
+    .2byte 0x015C, 0x0000
+    .4byte kMonPalette_Solrock
+    .2byte 0x015D, 0x0000
+    .4byte kMonPalette_Azurill
+    .2byte 0x015E, 0x0000
+    .4byte kMonPalette_Spoink
+    .2byte 0x015F, 0x0000
+    .4byte kMonPalette_Grumpig
+    .2byte 0x0160, 0x0000
+    .4byte kMonPalette_Plusle
+    .2byte 0x0161, 0x0000
+    .4byte kMonPalette_Minun
+    .2byte 0x0162, 0x0000
+    .4byte kMonPalette_Mawile
+    .2byte 0x0163, 0x0000
+    .4byte kMonPalette_Meditite
+    .2byte 0x0164, 0x0000
+    .4byte kMonPalette_Medicham
+    .2byte 0x0165, 0x0000
+    .4byte kMonPalette_Swablu
+    .2byte 0x0166, 0x0000
+    .4byte kMonPalette_Altaria
+    .2byte 0x0167, 0x0000
+    .4byte kMonPalette_Wynaut
+    .2byte 0x0168, 0x0000
+    .4byte kMonPalette_Duskull
+    .2byte 0x0169, 0x0000
+    .4byte kMonPalette_Dusclops
+    .2byte 0x016A, 0x0000
+    .4byte kMonPalette_Roselia
+    .2byte 0x016B, 0x0000
+    .4byte kMonPalette_Slakoth
+    .2byte 0x016C, 0x0000
+    .4byte kMonPalette_Vigoroth
+    .2byte 0x016D, 0x0000
+    .4byte kMonPalette_Slaking
+    .2byte 0x016E, 0x0000
+    .4byte kMonPalette_Gulpin
+    .2byte 0x016F, 0x0000
+    .4byte kMonPalette_Swalot
+    .2byte 0x0170, 0x0000
+    .4byte kMonPalette_Tropius
+    .2byte 0x0171, 0x0000
+    .4byte kMonPalette_Whismur
+    .2byte 0x0172, 0x0000
+    .4byte kMonPalette_Loudred
+    .2byte 0x0173, 0x0000
+    .4byte kMonPalette_Exploud
+    .2byte 0x0174, 0x0000
+    .4byte kMonPalette_Clamperl
+    .2byte 0x0175, 0x0000
+    .4byte kMonPalette_Huntail
+    .2byte 0x0176, 0x0000
+    .4byte kMonPalette_Gorebyss
+    .2byte 0x0177, 0x0000
+    .4byte kMonPalette_Absol
+    .2byte 0x0178, 0x0000
+    .4byte kMonPalette_Shuppet
+    .2byte 0x0179, 0x0000
+    .4byte kMonPalette_Banette
+    .2byte 0x017A, 0x0000
+    .4byte kMonPalette_Seviper
+    .2byte 0x017B, 0x0000
+    .4byte kMonPalette_Zangoose
+    .2byte 0x017C, 0x0000
+    .4byte kMonPalette_Relicanth
+    .2byte 0x017D, 0x0000
+    .4byte kMonPalette_Aron
+    .2byte 0x017E, 0x0000
+    .4byte kMonPalette_Lairon
+    .2byte 0x017F, 0x0000
+    .4byte kMonPalette_Aggron
+    .2byte 0x0180, 0x0000
+    .4byte kMonPalette_Castform
+    .2byte 0x0181, 0x0000
+    .4byte kMonPalette_Volbeat
+    .2byte 0x0182, 0x0000
+    .4byte kMonPalette_Illumise
+    .2byte 0x0183, 0x0000
+    .4byte kMonPalette_Lileep
+    .2byte 0x0184, 0x0000
+    .4byte kMonPalette_Cradily
+    .2byte 0x0185, 0x0000
+    .4byte kMonPalette_Anorith
+    .2byte 0x0186, 0x0000
+    .4byte kMonPalette_Armaldo
+    .2byte 0x0187, 0x0000
+    .4byte kMonPalette_Ralts
+    .2byte 0x0188, 0x0000
+    .4byte kMonPalette_Kirlia
+    .2byte 0x0189, 0x0000
+    .4byte kMonPalette_Gardevoir
+    .2byte 0x018A, 0x0000
+    .4byte kMonPalette_Bagon
+    .2byte 0x018B, 0x0000
+    .4byte kMonPalette_Shelgon
+    .2byte 0x018C, 0x0000
+    .4byte kMonPalette_Salamence
+    .2byte 0x018D, 0x0000
+    .4byte kMonPalette_Beldum
+    .2byte 0x018E, 0x0000
+    .4byte kMonPalette_Metang
+    .2byte 0x018F, 0x0000
+    .4byte kMonPalette_Metagross
+    .2byte 0x0190, 0x0000
+    .4byte kMonPalette_Regirock
+    .2byte 0x0191, 0x0000
+    .4byte kMonPalette_Regice
+    .2byte 0x0192, 0x0000
+    .4byte kMonPalette_Registeel
+    .2byte 0x0193, 0x0000
+    .4byte kMonPalette_Kyogre
+    .2byte 0x0194, 0x0000
+    .4byte kMonPalette_Groudon
+    .2byte 0x0195, 0x0000
+    .4byte kMonPalette_Rayquaza
+    .2byte 0x0196, 0x0000
+    .4byte kMonPalette_Latias
+    .2byte 0x0197, 0x0000
+    .4byte kMonPalette_Latios
+    .2byte 0x0198, 0x0000
+    .4byte kMonPalette_Jirachi
+    .2byte 0x0199, 0x0000
+    .4byte kMonPalette_Deoxys
+    .2byte 0x019A, 0x0000
+    .4byte kMonPalette_Chimecho
+    .2byte 0x019B, 0x0000
+    .4byte kMonPalette_Egg
+    .2byte 0x019C, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x019D, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x019E, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x019F, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01A0, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01A1, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01A2, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01A3, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01A4, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01A5, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01A6, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01A7, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01A8, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01A9, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01AA, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01AB, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01AC, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01AD, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01AE, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01AF, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01B0, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01B1, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01B2, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01B3, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01B4, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01B5, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01B6, 0x0000
+    .4byte kMonPalette_Unown
+    .2byte 0x01B7, 0x0000
 
-    .global UNK_82373F4
-UNK_82373F4: @ 82373F4
-    .incbin "baserom.gba", 0x2373F4, 0xCD8
+kMonShinyPaletteTable:: @ 82380CC
+    .4byte kUnkPal_8D00BE8
+    .2byte 0x01F4, 0x0000
+    .4byte kMonShinyPalette_Bulbasaur
+    .2byte 0x01F5, 0x0000
+    .4byte kMonShinyPalette_Ivysaur
+    .2byte 0x01F6, 0x0000
+    .4byte kMonShinyPalette_Venusaur
+    .2byte 0x01F7, 0x0000
+    .4byte kMonShinyPalette_Charmander
+    .2byte 0x01F8, 0x0000
+    .4byte kMonShinyPalette_Charmeleon
+    .2byte 0x01F9, 0x0000
+    .4byte kMonShinyPalette_Charizard
+    .2byte 0x01FA, 0x0000
+    .4byte kMonShinyPalette_Squirtle
+    .2byte 0x01FB, 0x0000
+    .4byte kMonShinyPalette_Wartortle
+    .2byte 0x01FC, 0x0000
+    .4byte kMonShinyPalette_Blastoise
+    .2byte 0x01FD, 0x0000
+    .4byte kMonShinyPalette_Caterpie
+    .2byte 0x01FE, 0x0000
+    .4byte kMonShinyPalette_Metapod
+    .2byte 0x01FF, 0x0000
+    .4byte kMonShinyPalette_Butterfree
+    .2byte 0x0200, 0x0000
+    .4byte kMonShinyPalette_Weedle
+    .2byte 0x0201, 0x0000
+    .4byte kMonShinyPalette_Kakuna
+    .2byte 0x0202, 0x0000
+    .4byte kMonShinyPalette_Beedrill
+    .2byte 0x0203, 0x0000
+    .4byte kMonShinyPalette_Pidgey
+    .2byte 0x0204, 0x0000
+    .4byte kMonShinyPalette_Pidgeotto
+    .2byte 0x0205, 0x0000
+    .4byte kMonShinyPalette_Pidgeot
+    .2byte 0x0206, 0x0000
+    .4byte kMonShinyPalette_Rattata
+    .2byte 0x0207, 0x0000
+    .4byte kMonShinyPalette_Raticate
+    .2byte 0x0208, 0x0000
+    .4byte kMonShinyPalette_Spearow
+    .2byte 0x0209, 0x0000
+    .4byte kMonShinyPalette_Fearow
+    .2byte 0x020A, 0x0000
+    .4byte kMonShinyPalette_Ekans
+    .2byte 0x020B, 0x0000
+    .4byte kMonShinyPalette_Arbok
+    .2byte 0x020C, 0x0000
+    .4byte kMonShinyPalette_Pikachu
+    .2byte 0x020D, 0x0000
+    .4byte kMonShinyPalette_Raichu
+    .2byte 0x020E, 0x0000
+    .4byte kMonShinyPalette_Sandshrew
+    .2byte 0x020F, 0x0000
+    .4byte kMonShinyPalette_Sandslash
+    .2byte 0x0210, 0x0000
+    .4byte kMonShinyPalette_NidoranF
+    .2byte 0x0211, 0x0000
+    .4byte kMonShinyPalette_Nidorina
+    .2byte 0x0212, 0x0000
+    .4byte kMonShinyPalette_Nidoqueen
+    .2byte 0x0213, 0x0000
+    .4byte kMonShinyPalette_NidoranM
+    .2byte 0x0214, 0x0000
+    .4byte kMonShinyPalette_Nidorino
+    .2byte 0x0215, 0x0000
+    .4byte kMonShinyPalette_Nidoking
+    .2byte 0x0216, 0x0000
+    .4byte kMonShinyPalette_Clefairy
+    .2byte 0x0217, 0x0000
+    .4byte kMonShinyPalette_Clefable
+    .2byte 0x0218, 0x0000
+    .4byte kMonShinyPalette_Vulpix
+    .2byte 0x0219, 0x0000
+    .4byte kMonShinyPalette_Ninetales
+    .2byte 0x021A, 0x0000
+    .4byte kMonShinyPalette_Jigglypuff
+    .2byte 0x021B, 0x0000
+    .4byte kMonShinyPalette_Wigglytuff
+    .2byte 0x021C, 0x0000
+    .4byte kMonShinyPalette_Zubat
+    .2byte 0x021D, 0x0000
+    .4byte kMonShinyPalette_Golbat
+    .2byte 0x021E, 0x0000
+    .4byte kMonShinyPalette_Oddish
+    .2byte 0x021F, 0x0000
+    .4byte kMonShinyPalette_Gloom
+    .2byte 0x0220, 0x0000
+    .4byte kMonShinyPalette_Vileplume
+    .2byte 0x0221, 0x0000
+    .4byte kMonShinyPalette_Paras
+    .2byte 0x0222, 0x0000
+    .4byte kMonShinyPalette_Parasect
+    .2byte 0x0223, 0x0000
+    .4byte kMonShinyPalette_Venonat
+    .2byte 0x0224, 0x0000
+    .4byte kMonShinyPalette_Venomoth
+    .2byte 0x0225, 0x0000
+    .4byte kMonShinyPalette_Diglett
+    .2byte 0x0226, 0x0000
+    .4byte kMonShinyPalette_Dugtrio
+    .2byte 0x0227, 0x0000
+    .4byte kMonShinyPalette_Meowth
+    .2byte 0x0228, 0x0000
+    .4byte kMonShinyPalette_Persian
+    .2byte 0x0229, 0x0000
+    .4byte kMonShinyPalette_Psyduck
+    .2byte 0x022A, 0x0000
+    .4byte kMonShinyPalette_Golduck
+    .2byte 0x022B, 0x0000
+    .4byte kMonShinyPalette_Mankey
+    .2byte 0x022C, 0x0000
+    .4byte kMonShinyPalette_Primeape
+    .2byte 0x022D, 0x0000
+    .4byte kMonShinyPalette_Growlithe
+    .2byte 0x022E, 0x0000
+    .4byte kMonShinyPalette_Arcanine
+    .2byte 0x022F, 0x0000
+    .4byte kMonShinyPalette_Poliwag
+    .2byte 0x0230, 0x0000
+    .4byte kMonShinyPalette_Poliwhirl
+    .2byte 0x0231, 0x0000
+    .4byte kMonShinyPalette_Poliwrath
+    .2byte 0x0232, 0x0000
+    .4byte kMonShinyPalette_Abra
+    .2byte 0x0233, 0x0000
+    .4byte kMonShinyPalette_Kadabra
+    .2byte 0x0234, 0x0000
+    .4byte kMonShinyPalette_Alakazam
+    .2byte 0x0235, 0x0000
+    .4byte kMonShinyPalette_Machop
+    .2byte 0x0236, 0x0000
+    .4byte kMonShinyPalette_Machoke
+    .2byte 0x0237, 0x0000
+    .4byte kMonShinyPalette_Machamp
+    .2byte 0x0238, 0x0000
+    .4byte kMonShinyPalette_Bellsprout
+    .2byte 0x0239, 0x0000
+    .4byte kMonShinyPalette_Weepinbell
+    .2byte 0x023A, 0x0000
+    .4byte kMonShinyPalette_Victreebel
+    .2byte 0x023B, 0x0000
+    .4byte kMonShinyPalette_Tentacool
+    .2byte 0x023C, 0x0000
+    .4byte kMonShinyPalette_Tentacruel
+    .2byte 0x023D, 0x0000
+    .4byte kMonShinyPalette_Geodude
+    .2byte 0x023E, 0x0000
+    .4byte kMonShinyPalette_Graveler
+    .2byte 0x023F, 0x0000
+    .4byte kMonShinyPalette_Golem
+    .2byte 0x0240, 0x0000
+    .4byte kMonShinyPalette_Ponyta
+    .2byte 0x0241, 0x0000
+    .4byte kMonShinyPalette_Rapidash
+    .2byte 0x0242, 0x0000
+    .4byte kMonShinyPalette_Slowpoke
+    .2byte 0x0243, 0x0000
+    .4byte kMonShinyPalette_Slowbro
+    .2byte 0x0244, 0x0000
+    .4byte kMonShinyPalette_Magnemite
+    .2byte 0x0245, 0x0000
+    .4byte kMonShinyPalette_Magneton
+    .2byte 0x0246, 0x0000
+    .4byte kMonShinyPalette_Farfetchd
+    .2byte 0x0247, 0x0000
+    .4byte kMonShinyPalette_Doduo
+    .2byte 0x0248, 0x0000
+    .4byte kMonShinyPalette_Dodrio
+    .2byte 0x0249, 0x0000
+    .4byte kMonShinyPalette_Seel
+    .2byte 0x024A, 0x0000
+    .4byte kMonShinyPalette_Dewgong
+    .2byte 0x024B, 0x0000
+    .4byte kMonShinyPalette_Grimer
+    .2byte 0x024C, 0x0000
+    .4byte kMonShinyPalette_Muk
+    .2byte 0x024D, 0x0000
+    .4byte kMonShinyPalette_Shellder
+    .2byte 0x024E, 0x0000
+    .4byte kMonShinyPalette_Cloyster
+    .2byte 0x024F, 0x0000
+    .4byte kMonShinyPalette_Gastly
+    .2byte 0x0250, 0x0000
+    .4byte kMonShinyPalette_Haunter
+    .2byte 0x0251, 0x0000
+    .4byte kMonShinyPalette_Gengar
+    .2byte 0x0252, 0x0000
+    .4byte kMonShinyPalette_Onix
+    .2byte 0x0253, 0x0000
+    .4byte kMonShinyPalette_Drowzee
+    .2byte 0x0254, 0x0000
+    .4byte kMonShinyPalette_Hypno
+    .2byte 0x0255, 0x0000
+    .4byte kMonShinyPalette_Krabby
+    .2byte 0x0256, 0x0000
+    .4byte kMonShinyPalette_Kingler
+    .2byte 0x0257, 0x0000
+    .4byte kMonShinyPalette_Voltorb
+    .2byte 0x0258, 0x0000
+    .4byte kMonShinyPalette_Electrode
+    .2byte 0x0259, 0x0000
+    .4byte kMonShinyPalette_Exeggcute
+    .2byte 0x025A, 0x0000
+    .4byte kMonShinyPalette_Exeggutor
+    .2byte 0x025B, 0x0000
+    .4byte kMonShinyPalette_Cubone
+    .2byte 0x025C, 0x0000
+    .4byte kMonShinyPalette_Marowak
+    .2byte 0x025D, 0x0000
+    .4byte kMonShinyPalette_Hitmonlee
+    .2byte 0x025E, 0x0000
+    .4byte kMonShinyPalette_Hitmonchan
+    .2byte 0x025F, 0x0000
+    .4byte kMonShinyPalette_Lickitung
+    .2byte 0x0260, 0x0000
+    .4byte kMonShinyPalette_Koffing
+    .2byte 0x0261, 0x0000
+    .4byte kMonShinyPalette_Weezing
+    .2byte 0x0262, 0x0000
+    .4byte kMonShinyPalette_Rhyhorn
+    .2byte 0x0263, 0x0000
+    .4byte kMonShinyPalette_Rhydon
+    .2byte 0x0264, 0x0000
+    .4byte kMonShinyPalette_Chansey
+    .2byte 0x0265, 0x0000
+    .4byte kMonShinyPalette_Tangela
+    .2byte 0x0266, 0x0000
+    .4byte kMonShinyPalette_Kangaskhan
+    .2byte 0x0267, 0x0000
+    .4byte kMonShinyPalette_Horsea
+    .2byte 0x0268, 0x0000
+    .4byte kMonShinyPalette_Seadra
+    .2byte 0x0269, 0x0000
+    .4byte kMonShinyPalette_Goldeen
+    .2byte 0x026A, 0x0000
+    .4byte kMonShinyPalette_Seaking
+    .2byte 0x026B, 0x0000
+    .4byte kMonShinyPalette_Staryu
+    .2byte 0x026C, 0x0000
+    .4byte kMonShinyPalette_Starmie
+    .2byte 0x026D, 0x0000
+    .4byte kMonShinyPalette_MrMime
+    .2byte 0x026E, 0x0000
+    .4byte kMonShinyPalette_Scyther
+    .2byte 0x026F, 0x0000
+    .4byte kMonShinyPalette_Jynx
+    .2byte 0x0270, 0x0000
+    .4byte kMonShinyPalette_Electabuzz
+    .2byte 0x0271, 0x0000
+    .4byte kMonShinyPalette_Magmar
+    .2byte 0x0272, 0x0000
+    .4byte kMonShinyPalette_Pinsir
+    .2byte 0x0273, 0x0000
+    .4byte kMonShinyPalette_Tauros
+    .2byte 0x0274, 0x0000
+    .4byte kMonShinyPalette_Magikarp
+    .2byte 0x0275, 0x0000
+    .4byte kMonShinyPalette_Gyarados
+    .2byte 0x0276, 0x0000
+    .4byte kMonShinyPalette_Lapras
+    .2byte 0x0277, 0x0000
+    .4byte kMonShinyPalette_Ditto
+    .2byte 0x0278, 0x0000
+    .4byte kMonShinyPalette_Eevee
+    .2byte 0x0279, 0x0000
+    .4byte kMonShinyPalette_Vaporeon
+    .2byte 0x027A, 0x0000
+    .4byte kMonShinyPalette_Jolteon
+    .2byte 0x027B, 0x0000
+    .4byte kMonShinyPalette_Flareon
+    .2byte 0x027C, 0x0000
+    .4byte kMonShinyPalette_Porygon
+    .2byte 0x027D, 0x0000
+    .4byte kMonShinyPalette_Omanyte
+    .2byte 0x027E, 0x0000
+    .4byte kMonShinyPalette_Omastar
+    .2byte 0x027F, 0x0000
+    .4byte kMonShinyPalette_Kabuto
+    .2byte 0x0280, 0x0000
+    .4byte kMonShinyPalette_Kabutops
+    .2byte 0x0281, 0x0000
+    .4byte kMonShinyPalette_Aerodactyl
+    .2byte 0x0282, 0x0000
+    .4byte kMonShinyPalette_Snorlax
+    .2byte 0x0283, 0x0000
+    .4byte kMonShinyPalette_Articuno
+    .2byte 0x0284, 0x0000
+    .4byte kMonShinyPalette_Zapdos
+    .2byte 0x0285, 0x0000
+    .4byte kMonShinyPalette_Moltres
+    .2byte 0x0286, 0x0000
+    .4byte kMonShinyPalette_Dratini
+    .2byte 0x0287, 0x0000
+    .4byte kMonShinyPalette_Dragonair
+    .2byte 0x0288, 0x0000
+    .4byte kMonShinyPalette_Dragonite
+    .2byte 0x0289, 0x0000
+    .4byte kMonShinyPalette_Mewtwo
+    .2byte 0x028A, 0x0000
+    .4byte kMonShinyPalette_Mew
+    .2byte 0x028B, 0x0000
+    .4byte kMonShinyPalette_Chikorita
+    .2byte 0x028C, 0x0000
+    .4byte kMonShinyPalette_Bayleef
+    .2byte 0x028D, 0x0000
+    .4byte kMonShinyPalette_Meganium
+    .2byte 0x028E, 0x0000
+    .4byte kMonShinyPalette_Cyndaquil
+    .2byte 0x028F, 0x0000
+    .4byte kMonShinyPalette_Quilava
+    .2byte 0x0290, 0x0000
+    .4byte kMonShinyPalette_Typhlosion
+    .2byte 0x0291, 0x0000
+    .4byte kMonShinyPalette_Totodile
+    .2byte 0x0292, 0x0000
+    .4byte kMonShinyPalette_Croconaw
+    .2byte 0x0293, 0x0000
+    .4byte kMonShinyPalette_Feraligatr
+    .2byte 0x0294, 0x0000
+    .4byte kMonShinyPalette_Sentret
+    .2byte 0x0295, 0x0000
+    .4byte kMonShinyPalette_Furret
+    .2byte 0x0296, 0x0000
+    .4byte kMonShinyPalette_Hoothoot
+    .2byte 0x0297, 0x0000
+    .4byte kMonShinyPalette_Noctowl
+    .2byte 0x0298, 0x0000
+    .4byte kMonShinyPalette_Ledyba
+    .2byte 0x0299, 0x0000
+    .4byte kMonShinyPalette_Ledian
+    .2byte 0x029A, 0x0000
+    .4byte kMonShinyPalette_Spinarak
+    .2byte 0x029B, 0x0000
+    .4byte kMonShinyPalette_Ariados
+    .2byte 0x029C, 0x0000
+    .4byte kMonShinyPalette_Crobat
+    .2byte 0x029D, 0x0000
+    .4byte kMonShinyPalette_Chinchou
+    .2byte 0x029E, 0x0000
+    .4byte kMonShinyPalette_Lanturn
+    .2byte 0x029F, 0x0000
+    .4byte kMonShinyPalette_Pichu
+    .2byte 0x02A0, 0x0000
+    .4byte kMonShinyPalette_Cleffa
+    .2byte 0x02A1, 0x0000
+    .4byte kMonShinyPalette_Igglybuff
+    .2byte 0x02A2, 0x0000
+    .4byte kMonShinyPalette_Togepi
+    .2byte 0x02A3, 0x0000
+    .4byte kMonShinyPalette_Togetic
+    .2byte 0x02A4, 0x0000
+    .4byte kMonShinyPalette_Natu
+    .2byte 0x02A5, 0x0000
+    .4byte kMonShinyPalette_Xatu
+    .2byte 0x02A6, 0x0000
+    .4byte kMonShinyPalette_Mareep
+    .2byte 0x02A7, 0x0000
+    .4byte kMonShinyPalette_Flaaffy
+    .2byte 0x02A8, 0x0000
+    .4byte kMonShinyPalette_Ampharos
+    .2byte 0x02A9, 0x0000
+    .4byte kMonShinyPalette_Bellossom
+    .2byte 0x02AA, 0x0000
+    .4byte kMonShinyPalette_Marill
+    .2byte 0x02AB, 0x0000
+    .4byte kMonShinyPalette_Azumarill
+    .2byte 0x02AC, 0x0000
+    .4byte kMonShinyPalette_Sudowoodo
+    .2byte 0x02AD, 0x0000
+    .4byte kMonShinyPalette_Politoed
+    .2byte 0x02AE, 0x0000
+    .4byte kMonShinyPalette_Hoppip
+    .2byte 0x02AF, 0x0000
+    .4byte kMonShinyPalette_Skiploom
+    .2byte 0x02B0, 0x0000
+    .4byte kMonShinyPalette_Jumpluff
+    .2byte 0x02B1, 0x0000
+    .4byte kMonShinyPalette_Aipom
+    .2byte 0x02B2, 0x0000
+    .4byte kMonShinyPalette_Sunkern
+    .2byte 0x02B3, 0x0000
+    .4byte kMonShinyPalette_Sunflora
+    .2byte 0x02B4, 0x0000
+    .4byte kMonShinyPalette_Yanma
+    .2byte 0x02B5, 0x0000
+    .4byte kMonShinyPalette_Wooper
+    .2byte 0x02B6, 0x0000
+    .4byte kMonShinyPalette_Quagsire
+    .2byte 0x02B7, 0x0000
+    .4byte kMonShinyPalette_Espeon
+    .2byte 0x02B8, 0x0000
+    .4byte kMonShinyPalette_Umbreon
+    .2byte 0x02B9, 0x0000
+    .4byte kMonShinyPalette_Murkrow
+    .2byte 0x02BA, 0x0000
+    .4byte kMonShinyPalette_Slowking
+    .2byte 0x02BB, 0x0000
+    .4byte kMonShinyPalette_Misdreavus
+    .2byte 0x02BC, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x02BD, 0x0000
+    .4byte kMonShinyPalette_Wobbuffet
+    .2byte 0x02BE, 0x0000
+    .4byte kMonShinyPalette_Girafarig
+    .2byte 0x02BF, 0x0000
+    .4byte kMonShinyPalette_Pineco
+    .2byte 0x02C0, 0x0000
+    .4byte kMonShinyPalette_Forretress
+    .2byte 0x02C1, 0x0000
+    .4byte kMonShinyPalette_Dunsparce
+    .2byte 0x02C2, 0x0000
+    .4byte kMonShinyPalette_Gligar
+    .2byte 0x02C3, 0x0000
+    .4byte kMonShinyPalette_Steelix
+    .2byte 0x02C4, 0x0000
+    .4byte kMonShinyPalette_Snubbull
+    .2byte 0x02C5, 0x0000
+    .4byte kMonShinyPalette_Granbull
+    .2byte 0x02C6, 0x0000
+    .4byte kMonShinyPalette_Qwilfish
+    .2byte 0x02C7, 0x0000
+    .4byte kMonShinyPalette_Scizor
+    .2byte 0x02C8, 0x0000
+    .4byte kMonShinyPalette_Shuckle
+    .2byte 0x02C9, 0x0000
+    .4byte kMonShinyPalette_Heracross
+    .2byte 0x02CA, 0x0000
+    .4byte kMonShinyPalette_Sneasel
+    .2byte 0x02CB, 0x0000
+    .4byte kMonShinyPalette_Teddiursa
+    .2byte 0x02CC, 0x0000
+    .4byte kMonShinyPalette_Ursaring
+    .2byte 0x02CD, 0x0000
+    .4byte kMonShinyPalette_Slugma
+    .2byte 0x02CE, 0x0000
+    .4byte kMonShinyPalette_Magcargo
+    .2byte 0x02CF, 0x0000
+    .4byte kMonShinyPalette_Swinub
+    .2byte 0x02D0, 0x0000
+    .4byte kMonShinyPalette_Piloswine
+    .2byte 0x02D1, 0x0000
+    .4byte kMonShinyPalette_Corsola
+    .2byte 0x02D2, 0x0000
+    .4byte kMonShinyPalette_Remoraid
+    .2byte 0x02D3, 0x0000
+    .4byte kMonShinyPalette_Octillery
+    .2byte 0x02D4, 0x0000
+    .4byte kMonShinyPalette_Delibird
+    .2byte 0x02D5, 0x0000
+    .4byte kMonShinyPalette_Mantine
+    .2byte 0x02D6, 0x0000
+    .4byte kMonShinyPalette_Skarmory
+    .2byte 0x02D7, 0x0000
+    .4byte kMonShinyPalette_Houndour
+    .2byte 0x02D8, 0x0000
+    .4byte kMonShinyPalette_Houndoom
+    .2byte 0x02D9, 0x0000
+    .4byte kMonShinyPalette_Kingdra
+    .2byte 0x02DA, 0x0000
+    .4byte kMonShinyPalette_Phanpy
+    .2byte 0x02DB, 0x0000
+    .4byte kMonShinyPalette_Donphan
+    .2byte 0x02DC, 0x0000
+    .4byte kMonShinyPalette_Porygon2
+    .2byte 0x02DD, 0x0000
+    .4byte kMonShinyPalette_Stantler
+    .2byte 0x02DE, 0x0000
+    .4byte kMonShinyPalette_Smeargle
+    .2byte 0x02DF, 0x0000
+    .4byte kMonShinyPalette_Tyrogue
+    .2byte 0x02E0, 0x0000
+    .4byte kMonShinyPalette_Hitmontop
+    .2byte 0x02E1, 0x0000
+    .4byte kMonShinyPalette_Smoochum
+    .2byte 0x02E2, 0x0000
+    .4byte kMonShinyPalette_Elekid
+    .2byte 0x02E3, 0x0000
+    .4byte kMonShinyPalette_Magby
+    .2byte 0x02E4, 0x0000
+    .4byte kMonShinyPalette_Miltank
+    .2byte 0x02E5, 0x0000
+    .4byte kMonShinyPalette_Blissey
+    .2byte 0x02E6, 0x0000
+    .4byte kMonShinyPalette_Raikou
+    .2byte 0x02E7, 0x0000
+    .4byte kMonShinyPalette_Entei
+    .2byte 0x02E8, 0x0000
+    .4byte kMonShinyPalette_Suicune
+    .2byte 0x02E9, 0x0000
+    .4byte kMonShinyPalette_Larvitar
+    .2byte 0x02EA, 0x0000
+    .4byte kMonShinyPalette_Pupitar
+    .2byte 0x02EB, 0x0000
+    .4byte kMonShinyPalette_Tyranitar
+    .2byte 0x02EC, 0x0000
+    .4byte kMonShinyPalette_Lugia
+    .2byte 0x02ED, 0x0000
+    .4byte kMonShinyPalette_HoOh
+    .2byte 0x02EE, 0x0000
+    .4byte kMonShinyPalette_Celebi
+    .2byte 0x02EF, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02F0, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02F1, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02F2, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02F3, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02F4, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02F5, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02F6, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02F7, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02F8, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02F9, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02FA, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02FB, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02FC, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02FD, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02FE, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x02FF, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x0300, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x0301, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x0302, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x0303, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x0304, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x0305, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x0306, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x0307, 0x0000
+    .4byte kMonShinyPalette_OldUnownB
+    .2byte 0x0308, 0x0000
+    .4byte kMonShinyPalette_Treecko
+    .2byte 0x0309, 0x0000
+    .4byte kMonShinyPalette_Grovyle
+    .2byte 0x030A, 0x0000
+    .4byte kMonShinyPalette_Sceptile
+    .2byte 0x030B, 0x0000
+    .4byte kMonShinyPalette_Torchic
+    .2byte 0x030C, 0x0000
+    .4byte kMonShinyPalette_Combusken
+    .2byte 0x030D, 0x0000
+    .4byte kMonShinyPalette_Blaziken
+    .2byte 0x030E, 0x0000
+    .4byte kMonShinyPalette_Mudkip
+    .2byte 0x030F, 0x0000
+    .4byte kMonShinyPalette_Marshtomp
+    .2byte 0x0310, 0x0000
+    .4byte kMonShinyPalette_Swampert
+    .2byte 0x0311, 0x0000
+    .4byte kMonShinyPalette_Poochyena
+    .2byte 0x0312, 0x0000
+    .4byte kMonShinyPalette_Mightyena
+    .2byte 0x0313, 0x0000
+    .4byte kMonShinyPalette_Zigzagoon
+    .2byte 0x0314, 0x0000
+    .4byte kMonShinyPalette_Linoone
+    .2byte 0x0315, 0x0000
+    .4byte kMonShinyPalette_Wurmple
+    .2byte 0x0316, 0x0000
+    .4byte kMonShinyPalette_Silcoon
+    .2byte 0x0317, 0x0000
+    .4byte kMonShinyPalette_Beautifly
+    .2byte 0x0318, 0x0000
+    .4byte kMonShinyPalette_Cascoon
+    .2byte 0x0319, 0x0000
+    .4byte kMonShinyPalette_Dustox
+    .2byte 0x031A, 0x0000
+    .4byte kMonShinyPalette_Lotad
+    .2byte 0x031B, 0x0000
+    .4byte kMonShinyPalette_Lombre
+    .2byte 0x031C, 0x0000
+    .4byte kMonShinyPalette_Ludicolo
+    .2byte 0x031D, 0x0000
+    .4byte kMonShinyPalette_Seedot
+    .2byte 0x031E, 0x0000
+    .4byte kMonShinyPalette_Nuzleaf
+    .2byte 0x031F, 0x0000
+    .4byte kMonShinyPalette_Shiftry
+    .2byte 0x0320, 0x0000
+    .4byte kMonShinyPalette_Nincada
+    .2byte 0x0321, 0x0000
+    .4byte kMonShinyPalette_Ninjask
+    .2byte 0x0322, 0x0000
+    .4byte kMonShinyPalette_Shedinja
+    .2byte 0x0323, 0x0000
+    .4byte kMonShinyPalette_Taillow
+    .2byte 0x0324, 0x0000
+    .4byte kMonShinyPalette_Swellow
+    .2byte 0x0325, 0x0000
+    .4byte kMonShinyPalette_Shroomish
+    .2byte 0x0326, 0x0000
+    .4byte kMonShinyPalette_Breloom
+    .2byte 0x0327, 0x0000
+    .4byte kMonShinyPalette_Spinda
+    .2byte 0x0328, 0x0000
+    .4byte kMonShinyPalette_Wingull
+    .2byte 0x0329, 0x0000
+    .4byte kMonShinyPalette_Pelipper
+    .2byte 0x032A, 0x0000
+    .4byte kMonShinyPalette_Surskit
+    .2byte 0x032B, 0x0000
+    .4byte kMonShinyPalette_Masquerain
+    .2byte 0x032C, 0x0000
+    .4byte kMonShinyPalette_Wailmer
+    .2byte 0x032D, 0x0000
+    .4byte kMonShinyPalette_Wailord
+    .2byte 0x032E, 0x0000
+    .4byte kMonShinyPalette_Skitty
+    .2byte 0x032F, 0x0000
+    .4byte kMonShinyPalette_Delcatty
+    .2byte 0x0330, 0x0000
+    .4byte kMonShinyPalette_Kecleon
+    .2byte 0x0331, 0x0000
+    .4byte kMonShinyPalette_Baltoy
+    .2byte 0x0332, 0x0000
+    .4byte kMonShinyPalette_Claydol
+    .2byte 0x0333, 0x0000
+    .4byte kMonShinyPalette_Nosepass
+    .2byte 0x0334, 0x0000
+    .4byte kMonShinyPalette_Torkoal
+    .2byte 0x0335, 0x0000
+    .4byte kMonShinyPalette_Sableye
+    .2byte 0x0336, 0x0000
+    .4byte kMonShinyPalette_Barboach
+    .2byte 0x0337, 0x0000
+    .4byte kMonShinyPalette_Whiscash
+    .2byte 0x0338, 0x0000
+    .4byte kMonShinyPalette_Luvdisc
+    .2byte 0x0339, 0x0000
+    .4byte kMonShinyPalette_Corphish
+    .2byte 0x033A, 0x0000
+    .4byte kMonShinyPalette_Crawdaunt
+    .2byte 0x033B, 0x0000
+    .4byte kMonShinyPalette_Feebas
+    .2byte 0x033C, 0x0000
+    .4byte kMonShinyPalette_Milotic
+    .2byte 0x033D, 0x0000
+    .4byte kMonShinyPalette_Carvanha
+    .2byte 0x033E, 0x0000
+    .4byte kMonShinyPalette_Sharpedo
+    .2byte 0x033F, 0x0000
+    .4byte kMonShinyPalette_Trapinch
+    .2byte 0x0340, 0x0000
+    .4byte kMonShinyPalette_Vibrava
+    .2byte 0x0341, 0x0000
+    .4byte kMonShinyPalette_Flygon
+    .2byte 0x0342, 0x0000
+    .4byte kMonShinyPalette_Makuhita
+    .2byte 0x0343, 0x0000
+    .4byte kMonShinyPalette_Hariyama
+    .2byte 0x0344, 0x0000
+    .4byte kMonShinyPalette_Electrike
+    .2byte 0x0345, 0x0000
+    .4byte kMonShinyPalette_Manectric
+    .2byte 0x0346, 0x0000
+    .4byte kMonShinyPalette_Numel
+    .2byte 0x0347, 0x0000
+    .4byte kMonShinyPalette_Camerupt
+    .2byte 0x0348, 0x0000
+    .4byte kMonShinyPalette_Spheal
+    .2byte 0x0349, 0x0000
+    .4byte kMonShinyPalette_Sealeo
+    .2byte 0x034A, 0x0000
+    .4byte kMonShinyPalette_Walrein
+    .2byte 0x034B, 0x0000
+    .4byte kMonShinyPalette_Cacnea
+    .2byte 0x034C, 0x0000
+    .4byte kMonShinyPalette_Cacturne
+    .2byte 0x034D, 0x0000
+    .4byte kMonShinyPalette_Snorunt
+    .2byte 0x034E, 0x0000
+    .4byte kMonShinyPalette_Glalie
+    .2byte 0x034F, 0x0000
+    .4byte kMonShinyPalette_Lunatone
+    .2byte 0x0350, 0x0000
+    .4byte kMonShinyPalette_Solrock
+    .2byte 0x0351, 0x0000
+    .4byte kMonShinyPalette_Azurill
+    .2byte 0x0352, 0x0000
+    .4byte kMonShinyPalette_Spoink
+    .2byte 0x0353, 0x0000
+    .4byte kMonShinyPalette_Grumpig
+    .2byte 0x0354, 0x0000
+    .4byte kMonShinyPalette_Plusle
+    .2byte 0x0355, 0x0000
+    .4byte kMonShinyPalette_Minun
+    .2byte 0x0356, 0x0000
+    .4byte kMonShinyPalette_Mawile
+    .2byte 0x0357, 0x0000
+    .4byte kMonShinyPalette_Meditite
+    .2byte 0x0358, 0x0000
+    .4byte kMonShinyPalette_Medicham
+    .2byte 0x0359, 0x0000
+    .4byte kMonShinyPalette_Swablu
+    .2byte 0x035A, 0x0000
+    .4byte kMonShinyPalette_Altaria
+    .2byte 0x035B, 0x0000
+    .4byte kMonShinyPalette_Wynaut
+    .2byte 0x035C, 0x0000
+    .4byte kMonShinyPalette_Duskull
+    .2byte 0x035D, 0x0000
+    .4byte kMonShinyPalette_Dusclops
+    .2byte 0x035E, 0x0000
+    .4byte kMonShinyPalette_Roselia
+    .2byte 0x035F, 0x0000
+    .4byte kMonShinyPalette_Slakoth
+    .2byte 0x0360, 0x0000
+    .4byte kMonShinyPalette_Vigoroth
+    .2byte 0x0361, 0x0000
+    .4byte kMonShinyPalette_Slaking
+    .2byte 0x0362, 0x0000
+    .4byte kMonShinyPalette_Gulpin
+    .2byte 0x0363, 0x0000
+    .4byte kMonShinyPalette_Swalot
+    .2byte 0x0364, 0x0000
+    .4byte kMonShinyPalette_Tropius
+    .2byte 0x0365, 0x0000
+    .4byte kMonShinyPalette_Whismur
+    .2byte 0x0366, 0x0000
+    .4byte kMonShinyPalette_Loudred
+    .2byte 0x0367, 0x0000
+    .4byte kMonShinyPalette_Exploud
+    .2byte 0x0368, 0x0000
+    .4byte kMonShinyPalette_Clamperl
+    .2byte 0x0369, 0x0000
+    .4byte kMonShinyPalette_Huntail
+    .2byte 0x036A, 0x0000
+    .4byte kMonShinyPalette_Gorebyss
+    .2byte 0x036B, 0x0000
+    .4byte kMonShinyPalette_Absol
+    .2byte 0x036C, 0x0000
+    .4byte kMonShinyPalette_Shuppet
+    .2byte 0x036D, 0x0000
+    .4byte kMonShinyPalette_Banette
+    .2byte 0x036E, 0x0000
+    .4byte kMonShinyPalette_Seviper
+    .2byte 0x036F, 0x0000
+    .4byte kMonShinyPalette_Zangoose
+    .2byte 0x0370, 0x0000
+    .4byte kMonShinyPalette_Relicanth
+    .2byte 0x0371, 0x0000
+    .4byte kMonShinyPalette_Aron
+    .2byte 0x0372, 0x0000
+    .4byte kMonShinyPalette_Lairon
+    .2byte 0x0373, 0x0000
+    .4byte kMonShinyPalette_Aggron
+    .2byte 0x0374, 0x0000
+    .4byte kMonShinyPalette_Castform
+    .2byte 0x0375, 0x0000
+    .4byte kMonShinyPalette_Volbeat
+    .2byte 0x0376, 0x0000
+    .4byte kMonShinyPalette_Illumise
+    .2byte 0x0377, 0x0000
+    .4byte kMonShinyPalette_Lileep
+    .2byte 0x0378, 0x0000
+    .4byte kMonShinyPalette_Cradily
+    .2byte 0x0379, 0x0000
+    .4byte kMonShinyPalette_Anorith
+    .2byte 0x037A, 0x0000
+    .4byte kMonShinyPalette_Armaldo
+    .2byte 0x037B, 0x0000
+    .4byte kMonShinyPalette_Ralts
+    .2byte 0x037C, 0x0000
+    .4byte kMonShinyPalette_Kirlia
+    .2byte 0x037D, 0x0000
+    .4byte kMonShinyPalette_Gardevoir
+    .2byte 0x037E, 0x0000
+    .4byte kMonShinyPalette_Bagon
+    .2byte 0x037F, 0x0000
+    .4byte kMonShinyPalette_Shelgon
+    .2byte 0x0380, 0x0000
+    .4byte kMonShinyPalette_Salamence
+    .2byte 0x0381, 0x0000
+    .4byte kMonShinyPalette_Beldum
+    .2byte 0x0382, 0x0000
+    .4byte kMonShinyPalette_Metang
+    .2byte 0x0383, 0x0000
+    .4byte kMonShinyPalette_Metagross
+    .2byte 0x0384, 0x0000
+    .4byte kMonShinyPalette_Regirock
+    .2byte 0x0385, 0x0000
+    .4byte kMonShinyPalette_Regice
+    .2byte 0x0386, 0x0000
+    .4byte kMonShinyPalette_Registeel
+    .2byte 0x0387, 0x0000
+    .4byte kMonShinyPalette_Kyogre
+    .2byte 0x0388, 0x0000
+    .4byte kMonShinyPalette_Groudon
+    .2byte 0x0389, 0x0000
+    .4byte kMonShinyPalette_Rayquaza
+    .2byte 0x038A, 0x0000
+    .4byte kMonShinyPalette_Latias
+    .2byte 0x038B, 0x0000
+    .4byte kMonShinyPalette_Latios
+    .2byte 0x038C, 0x0000
+    .4byte kMonShinyPalette_Jirachi
+    .2byte 0x038D, 0x0000
+    .4byte kMonShinyPalette_Deoxys
+    .2byte 0x038E, 0x0000
+    .4byte kMonShinyPalette_Chimecho
+    .2byte 0x038F, 0x0000
+    .4byte kMonPalette_Egg
+    .2byte 0x0390, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x0391, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x0392, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x0393, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x0394, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x0395, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x0396, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x0397, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x0398, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x0399, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x039A, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x039B, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x039C, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x039D, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x039E, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x039F, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03A0, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03A1, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03A2, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03A3, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03A4, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03A5, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03A6, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03A7, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03A8, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03A9, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03AA, 0x0000
+    .4byte kMonShinyPalette_Unown
+    .2byte 0x03AB, 0x0000
 
-    .global UNK_82380CC
-UNK_82380CC: @ 82380CC
-    .incbin "baserom.gba", 0x2380CC, 0xDC0
-
-    .global AnimCmds_8238E8C
-AnimCmds_8238E8C: @ 8238E8C
+AnimCmds_8238E8C:: @ 8238E8C
     .4byte AnimCmd_82347E8
 
     .global AnimCmds_8238E90
@@ -1390,13 +4885,601 @@ List_82390DC: @ 82390DC
 UNK_823932C: @ 823932C
     .incbin "baserom.gba", 0x23932C, 0x250
 
-    .global UNK_823957C
-UNK_823957C: @ 823957C
-    .incbin "baserom.gba", 0x23957C, 0x4A0
+kTrainerFrontPicTable:: @ 823957C
+    .4byte kTrainerFrontPic_AquaLeader
+    .2byte 0x0800, 0x0000
+    .4byte kTrainerFrontPic_TeamAqua
+    .2byte 0x0800, 0x0001
+    .4byte kTrainerFrontPic_TeamAqua_2
+    .2byte 0x0800, 0x0002
+    .4byte kTrainerFrontPic_AromaLady
+    .2byte 0x0800, 0x0003
+    .4byte kTrainerFrontPic_RuinManiac
+    .2byte 0x0800, 0x0004
+    .4byte kTrainerFrontPic_Interviewer
+    .2byte 0x0800, 0x0005
+    .4byte kTrainerFrontPic_Tuber
+    .2byte 0x0800, 0x0006
+    .4byte kTrainerFrontPic_Tuber_2
+    .2byte 0x0800, 0x0007
+    .4byte kTrainerFrontPic_Cooltrainer
+    .2byte 0x0800, 0x0008
+    .4byte kTrainerFrontPic_Cooltrainer_2
+    .2byte 0x0800, 0x0009
+    .4byte kTrainerFrontPic_HexManiac
+    .2byte 0x0800, 0x000A
+    .4byte kTrainerFrontPic_Lady
+    .2byte 0x0800, 0x000B
+    .4byte kTrainerFrontPic_Beauty
+    .2byte 0x0800, 0x000C
+    .4byte kTrainerFrontPic_RichBoy
+    .2byte 0x0800, 0x000D
+    .4byte kTrainerFrontPic_PokManiac
+    .2byte 0x0800, 0x000E
+    .4byte kTrainerFrontPic_SwimmerM
+    .2byte 0x0800, 0x000F
+    .4byte kTrainerFrontPic_BlackBelt
+    .2byte 0x0800, 0x0010
+    .4byte kTrainerFrontPic_Guitarist
+    .2byte 0x0800, 0x0011
+    .4byte kTrainerFrontPic_Kindler
+    .2byte 0x0800, 0x0012
+    .4byte kTrainerFrontPic_Camper
+    .2byte 0x0800, 0x0013
+    .4byte kTrainerFrontPic_BugManiac
+    .2byte 0x0800, 0x0014
+    .4byte kTrainerFrontPic_Psychic
+    .2byte 0x0800, 0x0015
+    .4byte kTrainerFrontPic_Psychic_2
+    .2byte 0x0800, 0x0016
+    .4byte kTrainerFrontPic_Gentleman
+    .2byte 0x0800, 0x0017
+    .4byte kTrainerFrontPic_EliteFour
+    .2byte 0x0800, 0x0018
+    .4byte kTrainerFrontPic_EliteFour_2
+    .2byte 0x0800, 0x0019
+    .4byte kTrainerFrontPic_Leader
+    .2byte 0x0800, 0x001A
+    .4byte kTrainerFrontPic_Leader_2
+    .2byte 0x0800, 0x001B
+    .4byte kTrainerFrontPic_Leader_3
+    .2byte 0x0800, 0x001C
+    .4byte kTrainerFrontPic_SchoolKid
+    .2byte 0x0800, 0x001D
+    .4byte kTrainerFrontPic_SchoolKid_2
+    .2byte 0x0800, 0x001E
+    .4byte kTrainerFrontPic_SrAndJr
+    .2byte 0x1000, 0x001F
+    .4byte kTrainerFrontPic_PokFan
+    .2byte 0x1000, 0x0020
+    .4byte kTrainerFrontPic_PokFan_2
+    .2byte 0x0800, 0x0021
+    .4byte kTrainerFrontPic_Expert
+    .2byte 0x0800, 0x0022
+    .4byte kTrainerFrontPic_Expert_2
+    .2byte 0x0800, 0x0023
+    .4byte kTrainerFrontPic_Youngster
+    .2byte 0x0800, 0x0024
+    .4byte kTrainerFrontPic_Champion
+    .2byte 0x0800, 0x0025
+    .4byte kTrainerFrontPic_Fisherman
+    .2byte 0x0800, 0x0026
+    .4byte kTrainerFrontPic_Triathlete
+    .2byte 0x1000, 0x0027
+    .4byte kTrainerFrontPic_Triathlete_2
+    .2byte 0x0800, 0x0028
+    .4byte kTrainerFrontPic_Triathlete_3
+    .2byte 0x0800, 0x0029
+    .4byte kTrainerFrontPic_Triathlete_4
+    .2byte 0x0800, 0x002A
+    .4byte kTrainerFrontPic_Triathlete_5
+    .2byte 0x0800, 0x002B
+    .4byte kTrainerFrontPic_Triathlete_6
+    .2byte 0x0800, 0x002C
+    .4byte kTrainerFrontPic_DragonTamer
+    .2byte 0x0800, 0x002D
+    .4byte kTrainerFrontPic_BirdKeeper
+    .2byte 0x0800, 0x002E
+    .4byte kTrainerFrontPic_NinjaBoy
+    .2byte 0x0800, 0x002F
+    .4byte kTrainerFrontPic_BattleGirl
+    .2byte 0x1000, 0x0030
+    .4byte kTrainerFrontPic_ParasolLady
+    .2byte 0x0800, 0x0031
+    .4byte kTrainerFrontPic_SwimmerF
+    .2byte 0x0800, 0x0032
+    .4byte kTrainerFrontPic_Picnicker
+    .2byte 0x0800, 0x0033
+    .4byte kTrainerFrontPic_Twins
+    .2byte 0x0800, 0x0034
+    .4byte kTrainerFrontPic_Sailor
+    .2byte 0x0800, 0x0035
+    .4byte kTrainerFrontPic_Collector
+    .2byte 0x0800, 0x0036
+    .4byte kTrainerFrontPic_PkmnTrainer
+    .2byte 0x0800, 0x0037
+    .4byte kTrainerFrontPic_PkmnTrainer_2
+    .2byte 0x0800, 0x0038
+    .4byte kTrainerFrontPic_PkmnTrainer_3
+    .2byte 0x0800, 0x0039
+    .4byte kTrainerFrontPic_PkmnBreeder
+    .2byte 0x0800, 0x003A
+    .4byte kTrainerFrontPic_PkmnBreeder_2
+    .2byte 0x0800, 0x003B
+    .4byte kTrainerFrontPic_PkmnRanger
+    .2byte 0x0800, 0x003C
+    .4byte kTrainerFrontPic_PkmnRanger_2
+    .2byte 0x0800, 0x003D
+    .4byte kTrainerFrontPic_MagmaLeader
+    .2byte 0x0800, 0x003E
+    .4byte kTrainerFrontPic_TeamMagma
+    .2byte 0x0800, 0x003F
+    .4byte kTrainerFrontPic_TeamMagma_2
+    .2byte 0x0800, 0x0040
+    .4byte kTrainerFrontPic_Lass
+    .2byte 0x0800, 0x0041
+    .4byte kTrainerFrontPic_BugCatcher
+    .2byte 0x0800, 0x0042
+    .4byte kTrainerFrontPic_Hiker
+    .2byte 0x0800, 0x0043
+    .4byte kTrainerFrontPic_YoungCouple
+    .2byte 0x0800, 0x0044
+    .4byte kTrainerFrontPic_OldCouple
+    .2byte 0x0800, 0x0045
+    .4byte kTrainerFrontPic_SisAndBro
+    .2byte 0x0800, 0x0046
+    .4byte kTrainerFrontPic_AquaAdmin
+    .2byte 0x0800, 0x0047
+    .4byte kTrainerFrontPic_AquaAdmin_2
+    .2byte 0x0800, 0x0048
+    .4byte kTrainerFrontPic_MagmaAdmin
+    .2byte 0x0800, 0x0049
+    .4byte kTrainerFrontPic_MagmaAdmin_2
+    .2byte 0x0800, 0x004A
+    .4byte kTrainerFrontPic_Leader_4
+    .2byte 0x0800, 0x004B
+    .4byte kTrainerFrontPic_Leader_5
+    .2byte 0x0800, 0x004C
+    .4byte kTrainerFrontPic_Leader_6
+    .2byte 0x0800, 0x004D
+    .4byte kTrainerFrontPic_Leader_7
+    .2byte 0x0800, 0x004E
+    .4byte kTrainerFrontPic_Leader_8
+    .2byte 0x0800, 0x004F
+    .4byte kTrainerFrontPic_EliteFour_3
+    .2byte 0x0800, 0x0050
+    .4byte kTrainerFrontPic_EliteFour_4
+    .2byte 0x0800, 0x0051
+    .4byte kTrainerFrontPic_Youngster_2
+    .2byte 0x0800, 0x0052
+    .4byte kTrainerFrontPic_BugCatcher_2
+    .2byte 0x0800, 0x0053
+    .4byte kTrainerFrontPic_Lass_2
+    .2byte 0x0800, 0x0054
+    .4byte kTrainerFrontPic_Sailor_2
+    .2byte 0x0800, 0x0055
+    .4byte kTrainerFrontPic_Camper_2
+    .2byte 0x0800, 0x0056
+    .4byte kTrainerFrontPic_Picnicker_2
+    .2byte 0x0800, 0x0057
+    .4byte kTrainerFrontPic_PokManiac_2
+    .2byte 0x0800, 0x0058
+    .4byte kTrainerFrontPic_SuperNerd
+    .2byte 0x0800, 0x0059
+    .4byte kTrainerFrontPic_Hiker_2
+    .2byte 0x0800, 0x005A
+    .4byte kTrainerFrontPic_Biker
+    .2byte 0x0800, 0x005B
+    .4byte kTrainerFrontPic_Burglar
+    .2byte 0x0800, 0x005C
+    .4byte kTrainerFrontPic_Engineer
+    .2byte 0x0800, 0x005D
+    .4byte kTrainerFrontPic_Fisherman_2
+    .2byte 0x0800, 0x005E
+    .4byte kTrainerFrontPic_SwimmerM_2
+    .2byte 0x0800, 0x005F
+    .4byte kTrainerFrontPic_CueBall
+    .2byte 0x0800, 0x0060
+    .4byte kTrainerFrontPic_Gamer
+    .2byte 0x0800, 0x0061
+    .4byte kTrainerFrontPic_Beauty_2
+    .2byte 0x0800, 0x0062
+    .4byte kTrainerFrontPic_SwimmerF_2
+    .2byte 0x0800, 0x0063
+    .4byte kTrainerFrontPic_Psychic_3
+    .2byte 0x0800, 0x0064
+    .4byte kTrainerFrontPic_Rocker
+    .2byte 0x0800, 0x0065
+    .4byte kTrainerFrontPic_Juggler
+    .2byte 0x0800, 0x0066
+    .4byte kTrainerFrontPic_Tamer
+    .2byte 0x0800, 0x0067
+    .4byte kTrainerFrontPic_BirdKeeper_2
+    .2byte 0x0800, 0x0068
+    .4byte kTrainerFrontPic_BlackBelt_2
+    .2byte 0x0800, 0x0069
+    .4byte kTrainerFrontPic_Rival
+    .2byte 0x0800, 0x006A
+    .4byte kTrainerFrontPic_Scientist
+    .2byte 0x0800, 0x006B
+    .4byte kTrainerFrontPic_Boss
+    .2byte 0x0800, 0x006C
+    .4byte kTrainerFrontPic_TeamRocket
+    .2byte 0x0800, 0x006D
+    .4byte kTrainerFrontPic_Cooltrainer_3
+    .2byte 0x0800, 0x006E
+    .4byte kTrainerFrontPic_Cooltrainer_4
+    .2byte 0x0800, 0x006F
+    .4byte kTrainerFrontPic_EliteFour_5
+    .2byte 0x0800, 0x0070
+    .4byte kTrainerFrontPic_EliteFour_6
+    .2byte 0x0800, 0x0071
+    .4byte kTrainerFrontPic_
+    .2byte 0x0800, 0x0072
+    .4byte kTrainerFrontPic__2
+    .2byte 0x0800, 0x0073
+    .4byte kTrainerFrontPic_Leader_9
+    .2byte 0x0800, 0x0074
+    .4byte kTrainerFrontPic_Leader_10
+    .2byte 0x0800, 0x0075
+    .4byte kTrainerFrontPic__3
+    .2byte 0x0800, 0x0076
+    .4byte kTrainerFrontPic__4
+    .2byte 0x0800, 0x0077
+    .4byte kTrainerFrontPic__5
+    .2byte 0x0800, 0x0078
+    .4byte kTrainerFrontPic__6
+    .2byte 0x0800, 0x0079
+    .4byte kTrainerFrontPic__7
+    .2byte 0x0800, 0x007A
+    .4byte kTrainerFrontPic_Gentleman_2
+    .2byte 0x0800, 0x007B
+    .4byte kTrainerFrontPic_Rival_2
+    .2byte 0x0800, 0x007C
+    .4byte kTrainerFrontPic_Champion_2
+    .2byte 0x0800, 0x007D
+    .4byte kTrainerFrontPic_Channeler
+    .2byte 0x0800, 0x007E
+    .4byte kTrainerFrontPic_Twins_2
+    .2byte 0x0800, 0x007F
+    .4byte kTrainerFrontPic_CoolCouple
+    .2byte 0x0800, 0x0080
+    .4byte kTrainerFrontPic_YoungCouple_2
+    .2byte 0x0800, 0x0081
+    .4byte kTrainerFrontPic_CrushKin
+    .2byte 0x0800, 0x0082
+    .4byte kTrainerFrontPic_SisAndBro_2
+    .2byte 0x0800, 0x0083
+    .4byte kTrainerFrontPic_PkmnProf
+    .2byte 0x0800, 0x0084
+    .4byte kTrainerFrontPic_Player
+    .2byte 0x0800, 0x0085
+    .4byte kTrainerFrontPic_Player_2
+    .2byte 0x0800, 0x0086
+    .4byte kTrainerFrontPic_Player_3
+    .2byte 0x0800, 0x0087
+    .4byte kTrainerFrontPic_Player_4
+    .2byte 0x0800, 0x0088
+    .4byte kTrainerFrontPic_TeamRocket_2
+    .2byte 0x0800, 0x0089
+    .4byte kTrainerFrontPic_Psychic_4
+    .2byte 0x0800, 0x008A
+    .4byte kTrainerFrontPic_CrushGirl
+    .2byte 0x0800, 0x008B
+    .4byte kTrainerFrontPic_Tuber_3
+    .2byte 0x0800, 0x008C
+    .4byte kTrainerFrontPic_PkmnBreeder_3
+    .2byte 0x0800, 0x008D
+    .4byte kTrainerFrontPic_PkmnRanger_3
+    .2byte 0x0800, 0x008E
+    .4byte kTrainerFrontPic_PkmnRanger_4
+    .2byte 0x0800, 0x008F
+    .4byte kTrainerFrontPic_AromaLady_2
+    .2byte 0x0800, 0x0090
+    .4byte kTrainerFrontPic_RuinManiac_2
+    .2byte 0x0800, 0x0091
+    .4byte kTrainerFrontPic_Lady_2
+    .2byte 0x0800, 0x0092
+    .4byte kTrainerFrontPic_Painter
+    .2byte 0x0800, 0x0093
 
-    .global UNK_8239A1C
-UNK_8239A1C: @ 8239A1C
-    .incbin "baserom.gba", 0x239A1C, 0x4A0
+kTrainerFrontPicPaletteTable:: @ 8239A1C
+    .4byte kTrainerFrontPal_AquaLeader
+    .2byte 0x0000, 0x0000
+    .4byte kTrainerFrontPal_TeamAqua
+    .2byte 0x0001, 0x0000
+    .4byte kTrainerFrontPal_TeamAqua_2
+    .2byte 0x0002, 0x0000
+    .4byte kTrainerFrontPal_AromaLady
+    .2byte 0x0003, 0x0000
+    .4byte kTrainerFrontPal_RuinManiac
+    .2byte 0x0004, 0x0000
+    .4byte kTrainerFrontPal_Interviewer
+    .2byte 0x0005, 0x0000
+    .4byte kTrainerFrontPal_Tuber
+    .2byte 0x0006, 0x0000
+    .4byte kTrainerFrontPal_Tuber_2
+    .2byte 0x0007, 0x0000
+    .4byte kTrainerFrontPal_Cooltrainer
+    .2byte 0x0008, 0x0000
+    .4byte kTrainerFrontPal_Cooltrainer_2
+    .2byte 0x0009, 0x0000
+    .4byte kTrainerFrontPal_HexManiac
+    .2byte 0x000A, 0x0000
+    .4byte kTrainerFrontPal_Lady
+    .2byte 0x000B, 0x0000
+    .4byte kTrainerFrontPal_Beauty
+    .2byte 0x000C, 0x0000
+    .4byte kTrainerFrontPal_RichBoy
+    .2byte 0x000D, 0x0000
+    .4byte kTrainerFrontPal_PokManiac
+    .2byte 0x000E, 0x0000
+    .4byte kTrainerFrontPal_SwimmerM
+    .2byte 0x000F, 0x0000
+    .4byte kTrainerFrontPal_BlackBelt
+    .2byte 0x0010, 0x0000
+    .4byte kTrainerFrontPal_Guitarist
+    .2byte 0x0011, 0x0000
+    .4byte kTrainerFrontPal_Kindler
+    .2byte 0x0012, 0x0000
+    .4byte kTrainerFrontPal_Camper
+    .2byte 0x0013, 0x0000
+    .4byte kTrainerFrontPal_BugManiac
+    .2byte 0x0014, 0x0000
+    .4byte kTrainerFrontPal_Psychic
+    .2byte 0x0015, 0x0000
+    .4byte kTrainerFrontPal_Psychic_2
+    .2byte 0x0016, 0x0000
+    .4byte kTrainerFrontPal_Gentleman
+    .2byte 0x0017, 0x0000
+    .4byte kTrainerFrontPal_EliteFour
+    .2byte 0x0018, 0x0000
+    .4byte kTrainerFrontPal_EliteFour_2
+    .2byte 0x0019, 0x0000
+    .4byte kTrainerFrontPal_Leader
+    .2byte 0x001A, 0x0000
+    .4byte kTrainerFrontPal_Leader_2
+    .2byte 0x001B, 0x0000
+    .4byte kTrainerFrontPal_Leader_3
+    .2byte 0x001C, 0x0000
+    .4byte kTrainerFrontPal_SchoolKid
+    .2byte 0x001D, 0x0000
+    .4byte kTrainerFrontPal_SchoolKid_2
+    .2byte 0x001E, 0x0000
+    .4byte kTrainerFrontPal_SrAndJr
+    .2byte 0x001F, 0x0000
+    .4byte kTrainerFrontPal_PokFan
+    .2byte 0x0020, 0x0000
+    .4byte kTrainerFrontPal_PokFan_2
+    .2byte 0x0021, 0x0000
+    .4byte kTrainerFrontPal_Expert
+    .2byte 0x0022, 0x0000
+    .4byte kTrainerFrontPal_Expert_2
+    .2byte 0x0023, 0x0000
+    .4byte kTrainerFrontPal_Youngster
+    .2byte 0x0024, 0x0000
+    .4byte kTrainerFrontPal_Champion
+    .2byte 0x0025, 0x0000
+    .4byte kTrainerFrontPal_Fisherman
+    .2byte 0x0026, 0x0000
+    .4byte kTrainerFrontPal_Triathlete
+    .2byte 0x0027, 0x0000
+    .4byte kTrainerFrontPal_Triathlete_2
+    .2byte 0x0028, 0x0000
+    .4byte kTrainerFrontPal_Triathlete_3
+    .2byte 0x0029, 0x0000
+    .4byte kTrainerFrontPal_Triathlete_4
+    .2byte 0x002A, 0x0000
+    .4byte kTrainerFrontPal_Triathlete_5
+    .2byte 0x002B, 0x0000
+    .4byte kTrainerFrontPal_Triathlete_6
+    .2byte 0x002C, 0x0000
+    .4byte kTrainerFrontPal_DragonTamer
+    .2byte 0x002D, 0x0000
+    .4byte kTrainerFrontPal_BirdKeeper
+    .2byte 0x002E, 0x0000
+    .4byte kTrainerFrontPal_NinjaBoy
+    .2byte 0x002F, 0x0000
+    .4byte kTrainerFrontPal_BattleGirl
+    .2byte 0x0030, 0x0000
+    .4byte kTrainerFrontPal_ParasolLady
+    .2byte 0x0031, 0x0000
+    .4byte kTrainerFrontPal_SwimmerF
+    .2byte 0x0032, 0x0000
+    .4byte kTrainerFrontPal_Picnicker
+    .2byte 0x0033, 0x0000
+    .4byte kTrainerFrontPal_Twins
+    .2byte 0x0034, 0x0000
+    .4byte kTrainerFrontPal_Sailor
+    .2byte 0x0035, 0x0000
+    .4byte kTrainerFrontPal_Collector
+    .2byte 0x0036, 0x0000
+    .4byte kTrainerFrontPal_PkmnTrainer
+    .2byte 0x0037, 0x0000
+    .4byte kTrainerFrontPal_PkmnTrainer_2
+    .2byte 0x0038, 0x0000
+    .4byte kTrainerFrontPal_PkmnTrainer_3
+    .2byte 0x0039, 0x0000
+    .4byte kTrainerFrontPal_PkmnBreeder
+    .2byte 0x003A, 0x0000
+    .4byte kTrainerFrontPal_PkmnBreeder_2
+    .2byte 0x003B, 0x0000
+    .4byte kTrainerFrontPal_PkmnRanger
+    .2byte 0x003C, 0x0000
+    .4byte kTrainerFrontPal_PkmnRanger_2
+    .2byte 0x003D, 0x0000
+    .4byte kTrainerFrontPal_MagmaLeader
+    .2byte 0x003E, 0x0000
+    .4byte kTrainerFrontPal_TeamMagma
+    .2byte 0x003F, 0x0000
+    .4byte kTrainerFrontPal_TeamMagma_2
+    .2byte 0x0040, 0x0000
+    .4byte kTrainerFrontPal_Lass
+    .2byte 0x0041, 0x0000
+    .4byte kTrainerFrontPal_BugCatcher
+    .2byte 0x0042, 0x0000
+    .4byte kTrainerFrontPal_Hiker
+    .2byte 0x0043, 0x0000
+    .4byte kTrainerFrontPal_YoungCouple
+    .2byte 0x0044, 0x0000
+    .4byte kTrainerFrontPal_OldCouple
+    .2byte 0x0045, 0x0000
+    .4byte kTrainerFrontPal_SisAndBro
+    .2byte 0x0046, 0x0000
+    .4byte kTrainerFrontPal_AquaAdmin
+    .2byte 0x0047, 0x0000
+    .4byte kTrainerFrontPal_AquaAdmin_2
+    .2byte 0x0048, 0x0000
+    .4byte kTrainerFrontPal_MagmaAdmin
+    .2byte 0x0049, 0x0000
+    .4byte kTrainerFrontPal_MagmaAdmin_2
+    .2byte 0x004A, 0x0000
+    .4byte kTrainerFrontPal_Leader_4
+    .2byte 0x004B, 0x0000
+    .4byte kTrainerFrontPal_Leader_5
+    .2byte 0x004C, 0x0000
+    .4byte kTrainerFrontPal_Leader_6
+    .2byte 0x004D, 0x0000
+    .4byte kTrainerFrontPal_Leader_7
+    .2byte 0x004E, 0x0000
+    .4byte kTrainerFrontPal_Leader_8
+    .2byte 0x004F, 0x0000
+    .4byte kTrainerFrontPal_EliteFour_3
+    .2byte 0x0050, 0x0000
+    .4byte kTrainerFrontPal_EliteFour_4
+    .2byte 0x0051, 0x0000
+    .4byte kTrainerFrontPal_Youngster_2
+    .2byte 0x0052, 0x0000
+    .4byte kTrainerFrontPal_BugCatcher_2
+    .2byte 0x0053, 0x0000
+    .4byte kTrainerFrontPal_Lass_2
+    .2byte 0x0054, 0x0000
+    .4byte kTrainerFrontPal_Sailor_2
+    .2byte 0x0055, 0x0000
+    .4byte kTrainerFrontPal_Camper_2
+    .2byte 0x0056, 0x0000
+    .4byte kTrainerFrontPal_Picnicker_2
+    .2byte 0x0057, 0x0000
+    .4byte kTrainerFrontPal_PokManiac_2
+    .2byte 0x0058, 0x0000
+    .4byte kTrainerFrontPal_SuperNerd
+    .2byte 0x0059, 0x0000
+    .4byte kTrainerFrontPal_Hiker_2
+    .2byte 0x005A, 0x0000
+    .4byte kTrainerFrontPal_Biker
+    .2byte 0x005B, 0x0000
+    .4byte kTrainerFrontPal_Burglar
+    .2byte 0x005C, 0x0000
+    .4byte kTrainerFrontPal_Engineer
+    .2byte 0x005D, 0x0000
+    .4byte kTrainerFrontPal_Fisherman_2
+    .2byte 0x005E, 0x0000
+    .4byte kTrainerFrontPal_SwimmerM_2
+    .2byte 0x005F, 0x0000
+    .4byte kTrainerFrontPal_CueBall
+    .2byte 0x0060, 0x0000
+    .4byte kTrainerFrontPal_Gamer
+    .2byte 0x0061, 0x0000
+    .4byte kTrainerFrontPal_Beauty_2
+    .2byte 0x0062, 0x0000
+    .4byte kTrainerFrontPal_SwimmerF_2
+    .2byte 0x0063, 0x0000
+    .4byte kTrainerFrontPal_Psychic_3
+    .2byte 0x0064, 0x0000
+    .4byte kTrainerFrontPal_Rocker
+    .2byte 0x0065, 0x0000
+    .4byte kTrainerFrontPal_Juggler
+    .2byte 0x0066, 0x0000
+    .4byte kTrainerFrontPal_Tamer
+    .2byte 0x0067, 0x0000
+    .4byte kTrainerFrontPal_BirdKeeper_2
+    .2byte 0x0068, 0x0000
+    .4byte kTrainerFrontPal_BlackBelt_2
+    .2byte 0x0069, 0x0000
+    .4byte kTrainerFrontPal_Rival
+    .2byte 0x006A, 0x0000
+    .4byte kTrainerFrontPal_Scientist
+    .2byte 0x006B, 0x0000
+    .4byte kTrainerFrontPal_Boss
+    .2byte 0x006C, 0x0000
+    .4byte kTrainerFrontPal_TeamRocket
+    .2byte 0x006D, 0x0000
+    .4byte kTrainerFrontPal_Cooltrainer_3
+    .2byte 0x006E, 0x0000
+    .4byte kTrainerFrontPal_Cooltrainer_4
+    .2byte 0x006F, 0x0000
+    .4byte kTrainerFrontPal_EliteFour_5
+    .2byte 0x0070, 0x0000
+    .4byte kTrainerFrontPal_EliteFour_6
+    .2byte 0x0071, 0x0000
+    .4byte kTrainerFrontPal_
+    .2byte 0x0072, 0x0000
+    .4byte kTrainerFrontPal__2
+    .2byte 0x0073, 0x0000
+    .4byte kTrainerFrontPal_Leader_9
+    .2byte 0x0074, 0x0000
+    .4byte kTrainerFrontPal_Leader_10
+    .2byte 0x0075, 0x0000
+    .4byte kTrainerFrontPal__3
+    .2byte 0x0076, 0x0000
+    .4byte kTrainerFrontPal__4
+    .2byte 0x0077, 0x0000
+    .4byte kTrainerFrontPal__5
+    .2byte 0x0078, 0x0000
+    .4byte kTrainerFrontPal__6
+    .2byte 0x0079, 0x0000
+    .4byte kTrainerFrontPal__7
+    .2byte 0x007A, 0x0000
+    .4byte kTrainerFrontPal_Gentleman_2
+    .2byte 0x007B, 0x0000
+    .4byte kTrainerFrontPal_Rival_2
+    .2byte 0x007C, 0x0000
+    .4byte kTrainerFrontPal_Champion_2
+    .2byte 0x007D, 0x0000
+    .4byte kTrainerFrontPal_Channeler
+    .2byte 0x007E, 0x0000
+    .4byte kTrainerFrontPal_Twins_2
+    .2byte 0x007F, 0x0000
+    .4byte kTrainerFrontPal_CoolCouple
+    .2byte 0x0080, 0x0000
+    .4byte kTrainerFrontPal_YoungCouple_2
+    .2byte 0x0081, 0x0000
+    .4byte kTrainerFrontPal_CrushKin
+    .2byte 0x0082, 0x0000
+    .4byte kTrainerFrontPal_SisAndBro_2
+    .2byte 0x0083, 0x0000
+    .4byte kTrainerFrontPal_PkmnProf
+    .2byte 0x0084, 0x0000
+    .4byte kTrainerFrontPal_Player
+    .2byte 0x0085, 0x0000
+    .4byte kTrainerFrontPal_Player_2
+    .2byte 0x0086, 0x0000
+    .4byte kTrainerFrontPal_Player_3
+    .2byte 0x0087, 0x0000
+    .4byte kTrainerFrontPal_Player_4
+    .2byte 0x0088, 0x0000
+    .4byte kTrainerFrontPal_TeamRocket_2
+    .2byte 0x0089, 0x0000
+    .4byte kTrainerFrontPal_Psychic_4
+    .2byte 0x008A, 0x0000
+    .4byte kTrainerFrontPal_CrushGirl
+    .2byte 0x008B, 0x0000
+    .4byte kTrainerFrontPal_Tuber_3
+    .2byte 0x008C, 0x0000
+    .4byte kTrainerFrontPal_PkmnBreeder_3
+    .2byte 0x008D, 0x0000
+    .4byte kTrainerFrontPal_PkmnRanger_3
+    .2byte 0x008E, 0x0000
+    .4byte kTrainerFrontPal_PkmnRanger_4
+    .2byte 0x008F, 0x0000
+    .4byte kTrainerFrontPal_AromaLady_2
+    .2byte 0x0090, 0x0000
+    .4byte kTrainerFrontPal_RuinManiac_2
+    .2byte 0x0091, 0x0000
+    .4byte kTrainerFrontPal_Lady_2
+    .2byte 0x0092, 0x0000
+    .4byte kTrainerFrontPal_Painter
+    .2byte 0x0093, 0x0000
 
     .global AnimCmd_8239EBC
 AnimCmd_8239EBC: @ 8239EBC
@@ -1465,23 +5548,21 @@ List_8239F74: @ 8239F74
 UNK_8239F8C: @ 8239F8C
     .incbin "baserom.gba", 0x239F8C, 0x18
 
-    .global borg_8239FA4
-borg_8239FA4: @ 8239FA4
-    .4byte 0x8E69EBC, 0x2800
-    .4byte 0x8E6C6BC, 0x12800
-    .4byte 0x8E72EBC, 0x22000
-    .4byte 0x8E74EBC, 0x32000
-    .4byte 0x8E6EEBC, 0x42000
-    .4byte 0x8E70EBC, 0x52000
+borg_8239FA4:: @ 8239FA4
+    .4byte kUnkGfx_8E69EBC, 0x2800
+    .4byte kUnkGfx_8E6C6BC, 0x12800
+    .4byte kUnkGfx_8E72EBC, 0x22000
+    .4byte kUnkGfx_8E74EBC, 0x32000
+    .4byte kUnkGfx_8E6EEBC, 0x42000
+    .4byte kUnkGfx_8E70EBC, 0x52000
 
-    .global borg_8239FD4
-borg_8239FD4: @ 8239FD4
-    .4byte 0x8E76EBC, 0x0
-    .4byte 0x8E76EE4, 0x1
-    .4byte 0x8E550A4, 0x2
-    .4byte 0x8E553CC, 0x3
-    .4byte 0x8E76F0C, 0x4
-    .4byte 0x8E76F34, 0x5
+borg_8239FD4:: @ 8239FD4
+    .4byte kUnkPal_8E76EBC, 0x0
+    .4byte kUnkPal_8E76EE4, 0x1
+    .4byte kTrainerFrontPal_PkmnTrainer_2, 0x2
+    .4byte kTrainerFrontPal_PkmnTrainer_3, 0x3
+    .4byte kUnkPal_8E76F0C, 0x4
+    .4byte kUnkPal_8E76F34, 0x5
 
     .global UNK_823A004
 UNK_823A004: @ 823A004
@@ -12765,9 +16846,9 @@ SpriteTemplates_82482E8: @ 82482E8
     spr_template 0x2710, 0x2710, OAM_82482A0, AnimCmds_8231CF0, NULL, AffineAnimCmds_82482E0, nullsub_5
     spr_template 0x2710, 0x2710, OAM_82482A8, AnimCmds_8231CF0, NULL, AffineAnimCmds_82482E0, nullsub_5
 
-    .global UNK_8248318
-UNK_8248318: @ 8248318
-    .incbin "baserom.gba", 0x248318, 0x8
+bogo_8248318:: @ 8248318
+    .4byte kUnkGfx_8E77598
+    .2byte 0x1000, 0x2710
 
     .global UNK_8248320
 UNK_8248320: @ 8248320
@@ -14216,9 +18297,9 @@ AnimCmds_82509E4: @ 82509E4
 SpriteTemplate_82509F4: @ 82509F4
     spr_template 0xD6EB, 0xD6EB, OAM_825099C, AnimCmds_82509E4, NULL, AffineAnimCmds_8231CFC, sub_804A904
 
-    .global UNK_8250A0C
-UNK_8250A0C: @ 8250A0C
-    .incbin "baserom.gba", 0x250A0C, 0x8
+bogo_8250A0C:: @ 8250A0C
+    .4byte kUnkGfx_8E7BAD4
+    .2byte 0x0080, 0xD759
 
     .global OAM_8250A14
 OAM_8250A14: @ 8250A14
@@ -17289,13 +21370,17 @@ SubspriteTable_8260404: @ 8260404
 
     .incbin "baserom.gba", 0x26040C, 0x60
 
-    .global UNK_826046C
-UNK_826046C: @ 826046C
-    .incbin "baserom.gba", 0x26046C, 0x10
+bogo_826046C:: @ 826046C
+    .4byte kUnkGfx_8E7BB04
+    .2byte 0x0200, 0xD70C
+    .4byte kUnkGfx_8E7BB04
+    .2byte 0x0200, 0xD70D
 
-    .global UNK_826047C
-UNK_826047C: @ 826047C
-    .incbin "baserom.gba", 0x26047C, 0x10
+bogo_826047C:: @ 826047C
+    .4byte kUnkPal_8D11B84
+    .2byte 0xD710, 0x0000
+    .4byte kUnkPal_8D11B84
+    .2byte 0xD711, 0x0000
 
     .global UNK_826048C
 UNK_826048C: @ 826048C
@@ -17492,14 +21577,13 @@ AnimCmds_8261C50: @ 8261C50
     .4byte AnimCmd_8261C40
     .4byte AnimCmd_8261C48
 
-    .global bogo_8261C58
-bogo_8261C58: @ 8261C58
-    .4byte 0x8E9E1DC
+bogo_8261C58:: @ 8261C58
+    .4byte kUnkGfx_8E9E1DC
     .2byte 0x0800, 0x012C
 
-    .global UNK_8261C60
-UNK_8261C60: @ 8261C60
-    .incbin "baserom.gba", 0x261C60, 0x8
+bogo_8261C60:: @ 8261C60
+    .4byte kUnkPal_8E9CF3C
+    .2byte 0x0929, 0x0000
 
     .global AnimCmd_8261C68
 AnimCmd_8261C68: @ 8261C68
@@ -17919,9 +22003,178 @@ AnimCmd_826CF78: @ 826CF78
 AnimCmds_826CF88: @ 826CF88
     .4byte AnimCmd_826CF78
 
-    .global UNK_826CF8C
-UNK_826CF8C: @ 826CF8C
-    .incbin "baserom.gba", 0x26CF8C, 0x21C
+kInGameTrades:: @ 826CF8C
+    @ 826CFB7
+    .string "MIMIEN$", 11 @ nickname
+    .space 1
+    .2byte SPECIES_MR_MIME @ NPC mon species
+    .byte 20, 15, 17, 24, 23, 22 @ IVs
+    .byte FALSE @ second ability
+    .space 3
+    .4byte 1985 @ OT ID
+    .byte 5, 5, 5, 30, 5 @ contest stats
+    .space 3
+    .4byte 0x9CAE @ personality value
+    .2byte ITEM_NONE @ held item
+    .byte -1 @ mail num
+    .string "REYLEY$", 11 @ OT name
+    .byte MALE @ OT gender
+    .byte 10 @ sheen
+    .2byte SPECIES_ABRA @ player mon species
+    .space 2
+
+    @ 826CFF3
+    .string "ZYNX$", 11 @ nickname
+    .space 1
+    .2byte SPECIES_JYNX @ NPC mon species
+    .byte 18, 17, 18, 22, 25, 21 @ IVs
+    .byte FALSE @ second ability
+    .space 3
+    .4byte 36728 @ OT ID
+    .byte 5, 30, 5, 5, 5 @ contest stats
+    .space 3
+    .4byte 0x498A2E1D @ personality value
+    .2byte ITEM_FAB_MAIL @ held item
+    .byte 0 @ mail num
+    .string "DONTAE$", 11 @ OT name
+    .byte MALE @ OT gender
+    .byte 10 @ sheen
+    .2byte SPECIES_POLIWHIRL @ player mon species
+    .space 2
+
+    @ 826D02F
+    .string "MS. NIDO$", 11 @ nickname
+    .space 1
+    .2byte SPECIES_NIDORAN_F @ NPC mon species
+    .byte 22, 18, 25, 19, 15, 22 @ IVs
+    .byte FALSE @ second ability
+    .space 3
+    .4byte 63184 @ OT ID
+    .byte 5, 5, 5, 5, 30 @ contest stats
+    .space 3
+    .4byte 0x4C970B89 @ personality value
+    .2byte ITEM_TINY_MUSHROOM @ held item
+    .byte -1 @ mail num
+    .string "SAIGE$", 11 @ OT name
+    .byte FEMALE @ OT gender
+    .byte 10 @ sheen
+    .2byte SPECIES_NIDORAN_M @ player mon species
+    .space 2
+
+    @ 826D06B
+    .string "CH’DING$", 11 @ nickname
+    .space 1
+    .2byte SPECIES_FARFETCH_D @ NPC mon species
+    .byte 20, 25, 21, 24, 15, 20 @ IVs
+    .byte FALSE @ second ability
+    .space 3
+    .4byte 8810 @ OT ID
+    .byte 30, 5, 5, 5, 5 @ contest stats
+    .space 3
+    .4byte 0x151943D7 @ personality value
+    .2byte ITEM_STICK @ held item
+    .byte -1 @ mail num
+    .string "ELYSSA$", 11 @ OT name
+    .byte MALE @ OT gender
+    .byte 10 @ sheen
+    .2byte SPECIES_SPEAROW @ player mon species
+    .space 2
+
+    @ 826D0A7
+    .string "NINA$", 11 @ nickname
+    .space 1
+    .2byte SPECIES_NIDORINA @ NPC mon species
+    .byte 22, 25, 18, 19, 22, 15 @ IVs
+    .byte FALSE @ second ability
+    .space 3
+    .4byte 13637 @ OT ID
+    .byte 5, 5, 30, 5, 5 @ contest stats
+    .space 3
+    .4byte 0xEECA15 @ personality value
+    .2byte ITEM_NONE @ held item
+    .byte -1 @ mail num
+    .string "TURNER$", 11 @ OT name
+    .byte MALE @ OT gender
+    .byte 10 @ sheen
+    .2byte SPECIES_NIDORINO @ player mon species
+    .space 2
+
+    @ 826D0E3
+    .string "MARC$", 11 @ nickname
+    .space 1
+    .2byte SPECIES_LICKITUNG @ NPC mon species
+    .byte 24, 19, 21, 15, 23, 21 @ IVs
+    .byte FALSE @ second ability
+    .space 3
+    .4byte 1239 @ OT ID
+    .byte 5, 5, 5, 5, 30 @ contest stats
+    .space 3
+    .4byte 0x451308AB @ personality value
+    .2byte ITEM_NONE @ held item
+    .byte -1 @ mail num
+    .string "HADEN$", 11 @ OT name
+    .byte MALE @ OT gender
+    .byte 10 @ sheen
+    .2byte SPECIES_GOLDUCK @ player mon species
+    .space 2
+
+    @ 826D11F
+    .string "ESPHERE$", 11 @ nickname
+    .space 1
+    .2byte SPECIES_ELECTRODE @ NPC mon species
+    .byte 19, 16, 18, 25, 25, 19 @ IVs
+    .byte TRUE @ second ability
+    .space 3
+    .4byte 50298 @ OT ID
+    .byte 30, 5, 5, 5, 5 @ contest stats
+    .space 3
+    .4byte 0x6341016 @ personality value
+    .2byte ITEM_NONE @ held item
+    .byte -1 @ mail num
+    .string "CLIFTON$", 11 @ OT name
+    .byte MALE @ OT gender
+    .byte 10 @ sheen
+    .2byte SPECIES_RAICHU @ player mon species
+    .space 2
+
+    @ 826D15B
+    .string "TANGENY$", 11 @ nickname
+    .space 1
+    .2byte SPECIES_TANGELA @ NPC mon species
+    .byte 22, 17, 25, 16, 23, 20 @ IVs
+    .byte FALSE @ second ability
+    .space 3
+    .4byte 60042 @ OT ID
+    .byte 5, 5, 30, 5, 5 @ contest stats
+    .space 3
+    .4byte 0x5C77ECFA @ personality value
+    .2byte ITEM_STARDUST @ held item
+    .byte -1 @ mail num
+    .string "NORMA$", 11 @ OT name
+    .byte FEMALE @ OT gender
+    .byte 10 @ sheen
+    .2byte SPECIES_VENONAT @ player mon species
+    .space 2
+
+    @ 826D197
+    .string "SEELOR$", 11 @ nickname
+    .space 1
+    .2byte SPECIES_SEEL @ NPC mon species
+    .byte 24, 15, 22, 16, 23, 22 @ IVs
+    .byte FALSE @ second ability
+    .space 3
+    .4byte 9853 @ OT ID
+    .byte 5, 5, 5, 5, 30 @ contest stats
+    .space 3
+    .4byte 0x482CAC89 @ personality value
+    .2byte ITEM_NONE @ held item
+    .byte -1 @ mail num
+    .string "GARETT$", 11 @ OT name
+    .byte MALE @ OT gender
+    .byte 10 @ sheen
+    .2byte SPECIES_PONYTA @ player mon species
+    .space 2
+
 
     .global UNK_826D1A8
 UNK_826D1A8: @ 826D1A8
@@ -19057,8 +23310,8 @@ Tileset_82D4A94: @ 82D4A94
     .byte 1 @ is compressed
     .byte 0 @ is secondary tileset
     .2byte 0 @ padding
-    .4byte 0x8EA1D68
-    .4byte 0x8EA1B68
+    .4byte TilesetTiles_8EA1D68
+    .4byte TilesetPalettes_8EA1B68
     .4byte Metatiles_829F6C8
     .4byte sub_8070154
     .4byte MetatileAttributes_82A1EC8
@@ -19277,8 +23530,8 @@ Tileset_82D4C74: @ 82D4C74
     .byte 1 @ is compressed
     .byte 1 @ is secondary tileset
     .2byte 0 @ padding
-    .4byte 0x8EA99F4
-    .4byte 0x8EA97F4
+    .4byte TilesetTiles_8EA99F4
+    .4byte TilesetPalettes_8EA97F4
     .4byte Metatiles_82B4E4C
     .4byte NULL
     .4byte MetatileAttributes_82B4FCC
@@ -19508,8 +23761,8 @@ Tileset_82D4E6C: @ 82D4E6C
     .byte 1 @ is compressed
     .byte 1 @ is secondary tileset
     .2byte 0 @ padding
-    .4byte 0x8EA9F88
-    .4byte 0x8EA9D88
+    .4byte TilesetTiles_8EA9F88
+    .4byte TilesetPalettes_8EA9D88
     .4byte Metatiles_82BDBDC
     .4byte NULL
     .4byte MetatileAttributes_82BEB3C
@@ -49320,37 +53573,1249 @@ OAM_83ACBE8: @ 83ACBE8
 
     .incbin "baserom.gba", 0x3ACBEE, 0x1A
 
-    .global UNK_83ACC08
-UNK_83ACC08: @ 83ACC08
-    .incbin "baserom.gba", 0x3ACC08, 0x440
 
-    .global UNK_83AD048
-UNK_83AD048: @ 83AD048
-    .incbin "baserom.gba", 0x3AD048, 0x308
+bogo_83ACC08:: @ 83ACC08
+    .4byte kBattleAnimSpriteSheet_000
+    .2byte 0x0200, 0x2710
+    .4byte kBattleAnimSpriteSheet_001
+    .2byte 0x0300, 0x2711
+    .4byte kBattleAnimSpriteSheet_002
+    .2byte 0x0200, 0x2712
+    .4byte kBattleAnimSpriteSheet_003
+    .2byte 0x0100, 0x2713
+    .4byte kBattleAnimSpriteSheet_004
+    .2byte 0x0200, 0x2714
+    .4byte kBattleAnimSpriteSheet_005
+    .2byte 0x0400, 0x2715
+    .4byte kBattleAnimSpriteSheet_006
+    .2byte 0x0180, 0x2716
+    .4byte kBattleAnimSpriteSheet_007
+    .2byte 0x0800, 0x2717
+    .4byte kBattleAnimSpriteSheet_008
+    .2byte 0x0020, 0x2718
+    .4byte kBattleAnimSpriteSheet_009
+    .2byte 0x0400, 0x2719
+    .4byte kBattleAnimSpriteSheet_010
+    .2byte 0x1200, 0x271A
+    .4byte kBattleAnimSpriteSheet_011
+    .2byte 0x0180, 0x271B
+    .4byte kBattleAnimSpriteSheet_012
+    .2byte 0x0080, 0x271C
+    .4byte kBattleAnimSpriteSheet_013
+    .2byte 0x0080, 0x271D
+    .4byte kBattleAnimSpriteSheet_014
+    .2byte 0x0280, 0x271E
+    .4byte kBattleAnimSpriteSheet_015
+    .2byte 0x0080, 0x271F
+    .4byte kBattleAnimSpriteSheet_016
+    .2byte 0x0100, 0x2720
+    .4byte kBattleAnimSpriteSheet_017
+    .2byte 0x0020, 0x2721
+    .4byte kBattleAnimSpriteSheet_018
+    .2byte 0x0080, 0x2722
+    .4byte kBattleAnimSpriteSheet_019
+    .2byte 0x0400, 0x2723
+    .4byte kBattleAnimSpriteSheet_020
+    .2byte 0x0200, 0x2724
+    .4byte kBattleAnimSpriteSheet_022
+    .2byte 0x0A00, 0x2725
+    .4byte kBattleAnimSpriteSheet_022
+    .2byte 0x0A00, 0x2726
+    .4byte kBattleAnimSpriteSheet_023
+    .2byte 0x0380, 0x2727
+    .4byte kBattleAnimSpriteSheet_024
+    .2byte 0x0300, 0x2728
+    .4byte kBattleAnimSpriteSheet_025
+    .2byte 0x0A00, 0x2729
+    .4byte kBattleAnimSpriteSheet_026
+    .2byte 0x0A00, 0x272A
+    .4byte kBattleAnimSpriteSheet_027
+    .2byte 0x0A00, 0x272B
+    .4byte kBattleAnimSpriteSheet_028
+    .2byte 0x0A00, 0x272C
+    .4byte kBattleAnimSpriteSheet_029
+    .2byte 0x0A00, 0x272D
+    .4byte kBattleAnimSpriteSheet_030
+    .2byte 0x0A00, 0x272E
+    .4byte kBattleAnimSpriteSheet_031
+    .2byte 0x0E00, 0x272F
+    .4byte kBattleAnimSpriteSheet_032
+    .2byte 0x0380, 0x2730
+    .4byte kBattleAnimSpriteSheet_033
+    .2byte 0x1000, 0x2731
+    .4byte kBattleAnimSpriteSheet_034
+    .2byte 0x0800, 0x2732
+    .4byte kBattleAnimSpriteSheet_035
+    .2byte 0x0A00, 0x2733
+    .4byte kBattleAnimSpriteSheet_036
+    .2byte 0x0800, 0x2734
+    .4byte kBattleAnimSpriteSheet_037
+    .2byte 0x0A00, 0x2735
+    .4byte kBattleAnimSpriteSheet_038
+    .2byte 0x0A00, 0x2736
+    .4byte kBattleAnimSpriteSheet_039
+    .2byte 0x0A00, 0x2737
+    .4byte kBattleAnimSpriteSheet_040
+    .2byte 0x0A00, 0x2738
+    .4byte kBattleAnimSpriteSheet_041
+    .2byte 0x0A00, 0x2739
+    .4byte kBattleAnimSpriteSheet_042
+    .2byte 0x0A00, 0x273A
+    .4byte kBattleAnimSpriteSheet_043
+    .2byte 0x0A00, 0x273B
+    .4byte kBattleAnimSpriteSheet_044
+    .2byte 0x0A00, 0x273C
+    .4byte kBattleAnimSpriteSheet_045
+    .2byte 0x0A00, 0x273D
+    .4byte kBattleAnimSpriteSheet_047
+    .2byte 0x1000, 0x273E
+    .4byte kBattleAnimSpriteSheet_047
+    .2byte 0x1000, 0x273F
+    .4byte kBattleAnimSpriteSheet_049
+    .2byte 0x1000, 0x2740
+    .4byte kBattleAnimSpriteSheet_049
+    .2byte 0x1000, 0x2741
+    .4byte kBattleAnimSpriteSheet_050
+    .2byte 0x0200, 0x2742
+    .4byte kBattleAnimSpriteSheet_051
+    .2byte 0x0200, 0x2743
+    .4byte kBattleAnimSpriteSheet_052
+    .2byte 0x0200, 0x2744
+    .4byte kBattleAnimSpriteSheet_053
+    .2byte 0x0800, 0x2745
+    .4byte kBattleAnimSpriteSheet_054
+    .2byte 0x0080, 0x2746
+    .4byte kBattleAnimSpriteSheet_055
+    .2byte 0x0200, 0x2747
+    .4byte kBattleAnimSpriteSheet_287
+    .2byte 0x1000, 0x2748
+    .4byte kBattleAnimSpriteSheet_057
+    .2byte 0x0180, 0x2749
+    .4byte kBattleAnimSpriteSheet_058
+    .2byte 0x0C00, 0x274A
+    .4byte kBattleAnimSpriteSheet_059
+    .2byte 0x0100, 0x274B
+    .4byte kBattleAnimSpriteSheet_060
+    .2byte 0x0040, 0x274C
+    .4byte kBattleAnimSpriteSheet_061
+    .2byte 0x0180, 0x274D
+    .4byte kBattleAnimSpriteSheet_062
+    .2byte 0x0800, 0x274E
+    .4byte kBattleAnimSpriteSheet_063
+    .2byte 0x0480, 0x274F
+    .4byte kBattleAnimSpriteSheet_064
+    .2byte 0x0200, 0x2750
+    .4byte kBattleAnimSpriteSheet_069
+    .2byte 0x0200, 0x2751
+    .4byte kBattleAnimSpriteSheet_066
+    .2byte 0x0100, 0x2752
+    .4byte kBattleAnimSpriteSheet_069
+    .2byte 0x0200, 0x2753
+    .4byte kBattleAnimSpriteSheet_069
+    .2byte 0x0200, 0x2754
+    .4byte kBattleAnimSpriteSheet_069
+    .2byte 0x0200, 0x2755
+    .4byte kBattleAnimSpriteSheet_070
+    .2byte 0x0200, 0x2756
+    .4byte kBattleAnimSpriteSheet_071
+    .2byte 0x0A00, 0x2757
+    .4byte kBattleAnimSpriteSheet_072
+    .2byte 0x0300, 0x2758
+    .4byte kBattleAnimSpriteSheet_073
+    .2byte 0x0180, 0x2759
+    .4byte kBattleAnimSpriteSheet_074
+    .2byte 0x00A0, 0x275A
+    .4byte kBattleAnimSpriteSheet_075
+    .2byte 0x0700, 0x275B
+    .4byte kBattleAnimSpriteSheet_076
+    .2byte 0x0400, 0x275C
+    .4byte kBattleAnimSpriteSheet_077
+    .2byte 0x0200, 0x275D
+    .4byte kBattleAnimSpriteSheet_078
+    .2byte 0x0300, 0x275E
+    .4byte kBattleAnimSpriteSheet_079
+    .2byte 0x0C00, 0x275F
+    .4byte kBattleAnimSpriteSheet_080
+    .2byte 0x0A00, 0x2760
+    .4byte kBattleAnimSpriteSheet_081
+    .2byte 0x0080, 0x2761
+    .4byte kBattleAnimSpriteSheet_082
+    .2byte 0x0040, 0x2762
+    .4byte kBattleAnimSpriteSheet_083
+    .2byte 0x0E00, 0x2763
+    .4byte kBattleAnimSpriteSheet_084
+    .2byte 0x0E00, 0x2764
+    .4byte kBattleAnimSpriteSheet_085
+    .2byte 0x0280, 0x2765
+    .4byte kBattleAnimSpriteSheet_086
+    .2byte 0x0200, 0x2766
+    .4byte kBattleAnimSpriteSheet_087
+    .2byte 0x0080, 0x2767
+    .4byte kBattleAnimSpriteSheet_088
+    .2byte 0x00C0, 0x2768
+    .4byte kBattleAnimSpriteSheet_089
+    .2byte 0x0A00, 0x2769
+    .4byte kBattleAnimSpriteSheet_090
+    .2byte 0x0200, 0x276A
+    .4byte kBattleAnimSpriteSheet_091
+    .2byte 0x0180, 0x276B
+    .4byte kBattleAnimSpriteSheet_092
+    .2byte 0x0080, 0x276C
+    .4byte kBattleAnimSpriteSheet_093
+    .2byte 0x1000, 0x276D
+    .4byte kBattleAnimSpriteSheet_094
+    .2byte 0x0A00, 0x276E
+    .4byte kBattleAnimSpriteSheet_095
+    .2byte 0x0180, 0x276F
+    .4byte kBattleAnimSpriteSheet_096
+    .2byte 0x0380, 0x2770
+    .4byte kBattleAnimSpriteSheet_097
+    .2byte 0x0C00, 0x2771
+    .4byte kBattleAnimSpriteSheet_098
+    .2byte 0x0200, 0x2772
+    .4byte kBattleAnimSpriteSheet_099
+    .2byte 0x0200, 0x2773
+    .4byte kBattleAnimSpriteSheet_100
+    .2byte 0x0200, 0x2774
+    .4byte kBattleAnimSpriteSheet_101
+    .2byte 0x0200, 0x2775
+    .4byte kBattleAnimSpriteSheet_102
+    .2byte 0x0400, 0x2776
+    .4byte kBattleAnimSpriteSheet_103
+    .2byte 0x0080, 0x2777
+    .4byte kBattleAnimSpriteSheet_104
+    .2byte 0x0400, 0x2778
+    .4byte kBattleAnimSpriteSheet_105
+    .2byte 0x0C00, 0x2779
+    .4byte kBattleAnimSpriteSheet_106
+    .2byte 0x0200, 0x277A
+    .4byte kBattleAnimSpriteSheet_107
+    .2byte 0x1000, 0x277B
+    .4byte kBattleAnimSpriteSheet_108
+    .2byte 0x0A00, 0x277C
+    .4byte kBattleAnimSpriteSheet_109
+    .2byte 0x0020, 0x277D
+    .4byte kBattleAnimSpriteSheet_110
+    .2byte 0x0E00, 0x277E
+    .4byte kBattleAnimSpriteSheet_111
+    .2byte 0x0080, 0x277F
+    .4byte kBattleAnimSpriteSheet_112
+    .2byte 0x0A00, 0x2780
+    .4byte kBattleAnimSpriteSheet_113
+    .2byte 0x0400, 0x2781
+    .4byte kBattleAnimSpriteSheet_114
+    .2byte 0x0200, 0x2782
+    .4byte kBattleAnimSpriteSheet_115
+    .2byte 0x0700, 0x2783
+    .4byte kBattleAnimSpriteSheet_116
+    .2byte 0x0800, 0x2784
+    .4byte kBattleAnimSpriteSheet_117
+    .2byte 0x0A00, 0x2785
+    .4byte kBattleAnimSpriteSheet_118
+    .2byte 0x0600, 0x2786
+    .4byte kBattleAnimSpriteSheet_119
+    .2byte 0x0800, 0x2787
+    .4byte kBattleAnimSpriteSheet_120
+    .2byte 0x0200, 0x2788
+    .4byte kBattleAnimSpriteSheet_121
+    .2byte 0x0040, 0x2789
+    .4byte kBattleAnimSpriteSheet_122
+    .2byte 0x0180, 0x278A
+    .4byte kBattleAnimSpriteSheet_123
+    .2byte 0x0600, 0x278B
+    .4byte kBattleAnimSpriteSheet_124
+    .2byte 0x0600, 0x278C
+    .4byte kBattleAnimSpriteSheet_125
+    .2byte 0x0200, 0x278D
+    .4byte kBattleAnimSpriteSheet_126
+    .2byte 0x0080, 0x278E
+    .4byte kBattleAnimSpriteSheet_127
+    .2byte 0x0200, 0x278F
+    .4byte kBattleAnimSpriteSheet_128
+    .2byte 0x0800, 0x2790
+    .4byte kBattleAnimSpriteSheet_129
+    .2byte 0x0080, 0x2791
+    .4byte kBattleAnimSpriteSheet_130
+    .2byte 0x0A00, 0x2792
+    .4byte kBattleAnimSpriteSheet_131
+    .2byte 0x0280, 0x2793
+    .4byte kBattleAnimSpriteSheet_132
+    .2byte 0x0280, 0x2794
+    .4byte kBattleAnimSpriteSheet_133
+    .2byte 0x0100, 0x2795
+    .4byte kBattleAnimSpriteSheet_134
+    .2byte 0x0200, 0x2796
+    .4byte kBattleAnimSpriteSheet_135
+    .2byte 0x0200, 0x2797
+    .4byte kBattleAnimSpriteSheet_136
+    .2byte 0x0020, 0x2798
+    .4byte kBattleAnimSpriteSheet_137
+    .2byte 0x0A00, 0x2799
+    .4byte kBattleAnimSpriteSheet_138
+    .2byte 0x0800, 0x279A
+    .4byte kBattleAnimSpriteSheet_139
+    .2byte 0x0800, 0x279B
+    .4byte kBattleAnimSpriteSheet_140
+    .2byte 0x00C0, 0x279C
+    .4byte kBattleAnimSpriteSheet_141
+    .2byte 0x01C0, 0x279D
+    .4byte kBattleAnimSpriteSheet_142
+    .2byte 0x0100, 0x279E
+    .4byte kBattleAnimSpriteSheet_143
+    .2byte 0x0800, 0x279F
+    .4byte kBattleAnimSpriteSheet_172
+    .2byte 0x0200, 0x27A0
+    .4byte kBattleAnimSpriteSheet_145
+    .2byte 0x0800, 0x27A1
+    .4byte kBattleAnimSpriteSheet_146
+    .2byte 0x0180, 0x27A2
+    .4byte kBattleAnimSpriteSheet_147
+    .2byte 0x0180, 0x27A3
+    .4byte kBattleAnimSpriteSheet_148
+    .2byte 0x0200, 0x27A4
+    .4byte kBattleAnimSpriteSheet_259
+    .2byte 0x0200, 0x27A5
+    .4byte kBattleAnimSpriteSheet_150
+    .2byte 0x0180, 0x27A6
+    .4byte kBattleAnimSpriteSheet_151
+    .2byte 0x0400, 0x27A7
+    .4byte kBattleAnimSpriteSheet_152
+    .2byte 0x0080, 0x27A8
+    .4byte kBattleAnimSpriteSheet_153
+    .2byte 0x0100, 0x27A9
+    .4byte kBattleAnimSpriteSheet_154
+    .2byte 0x0100, 0x27AA
+    .4byte kBattleAnimSpriteSheet_155
+    .2byte 0x0140, 0x27AB
+    .4byte kBattleAnimSpriteSheet_156
+    .2byte 0x0800, 0x27AC
+    .4byte kBattleAnimSpriteSheet_157
+    .2byte 0x0200, 0x27AD
+    .4byte kBattleAnimSpriteSheet_158
+    .2byte 0x0100, 0x27AE
+    .4byte kBattleAnimSpriteSheet_159
+    .2byte 0x00A0, 0x27AF
+    .4byte kBattleAnimSpriteSheet_160
+    .2byte 0x0100, 0x27B0
+    .4byte kBattleAnimSpriteSheet_161
+    .2byte 0x0080, 0x27B1
+    .4byte kBattleAnimSpriteSheet_162
+    .2byte 0x0300, 0x27B2
+    .4byte kBattleAnimSpriteSheet_288
+    .2byte 0x0100, 0x27B3
+    .4byte kBattleAnimSpriteSheet_288
+    .2byte 0x0100, 0x27B4
+    .4byte kBattleAnimSpriteSheet_288
+    .2byte 0x0100, 0x27B5
+    .4byte kBattleAnimSpriteSheet_170
+    .2byte 0x0800, 0x27B6
+    .4byte kBattleAnimSpriteSheet_170
+    .2byte 0x0800, 0x27B7
+    .4byte kBattleAnimSpriteSheet_170
+    .2byte 0x0800, 0x27B8
+    .4byte kBattleAnimSpriteSheet_170
+    .2byte 0x0800, 0x27B9
+    .4byte kBattleAnimSpriteSheet_170
+    .2byte 0x0800, 0x27BA
+    .4byte kBattleAnimSpriteSheet_171
+    .2byte 0x0080, 0x27BB
+    .4byte kBattleAnimSpriteSheet_172
+    .2byte 0x0200, 0x27BC
+    .4byte kBattleAnimSpriteSheet_173
+    .2byte 0x0200, 0x27BD
+    .4byte kBattleAnimSpriteSheet_174
+    .2byte 0x0200, 0x27BE
+    .4byte kBattleAnimSpriteSheet_175
+    .2byte 0x0080, 0x27BF
+    .4byte kBattleAnimSpriteSheet_176
+    .2byte 0x0200, 0x27C0
+    .4byte kBattleAnimSpriteSheet_177
+    .2byte 0x0500, 0x27C1
+    .4byte kBattleAnimSpriteSheet_178
+    .2byte 0x0800, 0x27C2
+    .4byte kBattleAnimSpriteSheet_179
+    .2byte 0x0400, 0x27C3
+    .4byte kBattleAnimSpriteSheet_180
+    .2byte 0x0020, 0x27C4
+    .4byte kBattleAnimSpriteSheet_181
+    .2byte 0x0800, 0x27C5
+    .4byte kBattleAnimSpriteSheet_182
+    .2byte 0x0100, 0x27C6
+    .4byte kBattleAnimSpriteSheet_286
+    .2byte 0x0800, 0x27C7
+    .4byte kBattleAnimSpriteSheet_184
+    .2byte 0x0400, 0x27C8
+    .4byte kBattleAnimSpriteSheet_185
+    .2byte 0x0A00, 0x27C9
+    .4byte kBattleAnimSpriteSheet_186
+    .2byte 0x1000, 0x27CA
+    .4byte kBattleAnimSpriteSheet_187
+    .2byte 0x0800, 0x27CB
+    .4byte kBattleAnimSpriteSheet_188
+    .2byte 0x0400, 0x27CC
+    .4byte kBattleAnimSpriteSheet_189
+    .2byte 0x0200, 0x27CD
+    .4byte kBattleAnimSpriteSheet_190
+    .2byte 0x0800, 0x27CE
+    .4byte kBattleAnimSpriteSheet_191
+    .2byte 0x0800, 0x27CF
+    .4byte kBattleAnimSpriteSheet_192
+    .2byte 0x0800, 0x27D0
+    .4byte kBattleAnimSpriteSheet_193
+    .2byte 0x0200, 0x27D1
+    .4byte kBattleAnimSpriteSheet_194
+    .2byte 0x0800, 0x27D2
+    .4byte kBattleAnimSpriteSheet_195
+    .2byte 0x0200, 0x27D3
+    .4byte kBattleAnimSpriteSheet_196
+    .2byte 0x0800, 0x27D4
+    .4byte kBattleAnimSpriteSheet_197
+    .2byte 0x0200, 0x27D5
+    .4byte kBattleAnimSpriteSheet_198
+    .2byte 0x0800, 0x27D6
+    .4byte kBattleAnimSpriteSheet_199
+    .2byte 0x0400, 0x27D7
+    .4byte kBattleAnimSpriteSheet_200
+    .2byte 0x0200, 0x27D8
+    .4byte kBattleAnimSpriteSheet_201
+    .2byte 0x0A80, 0x27D9
+    .4byte kBattleAnimSpriteSheet_202
+    .2byte 0x0600, 0x27DA
+    .4byte kBattleAnimSpriteSheet_203
+    .2byte 0x0800, 0x27DB
+    .4byte kBattleAnimSpriteSheet_204
+    .2byte 0x0200, 0x27DC
+    .4byte kBattleAnimSpriteSheet_205
+    .2byte 0x0600, 0x27DD
+    .4byte kBattleAnimSpriteSheet_206
+    .2byte 0x0800, 0x27DE
+    .4byte kBattleAnimSpriteSheet_207
+    .2byte 0x0180, 0x27DF
+    .4byte kBattleAnimSpriteSheet_208
+    .2byte 0x0800, 0x27E0
+    .4byte kBattleAnimSpriteSheet_209
+    .2byte 0x0800, 0x27E1
+    .4byte kBattleAnimSpriteSheet_219
+    .2byte 0x0080, 0x27E2
+    .4byte kBattleAnimSpriteSheet_211
+    .2byte 0x0080, 0x27E3
+    .4byte kBattleAnimSpriteSheet_267
+    .2byte 0x0800, 0x27E4
+    .4byte kBattleAnimSpriteSheet_213
+    .2byte 0x0800, 0x27E5
+    .4byte kBattleAnimSpriteSheet_214
+    .2byte 0x0600, 0x27E6
+    .4byte kBattleAnimSpriteSheet_215
+    .2byte 0x0600, 0x27E7
+    .4byte kBattleAnimSpriteSheet_219
+    .2byte 0x0080, 0x27E8
+    .4byte kBattleAnimSpriteSheet_217
+    .2byte 0x0080, 0x27E9
+    .4byte kBattleAnimSpriteSheet_218
+    .2byte 0x0180, 0x27EA
+    .4byte kBattleAnimSpriteSheet_219
+    .2byte 0x0080, 0x27EB
+    .4byte kBattleAnimSpriteSheet_220
+    .2byte 0x0200, 0x27EC
+    .4byte kBattleAnimSpriteSheet_221
+    .2byte 0x0400, 0x27ED
+    .4byte kBattleAnimSpriteSheet_222
+    .2byte 0x0A00, 0x27EE
+    .4byte kBattleAnimSpriteSheet_223
+    .2byte 0x0800, 0x27EF
+    .4byte kBattleAnimSpriteSheet_224
+    .2byte 0x0200, 0x27F0
+    .4byte kBattleAnimSpriteSheet_225
+    .2byte 0x0400, 0x27F1
+    .4byte kBattleAnimSpriteSheet_226
+    .2byte 0x0080, 0x27F2
+    .4byte kBattleAnimSpriteSheet_227
+    .2byte 0x0800, 0x27F3
+    .4byte kBattleAnimSpriteSheet_228
+    .2byte 0x0200, 0x27F4
+    .4byte kBattleAnimSpriteSheet_229
+    .2byte 0x0300, 0x27F5
+    .4byte kBattleAnimSpriteSheet_230
+    .2byte 0x0800, 0x27F6
+    .4byte kBattleAnimSpriteSheet_231
+    .2byte 0x0380, 0x27F7
+    .4byte kBattleAnimSpriteSheet_232
+    .2byte 0x0800, 0x27F8
+    .4byte kBattleAnimSpriteSheet_233
+    .2byte 0x00C0, 0x27F9
+    .4byte kBattleAnimSpriteSheet_234
+    .2byte 0x0800, 0x27FA
+    .4byte kBattleAnimSpriteSheet_237
+    .2byte 0x0060, 0x27FB
+    .4byte kBattleAnimSpriteSheet_237
+    .2byte 0x0060, 0x27FC
+    .4byte kBattleAnimSpriteSheet_237
+    .2byte 0x0060, 0x27FD
+    .4byte kBattleAnimSpriteSheet_238
+    .2byte 0x0080, 0x27FE
+    .4byte kBattleAnimSpriteSheet_239
+    .2byte 0x0180, 0x27FF
+    .4byte kBattleAnimSpriteSheet_240
+    .2byte 0x0180, 0x2800
+    .4byte kBattleAnimSpriteSheet_241
+    .2byte 0x0200, 0x2801
+    .4byte kBattleAnimSpriteSheet_242
+    .2byte 0x0200, 0x2802
+    .4byte kBattleAnimSpriteSheet_243
+    .2byte 0x0020, 0x2803
+    .4byte kBattleAnimSpriteSheet_244
+    .2byte 0x0400, 0x2804
+    .4byte kBattleAnimSpriteSheet_245
+    .2byte 0x0600, 0x2805
+    .4byte kBattleAnimSpriteSheet_246
+    .2byte 0x1000, 0x2806
+    .4byte kBattleAnimSpriteSheet_247
+    .2byte 0x0400, 0x2807
+    .4byte kBattleAnimSpriteSheet_248
+    .2byte 0x0020, 0x2808
+    .4byte kBattleAnimSpriteSheet_249
+    .2byte 0x0080, 0x2809
+    .4byte kBattleAnimSpriteSheet_250
+    .2byte 0x0800, 0x280A
+    .4byte kBattleAnimSpriteSheet_251
+    .2byte 0x0080, 0x280B
+    .4byte kBattleAnimSpriteSheet_252
+    .2byte 0x0200, 0x280C
+    .4byte kBattleAnimSpriteSheet_253
+    .2byte 0x0400, 0x280D
+    .4byte kBattleAnimSpriteSheet_254
+    .2byte 0x0200, 0x280E
+    .4byte kBattleAnimSpriteSheet_255
+    .2byte 0x0200, 0x280F
+    .4byte kBattleAnimSpriteSheet_256
+    .2byte 0x0800, 0x2810
+    .4byte kBattleAnimSpriteSheet_257
+    .2byte 0x0280, 0x2811
+    .4byte kBattleAnimSpriteSheet_258
+    .2byte 0x0200, 0x2812
+    .4byte kBattleAnimSpriteSheet_259
+    .2byte 0x0200, 0x2813
+    .4byte kBattleAnimSpriteSheet_260
+    .2byte 0x0400, 0x2814
+    .4byte kBattleAnimSpriteSheet_261
+    .2byte 0x0200, 0x2815
+    .4byte kBattleAnimSpriteSheet_262
+    .2byte 0x0200, 0x2816
+    .4byte kBattleAnimSpriteSheet_263
+    .2byte 0x0080, 0x2817
+    .4byte kBattleAnimSpriteSheet_268
+    .2byte 0x0020, 0x2818
+    .4byte kBattleAnimSpriteSheet_268
+    .2byte 0x0020, 0x2819
+    .4byte kBattleAnimSpriteSheet_266
+    .2byte 0x0080, 0x281A
+    .4byte kBattleAnimSpriteSheet_267
+    .2byte 0x0800, 0x281B
+    .4byte kBattleAnimSpriteSheet_268
+    .2byte 0x0020, 0x281C
+    .4byte kBattleAnimSpriteSheet_269
+    .2byte 0x0080, 0x281D
+    .4byte kBattleAnimSpriteSheet_270
+    .2byte 0x0400, 0x281E
+    .4byte kBattleAnimSpriteSheet_271
+    .2byte 0x0080, 0x281F
+    .4byte kBattleAnimSpriteSheet_272
+    .2byte 0x0800, 0x2820
+    .4byte kBattleAnimSpriteSheet_273
+    .2byte 0x0020, 0x2821
+    .4byte kBattleAnimSpriteSheet_274
+    .2byte 0x0800, 0x2822
+    .4byte kBattleAnimSpriteSheet_275
+    .2byte 0x0800, 0x2823
+    .4byte kBattleAnimSpriteSheet_276
+    .2byte 0x0800, 0x2824
+    .4byte kBattleAnimSpriteSheet_277
+    .2byte 0x1000, 0x2825
+    .4byte kBattleAnimSpriteSheet_278
+    .2byte 0x0800, 0x2826
+    .4byte kBattleAnimSpriteSheet_279
+    .2byte 0x00A0, 0x2827
+    .4byte kBattleAnimSpriteSheet_280
+    .2byte 0x0800, 0x2828
+    .4byte kBattleAnimSpriteSheet_281
+    .2byte 0x0200, 0x2829
+    .4byte kBattleAnimSpriteSheet_282
+    .2byte 0x0600, 0x282A
+    .4byte kBattleAnimSpriteSheet_283
+    .2byte 0x0200, 0x282B
+    .4byte kBattleAnimSpriteSheet_284
+    .2byte 0x0800, 0x282C
+    .4byte kBattleAnimSpriteSheet_285
+    .2byte 0x0200, 0x282D
+    .4byte kBattleAnimSpriteSheet_286
+    .2byte 0x0800, 0x282E
+    .4byte kBattleAnimSpriteSheet_287
+    .2byte 0x1000, 0x282F
+    .4byte kBattleAnimSpriteSheet_288
+    .2byte 0x0100, 0x2830
 
-    .global UNK_83AD350
-UNK_83AD350: @ 83AD350
-    .incbin "baserom.gba", 0x3AD350, 0x120
+bogo_83AD510:: @ 83AD510
+    .4byte kBattleAnimPalette_000
+    .2byte 0x2710, 0x0000
+    .4byte kBattleAnimPalette_001
+    .2byte 0x2711, 0x0000
+    .4byte kBattleAnimPalette_002
+    .2byte 0x2712, 0x0000
+    .4byte kBattleAnimPalette_003
+    .2byte 0x2713, 0x0000
+    .4byte kBattleAnimPalette_004
+    .2byte 0x2714, 0x0000
+    .4byte kBattleAnimPalette_005
+    .2byte 0x2715, 0x0000
+    .4byte kBattleAnimPalette_006
+    .2byte 0x2716, 0x0000
+    .4byte kBattleAnimPalette_007
+    .2byte 0x2717, 0x0000
+    .4byte kBattleAnimPalette_008
+    .2byte 0x2718, 0x0000
+    .4byte kBattleAnimPalette_009
+    .2byte 0x2719, 0x0000
+    .4byte kBattleAnimPalette_010
+    .2byte 0x271A, 0x0000
+    .4byte kBattleAnimPalette_011
+    .2byte 0x271B, 0x0000
+    .4byte kBattleAnimPalette_012
+    .2byte 0x271C, 0x0000
+    .4byte kBattleAnimPalette_013
+    .2byte 0x271D, 0x0000
+    .4byte kBattleAnimPalette_014
+    .2byte 0x271E, 0x0000
+    .4byte kBattleAnimPalette_015
+    .2byte 0x271F, 0x0000
+    .4byte kBattleAnimPalette_016
+    .2byte 0x2720, 0x0000
+    .4byte kBattleAnimPalette_016
+    .2byte 0x2721, 0x0000
+    .4byte kBattleAnimPalette_018
+    .2byte 0x2722, 0x0000
+    .4byte kBattleAnimPalette_019
+    .2byte 0x2723, 0x0000
+    .4byte kBattleAnimPalette_020
+    .2byte 0x2724, 0x0000
+    .4byte kBattleAnimPalette_021
+    .2byte 0x2725, 0x0000
+    .4byte kBattleAnimPalette_022
+    .2byte 0x2726, 0x0000
+    .4byte kBattleAnimPalette_023
+    .2byte 0x2727, 0x0000
+    .4byte kBattleAnimPalette_024
+    .2byte 0x2728, 0x0000
+    .4byte kBattleAnimPalette_025
+    .2byte 0x2729, 0x0000
+    .4byte kBattleAnimPalette_026
+    .2byte 0x272A, 0x0000
+    .4byte kBattleAnimPalette_027
+    .2byte 0x272B, 0x0000
+    .4byte kBattleAnimPalette_028
+    .2byte 0x272C, 0x0000
+    .4byte kBattleAnimPalette_029
+    .2byte 0x272D, 0x0000
+    .4byte kBattleAnimPalette_030
+    .2byte 0x272E, 0x0000
+    .4byte kBattleAnimPalette_031
+    .2byte 0x272F, 0x0000
+    .4byte kBattleAnimPalette_032
+    .2byte 0x2730, 0x0000
+    .4byte kBattleAnimPalette_033
+    .2byte 0x2731, 0x0000
+    .4byte kBattleAnimPalette_033
+    .2byte 0x2732, 0x0000
+    .4byte kBattleAnimPalette_033
+    .2byte 0x2733, 0x0000
+    .4byte kBattleAnimPalette_036
+    .2byte 0x2734, 0x0000
+    .4byte kBattleAnimPalette_036
+    .2byte 0x2735, 0x0000
+    .4byte kBattleAnimPalette_038
+    .2byte 0x2736, 0x0000
+    .4byte kBattleAnimPalette_039
+    .2byte 0x2737, 0x0000
+    .4byte kBattleAnimPalette_038
+    .2byte 0x2738, 0x0000
+    .4byte kBattleAnimPalette_038
+    .2byte 0x2739, 0x0000
+    .4byte kBattleAnimPalette_042
+    .2byte 0x273A, 0x0000
+    .4byte kBattleAnimPalette_043
+    .2byte 0x273B, 0x0000
+    .4byte kBattleAnimPalette_044
+    .2byte 0x273C, 0x0000
+    .4byte kBattleAnimPalette_045
+    .2byte 0x273D, 0x0000
+    .4byte kBattleAnimPalette_046
+    .2byte 0x273E, 0x0000
+    .4byte kBattleAnimPalette_046_B
+    .2byte 0x273E, 0x0000
+    .4byte kBattleAnimPalette_048
+    .2byte 0x2740, 0x0000
+    .4byte kBattleAnimPalette_049
+    .2byte 0x2741, 0x0000
+    .4byte kBattleAnimPalette_050
+    .2byte 0x2742, 0x0000
+    .4byte kBattleAnimPalette_050
+    .2byte 0x2743, 0x0000
+    .4byte kBattleAnimPalette_050
+    .2byte 0x2744, 0x0000
+    .4byte kBattleAnimPalette_026
+    .2byte 0x2745, 0x0000
+    .4byte kBattleAnimPalette_054
+    .2byte 0x2746, 0x0000
+    .4byte kBattleAnimPalette_050
+    .2byte 0x2747, 0x0000
+    .4byte kBattleAnimPalette_056
+    .2byte 0x2748, 0x0000
+    .4byte kBattleAnimPalette_057
+    .2byte 0x2749, 0x0000
+    .4byte kBattleAnimPalette_058
+    .2byte 0x274A, 0x0000
+    .4byte kBattleAnimPalette_059
+    .2byte 0x274B, 0x0000
+    .4byte kBattleAnimPalette_060
+    .2byte 0x274C, 0x0000
+    .4byte kBattleAnimPalette_061
+    .2byte 0x274D, 0x0000
+    .4byte kBattleAnimPalette_062
+    .2byte 0x274E, 0x0000
+    .4byte kBattleAnimPalette_063
+    .2byte 0x274F, 0x0000
+    .4byte kBattleAnimPalette_064
+    .2byte 0x2750, 0x0000
+    .4byte kBattleAnimPalette_065
+    .2byte 0x2751, 0x0000
+    .4byte kBattleAnimPalette_066
+    .2byte 0x2752, 0x0000
+    .4byte kBattleAnimPalette_067
+    .2byte 0x2753, 0x0000
+    .4byte kBattleAnimPalette_068
+    .2byte 0x2754, 0x0000
+    .4byte kBattleAnimPalette_065
+    .2byte 0x2755, 0x0000
+    .4byte kBattleAnimPalette_070
+    .2byte 0x2756, 0x0000
+    .4byte kBattleAnimPalette_070
+    .2byte 0x2757, 0x0000
+    .4byte kBattleAnimPalette_072
+    .2byte 0x2758, 0x0000
+    .4byte kBattleAnimPalette_073
+    .2byte 0x2759, 0x0000
+    .4byte kBattleAnimPalette_074
+    .2byte 0x275A, 0x0000
+    .4byte kBattleAnimPalette_075
+    .2byte 0x275B, 0x0000
+    .4byte kBattleAnimPalette_076
+    .2byte 0x275C, 0x0000
+    .4byte kBattleAnimPalette_076
+    .2byte 0x275D, 0x0000
+    .4byte kBattleAnimPalette_078
+    .2byte 0x275E, 0x0000
+    .4byte kBattleAnimPalette_078
+    .2byte 0x275F, 0x0000
+    .4byte kBattleAnimPalette_080
+    .2byte 0x2760, 0x0000
+    .4byte kBattleAnimPalette_081
+    .2byte 0x2761, 0x0000
+    .4byte kBattleAnimPalette_082
+    .2byte 0x2762, 0x0000
+    .4byte kBattleAnimPalette_083
+    .2byte 0x2763, 0x0000
+    .4byte kBattleAnimPalette_084
+    .2byte 0x2764, 0x0000
+    .4byte kBattleAnimPalette_085
+    .2byte 0x2765, 0x0000
+    .4byte kBattleAnimPalette_086
+    .2byte 0x2766, 0x0000
+    .4byte kBattleAnimPalette_087
+    .2byte 0x2767, 0x0000
+    .4byte kBattleAnimPalette_088
+    .2byte 0x2768, 0x0000
+    .4byte kBattleAnimPalette_089
+    .2byte 0x2769, 0x0000
+    .4byte kBattleAnimPalette_090
+    .2byte 0x276A, 0x0000
+    .4byte kBattleAnimPalette_091
+    .2byte 0x276B, 0x0000
+    .4byte kBattleAnimPalette_092
+    .2byte 0x276C, 0x0000
+    .4byte kBattleAnimPalette_093
+    .2byte 0x276D, 0x0000
+    .4byte kBattleAnimPalette_094
+    .2byte 0x276E, 0x0000
+    .4byte kBattleAnimPalette_095
+    .2byte 0x276F, 0x0000
+    .4byte kBattleAnimPalette_096
+    .2byte 0x2770, 0x0000
+    .4byte kBattleAnimPalette_097
+    .2byte 0x2771, 0x0000
+    .4byte kBattleAnimPalette_094
+    .2byte 0x2772, 0x0000
+    .4byte kBattleAnimPalette_099
+    .2byte 0x2773, 0x0000
+    .4byte kBattleAnimPalette_100
+    .2byte 0x2774, 0x0000
+    .4byte kBattleAnimPalette_101
+    .2byte 0x2775, 0x0000
+    .4byte kBattleAnimPalette_101
+    .2byte 0x2776, 0x0000
+    .4byte kBattleAnimPalette_103
+    .2byte 0x2777, 0x0000
+    .4byte kBattleAnimPalette_104
+    .2byte 0x2778, 0x0000
+    .4byte kBattleAnimPalette_105
+    .2byte 0x2779, 0x0000
+    .4byte kBattleAnimPalette_105
+    .2byte 0x277A, 0x0000
+    .4byte kBattleAnimPalette_107
+    .2byte 0x277B, 0x0000
+    .4byte kBattleAnimPalette_107
+    .2byte 0x277C, 0x0000
+    .4byte kBattleAnimPalette_109
+    .2byte 0x277D, 0x0000
+    .4byte kBattleAnimPalette_109
+    .2byte 0x277E, 0x0000
+    .4byte kBattleAnimPalette_111
+    .2byte 0x277F, 0x0000
+    .4byte kBattleAnimPalette_112
+    .2byte 0x2780, 0x0000
+    .4byte kBattleAnimPalette_113
+    .2byte 0x2781, 0x0000
+    .4byte kBattleAnimPalette_114
+    .2byte 0x2782, 0x0000
+    .4byte kBattleAnimPalette_115
+    .2byte 0x2783, 0x0000
+    .4byte kBattleAnimPalette_116
+    .2byte 0x2784, 0x0000
+    .4byte kBattleAnimPalette_117
+    .2byte 0x2785, 0x0000
+    .4byte kBattleAnimPalette_118
+    .2byte 0x2786, 0x0000
+    .4byte kBattleAnimPalette_119
+    .2byte 0x2787, 0x0000
+    .4byte kBattleAnimPalette_120
+    .2byte 0x2788, 0x0000
+    .4byte kBattleAnimPalette_121
+    .2byte 0x2789, 0x0000
+    .4byte kBattleAnimPalette_122
+    .2byte 0x278A, 0x0000
+    .4byte kBattleAnimPalette_122
+    .2byte 0x278B, 0x0000
+    .4byte kBattleAnimPalette_124
+    .2byte 0x278C, 0x0000
+    .4byte kBattleAnimPalette_125
+    .2byte 0x278D, 0x0000
+    .4byte kBattleAnimPalette_126
+    .2byte 0x278E, 0x0000
+    .4byte kBattleAnimPalette_127
+    .2byte 0x278F, 0x0000
+    .4byte kBattleAnimPalette_128
+    .2byte 0x2790, 0x0000
+    .4byte kBattleAnimPalette_128
+    .2byte 0x2791, 0x0000
+    .4byte kBattleAnimPalette_130
+    .2byte 0x2792, 0x0000
+    .4byte kBattleAnimPalette_130
+    .2byte 0x2793, 0x0000
+    .4byte kBattleAnimPalette_132
+    .2byte 0x2794, 0x0000
+    .4byte kBattleAnimPalette_133
+    .2byte 0x2795, 0x0000
+    .4byte kBattleAnimPalette_133
+    .2byte 0x2796, 0x0000
+    .4byte kBattleAnimPalette_135
+    .2byte 0x2797, 0x0000
+    .4byte kBattleAnimPalette_136
+    .2byte 0x2798, 0x0000
+    .4byte kBattleAnimPalette_135
+    .2byte 0x2799, 0x0000
+    .4byte kBattleAnimPalette_135
+    .2byte 0x279A, 0x0000
+    .4byte kBattleAnimPalette_139
+    .2byte 0x279B, 0x0000
+    .4byte kBattleAnimPalette_140
+    .2byte 0x279C, 0x0000
+    .4byte kBattleAnimPalette_141
+    .2byte 0x279D, 0x0000
+    .4byte kBattleAnimPalette_141
+    .2byte 0x279E, 0x0000
+    .4byte kBattleAnimPalette_143
+    .2byte 0x279F, 0x0000
+    .4byte kBattleAnimPalette_144
+    .2byte 0x27A0, 0x0000
+    .4byte kBattleAnimPalette_139
+    .2byte 0x27A1, 0x0000
+    .4byte kBattleAnimPalette_115
+    .2byte 0x27A2, 0x0000
+    .4byte kBattleAnimPalette_147
+    .2byte 0x27A3, 0x0000
+    .4byte kBattleAnimPalette_148
+    .2byte 0x27A4, 0x0000
+    .4byte kBattleAnimPalette_148
+    .2byte 0x27A5, 0x0000
+    .4byte kBattleAnimPalette_150
+    .2byte 0x27A6, 0x0000
+    .4byte kBattleAnimPalette_150
+    .2byte 0x27A7, 0x0000
+    .4byte kBattleAnimPalette_152
+    .2byte 0x27A8, 0x0000
+    .4byte kBattleAnimPalette_153
+    .2byte 0x27A9, 0x0000
+    .4byte kBattleAnimPalette_154
+    .2byte 0x27AA, 0x0000
+    .4byte kBattleAnimPalette_155
+    .2byte 0x27AB, 0x0000
+    .4byte kBattleAnimPalette_156
+    .2byte 0x27AC, 0x0000
+    .4byte kBattleAnimPalette_157
+    .2byte 0x27AD, 0x0000
+    .4byte kBattleAnimPalette_158
+    .2byte 0x27AE, 0x0000
+    .4byte kBattleAnimPalette_159
+    .2byte 0x27AF, 0x0000
+    .4byte kBattleAnimPalette_160
+    .2byte 0x27B0, 0x0000
+    .4byte kBattleAnimPalette_161
+    .2byte 0x27B1, 0x0000
+    .4byte kBattleAnimPalette_162
+    .2byte 0x27B2, 0x0000
+    .4byte kBattleAnimPalette_163
+    .2byte 0x27B3, 0x0000
+    .4byte kBattleAnimPalette_164
+    .2byte 0x27B4, 0x0000
+    .4byte kBattleAnimPalette_165
+    .2byte 0x27B5, 0x0000
+    .4byte kBattleAnimPalette_166
+    .2byte 0x27B6, 0x0000
+    .4byte kBattleAnimPalette_167
+    .2byte 0x27B7, 0x0000
+    .4byte kBattleAnimPalette_168
+    .2byte 0x27B8, 0x0000
+    .4byte kBattleAnimPalette_169
+    .2byte 0x27B9, 0x0000
+    .4byte kBattleAnimPalette_170
+    .2byte 0x27BA, 0x0000
+    .4byte kBattleAnimPalette_171
+    .2byte 0x27BB, 0x0000
+    .4byte kBattleAnimPalette_172
+    .2byte 0x27BC, 0x0000
+    .4byte kBattleAnimPalette_001
+    .2byte 0x27BD, 0x0000
+    .4byte kBattleAnimPalette_174
+    .2byte 0x27BE, 0x0000
+    .4byte kBattleAnimPalette_175
+    .2byte 0x27BF, 0x0000
+    .4byte kBattleAnimPalette_176
+    .2byte 0x27C0, 0x0000
+    .4byte kBattleAnimPalette_177
+    .2byte 0x27C1, 0x0000
+    .4byte kBattleAnimPalette_178
+    .2byte 0x27C2, 0x0000
+    .4byte kBattleAnimPalette_179
+    .2byte 0x27C3, 0x0000
+    .4byte kBattleAnimPalette_179
+    .2byte 0x27C4, 0x0000
+    .4byte kBattleAnimPalette_179
+    .2byte 0x27C5, 0x0000
+    .4byte kBattleAnimPalette_182
+    .2byte 0x27C6, 0x0000
+    .4byte kBattleAnimPalette_183
+    .2byte 0x27C7, 0x0000
+    .4byte kBattleAnimPalette_184
+    .2byte 0x27C8, 0x0000
+    .4byte kBattleAnimPalette_185
+    .2byte 0x27C9, 0x0000
+    .4byte kBattleAnimPalette_186
+    .2byte 0x27CA, 0x0000
+    .4byte kBattleAnimPalette_187
+    .2byte 0x27CB, 0x0000
+    .4byte kBattleAnimPalette_188
+    .2byte 0x27CC, 0x0000
+    .4byte kBattleAnimPalette_189
+    .2byte 0x27CD, 0x0000
+    .4byte kBattleAnimPalette_190
+    .2byte 0x27CE, 0x0000
+    .4byte kBattleAnimPalette_191
+    .2byte 0x27CF, 0x0000
+    .4byte kBattleAnimPalette_192
+    .2byte 0x27D0, 0x0000
+    .4byte kBattleAnimPalette_193
+    .2byte 0x27D1, 0x0000
+    .4byte kBattleAnimPalette_194
+    .2byte 0x27D2, 0x0000
+    .4byte kBattleAnimPalette_195
+    .2byte 0x27D3, 0x0000
+    .4byte kBattleAnimPalette_196
+    .2byte 0x27D4, 0x0000
+    .4byte kBattleAnimPalette_197
+    .2byte 0x27D5, 0x0000
+    .4byte kBattleAnimPalette_198
+    .2byte 0x27D6, 0x0000
+    .4byte kBattleAnimPalette_199
+    .2byte 0x27D7, 0x0000
+    .4byte kBattleAnimPalette_200
+    .2byte 0x27D8, 0x0000
+    .4byte kBattleAnimPalette_201
+    .2byte 0x27D9, 0x0000
+    .4byte kBattleAnimPalette_202
+    .2byte 0x27DA, 0x0000
+    .4byte kBattleAnimPalette_203
+    .2byte 0x27DB, 0x0000
+    .4byte kBattleAnimPalette_204
+    .2byte 0x27DC, 0x0000
+    .4byte kBattleAnimPalette_205
+    .2byte 0x27DD, 0x0000
+    .4byte kBattleAnimPalette_206
+    .2byte 0x27DE, 0x0000
+    .4byte kBattleAnimPalette_207
+    .2byte 0x27DF, 0x0000
+    .4byte kBattleAnimPalette_167
+    .2byte 0x27E0, 0x0000
+    .4byte kBattleAnimPalette_209
+    .2byte 0x27E1, 0x0000
+    .4byte kBattleAnimPalette_210
+    .2byte 0x27E2, 0x0000
+    .4byte kBattleAnimPalette_211
+    .2byte 0x27E3, 0x0000
+    .4byte kBattleAnimPalette_211
+    .2byte 0x27E4, 0x0000
+    .4byte kBattleAnimPalette_211
+    .2byte 0x27E5, 0x0000
+    .4byte kBattleAnimPalette_064
+    .2byte 0x27E6, 0x0000
+    .4byte kBattleAnimPalette_215
+    .2byte 0x27E7, 0x0000
+    .4byte kBattleAnimPalette_216
+    .2byte 0x27E8, 0x0000
+    .4byte kBattleAnimPalette_217
+    .2byte 0x27E9, 0x0000
+    .4byte kBattleAnimPalette_218
+    .2byte 0x27EA, 0x0000
+    .4byte kBattleAnimPalette_219
+    .2byte 0x27EB, 0x0000
+    .4byte kBattleAnimPalette_220
+    .2byte 0x27EC, 0x0000
+    .4byte kBattleAnimPalette_221
+    .2byte 0x27ED, 0x0000
+    .4byte kBattleAnimPalette_222
+    .2byte 0x27EE, 0x0000
+    .4byte kBattleAnimPalette_223
+    .2byte 0x27EF, 0x0000
+    .4byte kBattleAnimPalette_224
+    .2byte 0x27F0, 0x0000
+    .4byte kBattleAnimPalette_225
+    .2byte 0x27F1, 0x0000
+    .4byte kBattleAnimPalette_226
+    .2byte 0x27F2, 0x0000
+    .4byte kBattleAnimPalette_226
+    .2byte 0x27F3, 0x0000
+    .4byte kBattleAnimPalette_228
+    .2byte 0x27F4, 0x0000
+    .4byte kBattleAnimPalette_229
+    .2byte 0x27F5, 0x0000
+    .4byte kBattleAnimPalette_230
+    .2byte 0x27F6, 0x0000
+    .4byte kBattleAnimPalette_231
+    .2byte 0x27F7, 0x0000
+    .4byte kBattleAnimPalette_231
+    .2byte 0x27F8, 0x0000
+    .4byte kBattleAnimPalette_233
+    .2byte 0x27F9, 0x0000
+    .4byte kBattleAnimPalette_234
+    .2byte 0x27FA, 0x0000
+    .4byte kBattleAnimPalette_235
+    .2byte 0x27FB, 0x0000
+    .4byte kBattleAnimPalette_236
+    .2byte 0x27FC, 0x0000
+    .4byte kBattleAnimPalette_237
+    .2byte 0x27FD, 0x0000
+    .4byte kBattleAnimPalette_238
+    .2byte 0x27FE, 0x0000
+    .4byte kBattleAnimPalette_239
+    .2byte 0x27FF, 0x0000
+    .4byte kBattleAnimPalette_240
+    .2byte 0x2800, 0x0000
+    .4byte kBattleAnimPalette_241
+    .2byte 0x2801, 0x0000
+    .4byte kBattleAnimPalette_242
+    .2byte 0x2802, 0x0000
+    .4byte kBattleAnimPalette_243
+    .2byte 0x2803, 0x0000
+    .4byte kBattleAnimPalette_244
+    .2byte 0x2804, 0x0000
+    .4byte kBattleAnimPalette_245
+    .2byte 0x2805, 0x0000
+    .4byte kBattleAnimPalette_245
+    .2byte 0x2806, 0x0000
+    .4byte kBattleAnimPalette_064
+    .2byte 0x2807, 0x0000
+    .4byte kBattleAnimPalette_248
+    .2byte 0x2808, 0x0000
+    .4byte kBattleAnimPalette_249
+    .2byte 0x2809, 0x0000
+    .4byte kBattleAnimPalette_249
+    .2byte 0x280A, 0x0000
+    .4byte kBattleAnimPalette_251
+    .2byte 0x280B, 0x0000
+    .4byte kBattleAnimPalette_252
+    .2byte 0x280C, 0x0000
+    .4byte kBattleAnimPalette_253
+    .2byte 0x280D, 0x0000
+    .4byte kBattleAnimPalette_254
+    .2byte 0x280E, 0x0000
+    .4byte kBattleAnimPalette_255
+    .2byte 0x280F, 0x0000
+    .4byte kBattleAnimPalette_256
+    .2byte 0x2810, 0x0000
+    .4byte kBattleAnimPalette_257
+    .2byte 0x2811, 0x0000
+    .4byte kBattleAnimPalette_258
+    .2byte 0x2812, 0x0000
+    .4byte kBattleAnimPalette_259
+    .2byte 0x2813, 0x0000
+    .4byte kBattleAnimPalette_260
+    .2byte 0x2814, 0x0000
+    .4byte kBattleAnimPalette_261
+    .2byte 0x2815, 0x0000
+    .4byte kBattleAnimPalette_262
+    .2byte 0x2816, 0x0000
+    .4byte kBattleAnimPalette_263
+    .2byte 0x2817, 0x0000
+    .4byte kBattleAnimPalette_264
+    .2byte 0x2818, 0x0000
+    .4byte kBattleAnimPalette_265
+    .2byte 0x2819, 0x0000
+    .4byte kBattleAnimPalette_266
+    .2byte 0x281A, 0x0000
+    .4byte kBattleAnimPalette_267
+    .2byte 0x281B, 0x0000
+    .4byte kBattleAnimPalette_268
+    .2byte 0x281C, 0x0000
+    .4byte kBattleAnimPalette_269
+    .2byte 0x281D, 0x0000
+    .4byte kBattleAnimPalette_270
+    .2byte 0x281E, 0x0000
+    .4byte kBattleAnimPalette_271
+    .2byte 0x281F, 0x0000
+    .4byte kBattleAnimPalette_272
+    .2byte 0x2820, 0x0000
+    .4byte kBattleAnimPalette_272
+    .2byte 0x2821, 0x0000
+    .4byte kBattleAnimPalette_274
+    .2byte 0x2822, 0x0000
+    .4byte kBattleAnimPalette_274
+    .2byte 0x2823, 0x0000
+    .4byte kBattleAnimPalette_274
+    .2byte 0x2824, 0x0000
+    .4byte kBattleAnimPalette_277
+    .2byte 0x2825, 0x0000
+    .4byte kBattleAnimPalette_278
+    .2byte 0x2826, 0x0000
+    .4byte kBattleAnimPalette_279
+    .2byte 0x2827, 0x0000
+    .4byte kBattleAnimPalette_280
+    .2byte 0x2828, 0x0000
+    .4byte kBattleAnimPalette_281
+    .2byte 0x2829, 0x0000
+    .4byte kBattleAnimPalette_282
+    .2byte 0x282A, 0x0000
+    .4byte kBattleAnimPalette_283
+    .2byte 0x282B, 0x0000
+    .4byte kBattleAnimPalette_284
+    .2byte 0x282C, 0x0000
+    .4byte kBattleAnimPalette_285
+    .2byte 0x282D, 0x0000
+    .4byte kBattleAnimPalette_286
+    .2byte 0x282E, 0x0000
+    .4byte kBattleAnimPalette_287
+    .2byte 0x282F, 0x0000
+    .4byte kBattleAnimPalette_288
+    .2byte 0x2830, 0x0000
 
-    .global UNK_83AD470
-UNK_83AD470: @ 83AD470
-    .incbin "baserom.gba", 0x3AD470, 0x4E0
-
-    .global UNK_83AD950
-UNK_83AD950: @ 83AD950
-    .incbin "baserom.gba", 0x3AD950, 0x308
-
-    .global UNK_83ADC58
-UNK_83ADC58: @ 83ADC58
-    .incbin "baserom.gba", 0x3ADC58, 0x120
-
-    .global UNK_83ADD78
-UNK_83ADD78: @ 83ADD78
-    .incbin "baserom.gba", 0x3ADD78, 0xA0
-
-    .global UNK_83ADE18
-UNK_83ADE18: @ 83ADE18
-    .incbin "baserom.gba", 0x3ADE18, 0x144
+List_83ADE18:: @ 83ADE18
+    .4byte kBattleAnimBackgroundImage_01
+    .4byte kBattleAnimBackgroundPalette_00
+    .4byte kBattleAnimBackgroundTilemap_00
+    .4byte kBattleAnimBackgroundImage_01
+    .4byte kBattleAnimBackgroundPalette_00
+    .4byte kBattleAnimBackgroundTilemap_00
+    .4byte kBattleAnimBackgroundImage_02
+    .4byte kBattleAnimBackgroundPalette_02
+    .4byte kUnkBin_8E7CC6C
+    .4byte kBattleAnimBackgroundImage_03
+    .4byte kBattleAnimBackgroundPalette_03
+    .4byte kBattleAnimBackgroundTilemap_03
+    .4byte kBattleAnimBackgroundImage_26
+    .4byte kBattleAnimBackgroundPalette_04
+    .4byte kBattleAnimBackgroundTilemap_04
+    .4byte kBattleAnimBackgroundImage_26
+    .4byte kBattleAnimBackgroundPalette_04
+    .4byte kBattleAnimBackgroundTilemap_05
+    .4byte kBattleAnimBackgroundImage_26
+    .4byte kBattleAnimBackgroundPalette_04
+    .4byte kBattleAnimBackgroundTilemap_06
+    .4byte kBattleAnimBackgroundImage_19
+    .4byte kBattleAnimBackgroundPalette_07
+    .4byte kBattleAnimBackgroundTilemap_07
+    .4byte kBattleAnimBackgroundImage_19
+    .4byte kBattleAnimBackgroundPalette_07
+    .4byte kBattleAnimBackgroundTilemap_08
+    .4byte kBattleAnimBackgroundImage_23
+    .4byte kBattleAnimBackgroundPalette_09
+    .4byte kBattleAnimBackgroundTilemap_09
+    .4byte kBattleAnimBackgroundImage_23
+    .4byte kBattleAnimBackgroundPalette_09
+    .4byte kBattleAnimBackgroundTilemap_10
+    .4byte kBattleAnimBackgroundImage_11
+    .4byte kBattleAnimBackgroundPalette_11
+    .4byte kBattleAnimBackgroundTilemap_11
+    .4byte kBattleAnimBackgroundImage_14
+    .4byte kBattleAnimBackgroundPalette_12
+    .4byte kBattleAnimBackgroundTilemap_12
+    .4byte kBattleAnimBackgroundImage_14
+    .4byte kBattleAnimBackgroundPalette_12
+    .4byte kBattleAnimBackgroundTilemap_13
+    .4byte kBattleAnimBackgroundImage_14
+    .4byte kBattleAnimBackgroundPalette_12
+    .4byte kBattleAnimBackgroundTilemap_14
+    .4byte kBattleAnimBackgroundImage_15
+    .4byte kBattleAnimBackgroundPalette_15
+    .4byte kBattleAnimBackgroundTilemap_15
+    .4byte kBattleAnimBackgroundImage_16
+    .4byte kBattleAnimBackgroundPalette_16
+    .4byte kBattleAnimBackgroundTilemap_16
+    .4byte kBattleAnimBackgroundImage_17
+    .4byte kBattleAnimBackgroundPalette_17
+    .4byte kBattleAnimBackgroundTilemap_17
+    .4byte kBattleAnimBackgroundImage_19
+    .4byte kBattleAnimBackgroundPalette_18
+    .4byte kBattleAnimBackgroundTilemap_07
+    .4byte kBattleAnimBackgroundImage_19
+    .4byte kBattleAnimBackgroundPalette_18
+    .4byte kBattleAnimBackgroundTilemap_08
+    .4byte kBattleAnimBackgroundImage_20
+    .4byte kBattleAnimBackgroundPalette_20
+    .4byte kBattleAnimBackgroundTilemap_20
+    .4byte kBattleAnimBackgroundImage_21
+    .4byte kBattleAnimBackgroundPalette_21
+    .4byte kBattleAnimBackgroundTilemap_21
+    .4byte kBattleAnimBackgroundImage_23
+    .4byte kBattleAnimBackgroundPalette_22
+    .4byte kBattleAnimBackgroundTilemap_09
+    .4byte kBattleAnimBackgroundImage_23
+    .4byte kBattleAnimBackgroundPalette_22
+    .4byte kBattleAnimBackgroundTilemap_10
+    .4byte kBattleAnimBackgroundImage_26
+    .4byte kBattleAnimBackgroundPalette_24
+    .4byte kBattleAnimBackgroundTilemap_04
+    .4byte kBattleAnimBackgroundImage_26
+    .4byte kBattleAnimBackgroundPalette_24
+    .4byte kBattleAnimBackgroundTilemap_05
+    .4byte kBattleAnimBackgroundImage_26
+    .4byte kBattleAnimBackgroundPalette_24
+    .4byte kBattleAnimBackgroundTilemap_06
 
     .global List_83ADF5C
 List_83ADF5C: @ 83ADF5C
@@ -58139,22 +63604,20 @@ List_83BFB84: @ 83BFB84
     .4byte titlescreen_4+1
     .4byte titlescreen_5+1
 
-    .global bogo_83BFB9C
-bogo_83BFB9C: @ 83BFB9C
+bogo_83BFB9C:: @ 83BFB9C
     .4byte unk_83BF79C
     .2byte 0x0500, 0x0000
     .4byte unk_83BFA14
     .2byte 0x0500, 0x0001
-    .4byte 0x8EAE4A8
+    .4byte kUnkBin_8EAE4A8
     .2byte 0x0400, 0x0002
     .4byte unk_83BF64C
     .2byte 0x0800, 0x0003
 
-    .global bogo_83BFBBC
-bogo_83BFBBC: @ 83BFBBC
+bogo_83BFBBC:: @ 83BFBBC
     .4byte unk_83BF77C
     .2byte 0x0000, 0x0000
-    .4byte 0x8EAE488
+    .4byte kUnkPal_8EAE488
     .2byte 0x0002, 0x0000
     .4byte NULL
     .2byte 0x0000, 0x0000
@@ -62467,7 +67930,7 @@ UNK_83CD898: @ 83CD898
 
     .global List_83CD8B8
 List_83CD8B8: @ 83CD8B8
-    .4byte 0x8E9986C
+    .4byte kUnkPal_8E9986C
     .4byte _83CCF80
     .4byte _83CD040
     .4byte _83CD100
@@ -62475,7 +67938,7 @@ List_83CD8B8: @ 83CD8B8
 
     .global List_83CD8CC
 List_83CD8CC: @ 83CD8CC
-    .4byte 0x8E99198
+    .4byte kUnkPal_8E99198
     .4byte _83CCFE0
     .4byte _83CD0A0
     .4byte _83CD160
@@ -63344,20 +68807,449 @@ unk_83D3760: @ 83D3760
 unk_83D3780: @ 83D3780
     .incbin "baserom.gba", 0x3D3780, 0x20
 
-    .global unk_83D37A0
-unk_83D37A0: @ 83D37A0
-    .incbin "baserom.gba", 0x3D37A0, 0x20
+kMonIconTable:: @ 83D37A0
+    .4byte kUnkGfx_8E76F5C
+    .4byte kMonIcon_Bulbasaur
+    .4byte kMonIcon_Ivysaur
+    .4byte kMonIcon_Venusaur
+    .4byte kMonIcon_Charmander
+    .4byte kMonIcon_Charmeleon
+    .4byte kMonIcon_Charizard
+    .4byte kMonIcon_Squirtle
+    .4byte kMonIcon_Wartortle
+    .4byte kMonIcon_Blastoise
+    .4byte kMonIcon_Caterpie
+    .4byte kMonIcon_Metapod
+    .4byte kMonIcon_Butterfree
+    .4byte kMonIcon_Weedle
+    .4byte kMonIcon_Kakuna
+    .4byte kMonIcon_Beedrill
+    .4byte kMonIcon_Pidgey
+    .4byte kMonIcon_Pidgeotto
+    .4byte kMonIcon_Pidgeot
+    .4byte kMonIcon_Rattata
+    .4byte kMonIcon_Raticate
+    .4byte kMonIcon_Spearow
+    .4byte kMonIcon_Fearow
+    .4byte kMonIcon_Ekans
+    .4byte kMonIcon_Arbok
+    .4byte kMonIcon_Pikachu
+    .4byte kMonIcon_Raichu
+    .4byte kMonIcon_Sandshrew
+    .4byte kMonIcon_Sandslash
+    .4byte kMonIcon_NidoranF
+    .4byte kMonIcon_Nidorina
+    .4byte kMonIcon_Nidoqueen
+    .4byte kMonIcon_NidoranM
+    .4byte kMonIcon_Nidorino
+    .4byte kMonIcon_Nidoking
+    .4byte kMonIcon_Clefairy
+    .4byte kMonIcon_Clefable
+    .4byte kMonIcon_Vulpix
+    .4byte kMonIcon_Ninetales
+    .4byte kMonIcon_Jigglypuff
+    .4byte kMonIcon_Wigglytuff
+    .4byte kMonIcon_Zubat
+    .4byte kMonIcon_Golbat
+    .4byte kMonIcon_Oddish
+    .4byte kMonIcon_Gloom
+    .4byte kMonIcon_Vileplume
+    .4byte kMonIcon_Paras
+    .4byte kMonIcon_Parasect
+    .4byte kMonIcon_Venonat
+    .4byte kMonIcon_Venomoth
+    .4byte kMonIcon_Diglett
+    .4byte kMonIcon_Dugtrio
+    .4byte kMonIcon_Meowth
+    .4byte kMonIcon_Persian
+    .4byte kMonIcon_Psyduck
+    .4byte kMonIcon_Golduck
+    .4byte kMonIcon_Mankey
+    .4byte kMonIcon_Primeape
+    .4byte kMonIcon_Growlithe
+    .4byte kMonIcon_Arcanine
+    .4byte kMonIcon_Poliwag
+    .4byte kMonIcon_Poliwhirl
+    .4byte kMonIcon_Poliwrath
+    .4byte kMonIcon_Abra
+    .4byte kMonIcon_Kadabra
+    .4byte kMonIcon_Alakazam
+    .4byte kMonIcon_Machop
+    .4byte kMonIcon_Machoke
+    .4byte kMonIcon_Machamp
+    .4byte kMonIcon_Bellsprout
+    .4byte kMonIcon_Weepinbell
+    .4byte kMonIcon_Victreebel
+    .4byte kMonIcon_Tentacool
+    .4byte kMonIcon_Tentacruel
+    .4byte kMonIcon_Geodude
+    .4byte kMonIcon_Graveler
+    .4byte kMonIcon_Golem
+    .4byte kMonIcon_Ponyta
+    .4byte kMonIcon_Rapidash
+    .4byte kMonIcon_Slowpoke
+    .4byte kMonIcon_Slowbro
+    .4byte kMonIcon_Magnemite
+    .4byte kMonIcon_Magneton
+    .4byte kMonIcon_Farfetchd
+    .4byte kMonIcon_Doduo
+    .4byte kMonIcon_Dodrio
+    .4byte kMonIcon_Seel
+    .4byte kMonIcon_Dewgong
+    .4byte kMonIcon_Grimer
+    .4byte kMonIcon_Muk
+    .4byte kMonIcon_Shellder
+    .4byte kMonIcon_Cloyster
+    .4byte kMonIcon_Gastly
+    .4byte kMonIcon_Haunter
+    .4byte kMonIcon_Gengar
+    .4byte kMonIcon_Onix
+    .4byte kMonIcon_Drowzee
+    .4byte kMonIcon_Hypno
+    .4byte kMonIcon_Krabby
+    .4byte kMonIcon_Kingler
+    .4byte kMonIcon_Voltorb
+    .4byte kMonIcon_Electrode
+    .4byte kMonIcon_Exeggcute
+    .4byte kMonIcon_Exeggutor
+    .4byte kMonIcon_Cubone
+    .4byte kMonIcon_Marowak
+    .4byte kMonIcon_Hitmonlee
+    .4byte kMonIcon_Hitmonchan
+    .4byte kMonIcon_Lickitung
+    .4byte kMonIcon_Koffing
+    .4byte kMonIcon_Weezing
+    .4byte kMonIcon_Rhyhorn
+    .4byte kMonIcon_Rhydon
+    .4byte kMonIcon_Chansey
+    .4byte kMonIcon_Tangela
+    .4byte kMonIcon_Kangaskhan
+    .4byte kMonIcon_Horsea
+    .4byte kMonIcon_Seadra
+    .4byte kMonIcon_Goldeen
+    .4byte kMonIcon_Seaking
+    .4byte kMonIcon_Staryu
+    .4byte kMonIcon_Starmie
+    .4byte kMonIcon_MrMime
+    .4byte kMonIcon_Scyther
+    .4byte kMonIcon_Jynx
+    .4byte kMonIcon_Electabuzz
+    .4byte kMonIcon_Magmar
+    .4byte kMonIcon_Pinsir
+    .4byte kMonIcon_Tauros
+    .4byte kMonIcon_Magikarp
+    .4byte kMonIcon_Gyarados
+    .4byte kMonIcon_Lapras
+    .4byte kMonIcon_Ditto
+    .4byte kMonIcon_Eevee
+    .4byte kMonIcon_Vaporeon
+    .4byte kMonIcon_Jolteon
+    .4byte kMonIcon_Flareon
+    .4byte kMonIcon_Porygon
+    .4byte kMonIcon_Omanyte
+    .4byte kMonIcon_Omastar
+    .4byte kMonIcon_Kabuto
+    .4byte kMonIcon_Kabutops
+    .4byte kMonIcon_Aerodactyl
+    .4byte kMonIcon_Snorlax
+    .4byte kMonIcon_Articuno
+    .4byte kMonIcon_Zapdos
+    .4byte kMonIcon_Moltres
+    .4byte kMonIcon_Dratini
+    .4byte kMonIcon_Dragonair
+    .4byte kMonIcon_Dragonite
+    .4byte kMonIcon_Mewtwo
+    .4byte kMonIcon_Mew
+    .4byte kMonIcon_Chikorita
+    .4byte kMonIcon_Bayleef
+    .4byte kMonIcon_Meganium
+    .4byte kMonIcon_Cyndaquil
+    .4byte kMonIcon_Quilava
+    .4byte kMonIcon_Typhlosion
+    .4byte kMonIcon_Totodile
+    .4byte kMonIcon_Croconaw
+    .4byte kMonIcon_Feraligatr
+    .4byte kMonIcon_Sentret
+    .4byte kMonIcon_Furret
+    .4byte kMonIcon_Hoothoot
+    .4byte kMonIcon_Noctowl
+    .4byte kMonIcon_Ledyba
+    .4byte kMonIcon_Ledian
+    .4byte kMonIcon_Spinarak
+    .4byte kMonIcon_Ariados
+    .4byte kMonIcon_Crobat
+    .4byte kMonIcon_Chinchou
+    .4byte kMonIcon_Lanturn
+    .4byte kMonIcon_Pichu
+    .4byte kMonIcon_Cleffa
+    .4byte kMonIcon_Igglybuff
+    .4byte kMonIcon_Togepi
+    .4byte kMonIcon_Togetic
+    .4byte kMonIcon_Natu
+    .4byte kMonIcon_Xatu
+    .4byte kMonIcon_Mareep
+    .4byte kMonIcon_Flaaffy
+    .4byte kMonIcon_Ampharos
+    .4byte kMonIcon_Bellossom
+    .4byte kMonIcon_Marill
+    .4byte kMonIcon_Azumarill
+    .4byte kMonIcon_Sudowoodo
+    .4byte kMonIcon_Politoed
+    .4byte kMonIcon_Hoppip
+    .4byte kMonIcon_Skiploom
+    .4byte kMonIcon_Jumpluff
+    .4byte kMonIcon_Aipom
+    .4byte kMonIcon_Sunkern
+    .4byte kMonIcon_Sunflora
+    .4byte kMonIcon_Yanma
+    .4byte kMonIcon_Wooper
+    .4byte kMonIcon_Quagsire
+    .4byte kMonIcon_Espeon
+    .4byte kMonIcon_Umbreon
+    .4byte kMonIcon_Murkrow
+    .4byte kMonIcon_Slowking
+    .4byte kMonIcon_Misdreavus
+    .4byte kMonIcon_Unown
+    .4byte kMonIcon_Wobbuffet
+    .4byte kMonIcon_Girafarig
+    .4byte kMonIcon_Pineco
+    .4byte kMonIcon_Forretress
+    .4byte kMonIcon_Dunsparce
+    .4byte kMonIcon_Gligar
+    .4byte kMonIcon_Steelix
+    .4byte kMonIcon_Snubbull
+    .4byte kMonIcon_Granbull
+    .4byte kMonIcon_Qwilfish
+    .4byte kMonIcon_Scizor
+    .4byte kMonIcon_Shuckle
+    .4byte kMonIcon_Heracross
+    .4byte kMonIcon_Sneasel
+    .4byte kMonIcon_Teddiursa
+    .4byte kMonIcon_Ursaring
+    .4byte kMonIcon_Slugma
+    .4byte kMonIcon_Magcargo
+    .4byte kMonIcon_Swinub
+    .4byte kMonIcon_Piloswine
+    .4byte kMonIcon_Corsola
+    .4byte kMonIcon_Remoraid
+    .4byte kMonIcon_Octillery
+    .4byte kMonIcon_Delibird
+    .4byte kMonIcon_Mantine
+    .4byte kMonIcon_Skarmory
+    .4byte kMonIcon_Houndour
+    .4byte kMonIcon_Houndoom
+    .4byte kMonIcon_Kingdra
+    .4byte kMonIcon_Phanpy
+    .4byte kMonIcon_Donphan
+    .4byte kMonIcon_Porygon2
+    .4byte kMonIcon_Stantler
+    .4byte kMonIcon_Smeargle
+    .4byte kMonIcon_Tyrogue
+    .4byte kMonIcon_Hitmontop
+    .4byte kMonIcon_Smoochum
+    .4byte kMonIcon_Elekid
+    .4byte kMonIcon_Magby
+    .4byte kMonIcon_Miltank
+    .4byte kMonIcon_Blissey
+    .4byte kMonIcon_Raikou
+    .4byte kMonIcon_Entei
+    .4byte kMonIcon_Suicune
+    .4byte kMonIcon_Larvitar
+    .4byte kMonIcon_Pupitar
+    .4byte kMonIcon_Tyranitar
+    .4byte kMonIcon_Lugia
+    .4byte kMonIcon_HoOh
+    .4byte kMonIcon_Celebi
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kUnkGfx_8E76F5C
+    .4byte kMonIcon_Treecko
+    .4byte kMonIcon_Grovyle
+    .4byte kMonIcon_Sceptile
+    .4byte kMonIcon_Torchic
+    .4byte kMonIcon_Combusken
+    .4byte kMonIcon_Blaziken
+    .4byte kMonIcon_Mudkip
+    .4byte kMonIcon_Marshtomp
+    .4byte kMonIcon_Swampert
+    .4byte kMonIcon_Poochyena
+    .4byte kMonIcon_Mightyena
+    .4byte kMonIcon_Zigzagoon
+    .4byte kMonIcon_Linoone
+    .4byte kMonIcon_Wurmple
+    .4byte kMonIcon_Silcoon
+    .4byte kMonIcon_Beautifly
+    .4byte kMonIcon_Cascoon
+    .4byte kMonIcon_Dustox
+    .4byte kMonIcon_Lotad
+    .4byte kMonIcon_Lombre
+    .4byte kMonIcon_Ludicolo
+    .4byte kMonIcon_Seedot
+    .4byte kMonIcon_Nuzleaf
+    .4byte kMonIcon_Shiftry
+    .4byte kMonIcon_Nincada
+    .4byte kMonIcon_Ninjask
+    .4byte kMonIcon_Shedinja
+    .4byte kMonIcon_Taillow
+    .4byte kMonIcon_Swellow
+    .4byte kMonIcon_Shroomish
+    .4byte kMonIcon_Breloom
+    .4byte kMonIcon_Spinda
+    .4byte kMonIcon_Wingull
+    .4byte kMonIcon_Pelipper
+    .4byte kMonIcon_Surskit
+    .4byte kMonIcon_Masquerain
+    .4byte kMonIcon_Wailmer
+    .4byte kMonIcon_Wailord
+    .4byte kMonIcon_Skitty
+    .4byte kMonIcon_Delcatty
+    .4byte kMonIcon_Kecleon
+    .4byte kMonIcon_Baltoy
+    .4byte kMonIcon_Claydol
+    .4byte kMonIcon_Nosepass
+    .4byte kMonIcon_Torkoal
+    .4byte kMonIcon_Sableye
+    .4byte kMonIcon_Barboach
+    .4byte kMonIcon_Whiscash
+    .4byte kMonIcon_Luvdisc
+    .4byte kMonIcon_Corphish
+    .4byte kMonIcon_Crawdaunt
+    .4byte kMonIcon_Feebas
+    .4byte kMonIcon_Milotic
+    .4byte kMonIcon_Carvanha
+    .4byte kMonIcon_Sharpedo
+    .4byte kMonIcon_Trapinch
+    .4byte kMonIcon_Vibrava
+    .4byte kMonIcon_Flygon
+    .4byte kMonIcon_Makuhita
+    .4byte kMonIcon_Hariyama
+    .4byte kMonIcon_Electrike
+    .4byte kMonIcon_Manectric
+    .4byte kMonIcon_Numel
+    .4byte kMonIcon_Camerupt
+    .4byte kMonIcon_Spheal
+    .4byte kMonIcon_Sealeo
+    .4byte kMonIcon_Walrein
+    .4byte kMonIcon_Cacnea
+    .4byte kMonIcon_Cacturne
+    .4byte kMonIcon_Snorunt
+    .4byte kMonIcon_Glalie
+    .4byte kMonIcon_Lunatone
+    .4byte kMonIcon_Solrock
+    .4byte kMonIcon_Azurill
+    .4byte kMonIcon_Spoink
+    .4byte kMonIcon_Grumpig
+    .4byte kMonIcon_Plusle
+    .4byte kMonIcon_Minun
+    .4byte kMonIcon_Mawile
+    .4byte kMonIcon_Meditite
+    .4byte kMonIcon_Medicham
+    .4byte kMonIcon_Swablu
+    .4byte kMonIcon_Altaria
+    .4byte kMonIcon_Wynaut
+    .4byte kMonIcon_Duskull
+    .4byte kMonIcon_Dusclops
+    .4byte kMonIcon_Roselia
+    .4byte kMonIcon_Slakoth
+    .4byte kMonIcon_Vigoroth
+    .4byte kMonIcon_Slaking
+    .4byte kMonIcon_Gulpin
+    .4byte kMonIcon_Swalot
+    .4byte kMonIcon_Tropius
+    .4byte kMonIcon_Whismur
+    .4byte kMonIcon_Loudred
+    .4byte kMonIcon_Exploud
+    .4byte kMonIcon_Clamperl
+    .4byte kMonIcon_Huntail
+    .4byte kMonIcon_Gorebyss
+    .4byte kMonIcon_Absol
+    .4byte kMonIcon_Shuppet
+    .4byte kMonIcon_Banette
+    .4byte kMonIcon_Seviper
+    .4byte kMonIcon_Zangoose
+    .4byte kMonIcon_Relicanth
+    .4byte kMonIcon_Aron
+    .4byte kMonIcon_Lairon
+    .4byte kMonIcon_Aggron
+    .4byte kMonIcon_Castform
+    .4byte kMonIcon_Volbeat
+    .4byte kMonIcon_Illumise
+    .4byte kMonIcon_Lileep
+    .4byte kMonIcon_Cradily
+    .4byte kMonIcon_Anorith
+    .4byte kMonIcon_Armaldo
+    .4byte kMonIcon_Ralts
+    .4byte kMonIcon_Kirlia
+    .4byte kMonIcon_Gardevoir
+    .4byte kMonIcon_Bagon
+    .4byte kMonIcon_Shelgon
+    .4byte kMonIcon_Salamence
+    .4byte kMonIcon_Beldum
+    .4byte kMonIcon_Metang
+    .4byte kMonIcon_Metagross
+    .4byte kMonIcon_Regirock
+    .4byte kMonIcon_Regice
+    .4byte kMonIcon_Registeel
+    .4byte kMonIcon_Kyogre
+    .4byte kMonIcon_Groudon
+    .4byte kMonIcon_Rayquaza
+    .4byte kMonIcon_Latias
+    .4byte kMonIcon_Latios
+    .4byte kMonIcon_Jirachi
+    .4byte kMonIcon_Deoxys
+    .4byte kMonIcon_Chimecho
+    .4byte kUnkGfx_8E7BB88
+    .4byte kMonIcon_UnownB
+    .4byte kMonIcon_UnownC
+    .4byte kMonIcon_UnownD
+    .4byte kMonIcon_UnownE
+    .4byte kMonIcon_UnownF
+    .4byte kMonIcon_UnownG
+    .4byte kMonIcon_UnownH
+    .4byte kMonIcon_UnownI
+    .4byte kMonIcon_UnownJ
+    .4byte kMonIcon_UnownK
+    .4byte kMonIcon_UnownL
+    .4byte kMonIcon_UnownM
+    .4byte kMonIcon_UnownN
+    .4byte kMonIcon_UnownO
+    .4byte kMonIcon_UnownP
+    .4byte kMonIcon_UnownQ
+    .4byte kMonIcon_UnownR
+    .4byte kMonIcon_UnownS
+    .4byte kMonIcon_UnownT
+    .4byte kMonIcon_UnownU
+    .4byte kMonIcon_UnownV
+    .4byte kMonIcon_UnownW
+    .4byte kMonIcon_UnownX
+    .4byte kMonIcon_UnownY
+    .4byte kMonIcon_UnownZ
+    .4byte kMonIcon_UnownEmark
+    .4byte kMonIcon_UnownQmark
 
-    .global unk_83D37C0
-unk_83D37C0: @ 83D37C0
-    .incbin "baserom.gba", 0x3D37C0, 0x20
-
-    .global unk_83D37E0
-unk_83D37E0: @ 83D37E0
-    .incbin "baserom.gba", 0x3D37E0, 0x6A0
-
-    .global UNK_83D3E80
-UNK_83D3E80: @ 83D3E80
+UNK_83D3E80:: @ 83D3E80
     .incbin "baserom.gba", 0x3D3E80, 0x1B8
 
     .global borg_83D4038
@@ -63365,9 +69257,9 @@ borg_83D4038: @ 83D4038
     .4byte unk_83D3740, 0xDAC0
     .4byte unk_83D3760, 0xDAC1
     .4byte unk_83D3780, 0xDAC2
-    .4byte unk_83D37A0, 0xDAC3
-    .4byte unk_83D37C0, 0xDAC4
-    .4byte unk_83D37E0, 0xDAC5
+    .4byte kMonIconTable, 0xDAC3
+    .4byte kMonIconTable+0x20, 0xDAC4
+    .4byte kMonIconTable+0x40, 0xDAC5
 
     .global UNK_83D4068
 UNK_83D4068: @ 83D4068
@@ -63493,17 +69385,17 @@ AffineAnimCmds_83D41DC: @ 83D41DC
     .4byte AffineAnimCmd_83D41A4
     .4byte AffineAnimCmd_83D41B4
 
-    .global UNK_83D41E4
-UNK_83D41E4: @ 83D41E4
-    .incbin "baserom.gba", 0x3D41E4, 0x8
+bogo_83D41E4:: @ 83D41E4
+    .4byte kUnkGfx_8E8362C
+    .2byte 0x2000, 0x0064
 
-    .global UNK_83D41EC
-UNK_83D41EC: @ 83D41EC
-    .incbin "baserom.gba", 0x3D41EC, 0x8
+bogo_83D41EC:: @ 83D41EC
+    .4byte kUnkGfx_8E83DBC
+    .2byte 0x2000, 0x0064
 
-    .global UNK_83D41F4
-UNK_83D41F4: @ 83D41F4
-    .incbin "baserom.gba", 0x3D41F4, 0x8
+bogo_83D41F4:: @ 83D41F4
+    .4byte kUnkPal_8E84560
+    .2byte 0x0064, 0x0000
 
     .global SpriteTemplate_83D41FC
 SpriteTemplate_83D41FC: @ 83D41FC
@@ -63535,13 +69427,13 @@ AnimCmds_83D4234: @ 83D4234
     .4byte AnimCmd_83D4224
     .4byte AnimCmd_83D422C
 
-    .global UNK_83D4240
-UNK_83D4240: @ 83D4240
-    .incbin "baserom.gba", 0x3D4240, 0x8
+bogo_83D4240:: @ 83D4240
+    .4byte kUnkGfx_8E84588
+    .2byte 0x0100, 0x0065
 
-    .global UNK_83D4248
-UNK_83D4248: @ 83D4248
-    .incbin "baserom.gba", 0x3D4248, 0x8
+bogo_83D4248:: @ 83D4248
+    .4byte kUnkPal_8E845C8
+    .2byte 0x0065, 0x0000
 
     .global SpriteTemplate_83D4250
 SpriteTemplate_83D4250: @ 83D4250
@@ -63567,9 +69459,383 @@ AnimCmds_83D4278: @ 83D4278
 SpriteTemplate_83D427C: @ 83D427C
     spr_template 0x0066, 0x0066, OAM_83D4268, AnimCmds_83D4278, NULL, AffineAnimCmds_8231CFC, objc_nullsub
 
-    .global UNK_83D4294
-UNK_83D4294: @ 83D4294
-    .incbin "baserom.gba", 0x3D4294, 0xBC0
+twoptr_83D4294:: @ 83D4294
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_MasterBall, kItemPalette_MasterBall
+    .4byte kItemSpriteSheet_UltraBall, kItemPalette_UltraBall
+    .4byte kItemSpriteSheet_GreatBall, kItemPalette_GreatBall
+    .4byte kItemSpriteSheet_PokeBall, kItemPalette_PokeBall
+    .4byte kItemSpriteSheet_SafariBall, kItemPalette_SafariBall
+    .4byte kItemSpriteSheet_NetBall, kItemPalette_NetBall
+    .4byte kItemSpriteSheet_DiveBall, kItemPalette_DiveBall
+    .4byte kItemSpriteSheet_NestBall, kItemPalette_NestBall
+    .4byte kItemSpriteSheet_RepeatBall, kItemPalette_RepeatBall
+    .4byte kItemSpriteSheet_TimerBall, kItemPalette_RepeatBall
+    .4byte kItemSpriteSheet_LuxuryBall, kItemPalette_LuxuryBall
+    .4byte kItemSpriteSheet_PremierBall, kItemPalette_LuxuryBall
+    .4byte kItemSpriteSheet_Potion, kItemPalette_Potion
+    .4byte kItemSpriteSheet_Antidote, kItemPalette_Antidote
+    .4byte kItemSpriteSheet_BurnHeal, kItemPalette_BurnHeal
+    .4byte kItemSpriteSheet_BurnHeal, kItemPalette_IceHeal
+    .4byte kItemSpriteSheet_BurnHeal, kItemPalette_Awakening
+    .4byte kItemSpriteSheet_BurnHeal, kItemPalette_ParalyzeHeal
+    .4byte kItemSpriteSheet_FullRestore, kItemPalette_FullRestore
+    .4byte kItemSpriteSheet_FullRestore, kItemPalette_MaxPotion
+    .4byte kItemSpriteSheet_Potion, kItemPalette_HyperPotion
+    .4byte kItemSpriteSheet_Potion, kItemPalette_SuperPotion
+    .4byte kItemSpriteSheet_FullHeal, kItemPalette_FullHeal
+    .4byte kItemSpriteSheet_Revive, kItemPalette_Revive
+    .4byte kItemSpriteSheet_MaxRevive, kItemPalette_Revive
+    .4byte kItemSpriteSheet_FreshWater, kItemPalette_FreshWater
+    .4byte kItemSpriteSheet_SodaPop, kItemPalette_SodaPop
+    .4byte kItemSpriteSheet_Lemonade, kItemPalette_Lemonade
+    .4byte kItemSpriteSheet_MoomooMilk, kItemPalette_MoomooMilk
+    .4byte kItemSpriteSheet_EnergyPowder, kItemPalette_EnergyPowder
+    .4byte kItemSpriteSheet_EnergyRoot, kItemPalette_EnergyRoot
+    .4byte kItemSpriteSheet_EnergyPowder, kItemPalette_HealPowder
+    .4byte kItemSpriteSheet_RevivalHerb, kItemPalette_RevivalHerb
+    .4byte kItemSpriteSheet_Ether, kItemPalette_Ether
+    .4byte kItemSpriteSheet_Ether, kItemPalette_MaxEther
+    .4byte kItemSpriteSheet_Ether, kItemPalette_Elixir
+    .4byte kItemSpriteSheet_Ether, kItemPalette_MaxElixir
+    .4byte kItemSpriteSheet_LavaCookie, kItemPalette_LavaCookie
+    .4byte kItemSpriteSheet_BlueFlute, kItemPalette_BlueFlute
+    .4byte kItemSpriteSheet_BlueFlute, kItemPalette_YellowFlute
+    .4byte kItemSpriteSheet_BlueFlute, kItemPalette_RedFlute
+    .4byte kItemSpriteSheet_BlueFlute, kItemPalette_BlackFlute
+    .4byte kItemSpriteSheet_BlueFlute, kItemPalette_WhiteFlute
+    .4byte kItemSpriteSheet_BerryJuice, kItemPalette_BerryJuice
+    .4byte kItemSpriteSheet_SacredAsh, kItemPalette_SacredAsh
+    .4byte kItemSpriteSheet_EnergyPowder, kItemPalette_ShoalSalt
+    .4byte kItemSpriteSheet_ShoalShell, kItemPalette_ShoalShell
+    .4byte kItemSpriteSheet_RedShard, kItemPalette_RedShard
+    .4byte kItemSpriteSheet_RedShard, kItemPalette_BlueShard
+    .4byte kItemSpriteSheet_RedShard, kItemPalette_YellowShard
+    .4byte kItemSpriteSheet_RedShard, kItemPalette_GreenShard
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_HpUp, kItemPalette_HpUp
+    .4byte kItemSpriteSheet_Protein, kItemPalette_Protein
+    .4byte kItemSpriteSheet_Protein, kItemPalette_Iron
+    .4byte kItemSpriteSheet_Protein, kItemPalette_Carbos
+    .4byte kItemSpriteSheet_Protein, kItemPalette_Calcium
+    .4byte kItemSpriteSheet_RareCandy, kItemPalette_RareCandy
+    .4byte kItemSpriteSheet_PpUp, kItemPalette_PpUp
+    .4byte kItemSpriteSheet_Protein, kItemPalette_Zinc
+    .4byte kItemSpriteSheet_PpMax, kItemPalette_PpMax
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_GuardSpec, kItemPalette_GuardSpec
+    .4byte kItemSpriteSheet_GuardSpec, kItemPalette_DireHit
+    .4byte kItemSpriteSheet_GuardSpec, kItemPalette_XAttack
+    .4byte kItemSpriteSheet_GuardSpec, kItemPalette_XDefend
+    .4byte kItemSpriteSheet_GuardSpec, kItemPalette_XSpeed
+    .4byte kItemSpriteSheet_GuardSpec, kItemPalette_XAccuracy
+    .4byte kItemSpriteSheet_GuardSpec, kItemPalette_XSpecial
+    .4byte kItemSpriteSheet_PokeDoll, kItemPalette_PokeDoll
+    .4byte kItemSpriteSheet_FluffyTail, kItemPalette_FluffyTail
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_SuperRepel, kItemPalette_SuperRepel
+    .4byte kItemSpriteSheet_SuperRepel, kItemPalette_MaxRepel
+    .4byte kItemSpriteSheet_EscapeRope, kItemPalette_EscapeRope
+    .4byte kItemSpriteSheet_SuperRepel, kItemPalette_Repel
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_SunStone, kItemPalette_SunStone
+    .4byte kItemSpriteSheet_MoonStone, kItemPalette_MoonStone
+    .4byte kItemSpriteSheet_FireStone, kItemPalette_FireStone
+    .4byte kItemSpriteSheet_ThunderStone, kItemPalette_ThunderStone
+    .4byte kItemSpriteSheet_WaterStone, kItemPalette_WaterStone
+    .4byte kItemSpriteSheet_LeafStone, kItemPalette_LeafStone
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_TinyMushroom, kItemPalette_TinyMushroom
+    .4byte kItemSpriteSheet_BigMushroom, kItemPalette_TinyMushroom
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_Pearl, kItemPalette_Pearl
+    .4byte kItemSpriteSheet_BigPearl, kItemPalette_Pearl
+    .4byte kItemSpriteSheet_Stardust, kItemPalette_Stardust
+    .4byte kItemSpriteSheet_StarPiece, kItemPalette_Stardust
+    .4byte kItemSpriteSheet_Nugget, kItemPalette_Nugget
+    .4byte kItemSpriteSheet_HeartScale, kItemPalette_HeartScale
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_OrangeMail, kItemPalette_OrangeMail
+    .4byte kItemSpriteSheet_HarborMail, kItemPalette_HarborMail
+    .4byte kItemSpriteSheet_GlitterMail, kItemPalette_GlitterMail
+    .4byte kItemSpriteSheet_MechMail, kItemPalette_MechMail
+    .4byte kItemSpriteSheet_WoodMail, kItemPalette_WoodMail
+    .4byte kItemSpriteSheet_WaveMail, kItemPalette_WaveMail
+    .4byte kItemSpriteSheet_BeadMail, kItemPalette_BeadMail
+    .4byte kItemSpriteSheet_ShadowMail, kItemPalette_ShadowMail
+    .4byte kItemSpriteSheet_TropicMail, kItemPalette_TropicMail
+    .4byte kItemSpriteSheet_DreamMail, kItemPalette_DreamMail
+    .4byte kItemSpriteSheet_FabMail, kItemPalette_FabMail
+    .4byte kItemSpriteSheet_RetroMail, kItemPalette_RetroMail
+    .4byte kItemSpriteSheet_CheriBerry, kItemPalette_CheriBerry
+    .4byte kItemSpriteSheet_ChestoBerry, kItemPalette_ChestoBerry
+    .4byte kItemSpriteSheet_PechaBerry, kItemPalette_PechaBerry
+    .4byte kItemSpriteSheet_RawstBerry, kItemPalette_RawstBerry
+    .4byte kItemSpriteSheet_AspearBerry, kItemPalette_AspearBerry
+    .4byte kItemSpriteSheet_LeppaBerry, kItemPalette_LeppaBerry
+    .4byte kItemSpriteSheet_OranBerry, kItemPalette_OranBerry
+    .4byte kItemSpriteSheet_PersimBerry, kItemPalette_PersimBerry
+    .4byte kItemSpriteSheet_LumBerry, kItemPalette_LumBerry
+    .4byte kItemSpriteSheet_SitrusBerry, kItemPalette_SitrusBerry
+    .4byte kItemSpriteSheet_FigyBerry, kItemPalette_FigyBerry
+    .4byte kItemSpriteSheet_WikiBerry, kItemPalette_WikiBerry
+    .4byte kItemSpriteSheet_MagoBerry, kItemPalette_MagoBerry
+    .4byte kItemSpriteSheet_AguavBerry, kItemPalette_AguavBerry
+    .4byte kItemSpriteSheet_IapapaBerry, kItemPalette_IapapaBerry
+    .4byte kItemSpriteSheet_RazzBerry, kItemPalette_RazzBerry
+    .4byte kItemSpriteSheet_BlukBerry, kItemPalette_BlukBerry
+    .4byte kItemSpriteSheet_NanabBerry, kItemPalette_NanabBerry
+    .4byte kItemSpriteSheet_WepearBerry, kItemPalette_WepearBerry
+    .4byte kItemSpriteSheet_PinapBerry, kItemPalette_PinapBerry
+    .4byte kItemSpriteSheet_PomegBerry, kItemPalette_PomegBerry
+    .4byte kItemSpriteSheet_KelpsyBerry, kItemPalette_KelpsyBerry
+    .4byte kItemSpriteSheet_QualotBerry, kItemPalette_QualotBerry
+    .4byte kItemSpriteSheet_HondewBerry, kItemPalette_HondewBerry
+    .4byte kItemSpriteSheet_GrepaBerry, kItemPalette_GrepaBerry
+    .4byte kItemSpriteSheet_TamatoBerry, kItemPalette_TamatoBerry
+    .4byte kItemSpriteSheet_CornnBerry, kItemPalette_CornnBerry
+    .4byte kItemSpriteSheet_MagostBerry, kItemPalette_MagostBerry
+    .4byte kItemSpriteSheet_RabutaBerry, kItemPalette_RabutaBerry
+    .4byte kItemSpriteSheet_NomelBerry, kItemPalette_NomelBerry
+    .4byte kItemSpriteSheet_SpelonBerry, kItemPalette_SpelonBerry
+    .4byte kItemSpriteSheet_PamtreBerry, kItemPalette_PamtreBerry
+    .4byte kItemSpriteSheet_WatmelBerry, kItemPalette_WatmelBerry
+    .4byte kItemSpriteSheet_DurinBerry, kItemPalette_DurinBerry
+    .4byte kItemSpriteSheet_BelueBerry, kItemPalette_BelueBerry
+    .4byte kItemSpriteSheet_LiechiBerry, kItemPalette_LiechiBerry
+    .4byte kItemSpriteSheet_GanlonBerry, kItemPalette_GanlonBerry
+    .4byte kItemSpriteSheet_SalacBerry, kItemPalette_SalacBerry
+    .4byte kItemSpriteSheet_PetayaBerry, kItemPalette_PetayaBerry
+    .4byte kItemSpriteSheet_ApicotBerry, kItemPalette_ApicotBerry
+    .4byte kItemSpriteSheet_LansatBerry, kItemPalette_LansatBerry
+    .4byte kItemSpriteSheet_StarfBerry, kItemPalette_StarfBerry
+    .4byte kItemSpriteSheet_EnigmaBerry, kItemPalette_EnigmaBerry
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_BrightPowder, kItemPalette_BrightPowder
+    .4byte kItemSpriteSheet_WhiteHerb, kItemPalette_WhiteHerb
+    .4byte kItemSpriteSheet_MachoBrace, kItemPalette_MachoBrace
+    .4byte kItemSpriteSheet_ExpShare, kItemPalette_ExpShare
+    .4byte kItemSpriteSheet_QuickClaw, kItemPalette_QuickClaw
+    .4byte kItemSpriteSheet_SootheBell, kItemPalette_SootheBell
+    .4byte kItemSpriteSheet_WhiteHerb, kItemPalette_MentalHerb
+    .4byte kItemSpriteSheet_ChoiceBand, kItemPalette_ChoiceBand
+    .4byte kItemSpriteSheet_KingsRock, kItemPalette_KingsRock
+    .4byte kItemSpriteSheet_SilverPowder, kItemPalette_SilverPowder
+    .4byte kItemSpriteSheet_AmuletCoin, kItemPalette_AmuletCoin
+    .4byte kItemSpriteSheet_CleanseTag, kItemPalette_CleanseTag
+    .4byte kItemSpriteSheet_SoulDew, kItemPalette_SoulDew
+    .4byte kItemSpriteSheet_DeepSeaTooth, kItemPalette_DeepSeaTooth
+    .4byte kItemSpriteSheet_DeepSeaScale, kItemPalette_DeepSeaScale
+    .4byte kItemSpriteSheet_SmokeBall, kItemPalette_SmokeBall
+    .4byte kItemSpriteSheet_Everstone, kItemPalette_Everstone
+    .4byte kItemSpriteSheet_FocusBand, kItemPalette_FocusBand
+    .4byte kItemSpriteSheet_LuckyEgg, kItemPalette_LuckyEgg
+    .4byte kItemSpriteSheet_ScopeLens, kItemPalette_ScopeLens
+    .4byte kItemSpriteSheet_MetalCoat, kItemPalette_MetalCoat
+    .4byte kItemSpriteSheet_Leftovers, kItemPalette_Leftovers
+    .4byte kItemSpriteSheet_DragonScale, kItemPalette_DragonScale
+    .4byte kItemSpriteSheet_LightBall, kItemPalette_LightBall
+    .4byte kItemSpriteSheet_SoftSand, kItemPalette_SoftSand
+    .4byte kItemSpriteSheet_HardStone, kItemPalette_HardStone
+    .4byte kItemSpriteSheet_MiracleSeed, kItemPalette_MiracleSeed
+    .4byte kItemSpriteSheet_BlackGlasses, kItemPalette_BlackGlasses
+    .4byte kItemSpriteSheet_BlackBelt, kItemPalette_BlackGlasses
+    .4byte kItemSpriteSheet_Magnet, kItemPalette_Magnet
+    .4byte kItemSpriteSheet_MysticWater, kItemPalette_MysticWater
+    .4byte kItemSpriteSheet_SharpBeak, kItemPalette_SharpBeak
+    .4byte kItemSpriteSheet_PoisonBarb, kItemPalette_PoisonBarb
+    .4byte kItemSpriteSheet_NeverMeltIce, kItemPalette_NeverMeltIce
+    .4byte kItemSpriteSheet_SpellTag, kItemPalette_SpellTag
+    .4byte kItemSpriteSheet_TwistedSpoon, kItemPalette_TwistedSpoon
+    .4byte kItemSpriteSheet_Charcoal, kItemPalette_Charcoal
+    .4byte kItemSpriteSheet_DragonFang, kItemPalette_DragonFang
+    .4byte kItemSpriteSheet_SilkScarf, kItemPalette_SilkScarf
+    .4byte kItemSpriteSheet_UpGrade, kItemPalette_UpGrade
+    .4byte kItemSpriteSheet_ShellBell, kItemPalette_ShoalShell
+    .4byte kItemSpriteSheet_SeaIncense, kItemPalette_SeaIncense
+    .4byte kItemSpriteSheet_LaxIncense, kItemPalette_LaxIncense
+    .4byte kItemSpriteSheet_LuckyPunch, kItemPalette_LuckyPunch
+    .4byte kItemSpriteSheet_MetalPowder, kItemPalette_MetalPowder
+    .4byte kItemSpriteSheet_ThickClub, kItemPalette_ThickClub
+    .4byte kItemSpriteSheet_Stick, kItemPalette_Stick
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_RedScarf, kItemPalette_RedScarf
+    .4byte kItemSpriteSheet_RedScarf, kItemPalette_BlueScarf
+    .4byte kItemSpriteSheet_RedScarf, kItemPalette_PinkScarf
+    .4byte kItemSpriteSheet_RedScarf, kItemPalette_GreenScarf
+    .4byte kItemSpriteSheet_RedScarf, kItemPalette_YellowScarf
+    .4byte kItemSpriteSheet_MachBike, kItemPalette_MachBike
+    .4byte kItemSpriteSheet_CoinCase, kItemPalette_CoinCase
+    .4byte kItemSpriteSheet_Itemfinder, kItemPalette_Itemfinder
+    .4byte kItemSpriteSheet_OldRod, kItemPalette_OldRod
+    .4byte kItemSpriteSheet_GoodRod, kItemPalette_GoodRod
+    .4byte kItemSpriteSheet_SuperRod, kItemPalette_SuperRod
+    .4byte kItemSpriteSheet_SsTicket, kItemPalette_SsTicket
+    .4byte kItemSpriteSheet_ContestPass, kItemPalette_ContestPass
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_WailmerPail, kItemPalette_WailmerPail
+    .4byte kItemSpriteSheet_DevonGoods, kItemPalette_DevonGoods
+    .4byte kItemSpriteSheet_SootSack, kItemPalette_SootSack
+    .4byte kItemSpriteSheet_BasementKey, kItemPalette_BasementKey
+    .4byte kItemSpriteSheet_AcroBike, kItemPalette_AcroBike
+    .4byte kItemSpriteSheet_PokeblockCase, kItemPalette_PokeblockCase
+    .4byte kItemSpriteSheet_Letter, kItemPalette_LavaCookie
+    .4byte kItemSpriteSheet_EonTicket, kItemPalette_EonTicket
+    .4byte kItemSpriteSheet_RedOrb, kItemPalette_RedOrb
+    .4byte kItemSpriteSheet_RedOrb, kItemPalette_BlueOrb
+    .4byte kItemSpriteSheet_Scanner, kItemPalette_Scanner
+    .4byte kItemSpriteSheet_GoGoggles, kItemPalette_GoGoggles
+    .4byte kItemSpriteSheet_Meteorite, kItemPalette_Meteorite
+    .4byte kItemSpriteSheet_Room1Key, kItemPalette_Room1Key
+    .4byte kItemSpriteSheet_Room2Key, kItemPalette_Room1Key
+    .4byte kItemSpriteSheet_Room4Key, kItemPalette_Room1Key
+    .4byte kItemSpriteSheet_Room6Key, kItemPalette_Room1Key
+    .4byte kItemSpriteSheet_StorageKey, kItemPalette_BasementKey
+    .4byte kItemSpriteSheet_RootFossil, kItemPalette_RootFossil
+    .4byte kItemSpriteSheet_ClawFossil, kItemPalette_RootFossil
+    .4byte kItemSpriteSheet_DevonScope, kItemPalette_DevonScope
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm01
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm02
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm03
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm04
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm06
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm07
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm01
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm09
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm11
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm12
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm07
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm07
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm04
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm03
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm09
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm09
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm23
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm24
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm24
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm26
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm26
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm04
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm30
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm01
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm04
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm24
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm11
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm06
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm37
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm11
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm37
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm40
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm12
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm04
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm12
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm23
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm04
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm12
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm11
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm40
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm03
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm05
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm01
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm03
+    .4byte kItemSpriteSheet_Tm01, kItemPalette_Tm03
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_None, kItemPalette_None
+    .4byte kItemSpriteSheet_OaksParcel, kItemPalette_OaksParcel
+    .4byte kItemSpriteSheet_PokeFlute, kItemPalette_PokeFlute
+    .4byte kItemSpriteSheet_SecretKey, kItemPalette_SecretKey
+    .4byte kItemSpriteSheet_BikeVoucher, kItemPalette_BikeVoucher
+    .4byte kItemSpriteSheet_GoldTeeth, kItemPalette_GoldTeeth
+    .4byte kItemSpriteSheet_OldAmber, kItemPalette_OldAmber
+    .4byte kItemSpriteSheet_CardKey, kItemPalette_CardKey
+    .4byte kItemSpriteSheet_LiftKey, kItemPalette_Room1Key
+    .4byte kItemSpriteSheet_HelixFossil, kItemPalette_HelixFossil
+    .4byte kItemSpriteSheet_DomeFossil, kItemPalette_HelixFossil
+    .4byte kItemSpriteSheet_SilphScope, kItemPalette_SilphScope
+    .4byte kItemSpriteSheet_Bicycle, kItemPalette_Bicycle
+    .4byte kItemSpriteSheet_TownMap, kItemPalette_TownMap
+    .4byte kItemSpriteSheet_VsSeeker, kItemPalette_VsSeeker
+    .4byte kItemSpriteSheet_FameChecker, kItemPalette_FameChecker
+    .4byte kItemSpriteSheet_TmCase, kItemPalette_TmCase
+    .4byte kItemSpriteSheet_BerryPouch, kItemPalette_BerryPouch
+    .4byte kItemSpriteSheet_TeachyTv, kItemPalette_TeachyTv
+    .4byte kItemSpriteSheet_TriPass, kItemPalette_TriPass
+    .4byte kItemSpriteSheet_RainbowPass, kItemPalette_RainbowPass
+    .4byte kItemSpriteSheet_Tea, kItemPalette_Tea
+    .4byte kItemSpriteSheet_MysticTicket, kItemPalette_MysticTicket
+    .4byte kItemSpriteSheet_AuroraTicket, kItemPalette_AuroraTicket
+    .4byte kItemSpriteSheet_PowderJar, kItemPalette_PowderJar
+    .4byte kItemSpriteSheet_Ruby, kItemPalette_Ruby
+    .4byte kItemSpriteSheet_Ruby, kItemPalette_Sapphire
+    .4byte kUnkGfx_8E870B4, kUnkPal_8E8713C
 
     .global kBattleAnimSpriteTemplate_83D4E54
 kBattleAnimSpriteTemplate_83D4E54: @ 83D4E54
@@ -72234,9 +78500,9 @@ AnimCmds_83E23BC: @ 83E23BC
 borg_83E23C0: @ 83E23C0
     .4byte unk_83E1980, 0xFF0900
 
-    .global UNK_83E23C8
-UNK_83E23C8: @ 83E23C8
-    .incbin "baserom.gba", 0x3E23C8, 0x8
+bogo_83E23C8:: @ 83E23C8
+    .4byte kUnkPal_8E98004
+    .2byte 0x00FF, 0x0000
 
     .global List_83E23D0
 List_83E23D0: @ 83E23D0
@@ -72481,30 +78747,30 @@ List_83E264C: @ 83E264C
 
     .global twoptr_83E267C
 twoptr_83E267C: @ 83E267C
-    .4byte 0x8E98858, 0x1E0
-    .4byte 0x8E98A38, 0x101E0
-    .4byte 0x8E985D8, 0x20280
-    .4byte 0x8E98FD8, 0x30100
-    .4byte 0x8E98C18, 0x40060
-    .4byte 0x8E98CB8, 0x50060
-    .4byte 0x8E98D58, 0x60060
-    .4byte 0x8E98DF8, 0x70080
-    .4byte 0x8E98E98, 0x80080
-    .4byte 0x8E98F38, 0x90080
-    .4byte 0x8E990D8, 0xA0020
-    .4byte 0x8E990F8, 0xB0020
+    .4byte kUnkGfx_8E985D8+0x280, 0x1E0
+    .4byte kUnkGfx_8E985D8+0x460, 0x101E0
+    .4byte kUnkGfx_8E985D8, 0x20280
+    .4byte kUnkGfx_8E985D8+0xa00, 0x30100
+    .4byte kUnkGfx_8E985D8+0x640, 0x40060
+    .4byte kUnkGfx_8E985D8+0x6e0, 0x50060
+    .4byte kUnkGfx_8E985D8+0x780, 0x60060
+    .4byte kUnkGfx_8E985D8+0x820, 0x70080
+    .4byte kUnkGfx_8E985D8+0x8c0, 0x80080
+    .4byte kUnkGfx_8E985D8+0x960, 0x90080
+    .4byte kUnkGfx_8E985D8+0xb00, 0xA0020
+    .4byte kUnkGfx_8E985D8+0xb20, 0xB0020
     .4byte 0x0, 0x0
 
     .global twoptr_83E26E4
 twoptr_83E26E4: @ 83E26E4
-    .4byte 0x8E98024, 0x0
-    .4byte 0x8E98044, 0x1
-    .4byte 0x8E98064, 0x2
-    .4byte 0x8E98084, 0x3
-    .4byte 0x8E980A4, 0x4
-    .4byte 0x8E980C4, 0x5
-    .4byte 0x8E980A4, 0x6
-    .4byte 0x8E980A4, 0x7
+    .4byte kUnkPal_8E98024, 0x0
+    .4byte kUnkPal_8E98024+0x20, 0x1
+    .4byte kUnkPal_8E98024+0x40, 0x2
+    .4byte kUnkPal_8E98024+0x60, 0x3
+    .4byte kUnkPal_8E98024+0x80, 0x4
+    .4byte kUnkPal_8E98024+0xa0, 0x5
+    .4byte kUnkPal_8E98024+0x80, 0x6
+    .4byte kUnkPal_8E98024+0x80, 0x7
     .4byte 0x0, 0x0
 
     .global UNK_83E272C
@@ -83613,9 +89879,102 @@ UNK_83EE9BC: @ 83EE9BC
 UNK_83EE9C0: @ 83EE9C0
     .incbin "baserom.gba", 0x3EE9C0, 0x8
 
-    .global UNK_83EE9C8
-UNK_83EE9C8: @ 83EE9C8
-    .incbin "baserom.gba", 0x3EE9C8, 0xF0
+kMailGraphics:: @ 83EE9C8
+    .4byte kUnkPal_8E93EA0
+    .4byte kUnkGfx_8E94020
+    .4byte kUnkBin_8E9522C
+    .2byte 0x02C0
+    .2byte 0x0000
+    .2byte 0x294A
+    .2byte 0x6739
+
+    .4byte kUnkPal_8E93EC0
+    .4byte kUnkGfx_8E941C0
+    .4byte kUnkBin_8E95304
+    .2byte 0x02E0
+    .2byte 0x0000
+    .2byte 0x7FFF
+    .2byte 0x4631
+
+    .4byte kUnkPal_8E93EE0
+    .4byte kUnkGfx_8E942FC
+    .4byte kUnkBin_8E953E4
+    .2byte 0x0400
+    .2byte 0x0000
+    .2byte 0x294A
+    .2byte 0x6739
+
+    .4byte kUnkPal_8E93F00
+    .4byte kUnkGfx_8E9450C
+    .4byte kUnkBin_8E954F0
+    .2byte 0x01E0
+    .2byte 0x0000
+    .2byte 0x7FFF
+    .2byte 0x4631
+
+    .4byte kUnkPal_8E93F20
+    .4byte kUnkGfx_8E945E4
+    .4byte kUnkBin_8E955CC
+    .2byte 0x02E0
+    .2byte 0x0000
+    .2byte 0x7FFF
+    .2byte 0x4631
+
+    .4byte kUnkPal_8E93F40
+    .4byte kUnkGfx_8E947DC
+    .4byte kUnkBin_8E956BC
+    .2byte 0x0300
+    .2byte 0x0000
+    .2byte 0x294A
+    .2byte 0x6739
+
+    .4byte kUnkPal_8E93F60
+    .4byte kUnkGfx_8E9495C
+    .4byte kUnkBin_8E9579C
+    .2byte 0x0140
+    .2byte 0x0000
+    .2byte 0x7FFF
+    .2byte 0x4631
+
+    .4byte kUnkPal_8E93F80
+    .4byte kUnkGfx_8E94A04
+    .4byte kUnkBin_8E9587C
+    .2byte 0x0300
+    .2byte 0x0000
+    .2byte 0x7FFF
+    .2byte 0x4631
+
+    .4byte kUnkPal_8E93FA0
+    .4byte kUnkGfx_8E94B94
+    .4byte kUnkBin_8E95988
+    .2byte 0x0220
+    .2byte 0x0000
+    .2byte 0x294A
+    .2byte 0x6739
+
+    .4byte kUnkPal_8E93FC0
+    .4byte kUnkGfx_8E94CD4
+    .4byte kUnkBin_8E95A78
+    .2byte 0x0340
+    .2byte 0x0000
+    .2byte 0x294A
+    .2byte 0x6739
+
+    .4byte kUnkPal_8E93FE0
+    .4byte kUnkGfx_8E94E3C
+    .4byte kUnkBin_8E95B70
+    .2byte 0x02A0
+    .2byte 0x0000
+    .2byte 0x294A
+    .2byte 0x6739
+
+    .4byte kUnkPal_8E94000
+    .4byte kUnkGfx_8E94F8C
+    .4byte kUnkBin_8E95C88
+    .2byte 0x0520
+    .2byte 0x0000
+    .2byte 0x294A
+    .2byte 0x6739
 
     .global unk_83EEAB8
 unk_83EEAB8: @ 83EEAB8
@@ -90188,9 +96547,9 @@ _8410B94: @ 8410B94
 
     .global List_8410CDC
 List_8410CDC: @ 8410CDC
-    .4byte 0x8EAE548
-    .4byte 0x8EAE900
-    .4byte 0x8EAE528
+    .4byte kUnkGfx_8EAE548
+    .4byte kUnkBin_8EAE900
+    .4byte kUnkPal_8EAE528
     .4byte _8410B20
     .4byte _8410B94
     .4byte _8410B00
@@ -92335,7 +98694,20 @@ Text_8417C9D: @ 8417C9D
 Text_8417CB7: @ 8417CB7
     .string "PORYGON{CLEAR_TO 75}{SIZE 0} 9,999 COINS$"
 
-    .incbin "baserom.gba", 0x417CD1, 0x7B
+Text_8417CD1:: @ 8417CD1
+    .string "ABRA{CLEAR_TO 85}{SIZE 0} 120 COINS$"
+
+Text_8417CE6:: @ 8417CE6
+    .string "CLEFAIRY{CLEAR_TO 85}{SIZE 0} 750 COINS$"
+
+Text_8417CFF:: @ 8417CFF
+    .string "PINSIR{CLEAR_TO 75}{SIZE 0} 2,500 COINS$"
+
+Text_8417D18:: @ 8417D18
+    .string "DRATINI{CLEAR_TO 75}{SIZE 0} 4,600 COINS$"
+
+Text_8417D32:: @ 8417D32
+    .string "PORYGON{CLEAR_TO 75}{SIZE 0} 6,500 COINS$"
 
     .global Text_8417D4C
 Text_8417D4C: @ 8417D4C
@@ -97633,16 +104005,16 @@ borg_843F8F0: @ 843F8F0
 borg_843F910: @ 843F910
     .4byte unk_843F3B8, 0x0
     .4byte unk_843F3D8, 0x1
-    .4byte 0x8E99F24, 0x2
+    .4byte kUnkPal_8E99F24, 0x2
     .4byte unk_843F618, 0x3
     .4byte NULL, 0x0
 
     .global borg_843F938
 borg_843F938: @ 843F938
     .4byte unk_843F638, 0x50800
-    .4byte 0x8E9BD28, 0x11000
-    .4byte 0x8E99F44, 0x60800
-    .4byte 0x8E9A168, 0x41000
+    .4byte kUnkGfx_8E9BD28, 0x11000
+    .4byte kUnkGfx_8E99F44, 0x60800
+    .4byte kUnkGfx_8E9A168, 0x41000
 
     .global UNK_843F958
 UNK_843F958: @ 843F958
@@ -97784,9 +104156,420 @@ SpriteTemplate_843FA80: @ 843FA80
 SpriteTemplate_843FA98: @ 843FA98
     spr_template 0x0002, 0x0002, OAM_843FA60, AnimCmds_843FA78, NULL, AffineAnimCmds_8231CFC, objc_nullsub
 
-    .global UNK_843FAB0
-UNK_843FAB0: @ 843FAB0
-    .incbin "baserom.gba", 0x43FAB0, 0x674
+kMonFootprintTable:: @ 843FAB0
+    .4byte kMonFootprint_Bulbasaur
+    .4byte kMonFootprint_Bulbasaur
+    .4byte kMonFootprint_Ivysaur
+    .4byte kMonFootprint_Venusaur
+    .4byte kMonFootprint_Charmander
+    .4byte kMonFootprint_Charmeleon
+    .4byte kMonFootprint_Charizard
+    .4byte kMonFootprint_Squirtle
+    .4byte kMonFootprint_Wartortle
+    .4byte kMonFootprint_Blastoise
+    .4byte kMonFootprint_Caterpie
+    .4byte kMonFootprint_Metapod
+    .4byte kMonFootprint_Butterfree
+    .4byte kMonFootprint_Weedle
+    .4byte kMonFootprint_Kakuna
+    .4byte kMonFootprint_Beedrill
+    .4byte kMonFootprint_Pidgey
+    .4byte kMonFootprint_Pidgeotto
+    .4byte kMonFootprint_Pidgeot
+    .4byte kMonFootprint_Rattata
+    .4byte kMonFootprint_Raticate
+    .4byte kMonFootprint_Spearow
+    .4byte kMonFootprint_Fearow
+    .4byte kMonFootprint_Ekans
+    .4byte kMonFootprint_Arbok
+    .4byte kMonFootprint_Pikachu
+    .4byte kMonFootprint_Raichu
+    .4byte kMonFootprint_Sandshrew
+    .4byte kMonFootprint_Sandslash
+    .4byte kMonFootprint_NidoranF
+    .4byte kMonFootprint_Nidorina
+    .4byte kMonFootprint_Nidoqueen
+    .4byte kMonFootprint_NidoranM
+    .4byte kMonFootprint_Nidorino
+    .4byte kMonFootprint_Nidoking
+    .4byte kMonFootprint_Clefairy
+    .4byte kMonFootprint_Clefable
+    .4byte kMonFootprint_Vulpix
+    .4byte kMonFootprint_Ninetales
+    .4byte kMonFootprint_Jigglypuff
+    .4byte kMonFootprint_Wigglytuff
+    .4byte kMonFootprint_Zubat
+    .4byte kMonFootprint_Golbat
+    .4byte kMonFootprint_Oddish
+    .4byte kMonFootprint_Gloom
+    .4byte kMonFootprint_Vileplume
+    .4byte kMonFootprint_Paras
+    .4byte kMonFootprint_Parasect
+    .4byte kMonFootprint_Venonat
+    .4byte kMonFootprint_Venomoth
+    .4byte kMonFootprint_Diglett
+    .4byte kMonFootprint_Dugtrio
+    .4byte kMonFootprint_Meowth
+    .4byte kMonFootprint_Persian
+    .4byte kMonFootprint_Psyduck
+    .4byte kMonFootprint_Golduck
+    .4byte kMonFootprint_Mankey
+    .4byte kMonFootprint_Primeape
+    .4byte kMonFootprint_Growlithe
+    .4byte kMonFootprint_Arcanine
+    .4byte kMonFootprint_Poliwag
+    .4byte kMonFootprint_Poliwhirl
+    .4byte kMonFootprint_Poliwrath
+    .4byte kMonFootprint_Abra
+    .4byte kMonFootprint_Kadabra
+    .4byte kMonFootprint_Alakazam
+    .4byte kMonFootprint_Machop
+    .4byte kMonFootprint_Machoke
+    .4byte kMonFootprint_Machamp
+    .4byte kMonFootprint_Bellsprout
+    .4byte kMonFootprint_Weepinbell
+    .4byte kMonFootprint_Victreebel
+    .4byte kMonFootprint_Tentacool
+    .4byte kMonFootprint_Tentacruel
+    .4byte kMonFootprint_Geodude
+    .4byte kMonFootprint_Graveler
+    .4byte kMonFootprint_Golem
+    .4byte kMonFootprint_Ponyta
+    .4byte kMonFootprint_Rapidash
+    .4byte kMonFootprint_Slowpoke
+    .4byte kMonFootprint_Slowbro
+    .4byte kMonFootprint_Magnemite
+    .4byte kMonFootprint_Magneton
+    .4byte kMonFootprint_Farfetchd
+    .4byte kMonFootprint_Doduo
+    .4byte kMonFootprint_Dodrio
+    .4byte kMonFootprint_Seel
+    .4byte kMonFootprint_Dewgong
+    .4byte kMonFootprint_Grimer
+    .4byte kMonFootprint_Muk
+    .4byte kMonFootprint_Shellder
+    .4byte kMonFootprint_Cloyster
+    .4byte kMonFootprint_Gastly
+    .4byte kMonFootprint_Haunter
+    .4byte kMonFootprint_Gengar
+    .4byte kMonFootprint_Onix
+    .4byte kMonFootprint_Drowzee
+    .4byte kMonFootprint_Hypno
+    .4byte kMonFootprint_Krabby
+    .4byte kMonFootprint_Kingler
+    .4byte kMonFootprint_Voltorb
+    .4byte kMonFootprint_Electrode
+    .4byte kMonFootprint_Exeggcute
+    .4byte kMonFootprint_Exeggutor
+    .4byte kMonFootprint_Cubone
+    .4byte kMonFootprint_Marowak
+    .4byte kMonFootprint_Hitmonlee
+    .4byte kMonFootprint_Hitmonchan
+    .4byte kMonFootprint_Lickitung
+    .4byte kMonFootprint_Koffing
+    .4byte kMonFootprint_Weezing
+    .4byte kMonFootprint_Rhyhorn
+    .4byte kMonFootprint_Rhydon
+    .4byte kMonFootprint_Chansey
+    .4byte kMonFootprint_Tangela
+    .4byte kMonFootprint_Kangaskhan
+    .4byte kMonFootprint_Horsea
+    .4byte kMonFootprint_Seadra
+    .4byte kMonFootprint_Goldeen
+    .4byte kMonFootprint_Seaking
+    .4byte kMonFootprint_Staryu
+    .4byte kMonFootprint_Starmie
+    .4byte kMonFootprint_MrMime
+    .4byte kMonFootprint_Scyther
+    .4byte kMonFootprint_Jynx
+    .4byte kMonFootprint_Electabuzz
+    .4byte kMonFootprint_Magmar
+    .4byte kMonFootprint_Pinsir
+    .4byte kMonFootprint_Tauros
+    .4byte kMonFootprint_Magikarp
+    .4byte kMonFootprint_Gyarados
+    .4byte kMonFootprint_Lapras
+    .4byte kMonFootprint_Ditto
+    .4byte kMonFootprint_Eevee
+    .4byte kMonFootprint_Vaporeon
+    .4byte kMonFootprint_Jolteon
+    .4byte kMonFootprint_Flareon
+    .4byte kMonFootprint_Porygon
+    .4byte kMonFootprint_Omanyte
+    .4byte kMonFootprint_Omastar
+    .4byte kMonFootprint_Kabuto
+    .4byte kMonFootprint_Kabutops
+    .4byte kMonFootprint_Aerodactyl
+    .4byte kMonFootprint_Snorlax
+    .4byte kMonFootprint_Articuno
+    .4byte kMonFootprint_Zapdos
+    .4byte kMonFootprint_Moltres
+    .4byte kMonFootprint_Dratini
+    .4byte kMonFootprint_Dragonair
+    .4byte kMonFootprint_Dragonite
+    .4byte kMonFootprint_Mewtwo
+    .4byte kMonFootprint_Mew
+    .4byte kMonFootprint_Chikorita
+    .4byte kMonFootprint_Bayleef
+    .4byte kMonFootprint_Meganium
+    .4byte kMonFootprint_Cyndaquil
+    .4byte kMonFootprint_Quilava
+    .4byte kMonFootprint_Typhlosion
+    .4byte kMonFootprint_Totodile
+    .4byte kMonFootprint_Croconaw
+    .4byte kMonFootprint_Feraligatr
+    .4byte kMonFootprint_Sentret
+    .4byte kMonFootprint_Furret
+    .4byte kMonFootprint_Hoothoot
+    .4byte kMonFootprint_Noctowl
+    .4byte kMonFootprint_Ledyba
+    .4byte kMonFootprint_Ledian
+    .4byte kMonFootprint_Spinarak
+    .4byte kMonFootprint_Ariados
+    .4byte kMonFootprint_Crobat
+    .4byte kMonFootprint_Chinchou
+    .4byte kMonFootprint_Lanturn
+    .4byte kMonFootprint_Pichu
+    .4byte kMonFootprint_Cleffa
+    .4byte kMonFootprint_Igglybuff
+    .4byte kMonFootprint_Togepi
+    .4byte kMonFootprint_Togetic
+    .4byte kMonFootprint_Natu
+    .4byte kMonFootprint_Xatu
+    .4byte kMonFootprint_Mareep
+    .4byte kMonFootprint_Flaaffy
+    .4byte kMonFootprint_Ampharos
+    .4byte kMonFootprint_Bellossom
+    .4byte kMonFootprint_Marill
+    .4byte kMonFootprint_Azumarill
+    .4byte kMonFootprint_Sudowoodo
+    .4byte kMonFootprint_Politoed
+    .4byte kMonFootprint_Hoppip
+    .4byte kMonFootprint_Skiploom
+    .4byte kMonFootprint_Jumpluff
+    .4byte kMonFootprint_Aipom
+    .4byte kMonFootprint_Sunkern
+    .4byte kMonFootprint_Sunflora
+    .4byte kMonFootprint_Yanma
+    .4byte kMonFootprint_Wooper
+    .4byte kMonFootprint_Quagsire
+    .4byte kMonFootprint_Espeon
+    .4byte kMonFootprint_Umbreon
+    .4byte kMonFootprint_Murkrow
+    .4byte kMonFootprint_Slowking
+    .4byte kMonFootprint_Misdreavus
+    .4byte kMonFootprint_Unown
+    .4byte kMonFootprint_Wobbuffet
+    .4byte kMonFootprint_Girafarig
+    .4byte kMonFootprint_Pineco
+    .4byte kMonFootprint_Forretress
+    .4byte kMonFootprint_Dunsparce
+    .4byte kMonFootprint_Gligar
+    .4byte kMonFootprint_Steelix
+    .4byte kMonFootprint_Snubbull
+    .4byte kMonFootprint_Granbull
+    .4byte kMonFootprint_Qwilfish
+    .4byte kMonFootprint_Scizor
+    .4byte kMonFootprint_Shuckle
+    .4byte kMonFootprint_Heracross
+    .4byte kMonFootprint_Sneasel
+    .4byte kMonFootprint_Teddiursa
+    .4byte kMonFootprint_Ursaring
+    .4byte kMonFootprint_Slugma
+    .4byte kMonFootprint_Magcargo
+    .4byte kMonFootprint_Swinub
+    .4byte kMonFootprint_Piloswine
+    .4byte kMonFootprint_Corsola
+    .4byte kMonFootprint_Remoraid
+    .4byte kMonFootprint_Octillery
+    .4byte kMonFootprint_Delibird
+    .4byte kMonFootprint_Mantine
+    .4byte kMonFootprint_Skarmory
+    .4byte kMonFootprint_Houndour
+    .4byte kMonFootprint_Houndoom
+    .4byte kMonFootprint_Kingdra
+    .4byte kMonFootprint_Phanpy
+    .4byte kMonFootprint_Donphan
+    .4byte kMonFootprint_Porygon2
+    .4byte kMonFootprint_Stantler
+    .4byte kMonFootprint_Smeargle
+    .4byte kMonFootprint_Tyrogue
+    .4byte kMonFootprint_Hitmontop
+    .4byte kMonFootprint_Smoochum
+    .4byte kMonFootprint_Elekid
+    .4byte kMonFootprint_Magby
+    .4byte kMonFootprint_Miltank
+    .4byte kMonFootprint_Blissey
+    .4byte kMonFootprint_Raikou
+    .4byte kMonFootprint_Entei
+    .4byte kMonFootprint_Suicune
+    .4byte kMonFootprint_Larvitar
+    .4byte kMonFootprint_Pupitar
+    .4byte kMonFootprint_Tyranitar
+    .4byte kMonFootprint_Lugia
+    .4byte kMonFootprint_HoOh
+    .4byte kMonFootprint_Celebi
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_OldUnownZ
+    .4byte kMonFootprint_Treecko
+    .4byte kMonFootprint_Grovyle
+    .4byte kMonFootprint_Sceptile
+    .4byte kMonFootprint_Torchic
+    .4byte kMonFootprint_Combusken
+    .4byte kMonFootprint_Blaziken
+    .4byte kMonFootprint_Mudkip
+    .4byte kMonFootprint_Marshtomp
+    .4byte kMonFootprint_Swampert
+    .4byte kMonFootprint_Poochyena
+    .4byte kMonFootprint_Mightyena
+    .4byte kMonFootprint_Zigzagoon
+    .4byte kMonFootprint_Linoone
+    .4byte kMonFootprint_Wurmple
+    .4byte kMonFootprint_Silcoon
+    .4byte kMonFootprint_Beautifly
+    .4byte kMonFootprint_Cascoon
+    .4byte kMonFootprint_Dustox
+    .4byte kMonFootprint_Lotad
+    .4byte kMonFootprint_Lombre
+    .4byte kMonFootprint_Ludicolo
+    .4byte kMonFootprint_Seedot
+    .4byte kMonFootprint_Nuzleaf
+    .4byte kMonFootprint_Shiftry
+    .4byte kMonFootprint_Nincada
+    .4byte kMonFootprint_Ninjask
+    .4byte kMonFootprint_Shedinja
+    .4byte kMonFootprint_Taillow
+    .4byte kMonFootprint_Swellow
+    .4byte kMonFootprint_Shroomish
+    .4byte kMonFootprint_Breloom
+    .4byte kMonFootprint_Spinda
+    .4byte kMonFootprint_Wingull
+    .4byte kMonFootprint_Pelipper
+    .4byte kMonFootprint_Surskit
+    .4byte kMonFootprint_Masquerain
+    .4byte kMonFootprint_Wailmer
+    .4byte kMonFootprint_Wailord
+    .4byte kMonFootprint_Skitty
+    .4byte kMonFootprint_Delcatty
+    .4byte kMonFootprint_Kecleon
+    .4byte kMonFootprint_Baltoy
+    .4byte kMonFootprint_Claydol
+    .4byte kMonFootprint_Nosepass
+    .4byte kMonFootprint_Torkoal
+    .4byte kMonFootprint_Sableye
+    .4byte kMonFootprint_Barboach
+    .4byte kMonFootprint_Whiscash
+    .4byte kMonFootprint_Luvdisc
+    .4byte kMonFootprint_Corphish
+    .4byte kMonFootprint_Crawdaunt
+    .4byte kMonFootprint_Feebas
+    .4byte kMonFootprint_Milotic
+    .4byte kMonFootprint_Carvanha
+    .4byte kMonFootprint_Sharpedo
+    .4byte kMonFootprint_Trapinch
+    .4byte kMonFootprint_Vibrava
+    .4byte kMonFootprint_Flygon
+    .4byte kMonFootprint_Makuhita
+    .4byte kMonFootprint_Hariyama
+    .4byte kMonFootprint_Electrike
+    .4byte kMonFootprint_Manectric
+    .4byte kMonFootprint_Numel
+    .4byte kMonFootprint_Camerupt
+    .4byte kMonFootprint_Spheal
+    .4byte kMonFootprint_Sealeo
+    .4byte kMonFootprint_Walrein
+    .4byte kMonFootprint_Cacnea
+    .4byte kMonFootprint_Cacturne
+    .4byte kMonFootprint_Snorunt
+    .4byte kMonFootprint_Glalie
+    .4byte kMonFootprint_Lunatone
+    .4byte kMonFootprint_Solrock
+    .4byte kMonFootprint_Azurill
+    .4byte kMonFootprint_Spoink
+    .4byte kMonFootprint_Grumpig
+    .4byte kMonFootprint_Plusle
+    .4byte kMonFootprint_Minun
+    .4byte kMonFootprint_Mawile
+    .4byte kMonFootprint_Meditite
+    .4byte kMonFootprint_Medicham
+    .4byte kMonFootprint_Swablu
+    .4byte kMonFootprint_Altaria
+    .4byte kMonFootprint_Wynaut
+    .4byte kMonFootprint_Duskull
+    .4byte kMonFootprint_Dusclops
+    .4byte kMonFootprint_Roselia
+    .4byte kMonFootprint_Slakoth
+    .4byte kMonFootprint_Vigoroth
+    .4byte kMonFootprint_Slaking
+    .4byte kMonFootprint_Gulpin
+    .4byte kMonFootprint_Swalot
+    .4byte kMonFootprint_Tropius
+    .4byte kMonFootprint_Whismur
+    .4byte kMonFootprint_Loudred
+    .4byte kMonFootprint_Exploud
+    .4byte kMonFootprint_Clamperl
+    .4byte kMonFootprint_Huntail
+    .4byte kMonFootprint_Gorebyss
+    .4byte kMonFootprint_Absol
+    .4byte kMonFootprint_Shuppet
+    .4byte kMonFootprint_Banette
+    .4byte kMonFootprint_Seviper
+    .4byte kMonFootprint_Zangoose
+    .4byte kMonFootprint_Relicanth
+    .4byte kMonFootprint_Aron
+    .4byte kMonFootprint_Lairon
+    .4byte kMonFootprint_Aggron
+    .4byte kMonFootprint_Castform
+    .4byte kMonFootprint_Volbeat
+    .4byte kMonFootprint_Illumise
+    .4byte kMonFootprint_Lileep
+    .4byte kMonFootprint_Cradily
+    .4byte kMonFootprint_Anorith
+    .4byte kMonFootprint_Armaldo
+    .4byte kMonFootprint_Ralts
+    .4byte kMonFootprint_Kirlia
+    .4byte kMonFootprint_Gardevoir
+    .4byte kMonFootprint_Bagon
+    .4byte kMonFootprint_Shelgon
+    .4byte kMonFootprint_Salamence
+    .4byte kMonFootprint_Beldum
+    .4byte kMonFootprint_Metang
+    .4byte kMonFootprint_Metagross
+    .4byte kMonFootprint_Regirock
+    .4byte kMonFootprint_Regice
+    .4byte kMonFootprint_Registeel
+    .4byte kMonFootprint_Kyogre
+    .4byte kMonFootprint_Groudon
+    .4byte kMonFootprint_Rayquaza
+    .4byte kMonFootprint_Latias
+    .4byte kMonFootprint_Latios
+    .4byte kMonFootprint_Jirachi
+    .4byte kMonFootprint_Deoxys
+    .4byte kMonFootprint_Chimecho
+    .4byte kMonFootprint_Bulbasaur
 
     .global UNK_8440124
 UNK_8440124: @ 8440124

@@ -107,7 +107,7 @@ twoptr_84520F4: @ 84520F4
     .4byte _8440BD8, _8443440
     .4byte _8441D54, _8443500
     .4byte _844223C, _8443540
-    .4byte 0x8E9C16C, 0x8E9C14C
+    .4byte kUnkGfx_8E9C16C, kUnkPal_8E9C14C
     .4byte _8442BC0, _84435A0
     .4byte _8442EF8, _84435C0
     .4byte _844318C, _84435E0
@@ -6239,13 +6239,13 @@ AnimCmds_845A46C: @ 845A46C
     .4byte AnimCmd_845A45C
     .4byte AnimCmd_845A464
 
-    .global UNK_845A474
-UNK_845A474: @ 845A474
-    .incbin "baserom.gba", 0x45A474, 0x8
+bogo_845A474:: @ 845A474
+    .4byte kUnkGfx_8E82BE8
+    .2byte 0x0400, 0x04B0
 
-    .global UNK_845A47C
-UNK_845A47C: @ 845A47C
-    .incbin "baserom.gba", 0x45A47C, 0x8
+bogo_845A47C:: @ 845A47C
+    .4byte kUnkPal_8E82E7C
+    .2byte 0x04B0, 0x0000
 
     .global SpriteTemplate_845A484
 SpriteTemplate_845A484: @ 845A484
@@ -6292,9 +6292,9 @@ AnimCmds_845A4D4: @ 845A4D4
     .4byte AnimCmd_845A4C4
     .4byte AnimCmd_845A4CC
 
-    .global UNK_845A4EC
-UNK_845A4EC: @ 845A4EC
-    .incbin "baserom.gba", 0x45A4EC, 0x8
+bogo_845A4EC:: @ 845A4EC
+    .4byte kUnkGfx_8E82D68
+    .2byte 0x0300, 0x04B1
 
     .global SpriteTemplate_845A4F4
 SpriteTemplate_845A4F4: @ 845A4F4
@@ -6351,14 +6351,12 @@ AnimCmds_845A554: @ 845A554
     .4byte AnimCmd_845A544
     .4byte AnimCmd_845A54C
 
-    .global bogo_845A574
-bogo_845A574: @ 845A574
-    .4byte 0x8E82EA0
+bogo_845A574:: @ 845A574
+    .4byte kUnkGfx_8E82EA0
     .2byte 0x0400, 0x04B2
 
-    .global bogo_845A57C
-bogo_845A57C: @ 845A57C
-    .4byte 0x8E830A4
+bogo_845A57C:: @ 845A57C
+    .4byte kUnkPal_8E830A4
     .2byte 0x04B2, 0x0000
 
     .global SpriteTemplate_845A584
@@ -6673,7 +6671,7 @@ borg_845AF58: @ 845AF58
     .4byte unk_845AED8, 0x10040
     .4byte unk_845AEB8, 0x20040
     .4byte unk_845AF04, 0x30080
-    .4byte 0x8EA1A50, 0x40400
+    .4byte kUnkGfx_8EA1A50, 0x40400
 
     .global bogo_845AF80
 bogo_845AF80: @ 845AF80
@@ -8585,9 +8583,9 @@ AnimCmds_8463210: @ 8463210
     .4byte AnimCmd_8463200
     .4byte AnimCmd_8463208
 
-    .global UNK_8463218
-UNK_8463218: @ 8463218
-    .incbin "baserom.gba", 0x463218, 0x8
+bogo_8463218:: @ 8463218
+    .4byte kUnkGfx_8E84D90
+    .2byte 0x0400, 0x0190
 
     .global SpriteTemplate_8463220
 SpriteTemplate_8463220: @ 8463220
@@ -9186,7 +9184,7 @@ UNK_8463FEA: @ 8463FEA
 
     .global List_8463FFC
 List_8463FFC: @ 8463FFC
-    .4byte 0x8E9B578
+    .4byte kUnkPal_8E9B578
     .4byte _8463AAC
     .4byte _8463ACC
 
@@ -9351,14 +9349,12 @@ AffineAnimCmds_84644A0: @ 84644A0
     .4byte AffineAnimCmd_8464468
     .4byte AffineAnimCmd_8464478
 
-    .global bogo_84644A8
-bogo_84644A8: @ 84644A8
-    .4byte 0x8E8560C
+bogo_84644A8:: @ 84644A8
+    .4byte kUnkGfx_8E8560C
     .2byte 0x0800, 0x0064
 
-    .global bogo_84644B0
-bogo_84644B0: @ 84644B0
-    .4byte 0x8E85C1C
+bogo_84644B0:: @ 84644B0
+    .4byte kUnkPal_8E85C1C
     .2byte 0x0064, 0x0000
 
     .global SpriteTemplate_84644B8
@@ -12729,9 +12725,25 @@ SpriteTemplates_847A860: @ 847A860
     spr_template 0x0000, 0x0000, OAM_847A7AC, AnimCmds_847A7D4, NULL, AffineAnimCmds_847A850, objc_nullsub
     spr_template 0x0000, 0x0000, OAM_847A7B4, AnimCmds_847A7F0, NULL, AffineAnimCmds_8231CFC, objc_nullsub
 
-    .global UNK_847A890
-UNK_847A890: @ 847A890
-    .incbin "baserom.gba", 0x47A890, 0x48
+List_847A890:: @ 847A890
+    .4byte kBerryProgramUpdateTiles_0
+    .4byte kBerryProgramUpdateTilemap_0
+    .4byte kBerryProgramUpdatePalette_0
+    .4byte kBerryProgramUpdateTiles_1
+    .4byte kBerryProgramUpdateTilemap_1
+    .4byte kUnkPal_8EA5604
+    .4byte kBerryProgramUpdateTiles_2
+    .4byte kBerryProgramUpdateTilemap_2
+    .4byte kBerryProgramUpdatePalette_2
+    .4byte kBerryProgramUpdateTiles_3
+    .4byte kBerryProgramUpdateTilemap_3
+    .4byte kBerryProgramUpdatePalette_3
+    .4byte kBerryProgramUpdateTiles_4
+    .4byte kBerryProgramUpdateTilemap_4
+    .4byte kBerryProgramUpdatePalette_4
+    .4byte kBerryProgramUpdateTiles_5
+    .4byte kBerryProgramUpdateTilemap_5
+    .4byte kBerryProgramUpdatePalette_5
 
     .global Text_847A8D8
 Text_847A8D8: @ 847A8D8

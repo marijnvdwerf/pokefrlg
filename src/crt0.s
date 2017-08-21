@@ -107,11 +107,11 @@ GPIOPortReadEnable: @ 80000C8
 	.4byte          2
 	.ascii "pokemon red version"
 	.space 13
-	.4byte UNK_82350AC
-	.4byte UNK_823654C
-	.4byte UNK_823730C
-	.4byte UNK_82380CC
-	.4byte unk_83D37A0
+	.4byte kMonFrontPicTable
+	.4byte kMonBackPicTable
+	.4byte kMonPaletteTable
+	.4byte kMonShinyPaletteTable
+	.4byte kMonIconTable
 	.4byte UNK_83D3E80
 	.4byte borg_83D4038
 	.4byte UNK_8245EE0
