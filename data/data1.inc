@@ -18913,2068 +18913,5694 @@ UNK_8254784: @ 8254784
 UNK_8254795: @ 8254795
     .incbin "baserom.gba", 0x254795, 0x2CFF
 
-    .global _8257494
-_8257494: @ 8257494
-    .incbin "baserom.gba", 0x257494, 0x18
-
-    .global _82574AC
-_82574AC: @ 82574AC
-    .incbin "baserom.gba", 0x2574AC, 0x1C
-
-    .global _82574C8
-_82574C8: @ 82574C8
-    .incbin "baserom.gba", 0x2574C8, 0x1E
-
-    .global _82574E6
-_82574E6: @ 82574E6
-    .incbin "baserom.gba", 0x2574E6, 0x16
-
-    .global _82574FC
-_82574FC: @ 82574FC
-    .incbin "baserom.gba", 0x2574FC, 0x18
-
-    .global _8257514
-_8257514: @ 8257514
-    .incbin "baserom.gba", 0x257514, 0x1E
-
-    .global _8257532
-_8257532: @ 8257532
-    .incbin "baserom.gba", 0x257532, 0x18
-
-    .global _825754A
-_825754A: @ 825754A
-    .incbin "baserom.gba", 0x25754A, 0x1C
-
-    .global _8257566
-_8257566: @ 8257566
-    .incbin "baserom.gba", 0x257566, 0x1E
-
-    .global _8257584
-_8257584: @ 8257584
-    .incbin "baserom.gba", 0x257584, 0x6
-
-    .global _825758A
-_825758A: @ 825758A
-    .incbin "baserom.gba", 0x25758A, 0x6
-
-    .global _8257590
-_8257590: @ 8257590
-    .incbin "baserom.gba", 0x257590, 0x18
-
-    .global _82575A8
-_82575A8: @ 82575A8
-    .incbin "baserom.gba", 0x2575A8, 0x6
-
-    .global _82575AE
-_82575AE: @ 82575AE
-    .incbin "baserom.gba", 0x2575AE, 0x6
-
-    .global _82575B4
-_82575B4: @ 82575B4
-    .incbin "baserom.gba", 0x2575B4, 0x14
-
-    .global _82575C8
-_82575C8: @ 82575C8
-    .incbin "baserom.gba", 0x2575C8, 0x14
-
-    .global _82575DC
-_82575DC: @ 82575DC
-    .incbin "baserom.gba", 0x2575DC, 0x18
-
-    .global _82575F4
-_82575F4: @ 82575F4
-    .incbin "baserom.gba", 0x2575F4, 0x1A
-
-    .global _825760E
-_825760E: @ 825760E
-    .incbin "baserom.gba", 0x25760E, 0x12
-
-    .global _8257620
-_8257620: @ 8257620
-    .incbin "baserom.gba", 0x257620, 0x14
-
-    .global _8257634
-_8257634: @ 8257634
-    .incbin "baserom.gba", 0x257634, 0x14
-
-    .global _8257648
-_8257648: @ 8257648
-    .incbin "baserom.gba", 0x257648, 0x16
-
-    .global _825765E
-_825765E: @ 825765E
-    .incbin "baserom.gba", 0x25765E, 0x18
-
-    .global _8257676
-_8257676: @ 8257676
-    .incbin "baserom.gba", 0x257676, 0x1C
-
-    .global _8257692
-_8257692: @ 8257692
-    .incbin "baserom.gba", 0x257692, 0x18
-
-    .global _82576AA
-_82576AA: @ 82576AA
-    .incbin "baserom.gba", 0x2576AA, 0xA
-
-    .global _82576B4
-_82576B4: @ 82576B4
-    .incbin "baserom.gba", 0x2576B4, 0x14
-
-    .global _82576C8
-_82576C8: @ 82576C8
-    .incbin "baserom.gba", 0x2576C8, 0x18
-
-    .global _82576E0
-_82576E0: @ 82576E0
-    .incbin "baserom.gba", 0x2576E0, 0x16
-
-    .global _82576F6
-_82576F6: @ 82576F6
-    .incbin "baserom.gba", 0x2576F6, 0x16
-
-    .global _825770C
-_825770C: @ 825770C
-    .incbin "baserom.gba", 0x25770C, 0xE
-
-    .global _825771A
-_825771A: @ 825771A
-    .incbin "baserom.gba", 0x25771A, 0x16
-
-    .global _8257730
-_8257730: @ 8257730
-    .incbin "baserom.gba", 0x257730, 0x16
-
-    .global _8257746
-_8257746: @ 8257746
-    .incbin "baserom.gba", 0x257746, 0xE
-
-    .global _8257754
-_8257754: @ 8257754
-    .incbin "baserom.gba", 0x257754, 0x1C
-
-    .global _8257770
-_8257770: @ 8257770
-    .incbin "baserom.gba", 0x257770, 0xA
-
-    .global _825777A
-_825777A: @ 825777A
-    .incbin "baserom.gba", 0x25777A, 0x18
-
-    .global _8257792
-_8257792: @ 8257792
-    .incbin "baserom.gba", 0x257792, 0xC
-
-    .global _825779E
-_825779E: @ 825779E
-    .incbin "baserom.gba", 0x25779E, 0x18
-
-    .global _82577B6
-_82577B6: @ 82577B6
-    .incbin "baserom.gba", 0x2577B6, 0xA
-
-    .global _82577C0
-_82577C0: @ 82577C0
-    .incbin "baserom.gba", 0x2577C0, 0x16
-
-    .global _82577D6
-_82577D6: @ 82577D6
-    .incbin "baserom.gba", 0x2577D6, 0x1C
-
-    .global _82577F2
-_82577F2: @ 82577F2
-    .incbin "baserom.gba", 0x2577F2, 0x12
-
-    .global _8257804
-_8257804: @ 8257804
-    .incbin "baserom.gba", 0x257804, 0x16
-
-    .global _825781A
-_825781A: @ 825781A
-    .incbin "baserom.gba", 0x25781A, 0xC
-
-    .global _8257826
-_8257826: @ 8257826
-    .incbin "baserom.gba", 0x257826, 0x14
-
-    .global _825783A
-_825783A: @ 825783A
-    .incbin "baserom.gba", 0x25783A, 0x18
-
-    .global _8257852
-_8257852: @ 8257852
-    .incbin "baserom.gba", 0x257852, 0x18
-
-    .global _825786A
-_825786A: @ 825786A
-    .incbin "baserom.gba", 0x25786A, 0x1E
-
-    .global _8257888
-_8257888: @ 8257888
-    .incbin "baserom.gba", 0x257888, 0x16
-
-    .global _825789E
-_825789E: @ 825789E
-    .incbin "baserom.gba", 0x25789E, 0x1C
-
-    .global _82578BA
-_82578BA: @ 82578BA
-    .incbin "baserom.gba", 0x2578BA, 0x16
-
-    .global _82578D0
-_82578D0: @ 82578D0
-    .incbin "baserom.gba", 0x2578D0, 0x18
-
-    .global _82578E8
-_82578E8: @ 82578E8
-    .incbin "baserom.gba", 0x2578E8, 0x14
-
-    .global _82578FC
-_82578FC: @ 82578FC
-    .incbin "baserom.gba", 0x2578FC, 0x18
-
-    .global _8257914
-_8257914: @ 8257914
-    .incbin "baserom.gba", 0x257914, 0x18
-
-    .global _825792C
-_825792C: @ 825792C
-    .incbin "baserom.gba", 0x25792C, 0x1E
-
-    .global _825794A
-_825794A: @ 825794A
-    .incbin "baserom.gba", 0x25794A, 0x16
-
-    .global _8257960
-_8257960: @ 8257960
-    .incbin "baserom.gba", 0x257960, 0xC
-
-    .global _825796C
-_825796C: @ 825796C
-    .incbin "baserom.gba", 0x25796C, 0x12
-
-    .global _825797E
-_825797E: @ 825797E
-    .incbin "baserom.gba", 0x25797E, 0x16
-
-    .global _8257994
-_8257994: @ 8257994
-    .incbin "baserom.gba", 0x257994, 0xE
-
-    .global _82579A2
-_82579A2: @ 82579A2
-    .incbin "baserom.gba", 0x2579A2, 0x4
-
-    .global _82579A6
-_82579A6: @ 82579A6
-    .incbin "baserom.gba", 0x2579A6, 0x1A
-
-    .global _82579C0
-_82579C0: @ 82579C0
-    .incbin "baserom.gba", 0x2579C0, 0x1A
-
-    .global _82579DA
-_82579DA: @ 82579DA
-    .incbin "baserom.gba", 0x2579DA, 0x1A
-
-    .global _82579F4
-_82579F4: @ 82579F4
-    .incbin "baserom.gba", 0x2579F4, 0x1C
-
-    .global _8257A10
-_8257A10: @ 8257A10
-    .incbin "baserom.gba", 0x257A10, 0x1C
-
-    .global _8257A2C
-_8257A2C: @ 8257A2C
-    .incbin "baserom.gba", 0x257A2C, 0x16
-
-    .global _8257A42
-_8257A42: @ 8257A42
-    .incbin "baserom.gba", 0x257A42, 0x1A
-
-    .global _8257A5C
-_8257A5C: @ 8257A5C
-    .incbin "baserom.gba", 0x257A5C, 0x10
-
-    .global _8257A6C
-_8257A6C: @ 8257A6C
-    .incbin "baserom.gba", 0x257A6C, 0x14
-
-    .global _8257A80
-_8257A80: @ 8257A80
-    .incbin "baserom.gba", 0x257A80, 0x18
-
-    .global _8257A98
-_8257A98: @ 8257A98
-    .incbin "baserom.gba", 0x257A98, 0x18
-
-    .global _8257AB0
-_8257AB0: @ 8257AB0
-    .incbin "baserom.gba", 0x257AB0, 0x1C
-
-    .global _8257ACC
-_8257ACC: @ 8257ACC
-    .incbin "baserom.gba", 0x257ACC, 0x1C
-
-    .global _8257AE8
-_8257AE8: @ 8257AE8
-    .incbin "baserom.gba", 0x257AE8, 0x16
-
-    .global _8257AFE
-_8257AFE: @ 8257AFE
-    .incbin "baserom.gba", 0x257AFE, 0x1E
-
-    .global _8257B1C
-_8257B1C: @ 8257B1C
-    .incbin "baserom.gba", 0x257B1C, 0x18
-
-    .global _8257B34
-_8257B34: @ 8257B34
-    .incbin "baserom.gba", 0x257B34, 0x1C
-
-    .global _8257B50
-_8257B50: @ 8257B50
-    .incbin "baserom.gba", 0x257B50, 0x18
-
-    .global _8257B68
-_8257B68: @ 8257B68
-    .incbin "baserom.gba", 0x257B68, 0x1C
-
-    .global _8257B84
-_8257B84: @ 8257B84
-    .incbin "baserom.gba", 0x257B84, 0x16
-
-    .global _8257B9A
-_8257B9A: @ 8257B9A
-    .incbin "baserom.gba", 0x257B9A, 0x14
-
-    .global _8257BAE
-_8257BAE: @ 8257BAE
-    .incbin "baserom.gba", 0x257BAE, 0x18
-
-    .global _8257BC6
-_8257BC6: @ 8257BC6
-    .incbin "baserom.gba", 0x257BC6, 0x12
-
-    .global _8257BD8
-_8257BD8: @ 8257BD8
-    .incbin "baserom.gba", 0x257BD8, 0x1C
-
-    .global _8257BF4
-_8257BF4: @ 8257BF4
-    .incbin "baserom.gba", 0x257BF4, 0x16
-
-    .global _8257C0A
-_8257C0A: @ 8257C0A
-    .incbin "baserom.gba", 0x257C0A, 0x18
-
-    .global _8257C22
-_8257C22: @ 8257C22
-    .incbin "baserom.gba", 0x257C22, 0x14
-
-    .global _8257C36
-_8257C36: @ 8257C36
-    .incbin "baserom.gba", 0x257C36, 0xE
-
-    .global _8257C44
-_8257C44: @ 8257C44
-    .incbin "baserom.gba", 0x257C44, 0x18
-
-    .global _8257C5C
-_8257C5C: @ 8257C5C
-    .incbin "baserom.gba", 0x257C5C, 0x1C
-
-    .global _8257C78
-_8257C78: @ 8257C78
-    .incbin "baserom.gba", 0x257C78, 0x1C
-
-    .global _8257C94
-_8257C94: @ 8257C94
-    .incbin "baserom.gba", 0x257C94, 0x1A
-
-    .global _8257CAE
-_8257CAE: @ 8257CAE
-    .incbin "baserom.gba", 0x257CAE, 0x18
-
-    .global _8257CC6
-_8257CC6: @ 8257CC6
-    .incbin "baserom.gba", 0x257CC6, 0x1E
-
-    .global _8257CE4
-_8257CE4: @ 8257CE4
-    .incbin "baserom.gba", 0x257CE4, 0x16
-
-    .global _8257CFA
-_8257CFA: @ 8257CFA
-    .incbin "baserom.gba", 0x257CFA, 0x1E
-
-    .global _8257D18
-_8257D18: @ 8257D18
-    .incbin "baserom.gba", 0x257D18, 0x18
-
-    .global _8257D30
-_8257D30: @ 8257D30
-    .incbin "baserom.gba", 0x257D30, 0x1C
-
-    .global _8257D4C
-_8257D4C: @ 8257D4C
-    .incbin "baserom.gba", 0x257D4C, 0x16
-
-    .global _8257D62
-_8257D62: @ 8257D62
-    .incbin "baserom.gba", 0x257D62, 0xC
-
-    .global _8257D6E
-_8257D6E: @ 8257D6E
-    .incbin "baserom.gba", 0x257D6E, 0x1A
-
-    .global _8257D88
-_8257D88: @ 8257D88
-    .incbin "baserom.gba", 0x257D88, 0x20
-
-    .global _8257DA8
-_8257DA8: @ 8257DA8
-    .incbin "baserom.gba", 0x257DA8, 0x1C
-
-    .global _8257DC4
-_8257DC4: @ 8257DC4
-    .incbin "baserom.gba", 0x257DC4, 0x1A
-
-    .global _8257DDE
-_8257DDE: @ 8257DDE
-    .incbin "baserom.gba", 0x257DDE, 0x16
-
-    .global _8257DF4
-_8257DF4: @ 8257DF4
-    .incbin "baserom.gba", 0x257DF4, 0x16
-
-    .global _8257E0A
-_8257E0A: @ 8257E0A
-    .incbin "baserom.gba", 0x257E0A, 0x1A
-
-    .global _8257E24
-_8257E24: @ 8257E24
-    .incbin "baserom.gba", 0x257E24, 0x16
-
-    .global _8257E3A
-_8257E3A: @ 8257E3A
-    .incbin "baserom.gba", 0x257E3A, 0x1A
-
-    .global _8257E54
-_8257E54: @ 8257E54
-    .incbin "baserom.gba", 0x257E54, 0x1A
-
-    .global _8257E6E
-_8257E6E: @ 8257E6E
-    .incbin "baserom.gba", 0x257E6E, 0x1A
-
-    .global _8257E88
-_8257E88: @ 8257E88
-    .incbin "baserom.gba", 0x257E88, 0x16
-
-    .global _8257E9E
-_8257E9E: @ 8257E9E
-    .incbin "baserom.gba", 0x257E9E, 0x12
-
-    .global _8257EB0
-_8257EB0: @ 8257EB0
-    .incbin "baserom.gba", 0x257EB0, 0x18
-
-    .global _8257EC8
-_8257EC8: @ 8257EC8
-    .incbin "baserom.gba", 0x257EC8, 0x18
-
-    .global _8257EE0
-_8257EE0: @ 8257EE0
-    .incbin "baserom.gba", 0x257EE0, 0x1A
-
-    .global _8257EFA
-_8257EFA: @ 8257EFA
-    .incbin "baserom.gba", 0x257EFA, 0x1A
-
-    .global _8257F14
-_8257F14: @ 8257F14
-    .incbin "baserom.gba", 0x257F14, 0xC
-
-    .global _8257F20
-_8257F20: @ 8257F20
-    .incbin "baserom.gba", 0x257F20, 0x22
-
-    .global _8257F42
-_8257F42: @ 8257F42
-    .incbin "baserom.gba", 0x257F42, 0x18
-
-    .global _8257F5A
-_8257F5A: @ 8257F5A
-    .incbin "baserom.gba", 0x257F5A, 0x1C
-
-    .global _8257F76
-_8257F76: @ 8257F76
-    .incbin "baserom.gba", 0x257F76, 0x14
-
-    .global _8257F8A
-_8257F8A: @ 8257F8A
-    .incbin "baserom.gba", 0x257F8A, 0x1A
-
-    .global _8257FA4
-_8257FA4: @ 8257FA4
-    .incbin "baserom.gba", 0x257FA4, 0x16
-
-    .global _8257FBA
-_8257FBA: @ 8257FBA
-    .incbin "baserom.gba", 0x257FBA, 0x16
-
-    .global _8257FD0
-_8257FD0: @ 8257FD0
-    .incbin "baserom.gba", 0x257FD0, 0x8
-
-    .global _8257FD8
-_8257FD8: @ 8257FD8
-    .incbin "baserom.gba", 0x257FD8, 0x14
-
-    .global _8257FEC
-_8257FEC: @ 8257FEC
-    .incbin "baserom.gba", 0x257FEC, 0x1A
-
-    .global _8258006
-_8258006: @ 8258006
-    .incbin "baserom.gba", 0x258006, 0x4
-
-    .global _825800A
-_825800A: @ 825800A
-    .incbin "baserom.gba", 0x25800A, 0x14
-
-    .global _825801E
-_825801E: @ 825801E
-    .incbin "baserom.gba", 0x25801E, 0x18
-
-    .global _8258036
-_8258036: @ 8258036
-    .incbin "baserom.gba", 0x258036, 0x18
-
-    .global _825804E
-_825804E: @ 825804E
-    .incbin "baserom.gba", 0x25804E, 0x18
-
-    .global _8258066
-_8258066: @ 8258066
-    .incbin "baserom.gba", 0x258066, 0x18
-
-    .global _825807E
-_825807E: @ 825807E
-    .incbin "baserom.gba", 0x25807E, 0x16
-
-    .global _8258094
-_8258094: @ 8258094
-    .incbin "baserom.gba", 0x258094, 0x1C
-
-    .global _82580B0
-_82580B0: @ 82580B0
-    .incbin "baserom.gba", 0x2580B0, 0x16
-
-    .global _82580C6
-_82580C6: @ 82580C6
-    .incbin "baserom.gba", 0x2580C6, 0x1E
-
-    .global _82580E4
-_82580E4: @ 82580E4
-    .incbin "baserom.gba", 0x2580E4, 0x12
-
-    .global _82580F6
-_82580F6: @ 82580F6
-    .incbin "baserom.gba", 0x2580F6, 0x1E
-
-    .global _8258114
-_8258114: @ 8258114
-    .incbin "baserom.gba", 0x258114, 0x14
-
-    .global _8258128
-_8258128: @ 8258128
-    .incbin "baserom.gba", 0x258128, 0x14
-
-    .global _825813C
-_825813C: @ 825813C
-    .incbin "baserom.gba", 0x25813C, 0x14
-
-    .global _8258150
-_8258150: @ 8258150
-    .incbin "baserom.gba", 0x258150, 0x16
-
-    .global _8258166
-_8258166: @ 8258166
-    .incbin "baserom.gba", 0x258166, 0x1A
-
-    .global _8258180
-_8258180: @ 8258180
-    .incbin "baserom.gba", 0x258180, 0x1C
-
-    .global _825819C
-_825819C: @ 825819C
-    .incbin "baserom.gba", 0x25819C, 0x18
-
-    .global _82581B4
-_82581B4: @ 82581B4
-    .incbin "baserom.gba", 0x2581B4, 0xE
-
-    .global _82581C2
-_82581C2: @ 82581C2
-    .incbin "baserom.gba", 0x2581C2, 0x16
-
-    .global _82581D8
-_82581D8: @ 82581D8
-    .incbin "baserom.gba", 0x2581D8, 0x1A
-
-    .global _82581F2
-_82581F2: @ 82581F2
-    .incbin "baserom.gba", 0x2581F2, 0x1A
-
-    .global _825820C
-_825820C: @ 825820C
-    .incbin "baserom.gba", 0x25820C, 0x12
-
-    .global _825821E
-_825821E: @ 825821E
-    .incbin "baserom.gba", 0x25821E, 0x14
-
-    .global _8258232
-_8258232: @ 8258232
-    .incbin "baserom.gba", 0x258232, 0x16
-
-    .global _8258248
-_8258248: @ 8258248
-    .incbin "baserom.gba", 0x258248, 0x14
-
-    .global _825825C
-_825825C: @ 825825C
-    .incbin "baserom.gba", 0x25825C, 0x16
-
-    .global _8258272
-_8258272: @ 8258272
-    .incbin "baserom.gba", 0x258272, 0x18
-
-    .global _825828A
-_825828A: @ 825828A
-    .incbin "baserom.gba", 0x25828A, 0x14
-
-    .global _825829E
-_825829E: @ 825829E
-    .incbin "baserom.gba", 0x25829E, 0x18
-
-    .global _82582B6
-_82582B6: @ 82582B6
-    .incbin "baserom.gba", 0x2582B6, 0x14
-
-    .global _82582CA
-_82582CA: @ 82582CA
-    .incbin "baserom.gba", 0x2582CA, 0x18
-
-    .global _82582E2
-_82582E2: @ 82582E2
-    .incbin "baserom.gba", 0x2582E2, 0x16
-
-    .global _82582F8
-_82582F8: @ 82582F8
-    .incbin "baserom.gba", 0x2582F8, 0x18
-
-    .global _8258310
-_8258310: @ 8258310
-    .incbin "baserom.gba", 0x258310, 0x16
-
-    .global _8258326
-_8258326: @ 8258326
-    .incbin "baserom.gba", 0x258326, 0x1A
-
-    .global _8258340
-_8258340: @ 8258340
-    .incbin "baserom.gba", 0x258340, 0x1C
-
-    .global _825835C
-_825835C: @ 825835C
-    .incbin "baserom.gba", 0x25835C, 0x16
-
-    .global _8258372
-_8258372: @ 8258372
-    .incbin "baserom.gba", 0x258372, 0x18
-
-    .global _825838A
-_825838A: @ 825838A
-    .incbin "baserom.gba", 0x25838A, 0xC
-
-    .global _8258396
-_8258396: @ 8258396
-    .incbin "baserom.gba", 0x258396, 0xE
-
-    .global _82583A4
-_82583A4: @ 82583A4
-    .incbin "baserom.gba", 0x2583A4, 0xC
-
-    .global _82583B0
-_82583B0: @ 82583B0
-    .incbin "baserom.gba", 0x2583B0, 0x1A
-
-    .global _82583CA
-_82583CA: @ 82583CA
-    .incbin "baserom.gba", 0x2583CA, 0x20
-
-    .global _82583EA
-_82583EA: @ 82583EA
-    .incbin "baserom.gba", 0x2583EA, 0x12
-
-    .global _82583FC
-_82583FC: @ 82583FC
-    .incbin "baserom.gba", 0x2583FC, 0x12
-
-    .global _825840E
-_825840E: @ 825840E
-    .incbin "baserom.gba", 0x25840E, 0x10
-
-    .global _825841E
-_825841E: @ 825841E
-    .incbin "baserom.gba", 0x25841E, 0x12
-
-    .global _8258430
-_8258430: @ 8258430
-    .incbin "baserom.gba", 0x258430, 0x16
-
-    .global _8258446
-_8258446: @ 8258446
-    .incbin "baserom.gba", 0x258446, 0xE
-
-    .global _8258454
-_8258454: @ 8258454
-    .incbin "baserom.gba", 0x258454, 0x14
-
-    .global _8258468
-_8258468: @ 8258468
-    .incbin "baserom.gba", 0x258468, 0x1A
-
-    .global _8258482
-_8258482: @ 8258482
-    .incbin "baserom.gba", 0x258482, 0x14
-
-    .global _8258496
-_8258496: @ 8258496
-    .incbin "baserom.gba", 0x258496, 0xE
-
-    .global _82584A4
-_82584A4: @ 82584A4
-    .incbin "baserom.gba", 0x2584A4, 0x16
-
-    .global _82584BA
-_82584BA: @ 82584BA
-    .incbin "baserom.gba", 0x2584BA, 0x1C
-
-    .global _82584D6
-_82584D6: @ 82584D6
-    .incbin "baserom.gba", 0x2584D6, 0x1C
-
-    .global _82584F2
-_82584F2: @ 82584F2
-    .incbin "baserom.gba", 0x2584F2, 0x16
-
-    .global _8258508
-_8258508: @ 8258508
-    .incbin "baserom.gba", 0x258508, 0x12
-
-    .global _825851A
-_825851A: @ 825851A
-    .incbin "baserom.gba", 0x25851A, 0x14
-
-    .global _825852E
-_825852E: @ 825852E
-    .incbin "baserom.gba", 0x25852E, 0x18
-
-    .global _8258546
-_8258546: @ 8258546
-    .incbin "baserom.gba", 0x258546, 0x16
-
-    .global _825855C
-_825855C: @ 825855C
-    .incbin "baserom.gba", 0x25855C, 0x16
-
-    .global _8258572
-_8258572: @ 8258572
-    .incbin "baserom.gba", 0x258572, 0x18
-
-    .global _825858A
-_825858A: @ 825858A
-    .incbin "baserom.gba", 0x25858A, 0x18
-
-    .global _82585A2
-_82585A2: @ 82585A2
-    .incbin "baserom.gba", 0x2585A2, 0x12
-
-    .global _82585B4
-_82585B4: @ 82585B4
-    .incbin "baserom.gba", 0x2585B4, 0x18
-
-    .global _82585CC
-_82585CC: @ 82585CC
-    .incbin "baserom.gba", 0x2585CC, 0x16
-
-    .global _82585E2
-_82585E2: @ 82585E2
-    .incbin "baserom.gba", 0x2585E2, 0x4
-
-    .global _82585E6
-_82585E6: @ 82585E6
-    .incbin "baserom.gba", 0x2585E6, 0xA
-
-    .global _82585F0
-_82585F0: @ 82585F0
-    .incbin "baserom.gba", 0x2585F0, 0x16
-
-    .global _8258606
-_8258606: @ 8258606
-    .incbin "baserom.gba", 0x258606, 0x14
-
-    .global _825861A
-_825861A: @ 825861A
-    .incbin "baserom.gba", 0x25861A, 0x18
-
-    .global _8258632
-_8258632: @ 8258632
-    .incbin "baserom.gba", 0x258632, 0x18
-
-    .global _825864A
-_825864A: @ 825864A
-    .incbin "baserom.gba", 0x25864A, 0x12
-
-    .global _825865C
-_825865C: @ 825865C
-    .incbin "baserom.gba", 0x25865C, 0x1A
-
-    .global _8258676
-_8258676: @ 8258676
-    .incbin "baserom.gba", 0x258676, 0x16
-
-    .global _825868C
-_825868C: @ 825868C
-    .incbin "baserom.gba", 0x25868C, 0x16
-
-    .global _82586A2
-_82586A2: @ 82586A2
-    .incbin "baserom.gba", 0x2586A2, 0x18
-
-    .global _82586BA
-_82586BA: @ 82586BA
-    .incbin "baserom.gba", 0x2586BA, 0x18
-
-    .global _82586D2
-_82586D2: @ 82586D2
-    .incbin "baserom.gba", 0x2586D2, 0x10
-
-    .global _82586E2
-_82586E2: @ 82586E2
-    .incbin "baserom.gba", 0x2586E2, 0x16
-
-    .global _82586F8
-_82586F8: @ 82586F8
-    .incbin "baserom.gba", 0x2586F8, 0x1A
-
-    .global _8258712
-_8258712: @ 8258712
-    .incbin "baserom.gba", 0x258712, 0x16
-
-    .global _8258728
-_8258728: @ 8258728
-    .incbin "baserom.gba", 0x258728, 0x1A
-
-    .global _8258742
-_8258742: @ 8258742
-    .incbin "baserom.gba", 0x258742, 0x14
-
-    .global _8258756
-_8258756: @ 8258756
-    .incbin "baserom.gba", 0x258756, 0x18
-
-    .global _825876E
-_825876E: @ 825876E
-    .incbin "baserom.gba", 0x25876E, 0x12
-
-    .global _8258780
-_8258780: @ 8258780
-    .incbin "baserom.gba", 0x258780, 0x18
-
-    .global _8258798
-_8258798: @ 8258798
-    .incbin "baserom.gba", 0x258798, 0x16
-
-    .global _82587AE
-_82587AE: @ 82587AE
-    .incbin "baserom.gba", 0x2587AE, 0x12
-
-    .global _82587C0
-_82587C0: @ 82587C0
-    .incbin "baserom.gba", 0x2587C0, 0x14
-
-    .global _82587D4
-_82587D4: @ 82587D4
-    .incbin "baserom.gba", 0x2587D4, 0x4
-
-    .global _82587D8
-_82587D8: @ 82587D8
-    .incbin "baserom.gba", 0x2587D8, 0x14
-
-    .global _82587EC
-_82587EC: @ 82587EC
-    .incbin "baserom.gba", 0x2587EC, 0x16
-
-    .global _8258802
-_8258802: @ 8258802
-    .incbin "baserom.gba", 0x258802, 0x16
-
-    .global _8258818
-_8258818: @ 8258818
-    .incbin "baserom.gba", 0x258818, 0x18
-
-    .global _8258830
-_8258830: @ 8258830
-    .incbin "baserom.gba", 0x258830, 0x18
-
-    .global _8258848
-_8258848: @ 8258848
-    .incbin "baserom.gba", 0x258848, 0x14
-
-    .global _825885C
-_825885C: @ 825885C
-    .incbin "baserom.gba", 0x25885C, 0x14
-
-    .global _8258870
-_8258870: @ 8258870
-    .incbin "baserom.gba", 0x258870, 0x18
-
-    .global _8258888
-_8258888: @ 8258888
-    .incbin "baserom.gba", 0x258888, 0x16
-
-    .global _825889E
-_825889E: @ 825889E
-    .incbin "baserom.gba", 0x25889E, 0x16
-
-    .global _82588B4
-_82588B4: @ 82588B4
-    .incbin "baserom.gba", 0x2588B4, 0x4
-
-    .global _82588B8
-_82588B8: @ 82588B8
-    .incbin "baserom.gba", 0x2588B8, 0x18
-
-    .global _82588D0
-_82588D0: @ 82588D0
-    .incbin "baserom.gba", 0x2588D0, 0x18
-
-    .global _82588E8
-_82588E8: @ 82588E8
-    .incbin "baserom.gba", 0x2588E8, 0x12
-
-    .global _82588FA
-_82588FA: @ 82588FA
-    .incbin "baserom.gba", 0x2588FA, 0x14
-
-    .global _825890E
-_825890E: @ 825890E
-    .incbin "baserom.gba", 0x25890E, 0x14
-
-    .global _8258922
-_8258922: @ 8258922
-    .incbin "baserom.gba", 0x258922, 0x1A
-
-    .global _825893C
-_825893C: @ 825893C
-    .incbin "baserom.gba", 0x25893C, 0x16
-
-    .global _8258952
-_8258952: @ 8258952
-    .incbin "baserom.gba", 0x258952, 0x16
-
-    .global _8258968
-_8258968: @ 8258968
-    .incbin "baserom.gba", 0x258968, 0x16
-
-    .global _825897E
-_825897E: @ 825897E
-    .incbin "baserom.gba", 0x25897E, 0x16
-
-    .global _8258994
-_8258994: @ 8258994
-    .incbin "baserom.gba", 0x258994, 0x1A
-
-    .global _82589AE
-_82589AE: @ 82589AE
-    .incbin "baserom.gba", 0x2589AE, 0x1A
-
-    .global _82589C8
-_82589C8: @ 82589C8
-    .incbin "baserom.gba", 0x2589C8, 0x16
-
-    .global _82589DE
-_82589DE: @ 82589DE
-    .incbin "baserom.gba", 0x2589DE, 0x16
-
-    .global _82589F4
-_82589F4: @ 82589F4
-    .incbin "baserom.gba", 0x2589F4, 0x14
-
-    .global _8258A08
-_8258A08: @ 8258A08
-    .incbin "baserom.gba", 0x258A08, 0x4
-
-    .global _8258A0C
-_8258A0C: @ 8258A0C
-    .incbin "baserom.gba", 0x258A0C, 0x4
-
-    .global _8258A10
-_8258A10: @ 8258A10
-    .incbin "baserom.gba", 0x258A10, 0x4
-
-    .global _8258A14
-_8258A14: @ 8258A14
-    .incbin "baserom.gba", 0x258A14, 0x4
-
-    .global _8258A18
-_8258A18: @ 8258A18
-    .incbin "baserom.gba", 0x258A18, 0x4
-
-    .global _8258A1C
-_8258A1C: @ 8258A1C
-    .incbin "baserom.gba", 0x258A1C, 0x4
-
-    .global _8258A20
-_8258A20: @ 8258A20
-    .incbin "baserom.gba", 0x258A20, 0x4
-
-    .global _8258A24
-_8258A24: @ 8258A24
-    .incbin "baserom.gba", 0x258A24, 0x4
-
-    .global _8258A28
-_8258A28: @ 8258A28
-    .incbin "baserom.gba", 0x258A28, 0x4
-
-    .global _8258A2C
-_8258A2C: @ 8258A2C
-    .incbin "baserom.gba", 0x258A2C, 0x4
-
-    .global _8258A30
-_8258A30: @ 8258A30
-    .incbin "baserom.gba", 0x258A30, 0x4
-
-    .global _8258A34
-_8258A34: @ 8258A34
-    .incbin "baserom.gba", 0x258A34, 0x4
-
-    .global _8258A38
-_8258A38: @ 8258A38
-    .incbin "baserom.gba", 0x258A38, 0x4
-
-    .global _8258A3C
-_8258A3C: @ 8258A3C
-    .incbin "baserom.gba", 0x258A3C, 0x4
-
-    .global _8258A40
-_8258A40: @ 8258A40
-    .incbin "baserom.gba", 0x258A40, 0x4
-
-    .global _8258A44
-_8258A44: @ 8258A44
-    .incbin "baserom.gba", 0x258A44, 0x4
-
-    .global _8258A48
-_8258A48: @ 8258A48
-    .incbin "baserom.gba", 0x258A48, 0x4
-
-    .global _8258A4C
-_8258A4C: @ 8258A4C
-    .incbin "baserom.gba", 0x258A4C, 0x4
-
-    .global _8258A50
-_8258A50: @ 8258A50
-    .incbin "baserom.gba", 0x258A50, 0x4
-
-    .global _8258A54
-_8258A54: @ 8258A54
-    .incbin "baserom.gba", 0x258A54, 0x4
-
-    .global _8258A58
-_8258A58: @ 8258A58
-    .incbin "baserom.gba", 0x258A58, 0x4
-
-    .global _8258A5C
-_8258A5C: @ 8258A5C
-    .incbin "baserom.gba", 0x258A5C, 0x4
-
-    .global _8258A60
-_8258A60: @ 8258A60
-    .incbin "baserom.gba", 0x258A60, 0x4
-
-    .global _8258A64
-_8258A64: @ 8258A64
-    .incbin "baserom.gba", 0x258A64, 0x4
-
-    .global _8258A68
-_8258A68: @ 8258A68
-    .incbin "baserom.gba", 0x258A68, 0x4
-
-    .global _8258A6C
-_8258A6C: @ 8258A6C
-    .incbin "baserom.gba", 0x258A6C, 0x18
-
-    .global _8258A84
-_8258A84: @ 8258A84
-    .incbin "baserom.gba", 0x258A84, 0x1E
-
-    .global _8258AA2
-_8258AA2: @ 8258AA2
-    .incbin "baserom.gba", 0x258AA2, 0x1E
-
-    .global _8258AC0
-_8258AC0: @ 8258AC0
-    .incbin "baserom.gba", 0x258AC0, 0x18
-
-    .global _8258AD8
-_8258AD8: @ 8258AD8
-    .incbin "baserom.gba", 0x258AD8, 0x1E
-
-    .global _8258AF6
-_8258AF6: @ 8258AF6
-    .incbin "baserom.gba", 0x258AF6, 0x22
-
-    .global _8258B18
-_8258B18: @ 8258B18
-    .incbin "baserom.gba", 0x258B18, 0x1A
-
-    .global _8258B32
-_8258B32: @ 8258B32
-    .incbin "baserom.gba", 0x258B32, 0x20
-
-    .global _8258B52
-_8258B52: @ 8258B52
-    .incbin "baserom.gba", 0x258B52, 0x20
-
-    .global _8258B72
-_8258B72: @ 8258B72
-    .incbin "baserom.gba", 0x258B72, 0x1A
-
-    .global _8258B8C
-_8258B8C: @ 8258B8C
-    .incbin "baserom.gba", 0x258B8C, 0x20
-
-    .global _8258BAC
-_8258BAC: @ 8258BAC
-    .incbin "baserom.gba", 0x258BAC, 0x1A
-
-    .global _8258BC6
-_8258BC6: @ 8258BC6
-    .incbin "baserom.gba", 0x258BC6, 0x1E
-
-    .global _8258BE4
-_8258BE4: @ 8258BE4
-    .incbin "baserom.gba", 0x258BE4, 0x8
-
-    .global _8258BEC
-_8258BEC: @ 8258BEC
-    .incbin "baserom.gba", 0x258BEC, 0x6
-
-    .global _8258BF2
-_8258BF2: @ 8258BF2
-    .incbin "baserom.gba", 0x258BF2, 0x16
-
-    .global _8258C08
-_8258C08: @ 8258C08
-    .incbin "baserom.gba", 0x258C08, 0x6
-
-    .global _8258C0E
-_8258C0E: @ 8258C0E
-    .incbin "baserom.gba", 0x258C0E, 0x16
-
-    .global _8258C24
-_8258C24: @ 8258C24
-    .incbin "baserom.gba", 0x258C24, 0x10
-
-    .global _8258C34
-_8258C34: @ 8258C34
-    .incbin "baserom.gba", 0x258C34, 0x16
-
-    .global _8258C4A
-_8258C4A: @ 8258C4A
-    .incbin "baserom.gba", 0x258C4A, 0xA
-
-    .global _8258C54
-_8258C54: @ 8258C54
-    .incbin "baserom.gba", 0x258C54, 0x10
-
-    .global _8258C64
-_8258C64: @ 8258C64
-    .incbin "baserom.gba", 0x258C64, 0x16
-
-    .global _8258C7A
-_8258C7A: @ 8258C7A
-    .incbin "baserom.gba", 0x258C7A, 0xA
-
-    .global _8258C84
-_8258C84: @ 8258C84
-    .incbin "baserom.gba", 0x258C84, 0x16
-
-    .global _8258C9A
-_8258C9A: @ 8258C9A
-    .incbin "baserom.gba", 0x258C9A, 0x20
-
-    .global _8258CBA
-_8258CBA: @ 8258CBA
-    .incbin "baserom.gba", 0x258CBA, 0x16
-
-    .global _8258CD0
-_8258CD0: @ 8258CD0
-    .incbin "baserom.gba", 0x258CD0, 0x14
-
-    .global _8258CE4
-_8258CE4: @ 8258CE4
-    .incbin "baserom.gba", 0x258CE4, 0x18
-
-    .global _8258CFC
-_8258CFC: @ 8258CFC
-    .incbin "baserom.gba", 0x258CFC, 0x16
-
-    .global _8258D12
-_8258D12: @ 8258D12
-    .incbin "baserom.gba", 0x258D12, 0x1E
-
-    .global _8258D30
-_8258D30: @ 8258D30
-    .incbin "baserom.gba", 0x258D30, 0x18
-
-    .global _8258D48
-_8258D48: @ 8258D48
-    .incbin "baserom.gba", 0x258D48, 0x12
-
-    .global _8258D5A
-_8258D5A: @ 8258D5A
-    .incbin "baserom.gba", 0x258D5A, 0x1C
-
-    .global _8258D76
-_8258D76: @ 8258D76
-    .incbin "baserom.gba", 0x258D76, 0x12
-
-    .global _8258D88
-_8258D88: @ 8258D88
-    .incbin "baserom.gba", 0x258D88, 0x1A
-
-    .global _8258DA2
-_8258DA2: @ 8258DA2
-    .incbin "baserom.gba", 0x258DA2, 0x1A
-
-    .global _8258DBC
-_8258DBC: @ 8258DBC
-    .incbin "baserom.gba", 0x258DBC, 0x20
-
-    .global _8258DDC
-_8258DDC: @ 8258DDC
-    .incbin "baserom.gba", 0x258DDC, 0x1A
-
-    .global _8258DF6
-_8258DF6: @ 8258DF6
-    .incbin "baserom.gba", 0x258DF6, 0xA
-
-    .global _8258E00
-_8258E00: @ 8258E00
-    .incbin "baserom.gba", 0x258E00, 0x1C
-
-    .global _8258E1C
-_8258E1C: @ 8258E1C
-    .incbin "baserom.gba", 0x258E1C, 0x18
-
-    .global _8258E34
-_8258E34: @ 8258E34
-    .incbin "baserom.gba", 0x258E34, 0x20
-
-    .global _8258E54
-_8258E54: @ 8258E54
-    .incbin "baserom.gba", 0x258E54, 0x16
-
-    .global _8258E6A
-_8258E6A: @ 8258E6A
-    .incbin "baserom.gba", 0x258E6A, 0x1A
-
-    .global _8258E84
-_8258E84: @ 8258E84
-    .incbin "baserom.gba", 0x258E84, 0x1C
-
-    .global _8258EA0
-_8258EA0: @ 8258EA0
-    .incbin "baserom.gba", 0x258EA0, 0x18
-
-    .global _8258EB8
-_8258EB8: @ 8258EB8
-    .incbin "baserom.gba", 0x258EB8, 0x1E
-
-    .global _8258ED6
-_8258ED6: @ 8258ED6
-    .incbin "baserom.gba", 0x258ED6, 0x14
-
-    .global _8258EEA
-_8258EEA: @ 8258EEA
-    .incbin "baserom.gba", 0x258EEA, 0x1A
-
-    .global _8258F04
-_8258F04: @ 8258F04
-    .incbin "baserom.gba", 0x258F04, 0x20
-
-    .global _8258F24
-_8258F24: @ 8258F24
-    .incbin "baserom.gba", 0x258F24, 0x8
-
-    .global _8258F2C
-_8258F2C: @ 8258F2C
-    .incbin "baserom.gba", 0x258F2C, 0x18
-
-    .global _8258F44
-_8258F44: @ 8258F44
-    .incbin "baserom.gba", 0x258F44, 0x16
-
-    .global _8258F5A
-_8258F5A: @ 8258F5A
-    .incbin "baserom.gba", 0x258F5A, 0x1E
-
-    .global _8258F78
-_8258F78: @ 8258F78
-    .incbin "baserom.gba", 0x258F78, 0x12
-
-    .global _8258F8A
-_8258F8A: @ 8258F8A
-    .incbin "baserom.gba", 0x258F8A, 0x1A
-
-    .global _8258FA4
-_8258FA4: @ 8258FA4
-    .incbin "baserom.gba", 0x258FA4, 0x1A
-
-    .global _8258FBE
-_8258FBE: @ 8258FBE
-    .incbin "baserom.gba", 0x258FBE, 0x1C
-
-    .global _8258FDA
-_8258FDA: @ 8258FDA
-    .incbin "baserom.gba", 0x258FDA, 0x20
-
-    .global _8258FFA
-_8258FFA: @ 8258FFA
-    .incbin "baserom.gba", 0x258FFA, 0x18
-
-    .global _8259012
-_8259012: @ 8259012
-    .incbin "baserom.gba", 0x259012, 0x1E
-
-    .global _8259030
-_8259030: @ 8259030
-    .incbin "baserom.gba", 0x259030, 0x16
-
-    .global _8259046
-_8259046: @ 8259046
-    .incbin "baserom.gba", 0x259046, 0x1C
-
-    .global _8259062
-_8259062: @ 8259062
-    .incbin "baserom.gba", 0x259062, 0x1C
-
-    .global _825907E
-_825907E: @ 825907E
-    .incbin "baserom.gba", 0x25907E, 0x1C
-
-    .global _825909A
-_825909A: @ 825909A
-    .incbin "baserom.gba", 0x25909A, 0x1C
-
-    .global _82590B6
-_82590B6: @ 82590B6
-    .incbin "baserom.gba", 0x2590B6, 0x1E
-
-    .global _82590D4
-_82590D4: @ 82590D4
-    .incbin "baserom.gba", 0x2590D4, 0x24
-
-    .global _82590F8
-_82590F8: @ 82590F8
-    .incbin "baserom.gba", 0x2590F8, 0x18
-
-    .global _8259110
-_8259110: @ 8259110
-    .incbin "baserom.gba", 0x259110, 0x1E
-
-    .global _825912E
-_825912E: @ 825912E
-    .incbin "baserom.gba", 0x25912E, 0x16
-
-    .global _8259144
-_8259144: @ 8259144
-    .incbin "baserom.gba", 0x259144, 0x16
-
-    .global _825915A
-_825915A: @ 825915A
-    .incbin "baserom.gba", 0x25915A, 0xE
-
-    .global _8259168
-_8259168: @ 8259168
-    .incbin "baserom.gba", 0x259168, 0x18
-
-    .global _8259180
-_8259180: @ 8259180
-    .incbin "baserom.gba", 0x259180, 0x1E
-
-    .global _825919E
-_825919E: @ 825919E
-    .incbin "baserom.gba", 0x25919E, 0x18
-
-    .global _82591B6
-_82591B6: @ 82591B6
-    .incbin "baserom.gba", 0x2591B6, 0x18
-
-    .global _82591CE
-_82591CE: @ 82591CE
-    .incbin "baserom.gba", 0x2591CE, 0x1A
-
-    .global _82591E8
-_82591E8: @ 82591E8
-    .incbin "baserom.gba", 0x2591E8, 0x1A
-
-    .global _8259202
-_8259202: @ 8259202
-    .incbin "baserom.gba", 0x259202, 0x26
-
-    .global _8259228
-_8259228: @ 8259228
-    .incbin "baserom.gba", 0x259228, 0x18
-
-    .global _8259240
-_8259240: @ 8259240
-    .incbin "baserom.gba", 0x259240, 0x20
-
-    .global _8259260
-_8259260: @ 8259260
-    .incbin "baserom.gba", 0x259260, 0x10
-
-    .global _8259270
-_8259270: @ 8259270
-    .incbin "baserom.gba", 0x259270, 0x18
-
-    .global _8259288
-_8259288: @ 8259288
-    .incbin "baserom.gba", 0x259288, 0x1E
-
-    .global _82592A6
-_82592A6: @ 82592A6
-    .incbin "baserom.gba", 0x2592A6, 0x20
-
-    .global _82592C6
-_82592C6: @ 82592C6
-    .incbin "baserom.gba", 0x2592C6, 0x14
-
-    .global _82592DA
-_82592DA: @ 82592DA
-    .incbin "baserom.gba", 0x2592DA, 0x1A
-
-    .global _82592F4
-_82592F4: @ 82592F4
-    .incbin "baserom.gba", 0x2592F4, 0x1A
-
-    .global _825930E
-_825930E: @ 825930E
-    .incbin "baserom.gba", 0x25930E, 0x18
-
-    .global _8259326
-_8259326: @ 8259326
-    .incbin "baserom.gba", 0x259326, 0x20
-
-    .global _8259346
-_8259346: @ 8259346
-    .incbin "baserom.gba", 0x259346, 0x18
-
-    .global _825935E
-_825935E: @ 825935E
-    .incbin "baserom.gba", 0x25935E, 0x18
-
-    .global _8259376
-_8259376: @ 8259376
-    .incbin "baserom.gba", 0x259376, 0x1E
-
-    .global _8259394
-_8259394: @ 8259394
-    .incbin "baserom.gba", 0x259394, 0x20
-
-    .global _82593B4
-_82593B4: @ 82593B4
-    .incbin "baserom.gba", 0x2593B4, 0xA
-
-    .global _82593BE
-_82593BE: @ 82593BE
-    .incbin "baserom.gba", 0x2593BE, 0x12
-
-    .global _82593D0
-_82593D0: @ 82593D0
-    .incbin "baserom.gba", 0x2593D0, 0x12
-
-    .global _82593E2
-_82593E2: @ 82593E2
-    .incbin "baserom.gba", 0x2593E2, 0x18
-
-    .global _82593FA
-_82593FA: @ 82593FA
-    .incbin "baserom.gba", 0x2593FA, 0x16
-
-    .global _8259410
-_8259410: @ 8259410
-    .incbin "baserom.gba", 0x259410, 0x1C
-
-    .global _825942C
-_825942C: @ 825942C
-    .incbin "baserom.gba", 0x25942C, 0x16
-
-    .global _8259442
-_8259442: @ 8259442
-    .incbin "baserom.gba", 0x259442, 0x18
-
-    .global _825945A
-_825945A: @ 825945A
-    .incbin "baserom.gba", 0x25945A, 0x18
-
-    .global _8259472
-_8259472: @ 8259472
-    .incbin "baserom.gba", 0x259472, 0x1A
-
-    .global _825948C
-_825948C: @ 825948C
-    .incbin "baserom.gba", 0x25948C, 0x20
-
-    .global _82594AC
-_82594AC: @ 82594AC
-    .incbin "baserom.gba", 0x2594AC, 0x20
-
-    .global _82594CC
-_82594CC: @ 82594CC
-    .incbin "baserom.gba", 0x2594CC, 0x12
-
-    .global _82594DE
-_82594DE: @ 82594DE
-    .incbin "baserom.gba", 0x2594DE, 0x16
-
-    .global _82594F4
-_82594F4: @ 82594F4
-    .incbin "baserom.gba", 0x2594F4, 0x16
-
-    .global _825950A
-_825950A: @ 825950A
-    .incbin "baserom.gba", 0x25950A, 0x16
-
-    .global _8259520
-_8259520: @ 8259520
-    .incbin "baserom.gba", 0x259520, 0x1C
-
-    .global _825953C
-_825953C: @ 825953C
-    .incbin "baserom.gba", 0x25953C, 0x16
-
-    .global _8259552
-_8259552: @ 8259552
-    .incbin "baserom.gba", 0x259552, 0x1C
-
-    .global _825956E
-_825956E: @ 825956E
-    .incbin "baserom.gba", 0x25956E, 0x16
-
-    .global _8259584
-_8259584: @ 8259584
-    .incbin "baserom.gba", 0x259584, 0x1E
-
-    .global _82595A2
-_82595A2: @ 82595A2
-    .incbin "baserom.gba", 0x2595A2, 0x1C
-
-    .global _82595BE
-_82595BE: @ 82595BE
-    .incbin "baserom.gba", 0x2595BE, 0x18
-
-    .global _82595D6
-_82595D6: @ 82595D6
-    .incbin "baserom.gba", 0x2595D6, 0x20
-
-    .global _82595F6
-_82595F6: @ 82595F6
-    .incbin "baserom.gba", 0x2595F6, 0x22
-
-    .global _8259618
-_8259618: @ 8259618
-    .incbin "baserom.gba", 0x259618, 0x4
-
-    .global _825961C
-_825961C: @ 825961C
-    .incbin "baserom.gba", 0x25961C, 0x16
-
-    .global _8259632
-_8259632: @ 8259632
-    .incbin "baserom.gba", 0x259632, 0x1C
-
-    .global _825964E
-_825964E: @ 825964E
-    .incbin "baserom.gba", 0x25964E, 0x14
-
-    .global _8259662
-_8259662: @ 8259662
-    .incbin "baserom.gba", 0x259662, 0x14
-
-    .global _8259676
-_8259676: @ 8259676
-    .incbin "baserom.gba", 0x259676, 0x16
-
-    .global _825968C
-_825968C: @ 825968C
-    .incbin "baserom.gba", 0x25968C, 0x18
-
-    .global _82596A4
-_82596A4: @ 82596A4
-    .incbin "baserom.gba", 0x2596A4, 0x18
-
-    .global _82596BC
-_82596BC: @ 82596BC
-    .incbin "baserom.gba", 0x2596BC, 0x18
-
-    .global _82596D4
-_82596D4: @ 82596D4
-    .incbin "baserom.gba", 0x2596D4, 0x18
-
-    .global _82596EC
-_82596EC: @ 82596EC
-    .incbin "baserom.gba", 0x2596EC, 0x18
-
-    .global _8259704
-_8259704: @ 8259704
-    .incbin "baserom.gba", 0x259704, 0x1A
-
-    .global _825971E
-_825971E: @ 825971E
-    .incbin "baserom.gba", 0x25971E, 0x1A
-
-    .global _8259738
-_8259738: @ 8259738
-    .incbin "baserom.gba", 0x259738, 0x1C
-
-    .global UNK_8259754
-UNK_8259754: @ 8259754
+kLevelUpLearnset_Bulbasaur:: @ 8257494
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 4, MOVE_GROWL
+    level_up_move 7, MOVE_LEECH_SEED
+    level_up_move 10, MOVE_VINE_WHIP
+    level_up_move 15, MOVE_POISON_POWDER
+    level_up_move 15, MOVE_SLEEP_POWDER
+    level_up_move 20, MOVE_RAZOR_LEAF
+    level_up_move 25, MOVE_SWEET_SCENT
+    level_up_move 32, MOVE_GROWTH
+    level_up_move 39, MOVE_SYNTHESIS
+    level_up_move 46, MOVE_SOLAR_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Ivysaur:: @ 82574AC
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_LEECH_SEED
+    level_up_move 4, MOVE_GROWL
+    level_up_move 7, MOVE_LEECH_SEED
+    level_up_move 10, MOVE_VINE_WHIP
+    level_up_move 15, MOVE_POISON_POWDER
+    level_up_move 15, MOVE_SLEEP_POWDER
+    level_up_move 22, MOVE_RAZOR_LEAF
+    level_up_move 29, MOVE_SWEET_SCENT
+    level_up_move 38, MOVE_GROWTH
+    level_up_move 47, MOVE_SYNTHESIS
+    level_up_move 56, MOVE_SOLAR_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Venusaur:: @ 82574C8
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_LEECH_SEED
+    level_up_move 1, MOVE_VINE_WHIP
+    level_up_move 4, MOVE_GROWL
+    level_up_move 7, MOVE_LEECH_SEED
+    level_up_move 10, MOVE_VINE_WHIP
+    level_up_move 15, MOVE_POISON_POWDER
+    level_up_move 15, MOVE_SLEEP_POWDER
+    level_up_move 22, MOVE_RAZOR_LEAF
+    level_up_move 29, MOVE_SWEET_SCENT
+    level_up_move 41, MOVE_GROWTH
+    level_up_move 53, MOVE_SYNTHESIS
+    level_up_move 65, MOVE_SOLAR_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Charmander:: @ 82574E6
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_GROWL
+    level_up_move 7, MOVE_EMBER
+    level_up_move 13, MOVE_METAL_CLAW
+    level_up_move 19, MOVE_SMOKESCREEN
+    level_up_move 25, MOVE_SCARY_FACE
+    level_up_move 31, MOVE_FLAMETHROWER
+    level_up_move 37, MOVE_SLASH
+    level_up_move 43, MOVE_DRAGON_RAGE
+    level_up_move 49, MOVE_FIRE_SPIN
+    .2byte -1
+
+kLevelUpLearnset_Charmeleon:: @ 82574FC
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_EMBER
+    level_up_move 7, MOVE_EMBER
+    level_up_move 13, MOVE_METAL_CLAW
+    level_up_move 20, MOVE_SMOKESCREEN
+    level_up_move 27, MOVE_SCARY_FACE
+    level_up_move 34, MOVE_FLAMETHROWER
+    level_up_move 41, MOVE_SLASH
+    level_up_move 48, MOVE_DRAGON_RAGE
+    level_up_move 55, MOVE_FIRE_SPIN
+    .2byte -1
+
+kLevelUpLearnset_Charizard:: @ 8257514
+    level_up_move 1, MOVE_HEAT_WAVE
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_EMBER
+    level_up_move 1, MOVE_METAL_CLAW
+    level_up_move 7, MOVE_EMBER
+    level_up_move 13, MOVE_METAL_CLAW
+    level_up_move 20, MOVE_SMOKESCREEN
+    level_up_move 27, MOVE_SCARY_FACE
+    level_up_move 34, MOVE_FLAMETHROWER
+    level_up_move 36, MOVE_WING_ATTACK
+    level_up_move 44, MOVE_SLASH
+    level_up_move 54, MOVE_DRAGON_RAGE
+    level_up_move 64, MOVE_FIRE_SPIN
+    .2byte -1
+
+kLevelUpLearnset_Squirtle:: @ 8257532
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 4, MOVE_TAIL_WHIP
+    level_up_move 7, MOVE_BUBBLE
+    level_up_move 10, MOVE_WITHDRAW
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 18, MOVE_BITE
+    level_up_move 23, MOVE_RAPID_SPIN
+    level_up_move 28, MOVE_PROTECT
+    level_up_move 33, MOVE_RAIN_DANCE
+    level_up_move 40, MOVE_SKULL_BASH
+    level_up_move 47, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Wartortle:: @ 825754A
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 4, MOVE_TAIL_WHIP
+    level_up_move 7, MOVE_BUBBLE
+    level_up_move 10, MOVE_WITHDRAW
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 19, MOVE_BITE
+    level_up_move 25, MOVE_RAPID_SPIN
+    level_up_move 31, MOVE_PROTECT
+    level_up_move 37, MOVE_RAIN_DANCE
+    level_up_move 45, MOVE_SKULL_BASH
+    level_up_move 53, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Blastoise:: @ 8257566
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 1, MOVE_WITHDRAW
+    level_up_move 4, MOVE_TAIL_WHIP
+    level_up_move 7, MOVE_BUBBLE
+    level_up_move 10, MOVE_WITHDRAW
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 19, MOVE_BITE
+    level_up_move 25, MOVE_RAPID_SPIN
+    level_up_move 31, MOVE_PROTECT
+    level_up_move 42, MOVE_RAIN_DANCE
+    level_up_move 55, MOVE_SKULL_BASH
+    level_up_move 68, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Caterpie:: @ 8257584
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_STRING_SHOT
+    .2byte -1
+
+kLevelUpLearnset_Metapod:: @ 825758A
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 7, MOVE_HARDEN
+    .2byte -1
+
+kLevelUpLearnset_Butterfree:: @ 8257590
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 10, MOVE_CONFUSION
+    level_up_move 13, MOVE_POISON_POWDER
+    level_up_move 14, MOVE_STUN_SPORE
+    level_up_move 15, MOVE_SLEEP_POWDER
+    level_up_move 18, MOVE_SUPERSONIC
+    level_up_move 23, MOVE_WHIRLWIND
+    level_up_move 28, MOVE_GUST
+    level_up_move 34, MOVE_PSYBEAM
+    level_up_move 40, MOVE_SAFEGUARD
+    level_up_move 47, MOVE_SILVER_WIND
+    .2byte -1
+
+kLevelUpLearnset_Weedle:: @ 82575A8
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 1, MOVE_STRING_SHOT
+    .2byte -1
+
+kLevelUpLearnset_Kakuna:: @ 82575AE
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 7, MOVE_HARDEN
+    .2byte -1
+
+kLevelUpLearnset_Beedrill:: @ 82575B4
+    level_up_move 1, MOVE_FURY_ATTACK
+    level_up_move 10, MOVE_FURY_ATTACK
+    level_up_move 15, MOVE_FOCUS_ENERGY
+    level_up_move 20, MOVE_TWINEEDLE
+    level_up_move 25, MOVE_RAGE
+    level_up_move 30, MOVE_PURSUIT
+    level_up_move 35, MOVE_PIN_MISSILE
+    level_up_move 40, MOVE_AGILITY
+    level_up_move 45, MOVE_ENDEAVOR
+    .2byte -1
+
+kLevelUpLearnset_Pidgey:: @ 82575C8
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 5, MOVE_SAND_ATTACK
+    level_up_move 9, MOVE_GUST
+    level_up_move 13, MOVE_QUICK_ATTACK
+    level_up_move 19, MOVE_WHIRLWIND
+    level_up_move 25, MOVE_WING_ATTACK
+    level_up_move 31, MOVE_FEATHER_DANCE
+    level_up_move 39, MOVE_AGILITY
+    level_up_move 47, MOVE_MIRROR_MOVE
+    .2byte -1
+
+kLevelUpLearnset_Pidgeotto:: @ 82575DC
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_SAND_ATTACK
+    level_up_move 1, MOVE_GUST
+    level_up_move 5, MOVE_SAND_ATTACK
+    level_up_move 9, MOVE_GUST
+    level_up_move 13, MOVE_QUICK_ATTACK
+    level_up_move 20, MOVE_WHIRLWIND
+    level_up_move 27, MOVE_WING_ATTACK
+    level_up_move 34, MOVE_FEATHER_DANCE
+    level_up_move 43, MOVE_AGILITY
+    level_up_move 52, MOVE_MIRROR_MOVE
+    .2byte -1
+
+kLevelUpLearnset_Pidgeot:: @ 82575F4
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_SAND_ATTACK
+    level_up_move 1, MOVE_GUST
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 5, MOVE_SAND_ATTACK
+    level_up_move 9, MOVE_GUST
+    level_up_move 13, MOVE_QUICK_ATTACK
+    level_up_move 20, MOVE_WHIRLWIND
+    level_up_move 27, MOVE_WING_ATTACK
+    level_up_move 34, MOVE_FEATHER_DANCE
+    level_up_move 48, MOVE_AGILITY
+    level_up_move 62, MOVE_MIRROR_MOVE
+    .2byte -1
+
+kLevelUpLearnset_Rattata:: @ 825760E
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 7, MOVE_QUICK_ATTACK
+    level_up_move 13, MOVE_HYPER_FANG
+    level_up_move 20, MOVE_FOCUS_ENERGY
+    level_up_move 27, MOVE_PURSUIT
+    level_up_move 34, MOVE_SUPER_FANG
+    level_up_move 41, MOVE_ENDEAVOR
+    .2byte -1
+
+kLevelUpLearnset_Raticate:: @ 8257620
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 7, MOVE_QUICK_ATTACK
+    level_up_move 13, MOVE_HYPER_FANG
+    level_up_move 20, MOVE_SCARY_FACE
+    level_up_move 30, MOVE_PURSUIT
+    level_up_move 40, MOVE_SUPER_FANG
+    level_up_move 50, MOVE_ENDEAVOR
+    .2byte -1
+
+kLevelUpLearnset_Spearow:: @ 8257634
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 7, MOVE_LEER
+    level_up_move 13, MOVE_FURY_ATTACK
+    level_up_move 19, MOVE_PURSUIT
+    level_up_move 25, MOVE_AERIAL_ACE
+    level_up_move 31, MOVE_MIRROR_MOVE
+    level_up_move 37, MOVE_DRILL_PECK
+    level_up_move 43, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Fearow:: @ 8257648
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_FURY_ATTACK
+    level_up_move 7, MOVE_LEER
+    level_up_move 13, MOVE_FURY_ATTACK
+    level_up_move 26, MOVE_PURSUIT
+    level_up_move 32, MOVE_MIRROR_MOVE
+    level_up_move 40, MOVE_DRILL_PECK
+    level_up_move 47, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Ekans:: @ 825765E
+    level_up_move 1, MOVE_WRAP
+    level_up_move 1, MOVE_LEER
+    level_up_move 8, MOVE_POISON_STING
+    level_up_move 13, MOVE_BITE
+    level_up_move 20, MOVE_GLARE
+    level_up_move 25, MOVE_SCREECH
+    level_up_move 32, MOVE_ACID
+    level_up_move 37, MOVE_STOCKPILE
+    level_up_move 37, MOVE_SWALLOW
+    level_up_move 37, MOVE_SPIT_UP
+    level_up_move 44, MOVE_HAZE
+    .2byte -1
+
+kLevelUpLearnset_Arbok:: @ 8257676
+    level_up_move 1, MOVE_WRAP
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 1, MOVE_BITE
+    level_up_move 8, MOVE_POISON_STING
+    level_up_move 13, MOVE_BITE
+    level_up_move 20, MOVE_GLARE
+    level_up_move 28, MOVE_SCREECH
+    level_up_move 38, MOVE_ACID
+    level_up_move 46, MOVE_STOCKPILE
+    level_up_move 46, MOVE_SWALLOW
+    level_up_move 46, MOVE_SPIT_UP
+    level_up_move 56, MOVE_HAZE
+    .2byte -1
+
+kLevelUpLearnset_Pikachu:: @ 8257692
+    level_up_move 1, MOVE_THUNDER_SHOCK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 6, MOVE_TAIL_WHIP
+    level_up_move 8, MOVE_THUNDER_WAVE
+    level_up_move 11, MOVE_QUICK_ATTACK
+    level_up_move 15, MOVE_DOUBLE_TEAM
+    level_up_move 20, MOVE_SLAM
+    level_up_move 26, MOVE_THUNDERBOLT
+    level_up_move 33, MOVE_AGILITY
+    level_up_move 41, MOVE_THUNDER
+    level_up_move 50, MOVE_LIGHT_SCREEN
+    .2byte -1
+
+kLevelUpLearnset_Raichu:: @ 82576AA
+    level_up_move 1, MOVE_THUNDER_SHOCK
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 1, MOVE_THUNDERBOLT
+    .2byte -1
+
+kLevelUpLearnset_Sandshrew:: @ 82576B4
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 6, MOVE_DEFENSE_CURL
+    level_up_move 11, MOVE_SAND_ATTACK
+    level_up_move 17, MOVE_POISON_STING
+    level_up_move 23, MOVE_SLASH
+    level_up_move 30, MOVE_SWIFT
+    level_up_move 37, MOVE_FURY_SWIPES
+    level_up_move 45, MOVE_SAND_TOMB
+    level_up_move 53, MOVE_SANDSTORM
+    .2byte -1
+
+kLevelUpLearnset_Sandslash:: @ 82576C8
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_DEFENSE_CURL
+    level_up_move 1, MOVE_SAND_ATTACK
+    level_up_move 6, MOVE_DEFENSE_CURL
+    level_up_move 11, MOVE_SAND_ATTACK
+    level_up_move 17, MOVE_POISON_STING
+    level_up_move 24, MOVE_SLASH
+    level_up_move 33, MOVE_SWIFT
+    level_up_move 42, MOVE_FURY_SWIPES
+    level_up_move 52, MOVE_SAND_TOMB
+    level_up_move 62, MOVE_SANDSTORM
+    .2byte -1
+
+kLevelUpLearnset_NidoranF:: @ 82576E0
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 8, MOVE_TAIL_WHIP
+    level_up_move 12, MOVE_DOUBLE_KICK
+    level_up_move 17, MOVE_POISON_STING
+    level_up_move 20, MOVE_BITE
+    level_up_move 23, MOVE_HELPING_HAND
+    level_up_move 30, MOVE_FURY_SWIPES
+    level_up_move 38, MOVE_FLATTER
+    level_up_move 47, MOVE_CRUNCH
+    .2byte -1
+
+kLevelUpLearnset_Nidorina:: @ 82576F6
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 8, MOVE_TAIL_WHIP
+    level_up_move 12, MOVE_DOUBLE_KICK
+    level_up_move 18, MOVE_POISON_STING
+    level_up_move 22, MOVE_BITE
+    level_up_move 26, MOVE_HELPING_HAND
+    level_up_move 34, MOVE_FURY_SWIPES
+    level_up_move 43, MOVE_FLATTER
+    level_up_move 53, MOVE_CRUNCH
+    .2byte -1
+
+kLevelUpLearnset_Nidoqueen:: @ 825770C
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_DOUBLE_KICK
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 22, MOVE_BODY_SLAM
+    level_up_move 43, MOVE_SUPERPOWER
+    .2byte -1
+
+kLevelUpLearnset_NidoranM:: @ 825771A
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_PECK
+    level_up_move 8, MOVE_FOCUS_ENERGY
+    level_up_move 12, MOVE_DOUBLE_KICK
+    level_up_move 17, MOVE_POISON_STING
+    level_up_move 20, MOVE_HORN_ATTACK
+    level_up_move 23, MOVE_HELPING_HAND
+    level_up_move 30, MOVE_FURY_ATTACK
+    level_up_move 38, MOVE_FLATTER
+    level_up_move 47, MOVE_HORN_DRILL
+    .2byte -1
+
+kLevelUpLearnset_Nidorino:: @ 8257730
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_PECK
+    level_up_move 8, MOVE_FOCUS_ENERGY
+    level_up_move 12, MOVE_DOUBLE_KICK
+    level_up_move 18, MOVE_POISON_STING
+    level_up_move 22, MOVE_HORN_ATTACK
+    level_up_move 26, MOVE_HELPING_HAND
+    level_up_move 34, MOVE_FURY_ATTACK
+    level_up_move 43, MOVE_FLATTER
+    level_up_move 53, MOVE_HORN_DRILL
+    .2byte -1
+
+kLevelUpLearnset_Nidoking:: @ 8257746
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_FOCUS_ENERGY
+    level_up_move 1, MOVE_DOUBLE_KICK
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 22, MOVE_THRASH
+    level_up_move 43, MOVE_MEGAHORN
+    .2byte -1
+
+kLevelUpLearnset_Clefairy:: @ 8257754
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_GROWL
+    level_up_move 5, MOVE_ENCORE
+    level_up_move 9, MOVE_SING
+    level_up_move 13, MOVE_DOUBLE_SLAP
+    level_up_move 17, MOVE_FOLLOW_ME
+    level_up_move 21, MOVE_MINIMIZE
+    level_up_move 25, MOVE_DEFENSE_CURL
+    level_up_move 29, MOVE_METRONOME
+    level_up_move 33, MOVE_COSMIC_POWER
+    level_up_move 37, MOVE_MOONLIGHT
+    level_up_move 41, MOVE_LIGHT_SCREEN
+    level_up_move 45, MOVE_METEOR_MASH
+    .2byte -1
+
+kLevelUpLearnset_Clefable:: @ 8257770
+    level_up_move 1, MOVE_SING
+    level_up_move 1, MOVE_DOUBLE_SLAP
+    level_up_move 1, MOVE_MINIMIZE
+    level_up_move 1, MOVE_METRONOME
+    .2byte -1
+
+kLevelUpLearnset_Vulpix:: @ 825777A
+    level_up_move 1, MOVE_EMBER
+    level_up_move 5, MOVE_TAIL_WHIP
+    level_up_move 9, MOVE_ROAR
+    level_up_move 13, MOVE_QUICK_ATTACK
+    level_up_move 17, MOVE_WILL_O_WISP
+    level_up_move 21, MOVE_CONFUSE_RAY
+    level_up_move 25, MOVE_IMPRISON
+    level_up_move 29, MOVE_FLAMETHROWER
+    level_up_move 33, MOVE_SAFEGUARD
+    level_up_move 37, MOVE_GRUDGE
+    level_up_move 41, MOVE_FIRE_SPIN
+    .2byte -1
+
+kLevelUpLearnset_Ninetales:: @ 8257792
+    level_up_move 1, MOVE_EMBER
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 1, MOVE_CONFUSE_RAY
+    level_up_move 1, MOVE_SAFEGUARD
+    level_up_move 45, MOVE_FIRE_SPIN
+    .2byte -1
+
+kLevelUpLearnset_Jigglypuff:: @ 825779E
+    level_up_move 1, MOVE_SING
+    level_up_move 4, MOVE_DEFENSE_CURL
+    level_up_move 9, MOVE_POUND
+    level_up_move 14, MOVE_DISABLE
+    level_up_move 19, MOVE_ROLLOUT
+    level_up_move 24, MOVE_DOUBLE_SLAP
+    level_up_move 29, MOVE_REST
+    level_up_move 34, MOVE_BODY_SLAM
+    level_up_move 39, MOVE_MIMIC
+    level_up_move 44, MOVE_HYPER_VOICE
+    level_up_move 49, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Wigglytuff:: @ 82577B6
+    level_up_move 1, MOVE_SING
+    level_up_move 1, MOVE_DISABLE
+    level_up_move 1, MOVE_DEFENSE_CURL
+    level_up_move 1, MOVE_DOUBLE_SLAP
+    .2byte -1
+
+kLevelUpLearnset_Zubat:: @ 82577C0
+    level_up_move 1, MOVE_LEECH_LIFE
+    level_up_move 6, MOVE_ASTONISH
+    level_up_move 11, MOVE_SUPERSONIC
+    level_up_move 16, MOVE_BITE
+    level_up_move 21, MOVE_WING_ATTACK
+    level_up_move 26, MOVE_CONFUSE_RAY
+    level_up_move 31, MOVE_AIR_CUTTER
+    level_up_move 36, MOVE_MEAN_LOOK
+    level_up_move 41, MOVE_POISON_FANG
+    level_up_move 46, MOVE_HAZE
+    .2byte -1
+
+kLevelUpLearnset_Golbat:: @ 82577D6
+    level_up_move 1, MOVE_SCREECH
+    level_up_move 1, MOVE_LEECH_LIFE
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 1, MOVE_SUPERSONIC
+    level_up_move 6, MOVE_ASTONISH
+    level_up_move 11, MOVE_SUPERSONIC
+    level_up_move 16, MOVE_BITE
+    level_up_move 21, MOVE_WING_ATTACK
+    level_up_move 28, MOVE_CONFUSE_RAY
+    level_up_move 35, MOVE_AIR_CUTTER
+    level_up_move 42, MOVE_MEAN_LOOK
+    level_up_move 49, MOVE_POISON_FANG
+    level_up_move 56, MOVE_HAZE
+    .2byte -1
+
+kLevelUpLearnset_Oddish:: @ 82577F2
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 7, MOVE_SWEET_SCENT
+    level_up_move 14, MOVE_POISON_POWDER
+    level_up_move 16, MOVE_STUN_SPORE
+    level_up_move 18, MOVE_SLEEP_POWDER
+    level_up_move 23, MOVE_ACID
+    level_up_move 32, MOVE_MOONLIGHT
+    level_up_move 39, MOVE_PETAL_DANCE
+    .2byte -1
+
+kLevelUpLearnset_Gloom:: @ 8257804
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 1, MOVE_SWEET_SCENT
+    level_up_move 1, MOVE_POISON_POWDER
+    level_up_move 7, MOVE_SWEET_SCENT
+    level_up_move 14, MOVE_POISON_POWDER
+    level_up_move 16, MOVE_STUN_SPORE
+    level_up_move 18, MOVE_SLEEP_POWDER
+    level_up_move 24, MOVE_ACID
+    level_up_move 35, MOVE_MOONLIGHT
+    level_up_move 44, MOVE_PETAL_DANCE
+    .2byte -1
+
+kLevelUpLearnset_Vileplume:: @ 825781A
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 1, MOVE_AROMATHERAPY
+    level_up_move 1, MOVE_STUN_SPORE
+    level_up_move 1, MOVE_MEGA_DRAIN
+    level_up_move 44, MOVE_PETAL_DANCE
+    .2byte -1
+
+kLevelUpLearnset_Paras:: @ 8257826
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 7, MOVE_STUN_SPORE
+    level_up_move 13, MOVE_POISON_POWDER
+    level_up_move 19, MOVE_LEECH_LIFE
+    level_up_move 25, MOVE_SPORE
+    level_up_move 31, MOVE_SLASH
+    level_up_move 37, MOVE_GROWTH
+    level_up_move 43, MOVE_GIGA_DRAIN
+    level_up_move 49, MOVE_AROMATHERAPY
+    .2byte -1
+
+kLevelUpLearnset_Parasect:: @ 825783A
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_STUN_SPORE
+    level_up_move 1, MOVE_POISON_POWDER
+    level_up_move 7, MOVE_STUN_SPORE
+    level_up_move 13, MOVE_POISON_POWDER
+    level_up_move 19, MOVE_LEECH_LIFE
+    level_up_move 27, MOVE_SPORE
+    level_up_move 35, MOVE_SLASH
+    level_up_move 43, MOVE_GROWTH
+    level_up_move 51, MOVE_GIGA_DRAIN
+    level_up_move 59, MOVE_AROMATHERAPY
+    .2byte -1
+
+kLevelUpLearnset_Venonat:: @ 8257852
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_DISABLE
+    level_up_move 1, MOVE_FORESIGHT
+    level_up_move 9, MOVE_SUPERSONIC
+    level_up_move 17, MOVE_CONFUSION
+    level_up_move 20, MOVE_POISON_POWDER
+    level_up_move 25, MOVE_LEECH_LIFE
+    level_up_move 28, MOVE_STUN_SPORE
+    level_up_move 33, MOVE_PSYBEAM
+    level_up_move 36, MOVE_SLEEP_POWDER
+    level_up_move 41, MOVE_PSYCHIC
+    .2byte -1
+
+kLevelUpLearnset_Venomoth:: @ 825786A
+    level_up_move 1, MOVE_SILVER_WIND
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_DISABLE
+    level_up_move 1, MOVE_FORESIGHT
+    level_up_move 1, MOVE_SUPERSONIC
+    level_up_move 9, MOVE_SUPERSONIC
+    level_up_move 17, MOVE_CONFUSION
+    level_up_move 20, MOVE_POISON_POWDER
+    level_up_move 25, MOVE_LEECH_LIFE
+    level_up_move 28, MOVE_STUN_SPORE
+    level_up_move 31, MOVE_GUST
+    level_up_move 36, MOVE_PSYBEAM
+    level_up_move 42, MOVE_SLEEP_POWDER
+    level_up_move 52, MOVE_PSYCHIC
+    .2byte -1
+
+kLevelUpLearnset_Diglett:: @ 8257888
+    level_up_move 1, MOVE_SAND_ATTACK
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 5, MOVE_GROWL
+    level_up_move 9, MOVE_MAGNITUDE
+    level_up_move 17, MOVE_DIG
+    level_up_move 21, MOVE_FURY_SWIPES
+    level_up_move 25, MOVE_MUD_SLAP
+    level_up_move 33, MOVE_SLASH
+    level_up_move 41, MOVE_EARTHQUAKE
+    level_up_move 49, MOVE_FISSURE
+    .2byte -1
+
+kLevelUpLearnset_Dugtrio:: @ 825789E
+    level_up_move 1, MOVE_TRI_ATTACK
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_SAND_ATTACK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 5, MOVE_GROWL
+    level_up_move 9, MOVE_MAGNITUDE
+    level_up_move 17, MOVE_DIG
+    level_up_move 21, MOVE_FURY_SWIPES
+    level_up_move 25, MOVE_MUD_SLAP
+    level_up_move 26, MOVE_SAND_TOMB
+    level_up_move 38, MOVE_SLASH
+    level_up_move 51, MOVE_EARTHQUAKE
+    level_up_move 64, MOVE_FISSURE
+    .2byte -1
+
+kLevelUpLearnset_Meowth:: @ 82578BA
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_GROWL
+    level_up_move 10, MOVE_BITE
+    level_up_move 18, MOVE_PAY_DAY
+    level_up_move 25, MOVE_FAINT_ATTACK
+    level_up_move 31, MOVE_SCREECH
+    level_up_move 36, MOVE_FURY_SWIPES
+    level_up_move 40, MOVE_SLASH
+    level_up_move 43, MOVE_FAKE_OUT
+    level_up_move 45, MOVE_SWAGGER
+    .2byte -1
+
+kLevelUpLearnset_Persian:: @ 82578D0
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_BITE
+    level_up_move 10, MOVE_BITE
+    level_up_move 18, MOVE_PAY_DAY
+    level_up_move 25, MOVE_FAINT_ATTACK
+    level_up_move 34, MOVE_SCREECH
+    level_up_move 42, MOVE_FURY_SWIPES
+    level_up_move 49, MOVE_SLASH
+    level_up_move 55, MOVE_FAKE_OUT
+    level_up_move 61, MOVE_SWAGGER
+    .2byte -1
+
+kLevelUpLearnset_Psyduck:: @ 82578E8
+    level_up_move 1, MOVE_WATER_SPORT
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 5, MOVE_TAIL_WHIP
+    level_up_move 10, MOVE_DISABLE
+    level_up_move 16, MOVE_CONFUSION
+    level_up_move 23, MOVE_SCREECH
+    level_up_move 31, MOVE_PSYCH_UP
+    level_up_move 40, MOVE_FURY_SWIPES
+    level_up_move 50, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Golduck:: @ 82578FC
+    level_up_move 1, MOVE_WATER_SPORT
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_DISABLE
+    level_up_move 5, MOVE_TAIL_WHIP
+    level_up_move 10, MOVE_DISABLE
+    level_up_move 16, MOVE_CONFUSION
+    level_up_move 23, MOVE_SCREECH
+    level_up_move 31, MOVE_PSYCH_UP
+    level_up_move 44, MOVE_FURY_SWIPES
+    level_up_move 58, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Mankey:: @ 8257914
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_LEER
+    level_up_move 6, MOVE_LOW_KICK
+    level_up_move 11, MOVE_KARATE_CHOP
+    level_up_move 16, MOVE_FURY_SWIPES
+    level_up_move 21, MOVE_FOCUS_ENERGY
+    level_up_move 26, MOVE_SEISMIC_TOSS
+    level_up_move 31, MOVE_CROSS_CHOP
+    level_up_move 36, MOVE_SWAGGER
+    level_up_move 41, MOVE_SCREECH
+    level_up_move 46, MOVE_THRASH
+    .2byte -1
+
+kLevelUpLearnset_Primeape:: @ 825792C
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_LOW_KICK
+    level_up_move 1, MOVE_RAGE
+    level_up_move 6, MOVE_LOW_KICK
+    level_up_move 11, MOVE_KARATE_CHOP
+    level_up_move 16, MOVE_FURY_SWIPES
+    level_up_move 21, MOVE_FOCUS_ENERGY
+    level_up_move 26, MOVE_SEISMIC_TOSS
+    level_up_move 28, MOVE_RAGE
+    level_up_move 35, MOVE_CROSS_CHOP
+    level_up_move 44, MOVE_SWAGGER
+    level_up_move 53, MOVE_SCREECH
+    level_up_move 62, MOVE_THRASH
+    .2byte -1
+
+kLevelUpLearnset_Growlithe:: @ 825794A
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_ROAR
+    level_up_move 7, MOVE_EMBER
+    level_up_move 13, MOVE_LEER
+    level_up_move 19, MOVE_ODOR_SLEUTH
+    level_up_move 25, MOVE_TAKE_DOWN
+    level_up_move 31, MOVE_FLAME_WHEEL
+    level_up_move 37, MOVE_HELPING_HAND
+    level_up_move 43, MOVE_AGILITY
+    level_up_move 49, MOVE_FLAMETHROWER
+    .2byte -1
+
+kLevelUpLearnset_Arcanine:: @ 8257960
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_ROAR
+    level_up_move 1, MOVE_EMBER
+    level_up_move 1, MOVE_ODOR_SLEUTH
+    level_up_move 49, MOVE_EXTREME_SPEED
+    .2byte -1
+
+kLevelUpLearnset_Poliwag:: @ 825796C
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 7, MOVE_HYPNOSIS
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 19, MOVE_DOUBLE_SLAP
+    level_up_move 25, MOVE_RAIN_DANCE
+    level_up_move 31, MOVE_BODY_SLAM
+    level_up_move 37, MOVE_BELLY_DRUM
+    level_up_move 43, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Poliwhirl:: @ 825797E
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 1, MOVE_HYPNOSIS
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 7, MOVE_HYPNOSIS
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 19, MOVE_DOUBLE_SLAP
+    level_up_move 27, MOVE_RAIN_DANCE
+    level_up_move 35, MOVE_BODY_SLAM
+    level_up_move 43, MOVE_BELLY_DRUM
+    level_up_move 51, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Poliwrath:: @ 8257994
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 1, MOVE_HYPNOSIS
+    level_up_move 1, MOVE_DOUBLE_SLAP
+    level_up_move 1, MOVE_SUBMISSION
+    level_up_move 35, MOVE_SUBMISSION
+    level_up_move 51, MOVE_MIND_READER
+    .2byte -1
+
+kLevelUpLearnset_Abra:: @ 82579A2
+    level_up_move 1, MOVE_TELEPORT
+    .2byte -1
+
+kLevelUpLearnset_Kadabra:: @ 82579A6
+    level_up_move 1, MOVE_TELEPORT
+    level_up_move 1, MOVE_KINESIS
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 16, MOVE_CONFUSION
+    level_up_move 18, MOVE_DISABLE
+    level_up_move 21, MOVE_PSYBEAM
+    level_up_move 23, MOVE_REFLECT
+    level_up_move 25, MOVE_RECOVER
+    level_up_move 30, MOVE_FUTURE_SIGHT
+    level_up_move 33, MOVE_ROLE_PLAY
+    level_up_move 36, MOVE_PSYCHIC
+    level_up_move 43, MOVE_TRICK
+    .2byte -1
+
+kLevelUpLearnset_Alakazam:: @ 82579C0
+    level_up_move 1, MOVE_TELEPORT
+    level_up_move 1, MOVE_KINESIS
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 16, MOVE_CONFUSION
+    level_up_move 18, MOVE_DISABLE
+    level_up_move 21, MOVE_PSYBEAM
+    level_up_move 23, MOVE_REFLECT
+    level_up_move 25, MOVE_RECOVER
+    level_up_move 30, MOVE_FUTURE_SIGHT
+    level_up_move 33, MOVE_CALM_MIND
+    level_up_move 36, MOVE_PSYCHIC
+    level_up_move 43, MOVE_TRICK
+    .2byte -1
+
+kLevelUpLearnset_Machop:: @ 82579DA
+    level_up_move 1, MOVE_LOW_KICK
+    level_up_move 1, MOVE_LEER
+    level_up_move 7, MOVE_FOCUS_ENERGY
+    level_up_move 13, MOVE_KARATE_CHOP
+    level_up_move 19, MOVE_SEISMIC_TOSS
+    level_up_move 22, MOVE_FORESIGHT
+    level_up_move 25, MOVE_REVENGE
+    level_up_move 31, MOVE_VITAL_THROW
+    level_up_move 37, MOVE_SUBMISSION
+    level_up_move 40, MOVE_CROSS_CHOP
+    level_up_move 43, MOVE_SCARY_FACE
+    level_up_move 49, MOVE_DYNAMIC_PUNCH
+    .2byte -1
+
+kLevelUpLearnset_Machoke:: @ 82579F4
+    level_up_move 1, MOVE_LOW_KICK
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_FOCUS_ENERGY
+    level_up_move 7, MOVE_FOCUS_ENERGY
+    level_up_move 13, MOVE_KARATE_CHOP
+    level_up_move 19, MOVE_SEISMIC_TOSS
+    level_up_move 22, MOVE_FORESIGHT
+    level_up_move 25, MOVE_REVENGE
+    level_up_move 33, MOVE_VITAL_THROW
+    level_up_move 41, MOVE_SUBMISSION
+    level_up_move 46, MOVE_CROSS_CHOP
+    level_up_move 51, MOVE_SCARY_FACE
+    level_up_move 59, MOVE_DYNAMIC_PUNCH
+    .2byte -1
+
+kLevelUpLearnset_Machamp:: @ 8257A10
+    level_up_move 1, MOVE_LOW_KICK
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_FOCUS_ENERGY
+    level_up_move 7, MOVE_FOCUS_ENERGY
+    level_up_move 13, MOVE_KARATE_CHOP
+    level_up_move 19, MOVE_SEISMIC_TOSS
+    level_up_move 22, MOVE_FORESIGHT
+    level_up_move 25, MOVE_REVENGE
+    level_up_move 33, MOVE_VITAL_THROW
+    level_up_move 41, MOVE_SUBMISSION
+    level_up_move 46, MOVE_CROSS_CHOP
+    level_up_move 51, MOVE_SCARY_FACE
+    level_up_move 59, MOVE_DYNAMIC_PUNCH
+    .2byte -1
+
+kLevelUpLearnset_Bellsprout:: @ 8257A2C
+    level_up_move 1, MOVE_VINE_WHIP
+    level_up_move 6, MOVE_GROWTH
+    level_up_move 11, MOVE_WRAP
+    level_up_move 15, MOVE_SLEEP_POWDER
+    level_up_move 17, MOVE_POISON_POWDER
+    level_up_move 19, MOVE_STUN_SPORE
+    level_up_move 23, MOVE_ACID
+    level_up_move 30, MOVE_SWEET_SCENT
+    level_up_move 37, MOVE_RAZOR_LEAF
+    level_up_move 45, MOVE_SLAM
+    .2byte -1
+
+kLevelUpLearnset_Weepinbell:: @ 8257A42
+    level_up_move 1, MOVE_VINE_WHIP
+    level_up_move 1, MOVE_GROWTH
+    level_up_move 1, MOVE_WRAP
+    level_up_move 6, MOVE_GROWTH
+    level_up_move 11, MOVE_WRAP
+    level_up_move 15, MOVE_SLEEP_POWDER
+    level_up_move 17, MOVE_POISON_POWDER
+    level_up_move 19, MOVE_STUN_SPORE
+    level_up_move 24, MOVE_ACID
+    level_up_move 33, MOVE_SWEET_SCENT
+    level_up_move 42, MOVE_RAZOR_LEAF
+    level_up_move 54, MOVE_SLAM
+    .2byte -1
+
+kLevelUpLearnset_Victreebel:: @ 8257A5C
+    level_up_move 1, MOVE_STOCKPILE
+    level_up_move 1, MOVE_SPIT_UP
+    level_up_move 1, MOVE_SWALLOW
+    level_up_move 1, MOVE_VINE_WHIP
+    level_up_move 1, MOVE_SLEEP_POWDER
+    level_up_move 1, MOVE_SWEET_SCENT
+    level_up_move 1, MOVE_RAZOR_LEAF
+    .2byte -1
+
+kLevelUpLearnset_Tentacool:: @ 8257A6C
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 6, MOVE_SUPERSONIC
+    level_up_move 12, MOVE_CONSTRICT
+    level_up_move 19, MOVE_ACID
+    level_up_move 25, MOVE_BUBBLE_BEAM
+    level_up_move 30, MOVE_WRAP
+    level_up_move 36, MOVE_BARRIER
+    level_up_move 43, MOVE_SCREECH
+    level_up_move 49, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Tentacruel:: @ 8257A80
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 1, MOVE_SUPERSONIC
+    level_up_move 1, MOVE_CONSTRICT
+    level_up_move 6, MOVE_SUPERSONIC
+    level_up_move 12, MOVE_CONSTRICT
+    level_up_move 19, MOVE_ACID
+    level_up_move 25, MOVE_BUBBLE_BEAM
+    level_up_move 30, MOVE_WRAP
+    level_up_move 38, MOVE_BARRIER
+    level_up_move 47, MOVE_SCREECH
+    level_up_move 55, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Geodude:: @ 8257A98
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_DEFENSE_CURL
+    level_up_move 6, MOVE_MUD_SPORT
+    level_up_move 11, MOVE_ROCK_THROW
+    level_up_move 16, MOVE_MAGNITUDE
+    level_up_move 21, MOVE_SELF_DESTRUCT
+    level_up_move 26, MOVE_ROLLOUT
+    level_up_move 31, MOVE_ROCK_BLAST
+    level_up_move 36, MOVE_EARTHQUAKE
+    level_up_move 41, MOVE_EXPLOSION
+    level_up_move 46, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Graveler:: @ 8257AB0
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_DEFENSE_CURL
+    level_up_move 1, MOVE_MUD_SPORT
+    level_up_move 1, MOVE_ROCK_THROW
+    level_up_move 6, MOVE_MUD_SPORT
+    level_up_move 11, MOVE_ROCK_THROW
+    level_up_move 16, MOVE_MAGNITUDE
+    level_up_move 21, MOVE_SELF_DESTRUCT
+    level_up_move 29, MOVE_ROLLOUT
+    level_up_move 37, MOVE_ROCK_BLAST
+    level_up_move 45, MOVE_EARTHQUAKE
+    level_up_move 53, MOVE_EXPLOSION
+    level_up_move 62, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Golem:: @ 8257ACC
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_DEFENSE_CURL
+    level_up_move 1, MOVE_MUD_SPORT
+    level_up_move 1, MOVE_ROCK_THROW
+    level_up_move 6, MOVE_MUD_SPORT
+    level_up_move 11, MOVE_ROCK_THROW
+    level_up_move 16, MOVE_MAGNITUDE
+    level_up_move 21, MOVE_SELF_DESTRUCT
+    level_up_move 29, MOVE_ROLLOUT
+    level_up_move 37, MOVE_ROCK_BLAST
+    level_up_move 45, MOVE_EARTHQUAKE
+    level_up_move 53, MOVE_EXPLOSION
+    level_up_move 62, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Ponyta:: @ 8257AE8
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 5, MOVE_GROWL
+    level_up_move 9, MOVE_TAIL_WHIP
+    level_up_move 14, MOVE_EMBER
+    level_up_move 19, MOVE_STOMP
+    level_up_move 25, MOVE_FIRE_SPIN
+    level_up_move 31, MOVE_TAKE_DOWN
+    level_up_move 38, MOVE_AGILITY
+    level_up_move 45, MOVE_BOUNCE
+    level_up_move 53, MOVE_FIRE_BLAST
+    .2byte -1
+
+kLevelUpLearnset_Rapidash:: @ 8257AFE
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_EMBER
+    level_up_move 5, MOVE_GROWL
+    level_up_move 9, MOVE_TAIL_WHIP
+    level_up_move 14, MOVE_EMBER
+    level_up_move 19, MOVE_STOMP
+    level_up_move 25, MOVE_FIRE_SPIN
+    level_up_move 31, MOVE_TAKE_DOWN
+    level_up_move 38, MOVE_AGILITY
+    level_up_move 40, MOVE_FURY_ATTACK
+    level_up_move 50, MOVE_BOUNCE
+    level_up_move 63, MOVE_FIRE_BLAST
+    .2byte -1
+
+kLevelUpLearnset_Slowpoke:: @ 8257B1C
+    level_up_move 1, MOVE_CURSE
+    level_up_move 1, MOVE_YAWN
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 6, MOVE_GROWL
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 17, MOVE_CONFUSION
+    level_up_move 24, MOVE_DISABLE
+    level_up_move 29, MOVE_HEADBUTT
+    level_up_move 36, MOVE_AMNESIA
+    level_up_move 40, MOVE_PSYCHIC
+    level_up_move 47, MOVE_PSYCH_UP
+    .2byte -1
+
+kLevelUpLearnset_Slowbro:: @ 8257B34
+    level_up_move 1, MOVE_CURSE
+    level_up_move 1, MOVE_YAWN
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 6, MOVE_GROWL
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 17, MOVE_CONFUSION
+    level_up_move 24, MOVE_DISABLE
+    level_up_move 29, MOVE_HEADBUTT
+    level_up_move 36, MOVE_AMNESIA
+    level_up_move 37, MOVE_WITHDRAW
+    level_up_move 44, MOVE_PSYCHIC
+    level_up_move 55, MOVE_PSYCH_UP
+    .2byte -1
+
+kLevelUpLearnset_Magnemite:: @ 8257B50
+    level_up_move 1, MOVE_METAL_SOUND
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 6, MOVE_THUNDER_SHOCK
+    level_up_move 11, MOVE_SUPERSONIC
+    level_up_move 16, MOVE_SONIC_BOOM
+    level_up_move 21, MOVE_THUNDER_WAVE
+    level_up_move 26, MOVE_SPARK
+    level_up_move 32, MOVE_LOCK_ON
+    level_up_move 38, MOVE_SWIFT
+    level_up_move 44, MOVE_SCREECH
+    level_up_move 50, MOVE_ZAP_CANNON
+    .2byte -1
+
+kLevelUpLearnset_Magneton:: @ 8257B68
+    level_up_move 1, MOVE_METAL_SOUND
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_THUNDER_SHOCK
+    level_up_move 1, MOVE_SUPERSONIC
+    level_up_move 6, MOVE_THUNDER_SHOCK
+    level_up_move 11, MOVE_SUPERSONIC
+    level_up_move 16, MOVE_SONIC_BOOM
+    level_up_move 21, MOVE_THUNDER_WAVE
+    level_up_move 26, MOVE_SPARK
+    level_up_move 35, MOVE_LOCK_ON
+    level_up_move 44, MOVE_TRI_ATTACK
+    level_up_move 53, MOVE_SCREECH
+    level_up_move 62, MOVE_ZAP_CANNON
+    .2byte -1
+
+kLevelUpLearnset_Farfetchd:: @ 8257B84
+    level_up_move 1, MOVE_PECK
+    level_up_move 6, MOVE_SAND_ATTACK
+    level_up_move 11, MOVE_LEER
+    level_up_move 16, MOVE_FURY_ATTACK
+    level_up_move 21, MOVE_KNOCK_OFF
+    level_up_move 26, MOVE_FURY_CUTTER
+    level_up_move 31, MOVE_SWORDS_DANCE
+    level_up_move 36, MOVE_AGILITY
+    level_up_move 41, MOVE_SLASH
+    level_up_move 46, MOVE_FALSE_SWIPE
+    .2byte -1
+
+kLevelUpLearnset_Doduo:: @ 8257B9A
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 9, MOVE_PURSUIT
+    level_up_move 13, MOVE_FURY_ATTACK
+    level_up_move 21, MOVE_TRI_ATTACK
+    level_up_move 25, MOVE_RAGE
+    level_up_move 33, MOVE_UPROAR
+    level_up_move 37, MOVE_DRILL_PECK
+    level_up_move 45, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Dodrio:: @ 8257BAE
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_PURSUIT
+    level_up_move 1, MOVE_FURY_ATTACK
+    level_up_move 9, MOVE_PURSUIT
+    level_up_move 13, MOVE_FURY_ATTACK
+    level_up_move 21, MOVE_TRI_ATTACK
+    level_up_move 25, MOVE_RAGE
+    level_up_move 38, MOVE_UPROAR
+    level_up_move 47, MOVE_DRILL_PECK
+    level_up_move 60, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Seel:: @ 8257BC6
+    level_up_move 1, MOVE_HEADBUTT
+    level_up_move 9, MOVE_GROWL
+    level_up_move 17, MOVE_ICY_WIND
+    level_up_move 21, MOVE_AURORA_BEAM
+    level_up_move 29, MOVE_REST
+    level_up_move 37, MOVE_TAKE_DOWN
+    level_up_move 41, MOVE_ICE_BEAM
+    level_up_move 49, MOVE_SAFEGUARD
+    .2byte -1
+
+kLevelUpLearnset_Dewgong:: @ 8257BD8
+    level_up_move 1, MOVE_SIGNAL_BEAM
+    level_up_move 1, MOVE_HEADBUTT
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_ICY_WIND
+    level_up_move 1, MOVE_AURORA_BEAM
+    level_up_move 9, MOVE_GROWL
+    level_up_move 17, MOVE_ICY_WIND
+    level_up_move 21, MOVE_AURORA_BEAM
+    level_up_move 29, MOVE_REST
+    level_up_move 34, MOVE_SHEER_COLD
+    level_up_move 42, MOVE_TAKE_DOWN
+    level_up_move 51, MOVE_ICE_BEAM
+    level_up_move 64, MOVE_SAFEGUARD
+    .2byte -1
+
+kLevelUpLearnset_Grimer:: @ 8257BF4
+    level_up_move 1, MOVE_POISON_GAS
+    level_up_move 1, MOVE_POUND
+    level_up_move 4, MOVE_HARDEN
+    level_up_move 8, MOVE_DISABLE
+    level_up_move 13, MOVE_SLUDGE
+    level_up_move 19, MOVE_MINIMIZE
+    level_up_move 26, MOVE_SCREECH
+    level_up_move 34, MOVE_ACID_ARMOR
+    level_up_move 43, MOVE_SLUDGE_BOMB
+    level_up_move 53, MOVE_MEMENTO
+    .2byte -1
+
+kLevelUpLearnset_Muk:: @ 8257C0A
+    level_up_move 1, MOVE_POISON_GAS
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 4, MOVE_HARDEN
+    level_up_move 8, MOVE_DISABLE
+    level_up_move 13, MOVE_SLUDGE
+    level_up_move 19, MOVE_MINIMIZE
+    level_up_move 26, MOVE_SCREECH
+    level_up_move 34, MOVE_ACID_ARMOR
+    level_up_move 47, MOVE_SLUDGE_BOMB
+    level_up_move 61, MOVE_MEMENTO
+    .2byte -1
+
+kLevelUpLearnset_Shellder:: @ 8257C22
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_WITHDRAW
+    level_up_move 8, MOVE_ICICLE_SPEAR
+    level_up_move 15, MOVE_SUPERSONIC
+    level_up_move 22, MOVE_AURORA_BEAM
+    level_up_move 29, MOVE_PROTECT
+    level_up_move 36, MOVE_LEER
+    level_up_move 43, MOVE_CLAMP
+    level_up_move 50, MOVE_ICE_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Cloyster:: @ 8257C36
+    level_up_move 1, MOVE_WITHDRAW
+    level_up_move 1, MOVE_SUPERSONIC
+    level_up_move 1, MOVE_AURORA_BEAM
+    level_up_move 1, MOVE_PROTECT
+    level_up_move 36, MOVE_SPIKES
+    level_up_move 43, MOVE_SPIKE_CANNON
+    .2byte -1
+
+kLevelUpLearnset_Gastly:: @ 8257C44
+    level_up_move 1, MOVE_HYPNOSIS
+    level_up_move 1, MOVE_LICK
+    level_up_move 8, MOVE_SPITE
+    level_up_move 13, MOVE_CURSE
+    level_up_move 16, MOVE_NIGHT_SHADE
+    level_up_move 21, MOVE_CONFUSE_RAY
+    level_up_move 28, MOVE_DREAM_EATER
+    level_up_move 33, MOVE_DESTINY_BOND
+    level_up_move 36, MOVE_SHADOW_BALL
+    level_up_move 41, MOVE_NIGHTMARE
+    level_up_move 48, MOVE_MEAN_LOOK
+    .2byte -1
+
+kLevelUpLearnset_Haunter:: @ 8257C5C
+    level_up_move 1, MOVE_HYPNOSIS
+    level_up_move 1, MOVE_LICK
+    level_up_move 1, MOVE_SPITE
+    level_up_move 8, MOVE_SPITE
+    level_up_move 13, MOVE_CURSE
+    level_up_move 16, MOVE_NIGHT_SHADE
+    level_up_move 21, MOVE_CONFUSE_RAY
+    level_up_move 25, MOVE_SHADOW_PUNCH
+    level_up_move 31, MOVE_DREAM_EATER
+    level_up_move 39, MOVE_DESTINY_BOND
+    level_up_move 45, MOVE_SHADOW_BALL
+    level_up_move 53, MOVE_NIGHTMARE
+    level_up_move 64, MOVE_MEAN_LOOK
+    .2byte -1
+
+kLevelUpLearnset_Gengar:: @ 8257C78
+    level_up_move 1, MOVE_HYPNOSIS
+    level_up_move 1, MOVE_LICK
+    level_up_move 1, MOVE_SPITE
+    level_up_move 8, MOVE_SPITE
+    level_up_move 13, MOVE_CURSE
+    level_up_move 16, MOVE_NIGHT_SHADE
+    level_up_move 21, MOVE_CONFUSE_RAY
+    level_up_move 25, MOVE_SHADOW_PUNCH
+    level_up_move 31, MOVE_DREAM_EATER
+    level_up_move 39, MOVE_DESTINY_BOND
+    level_up_move 45, MOVE_SHADOW_BALL
+    level_up_move 53, MOVE_NIGHTMARE
+    level_up_move 64, MOVE_MEAN_LOOK
+    .2byte -1
+
+kLevelUpLearnset_Onix:: @ 8257C94
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_SCREECH
+    level_up_move 8, MOVE_BIND
+    level_up_move 12, MOVE_ROCK_THROW
+    level_up_move 19, MOVE_HARDEN
+    level_up_move 23, MOVE_RAGE
+    level_up_move 30, MOVE_DRAGON_BREATH
+    level_up_move 34, MOVE_SANDSTORM
+    level_up_move 41, MOVE_SLAM
+    level_up_move 45, MOVE_IRON_TAIL
+    level_up_move 52, MOVE_SAND_TOMB
+    level_up_move 56, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Drowzee:: @ 8257CAE
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_HYPNOSIS
+    level_up_move 7, MOVE_DISABLE
+    level_up_move 11, MOVE_CONFUSION
+    level_up_move 17, MOVE_HEADBUTT
+    level_up_move 21, MOVE_POISON_GAS
+    level_up_move 27, MOVE_MEDITATE
+    level_up_move 31, MOVE_PSYCHIC
+    level_up_move 37, MOVE_PSYCH_UP
+    level_up_move 41, MOVE_SWAGGER
+    level_up_move 47, MOVE_FUTURE_SIGHT
+    .2byte -1
+
+kLevelUpLearnset_Hypno:: @ 8257CC6
+    level_up_move 1, MOVE_NIGHTMARE
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_HYPNOSIS
+    level_up_move 1, MOVE_DISABLE
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 7, MOVE_DISABLE
+    level_up_move 11, MOVE_CONFUSION
+    level_up_move 17, MOVE_HEADBUTT
+    level_up_move 21, MOVE_POISON_GAS
+    level_up_move 29, MOVE_MEDITATE
+    level_up_move 35, MOVE_PSYCHIC
+    level_up_move 43, MOVE_PSYCH_UP
+    level_up_move 49, MOVE_SWAGGER
+    level_up_move 57, MOVE_FUTURE_SIGHT
+    .2byte -1
+
+kLevelUpLearnset_Krabby:: @ 8257CE4
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 5, MOVE_LEER
+    level_up_move 12, MOVE_VICE_GRIP
+    level_up_move 16, MOVE_HARDEN
+    level_up_move 23, MOVE_MUD_SHOT
+    level_up_move 27, MOVE_STOMP
+    level_up_move 34, MOVE_GUILLOTINE
+    level_up_move 38, MOVE_PROTECT
+    level_up_move 45, MOVE_CRABHAMMER
+    level_up_move 49, MOVE_FLAIL
+    .2byte -1
+
+kLevelUpLearnset_Kingler:: @ 8257CFA
+    level_up_move 1, MOVE_METAL_CLAW
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_VICE_GRIP
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 5, MOVE_LEER
+    level_up_move 12, MOVE_VICE_GRIP
+    level_up_move 16, MOVE_HARDEN
+    level_up_move 23, MOVE_MUD_SHOT
+    level_up_move 27, MOVE_STOMP
+    level_up_move 38, MOVE_GUILLOTINE
+    level_up_move 42, MOVE_PROTECT
+    level_up_move 57, MOVE_CRABHAMMER
+    level_up_move 65, MOVE_FLAIL
+    .2byte -1
+
+kLevelUpLearnset_Voltorb:: @ 8257D18
+    level_up_move 1, MOVE_CHARGE
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 8, MOVE_SCREECH
+    level_up_move 15, MOVE_SONIC_BOOM
+    level_up_move 21, MOVE_SPARK
+    level_up_move 27, MOVE_SELF_DESTRUCT
+    level_up_move 32, MOVE_ROLLOUT
+    level_up_move 37, MOVE_LIGHT_SCREEN
+    level_up_move 42, MOVE_SWIFT
+    level_up_move 46, MOVE_EXPLOSION
+    level_up_move 49, MOVE_MIRROR_COAT
+    .2byte -1
+
+kLevelUpLearnset_Electrode:: @ 8257D30
+    level_up_move 1, MOVE_CHARGE
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_SCREECH
+    level_up_move 1, MOVE_SONIC_BOOM
+    level_up_move 8, MOVE_SCREECH
+    level_up_move 15, MOVE_SONIC_BOOM
+    level_up_move 21, MOVE_SPARK
+    level_up_move 27, MOVE_SELF_DESTRUCT
+    level_up_move 34, MOVE_ROLLOUT
+    level_up_move 41, MOVE_LIGHT_SCREEN
+    level_up_move 48, MOVE_SWIFT
+    level_up_move 54, MOVE_EXPLOSION
+    level_up_move 59, MOVE_MIRROR_COAT
+    .2byte -1
+
+kLevelUpLearnset_Exeggcute:: @ 8257D4C
+    level_up_move 1, MOVE_BARRAGE
+    level_up_move 1, MOVE_UPROAR
+    level_up_move 1, MOVE_HYPNOSIS
+    level_up_move 7, MOVE_REFLECT
+    level_up_move 13, MOVE_LEECH_SEED
+    level_up_move 19, MOVE_CONFUSION
+    level_up_move 25, MOVE_STUN_SPORE
+    level_up_move 31, MOVE_POISON_POWDER
+    level_up_move 37, MOVE_SLEEP_POWDER
+    level_up_move 43, MOVE_SOLAR_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Exeggutor:: @ 8257D62
+    level_up_move 1, MOVE_BARRAGE
+    level_up_move 1, MOVE_HYPNOSIS
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 19, MOVE_STOMP
+    level_up_move 31, MOVE_EGG_BOMB
+    .2byte -1
+
+kLevelUpLearnset_Cubone:: @ 8257D6E
+    level_up_move 1, MOVE_GROWL
+    level_up_move 5, MOVE_TAIL_WHIP
+    level_up_move 9, MOVE_BONE_CLUB
+    level_up_move 13, MOVE_HEADBUTT
+    level_up_move 17, MOVE_LEER
+    level_up_move 21, MOVE_FOCUS_ENERGY
+    level_up_move 25, MOVE_BONEMERANG
+    level_up_move 29, MOVE_RAGE
+    level_up_move 33, MOVE_FALSE_SWIPE
+    level_up_move 37, MOVE_THRASH
+    level_up_move 41, MOVE_BONE_RUSH
+    level_up_move 45, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Marowak:: @ 8257D88
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_BONE_CLUB
+    level_up_move 1, MOVE_HEADBUTT
+    level_up_move 5, MOVE_TAIL_WHIP
+    level_up_move 9, MOVE_BONE_CLUB
+    level_up_move 13, MOVE_HEADBUTT
+    level_up_move 17, MOVE_LEER
+    level_up_move 21, MOVE_FOCUS_ENERGY
+    level_up_move 25, MOVE_BONEMERANG
+    level_up_move 32, MOVE_RAGE
+    level_up_move 39, MOVE_FALSE_SWIPE
+    level_up_move 46, MOVE_THRASH
+    level_up_move 53, MOVE_BONE_RUSH
+    level_up_move 61, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Hitmonlee:: @ 8257DA8
+    level_up_move 1, MOVE_REVENGE
+    level_up_move 1, MOVE_DOUBLE_KICK
+    level_up_move 6, MOVE_MEDITATE
+    level_up_move 11, MOVE_ROLLING_KICK
+    level_up_move 16, MOVE_JUMP_KICK
+    level_up_move 20, MOVE_BRICK_BREAK
+    level_up_move 21, MOVE_FOCUS_ENERGY
+    level_up_move 26, MOVE_HI_JUMP_KICK
+    level_up_move 31, MOVE_MIND_READER
+    level_up_move 36, MOVE_FORESIGHT
+    level_up_move 41, MOVE_ENDURE
+    level_up_move 46, MOVE_MEGA_KICK
+    level_up_move 51, MOVE_REVERSAL
+    .2byte -1
+
+kLevelUpLearnset_Hitmonchan:: @ 8257DC4
+    level_up_move 1, MOVE_REVENGE
+    level_up_move 1, MOVE_COMET_PUNCH
+    level_up_move 7, MOVE_AGILITY
+    level_up_move 13, MOVE_PURSUIT
+    level_up_move 20, MOVE_MACH_PUNCH
+    level_up_move 26, MOVE_THUNDER_PUNCH
+    level_up_move 26, MOVE_ICE_PUNCH
+    level_up_move 26, MOVE_FIRE_PUNCH
+    level_up_move 32, MOVE_SKY_UPPERCUT
+    level_up_move 38, MOVE_MEGA_PUNCH
+    level_up_move 44, MOVE_DETECT
+    level_up_move 50, MOVE_COUNTER
+    .2byte -1
+
+kLevelUpLearnset_Lickitung:: @ 8257DDE
+    level_up_move 1, MOVE_LICK
+    level_up_move 7, MOVE_SUPERSONIC
+    level_up_move 12, MOVE_DEFENSE_CURL
+    level_up_move 18, MOVE_KNOCK_OFF
+    level_up_move 23, MOVE_STOMP
+    level_up_move 29, MOVE_WRAP
+    level_up_move 34, MOVE_DISABLE
+    level_up_move 40, MOVE_SLAM
+    level_up_move 45, MOVE_SCREECH
+    level_up_move 51, MOVE_REFRESH
+    .2byte -1
+
+kLevelUpLearnset_Koffing:: @ 8257DF4
+    level_up_move 1, MOVE_POISON_GAS
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 9, MOVE_SMOG
+    level_up_move 17, MOVE_SELF_DESTRUCT
+    level_up_move 21, MOVE_SLUDGE
+    level_up_move 25, MOVE_SMOKESCREEN
+    level_up_move 33, MOVE_HAZE
+    level_up_move 41, MOVE_EXPLOSION
+    level_up_move 45, MOVE_DESTINY_BOND
+    level_up_move 49, MOVE_MEMENTO
+    .2byte -1
+
+kLevelUpLearnset_Weezing:: @ 8257E0A
+    level_up_move 1, MOVE_POISON_GAS
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_SMOG
+    level_up_move 1, MOVE_SELF_DESTRUCT
+    level_up_move 9, MOVE_SMOG
+    level_up_move 17, MOVE_SELF_DESTRUCT
+    level_up_move 21, MOVE_SLUDGE
+    level_up_move 25, MOVE_SMOKESCREEN
+    level_up_move 33, MOVE_HAZE
+    level_up_move 44, MOVE_EXPLOSION
+    level_up_move 51, MOVE_DESTINY_BOND
+    level_up_move 58, MOVE_MEMENTO
+    .2byte -1
+
+kLevelUpLearnset_Rhyhorn:: @ 8257E24
+    level_up_move 1, MOVE_HORN_ATTACK
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 10, MOVE_STOMP
+    level_up_move 15, MOVE_FURY_ATTACK
+    level_up_move 24, MOVE_SCARY_FACE
+    level_up_move 29, MOVE_ROCK_BLAST
+    level_up_move 38, MOVE_HORN_DRILL
+    level_up_move 43, MOVE_TAKE_DOWN
+    level_up_move 52, MOVE_EARTHQUAKE
+    level_up_move 57, MOVE_MEGAHORN
+    .2byte -1
+
+kLevelUpLearnset_Rhydon:: @ 8257E3A
+    level_up_move 1, MOVE_HORN_ATTACK
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_STOMP
+    level_up_move 1, MOVE_FURY_ATTACK
+    level_up_move 10, MOVE_STOMP
+    level_up_move 15, MOVE_FURY_ATTACK
+    level_up_move 24, MOVE_SCARY_FACE
+    level_up_move 29, MOVE_ROCK_BLAST
+    level_up_move 38, MOVE_HORN_DRILL
+    level_up_move 46, MOVE_TAKE_DOWN
+    level_up_move 58, MOVE_EARTHQUAKE
+    level_up_move 66, MOVE_MEGAHORN
+    .2byte -1
+
+kLevelUpLearnset_Chansey:: @ 8257E54
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_GROWL
+    level_up_move 5, MOVE_TAIL_WHIP
+    level_up_move 9, MOVE_REFRESH
+    level_up_move 13, MOVE_SOFT_BOILED
+    level_up_move 17, MOVE_DOUBLE_SLAP
+    level_up_move 23, MOVE_MINIMIZE
+    level_up_move 29, MOVE_SING
+    level_up_move 35, MOVE_EGG_BOMB
+    level_up_move 41, MOVE_DEFENSE_CURL
+    level_up_move 49, MOVE_LIGHT_SCREEN
+    level_up_move 57, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Tangela:: @ 8257E6E
+    level_up_move 1, MOVE_INGRAIN
+    level_up_move 1, MOVE_CONSTRICT
+    level_up_move 4, MOVE_SLEEP_POWDER
+    level_up_move 10, MOVE_ABSORB
+    level_up_move 13, MOVE_GROWTH
+    level_up_move 19, MOVE_POISON_POWDER
+    level_up_move 22, MOVE_VINE_WHIP
+    level_up_move 28, MOVE_BIND
+    level_up_move 31, MOVE_MEGA_DRAIN
+    level_up_move 37, MOVE_STUN_SPORE
+    level_up_move 40, MOVE_SLAM
+    level_up_move 46, MOVE_TICKLE
+    .2byte -1
+
+kLevelUpLearnset_Kangaskhan:: @ 8257E88
+    level_up_move 1, MOVE_COMET_PUNCH
+    level_up_move 1, MOVE_LEER
+    level_up_move 7, MOVE_BITE
+    level_up_move 13, MOVE_TAIL_WHIP
+    level_up_move 19, MOVE_FAKE_OUT
+    level_up_move 25, MOVE_MEGA_PUNCH
+    level_up_move 31, MOVE_RAGE
+    level_up_move 37, MOVE_ENDURE
+    level_up_move 43, MOVE_DIZZY_PUNCH
+    level_up_move 49, MOVE_REVERSAL
+    .2byte -1
+
+kLevelUpLearnset_Horsea:: @ 8257E9E
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 8, MOVE_SMOKESCREEN
+    level_up_move 15, MOVE_LEER
+    level_up_move 22, MOVE_WATER_GUN
+    level_up_move 29, MOVE_TWISTER
+    level_up_move 36, MOVE_AGILITY
+    level_up_move 43, MOVE_HYDRO_PUMP
+    level_up_move 50, MOVE_DRAGON_DANCE
+    .2byte -1
+
+kLevelUpLearnset_Seadra:: @ 8257EB0
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 1, MOVE_SMOKESCREEN
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 8, MOVE_SMOKESCREEN
+    level_up_move 15, MOVE_LEER
+    level_up_move 22, MOVE_WATER_GUN
+    level_up_move 29, MOVE_TWISTER
+    level_up_move 40, MOVE_AGILITY
+    level_up_move 51, MOVE_HYDRO_PUMP
+    level_up_move 62, MOVE_DRAGON_DANCE
+    .2byte -1
+
+kLevelUpLearnset_Goldeen:: @ 8257EC8
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_WATER_SPORT
+    level_up_move 10, MOVE_SUPERSONIC
+    level_up_move 15, MOVE_HORN_ATTACK
+    level_up_move 24, MOVE_FLAIL
+    level_up_move 29, MOVE_FURY_ATTACK
+    level_up_move 38, MOVE_WATERFALL
+    level_up_move 43, MOVE_HORN_DRILL
+    level_up_move 52, MOVE_AGILITY
+    level_up_move 57, MOVE_MEGAHORN
+    .2byte -1
+
+kLevelUpLearnset_Seaking:: @ 8257EE0
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_WATER_SPORT
+    level_up_move 1, MOVE_SUPERSONIC
+    level_up_move 10, MOVE_SUPERSONIC
+    level_up_move 15, MOVE_HORN_ATTACK
+    level_up_move 24, MOVE_FLAIL
+    level_up_move 29, MOVE_FURY_ATTACK
+    level_up_move 41, MOVE_WATERFALL
+    level_up_move 49, MOVE_HORN_DRILL
+    level_up_move 61, MOVE_AGILITY
+    level_up_move 69, MOVE_MEGAHORN
+    .2byte -1
+
+kLevelUpLearnset_Staryu:: @ 8257EFA
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 6, MOVE_WATER_GUN
+    level_up_move 10, MOVE_RAPID_SPIN
+    level_up_move 15, MOVE_RECOVER
+    level_up_move 19, MOVE_CAMOUFLAGE
+    level_up_move 24, MOVE_SWIFT
+    level_up_move 28, MOVE_BUBBLE_BEAM
+    level_up_move 33, MOVE_MINIMIZE
+    level_up_move 37, MOVE_LIGHT_SCREEN
+    level_up_move 42, MOVE_COSMIC_POWER
+    level_up_move 46, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Starmie:: @ 8257F14
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 1, MOVE_RAPID_SPIN
+    level_up_move 1, MOVE_RECOVER
+    level_up_move 1, MOVE_SWIFT
+    level_up_move 33, MOVE_CONFUSE_RAY
+    .2byte -1
+
+kLevelUpLearnset_MrMime:: @ 8257F20
+    level_up_move 1, MOVE_BARRIER
+    level_up_move 5, MOVE_CONFUSION
+    level_up_move 8, MOVE_SUBSTITUTE
+    level_up_move 12, MOVE_MEDITATE
+    level_up_move 15, MOVE_DOUBLE_SLAP
+    level_up_move 19, MOVE_LIGHT_SCREEN
+    level_up_move 19, MOVE_REFLECT
+    level_up_move 22, MOVE_MAGICAL_LEAF
+    level_up_move 26, MOVE_ENCORE
+    level_up_move 29, MOVE_PSYBEAM
+    level_up_move 33, MOVE_RECYCLE
+    level_up_move 36, MOVE_TRICK
+    level_up_move 40, MOVE_ROLE_PLAY
+    level_up_move 43, MOVE_PSYCHIC
+    level_up_move 47, MOVE_BATON_PASS
+    level_up_move 50, MOVE_SAFEGUARD
+    .2byte -1
+
+kLevelUpLearnset_Scyther:: @ 8257F42
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 1, MOVE_LEER
+    level_up_move 6, MOVE_FOCUS_ENERGY
+    level_up_move 11, MOVE_PURSUIT
+    level_up_move 16, MOVE_FALSE_SWIPE
+    level_up_move 21, MOVE_AGILITY
+    level_up_move 26, MOVE_WING_ATTACK
+    level_up_move 31, MOVE_SLASH
+    level_up_move 36, MOVE_SWORDS_DANCE
+    level_up_move 41, MOVE_DOUBLE_TEAM
+    level_up_move 46, MOVE_FURY_CUTTER
+    .2byte -1
+
+kLevelUpLearnset_Jynx:: @ 8257F5A
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_LICK
+    level_up_move 1, MOVE_LOVELY_KISS
+    level_up_move 1, MOVE_POWDER_SNOW
+    level_up_move 9, MOVE_LOVELY_KISS
+    level_up_move 13, MOVE_POWDER_SNOW
+    level_up_move 21, MOVE_DOUBLE_SLAP
+    level_up_move 25, MOVE_ICE_PUNCH
+    level_up_move 35, MOVE_MEAN_LOOK
+    level_up_move 41, MOVE_FAKE_TEARS
+    level_up_move 51, MOVE_BODY_SLAM
+    level_up_move 57, MOVE_PERISH_SONG
+    level_up_move 67, MOVE_BLIZZARD
+    .2byte -1
+
+kLevelUpLearnset_Electabuzz:: @ 8257F76
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_THUNDER_PUNCH
+    level_up_move 9, MOVE_THUNDER_PUNCH
+    level_up_move 17, MOVE_LIGHT_SCREEN
+    level_up_move 25, MOVE_SWIFT
+    level_up_move 36, MOVE_SCREECH
+    level_up_move 47, MOVE_THUNDERBOLT
+    level_up_move 58, MOVE_THUNDER
+    .2byte -1
+
+kLevelUpLearnset_Magmar:: @ 8257F8A
+    level_up_move 1, MOVE_EMBER
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_SMOG
+    level_up_move 1, MOVE_FIRE_PUNCH
+    level_up_move 7, MOVE_LEER
+    level_up_move 13, MOVE_SMOG
+    level_up_move 19, MOVE_FIRE_PUNCH
+    level_up_move 25, MOVE_SMOKESCREEN
+    level_up_move 33, MOVE_SUNNY_DAY
+    level_up_move 41, MOVE_FLAMETHROWER
+    level_up_move 49, MOVE_CONFUSE_RAY
+    level_up_move 57, MOVE_FIRE_BLAST
+    .2byte -1
+
+kLevelUpLearnset_Pinsir:: @ 8257FA4
+    level_up_move 1, MOVE_VICE_GRIP
+    level_up_move 1, MOVE_FOCUS_ENERGY
+    level_up_move 7, MOVE_BIND
+    level_up_move 13, MOVE_SEISMIC_TOSS
+    level_up_move 19, MOVE_HARDEN
+    level_up_move 25, MOVE_REVENGE
+    level_up_move 31, MOVE_BRICK_BREAK
+    level_up_move 37, MOVE_GUILLOTINE
+    level_up_move 43, MOVE_SUBMISSION
+    level_up_move 49, MOVE_SWORDS_DANCE
+    .2byte -1
+
+kLevelUpLearnset_Tauros:: @ 8257FBA
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 4, MOVE_RAGE
+    level_up_move 8, MOVE_HORN_ATTACK
+    level_up_move 13, MOVE_SCARY_FACE
+    level_up_move 19, MOVE_PURSUIT
+    level_up_move 26, MOVE_SWAGGER
+    level_up_move 34, MOVE_REST
+    level_up_move 43, MOVE_THRASH
+    level_up_move 53, MOVE_TAKE_DOWN
+    .2byte -1
+
+kLevelUpLearnset_Magikarp:: @ 8257FD0
+    level_up_move 1, MOVE_SPLASH
+    level_up_move 15, MOVE_TACKLE
+    level_up_move 30, MOVE_FLAIL
+    .2byte -1
+
+kLevelUpLearnset_Gyarados:: @ 8257FD8
+    level_up_move 1, MOVE_THRASH
+    level_up_move 20, MOVE_BITE
+    level_up_move 25, MOVE_DRAGON_RAGE
+    level_up_move 30, MOVE_LEER
+    level_up_move 35, MOVE_TWISTER
+    level_up_move 40, MOVE_HYDRO_PUMP
+    level_up_move 45, MOVE_RAIN_DANCE
+    level_up_move 50, MOVE_DRAGON_DANCE
+    level_up_move 55, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Lapras:: @ 8257FEC
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_SING
+    level_up_move 7, MOVE_MIST
+    level_up_move 13, MOVE_BODY_SLAM
+    level_up_move 19, MOVE_CONFUSE_RAY
+    level_up_move 25, MOVE_PERISH_SONG
+    level_up_move 31, MOVE_ICE_BEAM
+    level_up_move 37, MOVE_RAIN_DANCE
+    level_up_move 43, MOVE_SAFEGUARD
+    level_up_move 49, MOVE_HYDRO_PUMP
+    level_up_move 55, MOVE_SHEER_COLD
+    .2byte -1
+
+kLevelUpLearnset_Ditto:: @ 8258006
+    level_up_move 1, MOVE_TRANSFORM
+    .2byte -1
+
+kLevelUpLearnset_Eevee:: @ 825800A
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_HELPING_HAND
+    level_up_move 8, MOVE_SAND_ATTACK
+    level_up_move 16, MOVE_GROWL
+    level_up_move 23, MOVE_QUICK_ATTACK
+    level_up_move 30, MOVE_BITE
+    level_up_move 36, MOVE_BATON_PASS
+    level_up_move 42, MOVE_TAKE_DOWN
+    .2byte -1
+
+kLevelUpLearnset_Vaporeon:: @ 825801E
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_HELPING_HAND
+    level_up_move 8, MOVE_SAND_ATTACK
+    level_up_move 16, MOVE_WATER_GUN
+    level_up_move 23, MOVE_QUICK_ATTACK
+    level_up_move 30, MOVE_BITE
+    level_up_move 36, MOVE_AURORA_BEAM
+    level_up_move 42, MOVE_HAZE
+    level_up_move 47, MOVE_ACID_ARMOR
+    level_up_move 52, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Jolteon:: @ 8258036
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_HELPING_HAND
+    level_up_move 8, MOVE_SAND_ATTACK
+    level_up_move 16, MOVE_THUNDER_SHOCK
+    level_up_move 23, MOVE_QUICK_ATTACK
+    level_up_move 30, MOVE_DOUBLE_KICK
+    level_up_move 36, MOVE_PIN_MISSILE
+    level_up_move 42, MOVE_THUNDER_WAVE
+    level_up_move 47, MOVE_AGILITY
+    level_up_move 52, MOVE_THUNDER
+    .2byte -1
+
+kLevelUpLearnset_Flareon:: @ 825804E
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_HELPING_HAND
+    level_up_move 8, MOVE_SAND_ATTACK
+    level_up_move 16, MOVE_EMBER
+    level_up_move 23, MOVE_QUICK_ATTACK
+    level_up_move 30, MOVE_BITE
+    level_up_move 36, MOVE_FIRE_SPIN
+    level_up_move 42, MOVE_SMOG
+    level_up_move 47, MOVE_LEER
+    level_up_move 52, MOVE_FLAMETHROWER
+    .2byte -1
+
+kLevelUpLearnset_Porygon:: @ 8258066
+    level_up_move 1, MOVE_CONVERSION_2
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_CONVERSION
+    level_up_move 9, MOVE_AGILITY
+    level_up_move 12, MOVE_PSYBEAM
+    level_up_move 20, MOVE_RECOVER
+    level_up_move 24, MOVE_SHARPEN
+    level_up_move 32, MOVE_LOCK_ON
+    level_up_move 36, MOVE_TRI_ATTACK
+    level_up_move 44, MOVE_RECYCLE
+    level_up_move 48, MOVE_ZAP_CANNON
+    .2byte -1
+
+kLevelUpLearnset_Omanyte:: @ 825807E
+    level_up_move 1, MOVE_CONSTRICT
+    level_up_move 1, MOVE_WITHDRAW
+    level_up_move 13, MOVE_BITE
+    level_up_move 19, MOVE_WATER_GUN
+    level_up_move 25, MOVE_MUD_SHOT
+    level_up_move 31, MOVE_LEER
+    level_up_move 37, MOVE_PROTECT
+    level_up_move 43, MOVE_TICKLE
+    level_up_move 49, MOVE_ANCIENT_POWER
+    level_up_move 55, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Omastar:: @ 8258094
+    level_up_move 1, MOVE_CONSTRICT
+    level_up_move 1, MOVE_WITHDRAW
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 13, MOVE_BITE
+    level_up_move 19, MOVE_WATER_GUN
+    level_up_move 25, MOVE_MUD_SHOT
+    level_up_move 31, MOVE_LEER
+    level_up_move 37, MOVE_PROTECT
+    level_up_move 40, MOVE_SPIKE_CANNON
+    level_up_move 46, MOVE_TICKLE
+    level_up_move 55, MOVE_ANCIENT_POWER
+    level_up_move 65, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Kabuto:: @ 82580B0
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 13, MOVE_ABSORB
+    level_up_move 19, MOVE_LEER
+    level_up_move 25, MOVE_MUD_SHOT
+    level_up_move 31, MOVE_SAND_ATTACK
+    level_up_move 37, MOVE_ENDURE
+    level_up_move 43, MOVE_METAL_SOUND
+    level_up_move 49, MOVE_MEGA_DRAIN
+    level_up_move 55, MOVE_ANCIENT_POWER
+    .2byte -1
+
+kLevelUpLearnset_Kabutops:: @ 82580C6
+    level_up_move 1, MOVE_FURY_CUTTER
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 1, MOVE_LEER
+    level_up_move 13, MOVE_ABSORB
+    level_up_move 19, MOVE_LEER
+    level_up_move 25, MOVE_MUD_SHOT
+    level_up_move 31, MOVE_SAND_ATTACK
+    level_up_move 37, MOVE_ENDURE
+    level_up_move 40, MOVE_SLASH
+    level_up_move 46, MOVE_METAL_SOUND
+    level_up_move 55, MOVE_MEGA_DRAIN
+    level_up_move 65, MOVE_ANCIENT_POWER
+    .2byte -1
+
+kLevelUpLearnset_Aerodactyl:: @ 82580E4
+    level_up_move 1, MOVE_WING_ATTACK
+    level_up_move 8, MOVE_AGILITY
+    level_up_move 15, MOVE_BITE
+    level_up_move 22, MOVE_SUPERSONIC
+    level_up_move 29, MOVE_ANCIENT_POWER
+    level_up_move 36, MOVE_SCARY_FACE
+    level_up_move 43, MOVE_TAKE_DOWN
+    level_up_move 50, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Snorlax:: @ 82580F6
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 5, MOVE_AMNESIA
+    level_up_move 9, MOVE_DEFENSE_CURL
+    level_up_move 13, MOVE_BELLY_DRUM
+    level_up_move 17, MOVE_HEADBUTT
+    level_up_move 21, MOVE_YAWN
+    level_up_move 25, MOVE_REST
+    level_up_move 29, MOVE_SNORE
+    level_up_move 33, MOVE_BODY_SLAM
+    level_up_move 37, MOVE_SLEEP_TALK
+    level_up_move 41, MOVE_BLOCK
+    level_up_move 45, MOVE_COVET
+    level_up_move 49, MOVE_ROLLOUT
+    level_up_move 53, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Articuno:: @ 8258114
+    level_up_move 1, MOVE_GUST
+    level_up_move 1, MOVE_POWDER_SNOW
+    level_up_move 13, MOVE_MIST
+    level_up_move 25, MOVE_AGILITY
+    level_up_move 37, MOVE_MIND_READER
+    level_up_move 49, MOVE_ICE_BEAM
+    level_up_move 61, MOVE_REFLECT
+    level_up_move 73, MOVE_BLIZZARD
+    level_up_move 85, MOVE_SHEER_COLD
+    .2byte -1
+
+kLevelUpLearnset_Zapdos:: @ 8258128
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_THUNDER_SHOCK
+    level_up_move 13, MOVE_THUNDER_WAVE
+    level_up_move 25, MOVE_AGILITY
+    level_up_move 37, MOVE_DETECT
+    level_up_move 49, MOVE_DRILL_PECK
+    level_up_move 61, MOVE_CHARGE
+    level_up_move 73, MOVE_LIGHT_SCREEN
+    level_up_move 85, MOVE_THUNDER
+    .2byte -1
+
+kLevelUpLearnset_Moltres:: @ 825813C
+    level_up_move 1, MOVE_WING_ATTACK
+    level_up_move 1, MOVE_EMBER
+    level_up_move 13, MOVE_FIRE_SPIN
+    level_up_move 25, MOVE_AGILITY
+    level_up_move 37, MOVE_ENDURE
+    level_up_move 49, MOVE_FLAMETHROWER
+    level_up_move 61, MOVE_SAFEGUARD
+    level_up_move 73, MOVE_HEAT_WAVE
+    level_up_move 85, MOVE_SKY_ATTACK
+    .2byte -1
+
+kLevelUpLearnset_Dratini:: @ 8258150
+    level_up_move 1, MOVE_WRAP
+    level_up_move 1, MOVE_LEER
+    level_up_move 8, MOVE_THUNDER_WAVE
+    level_up_move 15, MOVE_TWISTER
+    level_up_move 22, MOVE_DRAGON_RAGE
+    level_up_move 29, MOVE_SLAM
+    level_up_move 36, MOVE_AGILITY
+    level_up_move 43, MOVE_SAFEGUARD
+    level_up_move 50, MOVE_OUTRAGE
+    level_up_move 57, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Dragonair:: @ 8258166
+    level_up_move 1, MOVE_WRAP
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_THUNDER_WAVE
+    level_up_move 1, MOVE_TWISTER
+    level_up_move 8, MOVE_THUNDER_WAVE
+    level_up_move 15, MOVE_TWISTER
+    level_up_move 22, MOVE_DRAGON_RAGE
+    level_up_move 29, MOVE_SLAM
+    level_up_move 38, MOVE_AGILITY
+    level_up_move 47, MOVE_SAFEGUARD
+    level_up_move 56, MOVE_OUTRAGE
+    level_up_move 65, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Dragonite:: @ 8258180
+    level_up_move 1, MOVE_WRAP
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_THUNDER_WAVE
+    level_up_move 1, MOVE_TWISTER
+    level_up_move 8, MOVE_THUNDER_WAVE
+    level_up_move 15, MOVE_TWISTER
+    level_up_move 22, MOVE_DRAGON_RAGE
+    level_up_move 29, MOVE_SLAM
+    level_up_move 38, MOVE_AGILITY
+    level_up_move 47, MOVE_SAFEGUARD
+    level_up_move 55, MOVE_WING_ATTACK
+    level_up_move 61, MOVE_OUTRAGE
+    level_up_move 75, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Mewtwo:: @ 825819C
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 1, MOVE_DISABLE
+    level_up_move 11, MOVE_BARRIER
+    level_up_move 22, MOVE_MIST
+    level_up_move 33, MOVE_SWIFT
+    level_up_move 44, MOVE_RECOVER
+    level_up_move 55, MOVE_SAFEGUARD
+    level_up_move 66, MOVE_PSYCHIC
+    level_up_move 77, MOVE_PSYCH_UP
+    level_up_move 88, MOVE_FUTURE_SIGHT
+    level_up_move 99, MOVE_AMNESIA
+    .2byte -1
+
+kLevelUpLearnset_Mew:: @ 82581B4
+    level_up_move 1, MOVE_POUND
+    level_up_move 10, MOVE_TRANSFORM
+    level_up_move 20, MOVE_MEGA_PUNCH
+    level_up_move 30, MOVE_METRONOME
+    level_up_move 40, MOVE_PSYCHIC
+    level_up_move 50, MOVE_ANCIENT_POWER
+    .2byte -1
+
+kLevelUpLearnset_Chikorita:: @ 82581C2
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 8, MOVE_RAZOR_LEAF
+    level_up_move 12, MOVE_REFLECT
+    level_up_move 15, MOVE_POISON_POWDER
+    level_up_move 22, MOVE_SYNTHESIS
+    level_up_move 29, MOVE_BODY_SLAM
+    level_up_move 36, MOVE_LIGHT_SCREEN
+    level_up_move 43, MOVE_SAFEGUARD
+    level_up_move 50, MOVE_SOLAR_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Bayleef:: @ 82581D8
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_RAZOR_LEAF
+    level_up_move 1, MOVE_REFLECT
+    level_up_move 8, MOVE_RAZOR_LEAF
+    level_up_move 12, MOVE_REFLECT
+    level_up_move 15, MOVE_POISON_POWDER
+    level_up_move 23, MOVE_SYNTHESIS
+    level_up_move 31, MOVE_BODY_SLAM
+    level_up_move 39, MOVE_LIGHT_SCREEN
+    level_up_move 47, MOVE_SAFEGUARD
+    level_up_move 55, MOVE_SOLAR_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Meganium:: @ 82581F2
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_RAZOR_LEAF
+    level_up_move 1, MOVE_REFLECT
+    level_up_move 8, MOVE_RAZOR_LEAF
+    level_up_move 12, MOVE_REFLECT
+    level_up_move 15, MOVE_POISON_POWDER
+    level_up_move 23, MOVE_SYNTHESIS
+    level_up_move 31, MOVE_BODY_SLAM
+    level_up_move 41, MOVE_LIGHT_SCREEN
+    level_up_move 51, MOVE_SAFEGUARD
+    level_up_move 61, MOVE_SOLAR_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Cyndaquil:: @ 825820C
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_LEER
+    level_up_move 6, MOVE_SMOKESCREEN
+    level_up_move 12, MOVE_EMBER
+    level_up_move 19, MOVE_QUICK_ATTACK
+    level_up_move 27, MOVE_FLAME_WHEEL
+    level_up_move 36, MOVE_SWIFT
+    level_up_move 46, MOVE_FLAMETHROWER
+    .2byte -1
+
+kLevelUpLearnset_Quilava:: @ 825821E
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_SMOKESCREEN
+    level_up_move 6, MOVE_SMOKESCREEN
+    level_up_move 12, MOVE_EMBER
+    level_up_move 21, MOVE_QUICK_ATTACK
+    level_up_move 31, MOVE_FLAME_WHEEL
+    level_up_move 42, MOVE_SWIFT
+    level_up_move 54, MOVE_FLAMETHROWER
+    .2byte -1
+
+kLevelUpLearnset_Typhlosion:: @ 8258232
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_SMOKESCREEN
+    level_up_move 1, MOVE_EMBER
+    level_up_move 6, MOVE_SMOKESCREEN
+    level_up_move 12, MOVE_EMBER
+    level_up_move 21, MOVE_QUICK_ATTACK
+    level_up_move 31, MOVE_FLAME_WHEEL
+    level_up_move 45, MOVE_SWIFT
+    level_up_move 60, MOVE_FLAMETHROWER
+    .2byte -1
+
+kLevelUpLearnset_Totodile:: @ 8258248
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_LEER
+    level_up_move 7, MOVE_RAGE
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 20, MOVE_BITE
+    level_up_move 27, MOVE_SCARY_FACE
+    level_up_move 35, MOVE_SLASH
+    level_up_move 43, MOVE_SCREECH
+    level_up_move 52, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Croconaw:: @ 825825C
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_RAGE
+    level_up_move 7, MOVE_RAGE
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 21, MOVE_BITE
+    level_up_move 28, MOVE_SCARY_FACE
+    level_up_move 37, MOVE_SLASH
+    level_up_move 45, MOVE_SCREECH
+    level_up_move 55, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Feraligatr:: @ 8258272
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_RAGE
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 7, MOVE_RAGE
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 21, MOVE_BITE
+    level_up_move 28, MOVE_SCARY_FACE
+    level_up_move 38, MOVE_SLASH
+    level_up_move 47, MOVE_SCREECH
+    level_up_move 58, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Sentret:: @ 825828A
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 4, MOVE_DEFENSE_CURL
+    level_up_move 7, MOVE_QUICK_ATTACK
+    level_up_move 12, MOVE_FURY_SWIPES
+    level_up_move 17, MOVE_HELPING_HAND
+    level_up_move 24, MOVE_SLAM
+    level_up_move 31, MOVE_FOLLOW_ME
+    level_up_move 40, MOVE_REST
+    level_up_move 49, MOVE_AMNESIA
+    .2byte -1
+
+kLevelUpLearnset_Furret:: @ 825829E
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_DEFENSE_CURL
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 4, MOVE_DEFENSE_CURL
+    level_up_move 7, MOVE_QUICK_ATTACK
+    level_up_move 12, MOVE_FURY_SWIPES
+    level_up_move 19, MOVE_HELPING_HAND
+    level_up_move 28, MOVE_SLAM
+    level_up_move 37, MOVE_FOLLOW_ME
+    level_up_move 48, MOVE_REST
+    level_up_move 59, MOVE_AMNESIA
+    .2byte -1
+
+kLevelUpLearnset_Hoothoot:: @ 82582B6
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 6, MOVE_FORESIGHT
+    level_up_move 11, MOVE_PECK
+    level_up_move 16, MOVE_HYPNOSIS
+    level_up_move 22, MOVE_REFLECT
+    level_up_move 28, MOVE_TAKE_DOWN
+    level_up_move 34, MOVE_CONFUSION
+    level_up_move 48, MOVE_DREAM_EATER
+    .2byte -1
+
+kLevelUpLearnset_Noctowl:: @ 82582CA
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_FORESIGHT
+    level_up_move 1, MOVE_PECK
+    level_up_move 6, MOVE_FORESIGHT
+    level_up_move 11, MOVE_PECK
+    level_up_move 16, MOVE_HYPNOSIS
+    level_up_move 25, MOVE_REFLECT
+    level_up_move 33, MOVE_TAKE_DOWN
+    level_up_move 41, MOVE_CONFUSION
+    level_up_move 57, MOVE_DREAM_EATER
+    .2byte -1
+
+kLevelUpLearnset_Ledyba:: @ 82582E2
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 8, MOVE_SUPERSONIC
+    level_up_move 15, MOVE_COMET_PUNCH
+    level_up_move 22, MOVE_LIGHT_SCREEN
+    level_up_move 22, MOVE_REFLECT
+    level_up_move 22, MOVE_SAFEGUARD
+    level_up_move 29, MOVE_BATON_PASS
+    level_up_move 36, MOVE_SWIFT
+    level_up_move 43, MOVE_AGILITY
+    level_up_move 50, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Ledian:: @ 82582F8
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_SUPERSONIC
+    level_up_move 8, MOVE_SUPERSONIC
+    level_up_move 15, MOVE_COMET_PUNCH
+    level_up_move 24, MOVE_LIGHT_SCREEN
+    level_up_move 24, MOVE_REFLECT
+    level_up_move 24, MOVE_SAFEGUARD
+    level_up_move 33, MOVE_BATON_PASS
+    level_up_move 42, MOVE_SWIFT
+    level_up_move 51, MOVE_AGILITY
+    level_up_move 60, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Spinarak:: @ 8258310
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 1, MOVE_STRING_SHOT
+    level_up_move 6, MOVE_SCARY_FACE
+    level_up_move 11, MOVE_CONSTRICT
+    level_up_move 17, MOVE_NIGHT_SHADE
+    level_up_move 23, MOVE_LEECH_LIFE
+    level_up_move 30, MOVE_FURY_SWIPES
+    level_up_move 37, MOVE_SPIDER_WEB
+    level_up_move 45, MOVE_AGILITY
+    level_up_move 53, MOVE_PSYCHIC
+    .2byte -1
+
+kLevelUpLearnset_Ariados:: @ 8258326
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 1, MOVE_STRING_SHOT
+    level_up_move 1, MOVE_SCARY_FACE
+    level_up_move 1, MOVE_CONSTRICT
+    level_up_move 6, MOVE_SCARY_FACE
+    level_up_move 11, MOVE_CONSTRICT
+    level_up_move 17, MOVE_NIGHT_SHADE
+    level_up_move 25, MOVE_LEECH_LIFE
+    level_up_move 34, MOVE_FURY_SWIPES
+    level_up_move 43, MOVE_SPIDER_WEB
+    level_up_move 53, MOVE_AGILITY
+    level_up_move 63, MOVE_PSYCHIC
+    .2byte -1
+
+kLevelUpLearnset_Crobat:: @ 8258340
+    level_up_move 1, MOVE_SCREECH
+    level_up_move 1, MOVE_LEECH_LIFE
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 1, MOVE_SUPERSONIC
+    level_up_move 6, MOVE_ASTONISH
+    level_up_move 11, MOVE_SUPERSONIC
+    level_up_move 16, MOVE_BITE
+    level_up_move 21, MOVE_WING_ATTACK
+    level_up_move 28, MOVE_CONFUSE_RAY
+    level_up_move 35, MOVE_AIR_CUTTER
+    level_up_move 42, MOVE_MEAN_LOOK
+    level_up_move 49, MOVE_POISON_FANG
+    level_up_move 56, MOVE_HAZE
+    .2byte -1
+
+kLevelUpLearnset_Chinchou:: @ 825835C
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 1, MOVE_THUNDER_WAVE
+    level_up_move 5, MOVE_SUPERSONIC
+    level_up_move 13, MOVE_FLAIL
+    level_up_move 17, MOVE_WATER_GUN
+    level_up_move 25, MOVE_SPARK
+    level_up_move 29, MOVE_CONFUSE_RAY
+    level_up_move 37, MOVE_TAKE_DOWN
+    level_up_move 41, MOVE_HYDRO_PUMP
+    level_up_move 49, MOVE_CHARGE
+    .2byte -1
+
+kLevelUpLearnset_Lanturn:: @ 8258372
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 1, MOVE_THUNDER_WAVE
+    level_up_move 1, MOVE_SUPERSONIC
+    level_up_move 5, MOVE_SUPERSONIC
+    level_up_move 13, MOVE_FLAIL
+    level_up_move 17, MOVE_WATER_GUN
+    level_up_move 25, MOVE_SPARK
+    level_up_move 32, MOVE_CONFUSE_RAY
+    level_up_move 43, MOVE_TAKE_DOWN
+    level_up_move 50, MOVE_HYDRO_PUMP
+    level_up_move 61, MOVE_CHARGE
+    .2byte -1
+
+kLevelUpLearnset_Pichu:: @ 825838A
+    level_up_move 1, MOVE_THUNDER_SHOCK
+    level_up_move 1, MOVE_CHARM
+    level_up_move 6, MOVE_TAIL_WHIP
+    level_up_move 8, MOVE_THUNDER_WAVE
+    level_up_move 11, MOVE_SWEET_KISS
+    .2byte -1
+
+kLevelUpLearnset_Cleffa:: @ 8258396
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_CHARM
+    level_up_move 4, MOVE_ENCORE
+    level_up_move 8, MOVE_SING
+    level_up_move 13, MOVE_SWEET_KISS
+    level_up_move 17, MOVE_MAGICAL_LEAF
+    .2byte -1
+
+kLevelUpLearnset_Igglybuff:: @ 82583A4
+    level_up_move 1, MOVE_SING
+    level_up_move 1, MOVE_CHARM
+    level_up_move 4, MOVE_DEFENSE_CURL
+    level_up_move 9, MOVE_POUND
+    level_up_move 14, MOVE_SWEET_KISS
+    .2byte -1
+
+kLevelUpLearnset_Togepi:: @ 82583B0
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_CHARM
+    level_up_move 4, MOVE_METRONOME
+    level_up_move 9, MOVE_SWEET_KISS
+    level_up_move 13, MOVE_YAWN
+    level_up_move 17, MOVE_ENCORE
+    level_up_move 21, MOVE_ANCIENT_POWER
+    level_up_move 25, MOVE_FOLLOW_ME
+    level_up_move 29, MOVE_WISH
+    level_up_move 33, MOVE_SAFEGUARD
+    level_up_move 37, MOVE_DOUBLE_EDGE
+    level_up_move 41, MOVE_BATON_PASS
+    .2byte -1
+
+kLevelUpLearnset_Togetic:: @ 82583CA
+    level_up_move 1, MOVE_MAGICAL_LEAF
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_CHARM
+    level_up_move 1, MOVE_METRONOME
+    level_up_move 1, MOVE_SWEET_KISS
+    level_up_move 4, MOVE_METRONOME
+    level_up_move 9, MOVE_SWEET_KISS
+    level_up_move 13, MOVE_YAWN
+    level_up_move 17, MOVE_ENCORE
+    level_up_move 21, MOVE_ANCIENT_POWER
+    level_up_move 25, MOVE_FOLLOW_ME
+    level_up_move 29, MOVE_WISH
+    level_up_move 33, MOVE_SAFEGUARD
+    level_up_move 37, MOVE_DOUBLE_EDGE
+    level_up_move 41, MOVE_BATON_PASS
+    .2byte -1
+
+kLevelUpLearnset_Natu:: @ 82583EA
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_LEER
+    level_up_move 10, MOVE_NIGHT_SHADE
+    level_up_move 20, MOVE_TELEPORT
+    level_up_move 30, MOVE_WISH
+    level_up_move 30, MOVE_FUTURE_SIGHT
+    level_up_move 40, MOVE_CONFUSE_RAY
+    level_up_move 50, MOVE_PSYCHIC
+    .2byte -1
+
+kLevelUpLearnset_Xatu:: @ 82583FC
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_LEER
+    level_up_move 10, MOVE_NIGHT_SHADE
+    level_up_move 20, MOVE_TELEPORT
+    level_up_move 35, MOVE_WISH
+    level_up_move 35, MOVE_FUTURE_SIGHT
+    level_up_move 50, MOVE_CONFUSE_RAY
+    level_up_move 65, MOVE_PSYCHIC
+    .2byte -1
+
+kLevelUpLearnset_Mareep:: @ 825840E
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 9, MOVE_THUNDER_SHOCK
+    level_up_move 16, MOVE_THUNDER_WAVE
+    level_up_move 23, MOVE_COTTON_SPORE
+    level_up_move 30, MOVE_LIGHT_SCREEN
+    level_up_move 37, MOVE_THUNDER
+    .2byte -1
+
+kLevelUpLearnset_Flaaffy:: @ 825841E
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_THUNDER_SHOCK
+    level_up_move 9, MOVE_THUNDER_SHOCK
+    level_up_move 18, MOVE_THUNDER_WAVE
+    level_up_move 27, MOVE_COTTON_SPORE
+    level_up_move 36, MOVE_LIGHT_SCREEN
+    level_up_move 45, MOVE_THUNDER
+    .2byte -1
+
+kLevelUpLearnset_Ampharos:: @ 8258430
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_THUNDER_SHOCK
+    level_up_move 1, MOVE_THUNDER_WAVE
+    level_up_move 9, MOVE_THUNDER_SHOCK
+    level_up_move 18, MOVE_THUNDER_WAVE
+    level_up_move 27, MOVE_COTTON_SPORE
+    level_up_move 30, MOVE_THUNDER_PUNCH
+    level_up_move 42, MOVE_LIGHT_SCREEN
+    level_up_move 57, MOVE_THUNDER
+    .2byte -1
+
+kLevelUpLearnset_Bellossom:: @ 8258446
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 1, MOVE_SWEET_SCENT
+    level_up_move 1, MOVE_STUN_SPORE
+    level_up_move 1, MOVE_MAGICAL_LEAF
+    level_up_move 44, MOVE_PETAL_DANCE
+    level_up_move 55, MOVE_SOLAR_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Marill:: @ 8258454
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 3, MOVE_DEFENSE_CURL
+    level_up_move 6, MOVE_TAIL_WHIP
+    level_up_move 10, MOVE_WATER_GUN
+    level_up_move 15, MOVE_ROLLOUT
+    level_up_move 21, MOVE_BUBBLE_BEAM
+    level_up_move 28, MOVE_DOUBLE_EDGE
+    level_up_move 36, MOVE_RAIN_DANCE
+    level_up_move 45, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Azumarill:: @ 8258468
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_DEFENSE_CURL
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 3, MOVE_DEFENSE_CURL
+    level_up_move 6, MOVE_TAIL_WHIP
+    level_up_move 10, MOVE_WATER_GUN
+    level_up_move 15, MOVE_ROLLOUT
+    level_up_move 24, MOVE_BUBBLE_BEAM
+    level_up_move 34, MOVE_DOUBLE_EDGE
+    level_up_move 45, MOVE_RAIN_DANCE
+    level_up_move 57, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Sudowoodo:: @ 8258482
+    level_up_move 1, MOVE_ROCK_THROW
+    level_up_move 1, MOVE_MIMIC
+    level_up_move 9, MOVE_FLAIL
+    level_up_move 17, MOVE_LOW_KICK
+    level_up_move 25, MOVE_ROCK_SLIDE
+    level_up_move 33, MOVE_BLOCK
+    level_up_move 41, MOVE_FAINT_ATTACK
+    level_up_move 49, MOVE_SLAM
+    level_up_move 57, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Politoed:: @ 8258496
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 1, MOVE_HYPNOSIS
+    level_up_move 1, MOVE_DOUBLE_SLAP
+    level_up_move 1, MOVE_PERISH_SONG
+    level_up_move 35, MOVE_PERISH_SONG
+    level_up_move 51, MOVE_SWAGGER
+    .2byte -1
+
+kLevelUpLearnset_Hoppip:: @ 82584A4
+    level_up_move 1, MOVE_SPLASH
+    level_up_move 5, MOVE_SYNTHESIS
+    level_up_move 5, MOVE_TAIL_WHIP
+    level_up_move 10, MOVE_TACKLE
+    level_up_move 13, MOVE_POISON_POWDER
+    level_up_move 15, MOVE_STUN_SPORE
+    level_up_move 17, MOVE_SLEEP_POWDER
+    level_up_move 20, MOVE_LEECH_SEED
+    level_up_move 25, MOVE_COTTON_SPORE
+    level_up_move 30, MOVE_MEGA_DRAIN
+    .2byte -1
+
+kLevelUpLearnset_Skiploom:: @ 82584BA
+    level_up_move 1, MOVE_SPLASH
+    level_up_move 1, MOVE_SYNTHESIS
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 5, MOVE_SYNTHESIS
+    level_up_move 5, MOVE_TAIL_WHIP
+    level_up_move 10, MOVE_TACKLE
+    level_up_move 13, MOVE_POISON_POWDER
+    level_up_move 15, MOVE_STUN_SPORE
+    level_up_move 17, MOVE_SLEEP_POWDER
+    level_up_move 22, MOVE_LEECH_SEED
+    level_up_move 29, MOVE_COTTON_SPORE
+    level_up_move 36, MOVE_MEGA_DRAIN
+    .2byte -1
+
+kLevelUpLearnset_Jumpluff:: @ 82584D6
+    level_up_move 1, MOVE_SPLASH
+    level_up_move 1, MOVE_SYNTHESIS
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 5, MOVE_SYNTHESIS
+    level_up_move 5, MOVE_TAIL_WHIP
+    level_up_move 10, MOVE_TACKLE
+    level_up_move 13, MOVE_POISON_POWDER
+    level_up_move 15, MOVE_STUN_SPORE
+    level_up_move 17, MOVE_SLEEP_POWDER
+    level_up_move 22, MOVE_LEECH_SEED
+    level_up_move 33, MOVE_COTTON_SPORE
+    level_up_move 44, MOVE_MEGA_DRAIN
+    .2byte -1
+
+kLevelUpLearnset_Aipom:: @ 82584F2
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 6, MOVE_SAND_ATTACK
+    level_up_move 13, MOVE_ASTONISH
+    level_up_move 18, MOVE_BATON_PASS
+    level_up_move 25, MOVE_TICKLE
+    level_up_move 31, MOVE_FURY_SWIPES
+    level_up_move 38, MOVE_SWIFT
+    level_up_move 43, MOVE_SCREECH
+    level_up_move 50, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Sunkern:: @ 8258508
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 6, MOVE_GROWTH
+    level_up_move 13, MOVE_MEGA_DRAIN
+    level_up_move 18, MOVE_INGRAIN
+    level_up_move 25, MOVE_ENDEAVOR
+    level_up_move 30, MOVE_SUNNY_DAY
+    level_up_move 37, MOVE_SYNTHESIS
+    level_up_move 42, MOVE_GIGA_DRAIN
+    .2byte -1
+
+kLevelUpLearnset_Sunflora:: @ 825851A
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 1, MOVE_POUND
+    level_up_move 6, MOVE_GROWTH
+    level_up_move 13, MOVE_RAZOR_LEAF
+    level_up_move 18, MOVE_INGRAIN
+    level_up_move 25, MOVE_BULLET_SEED
+    level_up_move 30, MOVE_SUNNY_DAY
+    level_up_move 37, MOVE_PETAL_DANCE
+    level_up_move 42, MOVE_SOLAR_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Yanma:: @ 825852E
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_FORESIGHT
+    level_up_move 6, MOVE_QUICK_ATTACK
+    level_up_move 12, MOVE_DOUBLE_TEAM
+    level_up_move 17, MOVE_SONIC_BOOM
+    level_up_move 23, MOVE_HYPNOSIS
+    level_up_move 28, MOVE_DETECT
+    level_up_move 34, MOVE_UPROAR
+    level_up_move 39, MOVE_WING_ATTACK
+    level_up_move 45, MOVE_SUPERSONIC
+    level_up_move 50, MOVE_SCREECH
+    .2byte -1
+
+kLevelUpLearnset_Wooper:: @ 8258546
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 11, MOVE_SLAM
+    level_up_move 16, MOVE_MUD_SHOT
+    level_up_move 21, MOVE_AMNESIA
+    level_up_move 31, MOVE_YAWN
+    level_up_move 36, MOVE_EARTHQUAKE
+    level_up_move 41, MOVE_RAIN_DANCE
+    level_up_move 51, MOVE_MIST
+    level_up_move 51, MOVE_HAZE
+    .2byte -1
+
+kLevelUpLearnset_Quagsire:: @ 825855C
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 11, MOVE_SLAM
+    level_up_move 16, MOVE_MUD_SHOT
+    level_up_move 23, MOVE_AMNESIA
+    level_up_move 35, MOVE_YAWN
+    level_up_move 42, MOVE_EARTHQUAKE
+    level_up_move 49, MOVE_RAIN_DANCE
+    level_up_move 61, MOVE_MIST
+    level_up_move 61, MOVE_HAZE
+    .2byte -1
+
+kLevelUpLearnset_Espeon:: @ 8258572
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_HELPING_HAND
+    level_up_move 8, MOVE_SAND_ATTACK
+    level_up_move 16, MOVE_CONFUSION
+    level_up_move 23, MOVE_QUICK_ATTACK
+    level_up_move 30, MOVE_SWIFT
+    level_up_move 36, MOVE_PSYBEAM
+    level_up_move 42, MOVE_PSYCH_UP
+    level_up_move 47, MOVE_PSYCHIC
+    level_up_move 52, MOVE_MORNING_SUN
+    .2byte -1
+
+kLevelUpLearnset_Umbreon:: @ 825858A
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_HELPING_HAND
+    level_up_move 8, MOVE_SAND_ATTACK
+    level_up_move 16, MOVE_PURSUIT
+    level_up_move 23, MOVE_QUICK_ATTACK
+    level_up_move 30, MOVE_CONFUSE_RAY
+    level_up_move 36, MOVE_FAINT_ATTACK
+    level_up_move 42, MOVE_MEAN_LOOK
+    level_up_move 47, MOVE_SCREECH
+    level_up_move 52, MOVE_MOONLIGHT
+    .2byte -1
+
+kLevelUpLearnset_Murkrow:: @ 82585A2
+    level_up_move 1, MOVE_PECK
+    level_up_move 9, MOVE_ASTONISH
+    level_up_move 14, MOVE_PURSUIT
+    level_up_move 22, MOVE_HAZE
+    level_up_move 27, MOVE_NIGHT_SHADE
+    level_up_move 35, MOVE_FAINT_ATTACK
+    level_up_move 40, MOVE_TAUNT
+    level_up_move 48, MOVE_MEAN_LOOK
+    .2byte -1
+
+kLevelUpLearnset_Slowking:: @ 82585B4
+    level_up_move 1, MOVE_CURSE
+    level_up_move 1, MOVE_YAWN
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 6, MOVE_GROWL
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 17, MOVE_CONFUSION
+    level_up_move 24, MOVE_DISABLE
+    level_up_move 29, MOVE_HEADBUTT
+    level_up_move 36, MOVE_SWAGGER
+    level_up_move 40, MOVE_PSYCHIC
+    level_up_move 47, MOVE_PSYCH_UP
+    .2byte -1
+
+kLevelUpLearnset_Misdreavus:: @ 82585CC
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_PSYWAVE
+    level_up_move 6, MOVE_SPITE
+    level_up_move 11, MOVE_ASTONISH
+    level_up_move 17, MOVE_CONFUSE_RAY
+    level_up_move 23, MOVE_MEAN_LOOK
+    level_up_move 30, MOVE_PSYBEAM
+    level_up_move 37, MOVE_PAIN_SPLIT
+    level_up_move 45, MOVE_PERISH_SONG
+    level_up_move 53, MOVE_GRUDGE
+    .2byte -1
+
+kLevelUpLearnset_Unown:: @ 82585E2
+    level_up_move 1, MOVE_HIDDEN_POWER
+    .2byte -1
+
+kLevelUpLearnset_Wobbuffet:: @ 82585E6
+    level_up_move 1, MOVE_COUNTER
+    level_up_move 1, MOVE_MIRROR_COAT
+    level_up_move 1, MOVE_SAFEGUARD
+    level_up_move 1, MOVE_DESTINY_BOND
+    .2byte -1
+
+kLevelUpLearnset_Girafarig:: @ 82585F0
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 7, MOVE_ASTONISH
+    level_up_move 13, MOVE_CONFUSION
+    level_up_move 19, MOVE_STOMP
+    level_up_move 25, MOVE_ODOR_SLEUTH
+    level_up_move 31, MOVE_AGILITY
+    level_up_move 37, MOVE_BATON_PASS
+    level_up_move 43, MOVE_PSYBEAM
+    level_up_move 49, MOVE_CRUNCH
+    .2byte -1
+
+kLevelUpLearnset_Pineco:: @ 8258606
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_PROTECT
+    level_up_move 8, MOVE_SELF_DESTRUCT
+    level_up_move 15, MOVE_TAKE_DOWN
+    level_up_move 22, MOVE_RAPID_SPIN
+    level_up_move 29, MOVE_BIDE
+    level_up_move 36, MOVE_EXPLOSION
+    level_up_move 43, MOVE_SPIKES
+    level_up_move 50, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Forretress:: @ 825861A
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_PROTECT
+    level_up_move 1, MOVE_SELF_DESTRUCT
+    level_up_move 8, MOVE_SELF_DESTRUCT
+    level_up_move 15, MOVE_TAKE_DOWN
+    level_up_move 22, MOVE_RAPID_SPIN
+    level_up_move 29, MOVE_BIDE
+    level_up_move 31, MOVE_ZAP_CANNON
+    level_up_move 39, MOVE_EXPLOSION
+    level_up_move 49, MOVE_SPIKES
+    level_up_move 59, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Dunsparce:: @ 8258632
+    level_up_move 1, MOVE_RAGE
+    level_up_move 4, MOVE_DEFENSE_CURL
+    level_up_move 11, MOVE_YAWN
+    level_up_move 14, MOVE_GLARE
+    level_up_move 21, MOVE_ROLLOUT
+    level_up_move 24, MOVE_SPITE
+    level_up_move 31, MOVE_PURSUIT
+    level_up_move 34, MOVE_SCREECH
+    level_up_move 41, MOVE_TAKE_DOWN
+    level_up_move 44, MOVE_FLAIL
+    level_up_move 51, MOVE_ENDEAVOR
+    .2byte -1
+
+kLevelUpLearnset_Gligar:: @ 825864A
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 6, MOVE_SAND_ATTACK
+    level_up_move 13, MOVE_HARDEN
+    level_up_move 20, MOVE_QUICK_ATTACK
+    level_up_move 28, MOVE_FAINT_ATTACK
+    level_up_move 36, MOVE_SLASH
+    level_up_move 44, MOVE_SCREECH
+    level_up_move 52, MOVE_GUILLOTINE
+    .2byte -1
+
+kLevelUpLearnset_Steelix:: @ 825865C
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_SCREECH
+    level_up_move 8, MOVE_BIND
+    level_up_move 12, MOVE_ROCK_THROW
+    level_up_move 19, MOVE_HARDEN
+    level_up_move 23, MOVE_RAGE
+    level_up_move 30, MOVE_DRAGON_BREATH
+    level_up_move 34, MOVE_SANDSTORM
+    level_up_move 41, MOVE_SLAM
+    level_up_move 45, MOVE_IRON_TAIL
+    level_up_move 52, MOVE_CRUNCH
+    level_up_move 56, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Snubbull:: @ 8258676
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_SCARY_FACE
+    level_up_move 4, MOVE_TAIL_WHIP
+    level_up_move 8, MOVE_CHARM
+    level_up_move 13, MOVE_BITE
+    level_up_move 19, MOVE_LICK
+    level_up_move 26, MOVE_ROAR
+    level_up_move 34, MOVE_RAGE
+    level_up_move 43, MOVE_TAKE_DOWN
+    level_up_move 53, MOVE_CRUNCH
+    .2byte -1
+
+kLevelUpLearnset_Granbull:: @ 825868C
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_SCARY_FACE
+    level_up_move 4, MOVE_TAIL_WHIP
+    level_up_move 8, MOVE_CHARM
+    level_up_move 13, MOVE_BITE
+    level_up_move 19, MOVE_LICK
+    level_up_move 28, MOVE_ROAR
+    level_up_move 38, MOVE_RAGE
+    level_up_move 49, MOVE_TAKE_DOWN
+    level_up_move 61, MOVE_CRUNCH
+    .2byte -1
+
+kLevelUpLearnset_Qwilfish:: @ 82586A2
+    level_up_move 1, MOVE_SPIKES
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 9, MOVE_HARDEN
+    level_up_move 9, MOVE_MINIMIZE
+    level_up_move 13, MOVE_WATER_GUN
+    level_up_move 21, MOVE_PIN_MISSILE
+    level_up_move 25, MOVE_REVENGE
+    level_up_move 33, MOVE_TAKE_DOWN
+    level_up_move 37, MOVE_HYDRO_PUMP
+    level_up_move 45, MOVE_DESTINY_BOND
+    .2byte -1
+
+kLevelUpLearnset_Scizor:: @ 82586BA
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 1, MOVE_LEER
+    level_up_move 6, MOVE_FOCUS_ENERGY
+    level_up_move 11, MOVE_PURSUIT
+    level_up_move 16, MOVE_FALSE_SWIPE
+    level_up_move 21, MOVE_AGILITY
+    level_up_move 26, MOVE_METAL_CLAW
+    level_up_move 31, MOVE_SLASH
+    level_up_move 36, MOVE_SWORDS_DANCE
+    level_up_move 41, MOVE_IRON_DEFENSE
+    level_up_move 46, MOVE_FURY_CUTTER
+    .2byte -1
+
+kLevelUpLearnset_Shuckle:: @ 82586D2
+    level_up_move 1, MOVE_CONSTRICT
+    level_up_move 1, MOVE_WITHDRAW
+    level_up_move 9, MOVE_WRAP
+    level_up_move 14, MOVE_ENCORE
+    level_up_move 23, MOVE_SAFEGUARD
+    level_up_move 28, MOVE_BIDE
+    level_up_move 37, MOVE_REST
+    .2byte -1
+
+kLevelUpLearnset_Heracross:: @ 82586E2
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_LEER
+    level_up_move 6, MOVE_HORN_ATTACK
+    level_up_move 11, MOVE_ENDURE
+    level_up_move 17, MOVE_FURY_ATTACK
+    level_up_move 23, MOVE_BRICK_BREAK
+    level_up_move 30, MOVE_COUNTER
+    level_up_move 37, MOVE_TAKE_DOWN
+    level_up_move 45, MOVE_REVERSAL
+    level_up_move 53, MOVE_MEGAHORN
+    .2byte -1
+
+kLevelUpLearnset_Sneasel:: @ 82586F8
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_TAUNT
+    level_up_move 8, MOVE_QUICK_ATTACK
+    level_up_move 15, MOVE_SCREECH
+    level_up_move 22, MOVE_FAINT_ATTACK
+    level_up_move 29, MOVE_FURY_SWIPES
+    level_up_move 36, MOVE_AGILITY
+    level_up_move 43, MOVE_ICY_WIND
+    level_up_move 50, MOVE_SLASH
+    level_up_move 57, MOVE_BEAT_UP
+    level_up_move 64, MOVE_METAL_CLAW
+    .2byte -1
+
+kLevelUpLearnset_Teddiursa:: @ 8258712
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_LEER
+    level_up_move 7, MOVE_LICK
+    level_up_move 13, MOVE_FURY_SWIPES
+    level_up_move 19, MOVE_FAKE_TEARS
+    level_up_move 25, MOVE_FAINT_ATTACK
+    level_up_move 31, MOVE_REST
+    level_up_move 37, MOVE_SLASH
+    level_up_move 43, MOVE_SNORE
+    level_up_move 49, MOVE_THRASH
+    .2byte -1
+
+kLevelUpLearnset_Ursaring:: @ 8258728
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_LICK
+    level_up_move 1, MOVE_FURY_SWIPES
+    level_up_move 7, MOVE_LICK
+    level_up_move 13, MOVE_FURY_SWIPES
+    level_up_move 19, MOVE_FAKE_TEARS
+    level_up_move 25, MOVE_FAINT_ATTACK
+    level_up_move 31, MOVE_REST
+    level_up_move 37, MOVE_SLASH
+    level_up_move 43, MOVE_SNORE
+    level_up_move 49, MOVE_THRASH
+    .2byte -1
+
+kLevelUpLearnset_Slugma:: @ 8258742
+    level_up_move 1, MOVE_YAWN
+    level_up_move 1, MOVE_SMOG
+    level_up_move 8, MOVE_EMBER
+    level_up_move 15, MOVE_ROCK_THROW
+    level_up_move 22, MOVE_HARDEN
+    level_up_move 29, MOVE_AMNESIA
+    level_up_move 36, MOVE_FLAMETHROWER
+    level_up_move 43, MOVE_ROCK_SLIDE
+    level_up_move 50, MOVE_BODY_SLAM
+    .2byte -1
+
+kLevelUpLearnset_Magcargo:: @ 8258756
+    level_up_move 1, MOVE_YAWN
+    level_up_move 1, MOVE_SMOG
+    level_up_move 1, MOVE_EMBER
+    level_up_move 1, MOVE_ROCK_THROW
+    level_up_move 8, MOVE_EMBER
+    level_up_move 15, MOVE_ROCK_THROW
+    level_up_move 22, MOVE_HARDEN
+    level_up_move 29, MOVE_AMNESIA
+    level_up_move 36, MOVE_FLAMETHROWER
+    level_up_move 48, MOVE_ROCK_SLIDE
+    level_up_move 60, MOVE_BODY_SLAM
+    .2byte -1
+
+kLevelUpLearnset_Swinub:: @ 825876E
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_ODOR_SLEUTH
+    level_up_move 10, MOVE_POWDER_SNOW
+    level_up_move 19, MOVE_ENDURE
+    level_up_move 28, MOVE_TAKE_DOWN
+    level_up_move 37, MOVE_MIST
+    level_up_move 46, MOVE_BLIZZARD
+    level_up_move 55, MOVE_AMNESIA
+    .2byte -1
+
+kLevelUpLearnset_Piloswine:: @ 8258780
+    level_up_move 1, MOVE_HORN_ATTACK
+    level_up_move 1, MOVE_ODOR_SLEUTH
+    level_up_move 1, MOVE_POWDER_SNOW
+    level_up_move 1, MOVE_ENDURE
+    level_up_move 10, MOVE_POWDER_SNOW
+    level_up_move 19, MOVE_ENDURE
+    level_up_move 28, MOVE_TAKE_DOWN
+    level_up_move 33, MOVE_FURY_ATTACK
+    level_up_move 42, MOVE_MIST
+    level_up_move 56, MOVE_BLIZZARD
+    level_up_move 70, MOVE_AMNESIA
+    .2byte -1
+
+kLevelUpLearnset_Corsola:: @ 8258798
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 6, MOVE_HARDEN
+    level_up_move 12, MOVE_BUBBLE
+    level_up_move 17, MOVE_RECOVER
+    level_up_move 17, MOVE_REFRESH
+    level_up_move 23, MOVE_BUBBLE_BEAM
+    level_up_move 28, MOVE_SPIKE_CANNON
+    level_up_move 34, MOVE_ROCK_BLAST
+    level_up_move 39, MOVE_MIRROR_COAT
+    level_up_move 45, MOVE_ANCIENT_POWER
+    .2byte -1
+
+kLevelUpLearnset_Remoraid:: @ 82587AE
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 11, MOVE_LOCK_ON
+    level_up_move 22, MOVE_PSYBEAM
+    level_up_move 22, MOVE_AURORA_BEAM
+    level_up_move 22, MOVE_BUBBLE_BEAM
+    level_up_move 33, MOVE_FOCUS_ENERGY
+    level_up_move 44, MOVE_ICE_BEAM
+    level_up_move 55, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Octillery:: @ 82587C0
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 11, MOVE_CONSTRICT
+    level_up_move 22, MOVE_PSYBEAM
+    level_up_move 22, MOVE_AURORA_BEAM
+    level_up_move 22, MOVE_BUBBLE_BEAM
+    level_up_move 25, MOVE_OCTAZOOKA
+    level_up_move 38, MOVE_FOCUS_ENERGY
+    level_up_move 54, MOVE_ICE_BEAM
+    level_up_move 70, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Delibird:: @ 82587D4
+    level_up_move 1, MOVE_PRESENT
+    .2byte -1
+
+kLevelUpLearnset_Mantine:: @ 82587D8
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 8, MOVE_SUPERSONIC
+    level_up_move 15, MOVE_BUBBLE_BEAM
+    level_up_move 22, MOVE_TAKE_DOWN
+    level_up_move 29, MOVE_AGILITY
+    level_up_move 36, MOVE_WING_ATTACK
+    level_up_move 43, MOVE_WATER_PULSE
+    level_up_move 50, MOVE_CONFUSE_RAY
+    .2byte -1
+
+kLevelUpLearnset_Skarmory:: @ 82587EC
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_PECK
+    level_up_move 10, MOVE_SAND_ATTACK
+    level_up_move 13, MOVE_SWIFT
+    level_up_move 16, MOVE_AGILITY
+    level_up_move 26, MOVE_FURY_ATTACK
+    level_up_move 29, MOVE_AIR_CUTTER
+    level_up_move 32, MOVE_STEEL_WING
+    level_up_move 42, MOVE_SPIKES
+    level_up_move 45, MOVE_METAL_SOUND
+    .2byte -1
+
+kLevelUpLearnset_Houndour:: @ 8258802
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_EMBER
+    level_up_move 7, MOVE_HOWL
+    level_up_move 13, MOVE_SMOG
+    level_up_move 19, MOVE_ROAR
+    level_up_move 25, MOVE_BITE
+    level_up_move 31, MOVE_ODOR_SLEUTH
+    level_up_move 37, MOVE_FAINT_ATTACK
+    level_up_move 43, MOVE_FLAMETHROWER
+    level_up_move 49, MOVE_CRUNCH
+    .2byte -1
+
+kLevelUpLearnset_Houndoom:: @ 8258818
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_EMBER
+    level_up_move 1, MOVE_HOWL
+    level_up_move 7, MOVE_HOWL
+    level_up_move 13, MOVE_SMOG
+    level_up_move 19, MOVE_ROAR
+    level_up_move 27, MOVE_BITE
+    level_up_move 35, MOVE_ODOR_SLEUTH
+    level_up_move 43, MOVE_FAINT_ATTACK
+    level_up_move 51, MOVE_FLAMETHROWER
+    level_up_move 59, MOVE_CRUNCH
+    .2byte -1
+
+kLevelUpLearnset_Kingdra:: @ 8258830
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 1, MOVE_SMOKESCREEN
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 8, MOVE_SMOKESCREEN
+    level_up_move 15, MOVE_LEER
+    level_up_move 22, MOVE_WATER_GUN
+    level_up_move 29, MOVE_TWISTER
+    level_up_move 40, MOVE_AGILITY
+    level_up_move 51, MOVE_HYDRO_PUMP
+    level_up_move 62, MOVE_DRAGON_DANCE
+    .2byte -1
+
+kLevelUpLearnset_Phanpy:: @ 8258848
+    level_up_move 1, MOVE_ODOR_SLEUTH
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 9, MOVE_DEFENSE_CURL
+    level_up_move 17, MOVE_FLAIL
+    level_up_move 25, MOVE_TAKE_DOWN
+    level_up_move 33, MOVE_ROLLOUT
+    level_up_move 41, MOVE_ENDURE
+    level_up_move 49, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Donphan:: @ 825885C
+    level_up_move 1, MOVE_ODOR_SLEUTH
+    level_up_move 1, MOVE_HORN_ATTACK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 9, MOVE_DEFENSE_CURL
+    level_up_move 17, MOVE_FLAIL
+    level_up_move 25, MOVE_FURY_ATTACK
+    level_up_move 33, MOVE_ROLLOUT
+    level_up_move 41, MOVE_RAPID_SPIN
+    level_up_move 49, MOVE_EARTHQUAKE
+    .2byte -1
+
+kLevelUpLearnset_Porygon2:: @ 8258870
+    level_up_move 1, MOVE_CONVERSION_2
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_CONVERSION
+    level_up_move 9, MOVE_AGILITY
+    level_up_move 12, MOVE_PSYBEAM
+    level_up_move 20, MOVE_RECOVER
+    level_up_move 24, MOVE_DEFENSE_CURL
+    level_up_move 32, MOVE_LOCK_ON
+    level_up_move 36, MOVE_TRI_ATTACK
+    level_up_move 44, MOVE_RECYCLE
+    level_up_move 48, MOVE_ZAP_CANNON
+    .2byte -1
+
+kLevelUpLearnset_Stantler:: @ 8258888
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 7, MOVE_LEER
+    level_up_move 11, MOVE_ASTONISH
+    level_up_move 17, MOVE_HYPNOSIS
+    level_up_move 21, MOVE_STOMP
+    level_up_move 27, MOVE_SAND_ATTACK
+    level_up_move 31, MOVE_ROLE_PLAY
+    level_up_move 37, MOVE_TAKE_DOWN
+    level_up_move 41, MOVE_CONFUSE_RAY
+    level_up_move 47, MOVE_CALM_MIND
+    .2byte -1
+
+kLevelUpLearnset_Smeargle:: @ 825889E
+    level_up_move 1, MOVE_SKETCH
+    level_up_move 11, MOVE_SKETCH
+    level_up_move 21, MOVE_SKETCH
+    level_up_move 31, MOVE_SKETCH
+    level_up_move 41, MOVE_SKETCH
+    level_up_move 51, MOVE_SKETCH
+    level_up_move 61, MOVE_SKETCH
+    level_up_move 71, MOVE_SKETCH
+    level_up_move 81, MOVE_SKETCH
+    level_up_move 91, MOVE_SKETCH
+    .2byte -1
+
+kLevelUpLearnset_Tyrogue:: @ 82588B4
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_Hitmontop:: @ 82588B8
+    level_up_move 1, MOVE_REVENGE
+    level_up_move 1, MOVE_ROLLING_KICK
+    level_up_move 7, MOVE_FOCUS_ENERGY
+    level_up_move 13, MOVE_PURSUIT
+    level_up_move 19, MOVE_QUICK_ATTACK
+    level_up_move 20, MOVE_TRIPLE_KICK
+    level_up_move 25, MOVE_RAPID_SPIN
+    level_up_move 31, MOVE_COUNTER
+    level_up_move 37, MOVE_AGILITY
+    level_up_move 43, MOVE_DETECT
+    level_up_move 49, MOVE_ENDEAVOR
+    .2byte -1
+
+kLevelUpLearnset_Smoochum:: @ 82588D0
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_LICK
+    level_up_move 9, MOVE_SWEET_KISS
+    level_up_move 13, MOVE_POWDER_SNOW
+    level_up_move 21, MOVE_CONFUSION
+    level_up_move 25, MOVE_SING
+    level_up_move 33, MOVE_MEAN_LOOK
+    level_up_move 37, MOVE_FAKE_TEARS
+    level_up_move 45, MOVE_PSYCHIC
+    level_up_move 49, MOVE_PERISH_SONG
+    level_up_move 57, MOVE_BLIZZARD
+    .2byte -1
+
+kLevelUpLearnset_Elekid:: @ 82588E8
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 1, MOVE_LEER
+    level_up_move 9, MOVE_THUNDER_PUNCH
+    level_up_move 17, MOVE_LIGHT_SCREEN
+    level_up_move 25, MOVE_SWIFT
+    level_up_move 33, MOVE_SCREECH
+    level_up_move 41, MOVE_THUNDERBOLT
+    level_up_move 49, MOVE_THUNDER
+    .2byte -1
+
+kLevelUpLearnset_Magby:: @ 82588FA
+    level_up_move 1, MOVE_EMBER
+    level_up_move 7, MOVE_LEER
+    level_up_move 13, MOVE_SMOG
+    level_up_move 19, MOVE_FIRE_PUNCH
+    level_up_move 25, MOVE_SMOKESCREEN
+    level_up_move 31, MOVE_SUNNY_DAY
+    level_up_move 37, MOVE_FLAMETHROWER
+    level_up_move 43, MOVE_CONFUSE_RAY
+    level_up_move 49, MOVE_FIRE_BLAST
+    .2byte -1
+
+kLevelUpLearnset_Miltank:: @ 825890E
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 4, MOVE_GROWL
+    level_up_move 8, MOVE_DEFENSE_CURL
+    level_up_move 13, MOVE_STOMP
+    level_up_move 19, MOVE_MILK_DRINK
+    level_up_move 26, MOVE_BIDE
+    level_up_move 34, MOVE_ROLLOUT
+    level_up_move 43, MOVE_BODY_SLAM
+    level_up_move 53, MOVE_HEAL_BELL
+    .2byte -1
+
+kLevelUpLearnset_Blissey:: @ 8258922
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_GROWL
+    level_up_move 4, MOVE_TAIL_WHIP
+    level_up_move 7, MOVE_REFRESH
+    level_up_move 10, MOVE_SOFT_BOILED
+    level_up_move 13, MOVE_DOUBLE_SLAP
+    level_up_move 18, MOVE_MINIMIZE
+    level_up_move 23, MOVE_SING
+    level_up_move 28, MOVE_EGG_BOMB
+    level_up_move 33, MOVE_DEFENSE_CURL
+    level_up_move 40, MOVE_LIGHT_SCREEN
+    level_up_move 47, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Raikou:: @ 825893C
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_LEER
+    level_up_move 11, MOVE_THUNDER_SHOCK
+    level_up_move 21, MOVE_ROAR
+    level_up_move 31, MOVE_QUICK_ATTACK
+    level_up_move 41, MOVE_SPARK
+    level_up_move 51, MOVE_REFLECT
+    level_up_move 61, MOVE_CRUNCH
+    level_up_move 71, MOVE_THUNDER
+    level_up_move 81, MOVE_CALM_MIND
+    .2byte -1
+
+kLevelUpLearnset_Entei:: @ 8258952
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_LEER
+    level_up_move 11, MOVE_EMBER
+    level_up_move 21, MOVE_ROAR
+    level_up_move 31, MOVE_FIRE_SPIN
+    level_up_move 41, MOVE_STOMP
+    level_up_move 51, MOVE_FLAMETHROWER
+    level_up_move 61, MOVE_SWAGGER
+    level_up_move 71, MOVE_FIRE_BLAST
+    level_up_move 81, MOVE_CALM_MIND
+    .2byte -1
+
+kLevelUpLearnset_Suicune:: @ 8258968
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_LEER
+    level_up_move 11, MOVE_BUBBLE_BEAM
+    level_up_move 21, MOVE_RAIN_DANCE
+    level_up_move 31, MOVE_GUST
+    level_up_move 41, MOVE_AURORA_BEAM
+    level_up_move 51, MOVE_MIST
+    level_up_move 61, MOVE_MIRROR_COAT
+    level_up_move 71, MOVE_HYDRO_PUMP
+    level_up_move 81, MOVE_CALM_MIND
+    .2byte -1
+
+kLevelUpLearnset_Larvitar:: @ 825897E
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_LEER
+    level_up_move 8, MOVE_SANDSTORM
+    level_up_move 15, MOVE_SCREECH
+    level_up_move 22, MOVE_ROCK_SLIDE
+    level_up_move 29, MOVE_THRASH
+    level_up_move 36, MOVE_SCARY_FACE
+    level_up_move 43, MOVE_CRUNCH
+    level_up_move 50, MOVE_EARTHQUAKE
+    level_up_move 57, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Pupitar:: @ 8258994
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_SANDSTORM
+    level_up_move 1, MOVE_SCREECH
+    level_up_move 8, MOVE_SANDSTORM
+    level_up_move 15, MOVE_SCREECH
+    level_up_move 22, MOVE_ROCK_SLIDE
+    level_up_move 29, MOVE_THRASH
+    level_up_move 38, MOVE_SCARY_FACE
+    level_up_move 47, MOVE_CRUNCH
+    level_up_move 56, MOVE_EARTHQUAKE
+    level_up_move 65, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Tyranitar:: @ 82589AE
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_SANDSTORM
+    level_up_move 1, MOVE_SCREECH
+    level_up_move 8, MOVE_SANDSTORM
+    level_up_move 15, MOVE_SCREECH
+    level_up_move 22, MOVE_ROCK_SLIDE
+    level_up_move 29, MOVE_THRASH
+    level_up_move 38, MOVE_SCARY_FACE
+    level_up_move 47, MOVE_CRUNCH
+    level_up_move 61, MOVE_EARTHQUAKE
+    level_up_move 75, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Lugia:: @ 82589C8
+    level_up_move 1, MOVE_WHIRLWIND
+    level_up_move 11, MOVE_SAFEGUARD
+    level_up_move 22, MOVE_GUST
+    level_up_move 33, MOVE_RECOVER
+    level_up_move 44, MOVE_HYDRO_PUMP
+    level_up_move 55, MOVE_RAIN_DANCE
+    level_up_move 66, MOVE_SWIFT
+    level_up_move 77, MOVE_AEROBLAST
+    level_up_move 88, MOVE_ANCIENT_POWER
+    level_up_move 99, MOVE_FUTURE_SIGHT
+    .2byte -1
+
+kLevelUpLearnset_HoOh:: @ 82589DE
+    level_up_move 1, MOVE_WHIRLWIND
+    level_up_move 11, MOVE_SAFEGUARD
+    level_up_move 22, MOVE_GUST
+    level_up_move 33, MOVE_RECOVER
+    level_up_move 44, MOVE_FIRE_BLAST
+    level_up_move 55, MOVE_SUNNY_DAY
+    level_up_move 66, MOVE_SWIFT
+    level_up_move 77, MOVE_SACRED_FIRE
+    level_up_move 88, MOVE_ANCIENT_POWER
+    level_up_move 99, MOVE_FUTURE_SIGHT
+    .2byte -1
+
+kLevelUpLearnset_Celebi:: @ 82589F4
+    level_up_move 1, MOVE_LEECH_SEED
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 1, MOVE_RECOVER
+    level_up_move 1, MOVE_HEAL_BELL
+    level_up_move 10, MOVE_SAFEGUARD
+    level_up_move 20, MOVE_ANCIENT_POWER
+    level_up_move 30, MOVE_FUTURE_SIGHT
+    level_up_move 40, MOVE_BATON_PASS
+    level_up_move 50, MOVE_PERISH_SONG
+    .2byte -1
+
+kLevelUpLearnset_OldUnownB:: @ 8258A08
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownC:: @ 8258A0C
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownD:: @ 8258A10
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownE:: @ 8258A14
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownF:: @ 8258A18
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownG:: @ 8258A1C
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownH:: @ 8258A20
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownI:: @ 8258A24
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownJ:: @ 8258A28
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownK:: @ 8258A2C
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownL:: @ 8258A30
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownM:: @ 8258A34
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownN:: @ 8258A38
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownO:: @ 8258A3C
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownP:: @ 8258A40
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownQ:: @ 8258A44
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownR:: @ 8258A48
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownS:: @ 8258A4C
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownT:: @ 8258A50
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownU:: @ 8258A54
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownV:: @ 8258A58
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownW:: @ 8258A5C
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownX:: @ 8258A60
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownY:: @ 8258A64
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_OldUnownZ:: @ 8258A68
+    level_up_move 1, MOVE_TACKLE
+    .2byte -1
+
+kLevelUpLearnset_Treecko:: @ 8258A6C
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_LEER
+    level_up_move 6, MOVE_ABSORB
+    level_up_move 11, MOVE_QUICK_ATTACK
+    level_up_move 16, MOVE_PURSUIT
+    level_up_move 21, MOVE_SCREECH
+    level_up_move 26, MOVE_MEGA_DRAIN
+    level_up_move 31, MOVE_AGILITY
+    level_up_move 36, MOVE_SLAM
+    level_up_move 41, MOVE_DETECT
+    level_up_move 46, MOVE_GIGA_DRAIN
+    .2byte -1
+
+kLevelUpLearnset_Grovyle:: @ 8258A84
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 6, MOVE_ABSORB
+    level_up_move 11, MOVE_QUICK_ATTACK
+    level_up_move 16, MOVE_FURY_CUTTER
+    level_up_move 17, MOVE_PURSUIT
+    level_up_move 23, MOVE_SCREECH
+    level_up_move 29, MOVE_LEAF_BLADE
+    level_up_move 35, MOVE_AGILITY
+    level_up_move 41, MOVE_SLAM
+    level_up_move 47, MOVE_DETECT
+    level_up_move 53, MOVE_FALSE_SWIPE
+    .2byte -1
+
+kLevelUpLearnset_Sceptile:: @ 8258AA2
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 6, MOVE_ABSORB
+    level_up_move 11, MOVE_QUICK_ATTACK
+    level_up_move 16, MOVE_FURY_CUTTER
+    level_up_move 17, MOVE_PURSUIT
+    level_up_move 23, MOVE_SCREECH
+    level_up_move 29, MOVE_LEAF_BLADE
+    level_up_move 35, MOVE_AGILITY
+    level_up_move 43, MOVE_SLAM
+    level_up_move 51, MOVE_DETECT
+    level_up_move 59, MOVE_FALSE_SWIPE
+    .2byte -1
+
+kLevelUpLearnset_Torchic:: @ 8258AC0
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_GROWL
+    level_up_move 7, MOVE_FOCUS_ENERGY
+    level_up_move 10, MOVE_EMBER
+    level_up_move 16, MOVE_PECK
+    level_up_move 19, MOVE_SAND_ATTACK
+    level_up_move 25, MOVE_FIRE_SPIN
+    level_up_move 28, MOVE_QUICK_ATTACK
+    level_up_move 34, MOVE_SLASH
+    level_up_move 37, MOVE_MIRROR_MOVE
+    level_up_move 43, MOVE_FLAMETHROWER
+    .2byte -1
+
+kLevelUpLearnset_Combusken:: @ 8258AD8
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_FOCUS_ENERGY
+    level_up_move 1, MOVE_EMBER
+    level_up_move 7, MOVE_FOCUS_ENERGY
+    level_up_move 13, MOVE_EMBER
+    level_up_move 16, MOVE_DOUBLE_KICK
+    level_up_move 17, MOVE_PECK
+    level_up_move 21, MOVE_SAND_ATTACK
+    level_up_move 28, MOVE_BULK_UP
+    level_up_move 32, MOVE_QUICK_ATTACK
+    level_up_move 39, MOVE_SLASH
+    level_up_move 43, MOVE_MIRROR_MOVE
+    level_up_move 50, MOVE_SKY_UPPERCUT
+    .2byte -1
+
+kLevelUpLearnset_Blaziken:: @ 8258AF6
+    level_up_move 1, MOVE_FIRE_PUNCH
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_FOCUS_ENERGY
+    level_up_move 1, MOVE_EMBER
+    level_up_move 7, MOVE_FOCUS_ENERGY
+    level_up_move 13, MOVE_EMBER
+    level_up_move 16, MOVE_DOUBLE_KICK
+    level_up_move 17, MOVE_PECK
+    level_up_move 21, MOVE_SAND_ATTACK
+    level_up_move 28, MOVE_BULK_UP
+    level_up_move 32, MOVE_QUICK_ATTACK
+    level_up_move 36, MOVE_BLAZE_KICK
+    level_up_move 42, MOVE_SLASH
+    level_up_move 49, MOVE_MIRROR_MOVE
+    level_up_move 59, MOVE_SKY_UPPERCUT
+    .2byte -1
+
+kLevelUpLearnset_Mudkip:: @ 8258B18
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 6, MOVE_MUD_SLAP
+    level_up_move 10, MOVE_WATER_GUN
+    level_up_move 15, MOVE_BIDE
+    level_up_move 19, MOVE_FORESIGHT
+    level_up_move 24, MOVE_MUD_SPORT
+    level_up_move 28, MOVE_TAKE_DOWN
+    level_up_move 33, MOVE_WHIRLPOOL
+    level_up_move 37, MOVE_PROTECT
+    level_up_move 42, MOVE_HYDRO_PUMP
+    level_up_move 46, MOVE_ENDEAVOR
+    .2byte -1
+
+kLevelUpLearnset_Marshtomp:: @ 8258B32
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_MUD_SLAP
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 6, MOVE_MUD_SLAP
+    level_up_move 10, MOVE_WATER_GUN
+    level_up_move 15, MOVE_BIDE
+    level_up_move 16, MOVE_MUD_SHOT
+    level_up_move 20, MOVE_FORESIGHT
+    level_up_move 25, MOVE_MUD_SPORT
+    level_up_move 31, MOVE_TAKE_DOWN
+    level_up_move 37, MOVE_MUDDY_WATER
+    level_up_move 42, MOVE_PROTECT
+    level_up_move 46, MOVE_EARTHQUAKE
+    level_up_move 53, MOVE_ENDEAVOR
+    .2byte -1
+
+kLevelUpLearnset_Swampert:: @ 8258B52
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_MUD_SLAP
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 6, MOVE_MUD_SLAP
+    level_up_move 10, MOVE_WATER_GUN
+    level_up_move 15, MOVE_BIDE
+    level_up_move 16, MOVE_MUD_SHOT
+    level_up_move 20, MOVE_FORESIGHT
+    level_up_move 25, MOVE_MUD_SPORT
+    level_up_move 31, MOVE_TAKE_DOWN
+    level_up_move 39, MOVE_MUDDY_WATER
+    level_up_move 46, MOVE_PROTECT
+    level_up_move 52, MOVE_EARTHQUAKE
+    level_up_move 61, MOVE_ENDEAVOR
+    .2byte -1
+
+kLevelUpLearnset_Poochyena:: @ 8258B72
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 5, MOVE_HOWL
+    level_up_move 9, MOVE_SAND_ATTACK
+    level_up_move 13, MOVE_BITE
+    level_up_move 17, MOVE_ODOR_SLEUTH
+    level_up_move 21, MOVE_ROAR
+    level_up_move 25, MOVE_SWAGGER
+    level_up_move 29, MOVE_SCARY_FACE
+    level_up_move 33, MOVE_TAKE_DOWN
+    level_up_move 37, MOVE_TAUNT
+    level_up_move 41, MOVE_CRUNCH
+    level_up_move 45, MOVE_THIEF
+    .2byte -1
+
+kLevelUpLearnset_Mightyena:: @ 8258B8C
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_HOWL
+    level_up_move 1, MOVE_SAND_ATTACK
+    level_up_move 1, MOVE_BITE
+    level_up_move 5, MOVE_HOWL
+    level_up_move 9, MOVE_SAND_ATTACK
+    level_up_move 13, MOVE_BITE
+    level_up_move 17, MOVE_ODOR_SLEUTH
+    level_up_move 22, MOVE_ROAR
+    level_up_move 27, MOVE_SWAGGER
+    level_up_move 32, MOVE_SCARY_FACE
+    level_up_move 37, MOVE_TAKE_DOWN
+    level_up_move 42, MOVE_TAUNT
+    level_up_move 47, MOVE_CRUNCH
+    level_up_move 52, MOVE_THIEF
+    .2byte -1
+
+kLevelUpLearnset_Zigzagoon:: @ 8258BAC
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 5, MOVE_TAIL_WHIP
+    level_up_move 9, MOVE_HEADBUTT
+    level_up_move 13, MOVE_SAND_ATTACK
+    level_up_move 17, MOVE_ODOR_SLEUTH
+    level_up_move 21, MOVE_MUD_SPORT
+    level_up_move 25, MOVE_PIN_MISSILE
+    level_up_move 29, MOVE_COVET
+    level_up_move 33, MOVE_FLAIL
+    level_up_move 37, MOVE_REST
+    level_up_move 41, MOVE_BELLY_DRUM
+    .2byte -1
+
+kLevelUpLearnset_Linoone:: @ 8258BC6
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_HEADBUTT
+    level_up_move 5, MOVE_TAIL_WHIP
+    level_up_move 9, MOVE_HEADBUTT
+    level_up_move 13, MOVE_SAND_ATTACK
+    level_up_move 17, MOVE_ODOR_SLEUTH
+    level_up_move 23, MOVE_MUD_SPORT
+    level_up_move 29, MOVE_FURY_SWIPES
+    level_up_move 35, MOVE_COVET
+    level_up_move 41, MOVE_SLASH
+    level_up_move 47, MOVE_REST
+    level_up_move 53, MOVE_BELLY_DRUM
+    .2byte -1
+
+kLevelUpLearnset_Wurmple:: @ 8258BE4
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_STRING_SHOT
+    level_up_move 5, MOVE_POISON_STING
+    .2byte -1
+
+kLevelUpLearnset_Silcoon:: @ 8258BEC
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 7, MOVE_HARDEN
+    .2byte -1
+
+kLevelUpLearnset_Beautifly:: @ 8258BF2
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 10, MOVE_ABSORB
+    level_up_move 13, MOVE_GUST
+    level_up_move 17, MOVE_STUN_SPORE
+    level_up_move 20, MOVE_MORNING_SUN
+    level_up_move 24, MOVE_MEGA_DRAIN
+    level_up_move 27, MOVE_WHIRLWIND
+    level_up_move 31, MOVE_ATTRACT
+    level_up_move 34, MOVE_SILVER_WIND
+    level_up_move 38, MOVE_GIGA_DRAIN
+    .2byte -1
+
+kLevelUpLearnset_Cascoon:: @ 8258C08
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 7, MOVE_HARDEN
+    .2byte -1
+
+kLevelUpLearnset_Dustox:: @ 8258C0E
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 10, MOVE_CONFUSION
+    level_up_move 13, MOVE_GUST
+    level_up_move 17, MOVE_PROTECT
+    level_up_move 20, MOVE_MOONLIGHT
+    level_up_move 24, MOVE_PSYBEAM
+    level_up_move 27, MOVE_WHIRLWIND
+    level_up_move 31, MOVE_LIGHT_SCREEN
+    level_up_move 34, MOVE_SILVER_WIND
+    level_up_move 38, MOVE_TOXIC
+    .2byte -1
+
+kLevelUpLearnset_Lotad:: @ 8258C24
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 3, MOVE_GROWL
+    level_up_move 7, MOVE_ABSORB
+    level_up_move 13, MOVE_NATURE_POWER
+    level_up_move 21, MOVE_MIST
+    level_up_move 31, MOVE_RAIN_DANCE
+    level_up_move 43, MOVE_MEGA_DRAIN
+    .2byte -1
+
+kLevelUpLearnset_Lombre:: @ 8258C34
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 3, MOVE_GROWL
+    level_up_move 7, MOVE_ABSORB
+    level_up_move 13, MOVE_NATURE_POWER
+    level_up_move 19, MOVE_FAKE_OUT
+    level_up_move 25, MOVE_FURY_SWIPES
+    level_up_move 31, MOVE_WATER_SPORT
+    level_up_move 37, MOVE_THIEF
+    level_up_move 43, MOVE_UPROAR
+    level_up_move 49, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Ludicolo:: @ 8258C4A
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 1, MOVE_NATURE_POWER
+    .2byte -1
+
+kLevelUpLearnset_Seedot:: @ 8258C54
+    level_up_move 1, MOVE_BIDE
+    level_up_move 3, MOVE_HARDEN
+    level_up_move 7, MOVE_GROWTH
+    level_up_move 13, MOVE_NATURE_POWER
+    level_up_move 21, MOVE_SYNTHESIS
+    level_up_move 31, MOVE_SUNNY_DAY
+    level_up_move 43, MOVE_EXPLOSION
+    .2byte -1
+
+kLevelUpLearnset_Nuzleaf:: @ 8258C64
+    level_up_move 1, MOVE_POUND
+    level_up_move 3, MOVE_HARDEN
+    level_up_move 7, MOVE_GROWTH
+    level_up_move 13, MOVE_NATURE_POWER
+    level_up_move 19, MOVE_FAKE_OUT
+    level_up_move 25, MOVE_TORMENT
+    level_up_move 31, MOVE_FAINT_ATTACK
+    level_up_move 37, MOVE_RAZOR_WIND
+    level_up_move 43, MOVE_SWAGGER
+    level_up_move 49, MOVE_EXTRASENSORY
+    .2byte -1
+
+kLevelUpLearnset_Shiftry:: @ 8258C7A
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 1, MOVE_GROWTH
+    level_up_move 1, MOVE_NATURE_POWER
+    .2byte -1
+
+kLevelUpLearnset_Nincada:: @ 8258C84
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 5, MOVE_LEECH_LIFE
+    level_up_move 9, MOVE_SAND_ATTACK
+    level_up_move 14, MOVE_FURY_SWIPES
+    level_up_move 19, MOVE_MIND_READER
+    level_up_move 25, MOVE_FALSE_SWIPE
+    level_up_move 31, MOVE_MUD_SLAP
+    level_up_move 38, MOVE_METAL_CLAW
+    level_up_move 45, MOVE_DIG
+    .2byte -1
+
+kLevelUpLearnset_Ninjask:: @ 8258C9A
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 1, MOVE_LEECH_LIFE
+    level_up_move 1, MOVE_SAND_ATTACK
+    level_up_move 5, MOVE_LEECH_LIFE
+    level_up_move 9, MOVE_SAND_ATTACK
+    level_up_move 14, MOVE_FURY_SWIPES
+    level_up_move 19, MOVE_MIND_READER
+    level_up_move 20, MOVE_DOUBLE_TEAM
+    level_up_move 20, MOVE_FURY_CUTTER
+    level_up_move 20, MOVE_SCREECH
+    level_up_move 25, MOVE_SWORDS_DANCE
+    level_up_move 31, MOVE_SLASH
+    level_up_move 38, MOVE_AGILITY
+    level_up_move 45, MOVE_BATON_PASS
+    .2byte -1
+
+kLevelUpLearnset_Shedinja:: @ 8258CBA
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 5, MOVE_LEECH_LIFE
+    level_up_move 9, MOVE_SAND_ATTACK
+    level_up_move 14, MOVE_FURY_SWIPES
+    level_up_move 19, MOVE_MIND_READER
+    level_up_move 25, MOVE_SPITE
+    level_up_move 31, MOVE_CONFUSE_RAY
+    level_up_move 38, MOVE_SHADOW_BALL
+    level_up_move 45, MOVE_GRUDGE
+    .2byte -1
+
+kLevelUpLearnset_Taillow:: @ 8258CD0
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 4, MOVE_FOCUS_ENERGY
+    level_up_move 8, MOVE_QUICK_ATTACK
+    level_up_move 13, MOVE_WING_ATTACK
+    level_up_move 19, MOVE_DOUBLE_TEAM
+    level_up_move 26, MOVE_ENDEAVOR
+    level_up_move 34, MOVE_AERIAL_ACE
+    level_up_move 43, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Swellow:: @ 8258CE4
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_FOCUS_ENERGY
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 4, MOVE_FOCUS_ENERGY
+    level_up_move 8, MOVE_QUICK_ATTACK
+    level_up_move 13, MOVE_WING_ATTACK
+    level_up_move 19, MOVE_DOUBLE_TEAM
+    level_up_move 28, MOVE_ENDEAVOR
+    level_up_move 38, MOVE_AERIAL_ACE
+    level_up_move 49, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Shroomish:: @ 8258CFC
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 4, MOVE_TACKLE
+    level_up_move 7, MOVE_STUN_SPORE
+    level_up_move 10, MOVE_LEECH_SEED
+    level_up_move 16, MOVE_MEGA_DRAIN
+    level_up_move 22, MOVE_HEADBUTT
+    level_up_move 28, MOVE_POISON_POWDER
+    level_up_move 36, MOVE_GROWTH
+    level_up_move 45, MOVE_GIGA_DRAIN
+    level_up_move 54, MOVE_SPORE
+    .2byte -1
+
+kLevelUpLearnset_Breloom:: @ 8258D12
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_STUN_SPORE
+    level_up_move 1, MOVE_LEECH_SEED
+    level_up_move 4, MOVE_TACKLE
+    level_up_move 7, MOVE_STUN_SPORE
+    level_up_move 10, MOVE_LEECH_SEED
+    level_up_move 16, MOVE_MEGA_DRAIN
+    level_up_move 22, MOVE_HEADBUTT
+    level_up_move 23, MOVE_MACH_PUNCH
+    level_up_move 28, MOVE_COUNTER
+    level_up_move 36, MOVE_SKY_UPPERCUT
+    level_up_move 45, MOVE_MIND_READER
+    level_up_move 54, MOVE_DYNAMIC_PUNCH
+    .2byte -1
+
+kLevelUpLearnset_Spinda:: @ 8258D30
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 5, MOVE_UPROAR
+    level_up_move 12, MOVE_FAINT_ATTACK
+    level_up_move 16, MOVE_PSYBEAM
+    level_up_move 23, MOVE_HYPNOSIS
+    level_up_move 27, MOVE_DIZZY_PUNCH
+    level_up_move 34, MOVE_TEETER_DANCE
+    level_up_move 38, MOVE_PSYCH_UP
+    level_up_move 45, MOVE_DOUBLE_EDGE
+    level_up_move 49, MOVE_FLAIL
+    level_up_move 56, MOVE_THRASH
+    .2byte -1
+
+kLevelUpLearnset_Wingull:: @ 8258D48
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 7, MOVE_SUPERSONIC
+    level_up_move 13, MOVE_WING_ATTACK
+    level_up_move 21, MOVE_MIST
+    level_up_move 31, MOVE_QUICK_ATTACK
+    level_up_move 43, MOVE_PURSUIT
+    level_up_move 55, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Pelipper:: @ 8258D5A
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 1, MOVE_WATER_SPORT
+    level_up_move 1, MOVE_WING_ATTACK
+    level_up_move 3, MOVE_WATER_GUN
+    level_up_move 7, MOVE_SUPERSONIC
+    level_up_move 13, MOVE_WING_ATTACK
+    level_up_move 21, MOVE_MIST
+    level_up_move 25, MOVE_PROTECT
+    level_up_move 33, MOVE_STOCKPILE
+    level_up_move 33, MOVE_SWALLOW
+    level_up_move 47, MOVE_SPIT_UP
+    level_up_move 61, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Surskit:: @ 8258D76
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 7, MOVE_QUICK_ATTACK
+    level_up_move 13, MOVE_SWEET_SCENT
+    level_up_move 19, MOVE_WATER_SPORT
+    level_up_move 25, MOVE_BUBBLE_BEAM
+    level_up_move 31, MOVE_AGILITY
+    level_up_move 37, MOVE_MIST
+    level_up_move 37, MOVE_HAZE
+    .2byte -1
+
+kLevelUpLearnset_Masquerain:: @ 8258D88
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 1, MOVE_QUICK_ATTACK
+    level_up_move 1, MOVE_SWEET_SCENT
+    level_up_move 1, MOVE_WATER_SPORT
+    level_up_move 7, MOVE_QUICK_ATTACK
+    level_up_move 13, MOVE_SWEET_SCENT
+    level_up_move 19, MOVE_WATER_SPORT
+    level_up_move 26, MOVE_GUST
+    level_up_move 33, MOVE_SCARY_FACE
+    level_up_move 40, MOVE_STUN_SPORE
+    level_up_move 47, MOVE_SILVER_WIND
+    level_up_move 53, MOVE_WHIRLWIND
+    .2byte -1
+
+kLevelUpLearnset_Wailmer:: @ 8258DA2
+    level_up_move 1, MOVE_SPLASH
+    level_up_move 5, MOVE_GROWL
+    level_up_move 10, MOVE_WATER_GUN
+    level_up_move 14, MOVE_ROLLOUT
+    level_up_move 19, MOVE_WHIRLPOOL
+    level_up_move 23, MOVE_ASTONISH
+    level_up_move 28, MOVE_WATER_PULSE
+    level_up_move 32, MOVE_MIST
+    level_up_move 37, MOVE_REST
+    level_up_move 41, MOVE_WATER_SPOUT
+    level_up_move 46, MOVE_AMNESIA
+    level_up_move 50, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Wailord:: @ 8258DBC
+    level_up_move 1, MOVE_SPLASH
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 1, MOVE_ROLLOUT
+    level_up_move 5, MOVE_GROWL
+    level_up_move 10, MOVE_WATER_GUN
+    level_up_move 14, MOVE_ROLLOUT
+    level_up_move 19, MOVE_WHIRLPOOL
+    level_up_move 23, MOVE_ASTONISH
+    level_up_move 28, MOVE_WATER_PULSE
+    level_up_move 32, MOVE_MIST
+    level_up_move 37, MOVE_REST
+    level_up_move 44, MOVE_WATER_SPOUT
+    level_up_move 52, MOVE_AMNESIA
+    level_up_move 59, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Skitty:: @ 8258DDC
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 3, MOVE_TAIL_WHIP
+    level_up_move 7, MOVE_ATTRACT
+    level_up_move 13, MOVE_SING
+    level_up_move 15, MOVE_DOUBLE_SLAP
+    level_up_move 19, MOVE_ASSIST
+    level_up_move 25, MOVE_CHARM
+    level_up_move 27, MOVE_FAINT_ATTACK
+    level_up_move 31, MOVE_COVET
+    level_up_move 37, MOVE_HEAL_BELL
+    level_up_move 39, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Delcatty:: @ 8258DF6
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_ATTRACT
+    level_up_move 1, MOVE_SING
+    level_up_move 1, MOVE_DOUBLE_SLAP
+    .2byte -1
+
+kLevelUpLearnset_Kecleon:: @ 8258E00
+    level_up_move 1, MOVE_THIEF
+    level_up_move 1, MOVE_TAIL_WHIP
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 1, MOVE_LICK
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 4, MOVE_BIND
+    level_up_move 7, MOVE_FAINT_ATTACK
+    level_up_move 12, MOVE_FURY_SWIPES
+    level_up_move 17, MOVE_PSYBEAM
+    level_up_move 24, MOVE_SCREECH
+    level_up_move 31, MOVE_SLASH
+    level_up_move 40, MOVE_SUBSTITUTE
+    level_up_move 49, MOVE_ANCIENT_POWER
+    .2byte -1
+
+kLevelUpLearnset_Baltoy:: @ 8258E1C
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 3, MOVE_HARDEN
+    level_up_move 5, MOVE_RAPID_SPIN
+    level_up_move 7, MOVE_MUD_SLAP
+    level_up_move 11, MOVE_PSYBEAM
+    level_up_move 15, MOVE_ROCK_TOMB
+    level_up_move 19, MOVE_SELF_DESTRUCT
+    level_up_move 25, MOVE_ANCIENT_POWER
+    level_up_move 31, MOVE_SANDSTORM
+    level_up_move 37, MOVE_COSMIC_POWER
+    level_up_move 45, MOVE_EXPLOSION
+    .2byte -1
+
+kLevelUpLearnset_Claydol:: @ 8258E34
+    level_up_move 1, MOVE_TELEPORT
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 1, MOVE_RAPID_SPIN
+    level_up_move 3, MOVE_HARDEN
+    level_up_move 5, MOVE_RAPID_SPIN
+    level_up_move 7, MOVE_MUD_SLAP
+    level_up_move 11, MOVE_PSYBEAM
+    level_up_move 15, MOVE_ROCK_TOMB
+    level_up_move 19, MOVE_SELF_DESTRUCT
+    level_up_move 25, MOVE_ANCIENT_POWER
+    level_up_move 31, MOVE_SANDSTORM
+    level_up_move 36, MOVE_HYPER_BEAM
+    level_up_move 42, MOVE_COSMIC_POWER
+    level_up_move 55, MOVE_EXPLOSION
+    .2byte -1
+
+kLevelUpLearnset_Nosepass:: @ 8258E54
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 7, MOVE_HARDEN
+    level_up_move 13, MOVE_ROCK_THROW
+    level_up_move 16, MOVE_BLOCK
+    level_up_move 22, MOVE_THUNDER_WAVE
+    level_up_move 28, MOVE_ROCK_SLIDE
+    level_up_move 31, MOVE_SANDSTORM
+    level_up_move 37, MOVE_REST
+    level_up_move 43, MOVE_ZAP_CANNON
+    level_up_move 46, MOVE_LOCK_ON
+    .2byte -1
+
+kLevelUpLearnset_Torkoal:: @ 8258E6A
+    level_up_move 1, MOVE_EMBER
+    level_up_move 4, MOVE_SMOG
+    level_up_move 7, MOVE_CURSE
+    level_up_move 14, MOVE_SMOKESCREEN
+    level_up_move 17, MOVE_FIRE_SPIN
+    level_up_move 20, MOVE_BODY_SLAM
+    level_up_move 27, MOVE_PROTECT
+    level_up_move 30, MOVE_FLAMETHROWER
+    level_up_move 33, MOVE_IRON_DEFENSE
+    level_up_move 40, MOVE_AMNESIA
+    level_up_move 43, MOVE_FLAIL
+    level_up_move 46, MOVE_HEAT_WAVE
+    .2byte -1
+
+kLevelUpLearnset_Sableye:: @ 8258E84
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 5, MOVE_FORESIGHT
+    level_up_move 9, MOVE_NIGHT_SHADE
+    level_up_move 13, MOVE_ASTONISH
+    level_up_move 17, MOVE_FURY_SWIPES
+    level_up_move 21, MOVE_FAKE_OUT
+    level_up_move 25, MOVE_DETECT
+    level_up_move 29, MOVE_FAINT_ATTACK
+    level_up_move 33, MOVE_KNOCK_OFF
+    level_up_move 37, MOVE_CONFUSE_RAY
+    level_up_move 41, MOVE_SHADOW_BALL
+    level_up_move 45, MOVE_MEAN_LOOK
+    .2byte -1
+
+kLevelUpLearnset_Barboach:: @ 8258EA0
+    level_up_move 1, MOVE_MUD_SLAP
+    level_up_move 6, MOVE_MUD_SPORT
+    level_up_move 6, MOVE_WATER_SPORT
+    level_up_move 11, MOVE_WATER_GUN
+    level_up_move 16, MOVE_MAGNITUDE
+    level_up_move 21, MOVE_AMNESIA
+    level_up_move 26, MOVE_REST
+    level_up_move 26, MOVE_SNORE
+    level_up_move 31, MOVE_EARTHQUAKE
+    level_up_move 36, MOVE_FUTURE_SIGHT
+    level_up_move 41, MOVE_FISSURE
+    .2byte -1
+
+kLevelUpLearnset_Whiscash:: @ 8258EB8
+    level_up_move 1, MOVE_TICKLE
+    level_up_move 1, MOVE_MUD_SLAP
+    level_up_move 1, MOVE_MUD_SPORT
+    level_up_move 1, MOVE_WATER_SPORT
+    level_up_move 6, MOVE_MUD_SPORT
+    level_up_move 6, MOVE_WATER_SPORT
+    level_up_move 11, MOVE_WATER_GUN
+    level_up_move 16, MOVE_MAGNITUDE
+    level_up_move 21, MOVE_AMNESIA
+    level_up_move 26, MOVE_REST
+    level_up_move 26, MOVE_SNORE
+    level_up_move 36, MOVE_EARTHQUAKE
+    level_up_move 46, MOVE_FUTURE_SIGHT
+    level_up_move 56, MOVE_FISSURE
+    .2byte -1
+
+kLevelUpLearnset_Luvdisc:: @ 8258ED6
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 4, MOVE_CHARM
+    level_up_move 12, MOVE_WATER_GUN
+    level_up_move 16, MOVE_AGILITY
+    level_up_move 24, MOVE_TAKE_DOWN
+    level_up_move 28, MOVE_ATTRACT
+    level_up_move 36, MOVE_SWEET_KISS
+    level_up_move 40, MOVE_FLAIL
+    level_up_move 48, MOVE_SAFEGUARD
+    .2byte -1
+
+kLevelUpLearnset_Corphish:: @ 8258EEA
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 7, MOVE_HARDEN
+    level_up_move 10, MOVE_VICE_GRIP
+    level_up_move 13, MOVE_LEER
+    level_up_move 19, MOVE_BUBBLE_BEAM
+    level_up_move 22, MOVE_PROTECT
+    level_up_move 25, MOVE_KNOCK_OFF
+    level_up_move 31, MOVE_TAUNT
+    level_up_move 34, MOVE_CRABHAMMER
+    level_up_move 37, MOVE_SWORDS_DANCE
+    level_up_move 43, MOVE_CRUNCH
+    level_up_move 46, MOVE_GUILLOTINE
+    .2byte -1
+
+kLevelUpLearnset_Crawdaunt:: @ 8258F04
+    level_up_move 1, MOVE_BUBBLE
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 1, MOVE_VICE_GRIP
+    level_up_move 1, MOVE_LEER
+    level_up_move 7, MOVE_HARDEN
+    level_up_move 10, MOVE_VICE_GRIP
+    level_up_move 13, MOVE_LEER
+    level_up_move 19, MOVE_BUBBLE_BEAM
+    level_up_move 22, MOVE_PROTECT
+    level_up_move 25, MOVE_KNOCK_OFF
+    level_up_move 33, MOVE_TAUNT
+    level_up_move 38, MOVE_CRABHAMMER
+    level_up_move 43, MOVE_SWORDS_DANCE
+    level_up_move 51, MOVE_CRUNCH
+    level_up_move 56, MOVE_GUILLOTINE
+    .2byte -1
+
+kLevelUpLearnset_Feebas:: @ 8258F24
+    level_up_move 1, MOVE_SPLASH
+    level_up_move 15, MOVE_TACKLE
+    level_up_move 30, MOVE_FLAIL
+    .2byte -1
+
+kLevelUpLearnset_Milotic:: @ 8258F2C
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 5, MOVE_WRAP
+    level_up_move 10, MOVE_WATER_SPORT
+    level_up_move 15, MOVE_REFRESH
+    level_up_move 20, MOVE_WATER_PULSE
+    level_up_move 25, MOVE_TWISTER
+    level_up_move 30, MOVE_RECOVER
+    level_up_move 35, MOVE_RAIN_DANCE
+    level_up_move 40, MOVE_HYDRO_PUMP
+    level_up_move 45, MOVE_ATTRACT
+    level_up_move 50, MOVE_SAFEGUARD
+    .2byte -1
+
+kLevelUpLearnset_Carvanha:: @ 8258F44
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_BITE
+    level_up_move 7, MOVE_RAGE
+    level_up_move 13, MOVE_FOCUS_ENERGY
+    level_up_move 16, MOVE_SCARY_FACE
+    level_up_move 22, MOVE_CRUNCH
+    level_up_move 28, MOVE_SCREECH
+    level_up_move 31, MOVE_TAKE_DOWN
+    level_up_move 37, MOVE_SWAGGER
+    level_up_move 43, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Sharpedo:: @ 8258F5A
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_RAGE
+    level_up_move 1, MOVE_FOCUS_ENERGY
+    level_up_move 7, MOVE_RAGE
+    level_up_move 13, MOVE_FOCUS_ENERGY
+    level_up_move 16, MOVE_SCARY_FACE
+    level_up_move 22, MOVE_CRUNCH
+    level_up_move 28, MOVE_SCREECH
+    level_up_move 33, MOVE_SLASH
+    level_up_move 38, MOVE_TAUNT
+    level_up_move 43, MOVE_SWAGGER
+    level_up_move 48, MOVE_SKULL_BASH
+    level_up_move 53, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Trapinch:: @ 8258F78
+    level_up_move 1, MOVE_BITE
+    level_up_move 9, MOVE_SAND_ATTACK
+    level_up_move 17, MOVE_FAINT_ATTACK
+    level_up_move 25, MOVE_SAND_TOMB
+    level_up_move 33, MOVE_CRUNCH
+    level_up_move 41, MOVE_DIG
+    level_up_move 49, MOVE_SANDSTORM
+    level_up_move 57, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Vibrava:: @ 8258F8A
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_SAND_ATTACK
+    level_up_move 1, MOVE_FAINT_ATTACK
+    level_up_move 1, MOVE_SAND_TOMB
+    level_up_move 9, MOVE_SAND_ATTACK
+    level_up_move 17, MOVE_FAINT_ATTACK
+    level_up_move 25, MOVE_SAND_TOMB
+    level_up_move 33, MOVE_CRUNCH
+    level_up_move 35, MOVE_DRAGON_BREATH
+    level_up_move 41, MOVE_SCREECH
+    level_up_move 49, MOVE_SANDSTORM
+    level_up_move 57, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Flygon:: @ 8258FA4
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_SAND_ATTACK
+    level_up_move 1, MOVE_FAINT_ATTACK
+    level_up_move 1, MOVE_SAND_TOMB
+    level_up_move 9, MOVE_SAND_ATTACK
+    level_up_move 17, MOVE_FAINT_ATTACK
+    level_up_move 25, MOVE_SAND_TOMB
+    level_up_move 33, MOVE_CRUNCH
+    level_up_move 35, MOVE_DRAGON_BREATH
+    level_up_move 41, MOVE_SCREECH
+    level_up_move 53, MOVE_SANDSTORM
+    level_up_move 65, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Makuhita:: @ 8258FBE
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_FOCUS_ENERGY
+    level_up_move 4, MOVE_SAND_ATTACK
+    level_up_move 10, MOVE_ARM_THRUST
+    level_up_move 13, MOVE_VITAL_THROW
+    level_up_move 19, MOVE_FAKE_OUT
+    level_up_move 22, MOVE_WHIRLWIND
+    level_up_move 28, MOVE_KNOCK_OFF
+    level_up_move 31, MOVE_SMELLING_SALT
+    level_up_move 37, MOVE_BELLY_DRUM
+    level_up_move 40, MOVE_ENDURE
+    level_up_move 46, MOVE_SEISMIC_TOSS
+    level_up_move 49, MOVE_REVERSAL
+    .2byte -1
+
+kLevelUpLearnset_Hariyama:: @ 8258FDA
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_FOCUS_ENERGY
+    level_up_move 1, MOVE_SAND_ATTACK
+    level_up_move 1, MOVE_ARM_THRUST
+    level_up_move 4, MOVE_SAND_ATTACK
+    level_up_move 10, MOVE_ARM_THRUST
+    level_up_move 13, MOVE_VITAL_THROW
+    level_up_move 19, MOVE_FAKE_OUT
+    level_up_move 22, MOVE_WHIRLWIND
+    level_up_move 29, MOVE_KNOCK_OFF
+    level_up_move 33, MOVE_SMELLING_SALT
+    level_up_move 40, MOVE_BELLY_DRUM
+    level_up_move 44, MOVE_ENDURE
+    level_up_move 51, MOVE_SEISMIC_TOSS
+    level_up_move 55, MOVE_REVERSAL
+    .2byte -1
+
+kLevelUpLearnset_Electrike:: @ 8258FFA
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 4, MOVE_THUNDER_WAVE
+    level_up_move 9, MOVE_LEER
+    level_up_move 12, MOVE_HOWL
+    level_up_move 17, MOVE_QUICK_ATTACK
+    level_up_move 20, MOVE_SPARK
+    level_up_move 25, MOVE_ODOR_SLEUTH
+    level_up_move 28, MOVE_ROAR
+    level_up_move 33, MOVE_BITE
+    level_up_move 36, MOVE_THUNDER
+    level_up_move 41, MOVE_CHARGE
+    .2byte -1
+
+kLevelUpLearnset_Manectric:: @ 8259012
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_THUNDER_WAVE
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_HOWL
+    level_up_move 4, MOVE_THUNDER_WAVE
+    level_up_move 9, MOVE_LEER
+    level_up_move 12, MOVE_HOWL
+    level_up_move 17, MOVE_QUICK_ATTACK
+    level_up_move 20, MOVE_SPARK
+    level_up_move 25, MOVE_ODOR_SLEUTH
+    level_up_move 31, MOVE_ROAR
+    level_up_move 39, MOVE_BITE
+    level_up_move 45, MOVE_THUNDER
+    level_up_move 53, MOVE_CHARGE
+    .2byte -1
+
+kLevelUpLearnset_Numel:: @ 8259030
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 11, MOVE_EMBER
+    level_up_move 19, MOVE_MAGNITUDE
+    level_up_move 25, MOVE_FOCUS_ENERGY
+    level_up_move 29, MOVE_TAKE_DOWN
+    level_up_move 31, MOVE_AMNESIA
+    level_up_move 35, MOVE_EARTHQUAKE
+    level_up_move 41, MOVE_FLAMETHROWER
+    level_up_move 49, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Camerupt:: @ 8259046
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_EMBER
+    level_up_move 1, MOVE_MAGNITUDE
+    level_up_move 11, MOVE_EMBER
+    level_up_move 19, MOVE_MAGNITUDE
+    level_up_move 25, MOVE_FOCUS_ENERGY
+    level_up_move 29, MOVE_TAKE_DOWN
+    level_up_move 31, MOVE_AMNESIA
+    level_up_move 33, MOVE_ROCK_SLIDE
+    level_up_move 37, MOVE_EARTHQUAKE
+    level_up_move 45, MOVE_ERUPTION
+    level_up_move 55, MOVE_FISSURE
+    .2byte -1
+
+kLevelUpLearnset_Spheal:: @ 8259062
+    level_up_move 1, MOVE_POWDER_SNOW
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_DEFENSE_CURL
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 7, MOVE_ENCORE
+    level_up_move 13, MOVE_ICE_BALL
+    level_up_move 19, MOVE_BODY_SLAM
+    level_up_move 25, MOVE_AURORA_BEAM
+    level_up_move 31, MOVE_HAIL
+    level_up_move 37, MOVE_REST
+    level_up_move 37, MOVE_SNORE
+    level_up_move 43, MOVE_BLIZZARD
+    level_up_move 49, MOVE_SHEER_COLD
+    .2byte -1
+
+kLevelUpLearnset_Sealeo:: @ 825907E
+    level_up_move 1, MOVE_POWDER_SNOW
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_DEFENSE_CURL
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 7, MOVE_ENCORE
+    level_up_move 13, MOVE_ICE_BALL
+    level_up_move 19, MOVE_BODY_SLAM
+    level_up_move 25, MOVE_AURORA_BEAM
+    level_up_move 31, MOVE_HAIL
+    level_up_move 39, MOVE_REST
+    level_up_move 39, MOVE_SNORE
+    level_up_move 47, MOVE_BLIZZARD
+    level_up_move 55, MOVE_SHEER_COLD
+    .2byte -1
+
+kLevelUpLearnset_Walrein:: @ 825909A
+    level_up_move 1, MOVE_POWDER_SNOW
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_DEFENSE_CURL
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 7, MOVE_ENCORE
+    level_up_move 13, MOVE_ICE_BALL
+    level_up_move 19, MOVE_BODY_SLAM
+    level_up_move 25, MOVE_AURORA_BEAM
+    level_up_move 31, MOVE_HAIL
+    level_up_move 39, MOVE_REST
+    level_up_move 39, MOVE_SNORE
+    level_up_move 50, MOVE_BLIZZARD
+    level_up_move 61, MOVE_SHEER_COLD
+    .2byte -1
+
+kLevelUpLearnset_Cacnea:: @ 82590B6
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 1, MOVE_LEER
+    level_up_move 5, MOVE_ABSORB
+    level_up_move 9, MOVE_GROWTH
+    level_up_move 13, MOVE_LEECH_SEED
+    level_up_move 17, MOVE_SAND_ATTACK
+    level_up_move 21, MOVE_PIN_MISSILE
+    level_up_move 25, MOVE_INGRAIN
+    level_up_move 29, MOVE_FAINT_ATTACK
+    level_up_move 33, MOVE_SPIKES
+    level_up_move 37, MOVE_NEEDLE_ARM
+    level_up_move 41, MOVE_COTTON_SPORE
+    level_up_move 45, MOVE_SANDSTORM
+    level_up_move 49, MOVE_DESTINY_BOND
+    .2byte -1
+
+kLevelUpLearnset_Cacturne:: @ 82590D4
+    level_up_move 1, MOVE_REVENGE
+    level_up_move 1, MOVE_POISON_STING
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 1, MOVE_GROWTH
+    level_up_move 5, MOVE_ABSORB
+    level_up_move 9, MOVE_GROWTH
+    level_up_move 13, MOVE_LEECH_SEED
+    level_up_move 17, MOVE_SAND_ATTACK
+    level_up_move 21, MOVE_PIN_MISSILE
+    level_up_move 25, MOVE_INGRAIN
+    level_up_move 29, MOVE_FAINT_ATTACK
+    level_up_move 35, MOVE_SPIKES
+    level_up_move 41, MOVE_NEEDLE_ARM
+    level_up_move 47, MOVE_COTTON_SPORE
+    level_up_move 53, MOVE_SANDSTORM
+    level_up_move 59, MOVE_DESTINY_BOND
+    .2byte -1
+
+kLevelUpLearnset_Snorunt:: @ 82590F8
+    level_up_move 1, MOVE_POWDER_SNOW
+    level_up_move 1, MOVE_LEER
+    level_up_move 7, MOVE_DOUBLE_TEAM
+    level_up_move 10, MOVE_BITE
+    level_up_move 16, MOVE_ICY_WIND
+    level_up_move 19, MOVE_HEADBUTT
+    level_up_move 25, MOVE_PROTECT
+    level_up_move 28, MOVE_CRUNCH
+    level_up_move 34, MOVE_ICE_BEAM
+    level_up_move 37, MOVE_HAIL
+    level_up_move 43, MOVE_BLIZZARD
+    .2byte -1
+
+kLevelUpLearnset_Glalie:: @ 8259110
+    level_up_move 1, MOVE_POWDER_SNOW
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_DOUBLE_TEAM
+    level_up_move 1, MOVE_BITE
+    level_up_move 7, MOVE_DOUBLE_TEAM
+    level_up_move 10, MOVE_BITE
+    level_up_move 16, MOVE_ICY_WIND
+    level_up_move 19, MOVE_HEADBUTT
+    level_up_move 25, MOVE_PROTECT
+    level_up_move 28, MOVE_CRUNCH
+    level_up_move 34, MOVE_ICE_BEAM
+    level_up_move 42, MOVE_HAIL
+    level_up_move 53, MOVE_BLIZZARD
+    level_up_move 61, MOVE_SHEER_COLD
+    .2byte -1
+
+kLevelUpLearnset_Lunatone:: @ 825912E
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 7, MOVE_CONFUSION
+    level_up_move 13, MOVE_ROCK_THROW
+    level_up_move 19, MOVE_HYPNOSIS
+    level_up_move 25, MOVE_PSYWAVE
+    level_up_move 31, MOVE_COSMIC_POWER
+    level_up_move 37, MOVE_PSYCHIC
+    level_up_move 43, MOVE_FUTURE_SIGHT
+    level_up_move 49, MOVE_EXPLOSION
+    .2byte -1
+
+kLevelUpLearnset_Solrock:: @ 8259144
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 7, MOVE_CONFUSION
+    level_up_move 13, MOVE_ROCK_THROW
+    level_up_move 19, MOVE_FIRE_SPIN
+    level_up_move 25, MOVE_PSYWAVE
+    level_up_move 31, MOVE_COSMIC_POWER
+    level_up_move 37, MOVE_ROCK_SLIDE
+    level_up_move 43, MOVE_SOLAR_BEAM
+    level_up_move 49, MOVE_EXPLOSION
+    .2byte -1
+
+kLevelUpLearnset_Azurill:: @ 825915A
+    level_up_move 1, MOVE_SPLASH
+    level_up_move 3, MOVE_CHARM
+    level_up_move 6, MOVE_TAIL_WHIP
+    level_up_move 10, MOVE_BUBBLE
+    level_up_move 15, MOVE_SLAM
+    level_up_move 21, MOVE_WATER_GUN
+    .2byte -1
+
+kLevelUpLearnset_Spoink:: @ 8259168
+    level_up_move 1, MOVE_SPLASH
+    level_up_move 7, MOVE_PSYWAVE
+    level_up_move 10, MOVE_ODOR_SLEUTH
+    level_up_move 16, MOVE_PSYBEAM
+    level_up_move 19, MOVE_PSYCH_UP
+    level_up_move 25, MOVE_CONFUSE_RAY
+    level_up_move 28, MOVE_MAGIC_COAT
+    level_up_move 34, MOVE_PSYCHIC
+    level_up_move 37, MOVE_REST
+    level_up_move 37, MOVE_SNORE
+    level_up_move 43, MOVE_BOUNCE
+    .2byte -1
+
+kLevelUpLearnset_Grumpig:: @ 8259180
+    level_up_move 1, MOVE_SPLASH
+    level_up_move 1, MOVE_PSYWAVE
+    level_up_move 1, MOVE_ODOR_SLEUTH
+    level_up_move 1, MOVE_PSYBEAM
+    level_up_move 7, MOVE_PSYWAVE
+    level_up_move 10, MOVE_ODOR_SLEUTH
+    level_up_move 16, MOVE_PSYBEAM
+    level_up_move 19, MOVE_PSYCH_UP
+    level_up_move 25, MOVE_CONFUSE_RAY
+    level_up_move 28, MOVE_MAGIC_COAT
+    level_up_move 37, MOVE_PSYCHIC
+    level_up_move 43, MOVE_REST
+    level_up_move 43, MOVE_SNORE
+    level_up_move 55, MOVE_BOUNCE
+    .2byte -1
+
+kLevelUpLearnset_Plusle:: @ 825919E
+    level_up_move 1, MOVE_GROWL
+    level_up_move 4, MOVE_THUNDER_WAVE
+    level_up_move 10, MOVE_QUICK_ATTACK
+    level_up_move 13, MOVE_HELPING_HAND
+    level_up_move 19, MOVE_SPARK
+    level_up_move 22, MOVE_ENCORE
+    level_up_move 28, MOVE_FAKE_TEARS
+    level_up_move 31, MOVE_CHARGE
+    level_up_move 37, MOVE_THUNDER
+    level_up_move 40, MOVE_BATON_PASS
+    level_up_move 47, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Minun:: @ 82591B6
+    level_up_move 1, MOVE_GROWL
+    level_up_move 4, MOVE_THUNDER_WAVE
+    level_up_move 10, MOVE_QUICK_ATTACK
+    level_up_move 13, MOVE_HELPING_HAND
+    level_up_move 19, MOVE_SPARK
+    level_up_move 22, MOVE_ENCORE
+    level_up_move 28, MOVE_CHARM
+    level_up_move 31, MOVE_CHARGE
+    level_up_move 37, MOVE_THUNDER
+    level_up_move 40, MOVE_BATON_PASS
+    level_up_move 47, MOVE_AGILITY
+    .2byte -1
+
+kLevelUpLearnset_Mawile:: @ 82591CE
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 6, MOVE_FAKE_TEARS
+    level_up_move 11, MOVE_BITE
+    level_up_move 16, MOVE_SWEET_SCENT
+    level_up_move 21, MOVE_VICE_GRIP
+    level_up_move 26, MOVE_FAINT_ATTACK
+    level_up_move 31, MOVE_BATON_PASS
+    level_up_move 36, MOVE_CRUNCH
+    level_up_move 41, MOVE_IRON_DEFENSE
+    level_up_move 46, MOVE_STOCKPILE
+    level_up_move 46, MOVE_SWALLOW
+    level_up_move 46, MOVE_SPIT_UP
+    .2byte -1
+
+kLevelUpLearnset_Meditite:: @ 82591E8
+    level_up_move 1, MOVE_BIDE
+    level_up_move 4, MOVE_MEDITATE
+    level_up_move 9, MOVE_CONFUSION
+    level_up_move 12, MOVE_DETECT
+    level_up_move 17, MOVE_HIDDEN_POWER
+    level_up_move 20, MOVE_SWAGGER
+    level_up_move 25, MOVE_MIND_READER
+    level_up_move 28, MOVE_CALM_MIND
+    level_up_move 33, MOVE_HI_JUMP_KICK
+    level_up_move 36, MOVE_PSYCH_UP
+    level_up_move 41, MOVE_REVERSAL
+    level_up_move 44, MOVE_RECOVER
+    .2byte -1
+
+kLevelUpLearnset_Medicham:: @ 8259202
+    level_up_move 1, MOVE_FIRE_PUNCH
+    level_up_move 1, MOVE_THUNDER_PUNCH
+    level_up_move 1, MOVE_ICE_PUNCH
+    level_up_move 1, MOVE_BIDE
+    level_up_move 1, MOVE_MEDITATE
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 1, MOVE_DETECT
+    level_up_move 4, MOVE_MEDITATE
+    level_up_move 9, MOVE_CONFUSION
+    level_up_move 12, MOVE_DETECT
+    level_up_move 17, MOVE_HIDDEN_POWER
+    level_up_move 20, MOVE_SWAGGER
+    level_up_move 25, MOVE_MIND_READER
+    level_up_move 28, MOVE_CALM_MIND
+    level_up_move 33, MOVE_HI_JUMP_KICK
+    level_up_move 36, MOVE_PSYCH_UP
+    level_up_move 47, MOVE_REVERSAL
+    level_up_move 56, MOVE_RECOVER
+    .2byte -1
+
+kLevelUpLearnset_Swablu:: @ 8259228
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 8, MOVE_ASTONISH
+    level_up_move 11, MOVE_SING
+    level_up_move 18, MOVE_FURY_ATTACK
+    level_up_move 21, MOVE_SAFEGUARD
+    level_up_move 28, MOVE_MIST
+    level_up_move 31, MOVE_TAKE_DOWN
+    level_up_move 38, MOVE_MIRROR_MOVE
+    level_up_move 41, MOVE_REFRESH
+    level_up_move 48, MOVE_PERISH_SONG
+    .2byte -1
+
+kLevelUpLearnset_Altaria:: @ 8259240
+    level_up_move 1, MOVE_PECK
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 1, MOVE_SING
+    level_up_move 8, MOVE_ASTONISH
+    level_up_move 11, MOVE_SING
+    level_up_move 18, MOVE_FURY_ATTACK
+    level_up_move 21, MOVE_SAFEGUARD
+    level_up_move 28, MOVE_MIST
+    level_up_move 31, MOVE_TAKE_DOWN
+    level_up_move 35, MOVE_DRAGON_BREATH
+    level_up_move 40, MOVE_DRAGON_DANCE
+    level_up_move 45, MOVE_REFRESH
+    level_up_move 54, MOVE_PERISH_SONG
+    level_up_move 59, MOVE_SKY_ATTACK
+    .2byte -1
+
+kLevelUpLearnset_Wynaut:: @ 8259260
+    level_up_move 1, MOVE_SPLASH
+    level_up_move 1, MOVE_CHARM
+    level_up_move 1, MOVE_ENCORE
+    level_up_move 15, MOVE_COUNTER
+    level_up_move 15, MOVE_MIRROR_COAT
+    level_up_move 15, MOVE_SAFEGUARD
+    level_up_move 15, MOVE_DESTINY_BOND
+    .2byte -1
+
+kLevelUpLearnset_Duskull:: @ 8259270
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_NIGHT_SHADE
+    level_up_move 5, MOVE_DISABLE
+    level_up_move 12, MOVE_FORESIGHT
+    level_up_move 16, MOVE_ASTONISH
+    level_up_move 23, MOVE_CONFUSE_RAY
+    level_up_move 27, MOVE_PURSUIT
+    level_up_move 34, MOVE_CURSE
+    level_up_move 38, MOVE_WILL_O_WISP
+    level_up_move 45, MOVE_MEAN_LOOK
+    level_up_move 49, MOVE_FUTURE_SIGHT
+    .2byte -1
+
+kLevelUpLearnset_Dusclops:: @ 8259288
+    level_up_move 1, MOVE_BIND
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_NIGHT_SHADE
+    level_up_move 1, MOVE_DISABLE
+    level_up_move 5, MOVE_DISABLE
+    level_up_move 12, MOVE_FORESIGHT
+    level_up_move 16, MOVE_ASTONISH
+    level_up_move 23, MOVE_CONFUSE_RAY
+    level_up_move 27, MOVE_PURSUIT
+    level_up_move 34, MOVE_CURSE
+    level_up_move 37, MOVE_SHADOW_PUNCH
+    level_up_move 41, MOVE_WILL_O_WISP
+    level_up_move 51, MOVE_MEAN_LOOK
+    level_up_move 58, MOVE_FUTURE_SIGHT
+    .2byte -1
+
+kLevelUpLearnset_Roselia:: @ 82592A6
+    level_up_move 1, MOVE_ABSORB
+    level_up_move 5, MOVE_GROWTH
+    level_up_move 9, MOVE_POISON_STING
+    level_up_move 13, MOVE_STUN_SPORE
+    level_up_move 17, MOVE_MEGA_DRAIN
+    level_up_move 21, MOVE_LEECH_SEED
+    level_up_move 25, MOVE_MAGICAL_LEAF
+    level_up_move 29, MOVE_GRASS_WHISTLE
+    level_up_move 33, MOVE_GIGA_DRAIN
+    level_up_move 37, MOVE_SWEET_SCENT
+    level_up_move 41, MOVE_INGRAIN
+    level_up_move 45, MOVE_TOXIC
+    level_up_move 49, MOVE_PETAL_DANCE
+    level_up_move 53, MOVE_AROMATHERAPY
+    level_up_move 57, MOVE_SYNTHESIS
+    .2byte -1
+
+kLevelUpLearnset_Slakoth:: @ 82592C6
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_YAWN
+    level_up_move 7, MOVE_ENCORE
+    level_up_move 13, MOVE_SLACK_OFF
+    level_up_move 19, MOVE_FAINT_ATTACK
+    level_up_move 25, MOVE_AMNESIA
+    level_up_move 31, MOVE_COVET
+    level_up_move 37, MOVE_COUNTER
+    level_up_move 43, MOVE_FLAIL
+    .2byte -1
+
+kLevelUpLearnset_Vigoroth:: @ 82592DA
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_FOCUS_ENERGY
+    level_up_move 1, MOVE_ENCORE
+    level_up_move 1, MOVE_UPROAR
+    level_up_move 7, MOVE_ENCORE
+    level_up_move 13, MOVE_UPROAR
+    level_up_move 19, MOVE_FURY_SWIPES
+    level_up_move 25, MOVE_ENDURE
+    level_up_move 31, MOVE_SLASH
+    level_up_move 37, MOVE_COUNTER
+    level_up_move 43, MOVE_FOCUS_PUNCH
+    level_up_move 49, MOVE_REVERSAL
+    .2byte -1
+
+kLevelUpLearnset_Slaking:: @ 82592F4
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_YAWN
+    level_up_move 1, MOVE_ENCORE
+    level_up_move 1, MOVE_SLACK_OFF
+    level_up_move 7, MOVE_ENCORE
+    level_up_move 13, MOVE_SLACK_OFF
+    level_up_move 19, MOVE_FAINT_ATTACK
+    level_up_move 25, MOVE_AMNESIA
+    level_up_move 31, MOVE_COVET
+    level_up_move 36, MOVE_SWAGGER
+    level_up_move 37, MOVE_COUNTER
+    level_up_move 43, MOVE_FLAIL
+    .2byte -1
+
+kLevelUpLearnset_Gulpin:: @ 825930E
+    level_up_move 1, MOVE_POUND
+    level_up_move 6, MOVE_YAWN
+    level_up_move 9, MOVE_POISON_GAS
+    level_up_move 14, MOVE_SLUDGE
+    level_up_move 17, MOVE_AMNESIA
+    level_up_move 23, MOVE_ENCORE
+    level_up_move 28, MOVE_TOXIC
+    level_up_move 34, MOVE_STOCKPILE
+    level_up_move 34, MOVE_SPIT_UP
+    level_up_move 34, MOVE_SWALLOW
+    level_up_move 39, MOVE_SLUDGE_BOMB
+    .2byte -1
+
+kLevelUpLearnset_Swalot:: @ 8259326
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_YAWN
+    level_up_move 1, MOVE_POISON_GAS
+    level_up_move 1, MOVE_SLUDGE
+    level_up_move 6, MOVE_YAWN
+    level_up_move 9, MOVE_POISON_GAS
+    level_up_move 14, MOVE_SLUDGE
+    level_up_move 17, MOVE_AMNESIA
+    level_up_move 23, MOVE_ENCORE
+    level_up_move 26, MOVE_BODY_SLAM
+    level_up_move 31, MOVE_TOXIC
+    level_up_move 40, MOVE_STOCKPILE
+    level_up_move 40, MOVE_SPIT_UP
+    level_up_move 40, MOVE_SWALLOW
+    level_up_move 48, MOVE_SLUDGE_BOMB
+    .2byte -1
+
+kLevelUpLearnset_Tropius:: @ 8259346
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_GUST
+    level_up_move 7, MOVE_GROWTH
+    level_up_move 11, MOVE_RAZOR_LEAF
+    level_up_move 17, MOVE_STOMP
+    level_up_move 21, MOVE_SWEET_SCENT
+    level_up_move 27, MOVE_WHIRLWIND
+    level_up_move 31, MOVE_MAGICAL_LEAF
+    level_up_move 37, MOVE_BODY_SLAM
+    level_up_move 41, MOVE_SOLAR_BEAM
+    level_up_move 47, MOVE_SYNTHESIS
+    .2byte -1
+
+kLevelUpLearnset_Whismur:: @ 825935E
+    level_up_move 1, MOVE_POUND
+    level_up_move 5, MOVE_UPROAR
+    level_up_move 11, MOVE_ASTONISH
+    level_up_move 15, MOVE_HOWL
+    level_up_move 21, MOVE_SUPERSONIC
+    level_up_move 25, MOVE_STOMP
+    level_up_move 31, MOVE_SCREECH
+    level_up_move 35, MOVE_ROAR
+    level_up_move 41, MOVE_REST
+    level_up_move 41, MOVE_SLEEP_TALK
+    level_up_move 45, MOVE_HYPER_VOICE
+    .2byte -1
+
+kLevelUpLearnset_Loudred:: @ 8259376
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_UPROAR
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 1, MOVE_HOWL
+    level_up_move 5, MOVE_UPROAR
+    level_up_move 11, MOVE_ASTONISH
+    level_up_move 15, MOVE_HOWL
+    level_up_move 23, MOVE_SUPERSONIC
+    level_up_move 29, MOVE_STOMP
+    level_up_move 37, MOVE_SCREECH
+    level_up_move 43, MOVE_ROAR
+    level_up_move 51, MOVE_REST
+    level_up_move 51, MOVE_SLEEP_TALK
+    level_up_move 57, MOVE_HYPER_VOICE
+    .2byte -1
+
+kLevelUpLearnset_Exploud:: @ 8259394
+    level_up_move 1, MOVE_POUND
+    level_up_move 1, MOVE_UPROAR
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 1, MOVE_HOWL
+    level_up_move 5, MOVE_UPROAR
+    level_up_move 11, MOVE_ASTONISH
+    level_up_move 15, MOVE_HOWL
+    level_up_move 23, MOVE_SUPERSONIC
+    level_up_move 29, MOVE_STOMP
+    level_up_move 37, MOVE_SCREECH
+    level_up_move 40, MOVE_HYPER_BEAM
+    level_up_move 45, MOVE_ROAR
+    level_up_move 55, MOVE_REST
+    level_up_move 55, MOVE_SLEEP_TALK
+    level_up_move 63, MOVE_HYPER_VOICE
+    .2byte -1
+
+kLevelUpLearnset_Clamperl:: @ 82593B4
+    level_up_move 1, MOVE_CLAMP
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 1, MOVE_WHIRLPOOL
+    level_up_move 1, MOVE_IRON_DEFENSE
+    .2byte -1
+
+kLevelUpLearnset_Huntail:: @ 82593BE
+    level_up_move 1, MOVE_WHIRLPOOL
+    level_up_move 8, MOVE_BITE
+    level_up_move 15, MOVE_SCREECH
+    level_up_move 22, MOVE_WATER_PULSE
+    level_up_move 29, MOVE_SCARY_FACE
+    level_up_move 36, MOVE_CRUNCH
+    level_up_move 43, MOVE_BATON_PASS
+    level_up_move 50, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Gorebyss:: @ 82593D0
+    level_up_move 1, MOVE_WHIRLPOOL
+    level_up_move 8, MOVE_CONFUSION
+    level_up_move 15, MOVE_AGILITY
+    level_up_move 22, MOVE_WATER_PULSE
+    level_up_move 29, MOVE_AMNESIA
+    level_up_move 36, MOVE_PSYCHIC
+    level_up_move 43, MOVE_BATON_PASS
+    level_up_move 50, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Absol:: @ 82593E2
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 5, MOVE_LEER
+    level_up_move 9, MOVE_TAUNT
+    level_up_move 13, MOVE_QUICK_ATTACK
+    level_up_move 17, MOVE_RAZOR_WIND
+    level_up_move 21, MOVE_BITE
+    level_up_move 26, MOVE_SWORDS_DANCE
+    level_up_move 31, MOVE_DOUBLE_TEAM
+    level_up_move 36, MOVE_SLASH
+    level_up_move 41, MOVE_FUTURE_SIGHT
+    level_up_move 46, MOVE_PERISH_SONG
+    .2byte -1
+
+kLevelUpLearnset_Shuppet:: @ 82593FA
+    level_up_move 1, MOVE_KNOCK_OFF
+    level_up_move 8, MOVE_SCREECH
+    level_up_move 13, MOVE_NIGHT_SHADE
+    level_up_move 20, MOVE_CURSE
+    level_up_move 25, MOVE_SPITE
+    level_up_move 32, MOVE_WILL_O_WISP
+    level_up_move 37, MOVE_FAINT_ATTACK
+    level_up_move 44, MOVE_SHADOW_BALL
+    level_up_move 49, MOVE_SNATCH
+    level_up_move 56, MOVE_GRUDGE
+    .2byte -1
+
+kLevelUpLearnset_Banette:: @ 8259410
+    level_up_move 1, MOVE_KNOCK_OFF
+    level_up_move 1, MOVE_SCREECH
+    level_up_move 1, MOVE_NIGHT_SHADE
+    level_up_move 1, MOVE_CURSE
+    level_up_move 8, MOVE_SCREECH
+    level_up_move 13, MOVE_NIGHT_SHADE
+    level_up_move 20, MOVE_CURSE
+    level_up_move 25, MOVE_SPITE
+    level_up_move 32, MOVE_WILL_O_WISP
+    level_up_move 39, MOVE_FAINT_ATTACK
+    level_up_move 48, MOVE_SHADOW_BALL
+    level_up_move 55, MOVE_SNATCH
+    level_up_move 64, MOVE_GRUDGE
+    .2byte -1
+
+kLevelUpLearnset_Seviper:: @ 825942C
+    level_up_move 1, MOVE_WRAP
+    level_up_move 7, MOVE_LICK
+    level_up_move 10, MOVE_BITE
+    level_up_move 16, MOVE_POISON_TAIL
+    level_up_move 19, MOVE_SCREECH
+    level_up_move 25, MOVE_GLARE
+    level_up_move 28, MOVE_CRUNCH
+    level_up_move 34, MOVE_POISON_FANG
+    level_up_move 37, MOVE_SWAGGER
+    level_up_move 43, MOVE_HAZE
+    .2byte -1
+
+kLevelUpLearnset_Zangoose:: @ 8259442
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 4, MOVE_LEER
+    level_up_move 7, MOVE_QUICK_ATTACK
+    level_up_move 10, MOVE_SWORDS_DANCE
+    level_up_move 13, MOVE_FURY_CUTTER
+    level_up_move 19, MOVE_SLASH
+    level_up_move 25, MOVE_PURSUIT
+    level_up_move 31, MOVE_CRUSH_CLAW
+    level_up_move 37, MOVE_TAUNT
+    level_up_move 46, MOVE_DETECT
+    level_up_move 55, MOVE_FALSE_SWIPE
+    .2byte -1
+
+kLevelUpLearnset_Relicanth:: @ 825945A
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 8, MOVE_WATER_GUN
+    level_up_move 15, MOVE_ROCK_TOMB
+    level_up_move 22, MOVE_YAWN
+    level_up_move 29, MOVE_TAKE_DOWN
+    level_up_move 36, MOVE_MUD_SPORT
+    level_up_move 43, MOVE_ANCIENT_POWER
+    level_up_move 50, MOVE_REST
+    level_up_move 57, MOVE_DOUBLE_EDGE
+    level_up_move 64, MOVE_HYDRO_PUMP
+    .2byte -1
+
+kLevelUpLearnset_Aron:: @ 8259472
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 4, MOVE_HARDEN
+    level_up_move 7, MOVE_MUD_SLAP
+    level_up_move 10, MOVE_HEADBUTT
+    level_up_move 13, MOVE_METAL_CLAW
+    level_up_move 17, MOVE_IRON_DEFENSE
+    level_up_move 21, MOVE_ROAR
+    level_up_move 25, MOVE_TAKE_DOWN
+    level_up_move 29, MOVE_IRON_TAIL
+    level_up_move 34, MOVE_PROTECT
+    level_up_move 39, MOVE_METAL_SOUND
+    level_up_move 44, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Lairon:: @ 825948C
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 1, MOVE_MUD_SLAP
+    level_up_move 1, MOVE_HEADBUTT
+    level_up_move 4, MOVE_HARDEN
+    level_up_move 7, MOVE_MUD_SLAP
+    level_up_move 10, MOVE_HEADBUTT
+    level_up_move 13, MOVE_METAL_CLAW
+    level_up_move 17, MOVE_IRON_DEFENSE
+    level_up_move 21, MOVE_ROAR
+    level_up_move 25, MOVE_TAKE_DOWN
+    level_up_move 29, MOVE_IRON_TAIL
+    level_up_move 37, MOVE_PROTECT
+    level_up_move 45, MOVE_METAL_SOUND
+    level_up_move 53, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Aggron:: @ 82594AC
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 1, MOVE_MUD_SLAP
+    level_up_move 1, MOVE_HEADBUTT
+    level_up_move 4, MOVE_HARDEN
+    level_up_move 7, MOVE_MUD_SLAP
+    level_up_move 10, MOVE_HEADBUTT
+    level_up_move 13, MOVE_METAL_CLAW
+    level_up_move 17, MOVE_IRON_DEFENSE
+    level_up_move 21, MOVE_ROAR
+    level_up_move 25, MOVE_TAKE_DOWN
+    level_up_move 29, MOVE_IRON_TAIL
+    level_up_move 37, MOVE_PROTECT
+    level_up_move 50, MOVE_METAL_SOUND
+    level_up_move 63, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Castform:: @ 82594CC
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 10, MOVE_WATER_GUN
+    level_up_move 10, MOVE_EMBER
+    level_up_move 10, MOVE_POWDER_SNOW
+    level_up_move 20, MOVE_RAIN_DANCE
+    level_up_move 20, MOVE_SUNNY_DAY
+    level_up_move 20, MOVE_HAIL
+    level_up_move 30, MOVE_WEATHER_BALL
+    .2byte -1
+
+kLevelUpLearnset_Volbeat:: @ 82594DE
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 5, MOVE_CONFUSE_RAY
+    level_up_move 9, MOVE_DOUBLE_TEAM
+    level_up_move 13, MOVE_MOONLIGHT
+    level_up_move 17, MOVE_QUICK_ATTACK
+    level_up_move 21, MOVE_TAIL_GLOW
+    level_up_move 25, MOVE_SIGNAL_BEAM
+    level_up_move 29, MOVE_PROTECT
+    level_up_move 33, MOVE_HELPING_HAND
+    level_up_move 37, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Illumise:: @ 82594F4
+    level_up_move 1, MOVE_TACKLE
+    level_up_move 5, MOVE_SWEET_SCENT
+    level_up_move 9, MOVE_CHARM
+    level_up_move 13, MOVE_MOONLIGHT
+    level_up_move 17, MOVE_QUICK_ATTACK
+    level_up_move 21, MOVE_WISH
+    level_up_move 25, MOVE_ENCORE
+    level_up_move 29, MOVE_FLATTER
+    level_up_move 33, MOVE_HELPING_HAND
+    level_up_move 37, MOVE_COVET
+    .2byte -1
+
+kLevelUpLearnset_Lileep:: @ 825950A
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 8, MOVE_CONSTRICT
+    level_up_move 15, MOVE_ACID
+    level_up_move 22, MOVE_INGRAIN
+    level_up_move 29, MOVE_CONFUSE_RAY
+    level_up_move 36, MOVE_AMNESIA
+    level_up_move 43, MOVE_ANCIENT_POWER
+    level_up_move 50, MOVE_STOCKPILE
+    level_up_move 50, MOVE_SPIT_UP
+    level_up_move 50, MOVE_SWALLOW
+    .2byte -1
+
+kLevelUpLearnset_Cradily:: @ 8259520
+    level_up_move 1, MOVE_ASTONISH
+    level_up_move 1, MOVE_CONSTRICT
+    level_up_move 1, MOVE_ACID
+    level_up_move 1, MOVE_INGRAIN
+    level_up_move 8, MOVE_CONSTRICT
+    level_up_move 15, MOVE_ACID
+    level_up_move 22, MOVE_INGRAIN
+    level_up_move 29, MOVE_CONFUSE_RAY
+    level_up_move 36, MOVE_AMNESIA
+    level_up_move 48, MOVE_ANCIENT_POWER
+    level_up_move 60, MOVE_STOCKPILE
+    level_up_move 60, MOVE_SPIT_UP
+    level_up_move 60, MOVE_SWALLOW
+    .2byte -1
+
+kLevelUpLearnset_Anorith:: @ 825953C
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 7, MOVE_HARDEN
+    level_up_move 13, MOVE_MUD_SPORT
+    level_up_move 19, MOVE_WATER_GUN
+    level_up_move 25, MOVE_METAL_CLAW
+    level_up_move 31, MOVE_PROTECT
+    level_up_move 37, MOVE_ANCIENT_POWER
+    level_up_move 43, MOVE_FURY_CUTTER
+    level_up_move 49, MOVE_SLASH
+    level_up_move 55, MOVE_ROCK_BLAST
+    .2byte -1
+
+kLevelUpLearnset_Armaldo:: @ 8259552
+    level_up_move 1, MOVE_SCRATCH
+    level_up_move 1, MOVE_HARDEN
+    level_up_move 1, MOVE_MUD_SPORT
+    level_up_move 1, MOVE_WATER_GUN
+    level_up_move 7, MOVE_HARDEN
+    level_up_move 13, MOVE_MUD_SPORT
+    level_up_move 19, MOVE_WATER_GUN
+    level_up_move 25, MOVE_METAL_CLAW
+    level_up_move 31, MOVE_PROTECT
+    level_up_move 37, MOVE_ANCIENT_POWER
+    level_up_move 46, MOVE_FURY_CUTTER
+    level_up_move 55, MOVE_SLASH
+    level_up_move 64, MOVE_ROCK_BLAST
+    .2byte -1
+
+kLevelUpLearnset_Ralts:: @ 825956E
+    level_up_move 1, MOVE_GROWL
+    level_up_move 6, MOVE_CONFUSION
+    level_up_move 11, MOVE_DOUBLE_TEAM
+    level_up_move 16, MOVE_TELEPORT
+    level_up_move 21, MOVE_CALM_MIND
+    level_up_move 26, MOVE_PSYCHIC
+    level_up_move 31, MOVE_IMPRISON
+    level_up_move 36, MOVE_FUTURE_SIGHT
+    level_up_move 41, MOVE_HYPNOSIS
+    level_up_move 46, MOVE_DREAM_EATER
+    .2byte -1
+
+kLevelUpLearnset_Kirlia:: @ 8259584
+    level_up_move 1, MOVE_MAGICAL_LEAF
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 1, MOVE_DOUBLE_TEAM
+    level_up_move 1, MOVE_TELEPORT
+    level_up_move 6, MOVE_CONFUSION
+    level_up_move 11, MOVE_DOUBLE_TEAM
+    level_up_move 16, MOVE_TELEPORT
+    level_up_move 21, MOVE_CALM_MIND
+    level_up_move 26, MOVE_PSYCHIC
+    level_up_move 33, MOVE_IMPRISON
+    level_up_move 40, MOVE_FUTURE_SIGHT
+    level_up_move 47, MOVE_HYPNOSIS
+    level_up_move 54, MOVE_DREAM_EATER
+    .2byte -1
+
+kLevelUpLearnset_Gardevoir:: @ 82595A2
+    level_up_move 1, MOVE_GROWL
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 1, MOVE_DOUBLE_TEAM
+    level_up_move 1, MOVE_TELEPORT
+    level_up_move 6, MOVE_CONFUSION
+    level_up_move 11, MOVE_DOUBLE_TEAM
+    level_up_move 16, MOVE_TELEPORT
+    level_up_move 21, MOVE_CALM_MIND
+    level_up_move 26, MOVE_PSYCHIC
+    level_up_move 33, MOVE_IMPRISON
+    level_up_move 42, MOVE_FUTURE_SIGHT
+    level_up_move 51, MOVE_HYPNOSIS
+    level_up_move 60, MOVE_DREAM_EATER
+    .2byte -1
+
+kLevelUpLearnset_Bagon:: @ 82595BE
+    level_up_move 1, MOVE_RAGE
+    level_up_move 5, MOVE_BITE
+    level_up_move 9, MOVE_LEER
+    level_up_move 17, MOVE_HEADBUTT
+    level_up_move 21, MOVE_FOCUS_ENERGY
+    level_up_move 25, MOVE_EMBER
+    level_up_move 33, MOVE_DRAGON_BREATH
+    level_up_move 37, MOVE_SCARY_FACE
+    level_up_move 41, MOVE_CRUNCH
+    level_up_move 49, MOVE_DRAGON_CLAW
+    level_up_move 53, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Shelgon:: @ 82595D6
+    level_up_move 1, MOVE_RAGE
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_HEADBUTT
+    level_up_move 5, MOVE_BITE
+    level_up_move 9, MOVE_LEER
+    level_up_move 17, MOVE_HEADBUTT
+    level_up_move 21, MOVE_FOCUS_ENERGY
+    level_up_move 25, MOVE_EMBER
+    level_up_move 30, MOVE_PROTECT
+    level_up_move 38, MOVE_DRAGON_BREATH
+    level_up_move 47, MOVE_SCARY_FACE
+    level_up_move 56, MOVE_CRUNCH
+    level_up_move 69, MOVE_DRAGON_CLAW
+    level_up_move 78, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Salamence:: @ 82595F6
+    level_up_move 1, MOVE_RAGE
+    level_up_move 1, MOVE_BITE
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_HEADBUTT
+    level_up_move 5, MOVE_BITE
+    level_up_move 9, MOVE_LEER
+    level_up_move 17, MOVE_HEADBUTT
+    level_up_move 21, MOVE_FOCUS_ENERGY
+    level_up_move 25, MOVE_EMBER
+    level_up_move 30, MOVE_PROTECT
+    level_up_move 38, MOVE_DRAGON_BREATH
+    level_up_move 47, MOVE_SCARY_FACE
+    level_up_move 50, MOVE_FLY
+    level_up_move 61, MOVE_CRUNCH
+    level_up_move 79, MOVE_DRAGON_CLAW
+    level_up_move 93, MOVE_DOUBLE_EDGE
+    .2byte -1
+
+kLevelUpLearnset_Beldum:: @ 8259618
+    level_up_move 1, MOVE_TAKE_DOWN
+    .2byte -1
+
+kLevelUpLearnset_Metang:: @ 825961C
+    level_up_move 1, MOVE_TAKE_DOWN
+    level_up_move 20, MOVE_CONFUSION
+    level_up_move 20, MOVE_METAL_CLAW
+    level_up_move 26, MOVE_SCARY_FACE
+    level_up_move 32, MOVE_PURSUIT
+    level_up_move 38, MOVE_PSYCHIC
+    level_up_move 44, MOVE_IRON_DEFENSE
+    level_up_move 50, MOVE_METEOR_MASH
+    level_up_move 56, MOVE_AGILITY
+    level_up_move 62, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Metagross:: @ 8259632
+    level_up_move 1, MOVE_TAKE_DOWN
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 1, MOVE_METAL_CLAW
+    level_up_move 1, MOVE_SCARY_FACE
+    level_up_move 20, MOVE_CONFUSION
+    level_up_move 20, MOVE_METAL_CLAW
+    level_up_move 26, MOVE_SCARY_FACE
+    level_up_move 32, MOVE_PURSUIT
+    level_up_move 38, MOVE_PSYCHIC
+    level_up_move 44, MOVE_IRON_DEFENSE
+    level_up_move 55, MOVE_METEOR_MASH
+    level_up_move 66, MOVE_AGILITY
+    level_up_move 77, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Regirock:: @ 825964E
+    level_up_move 1, MOVE_EXPLOSION
+    level_up_move 9, MOVE_ROCK_THROW
+    level_up_move 17, MOVE_CURSE
+    level_up_move 25, MOVE_SUPERPOWER
+    level_up_move 33, MOVE_ANCIENT_POWER
+    level_up_move 41, MOVE_IRON_DEFENSE
+    level_up_move 49, MOVE_ZAP_CANNON
+    level_up_move 57, MOVE_LOCK_ON
+    level_up_move 65, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Regice:: @ 8259662
+    level_up_move 1, MOVE_EXPLOSION
+    level_up_move 9, MOVE_ICY_WIND
+    level_up_move 17, MOVE_CURSE
+    level_up_move 25, MOVE_SUPERPOWER
+    level_up_move 33, MOVE_ANCIENT_POWER
+    level_up_move 41, MOVE_AMNESIA
+    level_up_move 49, MOVE_ZAP_CANNON
+    level_up_move 57, MOVE_LOCK_ON
+    level_up_move 65, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Registeel:: @ 8259676
+    level_up_move 1, MOVE_EXPLOSION
+    level_up_move 9, MOVE_METAL_CLAW
+    level_up_move 17, MOVE_CURSE
+    level_up_move 25, MOVE_SUPERPOWER
+    level_up_move 33, MOVE_ANCIENT_POWER
+    level_up_move 41, MOVE_IRON_DEFENSE
+    level_up_move 41, MOVE_AMNESIA
+    level_up_move 49, MOVE_ZAP_CANNON
+    level_up_move 57, MOVE_LOCK_ON
+    level_up_move 65, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Kyogre:: @ 825968C
+    level_up_move 1, MOVE_WATER_PULSE
+    level_up_move 5, MOVE_SCARY_FACE
+    level_up_move 15, MOVE_ANCIENT_POWER
+    level_up_move 20, MOVE_BODY_SLAM
+    level_up_move 30, MOVE_CALM_MIND
+    level_up_move 35, MOVE_ICE_BEAM
+    level_up_move 45, MOVE_HYDRO_PUMP
+    level_up_move 50, MOVE_REST
+    level_up_move 60, MOVE_SHEER_COLD
+    level_up_move 65, MOVE_DOUBLE_EDGE
+    level_up_move 75, MOVE_WATER_SPOUT
+    .2byte -1
+
+kLevelUpLearnset_Groudon:: @ 82596A4
+    level_up_move 1, MOVE_MUD_SHOT
+    level_up_move 5, MOVE_SCARY_FACE
+    level_up_move 15, MOVE_ANCIENT_POWER
+    level_up_move 20, MOVE_SLASH
+    level_up_move 30, MOVE_BULK_UP
+    level_up_move 35, MOVE_EARTHQUAKE
+    level_up_move 45, MOVE_FIRE_BLAST
+    level_up_move 50, MOVE_REST
+    level_up_move 60, MOVE_FISSURE
+    level_up_move 65, MOVE_SOLAR_BEAM
+    level_up_move 75, MOVE_ERUPTION
+    .2byte -1
+
+kLevelUpLearnset_Rayquaza:: @ 82596BC
+    level_up_move 1, MOVE_TWISTER
+    level_up_move 5, MOVE_SCARY_FACE
+    level_up_move 15, MOVE_ANCIENT_POWER
+    level_up_move 20, MOVE_DRAGON_CLAW
+    level_up_move 30, MOVE_DRAGON_DANCE
+    level_up_move 35, MOVE_CRUNCH
+    level_up_move 45, MOVE_FLY
+    level_up_move 50, MOVE_REST
+    level_up_move 60, MOVE_EXTREME_SPEED
+    level_up_move 65, MOVE_OUTRAGE
+    level_up_move 75, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Latias:: @ 82596D4
+    level_up_move 1, MOVE_PSYWAVE
+    level_up_move 5, MOVE_WISH
+    level_up_move 10, MOVE_HELPING_HAND
+    level_up_move 15, MOVE_SAFEGUARD
+    level_up_move 20, MOVE_DRAGON_BREATH
+    level_up_move 25, MOVE_WATER_SPORT
+    level_up_move 30, MOVE_REFRESH
+    level_up_move 35, MOVE_MIST_BALL
+    level_up_move 40, MOVE_PSYCHIC
+    level_up_move 45, MOVE_RECOVER
+    level_up_move 50, MOVE_CHARM
+    .2byte -1
+
+kLevelUpLearnset_Latios:: @ 82596EC
+    level_up_move 1, MOVE_PSYWAVE
+    level_up_move 5, MOVE_MEMENTO
+    level_up_move 10, MOVE_HELPING_HAND
+    level_up_move 15, MOVE_SAFEGUARD
+    level_up_move 20, MOVE_DRAGON_BREATH
+    level_up_move 25, MOVE_PROTECT
+    level_up_move 30, MOVE_REFRESH
+    level_up_move 35, MOVE_LUSTER_PURGE
+    level_up_move 40, MOVE_PSYCHIC
+    level_up_move 45, MOVE_RECOVER
+    level_up_move 50, MOVE_DRAGON_DANCE
+    .2byte -1
+
+kLevelUpLearnset_Jirachi:: @ 8259704
+    level_up_move 1, MOVE_WISH
+    level_up_move 1, MOVE_CONFUSION
+    level_up_move 5, MOVE_REST
+    level_up_move 10, MOVE_SWIFT
+    level_up_move 15, MOVE_HELPING_HAND
+    level_up_move 20, MOVE_PSYCHIC
+    level_up_move 25, MOVE_REFRESH
+    level_up_move 30, MOVE_REST
+    level_up_move 35, MOVE_DOUBLE_EDGE
+    level_up_move 40, MOVE_FUTURE_SIGHT
+    level_up_move 45, MOVE_COSMIC_POWER
+    level_up_move 50, MOVE_DOOM_DESIRE
+    .2byte -1
+
+kLevelUpLearnset_Deoxys:: @ 825971E
+    level_up_move 1, MOVE_LEER
+    level_up_move 1, MOVE_WRAP
+    level_up_move 5, MOVE_NIGHT_SHADE
+    level_up_move 10, MOVE_TELEPORT
+    level_up_move 15, MOVE_TAUNT
+    level_up_move 20, MOVE_PURSUIT
+    level_up_move 25, MOVE_PSYCHIC
+    level_up_move 30, MOVE_SUPERPOWER
+    level_up_move 35, MOVE_COSMIC_POWER
+    level_up_move 40, MOVE_ZAP_CANNON
+    level_up_move 45, MOVE_PSYCHO_BOOST
+    level_up_move 50, MOVE_HYPER_BEAM
+    .2byte -1
+
+kLevelUpLearnset_Chimecho:: @ 8259738
+    level_up_move 1, MOVE_WRAP
+    level_up_move 6, MOVE_GROWL
+    level_up_move 9, MOVE_ASTONISH
+    level_up_move 14, MOVE_CONFUSION
+    level_up_move 17, MOVE_TAKE_DOWN
+    level_up_move 22, MOVE_UPROAR
+    level_up_move 25, MOVE_YAWN
+    level_up_move 30, MOVE_PSYWAVE
+    level_up_move 33, MOVE_DOUBLE_EDGE
+    level_up_move 38, MOVE_HEAL_BELL
+    level_up_move 41, MOVE_SAFEGUARD
+    level_up_move 46, MOVE_PSYCHIC
+    .2byte -1
+
+    .incbin "baserom.gba", 0x259752, 0x2
+
+UNK_8259754:: @ 8259754
     .incbin "baserom.gba", 0x259754, 0x4060
 
-    .global List_825D7B4
-List_825D7B4: @ 825D7B4
-    .4byte _8257494
-    .4byte _8257494
-    .4byte _82574AC
-    .4byte _82574C8
-    .4byte _82574E6
-    .4byte _82574FC
-    .4byte _8257514
-    .4byte _8257532
-    .4byte _825754A
-    .4byte _8257566
-    .4byte _8257584
-    .4byte _825758A
-    .4byte _8257590
-    .4byte _82575A8
-    .4byte _82575AE
-    .4byte _82575B4
-    .4byte _82575C8
-    .4byte _82575DC
-    .4byte _82575F4
-    .4byte _825760E
-    .4byte _8257620
-    .4byte _8257634
-    .4byte _8257648
-    .4byte _825765E
-    .4byte _8257676
-    .4byte _8257692
-    .4byte _82576AA
-    .4byte _82576B4
-    .4byte _82576C8
-    .4byte _82576E0
-    .4byte _82576F6
-    .4byte _825770C
-    .4byte _825771A
-    .4byte _8257730
-    .4byte _8257746
-    .4byte _8257754
-    .4byte _8257770
-    .4byte _825777A
-    .4byte _8257792
-    .4byte _825779E
-    .4byte _82577B6
-    .4byte _82577C0
-    .4byte _82577D6
-    .4byte _82577F2
-    .4byte _8257804
-    .4byte _825781A
-    .4byte _8257826
-    .4byte _825783A
-    .4byte _8257852
-    .4byte _825786A
-    .4byte _8257888
-    .4byte _825789E
-    .4byte _82578BA
-    .4byte _82578D0
-    .4byte _82578E8
-    .4byte _82578FC
-    .4byte _8257914
-    .4byte _825792C
-    .4byte _825794A
-    .4byte _8257960
-    .4byte _825796C
-    .4byte _825797E
-    .4byte _8257994
-    .4byte _82579A2
-    .4byte _82579A6
-    .4byte _82579C0
-    .4byte _82579DA
-    .4byte _82579F4
-    .4byte _8257A10
-    .4byte _8257A2C
-    .4byte _8257A42
-    .4byte _8257A5C
-    .4byte _8257A6C
-    .4byte _8257A80
-    .4byte _8257A98
-    .4byte _8257AB0
-    .4byte _8257ACC
-    .4byte _8257AE8
-    .4byte _8257AFE
-    .4byte _8257B1C
-    .4byte _8257B34
-    .4byte _8257B50
-    .4byte _8257B68
-    .4byte _8257B84
-    .4byte _8257B9A
-    .4byte _8257BAE
-    .4byte _8257BC6
-    .4byte _8257BD8
-    .4byte _8257BF4
-    .4byte _8257C0A
-    .4byte _8257C22
-    .4byte _8257C36
-    .4byte _8257C44
-    .4byte _8257C5C
-    .4byte _8257C78
-    .4byte _8257C94
-    .4byte _8257CAE
-    .4byte _8257CC6
-    .4byte _8257CE4
-    .4byte _8257CFA
-    .4byte _8257D18
-    .4byte _8257D30
-    .4byte _8257D4C
-    .4byte _8257D62
-    .4byte _8257D6E
-    .4byte _8257D88
-    .4byte _8257DA8
-    .4byte _8257DC4
-    .4byte _8257DDE
-    .4byte _8257DF4
-    .4byte _8257E0A
-    .4byte _8257E24
-    .4byte _8257E3A
-    .4byte _8257E54
-    .4byte _8257E6E
-    .4byte _8257E88
-    .4byte _8257E9E
-    .4byte _8257EB0
-    .4byte _8257EC8
-    .4byte _8257EE0
-    .4byte _8257EFA
-    .4byte _8257F14
-    .4byte _8257F20
-    .4byte _8257F42
-    .4byte _8257F5A
-    .4byte _8257F76
-    .4byte _8257F8A
-    .4byte _8257FA4
-    .4byte _8257FBA
-    .4byte _8257FD0
-    .4byte _8257FD8
-    .4byte _8257FEC
-    .4byte _8258006
-    .4byte _825800A
-    .4byte _825801E
-    .4byte _8258036
-    .4byte _825804E
-    .4byte _8258066
-    .4byte _825807E
-    .4byte _8258094
-    .4byte _82580B0
-    .4byte _82580C6
-    .4byte _82580E4
-    .4byte _82580F6
-    .4byte _8258114
-    .4byte _8258128
-    .4byte _825813C
-    .4byte _8258150
-    .4byte _8258166
-    .4byte _8258180
-    .4byte _825819C
-    .4byte _82581B4
-    .4byte _82581C2
-    .4byte _82581D8
-    .4byte _82581F2
-    .4byte _825820C
-    .4byte _825821E
-    .4byte _8258232
-    .4byte _8258248
-    .4byte _825825C
-    .4byte _8258272
-    .4byte _825828A
-    .4byte _825829E
-    .4byte _82582B6
-    .4byte _82582CA
-    .4byte _82582E2
-    .4byte _82582F8
-    .4byte _8258310
-    .4byte _8258326
-    .4byte _8258340
-    .4byte _825835C
-    .4byte _8258372
-    .4byte _825838A
-    .4byte _8258396
-    .4byte _82583A4
-    .4byte _82583B0
-    .4byte _82583CA
-    .4byte _82583EA
-    .4byte _82583FC
-    .4byte _825840E
-    .4byte _825841E
-    .4byte _8258430
-    .4byte _8258446
-    .4byte _8258454
-    .4byte _8258468
-    .4byte _8258482
-    .4byte _8258496
-    .4byte _82584A4
-    .4byte _82584BA
-    .4byte _82584D6
-    .4byte _82584F2
-    .4byte _8258508
-    .4byte _825851A
-    .4byte _825852E
-    .4byte _8258546
-    .4byte _825855C
-    .4byte _8258572
-    .4byte _825858A
-    .4byte _82585A2
-    .4byte _82585B4
-    .4byte _82585CC
-    .4byte _82585E2
-    .4byte _82585E6
-    .4byte _82585F0
-    .4byte _8258606
-    .4byte _825861A
-    .4byte _8258632
-    .4byte _825864A
-    .4byte _825865C
-    .4byte _8258676
-    .4byte _825868C
-    .4byte _82586A2
-    .4byte _82586BA
-    .4byte _82586D2
-    .4byte _82586E2
-    .4byte _82586F8
-    .4byte _8258712
-    .4byte _8258728
-    .4byte _8258742
-    .4byte _8258756
-    .4byte _825876E
-    .4byte _8258780
-    .4byte _8258798
-    .4byte _82587AE
-    .4byte _82587C0
-    .4byte _82587D4
-    .4byte _82587D8
-    .4byte _82587EC
-    .4byte _8258802
-    .4byte _8258818
-    .4byte _8258830
-    .4byte _8258848
-    .4byte _825885C
-    .4byte _8258870
-    .4byte _8258888
-    .4byte _825889E
-    .4byte _82588B4
-    .4byte _82588B8
-    .4byte _82588D0
-    .4byte _82588E8
-    .4byte _82588FA
-    .4byte _825890E
-    .4byte _8258922
-    .4byte _825893C
-    .4byte _8258952
-    .4byte _8258968
-    .4byte _825897E
-    .4byte _8258994
-    .4byte _82589AE
-    .4byte _82589C8
-    .4byte _82589DE
-    .4byte _82589F4
-    .4byte _8258A08
-    .4byte _8258A0C
-    .4byte _8258A10
-    .4byte _8258A14
-    .4byte _8258A18
-    .4byte _8258A1C
-    .4byte _8258A20
-    .4byte _8258A24
-    .4byte _8258A28
-    .4byte _8258A2C
-    .4byte _8258A30
-    .4byte _8258A34
-    .4byte _8258A38
-    .4byte _8258A3C
-    .4byte _8258A40
-    .4byte _8258A44
-    .4byte _8258A48
-    .4byte _8258A4C
-    .4byte _8258A50
-    .4byte _8258A54
-    .4byte _8258A58
-    .4byte _8258A5C
-    .4byte _8258A60
-    .4byte _8258A64
-    .4byte _8258A68
-    .4byte _8258A6C
-    .4byte _8258A84
-    .4byte _8258AA2
-    .4byte _8258AC0
-    .4byte _8258AD8
-    .4byte _8258AF6
-    .4byte _8258B18
-    .4byte _8258B32
-    .4byte _8258B52
-    .4byte _8258B72
-    .4byte _8258B8C
-    .4byte _8258BAC
-    .4byte _8258BC6
-    .4byte _8258BE4
-    .4byte _8258BEC
-    .4byte _8258BF2
-    .4byte _8258C08
-    .4byte _8258C0E
-    .4byte _8258C24
-    .4byte _8258C34
-    .4byte _8258C4A
-    .4byte _8258C54
-    .4byte _8258C64
-    .4byte _8258C7A
-    .4byte _8258C84
-    .4byte _8258C9A
-    .4byte _8258CBA
-    .4byte _8258CD0
-    .4byte _8258CE4
-    .4byte _8258CFC
-    .4byte _8258D12
-    .4byte _8258D30
-    .4byte _8258D48
-    .4byte _8258D5A
-    .4byte _8258D76
-    .4byte _8258D88
-    .4byte _8258DA2
-    .4byte _8258DBC
-    .4byte _8258DDC
-    .4byte _8258DF6
-    .4byte _8258E00
-    .4byte _8258E1C
-    .4byte _8258E34
-    .4byte _8258E54
-    .4byte _8258E6A
-    .4byte _8258E84
-    .4byte _8258EA0
-    .4byte _8258EB8
-    .4byte _8258ED6
-    .4byte _8258EEA
-    .4byte _8258F04
-    .4byte _8258F24
-    .4byte _8258F2C
-    .4byte _8258F44
-    .4byte _8258F5A
-    .4byte _8258F78
-    .4byte _8258F8A
-    .4byte _8258FA4
-    .4byte _8258FBE
-    .4byte _8258FDA
-    .4byte _8258FFA
-    .4byte _8259012
-    .4byte _8259030
-    .4byte _8259046
-    .4byte _8259062
-    .4byte _825907E
-    .4byte _825909A
-    .4byte _82590B6
-    .4byte _82590D4
-    .4byte _82590F8
-    .4byte _8259110
-    .4byte _825912E
-    .4byte _8259144
-    .4byte _825915A
-    .4byte _8259168
-    .4byte _8259180
-    .4byte _825919E
-    .4byte _82591B6
-    .4byte _82591CE
-    .4byte _82591E8
-    .4byte _8259202
-    .4byte _8259228
-    .4byte _8259240
-    .4byte _8259260
-    .4byte _8259270
-    .4byte _8259288
-    .4byte _82592A6
-    .4byte _82592C6
-    .4byte _82592DA
-    .4byte _82592F4
-    .4byte _825930E
-    .4byte _8259326
-    .4byte _8259346
-    .4byte _825935E
-    .4byte _8259376
-    .4byte _8259394
-    .4byte _82593B4
-    .4byte _82593BE
-    .4byte _82593D0
-    .4byte _82593E2
-    .4byte _82593FA
-    .4byte _8259410
-    .4byte _825942C
-    .4byte _8259442
-    .4byte _825945A
-    .4byte _8259472
-    .4byte _825948C
-    .4byte _82594AC
-    .4byte _82594CC
-    .4byte _82594DE
-    .4byte _82594F4
-    .4byte _825950A
-    .4byte _8259520
-    .4byte _825953C
-    .4byte _8259552
-    .4byte _825956E
-    .4byte _8259584
-    .4byte _82595A2
-    .4byte _82595BE
-    .4byte _82595D6
-    .4byte _82595F6
-    .4byte _8259618
-    .4byte _825961C
-    .4byte _8259632
-    .4byte _825964E
-    .4byte _8259662
-    .4byte _8259676
-    .4byte _825968C
-    .4byte _82596A4
-    .4byte _82596BC
-    .4byte _82596D4
-    .4byte _82596EC
-    .4byte _8259704
-    .4byte _825971E
-    .4byte _8259738
+kLevelUpLearnsets:: @ 825D7B4
+    .4byte kLevelUpLearnset_Bulbasaur
+    .4byte kLevelUpLearnset_Bulbasaur
+    .4byte kLevelUpLearnset_Ivysaur
+    .4byte kLevelUpLearnset_Venusaur
+    .4byte kLevelUpLearnset_Charmander
+    .4byte kLevelUpLearnset_Charmeleon
+    .4byte kLevelUpLearnset_Charizard
+    .4byte kLevelUpLearnset_Squirtle
+    .4byte kLevelUpLearnset_Wartortle
+    .4byte kLevelUpLearnset_Blastoise
+    .4byte kLevelUpLearnset_Caterpie
+    .4byte kLevelUpLearnset_Metapod
+    .4byte kLevelUpLearnset_Butterfree
+    .4byte kLevelUpLearnset_Weedle
+    .4byte kLevelUpLearnset_Kakuna
+    .4byte kLevelUpLearnset_Beedrill
+    .4byte kLevelUpLearnset_Pidgey
+    .4byte kLevelUpLearnset_Pidgeotto
+    .4byte kLevelUpLearnset_Pidgeot
+    .4byte kLevelUpLearnset_Rattata
+    .4byte kLevelUpLearnset_Raticate
+    .4byte kLevelUpLearnset_Spearow
+    .4byte kLevelUpLearnset_Fearow
+    .4byte kLevelUpLearnset_Ekans
+    .4byte kLevelUpLearnset_Arbok
+    .4byte kLevelUpLearnset_Pikachu
+    .4byte kLevelUpLearnset_Raichu
+    .4byte kLevelUpLearnset_Sandshrew
+    .4byte kLevelUpLearnset_Sandslash
+    .4byte kLevelUpLearnset_NidoranF
+    .4byte kLevelUpLearnset_Nidorina
+    .4byte kLevelUpLearnset_Nidoqueen
+    .4byte kLevelUpLearnset_NidoranM
+    .4byte kLevelUpLearnset_Nidorino
+    .4byte kLevelUpLearnset_Nidoking
+    .4byte kLevelUpLearnset_Clefairy
+    .4byte kLevelUpLearnset_Clefable
+    .4byte kLevelUpLearnset_Vulpix
+    .4byte kLevelUpLearnset_Ninetales
+    .4byte kLevelUpLearnset_Jigglypuff
+    .4byte kLevelUpLearnset_Wigglytuff
+    .4byte kLevelUpLearnset_Zubat
+    .4byte kLevelUpLearnset_Golbat
+    .4byte kLevelUpLearnset_Oddish
+    .4byte kLevelUpLearnset_Gloom
+    .4byte kLevelUpLearnset_Vileplume
+    .4byte kLevelUpLearnset_Paras
+    .4byte kLevelUpLearnset_Parasect
+    .4byte kLevelUpLearnset_Venonat
+    .4byte kLevelUpLearnset_Venomoth
+    .4byte kLevelUpLearnset_Diglett
+    .4byte kLevelUpLearnset_Dugtrio
+    .4byte kLevelUpLearnset_Meowth
+    .4byte kLevelUpLearnset_Persian
+    .4byte kLevelUpLearnset_Psyduck
+    .4byte kLevelUpLearnset_Golduck
+    .4byte kLevelUpLearnset_Mankey
+    .4byte kLevelUpLearnset_Primeape
+    .4byte kLevelUpLearnset_Growlithe
+    .4byte kLevelUpLearnset_Arcanine
+    .4byte kLevelUpLearnset_Poliwag
+    .4byte kLevelUpLearnset_Poliwhirl
+    .4byte kLevelUpLearnset_Poliwrath
+    .4byte kLevelUpLearnset_Abra
+    .4byte kLevelUpLearnset_Kadabra
+    .4byte kLevelUpLearnset_Alakazam
+    .4byte kLevelUpLearnset_Machop
+    .4byte kLevelUpLearnset_Machoke
+    .4byte kLevelUpLearnset_Machamp
+    .4byte kLevelUpLearnset_Bellsprout
+    .4byte kLevelUpLearnset_Weepinbell
+    .4byte kLevelUpLearnset_Victreebel
+    .4byte kLevelUpLearnset_Tentacool
+    .4byte kLevelUpLearnset_Tentacruel
+    .4byte kLevelUpLearnset_Geodude
+    .4byte kLevelUpLearnset_Graveler
+    .4byte kLevelUpLearnset_Golem
+    .4byte kLevelUpLearnset_Ponyta
+    .4byte kLevelUpLearnset_Rapidash
+    .4byte kLevelUpLearnset_Slowpoke
+    .4byte kLevelUpLearnset_Slowbro
+    .4byte kLevelUpLearnset_Magnemite
+    .4byte kLevelUpLearnset_Magneton
+    .4byte kLevelUpLearnset_Farfetchd
+    .4byte kLevelUpLearnset_Doduo
+    .4byte kLevelUpLearnset_Dodrio
+    .4byte kLevelUpLearnset_Seel
+    .4byte kLevelUpLearnset_Dewgong
+    .4byte kLevelUpLearnset_Grimer
+    .4byte kLevelUpLearnset_Muk
+    .4byte kLevelUpLearnset_Shellder
+    .4byte kLevelUpLearnset_Cloyster
+    .4byte kLevelUpLearnset_Gastly
+    .4byte kLevelUpLearnset_Haunter
+    .4byte kLevelUpLearnset_Gengar
+    .4byte kLevelUpLearnset_Onix
+    .4byte kLevelUpLearnset_Drowzee
+    .4byte kLevelUpLearnset_Hypno
+    .4byte kLevelUpLearnset_Krabby
+    .4byte kLevelUpLearnset_Kingler
+    .4byte kLevelUpLearnset_Voltorb
+    .4byte kLevelUpLearnset_Electrode
+    .4byte kLevelUpLearnset_Exeggcute
+    .4byte kLevelUpLearnset_Exeggutor
+    .4byte kLevelUpLearnset_Cubone
+    .4byte kLevelUpLearnset_Marowak
+    .4byte kLevelUpLearnset_Hitmonlee
+    .4byte kLevelUpLearnset_Hitmonchan
+    .4byte kLevelUpLearnset_Lickitung
+    .4byte kLevelUpLearnset_Koffing
+    .4byte kLevelUpLearnset_Weezing
+    .4byte kLevelUpLearnset_Rhyhorn
+    .4byte kLevelUpLearnset_Rhydon
+    .4byte kLevelUpLearnset_Chansey
+    .4byte kLevelUpLearnset_Tangela
+    .4byte kLevelUpLearnset_Kangaskhan
+    .4byte kLevelUpLearnset_Horsea
+    .4byte kLevelUpLearnset_Seadra
+    .4byte kLevelUpLearnset_Goldeen
+    .4byte kLevelUpLearnset_Seaking
+    .4byte kLevelUpLearnset_Staryu
+    .4byte kLevelUpLearnset_Starmie
+    .4byte kLevelUpLearnset_MrMime
+    .4byte kLevelUpLearnset_Scyther
+    .4byte kLevelUpLearnset_Jynx
+    .4byte kLevelUpLearnset_Electabuzz
+    .4byte kLevelUpLearnset_Magmar
+    .4byte kLevelUpLearnset_Pinsir
+    .4byte kLevelUpLearnset_Tauros
+    .4byte kLevelUpLearnset_Magikarp
+    .4byte kLevelUpLearnset_Gyarados
+    .4byte kLevelUpLearnset_Lapras
+    .4byte kLevelUpLearnset_Ditto
+    .4byte kLevelUpLearnset_Eevee
+    .4byte kLevelUpLearnset_Vaporeon
+    .4byte kLevelUpLearnset_Jolteon
+    .4byte kLevelUpLearnset_Flareon
+    .4byte kLevelUpLearnset_Porygon
+    .4byte kLevelUpLearnset_Omanyte
+    .4byte kLevelUpLearnset_Omastar
+    .4byte kLevelUpLearnset_Kabuto
+    .4byte kLevelUpLearnset_Kabutops
+    .4byte kLevelUpLearnset_Aerodactyl
+    .4byte kLevelUpLearnset_Snorlax
+    .4byte kLevelUpLearnset_Articuno
+    .4byte kLevelUpLearnset_Zapdos
+    .4byte kLevelUpLearnset_Moltres
+    .4byte kLevelUpLearnset_Dratini
+    .4byte kLevelUpLearnset_Dragonair
+    .4byte kLevelUpLearnset_Dragonite
+    .4byte kLevelUpLearnset_Mewtwo
+    .4byte kLevelUpLearnset_Mew
+    .4byte kLevelUpLearnset_Chikorita
+    .4byte kLevelUpLearnset_Bayleef
+    .4byte kLevelUpLearnset_Meganium
+    .4byte kLevelUpLearnset_Cyndaquil
+    .4byte kLevelUpLearnset_Quilava
+    .4byte kLevelUpLearnset_Typhlosion
+    .4byte kLevelUpLearnset_Totodile
+    .4byte kLevelUpLearnset_Croconaw
+    .4byte kLevelUpLearnset_Feraligatr
+    .4byte kLevelUpLearnset_Sentret
+    .4byte kLevelUpLearnset_Furret
+    .4byte kLevelUpLearnset_Hoothoot
+    .4byte kLevelUpLearnset_Noctowl
+    .4byte kLevelUpLearnset_Ledyba
+    .4byte kLevelUpLearnset_Ledian
+    .4byte kLevelUpLearnset_Spinarak
+    .4byte kLevelUpLearnset_Ariados
+    .4byte kLevelUpLearnset_Crobat
+    .4byte kLevelUpLearnset_Chinchou
+    .4byte kLevelUpLearnset_Lanturn
+    .4byte kLevelUpLearnset_Pichu
+    .4byte kLevelUpLearnset_Cleffa
+    .4byte kLevelUpLearnset_Igglybuff
+    .4byte kLevelUpLearnset_Togepi
+    .4byte kLevelUpLearnset_Togetic
+    .4byte kLevelUpLearnset_Natu
+    .4byte kLevelUpLearnset_Xatu
+    .4byte kLevelUpLearnset_Mareep
+    .4byte kLevelUpLearnset_Flaaffy
+    .4byte kLevelUpLearnset_Ampharos
+    .4byte kLevelUpLearnset_Bellossom
+    .4byte kLevelUpLearnset_Marill
+    .4byte kLevelUpLearnset_Azumarill
+    .4byte kLevelUpLearnset_Sudowoodo
+    .4byte kLevelUpLearnset_Politoed
+    .4byte kLevelUpLearnset_Hoppip
+    .4byte kLevelUpLearnset_Skiploom
+    .4byte kLevelUpLearnset_Jumpluff
+    .4byte kLevelUpLearnset_Aipom
+    .4byte kLevelUpLearnset_Sunkern
+    .4byte kLevelUpLearnset_Sunflora
+    .4byte kLevelUpLearnset_Yanma
+    .4byte kLevelUpLearnset_Wooper
+    .4byte kLevelUpLearnset_Quagsire
+    .4byte kLevelUpLearnset_Espeon
+    .4byte kLevelUpLearnset_Umbreon
+    .4byte kLevelUpLearnset_Murkrow
+    .4byte kLevelUpLearnset_Slowking
+    .4byte kLevelUpLearnset_Misdreavus
+    .4byte kLevelUpLearnset_Unown
+    .4byte kLevelUpLearnset_Wobbuffet
+    .4byte kLevelUpLearnset_Girafarig
+    .4byte kLevelUpLearnset_Pineco
+    .4byte kLevelUpLearnset_Forretress
+    .4byte kLevelUpLearnset_Dunsparce
+    .4byte kLevelUpLearnset_Gligar
+    .4byte kLevelUpLearnset_Steelix
+    .4byte kLevelUpLearnset_Snubbull
+    .4byte kLevelUpLearnset_Granbull
+    .4byte kLevelUpLearnset_Qwilfish
+    .4byte kLevelUpLearnset_Scizor
+    .4byte kLevelUpLearnset_Shuckle
+    .4byte kLevelUpLearnset_Heracross
+    .4byte kLevelUpLearnset_Sneasel
+    .4byte kLevelUpLearnset_Teddiursa
+    .4byte kLevelUpLearnset_Ursaring
+    .4byte kLevelUpLearnset_Slugma
+    .4byte kLevelUpLearnset_Magcargo
+    .4byte kLevelUpLearnset_Swinub
+    .4byte kLevelUpLearnset_Piloswine
+    .4byte kLevelUpLearnset_Corsola
+    .4byte kLevelUpLearnset_Remoraid
+    .4byte kLevelUpLearnset_Octillery
+    .4byte kLevelUpLearnset_Delibird
+    .4byte kLevelUpLearnset_Mantine
+    .4byte kLevelUpLearnset_Skarmory
+    .4byte kLevelUpLearnset_Houndour
+    .4byte kLevelUpLearnset_Houndoom
+    .4byte kLevelUpLearnset_Kingdra
+    .4byte kLevelUpLearnset_Phanpy
+    .4byte kLevelUpLearnset_Donphan
+    .4byte kLevelUpLearnset_Porygon2
+    .4byte kLevelUpLearnset_Stantler
+    .4byte kLevelUpLearnset_Smeargle
+    .4byte kLevelUpLearnset_Tyrogue
+    .4byte kLevelUpLearnset_Hitmontop
+    .4byte kLevelUpLearnset_Smoochum
+    .4byte kLevelUpLearnset_Elekid
+    .4byte kLevelUpLearnset_Magby
+    .4byte kLevelUpLearnset_Miltank
+    .4byte kLevelUpLearnset_Blissey
+    .4byte kLevelUpLearnset_Raikou
+    .4byte kLevelUpLearnset_Entei
+    .4byte kLevelUpLearnset_Suicune
+    .4byte kLevelUpLearnset_Larvitar
+    .4byte kLevelUpLearnset_Pupitar
+    .4byte kLevelUpLearnset_Tyranitar
+    .4byte kLevelUpLearnset_Lugia
+    .4byte kLevelUpLearnset_HoOh
+    .4byte kLevelUpLearnset_Celebi
+    .4byte kLevelUpLearnset_OldUnownB
+    .4byte kLevelUpLearnset_OldUnownC
+    .4byte kLevelUpLearnset_OldUnownD
+    .4byte kLevelUpLearnset_OldUnownE
+    .4byte kLevelUpLearnset_OldUnownF
+    .4byte kLevelUpLearnset_OldUnownG
+    .4byte kLevelUpLearnset_OldUnownH
+    .4byte kLevelUpLearnset_OldUnownI
+    .4byte kLevelUpLearnset_OldUnownJ
+    .4byte kLevelUpLearnset_OldUnownK
+    .4byte kLevelUpLearnset_OldUnownL
+    .4byte kLevelUpLearnset_OldUnownM
+    .4byte kLevelUpLearnset_OldUnownN
+    .4byte kLevelUpLearnset_OldUnownO
+    .4byte kLevelUpLearnset_OldUnownP
+    .4byte kLevelUpLearnset_OldUnownQ
+    .4byte kLevelUpLearnset_OldUnownR
+    .4byte kLevelUpLearnset_OldUnownS
+    .4byte kLevelUpLearnset_OldUnownT
+    .4byte kLevelUpLearnset_OldUnownU
+    .4byte kLevelUpLearnset_OldUnownV
+    .4byte kLevelUpLearnset_OldUnownW
+    .4byte kLevelUpLearnset_OldUnownX
+    .4byte kLevelUpLearnset_OldUnownY
+    .4byte kLevelUpLearnset_OldUnownZ
+    .4byte kLevelUpLearnset_Treecko
+    .4byte kLevelUpLearnset_Grovyle
+    .4byte kLevelUpLearnset_Sceptile
+    .4byte kLevelUpLearnset_Torchic
+    .4byte kLevelUpLearnset_Combusken
+    .4byte kLevelUpLearnset_Blaziken
+    .4byte kLevelUpLearnset_Mudkip
+    .4byte kLevelUpLearnset_Marshtomp
+    .4byte kLevelUpLearnset_Swampert
+    .4byte kLevelUpLearnset_Poochyena
+    .4byte kLevelUpLearnset_Mightyena
+    .4byte kLevelUpLearnset_Zigzagoon
+    .4byte kLevelUpLearnset_Linoone
+    .4byte kLevelUpLearnset_Wurmple
+    .4byte kLevelUpLearnset_Silcoon
+    .4byte kLevelUpLearnset_Beautifly
+    .4byte kLevelUpLearnset_Cascoon
+    .4byte kLevelUpLearnset_Dustox
+    .4byte kLevelUpLearnset_Lotad
+    .4byte kLevelUpLearnset_Lombre
+    .4byte kLevelUpLearnset_Ludicolo
+    .4byte kLevelUpLearnset_Seedot
+    .4byte kLevelUpLearnset_Nuzleaf
+    .4byte kLevelUpLearnset_Shiftry
+    .4byte kLevelUpLearnset_Nincada
+    .4byte kLevelUpLearnset_Ninjask
+    .4byte kLevelUpLearnset_Shedinja
+    .4byte kLevelUpLearnset_Taillow
+    .4byte kLevelUpLearnset_Swellow
+    .4byte kLevelUpLearnset_Shroomish
+    .4byte kLevelUpLearnset_Breloom
+    .4byte kLevelUpLearnset_Spinda
+    .4byte kLevelUpLearnset_Wingull
+    .4byte kLevelUpLearnset_Pelipper
+    .4byte kLevelUpLearnset_Surskit
+    .4byte kLevelUpLearnset_Masquerain
+    .4byte kLevelUpLearnset_Wailmer
+    .4byte kLevelUpLearnset_Wailord
+    .4byte kLevelUpLearnset_Skitty
+    .4byte kLevelUpLearnset_Delcatty
+    .4byte kLevelUpLearnset_Kecleon
+    .4byte kLevelUpLearnset_Baltoy
+    .4byte kLevelUpLearnset_Claydol
+    .4byte kLevelUpLearnset_Nosepass
+    .4byte kLevelUpLearnset_Torkoal
+    .4byte kLevelUpLearnset_Sableye
+    .4byte kLevelUpLearnset_Barboach
+    .4byte kLevelUpLearnset_Whiscash
+    .4byte kLevelUpLearnset_Luvdisc
+    .4byte kLevelUpLearnset_Corphish
+    .4byte kLevelUpLearnset_Crawdaunt
+    .4byte kLevelUpLearnset_Feebas
+    .4byte kLevelUpLearnset_Milotic
+    .4byte kLevelUpLearnset_Carvanha
+    .4byte kLevelUpLearnset_Sharpedo
+    .4byte kLevelUpLearnset_Trapinch
+    .4byte kLevelUpLearnset_Vibrava
+    .4byte kLevelUpLearnset_Flygon
+    .4byte kLevelUpLearnset_Makuhita
+    .4byte kLevelUpLearnset_Hariyama
+    .4byte kLevelUpLearnset_Electrike
+    .4byte kLevelUpLearnset_Manectric
+    .4byte kLevelUpLearnset_Numel
+    .4byte kLevelUpLearnset_Camerupt
+    .4byte kLevelUpLearnset_Spheal
+    .4byte kLevelUpLearnset_Sealeo
+    .4byte kLevelUpLearnset_Walrein
+    .4byte kLevelUpLearnset_Cacnea
+    .4byte kLevelUpLearnset_Cacturne
+    .4byte kLevelUpLearnset_Snorunt
+    .4byte kLevelUpLearnset_Glalie
+    .4byte kLevelUpLearnset_Lunatone
+    .4byte kLevelUpLearnset_Solrock
+    .4byte kLevelUpLearnset_Azurill
+    .4byte kLevelUpLearnset_Spoink
+    .4byte kLevelUpLearnset_Grumpig
+    .4byte kLevelUpLearnset_Plusle
+    .4byte kLevelUpLearnset_Minun
+    .4byte kLevelUpLearnset_Mawile
+    .4byte kLevelUpLearnset_Meditite
+    .4byte kLevelUpLearnset_Medicham
+    .4byte kLevelUpLearnset_Swablu
+    .4byte kLevelUpLearnset_Altaria
+    .4byte kLevelUpLearnset_Wynaut
+    .4byte kLevelUpLearnset_Duskull
+    .4byte kLevelUpLearnset_Dusclops
+    .4byte kLevelUpLearnset_Roselia
+    .4byte kLevelUpLearnset_Slakoth
+    .4byte kLevelUpLearnset_Vigoroth
+    .4byte kLevelUpLearnset_Slaking
+    .4byte kLevelUpLearnset_Gulpin
+    .4byte kLevelUpLearnset_Swalot
+    .4byte kLevelUpLearnset_Tropius
+    .4byte kLevelUpLearnset_Whismur
+    .4byte kLevelUpLearnset_Loudred
+    .4byte kLevelUpLearnset_Exploud
+    .4byte kLevelUpLearnset_Clamperl
+    .4byte kLevelUpLearnset_Huntail
+    .4byte kLevelUpLearnset_Gorebyss
+    .4byte kLevelUpLearnset_Absol
+    .4byte kLevelUpLearnset_Shuppet
+    .4byte kLevelUpLearnset_Banette
+    .4byte kLevelUpLearnset_Seviper
+    .4byte kLevelUpLearnset_Zangoose
+    .4byte kLevelUpLearnset_Relicanth
+    .4byte kLevelUpLearnset_Aron
+    .4byte kLevelUpLearnset_Lairon
+    .4byte kLevelUpLearnset_Aggron
+    .4byte kLevelUpLearnset_Castform
+    .4byte kLevelUpLearnset_Volbeat
+    .4byte kLevelUpLearnset_Illumise
+    .4byte kLevelUpLearnset_Lileep
+    .4byte kLevelUpLearnset_Cradily
+    .4byte kLevelUpLearnset_Anorith
+    .4byte kLevelUpLearnset_Armaldo
+    .4byte kLevelUpLearnset_Ralts
+    .4byte kLevelUpLearnset_Kirlia
+    .4byte kLevelUpLearnset_Gardevoir
+    .4byte kLevelUpLearnset_Bagon
+    .4byte kLevelUpLearnset_Shelgon
+    .4byte kLevelUpLearnset_Salamence
+    .4byte kLevelUpLearnset_Beldum
+    .4byte kLevelUpLearnset_Metang
+    .4byte kLevelUpLearnset_Metagross
+    .4byte kLevelUpLearnset_Regirock
+    .4byte kLevelUpLearnset_Regice
+    .4byte kLevelUpLearnset_Registeel
+    .4byte kLevelUpLearnset_Kyogre
+    .4byte kLevelUpLearnset_Groudon
+    .4byte kLevelUpLearnset_Rayquaza
+    .4byte kLevelUpLearnset_Latias
+    .4byte kLevelUpLearnset_Latios
+    .4byte kLevelUpLearnset_Jirachi
+    .4byte kLevelUpLearnset_Deoxys
+    .4byte kLevelUpLearnset_Chimecho
+
 
     .global UNK_825DE24
 UNK_825DE24: @ 825DE24
