@@ -1,4 +1,5 @@
 	.include "constants/gba_constants.inc"
+	.include "constants/misc_constants.inc"
 
 	.syntax unified
 
@@ -35,10 +36,20 @@ RomHeaderNintendoLogo:
 	.byte 0x21,0xd4,0xf8,0x07
 
 RomHeaderGameTitle:
+.ifeq (VERSION - VERSION_FIRERED)
 	.ascii "POKEMON FIRE"
+.else
+	.ascii "POKEMON LEAF"
+.endif
 
 RomHeaderGameCode:
-	.ascii "BPRE"
+	.ascii "BP"
+.ifeq (VERSION - VERSION_FIRERED)
+	.ascii "R"
+.else
+	.ascii "G"
+.endif
+	.ascii "E" @ English
 
 RomHeaderMakerCode:
 	.ascii "01"
@@ -103,10 +114,15 @@ GPIOPortReadEnable: @ 80000C8
 	.4byte 0xFFFFFFFF
 	.4byte 0xFFFFFFFF
 	.4byte 0xFFFFFFFF
-	.4byte          4
-	.4byte          2
+	.4byte VERSION
+	.4byte          2 @ English
+.ifeq (VERSION - VERSION_FIRERED)
 	.ascii "pokemon red version"
 	.space 13
+.else
+	.ascii "pokemon green version"
+	.space 11
+.endif
 	.4byte kMonFrontPicTable
 	.4byte kMonBackPicTable
 	.4byte kMonPaletteTable

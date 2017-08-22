@@ -23692,35 +23692,35 @@ EventScript_816CC10: @ 816CC10
     .global EventScript_816CC15
 EventScript_816CC15: @ 816CC15
     setvar 0x4001, 63
-    setvar 0x4002, 180
+    setvar 0x4002, 120
     jump EventScript_816CC65
     end
 
     .global EventScript_816CC25
 EventScript_816CC25: @ 816CC25
     setvar 0x4001, 35
-    setvar 0x4002, 500
+    setvar 0x4002, 750
     jump EventScript_816CC65
     end
 
     .global EventScript_816CC35
 EventScript_816CC35: @ 816CC35
-    setvar 0x4001, 147
-    setvar 0x4002, 2800
+    setvar 0x4001, 127
+    setvar 0x4002, 2500
     jump EventScript_816CC65
     end
 
     .global EventScript_816CC45
 EventScript_816CC45: @ 816CC45
-    setvar 0x4001, 123
-    setvar 0x4002, 5500
+    setvar 0x4001, 147
+    setvar 0x4002, 4600
     jump EventScript_816CC65
     end
 
     .global EventScript_816CC55
 EventScript_816CC55: @ 816CC55
     setvar 0x4001, 137
-    setvar 0x4002, 9999
+    setvar 0x4002, 6500
     jump EventScript_816CC65
     end
 
@@ -23758,13 +23758,13 @@ EventScript_816CCD4: @ 816CCD4
 
     .global EventScript_816CCE9
 EventScript_816CCE9: @ 816CCE9
-    givepokemon 0x4001, 8, 0x0000, 0, 0, 0
+    givepokemon 0x4001, 12, 0x0000, 0, 0, 0
     jump EventScript_816CD52
     end
 
     .global EventScript_816CCFE
 EventScript_816CCFE: @ 816CCFE
-    givepokemon 0x4001, 18, 0x0000, 0, 0, 0
+    givepokemon 0x4001, 24, 0x0000, 0, 0, 0
     jump EventScript_816CD52
     end
 
@@ -23776,7 +23776,7 @@ EventScript_816CD13: @ 816CD13
 
     .global EventScript_816CD28
 EventScript_816CD28: @ 816CD28
-    givepokemon 0x4001, 26, 0x0000, 0, 0, 0
+    givepokemon 0x4001, 18, 0x0000, 0, 0, 0
     jump EventScript_816CD52
     end
 

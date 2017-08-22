@@ -151,6 +151,13 @@ function(add_rom ROM_NAME)
     if (NOT DEFINED ROM_REVISION)
         set(ROM_REVISION 0)
     endif ()
+    if (${ROM_VERSION} STREQUAL "firered")
+        set(ROM_VERSION 4)
+    elseif (${ROM_VERSION} STREQUAL "leafgreen")
+        set(ROM_VERSION 5)
+    else ()
+        message(FATAL "Invalid rom version (${ROM_VERSION})")
+    endif ()
 
     set(OUT_GBA "${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME}.gba")
     set(OUT_ELF "${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME}/rom.elf")
@@ -183,14 +190,14 @@ function(add_rom ROM_NAME)
                     OUTPUT "${ASM_OUT}"
                     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
                     COMMAND ${CMAKE_COMMAND} -E make_directory "${DIR}"
-                    COMMAND ${PREPROC} "${ASM_IN}" "${CMAKE_CURRENT_SOURCE_DIR}/charmap.txt" | ${AS} ${AS_FLAGS} -I${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME} -I${CMAKE_SOURCE_DIR} -I${CMAKE_CURRENT_BINARY_DIR} --defsym REVISION=${ROM_REVISION} -o "${ASM_OUT}" -
+                    COMMAND ${PREPROC} "${ASM_IN}" "${CMAKE_CURRENT_SOURCE_DIR}/charmap.txt" | ${AS} ${AS_FLAGS} -I${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME} -I${CMAKE_SOURCE_DIR} -I${CMAKE_CURRENT_BINARY_DIR} --defsym REVISION=${ROM_REVISION} --defsym VERSION=${ROM_VERSION} -o "${ASM_OUT}" -
                     DEPENDS "${ASM_IN}" ${DEPS}
             )
         else ()
             add_custom_command(
                     OUTPUT "${ASM_OUT}"
                     COMMAND ${CMAKE_COMMAND} -E make_directory "${DIR}"
-                    COMMAND ${AS} ${AS_FLAGS} -I${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME} -I${CMAKE_SOURCE_DIR} --defsym REVISION=${ROM_REVISION} -o "${ASM_OUT}" "${ASM_IN}"
+                    COMMAND ${AS} ${AS_FLAGS} -I${CMAKE_CURRENT_BINARY_DIR}/${ROM_NAME} -I${CMAKE_SOURCE_DIR} --defsym REVISION=${ROM_REVISION} --defsym VERSION=${ROM_VERSION} -o "${ASM_OUT}" "${ASM_IN}"
                     DEPENDS "${ASM_IN}" ${DEPS}
             )
         endif ()
@@ -230,7 +237,7 @@ function(add_rom ROM_NAME)
                 OUTPUT "${C_OBJ}"
                 BYPRODUCTS ${C_INT} ${C_ASM}
                 COMMAND ${CMAKE_COMMAND} -E make_directory "${DIR}"
-                COMMAND ${CPP} ${CPP_FLAGS} "${C_SRC}" -DREVISION=${ROM_REVISION} -o "${C_INT}"
+                COMMAND ${CPP} ${CPP_FLAGS} "${C_SRC}" -DREVISION=${ROM_REVISION} -DVERSION=${ROM_VERSION} -o "${C_INT}"
                 COMMAND ${CC} ${FLAGS} -o "${C_ASM}" "${C_INT}"
                 COMMAND ${CMAKE_COMMAND} -E echo ".text" >> ${C_ASM}
                 COMMAND ${CMAKE_COMMAND} -E echo ".align 2, 0" >> ${C_ASM}
@@ -260,3 +267,4 @@ endfunction()
 
 add_rom(firered VERSION firered)
 add_rom(firered-1.1 VERSION firered REVISION 1)
+add_rom(leafgreen VERSION leafgreen)

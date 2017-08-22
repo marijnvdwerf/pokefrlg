@@ -483,7 +483,7 @@ AGBAssert:
 	ldr	r0, [r7, #0xc]
 	cmp	r0, #0
 	beq	.LAGBAssert_1	@cond_branch
-	ldr	r0, .LAGBAssert_3 @ Data2+0x2ad83c
+	ldr	r0, .LAGBAssert_3 @ ascii_86FC08C
 	ldr	r2, [r7, #0x4]
 	ldr	r3, [r7, #0x8]
 	ldr	r1, [r7]
@@ -494,9 +494,9 @@ AGBAssert:
 .LAGBAssert_4:
 	.align	2, 0
 .LAGBAssert_3:
-	.word	Data2+0x2ad83c
+	.word	ascii_86FC08C
 .LAGBAssert_1:
-	ldr	r0, .LAGBAssert_5 @ Data2+0x2ad870
+	ldr	r0, .LAGBAssert_5 @ ascii_86FC0C0
 	ldr	r2, [r7, #0x4]
 	ldr	r3, [r7, #0x8]
 	ldr	r1, [r7]
@@ -509,5 +509,5 @@ AGBAssert:
 .LAGBAssert_6:
 	.align	2, 0
 .LAGBAssert_5:
-	.word	Data2+0x2ad870
+	.word	ascii_86FC0C0
 	thumb_func_end AGBAssert
