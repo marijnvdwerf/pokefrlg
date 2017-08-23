@@ -17178,7 +17178,11 @@ UNK_825265C:: @ 825265C
     .incbin "baserom.gba", 0x25265C, 0x2
 
 UNK_825265E:: @ 825265E
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x25265E, 0x8E
+.else
+    .incbin "baserom-lg.gba", 0x25263a, 142
+.endif
 
 _82526EC:: @ 82526EC
     .incbin "baserom.gba", 0x2526EC, 0x7
@@ -17558,7 +17562,7 @@ UNK_8254784:: @ 8254784
 UNK_8254795:: @ 8254795
     .incbin "baserom.gba", 0x254795, 0x2CFF
 
-kLevelUpLearnset_Bulbasaur:: @ 8257494
+kLevelUpLearnset_Bulbasaur:: @ 8257470
     level_up_move 1, MOVE_TACKLE
     level_up_move 4, MOVE_GROWL
     level_up_move 7, MOVE_LEECH_SEED
@@ -17572,7 +17576,7 @@ kLevelUpLearnset_Bulbasaur:: @ 8257494
     level_up_move 46, MOVE_SOLAR_BEAM
     .2byte -1
 
-kLevelUpLearnset_Ivysaur:: @ 82574AC
+kLevelUpLearnset_Ivysaur:: @ 8257488
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_LEECH_SEED
@@ -17588,7 +17592,7 @@ kLevelUpLearnset_Ivysaur:: @ 82574AC
     level_up_move 56, MOVE_SOLAR_BEAM
     .2byte -1
 
-kLevelUpLearnset_Venusaur:: @ 82574C8
+kLevelUpLearnset_Venusaur:: @ 82574A4
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_LEECH_SEED
@@ -17605,7 +17609,7 @@ kLevelUpLearnset_Venusaur:: @ 82574C8
     level_up_move 65, MOVE_SOLAR_BEAM
     .2byte -1
 
-kLevelUpLearnset_Charmander:: @ 82574E6
+kLevelUpLearnset_Charmander:: @ 82574C2
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_GROWL
     level_up_move 7, MOVE_EMBER
@@ -17618,7 +17622,7 @@ kLevelUpLearnset_Charmander:: @ 82574E6
     level_up_move 49, MOVE_FIRE_SPIN
     .2byte -1
 
-kLevelUpLearnset_Charmeleon:: @ 82574FC
+kLevelUpLearnset_Charmeleon:: @ 82574D8
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_EMBER
@@ -17632,7 +17636,7 @@ kLevelUpLearnset_Charmeleon:: @ 82574FC
     level_up_move 55, MOVE_FIRE_SPIN
     .2byte -1
 
-kLevelUpLearnset_Charizard:: @ 8257514
+kLevelUpLearnset_Charizard:: @ 82574F0
     level_up_move 1, MOVE_HEAT_WAVE
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_GROWL
@@ -17649,7 +17653,7 @@ kLevelUpLearnset_Charizard:: @ 8257514
     level_up_move 64, MOVE_FIRE_SPIN
     .2byte -1
 
-kLevelUpLearnset_Squirtle:: @ 8257532
+kLevelUpLearnset_Squirtle:: @ 825750E
     level_up_move 1, MOVE_TACKLE
     level_up_move 4, MOVE_TAIL_WHIP
     level_up_move 7, MOVE_BUBBLE
@@ -17663,7 +17667,7 @@ kLevelUpLearnset_Squirtle:: @ 8257532
     level_up_move 47, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Wartortle:: @ 825754A
+kLevelUpLearnset_Wartortle:: @ 8257526
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_BUBBLE
@@ -17679,7 +17683,7 @@ kLevelUpLearnset_Wartortle:: @ 825754A
     level_up_move 53, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Blastoise:: @ 8257566
+kLevelUpLearnset_Blastoise:: @ 8257542
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_BUBBLE
@@ -17696,17 +17700,17 @@ kLevelUpLearnset_Blastoise:: @ 8257566
     level_up_move 68, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Caterpie:: @ 8257584
+kLevelUpLearnset_Caterpie:: @ 8257560
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_STRING_SHOT
     .2byte -1
 
-kLevelUpLearnset_Metapod:: @ 825758A
+kLevelUpLearnset_Metapod:: @ 8257566
     level_up_move 1, MOVE_HARDEN
     level_up_move 7, MOVE_HARDEN
     .2byte -1
 
-kLevelUpLearnset_Butterfree:: @ 8257590
+kLevelUpLearnset_Butterfree:: @ 825756C
     level_up_move 1, MOVE_CONFUSION
     level_up_move 10, MOVE_CONFUSION
     level_up_move 13, MOVE_POISON_POWDER
@@ -17720,17 +17724,17 @@ kLevelUpLearnset_Butterfree:: @ 8257590
     level_up_move 47, MOVE_SILVER_WIND
     .2byte -1
 
-kLevelUpLearnset_Weedle:: @ 82575A8
+kLevelUpLearnset_Weedle:: @ 8257584
     level_up_move 1, MOVE_POISON_STING
     level_up_move 1, MOVE_STRING_SHOT
     .2byte -1
 
-kLevelUpLearnset_Kakuna:: @ 82575AE
+kLevelUpLearnset_Kakuna:: @ 825758A
     level_up_move 1, MOVE_HARDEN
     level_up_move 7, MOVE_HARDEN
     .2byte -1
 
-kLevelUpLearnset_Beedrill:: @ 82575B4
+kLevelUpLearnset_Beedrill:: @ 8257590
     level_up_move 1, MOVE_FURY_ATTACK
     level_up_move 10, MOVE_FURY_ATTACK
     level_up_move 15, MOVE_FOCUS_ENERGY
@@ -17742,7 +17746,7 @@ kLevelUpLearnset_Beedrill:: @ 82575B4
     level_up_move 45, MOVE_ENDEAVOR
     .2byte -1
 
-kLevelUpLearnset_Pidgey:: @ 82575C8
+kLevelUpLearnset_Pidgey:: @ 82575A4
     level_up_move 1, MOVE_TACKLE
     level_up_move 5, MOVE_SAND_ATTACK
     level_up_move 9, MOVE_GUST
@@ -17754,7 +17758,7 @@ kLevelUpLearnset_Pidgey:: @ 82575C8
     level_up_move 47, MOVE_MIRROR_MOVE
     .2byte -1
 
-kLevelUpLearnset_Pidgeotto:: @ 82575DC
+kLevelUpLearnset_Pidgeotto:: @ 82575B8
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_SAND_ATTACK
     level_up_move 1, MOVE_GUST
@@ -17768,7 +17772,7 @@ kLevelUpLearnset_Pidgeotto:: @ 82575DC
     level_up_move 52, MOVE_MIRROR_MOVE
     .2byte -1
 
-kLevelUpLearnset_Pidgeot:: @ 82575F4
+kLevelUpLearnset_Pidgeot:: @ 82575D0
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_SAND_ATTACK
     level_up_move 1, MOVE_GUST
@@ -17783,7 +17787,7 @@ kLevelUpLearnset_Pidgeot:: @ 82575F4
     level_up_move 62, MOVE_MIRROR_MOVE
     .2byte -1
 
-kLevelUpLearnset_Rattata:: @ 825760E
+kLevelUpLearnset_Rattata:: @ 82575EA
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 7, MOVE_QUICK_ATTACK
@@ -17794,7 +17798,7 @@ kLevelUpLearnset_Rattata:: @ 825760E
     level_up_move 41, MOVE_ENDEAVOR
     .2byte -1
 
-kLevelUpLearnset_Raticate:: @ 8257620
+kLevelUpLearnset_Raticate:: @ 82575FC
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_QUICK_ATTACK
@@ -17806,7 +17810,7 @@ kLevelUpLearnset_Raticate:: @ 8257620
     level_up_move 50, MOVE_ENDEAVOR
     .2byte -1
 
-kLevelUpLearnset_Spearow:: @ 8257634
+kLevelUpLearnset_Spearow:: @ 8257610
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_GROWL
     level_up_move 7, MOVE_LEER
@@ -17818,7 +17822,7 @@ kLevelUpLearnset_Spearow:: @ 8257634
     level_up_move 43, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Fearow:: @ 8257648
+kLevelUpLearnset_Fearow:: @ 8257624
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_LEER
@@ -17831,7 +17835,7 @@ kLevelUpLearnset_Fearow:: @ 8257648
     level_up_move 47, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Ekans:: @ 825765E
+kLevelUpLearnset_Ekans:: @ 825763A
     level_up_move 1, MOVE_WRAP
     level_up_move 1, MOVE_LEER
     level_up_move 8, MOVE_POISON_STING
@@ -17845,7 +17849,7 @@ kLevelUpLearnset_Ekans:: @ 825765E
     level_up_move 44, MOVE_HAZE
     .2byte -1
 
-kLevelUpLearnset_Arbok:: @ 8257676
+kLevelUpLearnset_Arbok:: @ 8257652
     level_up_move 1, MOVE_WRAP
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_POISON_STING
@@ -17861,7 +17865,7 @@ kLevelUpLearnset_Arbok:: @ 8257676
     level_up_move 56, MOVE_HAZE
     .2byte -1
 
-kLevelUpLearnset_Pikachu:: @ 8257692
+kLevelUpLearnset_Pikachu:: @ 825766E
     level_up_move 1, MOVE_THUNDER_SHOCK
     level_up_move 1, MOVE_GROWL
     level_up_move 6, MOVE_TAIL_WHIP
@@ -17875,14 +17879,14 @@ kLevelUpLearnset_Pikachu:: @ 8257692
     level_up_move 50, MOVE_LIGHT_SCREEN
     .2byte -1
 
-kLevelUpLearnset_Raichu:: @ 82576AA
+kLevelUpLearnset_Raichu:: @ 8257686
     level_up_move 1, MOVE_THUNDER_SHOCK
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_QUICK_ATTACK
     level_up_move 1, MOVE_THUNDERBOLT
     .2byte -1
 
-kLevelUpLearnset_Sandshrew:: @ 82576B4
+kLevelUpLearnset_Sandshrew:: @ 8257690
     level_up_move 1, MOVE_SCRATCH
     level_up_move 6, MOVE_DEFENSE_CURL
     level_up_move 11, MOVE_SAND_ATTACK
@@ -17894,7 +17898,7 @@ kLevelUpLearnset_Sandshrew:: @ 82576B4
     level_up_move 53, MOVE_SANDSTORM
     .2byte -1
 
-kLevelUpLearnset_Sandslash:: @ 82576C8
+kLevelUpLearnset_Sandslash:: @ 82576A4
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_DEFENSE_CURL
     level_up_move 1, MOVE_SAND_ATTACK
@@ -17908,7 +17912,7 @@ kLevelUpLearnset_Sandslash:: @ 82576C8
     level_up_move 62, MOVE_SANDSTORM
     .2byte -1
 
-kLevelUpLearnset_NidoranF:: @ 82576E0
+kLevelUpLearnset_NidoranF:: @ 82576BC
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_SCRATCH
     level_up_move 8, MOVE_TAIL_WHIP
@@ -17921,7 +17925,7 @@ kLevelUpLearnset_NidoranF:: @ 82576E0
     level_up_move 47, MOVE_CRUNCH
     .2byte -1
 
-kLevelUpLearnset_Nidorina:: @ 82576F6
+kLevelUpLearnset_Nidorina:: @ 82576D2
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_SCRATCH
     level_up_move 8, MOVE_TAIL_WHIP
@@ -17934,7 +17938,7 @@ kLevelUpLearnset_Nidorina:: @ 82576F6
     level_up_move 53, MOVE_CRUNCH
     .2byte -1
 
-kLevelUpLearnset_Nidoqueen:: @ 825770C
+kLevelUpLearnset_Nidoqueen:: @ 82576E8
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_DOUBLE_KICK
@@ -17943,7 +17947,7 @@ kLevelUpLearnset_Nidoqueen:: @ 825770C
     level_up_move 43, MOVE_SUPERPOWER
     .2byte -1
 
-kLevelUpLearnset_NidoranM:: @ 825771A
+kLevelUpLearnset_NidoranM:: @ 82576F6
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_PECK
     level_up_move 8, MOVE_FOCUS_ENERGY
@@ -17956,7 +17960,7 @@ kLevelUpLearnset_NidoranM:: @ 825771A
     level_up_move 47, MOVE_HORN_DRILL
     .2byte -1
 
-kLevelUpLearnset_Nidorino:: @ 8257730
+kLevelUpLearnset_Nidorino:: @ 825770C
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_PECK
     level_up_move 8, MOVE_FOCUS_ENERGY
@@ -17969,7 +17973,7 @@ kLevelUpLearnset_Nidorino:: @ 8257730
     level_up_move 53, MOVE_HORN_DRILL
     .2byte -1
 
-kLevelUpLearnset_Nidoking:: @ 8257746
+kLevelUpLearnset_Nidoking:: @ 8257722
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_FOCUS_ENERGY
     level_up_move 1, MOVE_DOUBLE_KICK
@@ -17978,7 +17982,7 @@ kLevelUpLearnset_Nidoking:: @ 8257746
     level_up_move 43, MOVE_MEGAHORN
     .2byte -1
 
-kLevelUpLearnset_Clefairy:: @ 8257754
+kLevelUpLearnset_Clefairy:: @ 8257730
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_GROWL
     level_up_move 5, MOVE_ENCORE
@@ -17994,14 +17998,14 @@ kLevelUpLearnset_Clefairy:: @ 8257754
     level_up_move 45, MOVE_METEOR_MASH
     .2byte -1
 
-kLevelUpLearnset_Clefable:: @ 8257770
+kLevelUpLearnset_Clefable:: @ 825774C
     level_up_move 1, MOVE_SING
     level_up_move 1, MOVE_DOUBLE_SLAP
     level_up_move 1, MOVE_MINIMIZE
     level_up_move 1, MOVE_METRONOME
     .2byte -1
 
-kLevelUpLearnset_Vulpix:: @ 825777A
+kLevelUpLearnset_Vulpix:: @ 8257756
     level_up_move 1, MOVE_EMBER
     level_up_move 5, MOVE_TAIL_WHIP
     level_up_move 9, MOVE_ROAR
@@ -18015,7 +18019,7 @@ kLevelUpLearnset_Vulpix:: @ 825777A
     level_up_move 41, MOVE_FIRE_SPIN
     .2byte -1
 
-kLevelUpLearnset_Ninetales:: @ 8257792
+kLevelUpLearnset_Ninetales:: @ 825776E
     level_up_move 1, MOVE_EMBER
     level_up_move 1, MOVE_QUICK_ATTACK
     level_up_move 1, MOVE_CONFUSE_RAY
@@ -18023,7 +18027,7 @@ kLevelUpLearnset_Ninetales:: @ 8257792
     level_up_move 45, MOVE_FIRE_SPIN
     .2byte -1
 
-kLevelUpLearnset_Jigglypuff:: @ 825779E
+kLevelUpLearnset_Jigglypuff:: @ 825777A
     level_up_move 1, MOVE_SING
     level_up_move 4, MOVE_DEFENSE_CURL
     level_up_move 9, MOVE_POUND
@@ -18037,14 +18041,14 @@ kLevelUpLearnset_Jigglypuff:: @ 825779E
     level_up_move 49, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Wigglytuff:: @ 82577B6
+kLevelUpLearnset_Wigglytuff:: @ 8257792
     level_up_move 1, MOVE_SING
     level_up_move 1, MOVE_DISABLE
     level_up_move 1, MOVE_DEFENSE_CURL
     level_up_move 1, MOVE_DOUBLE_SLAP
     .2byte -1
 
-kLevelUpLearnset_Zubat:: @ 82577C0
+kLevelUpLearnset_Zubat:: @ 825779C
     level_up_move 1, MOVE_LEECH_LIFE
     level_up_move 6, MOVE_ASTONISH
     level_up_move 11, MOVE_SUPERSONIC
@@ -18057,7 +18061,7 @@ kLevelUpLearnset_Zubat:: @ 82577C0
     level_up_move 46, MOVE_HAZE
     .2byte -1
 
-kLevelUpLearnset_Golbat:: @ 82577D6
+kLevelUpLearnset_Golbat:: @ 82577B2
     level_up_move 1, MOVE_SCREECH
     level_up_move 1, MOVE_LEECH_LIFE
     level_up_move 1, MOVE_ASTONISH
@@ -18073,7 +18077,7 @@ kLevelUpLearnset_Golbat:: @ 82577D6
     level_up_move 56, MOVE_HAZE
     .2byte -1
 
-kLevelUpLearnset_Oddish:: @ 82577F2
+kLevelUpLearnset_Oddish:: @ 82577CE
     level_up_move 1, MOVE_ABSORB
     level_up_move 7, MOVE_SWEET_SCENT
     level_up_move 14, MOVE_POISON_POWDER
@@ -18084,7 +18088,7 @@ kLevelUpLearnset_Oddish:: @ 82577F2
     level_up_move 39, MOVE_PETAL_DANCE
     .2byte -1
 
-kLevelUpLearnset_Gloom:: @ 8257804
+kLevelUpLearnset_Gloom:: @ 82577E0
     level_up_move 1, MOVE_ABSORB
     level_up_move 1, MOVE_SWEET_SCENT
     level_up_move 1, MOVE_POISON_POWDER
@@ -18097,7 +18101,7 @@ kLevelUpLearnset_Gloom:: @ 8257804
     level_up_move 44, MOVE_PETAL_DANCE
     .2byte -1
 
-kLevelUpLearnset_Vileplume:: @ 825781A
+kLevelUpLearnset_Vileplume:: @ 82577F6
     level_up_move 1, MOVE_ABSORB
     level_up_move 1, MOVE_AROMATHERAPY
     level_up_move 1, MOVE_STUN_SPORE
@@ -18105,7 +18109,7 @@ kLevelUpLearnset_Vileplume:: @ 825781A
     level_up_move 44, MOVE_PETAL_DANCE
     .2byte -1
 
-kLevelUpLearnset_Paras:: @ 8257826
+kLevelUpLearnset_Paras:: @ 8257802
     level_up_move 1, MOVE_SCRATCH
     level_up_move 7, MOVE_STUN_SPORE
     level_up_move 13, MOVE_POISON_POWDER
@@ -18117,7 +18121,7 @@ kLevelUpLearnset_Paras:: @ 8257826
     level_up_move 49, MOVE_AROMATHERAPY
     .2byte -1
 
-kLevelUpLearnset_Parasect:: @ 825783A
+kLevelUpLearnset_Parasect:: @ 8257816
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_STUN_SPORE
     level_up_move 1, MOVE_POISON_POWDER
@@ -18131,7 +18135,7 @@ kLevelUpLearnset_Parasect:: @ 825783A
     level_up_move 59, MOVE_AROMATHERAPY
     .2byte -1
 
-kLevelUpLearnset_Venonat:: @ 8257852
+kLevelUpLearnset_Venonat:: @ 825782E
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_DISABLE
     level_up_move 1, MOVE_FORESIGHT
@@ -18145,7 +18149,7 @@ kLevelUpLearnset_Venonat:: @ 8257852
     level_up_move 41, MOVE_PSYCHIC
     .2byte -1
 
-kLevelUpLearnset_Venomoth:: @ 825786A
+kLevelUpLearnset_Venomoth:: @ 8257846
     level_up_move 1, MOVE_SILVER_WIND
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_DISABLE
@@ -18162,7 +18166,7 @@ kLevelUpLearnset_Venomoth:: @ 825786A
     level_up_move 52, MOVE_PSYCHIC
     .2byte -1
 
-kLevelUpLearnset_Diglett:: @ 8257888
+kLevelUpLearnset_Diglett:: @ 8257864
     level_up_move 1, MOVE_SAND_ATTACK
     level_up_move 1, MOVE_SCRATCH
     level_up_move 5, MOVE_GROWL
@@ -18175,10 +18179,10 @@ kLevelUpLearnset_Diglett:: @ 8257888
     level_up_move 49, MOVE_FISSURE
     .2byte -1
 
-kLevelUpLearnset_Dugtrio:: @ 825789E
+kLevelUpLearnset_Dugtrio:: @ 825787A
     level_up_move 1, MOVE_TRI_ATTACK
-    level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_SAND_ATTACK
+    level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_GROWL
     level_up_move 5, MOVE_GROWL
     level_up_move 9, MOVE_MAGNITUDE
@@ -18191,7 +18195,7 @@ kLevelUpLearnset_Dugtrio:: @ 825789E
     level_up_move 64, MOVE_FISSURE
     .2byte -1
 
-kLevelUpLearnset_Meowth:: @ 82578BA
+kLevelUpLearnset_Meowth:: @ 8257896
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_GROWL
     level_up_move 10, MOVE_BITE
@@ -18204,7 +18208,7 @@ kLevelUpLearnset_Meowth:: @ 82578BA
     level_up_move 45, MOVE_SWAGGER
     .2byte -1
 
-kLevelUpLearnset_Persian:: @ 82578D0
+kLevelUpLearnset_Persian:: @ 82578AC
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_BITE
@@ -18218,7 +18222,7 @@ kLevelUpLearnset_Persian:: @ 82578D0
     level_up_move 61, MOVE_SWAGGER
     .2byte -1
 
-kLevelUpLearnset_Psyduck:: @ 82578E8
+kLevelUpLearnset_Psyduck:: @ 82578C4
     level_up_move 1, MOVE_WATER_SPORT
     level_up_move 1, MOVE_SCRATCH
     level_up_move 5, MOVE_TAIL_WHIP
@@ -18230,7 +18234,7 @@ kLevelUpLearnset_Psyduck:: @ 82578E8
     level_up_move 50, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Golduck:: @ 82578FC
+kLevelUpLearnset_Golduck:: @ 82578D8
     level_up_move 1, MOVE_WATER_SPORT
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_TAIL_WHIP
@@ -18244,7 +18248,7 @@ kLevelUpLearnset_Golduck:: @ 82578FC
     level_up_move 58, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Mankey:: @ 8257914
+kLevelUpLearnset_Mankey:: @ 82578F0
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_LEER
     level_up_move 6, MOVE_LOW_KICK
@@ -18258,7 +18262,7 @@ kLevelUpLearnset_Mankey:: @ 8257914
     level_up_move 46, MOVE_THRASH
     .2byte -1
 
-kLevelUpLearnset_Primeape:: @ 825792C
+kLevelUpLearnset_Primeape:: @ 8257908
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_LOW_KICK
@@ -18275,7 +18279,7 @@ kLevelUpLearnset_Primeape:: @ 825792C
     level_up_move 62, MOVE_THRASH
     .2byte -1
 
-kLevelUpLearnset_Growlithe:: @ 825794A
+kLevelUpLearnset_Growlithe:: @ 8257926
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_ROAR
     level_up_move 7, MOVE_EMBER
@@ -18288,7 +18292,7 @@ kLevelUpLearnset_Growlithe:: @ 825794A
     level_up_move 49, MOVE_FLAMETHROWER
     .2byte -1
 
-kLevelUpLearnset_Arcanine:: @ 8257960
+kLevelUpLearnset_Arcanine:: @ 825793C
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_ROAR
     level_up_move 1, MOVE_EMBER
@@ -18296,7 +18300,7 @@ kLevelUpLearnset_Arcanine:: @ 8257960
     level_up_move 49, MOVE_EXTREME_SPEED
     .2byte -1
 
-kLevelUpLearnset_Poliwag:: @ 825796C
+kLevelUpLearnset_Poliwag:: @ 8257948
     level_up_move 1, MOVE_BUBBLE
     level_up_move 7, MOVE_HYPNOSIS
     level_up_move 13, MOVE_WATER_GUN
@@ -18307,7 +18311,7 @@ kLevelUpLearnset_Poliwag:: @ 825796C
     level_up_move 43, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Poliwhirl:: @ 825797E
+kLevelUpLearnset_Poliwhirl:: @ 825795A
     level_up_move 1, MOVE_BUBBLE
     level_up_move 1, MOVE_HYPNOSIS
     level_up_move 1, MOVE_WATER_GUN
@@ -18320,7 +18324,7 @@ kLevelUpLearnset_Poliwhirl:: @ 825797E
     level_up_move 51, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Poliwrath:: @ 8257994
+kLevelUpLearnset_Poliwrath:: @ 8257970
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 1, MOVE_HYPNOSIS
     level_up_move 1, MOVE_DOUBLE_SLAP
@@ -18329,11 +18333,11 @@ kLevelUpLearnset_Poliwrath:: @ 8257994
     level_up_move 51, MOVE_MIND_READER
     .2byte -1
 
-kLevelUpLearnset_Abra:: @ 82579A2
+kLevelUpLearnset_Abra:: @ 825797E
     level_up_move 1, MOVE_TELEPORT
     .2byte -1
 
-kLevelUpLearnset_Kadabra:: @ 82579A6
+kLevelUpLearnset_Kadabra:: @ 8257982
     level_up_move 1, MOVE_TELEPORT
     level_up_move 1, MOVE_KINESIS
     level_up_move 1, MOVE_CONFUSION
@@ -18348,7 +18352,7 @@ kLevelUpLearnset_Kadabra:: @ 82579A6
     level_up_move 43, MOVE_TRICK
     .2byte -1
 
-kLevelUpLearnset_Alakazam:: @ 82579C0
+kLevelUpLearnset_Alakazam:: @ 825799C
     level_up_move 1, MOVE_TELEPORT
     level_up_move 1, MOVE_KINESIS
     level_up_move 1, MOVE_CONFUSION
@@ -18363,7 +18367,7 @@ kLevelUpLearnset_Alakazam:: @ 82579C0
     level_up_move 43, MOVE_TRICK
     .2byte -1
 
-kLevelUpLearnset_Machop:: @ 82579DA
+kLevelUpLearnset_Machop:: @ 82579B6
     level_up_move 1, MOVE_LOW_KICK
     level_up_move 1, MOVE_LEER
     level_up_move 7, MOVE_FOCUS_ENERGY
@@ -18378,7 +18382,7 @@ kLevelUpLearnset_Machop:: @ 82579DA
     level_up_move 49, MOVE_DYNAMIC_PUNCH
     .2byte -1
 
-kLevelUpLearnset_Machoke:: @ 82579F4
+kLevelUpLearnset_Machoke:: @ 82579D0
     level_up_move 1, MOVE_LOW_KICK
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_FOCUS_ENERGY
@@ -18394,7 +18398,7 @@ kLevelUpLearnset_Machoke:: @ 82579F4
     level_up_move 59, MOVE_DYNAMIC_PUNCH
     .2byte -1
 
-kLevelUpLearnset_Machamp:: @ 8257A10
+kLevelUpLearnset_Machamp:: @ 82579EC
     level_up_move 1, MOVE_LOW_KICK
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_FOCUS_ENERGY
@@ -18410,7 +18414,7 @@ kLevelUpLearnset_Machamp:: @ 8257A10
     level_up_move 59, MOVE_DYNAMIC_PUNCH
     .2byte -1
 
-kLevelUpLearnset_Bellsprout:: @ 8257A2C
+kLevelUpLearnset_Bellsprout:: @ 8257A08
     level_up_move 1, MOVE_VINE_WHIP
     level_up_move 6, MOVE_GROWTH
     level_up_move 11, MOVE_WRAP
@@ -18423,7 +18427,7 @@ kLevelUpLearnset_Bellsprout:: @ 8257A2C
     level_up_move 45, MOVE_SLAM
     .2byte -1
 
-kLevelUpLearnset_Weepinbell:: @ 8257A42
+kLevelUpLearnset_Weepinbell:: @ 8257A1E
     level_up_move 1, MOVE_VINE_WHIP
     level_up_move 1, MOVE_GROWTH
     level_up_move 1, MOVE_WRAP
@@ -18438,7 +18442,7 @@ kLevelUpLearnset_Weepinbell:: @ 8257A42
     level_up_move 54, MOVE_SLAM
     .2byte -1
 
-kLevelUpLearnset_Victreebel:: @ 8257A5C
+kLevelUpLearnset_Victreebel:: @ 8257A38
     level_up_move 1, MOVE_STOCKPILE
     level_up_move 1, MOVE_SPIT_UP
     level_up_move 1, MOVE_SWALLOW
@@ -18448,7 +18452,7 @@ kLevelUpLearnset_Victreebel:: @ 8257A5C
     level_up_move 1, MOVE_RAZOR_LEAF
     .2byte -1
 
-kLevelUpLearnset_Tentacool:: @ 8257A6C
+kLevelUpLearnset_Tentacool:: @ 8257A48
     level_up_move 1, MOVE_POISON_STING
     level_up_move 6, MOVE_SUPERSONIC
     level_up_move 12, MOVE_CONSTRICT
@@ -18460,7 +18464,7 @@ kLevelUpLearnset_Tentacool:: @ 8257A6C
     level_up_move 49, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Tentacruel:: @ 8257A80
+kLevelUpLearnset_Tentacruel:: @ 8257A5C
     level_up_move 1, MOVE_POISON_STING
     level_up_move 1, MOVE_SUPERSONIC
     level_up_move 1, MOVE_CONSTRICT
@@ -18474,7 +18478,7 @@ kLevelUpLearnset_Tentacruel:: @ 8257A80
     level_up_move 55, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Geodude:: @ 8257A98
+kLevelUpLearnset_Geodude:: @ 8257A74
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_DEFENSE_CURL
     level_up_move 6, MOVE_MUD_SPORT
@@ -18488,7 +18492,7 @@ kLevelUpLearnset_Geodude:: @ 8257A98
     level_up_move 46, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Graveler:: @ 8257AB0
+kLevelUpLearnset_Graveler:: @ 8257A8C
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_DEFENSE_CURL
     level_up_move 1, MOVE_MUD_SPORT
@@ -18504,7 +18508,7 @@ kLevelUpLearnset_Graveler:: @ 8257AB0
     level_up_move 62, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Golem:: @ 8257ACC
+kLevelUpLearnset_Golem:: @ 8257AA8
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_DEFENSE_CURL
     level_up_move 1, MOVE_MUD_SPORT
@@ -18520,7 +18524,7 @@ kLevelUpLearnset_Golem:: @ 8257ACC
     level_up_move 62, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Ponyta:: @ 8257AE8
+kLevelUpLearnset_Ponyta:: @ 8257AC4
     level_up_move 1, MOVE_QUICK_ATTACK
     level_up_move 5, MOVE_GROWL
     level_up_move 9, MOVE_TAIL_WHIP
@@ -18533,7 +18537,7 @@ kLevelUpLearnset_Ponyta:: @ 8257AE8
     level_up_move 53, MOVE_FIRE_BLAST
     .2byte -1
 
-kLevelUpLearnset_Rapidash:: @ 8257AFE
+kLevelUpLearnset_Rapidash:: @ 8257ADA
     level_up_move 1, MOVE_QUICK_ATTACK
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_TAIL_WHIP
@@ -18550,7 +18554,7 @@ kLevelUpLearnset_Rapidash:: @ 8257AFE
     level_up_move 63, MOVE_FIRE_BLAST
     .2byte -1
 
-kLevelUpLearnset_Slowpoke:: @ 8257B1C
+kLevelUpLearnset_Slowpoke:: @ 8257AF8
     level_up_move 1, MOVE_CURSE
     level_up_move 1, MOVE_YAWN
     level_up_move 1, MOVE_TACKLE
@@ -18564,7 +18568,7 @@ kLevelUpLearnset_Slowpoke:: @ 8257B1C
     level_up_move 47, MOVE_PSYCH_UP
     .2byte -1
 
-kLevelUpLearnset_Slowbro:: @ 8257B34
+kLevelUpLearnset_Slowbro:: @ 8257B10
     level_up_move 1, MOVE_CURSE
     level_up_move 1, MOVE_YAWN
     level_up_move 1, MOVE_TACKLE
@@ -18580,7 +18584,7 @@ kLevelUpLearnset_Slowbro:: @ 8257B34
     level_up_move 55, MOVE_PSYCH_UP
     .2byte -1
 
-kLevelUpLearnset_Magnemite:: @ 8257B50
+kLevelUpLearnset_Magnemite:: @ 8257B2C
     level_up_move 1, MOVE_METAL_SOUND
     level_up_move 1, MOVE_TACKLE
     level_up_move 6, MOVE_THUNDER_SHOCK
@@ -18594,7 +18598,7 @@ kLevelUpLearnset_Magnemite:: @ 8257B50
     level_up_move 50, MOVE_ZAP_CANNON
     .2byte -1
 
-kLevelUpLearnset_Magneton:: @ 8257B68
+kLevelUpLearnset_Magneton:: @ 8257B44
     level_up_move 1, MOVE_METAL_SOUND
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_THUNDER_SHOCK
@@ -18610,7 +18614,7 @@ kLevelUpLearnset_Magneton:: @ 8257B68
     level_up_move 62, MOVE_ZAP_CANNON
     .2byte -1
 
-kLevelUpLearnset_Farfetchd:: @ 8257B84
+kLevelUpLearnset_Farfetchd:: @ 8257B60
     level_up_move 1, MOVE_PECK
     level_up_move 6, MOVE_SAND_ATTACK
     level_up_move 11, MOVE_LEER
@@ -18623,7 +18627,7 @@ kLevelUpLearnset_Farfetchd:: @ 8257B84
     level_up_move 46, MOVE_FALSE_SWIPE
     .2byte -1
 
-kLevelUpLearnset_Doduo:: @ 8257B9A
+kLevelUpLearnset_Doduo:: @ 8257B76
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_GROWL
     level_up_move 9, MOVE_PURSUIT
@@ -18635,7 +18639,7 @@ kLevelUpLearnset_Doduo:: @ 8257B9A
     level_up_move 45, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Dodrio:: @ 8257BAE
+kLevelUpLearnset_Dodrio:: @ 8257B8A
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_PURSUIT
@@ -18649,7 +18653,7 @@ kLevelUpLearnset_Dodrio:: @ 8257BAE
     level_up_move 60, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Seel:: @ 8257BC6
+kLevelUpLearnset_Seel:: @ 8257BA2
     level_up_move 1, MOVE_HEADBUTT
     level_up_move 9, MOVE_GROWL
     level_up_move 17, MOVE_ICY_WIND
@@ -18660,7 +18664,7 @@ kLevelUpLearnset_Seel:: @ 8257BC6
     level_up_move 49, MOVE_SAFEGUARD
     .2byte -1
 
-kLevelUpLearnset_Dewgong:: @ 8257BD8
+kLevelUpLearnset_Dewgong:: @ 8257BB4
     level_up_move 1, MOVE_SIGNAL_BEAM
     level_up_move 1, MOVE_HEADBUTT
     level_up_move 1, MOVE_GROWL
@@ -18676,7 +18680,7 @@ kLevelUpLearnset_Dewgong:: @ 8257BD8
     level_up_move 64, MOVE_SAFEGUARD
     .2byte -1
 
-kLevelUpLearnset_Grimer:: @ 8257BF4
+kLevelUpLearnset_Grimer:: @ 8257BD0
     level_up_move 1, MOVE_POISON_GAS
     level_up_move 1, MOVE_POUND
     level_up_move 4, MOVE_HARDEN
@@ -18689,7 +18693,7 @@ kLevelUpLearnset_Grimer:: @ 8257BF4
     level_up_move 53, MOVE_MEMENTO
     .2byte -1
 
-kLevelUpLearnset_Muk:: @ 8257C0A
+kLevelUpLearnset_Muk:: @ 8257BE6
     level_up_move 1, MOVE_POISON_GAS
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_HARDEN
@@ -18703,7 +18707,7 @@ kLevelUpLearnset_Muk:: @ 8257C0A
     level_up_move 61, MOVE_MEMENTO
     .2byte -1
 
-kLevelUpLearnset_Shellder:: @ 8257C22
+kLevelUpLearnset_Shellder:: @ 8257BFE
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_WITHDRAW
     level_up_move 8, MOVE_ICICLE_SPEAR
@@ -18715,7 +18719,7 @@ kLevelUpLearnset_Shellder:: @ 8257C22
     level_up_move 50, MOVE_ICE_BEAM
     .2byte -1
 
-kLevelUpLearnset_Cloyster:: @ 8257C36
+kLevelUpLearnset_Cloyster:: @ 8257C12
     level_up_move 1, MOVE_WITHDRAW
     level_up_move 1, MOVE_SUPERSONIC
     level_up_move 1, MOVE_AURORA_BEAM
@@ -18724,7 +18728,7 @@ kLevelUpLearnset_Cloyster:: @ 8257C36
     level_up_move 43, MOVE_SPIKE_CANNON
     .2byte -1
 
-kLevelUpLearnset_Gastly:: @ 8257C44
+kLevelUpLearnset_Gastly:: @ 8257C20
     level_up_move 1, MOVE_HYPNOSIS
     level_up_move 1, MOVE_LICK
     level_up_move 8, MOVE_SPITE
@@ -18738,7 +18742,7 @@ kLevelUpLearnset_Gastly:: @ 8257C44
     level_up_move 48, MOVE_MEAN_LOOK
     .2byte -1
 
-kLevelUpLearnset_Haunter:: @ 8257C5C
+kLevelUpLearnset_Haunter:: @ 8257C38
     level_up_move 1, MOVE_HYPNOSIS
     level_up_move 1, MOVE_LICK
     level_up_move 1, MOVE_SPITE
@@ -18754,7 +18758,7 @@ kLevelUpLearnset_Haunter:: @ 8257C5C
     level_up_move 64, MOVE_MEAN_LOOK
     .2byte -1
 
-kLevelUpLearnset_Gengar:: @ 8257C78
+kLevelUpLearnset_Gengar:: @ 8257C54
     level_up_move 1, MOVE_HYPNOSIS
     level_up_move 1, MOVE_LICK
     level_up_move 1, MOVE_SPITE
@@ -18770,7 +18774,7 @@ kLevelUpLearnset_Gengar:: @ 8257C78
     level_up_move 64, MOVE_MEAN_LOOK
     .2byte -1
 
-kLevelUpLearnset_Onix:: @ 8257C94
+kLevelUpLearnset_Onix:: @ 8257C70
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_SCREECH
     level_up_move 8, MOVE_BIND
@@ -18785,7 +18789,7 @@ kLevelUpLearnset_Onix:: @ 8257C94
     level_up_move 56, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Drowzee:: @ 8257CAE
+kLevelUpLearnset_Drowzee:: @ 8257C8A
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_HYPNOSIS
     level_up_move 7, MOVE_DISABLE
@@ -18799,7 +18803,7 @@ kLevelUpLearnset_Drowzee:: @ 8257CAE
     level_up_move 47, MOVE_FUTURE_SIGHT
     .2byte -1
 
-kLevelUpLearnset_Hypno:: @ 8257CC6
+kLevelUpLearnset_Hypno:: @ 8257CA2
     level_up_move 1, MOVE_NIGHTMARE
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_HYPNOSIS
@@ -18816,7 +18820,7 @@ kLevelUpLearnset_Hypno:: @ 8257CC6
     level_up_move 57, MOVE_FUTURE_SIGHT
     .2byte -1
 
-kLevelUpLearnset_Krabby:: @ 8257CE4
+kLevelUpLearnset_Krabby:: @ 8257CC0
     level_up_move 1, MOVE_BUBBLE
     level_up_move 5, MOVE_LEER
     level_up_move 12, MOVE_VICE_GRIP
@@ -18829,7 +18833,7 @@ kLevelUpLearnset_Krabby:: @ 8257CE4
     level_up_move 49, MOVE_FLAIL
     .2byte -1
 
-kLevelUpLearnset_Kingler:: @ 8257CFA
+kLevelUpLearnset_Kingler:: @ 8257CD6
     level_up_move 1, MOVE_METAL_CLAW
     level_up_move 1, MOVE_BUBBLE
     level_up_move 1, MOVE_LEER
@@ -18846,7 +18850,7 @@ kLevelUpLearnset_Kingler:: @ 8257CFA
     level_up_move 65, MOVE_FLAIL
     .2byte -1
 
-kLevelUpLearnset_Voltorb:: @ 8257D18
+kLevelUpLearnset_Voltorb:: @ 8257CF4
     level_up_move 1, MOVE_CHARGE
     level_up_move 1, MOVE_TACKLE
     level_up_move 8, MOVE_SCREECH
@@ -18860,7 +18864,7 @@ kLevelUpLearnset_Voltorb:: @ 8257D18
     level_up_move 49, MOVE_MIRROR_COAT
     .2byte -1
 
-kLevelUpLearnset_Electrode:: @ 8257D30
+kLevelUpLearnset_Electrode:: @ 8257D0C
     level_up_move 1, MOVE_CHARGE
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_SCREECH
@@ -18876,7 +18880,7 @@ kLevelUpLearnset_Electrode:: @ 8257D30
     level_up_move 59, MOVE_MIRROR_COAT
     .2byte -1
 
-kLevelUpLearnset_Exeggcute:: @ 8257D4C
+kLevelUpLearnset_Exeggcute:: @ 8257D28
     level_up_move 1, MOVE_BARRAGE
     level_up_move 1, MOVE_UPROAR
     level_up_move 1, MOVE_HYPNOSIS
@@ -18889,7 +18893,7 @@ kLevelUpLearnset_Exeggcute:: @ 8257D4C
     level_up_move 43, MOVE_SOLAR_BEAM
     .2byte -1
 
-kLevelUpLearnset_Exeggutor:: @ 8257D62
+kLevelUpLearnset_Exeggutor:: @ 8257D3E
     level_up_move 1, MOVE_BARRAGE
     level_up_move 1, MOVE_HYPNOSIS
     level_up_move 1, MOVE_CONFUSION
@@ -18897,7 +18901,7 @@ kLevelUpLearnset_Exeggutor:: @ 8257D62
     level_up_move 31, MOVE_EGG_BOMB
     .2byte -1
 
-kLevelUpLearnset_Cubone:: @ 8257D6E
+kLevelUpLearnset_Cubone:: @ 8257D4A
     level_up_move 1, MOVE_GROWL
     level_up_move 5, MOVE_TAIL_WHIP
     level_up_move 9, MOVE_BONE_CLUB
@@ -18912,7 +18916,7 @@ kLevelUpLearnset_Cubone:: @ 8257D6E
     level_up_move 45, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Marowak:: @ 8257D88
+kLevelUpLearnset_Marowak:: @ 8257D64
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_BONE_CLUB
@@ -18930,7 +18934,7 @@ kLevelUpLearnset_Marowak:: @ 8257D88
     level_up_move 61, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Hitmonlee:: @ 8257DA8
+kLevelUpLearnset_Hitmonlee:: @ 8257D84
     level_up_move 1, MOVE_REVENGE
     level_up_move 1, MOVE_DOUBLE_KICK
     level_up_move 6, MOVE_MEDITATE
@@ -18946,7 +18950,7 @@ kLevelUpLearnset_Hitmonlee:: @ 8257DA8
     level_up_move 51, MOVE_REVERSAL
     .2byte -1
 
-kLevelUpLearnset_Hitmonchan:: @ 8257DC4
+kLevelUpLearnset_Hitmonchan:: @ 8257DA0
     level_up_move 1, MOVE_REVENGE
     level_up_move 1, MOVE_COMET_PUNCH
     level_up_move 7, MOVE_AGILITY
@@ -18961,7 +18965,7 @@ kLevelUpLearnset_Hitmonchan:: @ 8257DC4
     level_up_move 50, MOVE_COUNTER
     .2byte -1
 
-kLevelUpLearnset_Lickitung:: @ 8257DDE
+kLevelUpLearnset_Lickitung:: @ 8257DBA
     level_up_move 1, MOVE_LICK
     level_up_move 7, MOVE_SUPERSONIC
     level_up_move 12, MOVE_DEFENSE_CURL
@@ -18974,7 +18978,7 @@ kLevelUpLearnset_Lickitung:: @ 8257DDE
     level_up_move 51, MOVE_REFRESH
     .2byte -1
 
-kLevelUpLearnset_Koffing:: @ 8257DF4
+kLevelUpLearnset_Koffing:: @ 8257DD0
     level_up_move 1, MOVE_POISON_GAS
     level_up_move 1, MOVE_TACKLE
     level_up_move 9, MOVE_SMOG
@@ -18987,7 +18991,7 @@ kLevelUpLearnset_Koffing:: @ 8257DF4
     level_up_move 49, MOVE_MEMENTO
     .2byte -1
 
-kLevelUpLearnset_Weezing:: @ 8257E0A
+kLevelUpLearnset_Weezing:: @ 8257DE6
     level_up_move 1, MOVE_POISON_GAS
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_SMOG
@@ -19002,7 +19006,7 @@ kLevelUpLearnset_Weezing:: @ 8257E0A
     level_up_move 58, MOVE_MEMENTO
     .2byte -1
 
-kLevelUpLearnset_Rhyhorn:: @ 8257E24
+kLevelUpLearnset_Rhyhorn:: @ 8257E00
     level_up_move 1, MOVE_HORN_ATTACK
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 10, MOVE_STOMP
@@ -19015,7 +19019,7 @@ kLevelUpLearnset_Rhyhorn:: @ 8257E24
     level_up_move 57, MOVE_MEGAHORN
     .2byte -1
 
-kLevelUpLearnset_Rhydon:: @ 8257E3A
+kLevelUpLearnset_Rhydon:: @ 8257E16
     level_up_move 1, MOVE_HORN_ATTACK
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_STOMP
@@ -19030,7 +19034,7 @@ kLevelUpLearnset_Rhydon:: @ 8257E3A
     level_up_move 66, MOVE_MEGAHORN
     .2byte -1
 
-kLevelUpLearnset_Chansey:: @ 8257E54
+kLevelUpLearnset_Chansey:: @ 8257E30
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_GROWL
     level_up_move 5, MOVE_TAIL_WHIP
@@ -19045,7 +19049,7 @@ kLevelUpLearnset_Chansey:: @ 8257E54
     level_up_move 57, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Tangela:: @ 8257E6E
+kLevelUpLearnset_Tangela:: @ 8257E4A
     level_up_move 1, MOVE_INGRAIN
     level_up_move 1, MOVE_CONSTRICT
     level_up_move 4, MOVE_SLEEP_POWDER
@@ -19060,7 +19064,7 @@ kLevelUpLearnset_Tangela:: @ 8257E6E
     level_up_move 46, MOVE_TICKLE
     .2byte -1
 
-kLevelUpLearnset_Kangaskhan:: @ 8257E88
+kLevelUpLearnset_Kangaskhan:: @ 8257E64
     level_up_move 1, MOVE_COMET_PUNCH
     level_up_move 1, MOVE_LEER
     level_up_move 7, MOVE_BITE
@@ -19073,7 +19077,7 @@ kLevelUpLearnset_Kangaskhan:: @ 8257E88
     level_up_move 49, MOVE_REVERSAL
     .2byte -1
 
-kLevelUpLearnset_Horsea:: @ 8257E9E
+kLevelUpLearnset_Horsea:: @ 8257E7A
     level_up_move 1, MOVE_BUBBLE
     level_up_move 8, MOVE_SMOKESCREEN
     level_up_move 15, MOVE_LEER
@@ -19084,7 +19088,7 @@ kLevelUpLearnset_Horsea:: @ 8257E9E
     level_up_move 50, MOVE_DRAGON_DANCE
     .2byte -1
 
-kLevelUpLearnset_Seadra:: @ 8257EB0
+kLevelUpLearnset_Seadra:: @ 8257E8C
     level_up_move 1, MOVE_BUBBLE
     level_up_move 1, MOVE_SMOKESCREEN
     level_up_move 1, MOVE_LEER
@@ -19098,7 +19102,7 @@ kLevelUpLearnset_Seadra:: @ 8257EB0
     level_up_move 62, MOVE_DRAGON_DANCE
     .2byte -1
 
-kLevelUpLearnset_Goldeen:: @ 8257EC8
+kLevelUpLearnset_Goldeen:: @ 8257EA4
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_WATER_SPORT
@@ -19112,7 +19116,7 @@ kLevelUpLearnset_Goldeen:: @ 8257EC8
     level_up_move 57, MOVE_MEGAHORN
     .2byte -1
 
-kLevelUpLearnset_Seaking:: @ 8257EE0
+kLevelUpLearnset_Seaking:: @ 8257EBC
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_WATER_SPORT
@@ -19127,7 +19131,7 @@ kLevelUpLearnset_Seaking:: @ 8257EE0
     level_up_move 69, MOVE_MEGAHORN
     .2byte -1
 
-kLevelUpLearnset_Staryu:: @ 8257EFA
+kLevelUpLearnset_Staryu:: @ 8257ED6
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_HARDEN
     level_up_move 6, MOVE_WATER_GUN
@@ -19142,7 +19146,7 @@ kLevelUpLearnset_Staryu:: @ 8257EFA
     level_up_move 46, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Starmie:: @ 8257F14
+kLevelUpLearnset_Starmie:: @ 8257EF0
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 1, MOVE_RAPID_SPIN
     level_up_move 1, MOVE_RECOVER
@@ -19150,7 +19154,7 @@ kLevelUpLearnset_Starmie:: @ 8257F14
     level_up_move 33, MOVE_CONFUSE_RAY
     .2byte -1
 
-kLevelUpLearnset_MrMime:: @ 8257F20
+kLevelUpLearnset_MrMime:: @ 8257EFC
     level_up_move 1, MOVE_BARRIER
     level_up_move 5, MOVE_CONFUSION
     level_up_move 8, MOVE_SUBSTITUTE
@@ -19169,7 +19173,7 @@ kLevelUpLearnset_MrMime:: @ 8257F20
     level_up_move 50, MOVE_SAFEGUARD
     .2byte -1
 
-kLevelUpLearnset_Scyther:: @ 8257F42
+kLevelUpLearnset_Scyther:: @ 8257F1E
     level_up_move 1, MOVE_QUICK_ATTACK
     level_up_move 1, MOVE_LEER
     level_up_move 6, MOVE_FOCUS_ENERGY
@@ -19183,7 +19187,7 @@ kLevelUpLearnset_Scyther:: @ 8257F42
     level_up_move 46, MOVE_FURY_CUTTER
     .2byte -1
 
-kLevelUpLearnset_Jynx:: @ 8257F5A
+kLevelUpLearnset_Jynx:: @ 8257F36
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_LICK
     level_up_move 1, MOVE_LOVELY_KISS
@@ -19199,7 +19203,7 @@ kLevelUpLearnset_Jynx:: @ 8257F5A
     level_up_move 67, MOVE_BLIZZARD
     .2byte -1
 
-kLevelUpLearnset_Electabuzz:: @ 8257F76
+kLevelUpLearnset_Electabuzz:: @ 8257F52
     level_up_move 1, MOVE_QUICK_ATTACK
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_THUNDER_PUNCH
@@ -19211,7 +19215,7 @@ kLevelUpLearnset_Electabuzz:: @ 8257F76
     level_up_move 58, MOVE_THUNDER
     .2byte -1
 
-kLevelUpLearnset_Magmar:: @ 8257F8A
+kLevelUpLearnset_Magmar:: @ 8257F66
     level_up_move 1, MOVE_EMBER
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_SMOG
@@ -19226,7 +19230,7 @@ kLevelUpLearnset_Magmar:: @ 8257F8A
     level_up_move 57, MOVE_FIRE_BLAST
     .2byte -1
 
-kLevelUpLearnset_Pinsir:: @ 8257FA4
+kLevelUpLearnset_Pinsir:: @ 8257F80
     level_up_move 1, MOVE_VICE_GRIP
     level_up_move 1, MOVE_FOCUS_ENERGY
     level_up_move 7, MOVE_BIND
@@ -19239,7 +19243,7 @@ kLevelUpLearnset_Pinsir:: @ 8257FA4
     level_up_move 49, MOVE_SWORDS_DANCE
     .2byte -1
 
-kLevelUpLearnset_Tauros:: @ 8257FBA
+kLevelUpLearnset_Tauros:: @ 8257F96
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 4, MOVE_RAGE
@@ -19252,13 +19256,13 @@ kLevelUpLearnset_Tauros:: @ 8257FBA
     level_up_move 53, MOVE_TAKE_DOWN
     .2byte -1
 
-kLevelUpLearnset_Magikarp:: @ 8257FD0
+kLevelUpLearnset_Magikarp:: @ 8257FAC
     level_up_move 1, MOVE_SPLASH
     level_up_move 15, MOVE_TACKLE
     level_up_move 30, MOVE_FLAIL
     .2byte -1
 
-kLevelUpLearnset_Gyarados:: @ 8257FD8
+kLevelUpLearnset_Gyarados:: @ 8257FB4
     level_up_move 1, MOVE_THRASH
     level_up_move 20, MOVE_BITE
     level_up_move 25, MOVE_DRAGON_RAGE
@@ -19270,7 +19274,7 @@ kLevelUpLearnset_Gyarados:: @ 8257FD8
     level_up_move 55, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Lapras:: @ 8257FEC
+kLevelUpLearnset_Lapras:: @ 8257FC8
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_SING
@@ -19285,11 +19289,11 @@ kLevelUpLearnset_Lapras:: @ 8257FEC
     level_up_move 55, MOVE_SHEER_COLD
     .2byte -1
 
-kLevelUpLearnset_Ditto:: @ 8258006
+kLevelUpLearnset_Ditto:: @ 8257FE2
     level_up_move 1, MOVE_TRANSFORM
     .2byte -1
 
-kLevelUpLearnset_Eevee:: @ 825800A
+kLevelUpLearnset_Eevee:: @ 8257FE6
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_HELPING_HAND
@@ -19301,7 +19305,7 @@ kLevelUpLearnset_Eevee:: @ 825800A
     level_up_move 42, MOVE_TAKE_DOWN
     .2byte -1
 
-kLevelUpLearnset_Vaporeon:: @ 825801E
+kLevelUpLearnset_Vaporeon:: @ 8257FFA
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_HELPING_HAND
@@ -19315,7 +19319,7 @@ kLevelUpLearnset_Vaporeon:: @ 825801E
     level_up_move 52, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Jolteon:: @ 8258036
+kLevelUpLearnset_Jolteon:: @ 8258012
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_HELPING_HAND
@@ -19329,7 +19333,7 @@ kLevelUpLearnset_Jolteon:: @ 8258036
     level_up_move 52, MOVE_THUNDER
     .2byte -1
 
-kLevelUpLearnset_Flareon:: @ 825804E
+kLevelUpLearnset_Flareon:: @ 825802A
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_HELPING_HAND
@@ -19343,7 +19347,7 @@ kLevelUpLearnset_Flareon:: @ 825804E
     level_up_move 52, MOVE_FLAMETHROWER
     .2byte -1
 
-kLevelUpLearnset_Porygon:: @ 8258066
+kLevelUpLearnset_Porygon:: @ 8258042
     level_up_move 1, MOVE_CONVERSION_2
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_CONVERSION
@@ -19357,7 +19361,7 @@ kLevelUpLearnset_Porygon:: @ 8258066
     level_up_move 48, MOVE_ZAP_CANNON
     .2byte -1
 
-kLevelUpLearnset_Omanyte:: @ 825807E
+kLevelUpLearnset_Omanyte:: @ 825805A
     level_up_move 1, MOVE_CONSTRICT
     level_up_move 1, MOVE_WITHDRAW
     level_up_move 13, MOVE_BITE
@@ -19370,7 +19374,7 @@ kLevelUpLearnset_Omanyte:: @ 825807E
     level_up_move 55, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Omastar:: @ 8258094
+kLevelUpLearnset_Omastar:: @ 8258070
     level_up_move 1, MOVE_CONSTRICT
     level_up_move 1, MOVE_WITHDRAW
     level_up_move 1, MOVE_BITE
@@ -19386,7 +19390,7 @@ kLevelUpLearnset_Omastar:: @ 8258094
     level_up_move 65, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Kabuto:: @ 82580B0
+kLevelUpLearnset_Kabuto:: @ 825808C
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_HARDEN
     level_up_move 13, MOVE_ABSORB
@@ -19399,7 +19403,7 @@ kLevelUpLearnset_Kabuto:: @ 82580B0
     level_up_move 55, MOVE_ANCIENT_POWER
     .2byte -1
 
-kLevelUpLearnset_Kabutops:: @ 82580C6
+kLevelUpLearnset_Kabutops:: @ 82580A2
     level_up_move 1, MOVE_FURY_CUTTER
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_HARDEN
@@ -19416,7 +19420,7 @@ kLevelUpLearnset_Kabutops:: @ 82580C6
     level_up_move 65, MOVE_ANCIENT_POWER
     .2byte -1
 
-kLevelUpLearnset_Aerodactyl:: @ 82580E4
+kLevelUpLearnset_Aerodactyl:: @ 82580C0
     level_up_move 1, MOVE_WING_ATTACK
     level_up_move 8, MOVE_AGILITY
     level_up_move 15, MOVE_BITE
@@ -19427,7 +19431,7 @@ kLevelUpLearnset_Aerodactyl:: @ 82580E4
     level_up_move 50, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Snorlax:: @ 82580F6
+kLevelUpLearnset_Snorlax:: @ 82580D2
     level_up_move 1, MOVE_TACKLE
     level_up_move 5, MOVE_AMNESIA
     level_up_move 9, MOVE_DEFENSE_CURL
@@ -19444,7 +19448,7 @@ kLevelUpLearnset_Snorlax:: @ 82580F6
     level_up_move 53, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Articuno:: @ 8258114
+kLevelUpLearnset_Articuno:: @ 82580F0
     level_up_move 1, MOVE_GUST
     level_up_move 1, MOVE_POWDER_SNOW
     level_up_move 13, MOVE_MIST
@@ -19456,7 +19460,7 @@ kLevelUpLearnset_Articuno:: @ 8258114
     level_up_move 85, MOVE_SHEER_COLD
     .2byte -1
 
-kLevelUpLearnset_Zapdos:: @ 8258128
+kLevelUpLearnset_Zapdos:: @ 8258104
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_THUNDER_SHOCK
     level_up_move 13, MOVE_THUNDER_WAVE
@@ -19468,7 +19472,7 @@ kLevelUpLearnset_Zapdos:: @ 8258128
     level_up_move 85, MOVE_THUNDER
     .2byte -1
 
-kLevelUpLearnset_Moltres:: @ 825813C
+kLevelUpLearnset_Moltres:: @ 8258118
     level_up_move 1, MOVE_WING_ATTACK
     level_up_move 1, MOVE_EMBER
     level_up_move 13, MOVE_FIRE_SPIN
@@ -19480,7 +19484,7 @@ kLevelUpLearnset_Moltres:: @ 825813C
     level_up_move 85, MOVE_SKY_ATTACK
     .2byte -1
 
-kLevelUpLearnset_Dratini:: @ 8258150
+kLevelUpLearnset_Dratini:: @ 825812C
     level_up_move 1, MOVE_WRAP
     level_up_move 1, MOVE_LEER
     level_up_move 8, MOVE_THUNDER_WAVE
@@ -19493,7 +19497,7 @@ kLevelUpLearnset_Dratini:: @ 8258150
     level_up_move 57, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Dragonair:: @ 8258166
+kLevelUpLearnset_Dragonair:: @ 8258142
     level_up_move 1, MOVE_WRAP
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_THUNDER_WAVE
@@ -19508,7 +19512,7 @@ kLevelUpLearnset_Dragonair:: @ 8258166
     level_up_move 65, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Dragonite:: @ 8258180
+kLevelUpLearnset_Dragonite:: @ 825815C
     level_up_move 1, MOVE_WRAP
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_THUNDER_WAVE
@@ -19524,7 +19528,7 @@ kLevelUpLearnset_Dragonite:: @ 8258180
     level_up_move 75, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Mewtwo:: @ 825819C
+kLevelUpLearnset_Mewtwo:: @ 8258178
     level_up_move 1, MOVE_CONFUSION
     level_up_move 1, MOVE_DISABLE
     level_up_move 11, MOVE_BARRIER
@@ -19538,7 +19542,7 @@ kLevelUpLearnset_Mewtwo:: @ 825819C
     level_up_move 99, MOVE_AMNESIA
     .2byte -1
 
-kLevelUpLearnset_Mew:: @ 82581B4
+kLevelUpLearnset_Mew:: @ 8258190
     level_up_move 1, MOVE_POUND
     level_up_move 10, MOVE_TRANSFORM
     level_up_move 20, MOVE_MEGA_PUNCH
@@ -19547,7 +19551,7 @@ kLevelUpLearnset_Mew:: @ 82581B4
     level_up_move 50, MOVE_ANCIENT_POWER
     .2byte -1
 
-kLevelUpLearnset_Chikorita:: @ 82581C2
+kLevelUpLearnset_Chikorita:: @ 825819E
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 8, MOVE_RAZOR_LEAF
@@ -19560,7 +19564,7 @@ kLevelUpLearnset_Chikorita:: @ 82581C2
     level_up_move 50, MOVE_SOLAR_BEAM
     .2byte -1
 
-kLevelUpLearnset_Bayleef:: @ 82581D8
+kLevelUpLearnset_Bayleef:: @ 82581B4
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_RAZOR_LEAF
@@ -19575,7 +19579,7 @@ kLevelUpLearnset_Bayleef:: @ 82581D8
     level_up_move 55, MOVE_SOLAR_BEAM
     .2byte -1
 
-kLevelUpLearnset_Meganium:: @ 82581F2
+kLevelUpLearnset_Meganium:: @ 82581CE
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_RAZOR_LEAF
@@ -19590,7 +19594,7 @@ kLevelUpLearnset_Meganium:: @ 82581F2
     level_up_move 61, MOVE_SOLAR_BEAM
     .2byte -1
 
-kLevelUpLearnset_Cyndaquil:: @ 825820C
+kLevelUpLearnset_Cyndaquil:: @ 82581E8
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_LEER
     level_up_move 6, MOVE_SMOKESCREEN
@@ -19601,7 +19605,7 @@ kLevelUpLearnset_Cyndaquil:: @ 825820C
     level_up_move 46, MOVE_FLAMETHROWER
     .2byte -1
 
-kLevelUpLearnset_Quilava:: @ 825821E
+kLevelUpLearnset_Quilava:: @ 82581FA
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_SMOKESCREEN
@@ -19613,7 +19617,7 @@ kLevelUpLearnset_Quilava:: @ 825821E
     level_up_move 54, MOVE_FLAMETHROWER
     .2byte -1
 
-kLevelUpLearnset_Typhlosion:: @ 8258232
+kLevelUpLearnset_Typhlosion:: @ 825820E
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_SMOKESCREEN
@@ -19626,7 +19630,7 @@ kLevelUpLearnset_Typhlosion:: @ 8258232
     level_up_move 60, MOVE_FLAMETHROWER
     .2byte -1
 
-kLevelUpLearnset_Totodile:: @ 8258248
+kLevelUpLearnset_Totodile:: @ 8258224
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_LEER
     level_up_move 7, MOVE_RAGE
@@ -19638,7 +19642,7 @@ kLevelUpLearnset_Totodile:: @ 8258248
     level_up_move 52, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Croconaw:: @ 825825C
+kLevelUpLearnset_Croconaw:: @ 8258238
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_RAGE
@@ -19651,7 +19655,7 @@ kLevelUpLearnset_Croconaw:: @ 825825C
     level_up_move 55, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Feraligatr:: @ 8258272
+kLevelUpLearnset_Feraligatr:: @ 825824E
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_RAGE
@@ -19665,7 +19669,7 @@ kLevelUpLearnset_Feraligatr:: @ 8258272
     level_up_move 58, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Sentret:: @ 825828A
+kLevelUpLearnset_Sentret:: @ 8258266
     level_up_move 1, MOVE_SCRATCH
     level_up_move 4, MOVE_DEFENSE_CURL
     level_up_move 7, MOVE_QUICK_ATTACK
@@ -19677,7 +19681,7 @@ kLevelUpLearnset_Sentret:: @ 825828A
     level_up_move 49, MOVE_AMNESIA
     .2byte -1
 
-kLevelUpLearnset_Furret:: @ 825829E
+kLevelUpLearnset_Furret:: @ 825827A
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_DEFENSE_CURL
     level_up_move 1, MOVE_QUICK_ATTACK
@@ -19691,7 +19695,7 @@ kLevelUpLearnset_Furret:: @ 825829E
     level_up_move 59, MOVE_AMNESIA
     .2byte -1
 
-kLevelUpLearnset_Hoothoot:: @ 82582B6
+kLevelUpLearnset_Hoothoot:: @ 8258292
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 6, MOVE_FORESIGHT
@@ -19703,7 +19707,7 @@ kLevelUpLearnset_Hoothoot:: @ 82582B6
     level_up_move 48, MOVE_DREAM_EATER
     .2byte -1
 
-kLevelUpLearnset_Noctowl:: @ 82582CA
+kLevelUpLearnset_Noctowl:: @ 82582A6
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_FORESIGHT
@@ -19717,7 +19721,7 @@ kLevelUpLearnset_Noctowl:: @ 82582CA
     level_up_move 57, MOVE_DREAM_EATER
     .2byte -1
 
-kLevelUpLearnset_Ledyba:: @ 82582E2
+kLevelUpLearnset_Ledyba:: @ 82582BE
     level_up_move 1, MOVE_TACKLE
     level_up_move 8, MOVE_SUPERSONIC
     level_up_move 15, MOVE_COMET_PUNCH
@@ -19730,7 +19734,7 @@ kLevelUpLearnset_Ledyba:: @ 82582E2
     level_up_move 50, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Ledian:: @ 82582F8
+kLevelUpLearnset_Ledian:: @ 82582D4
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_SUPERSONIC
     level_up_move 8, MOVE_SUPERSONIC
@@ -19744,7 +19748,7 @@ kLevelUpLearnset_Ledian:: @ 82582F8
     level_up_move 60, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Spinarak:: @ 8258310
+kLevelUpLearnset_Spinarak:: @ 82582EC
     level_up_move 1, MOVE_POISON_STING
     level_up_move 1, MOVE_STRING_SHOT
     level_up_move 6, MOVE_SCARY_FACE
@@ -19757,7 +19761,7 @@ kLevelUpLearnset_Spinarak:: @ 8258310
     level_up_move 53, MOVE_PSYCHIC
     .2byte -1
 
-kLevelUpLearnset_Ariados:: @ 8258326
+kLevelUpLearnset_Ariados:: @ 8258302
     level_up_move 1, MOVE_POISON_STING
     level_up_move 1, MOVE_STRING_SHOT
     level_up_move 1, MOVE_SCARY_FACE
@@ -19772,7 +19776,7 @@ kLevelUpLearnset_Ariados:: @ 8258326
     level_up_move 63, MOVE_PSYCHIC
     .2byte -1
 
-kLevelUpLearnset_Crobat:: @ 8258340
+kLevelUpLearnset_Crobat:: @ 825831C
     level_up_move 1, MOVE_SCREECH
     level_up_move 1, MOVE_LEECH_LIFE
     level_up_move 1, MOVE_ASTONISH
@@ -19788,7 +19792,7 @@ kLevelUpLearnset_Crobat:: @ 8258340
     level_up_move 56, MOVE_HAZE
     .2byte -1
 
-kLevelUpLearnset_Chinchou:: @ 825835C
+kLevelUpLearnset_Chinchou:: @ 8258338
     level_up_move 1, MOVE_BUBBLE
     level_up_move 1, MOVE_THUNDER_WAVE
     level_up_move 5, MOVE_SUPERSONIC
@@ -19801,7 +19805,7 @@ kLevelUpLearnset_Chinchou:: @ 825835C
     level_up_move 49, MOVE_CHARGE
     .2byte -1
 
-kLevelUpLearnset_Lanturn:: @ 8258372
+kLevelUpLearnset_Lanturn:: @ 825834E
     level_up_move 1, MOVE_BUBBLE
     level_up_move 1, MOVE_THUNDER_WAVE
     level_up_move 1, MOVE_SUPERSONIC
@@ -19815,7 +19819,7 @@ kLevelUpLearnset_Lanturn:: @ 8258372
     level_up_move 61, MOVE_CHARGE
     .2byte -1
 
-kLevelUpLearnset_Pichu:: @ 825838A
+kLevelUpLearnset_Pichu:: @ 8258366
     level_up_move 1, MOVE_THUNDER_SHOCK
     level_up_move 1, MOVE_CHARM
     level_up_move 6, MOVE_TAIL_WHIP
@@ -19823,7 +19827,7 @@ kLevelUpLearnset_Pichu:: @ 825838A
     level_up_move 11, MOVE_SWEET_KISS
     .2byte -1
 
-kLevelUpLearnset_Cleffa:: @ 8258396
+kLevelUpLearnset_Cleffa:: @ 8258372
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_CHARM
     level_up_move 4, MOVE_ENCORE
@@ -19832,7 +19836,7 @@ kLevelUpLearnset_Cleffa:: @ 8258396
     level_up_move 17, MOVE_MAGICAL_LEAF
     .2byte -1
 
-kLevelUpLearnset_Igglybuff:: @ 82583A4
+kLevelUpLearnset_Igglybuff:: @ 8258380
     level_up_move 1, MOVE_SING
     level_up_move 1, MOVE_CHARM
     level_up_move 4, MOVE_DEFENSE_CURL
@@ -19840,7 +19844,7 @@ kLevelUpLearnset_Igglybuff:: @ 82583A4
     level_up_move 14, MOVE_SWEET_KISS
     .2byte -1
 
-kLevelUpLearnset_Togepi:: @ 82583B0
+kLevelUpLearnset_Togepi:: @ 825838C
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_CHARM
     level_up_move 4, MOVE_METRONOME
@@ -19855,7 +19859,7 @@ kLevelUpLearnset_Togepi:: @ 82583B0
     level_up_move 41, MOVE_BATON_PASS
     .2byte -1
 
-kLevelUpLearnset_Togetic:: @ 82583CA
+kLevelUpLearnset_Togetic:: @ 82583A6
     level_up_move 1, MOVE_MAGICAL_LEAF
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_CHARM
@@ -19873,7 +19877,7 @@ kLevelUpLearnset_Togetic:: @ 82583CA
     level_up_move 41, MOVE_BATON_PASS
     .2byte -1
 
-kLevelUpLearnset_Natu:: @ 82583EA
+kLevelUpLearnset_Natu:: @ 82583C6
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_LEER
     level_up_move 10, MOVE_NIGHT_SHADE
@@ -19884,7 +19888,7 @@ kLevelUpLearnset_Natu:: @ 82583EA
     level_up_move 50, MOVE_PSYCHIC
     .2byte -1
 
-kLevelUpLearnset_Xatu:: @ 82583FC
+kLevelUpLearnset_Xatu:: @ 82583D8
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_LEER
     level_up_move 10, MOVE_NIGHT_SHADE
@@ -19895,7 +19899,7 @@ kLevelUpLearnset_Xatu:: @ 82583FC
     level_up_move 65, MOVE_PSYCHIC
     .2byte -1
 
-kLevelUpLearnset_Mareep:: @ 825840E
+kLevelUpLearnset_Mareep:: @ 82583EA
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 9, MOVE_THUNDER_SHOCK
@@ -19905,7 +19909,7 @@ kLevelUpLearnset_Mareep:: @ 825840E
     level_up_move 37, MOVE_THUNDER
     .2byte -1
 
-kLevelUpLearnset_Flaaffy:: @ 825841E
+kLevelUpLearnset_Flaaffy:: @ 82583FA
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_THUNDER_SHOCK
@@ -19916,7 +19920,7 @@ kLevelUpLearnset_Flaaffy:: @ 825841E
     level_up_move 45, MOVE_THUNDER
     .2byte -1
 
-kLevelUpLearnset_Ampharos:: @ 8258430
+kLevelUpLearnset_Ampharos:: @ 825840C
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_THUNDER_SHOCK
@@ -19929,7 +19933,7 @@ kLevelUpLearnset_Ampharos:: @ 8258430
     level_up_move 57, MOVE_THUNDER
     .2byte -1
 
-kLevelUpLearnset_Bellossom:: @ 8258446
+kLevelUpLearnset_Bellossom:: @ 8258422
     level_up_move 1, MOVE_ABSORB
     level_up_move 1, MOVE_SWEET_SCENT
     level_up_move 1, MOVE_STUN_SPORE
@@ -19938,7 +19942,7 @@ kLevelUpLearnset_Bellossom:: @ 8258446
     level_up_move 55, MOVE_SOLAR_BEAM
     .2byte -1
 
-kLevelUpLearnset_Marill:: @ 8258454
+kLevelUpLearnset_Marill:: @ 8258430
     level_up_move 1, MOVE_TACKLE
     level_up_move 3, MOVE_DEFENSE_CURL
     level_up_move 6, MOVE_TAIL_WHIP
@@ -19950,7 +19954,7 @@ kLevelUpLearnset_Marill:: @ 8258454
     level_up_move 45, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Azumarill:: @ 8258468
+kLevelUpLearnset_Azumarill:: @ 8258444
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_DEFENSE_CURL
     level_up_move 1, MOVE_TAIL_WHIP
@@ -19965,7 +19969,7 @@ kLevelUpLearnset_Azumarill:: @ 8258468
     level_up_move 57, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Sudowoodo:: @ 8258482
+kLevelUpLearnset_Sudowoodo:: @ 825845E
     level_up_move 1, MOVE_ROCK_THROW
     level_up_move 1, MOVE_MIMIC
     level_up_move 9, MOVE_FLAIL
@@ -19977,7 +19981,7 @@ kLevelUpLearnset_Sudowoodo:: @ 8258482
     level_up_move 57, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Politoed:: @ 8258496
+kLevelUpLearnset_Politoed:: @ 8258472
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 1, MOVE_HYPNOSIS
     level_up_move 1, MOVE_DOUBLE_SLAP
@@ -19986,7 +19990,7 @@ kLevelUpLearnset_Politoed:: @ 8258496
     level_up_move 51, MOVE_SWAGGER
     .2byte -1
 
-kLevelUpLearnset_Hoppip:: @ 82584A4
+kLevelUpLearnset_Hoppip:: @ 8258480
     level_up_move 1, MOVE_SPLASH
     level_up_move 5, MOVE_SYNTHESIS
     level_up_move 5, MOVE_TAIL_WHIP
@@ -19999,7 +20003,7 @@ kLevelUpLearnset_Hoppip:: @ 82584A4
     level_up_move 30, MOVE_MEGA_DRAIN
     .2byte -1
 
-kLevelUpLearnset_Skiploom:: @ 82584BA
+kLevelUpLearnset_Skiploom:: @ 8258496
     level_up_move 1, MOVE_SPLASH
     level_up_move 1, MOVE_SYNTHESIS
     level_up_move 1, MOVE_TAIL_WHIP
@@ -20015,7 +20019,7 @@ kLevelUpLearnset_Skiploom:: @ 82584BA
     level_up_move 36, MOVE_MEGA_DRAIN
     .2byte -1
 
-kLevelUpLearnset_Jumpluff:: @ 82584D6
+kLevelUpLearnset_Jumpluff:: @ 82584B2
     level_up_move 1, MOVE_SPLASH
     level_up_move 1, MOVE_SYNTHESIS
     level_up_move 1, MOVE_TAIL_WHIP
@@ -20031,7 +20035,7 @@ kLevelUpLearnset_Jumpluff:: @ 82584D6
     level_up_move 44, MOVE_MEGA_DRAIN
     .2byte -1
 
-kLevelUpLearnset_Aipom:: @ 82584F2
+kLevelUpLearnset_Aipom:: @ 82584CE
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 6, MOVE_SAND_ATTACK
@@ -20044,7 +20048,7 @@ kLevelUpLearnset_Aipom:: @ 82584F2
     level_up_move 50, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Sunkern:: @ 8258508
+kLevelUpLearnset_Sunkern:: @ 82584E4
     level_up_move 1, MOVE_ABSORB
     level_up_move 6, MOVE_GROWTH
     level_up_move 13, MOVE_MEGA_DRAIN
@@ -20055,7 +20059,7 @@ kLevelUpLearnset_Sunkern:: @ 8258508
     level_up_move 42, MOVE_GIGA_DRAIN
     .2byte -1
 
-kLevelUpLearnset_Sunflora:: @ 825851A
+kLevelUpLearnset_Sunflora:: @ 82584F6
     level_up_move 1, MOVE_ABSORB
     level_up_move 1, MOVE_POUND
     level_up_move 6, MOVE_GROWTH
@@ -20067,7 +20071,7 @@ kLevelUpLearnset_Sunflora:: @ 825851A
     level_up_move 42, MOVE_SOLAR_BEAM
     .2byte -1
 
-kLevelUpLearnset_Yanma:: @ 825852E
+kLevelUpLearnset_Yanma:: @ 825850A
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_FORESIGHT
     level_up_move 6, MOVE_QUICK_ATTACK
@@ -20081,7 +20085,7 @@ kLevelUpLearnset_Yanma:: @ 825852E
     level_up_move 50, MOVE_SCREECH
     .2byte -1
 
-kLevelUpLearnset_Wooper:: @ 8258546
+kLevelUpLearnset_Wooper:: @ 8258522
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 11, MOVE_SLAM
@@ -20094,7 +20098,7 @@ kLevelUpLearnset_Wooper:: @ 8258546
     level_up_move 51, MOVE_HAZE
     .2byte -1
 
-kLevelUpLearnset_Quagsire:: @ 825855C
+kLevelUpLearnset_Quagsire:: @ 8258538
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 11, MOVE_SLAM
@@ -20107,7 +20111,7 @@ kLevelUpLearnset_Quagsire:: @ 825855C
     level_up_move 61, MOVE_HAZE
     .2byte -1
 
-kLevelUpLearnset_Espeon:: @ 8258572
+kLevelUpLearnset_Espeon:: @ 825854E
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_HELPING_HAND
@@ -20121,7 +20125,7 @@ kLevelUpLearnset_Espeon:: @ 8258572
     level_up_move 52, MOVE_MORNING_SUN
     .2byte -1
 
-kLevelUpLearnset_Umbreon:: @ 825858A
+kLevelUpLearnset_Umbreon:: @ 8258566
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_HELPING_HAND
@@ -20135,7 +20139,7 @@ kLevelUpLearnset_Umbreon:: @ 825858A
     level_up_move 52, MOVE_MOONLIGHT
     .2byte -1
 
-kLevelUpLearnset_Murkrow:: @ 82585A2
+kLevelUpLearnset_Murkrow:: @ 825857E
     level_up_move 1, MOVE_PECK
     level_up_move 9, MOVE_ASTONISH
     level_up_move 14, MOVE_PURSUIT
@@ -20146,7 +20150,7 @@ kLevelUpLearnset_Murkrow:: @ 82585A2
     level_up_move 48, MOVE_MEAN_LOOK
     .2byte -1
 
-kLevelUpLearnset_Slowking:: @ 82585B4
+kLevelUpLearnset_Slowking:: @ 8258590
     level_up_move 1, MOVE_CURSE
     level_up_move 1, MOVE_YAWN
     level_up_move 1, MOVE_TACKLE
@@ -20160,7 +20164,7 @@ kLevelUpLearnset_Slowking:: @ 82585B4
     level_up_move 47, MOVE_PSYCH_UP
     .2byte -1
 
-kLevelUpLearnset_Misdreavus:: @ 82585CC
+kLevelUpLearnset_Misdreavus:: @ 82585A8
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_PSYWAVE
     level_up_move 6, MOVE_SPITE
@@ -20173,18 +20177,18 @@ kLevelUpLearnset_Misdreavus:: @ 82585CC
     level_up_move 53, MOVE_GRUDGE
     .2byte -1
 
-kLevelUpLearnset_Unown:: @ 82585E2
+kLevelUpLearnset_Unown:: @ 82585BE
     level_up_move 1, MOVE_HIDDEN_POWER
     .2byte -1
 
-kLevelUpLearnset_Wobbuffet:: @ 82585E6
+kLevelUpLearnset_Wobbuffet:: @ 82585C2
     level_up_move 1, MOVE_COUNTER
     level_up_move 1, MOVE_MIRROR_COAT
     level_up_move 1, MOVE_SAFEGUARD
     level_up_move 1, MOVE_DESTINY_BOND
     .2byte -1
 
-kLevelUpLearnset_Girafarig:: @ 82585F0
+kLevelUpLearnset_Girafarig:: @ 82585CC
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 7, MOVE_ASTONISH
@@ -20197,7 +20201,7 @@ kLevelUpLearnset_Girafarig:: @ 82585F0
     level_up_move 49, MOVE_CRUNCH
     .2byte -1
 
-kLevelUpLearnset_Pineco:: @ 8258606
+kLevelUpLearnset_Pineco:: @ 82585E2
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_PROTECT
     level_up_move 8, MOVE_SELF_DESTRUCT
@@ -20209,7 +20213,7 @@ kLevelUpLearnset_Pineco:: @ 8258606
     level_up_move 50, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Forretress:: @ 825861A
+kLevelUpLearnset_Forretress:: @ 82585F6
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_PROTECT
     level_up_move 1, MOVE_SELF_DESTRUCT
@@ -20223,7 +20227,7 @@ kLevelUpLearnset_Forretress:: @ 825861A
     level_up_move 59, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Dunsparce:: @ 8258632
+kLevelUpLearnset_Dunsparce:: @ 825860E
     level_up_move 1, MOVE_RAGE
     level_up_move 4, MOVE_DEFENSE_CURL
     level_up_move 11, MOVE_YAWN
@@ -20237,7 +20241,7 @@ kLevelUpLearnset_Dunsparce:: @ 8258632
     level_up_move 51, MOVE_ENDEAVOR
     .2byte -1
 
-kLevelUpLearnset_Gligar:: @ 825864A
+kLevelUpLearnset_Gligar:: @ 8258626
     level_up_move 1, MOVE_POISON_STING
     level_up_move 6, MOVE_SAND_ATTACK
     level_up_move 13, MOVE_HARDEN
@@ -20248,7 +20252,7 @@ kLevelUpLearnset_Gligar:: @ 825864A
     level_up_move 52, MOVE_GUILLOTINE
     .2byte -1
 
-kLevelUpLearnset_Steelix:: @ 825865C
+kLevelUpLearnset_Steelix:: @ 8258638
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_SCREECH
     level_up_move 8, MOVE_BIND
@@ -20263,7 +20267,7 @@ kLevelUpLearnset_Steelix:: @ 825865C
     level_up_move 56, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Snubbull:: @ 8258676
+kLevelUpLearnset_Snubbull:: @ 8258652
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_SCARY_FACE
     level_up_move 4, MOVE_TAIL_WHIP
@@ -20276,7 +20280,7 @@ kLevelUpLearnset_Snubbull:: @ 8258676
     level_up_move 53, MOVE_CRUNCH
     .2byte -1
 
-kLevelUpLearnset_Granbull:: @ 825868C
+kLevelUpLearnset_Granbull:: @ 8258668
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_SCARY_FACE
     level_up_move 4, MOVE_TAIL_WHIP
@@ -20289,7 +20293,7 @@ kLevelUpLearnset_Granbull:: @ 825868C
     level_up_move 61, MOVE_CRUNCH
     .2byte -1
 
-kLevelUpLearnset_Qwilfish:: @ 82586A2
+kLevelUpLearnset_Qwilfish:: @ 825867E
     level_up_move 1, MOVE_SPIKES
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_POISON_STING
@@ -20303,7 +20307,7 @@ kLevelUpLearnset_Qwilfish:: @ 82586A2
     level_up_move 45, MOVE_DESTINY_BOND
     .2byte -1
 
-kLevelUpLearnset_Scizor:: @ 82586BA
+kLevelUpLearnset_Scizor:: @ 8258696
     level_up_move 1, MOVE_QUICK_ATTACK
     level_up_move 1, MOVE_LEER
     level_up_move 6, MOVE_FOCUS_ENERGY
@@ -20317,7 +20321,7 @@ kLevelUpLearnset_Scizor:: @ 82586BA
     level_up_move 46, MOVE_FURY_CUTTER
     .2byte -1
 
-kLevelUpLearnset_Shuckle:: @ 82586D2
+kLevelUpLearnset_Shuckle:: @ 82586AE
     level_up_move 1, MOVE_CONSTRICT
     level_up_move 1, MOVE_WITHDRAW
     level_up_move 9, MOVE_WRAP
@@ -20327,7 +20331,7 @@ kLevelUpLearnset_Shuckle:: @ 82586D2
     level_up_move 37, MOVE_REST
     .2byte -1
 
-kLevelUpLearnset_Heracross:: @ 82586E2
+kLevelUpLearnset_Heracross:: @ 82586BE
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_LEER
     level_up_move 6, MOVE_HORN_ATTACK
@@ -20340,7 +20344,7 @@ kLevelUpLearnset_Heracross:: @ 82586E2
     level_up_move 53, MOVE_MEGAHORN
     .2byte -1
 
-kLevelUpLearnset_Sneasel:: @ 82586F8
+kLevelUpLearnset_Sneasel:: @ 82586D4
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_TAUNT
@@ -20355,7 +20359,7 @@ kLevelUpLearnset_Sneasel:: @ 82586F8
     level_up_move 64, MOVE_METAL_CLAW
     .2byte -1
 
-kLevelUpLearnset_Teddiursa:: @ 8258712
+kLevelUpLearnset_Teddiursa:: @ 82586EE
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_LEER
     level_up_move 7, MOVE_LICK
@@ -20368,7 +20372,7 @@ kLevelUpLearnset_Teddiursa:: @ 8258712
     level_up_move 49, MOVE_THRASH
     .2byte -1
 
-kLevelUpLearnset_Ursaring:: @ 8258728
+kLevelUpLearnset_Ursaring:: @ 8258704
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_LICK
@@ -20383,7 +20387,7 @@ kLevelUpLearnset_Ursaring:: @ 8258728
     level_up_move 49, MOVE_THRASH
     .2byte -1
 
-kLevelUpLearnset_Slugma:: @ 8258742
+kLevelUpLearnset_Slugma:: @ 825871E
     level_up_move 1, MOVE_YAWN
     level_up_move 1, MOVE_SMOG
     level_up_move 8, MOVE_EMBER
@@ -20395,7 +20399,7 @@ kLevelUpLearnset_Slugma:: @ 8258742
     level_up_move 50, MOVE_BODY_SLAM
     .2byte -1
 
-kLevelUpLearnset_Magcargo:: @ 8258756
+kLevelUpLearnset_Magcargo:: @ 8258732
     level_up_move 1, MOVE_YAWN
     level_up_move 1, MOVE_SMOG
     level_up_move 1, MOVE_EMBER
@@ -20409,7 +20413,7 @@ kLevelUpLearnset_Magcargo:: @ 8258756
     level_up_move 60, MOVE_BODY_SLAM
     .2byte -1
 
-kLevelUpLearnset_Swinub:: @ 825876E
+kLevelUpLearnset_Swinub:: @ 825874A
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_ODOR_SLEUTH
     level_up_move 10, MOVE_POWDER_SNOW
@@ -20420,7 +20424,7 @@ kLevelUpLearnset_Swinub:: @ 825876E
     level_up_move 55, MOVE_AMNESIA
     .2byte -1
 
-kLevelUpLearnset_Piloswine:: @ 8258780
+kLevelUpLearnset_Piloswine:: @ 825875C
     level_up_move 1, MOVE_HORN_ATTACK
     level_up_move 1, MOVE_ODOR_SLEUTH
     level_up_move 1, MOVE_POWDER_SNOW
@@ -20434,7 +20438,7 @@ kLevelUpLearnset_Piloswine:: @ 8258780
     level_up_move 70, MOVE_AMNESIA
     .2byte -1
 
-kLevelUpLearnset_Corsola:: @ 8258798
+kLevelUpLearnset_Corsola:: @ 8258774
     level_up_move 1, MOVE_TACKLE
     level_up_move 6, MOVE_HARDEN
     level_up_move 12, MOVE_BUBBLE
@@ -20447,7 +20451,7 @@ kLevelUpLearnset_Corsola:: @ 8258798
     level_up_move 45, MOVE_ANCIENT_POWER
     .2byte -1
 
-kLevelUpLearnset_Remoraid:: @ 82587AE
+kLevelUpLearnset_Remoraid:: @ 825878A
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 11, MOVE_LOCK_ON
     level_up_move 22, MOVE_PSYBEAM
@@ -20458,7 +20462,7 @@ kLevelUpLearnset_Remoraid:: @ 82587AE
     level_up_move 55, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Octillery:: @ 82587C0
+kLevelUpLearnset_Octillery:: @ 825879C
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 11, MOVE_CONSTRICT
     level_up_move 22, MOVE_PSYBEAM
@@ -20470,11 +20474,11 @@ kLevelUpLearnset_Octillery:: @ 82587C0
     level_up_move 70, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Delibird:: @ 82587D4
+kLevelUpLearnset_Delibird:: @ 82587B0
     level_up_move 1, MOVE_PRESENT
     .2byte -1
 
-kLevelUpLearnset_Mantine:: @ 82587D8
+kLevelUpLearnset_Mantine:: @ 82587B4
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_BUBBLE
     level_up_move 8, MOVE_SUPERSONIC
@@ -20486,7 +20490,7 @@ kLevelUpLearnset_Mantine:: @ 82587D8
     level_up_move 50, MOVE_CONFUSE_RAY
     .2byte -1
 
-kLevelUpLearnset_Skarmory:: @ 82587EC
+kLevelUpLearnset_Skarmory:: @ 82587C8
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_PECK
     level_up_move 10, MOVE_SAND_ATTACK
@@ -20499,7 +20503,7 @@ kLevelUpLearnset_Skarmory:: @ 82587EC
     level_up_move 45, MOVE_METAL_SOUND
     .2byte -1
 
-kLevelUpLearnset_Houndour:: @ 8258802
+kLevelUpLearnset_Houndour:: @ 82587DE
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_EMBER
     level_up_move 7, MOVE_HOWL
@@ -20512,7 +20516,7 @@ kLevelUpLearnset_Houndour:: @ 8258802
     level_up_move 49, MOVE_CRUNCH
     .2byte -1
 
-kLevelUpLearnset_Houndoom:: @ 8258818
+kLevelUpLearnset_Houndoom:: @ 82587F4
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_EMBER
     level_up_move 1, MOVE_HOWL
@@ -20526,7 +20530,7 @@ kLevelUpLearnset_Houndoom:: @ 8258818
     level_up_move 59, MOVE_CRUNCH
     .2byte -1
 
-kLevelUpLearnset_Kingdra:: @ 8258830
+kLevelUpLearnset_Kingdra:: @ 825880C
     level_up_move 1, MOVE_BUBBLE
     level_up_move 1, MOVE_SMOKESCREEN
     level_up_move 1, MOVE_LEER
@@ -20540,7 +20544,7 @@ kLevelUpLearnset_Kingdra:: @ 8258830
     level_up_move 62, MOVE_DRAGON_DANCE
     .2byte -1
 
-kLevelUpLearnset_Phanpy:: @ 8258848
+kLevelUpLearnset_Phanpy:: @ 8258824
     level_up_move 1, MOVE_ODOR_SLEUTH
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
@@ -20552,7 +20556,7 @@ kLevelUpLearnset_Phanpy:: @ 8258848
     level_up_move 49, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Donphan:: @ 825885C
+kLevelUpLearnset_Donphan:: @ 8258838
     level_up_move 1, MOVE_ODOR_SLEUTH
     level_up_move 1, MOVE_HORN_ATTACK
     level_up_move 1, MOVE_GROWL
@@ -20564,7 +20568,7 @@ kLevelUpLearnset_Donphan:: @ 825885C
     level_up_move 49, MOVE_EARTHQUAKE
     .2byte -1
 
-kLevelUpLearnset_Porygon2:: @ 8258870
+kLevelUpLearnset_Porygon2:: @ 825884C
     level_up_move 1, MOVE_CONVERSION_2
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_CONVERSION
@@ -20578,7 +20582,7 @@ kLevelUpLearnset_Porygon2:: @ 8258870
     level_up_move 48, MOVE_ZAP_CANNON
     .2byte -1
 
-kLevelUpLearnset_Stantler:: @ 8258888
+kLevelUpLearnset_Stantler:: @ 8258864
     level_up_move 1, MOVE_TACKLE
     level_up_move 7, MOVE_LEER
     level_up_move 11, MOVE_ASTONISH
@@ -20591,7 +20595,7 @@ kLevelUpLearnset_Stantler:: @ 8258888
     level_up_move 47, MOVE_CALM_MIND
     .2byte -1
 
-kLevelUpLearnset_Smeargle:: @ 825889E
+kLevelUpLearnset_Smeargle:: @ 825887A
     level_up_move 1, MOVE_SKETCH
     level_up_move 11, MOVE_SKETCH
     level_up_move 21, MOVE_SKETCH
@@ -20604,11 +20608,11 @@ kLevelUpLearnset_Smeargle:: @ 825889E
     level_up_move 91, MOVE_SKETCH
     .2byte -1
 
-kLevelUpLearnset_Tyrogue:: @ 82588B4
+kLevelUpLearnset_Tyrogue:: @ 8258890
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_Hitmontop:: @ 82588B8
+kLevelUpLearnset_Hitmontop:: @ 8258894
     level_up_move 1, MOVE_REVENGE
     level_up_move 1, MOVE_ROLLING_KICK
     level_up_move 7, MOVE_FOCUS_ENERGY
@@ -20622,7 +20626,7 @@ kLevelUpLearnset_Hitmontop:: @ 82588B8
     level_up_move 49, MOVE_ENDEAVOR
     .2byte -1
 
-kLevelUpLearnset_Smoochum:: @ 82588D0
+kLevelUpLearnset_Smoochum:: @ 82588AC
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_LICK
     level_up_move 9, MOVE_SWEET_KISS
@@ -20636,7 +20640,7 @@ kLevelUpLearnset_Smoochum:: @ 82588D0
     level_up_move 57, MOVE_BLIZZARD
     .2byte -1
 
-kLevelUpLearnset_Elekid:: @ 82588E8
+kLevelUpLearnset_Elekid:: @ 82588C4
     level_up_move 1, MOVE_QUICK_ATTACK
     level_up_move 1, MOVE_LEER
     level_up_move 9, MOVE_THUNDER_PUNCH
@@ -20647,7 +20651,7 @@ kLevelUpLearnset_Elekid:: @ 82588E8
     level_up_move 49, MOVE_THUNDER
     .2byte -1
 
-kLevelUpLearnset_Magby:: @ 82588FA
+kLevelUpLearnset_Magby:: @ 82588D6
     level_up_move 1, MOVE_EMBER
     level_up_move 7, MOVE_LEER
     level_up_move 13, MOVE_SMOG
@@ -20659,7 +20663,7 @@ kLevelUpLearnset_Magby:: @ 82588FA
     level_up_move 49, MOVE_FIRE_BLAST
     .2byte -1
 
-kLevelUpLearnset_Miltank:: @ 825890E
+kLevelUpLearnset_Miltank:: @ 82588EA
     level_up_move 1, MOVE_TACKLE
     level_up_move 4, MOVE_GROWL
     level_up_move 8, MOVE_DEFENSE_CURL
@@ -20671,7 +20675,7 @@ kLevelUpLearnset_Miltank:: @ 825890E
     level_up_move 53, MOVE_HEAL_BELL
     .2byte -1
 
-kLevelUpLearnset_Blissey:: @ 8258922
+kLevelUpLearnset_Blissey:: @ 82588FE
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_GROWL
     level_up_move 4, MOVE_TAIL_WHIP
@@ -20686,7 +20690,7 @@ kLevelUpLearnset_Blissey:: @ 8258922
     level_up_move 47, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Raikou:: @ 825893C
+kLevelUpLearnset_Raikou:: @ 8258918
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_LEER
     level_up_move 11, MOVE_THUNDER_SHOCK
@@ -20699,7 +20703,7 @@ kLevelUpLearnset_Raikou:: @ 825893C
     level_up_move 81, MOVE_CALM_MIND
     .2byte -1
 
-kLevelUpLearnset_Entei:: @ 8258952
+kLevelUpLearnset_Entei:: @ 825892E
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_LEER
     level_up_move 11, MOVE_EMBER
@@ -20712,7 +20716,7 @@ kLevelUpLearnset_Entei:: @ 8258952
     level_up_move 81, MOVE_CALM_MIND
     .2byte -1
 
-kLevelUpLearnset_Suicune:: @ 8258968
+kLevelUpLearnset_Suicune:: @ 8258944
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_LEER
     level_up_move 11, MOVE_BUBBLE_BEAM
@@ -20725,7 +20729,7 @@ kLevelUpLearnset_Suicune:: @ 8258968
     level_up_move 81, MOVE_CALM_MIND
     .2byte -1
 
-kLevelUpLearnset_Larvitar:: @ 825897E
+kLevelUpLearnset_Larvitar:: @ 825895A
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_LEER
     level_up_move 8, MOVE_SANDSTORM
@@ -20738,7 +20742,7 @@ kLevelUpLearnset_Larvitar:: @ 825897E
     level_up_move 57, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Pupitar:: @ 8258994
+kLevelUpLearnset_Pupitar:: @ 8258970
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_SANDSTORM
@@ -20753,7 +20757,7 @@ kLevelUpLearnset_Pupitar:: @ 8258994
     level_up_move 65, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Tyranitar:: @ 82589AE
+kLevelUpLearnset_Tyranitar:: @ 825898A
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_SANDSTORM
@@ -20768,7 +20772,7 @@ kLevelUpLearnset_Tyranitar:: @ 82589AE
     level_up_move 75, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Lugia:: @ 82589C8
+kLevelUpLearnset_Lugia:: @ 82589A4
     level_up_move 1, MOVE_WHIRLWIND
     level_up_move 11, MOVE_SAFEGUARD
     level_up_move 22, MOVE_GUST
@@ -20781,7 +20785,7 @@ kLevelUpLearnset_Lugia:: @ 82589C8
     level_up_move 99, MOVE_FUTURE_SIGHT
     .2byte -1
 
-kLevelUpLearnset_HoOh:: @ 82589DE
+kLevelUpLearnset_HoOh:: @ 82589BA
     level_up_move 1, MOVE_WHIRLWIND
     level_up_move 11, MOVE_SAFEGUARD
     level_up_move 22, MOVE_GUST
@@ -20794,7 +20798,7 @@ kLevelUpLearnset_HoOh:: @ 82589DE
     level_up_move 99, MOVE_FUTURE_SIGHT
     .2byte -1
 
-kLevelUpLearnset_Celebi:: @ 82589F4
+kLevelUpLearnset_Celebi:: @ 82589D0
     level_up_move 1, MOVE_LEECH_SEED
     level_up_move 1, MOVE_CONFUSION
     level_up_move 1, MOVE_RECOVER
@@ -20806,107 +20810,107 @@ kLevelUpLearnset_Celebi:: @ 82589F4
     level_up_move 50, MOVE_PERISH_SONG
     .2byte -1
 
-kLevelUpLearnset_OldUnownB:: @ 8258A08
+kLevelUpLearnset_OldUnownB:: @ 82589E4
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownC:: @ 8258A0C
+kLevelUpLearnset_OldUnownC:: @ 82589E8
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownD:: @ 8258A10
+kLevelUpLearnset_OldUnownD:: @ 82589EC
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownE:: @ 8258A14
+kLevelUpLearnset_OldUnownE:: @ 82589F0
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownF:: @ 8258A18
+kLevelUpLearnset_OldUnownF:: @ 82589F4
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownG:: @ 8258A1C
+kLevelUpLearnset_OldUnownG:: @ 82589F8
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownH:: @ 8258A20
+kLevelUpLearnset_OldUnownH:: @ 82589FC
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownI:: @ 8258A24
+kLevelUpLearnset_OldUnownI:: @ 8258A00
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownJ:: @ 8258A28
+kLevelUpLearnset_OldUnownJ:: @ 8258A04
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownK:: @ 8258A2C
+kLevelUpLearnset_OldUnownK:: @ 8258A08
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownL:: @ 8258A30
+kLevelUpLearnset_OldUnownL:: @ 8258A0C
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownM:: @ 8258A34
+kLevelUpLearnset_OldUnownM:: @ 8258A10
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownN:: @ 8258A38
+kLevelUpLearnset_OldUnownN:: @ 8258A14
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownO:: @ 8258A3C
+kLevelUpLearnset_OldUnownO:: @ 8258A18
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownP:: @ 8258A40
+kLevelUpLearnset_OldUnownP:: @ 8258A1C
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownQ:: @ 8258A44
+kLevelUpLearnset_OldUnownQ:: @ 8258A20
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownR:: @ 8258A48
+kLevelUpLearnset_OldUnownR:: @ 8258A24
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownS:: @ 8258A4C
+kLevelUpLearnset_OldUnownS:: @ 8258A28
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownT:: @ 8258A50
+kLevelUpLearnset_OldUnownT:: @ 8258A2C
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownU:: @ 8258A54
+kLevelUpLearnset_OldUnownU:: @ 8258A30
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownV:: @ 8258A58
+kLevelUpLearnset_OldUnownV:: @ 8258A34
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownW:: @ 8258A5C
+kLevelUpLearnset_OldUnownW:: @ 8258A38
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownX:: @ 8258A60
+kLevelUpLearnset_OldUnownX:: @ 8258A3C
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownY:: @ 8258A64
+kLevelUpLearnset_OldUnownY:: @ 8258A40
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_OldUnownZ:: @ 8258A68
+kLevelUpLearnset_OldUnownZ:: @ 8258A44
     level_up_move 1, MOVE_TACKLE
     .2byte -1
 
-kLevelUpLearnset_Treecko:: @ 8258A6C
+kLevelUpLearnset_Treecko:: @ 8258A48
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_LEER
     level_up_move 6, MOVE_ABSORB
@@ -20920,7 +20924,7 @@ kLevelUpLearnset_Treecko:: @ 8258A6C
     level_up_move 46, MOVE_GIGA_DRAIN
     .2byte -1
 
-kLevelUpLearnset_Grovyle:: @ 8258A84
+kLevelUpLearnset_Grovyle:: @ 8258A60
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_ABSORB
@@ -20937,7 +20941,7 @@ kLevelUpLearnset_Grovyle:: @ 8258A84
     level_up_move 53, MOVE_FALSE_SWIPE
     .2byte -1
 
-kLevelUpLearnset_Sceptile:: @ 8258AA2
+kLevelUpLearnset_Sceptile:: @ 8258A7E
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_ABSORB
@@ -20954,7 +20958,7 @@ kLevelUpLearnset_Sceptile:: @ 8258AA2
     level_up_move 59, MOVE_FALSE_SWIPE
     .2byte -1
 
-kLevelUpLearnset_Torchic:: @ 8258AC0
+kLevelUpLearnset_Torchic:: @ 8258A9C
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_GROWL
     level_up_move 7, MOVE_FOCUS_ENERGY
@@ -20968,7 +20972,7 @@ kLevelUpLearnset_Torchic:: @ 8258AC0
     level_up_move 43, MOVE_FLAMETHROWER
     .2byte -1
 
-kLevelUpLearnset_Combusken:: @ 8258AD8
+kLevelUpLearnset_Combusken:: @ 8258AB4
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_FOCUS_ENERGY
@@ -20985,7 +20989,7 @@ kLevelUpLearnset_Combusken:: @ 8258AD8
     level_up_move 50, MOVE_SKY_UPPERCUT
     .2byte -1
 
-kLevelUpLearnset_Blaziken:: @ 8258AF6
+kLevelUpLearnset_Blaziken:: @ 8258AD2
     level_up_move 1, MOVE_FIRE_PUNCH
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_GROWL
@@ -21004,7 +21008,7 @@ kLevelUpLearnset_Blaziken:: @ 8258AF6
     level_up_move 59, MOVE_SKY_UPPERCUT
     .2byte -1
 
-kLevelUpLearnset_Mudkip:: @ 8258B18
+kLevelUpLearnset_Mudkip:: @ 8258AF4
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 6, MOVE_MUD_SLAP
@@ -21019,7 +21023,7 @@ kLevelUpLearnset_Mudkip:: @ 8258B18
     level_up_move 46, MOVE_ENDEAVOR
     .2byte -1
 
-kLevelUpLearnset_Marshtomp:: @ 8258B32
+kLevelUpLearnset_Marshtomp:: @ 8258B0E
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_MUD_SLAP
@@ -21037,7 +21041,7 @@ kLevelUpLearnset_Marshtomp:: @ 8258B32
     level_up_move 53, MOVE_ENDEAVOR
     .2byte -1
 
-kLevelUpLearnset_Swampert:: @ 8258B52
+kLevelUpLearnset_Swampert:: @ 8258B2E
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_MUD_SLAP
@@ -21055,7 +21059,7 @@ kLevelUpLearnset_Swampert:: @ 8258B52
     level_up_move 61, MOVE_ENDEAVOR
     .2byte -1
 
-kLevelUpLearnset_Poochyena:: @ 8258B72
+kLevelUpLearnset_Poochyena:: @ 8258B4E
     level_up_move 1, MOVE_TACKLE
     level_up_move 5, MOVE_HOWL
     level_up_move 9, MOVE_SAND_ATTACK
@@ -21070,7 +21074,7 @@ kLevelUpLearnset_Poochyena:: @ 8258B72
     level_up_move 45, MOVE_THIEF
     .2byte -1
 
-kLevelUpLearnset_Mightyena:: @ 8258B8C
+kLevelUpLearnset_Mightyena:: @ 8258B68
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_HOWL
     level_up_move 1, MOVE_SAND_ATTACK
@@ -21088,7 +21092,7 @@ kLevelUpLearnset_Mightyena:: @ 8258B8C
     level_up_move 52, MOVE_THIEF
     .2byte -1
 
-kLevelUpLearnset_Zigzagoon:: @ 8258BAC
+kLevelUpLearnset_Zigzagoon:: @ 8258B88
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 5, MOVE_TAIL_WHIP
@@ -21103,7 +21107,7 @@ kLevelUpLearnset_Zigzagoon:: @ 8258BAC
     level_up_move 41, MOVE_BELLY_DRUM
     .2byte -1
 
-kLevelUpLearnset_Linoone:: @ 8258BC6
+kLevelUpLearnset_Linoone:: @ 8258BA2
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_TAIL_WHIP
@@ -21120,18 +21124,18 @@ kLevelUpLearnset_Linoone:: @ 8258BC6
     level_up_move 53, MOVE_BELLY_DRUM
     .2byte -1
 
-kLevelUpLearnset_Wurmple:: @ 8258BE4
+kLevelUpLearnset_Wurmple:: @ 8258BC0
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_STRING_SHOT
     level_up_move 5, MOVE_POISON_STING
     .2byte -1
 
-kLevelUpLearnset_Silcoon:: @ 8258BEC
+kLevelUpLearnset_Silcoon:: @ 8258BC8
     level_up_move 1, MOVE_HARDEN
     level_up_move 7, MOVE_HARDEN
     .2byte -1
 
-kLevelUpLearnset_Beautifly:: @ 8258BF2
+kLevelUpLearnset_Beautifly:: @ 8258BCE
     level_up_move 1, MOVE_ABSORB
     level_up_move 10, MOVE_ABSORB
     level_up_move 13, MOVE_GUST
@@ -21144,12 +21148,12 @@ kLevelUpLearnset_Beautifly:: @ 8258BF2
     level_up_move 38, MOVE_GIGA_DRAIN
     .2byte -1
 
-kLevelUpLearnset_Cascoon:: @ 8258C08
+kLevelUpLearnset_Cascoon:: @ 8258BE4
     level_up_move 1, MOVE_HARDEN
     level_up_move 7, MOVE_HARDEN
     .2byte -1
 
-kLevelUpLearnset_Dustox:: @ 8258C0E
+kLevelUpLearnset_Dustox:: @ 8258BEA
     level_up_move 1, MOVE_CONFUSION
     level_up_move 10, MOVE_CONFUSION
     level_up_move 13, MOVE_GUST
@@ -21162,7 +21166,7 @@ kLevelUpLearnset_Dustox:: @ 8258C0E
     level_up_move 38, MOVE_TOXIC
     .2byte -1
 
-kLevelUpLearnset_Lotad:: @ 8258C24
+kLevelUpLearnset_Lotad:: @ 8258C00
     level_up_move 1, MOVE_ASTONISH
     level_up_move 3, MOVE_GROWL
     level_up_move 7, MOVE_ABSORB
@@ -21172,7 +21176,7 @@ kLevelUpLearnset_Lotad:: @ 8258C24
     level_up_move 43, MOVE_MEGA_DRAIN
     .2byte -1
 
-kLevelUpLearnset_Lombre:: @ 8258C34
+kLevelUpLearnset_Lombre:: @ 8258C10
     level_up_move 1, MOVE_ASTONISH
     level_up_move 3, MOVE_GROWL
     level_up_move 7, MOVE_ABSORB
@@ -21185,14 +21189,14 @@ kLevelUpLearnset_Lombre:: @ 8258C34
     level_up_move 49, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Ludicolo:: @ 8258C4A
+kLevelUpLearnset_Ludicolo:: @ 8258C26
     level_up_move 1, MOVE_ASTONISH
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_ABSORB
     level_up_move 1, MOVE_NATURE_POWER
     .2byte -1
 
-kLevelUpLearnset_Seedot:: @ 8258C54
+kLevelUpLearnset_Seedot:: @ 8258C30
     level_up_move 1, MOVE_BIDE
     level_up_move 3, MOVE_HARDEN
     level_up_move 7, MOVE_GROWTH
@@ -21202,7 +21206,7 @@ kLevelUpLearnset_Seedot:: @ 8258C54
     level_up_move 43, MOVE_EXPLOSION
     .2byte -1
 
-kLevelUpLearnset_Nuzleaf:: @ 8258C64
+kLevelUpLearnset_Nuzleaf:: @ 8258C40
     level_up_move 1, MOVE_POUND
     level_up_move 3, MOVE_HARDEN
     level_up_move 7, MOVE_GROWTH
@@ -21215,14 +21219,14 @@ kLevelUpLearnset_Nuzleaf:: @ 8258C64
     level_up_move 49, MOVE_EXTRASENSORY
     .2byte -1
 
-kLevelUpLearnset_Shiftry:: @ 8258C7A
+kLevelUpLearnset_Shiftry:: @ 8258C56
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_HARDEN
     level_up_move 1, MOVE_GROWTH
     level_up_move 1, MOVE_NATURE_POWER
     .2byte -1
 
-kLevelUpLearnset_Nincada:: @ 8258C84
+kLevelUpLearnset_Nincada:: @ 8258C60
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_HARDEN
     level_up_move 5, MOVE_LEECH_LIFE
@@ -21235,7 +21239,7 @@ kLevelUpLearnset_Nincada:: @ 8258C84
     level_up_move 45, MOVE_DIG
     .2byte -1
 
-kLevelUpLearnset_Ninjask:: @ 8258C9A
+kLevelUpLearnset_Ninjask:: @ 8258C76
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_HARDEN
     level_up_move 1, MOVE_LEECH_LIFE
@@ -21253,7 +21257,7 @@ kLevelUpLearnset_Ninjask:: @ 8258C9A
     level_up_move 45, MOVE_BATON_PASS
     .2byte -1
 
-kLevelUpLearnset_Shedinja:: @ 8258CBA
+kLevelUpLearnset_Shedinja:: @ 8258C96
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_HARDEN
     level_up_move 5, MOVE_LEECH_LIFE
@@ -21266,7 +21270,7 @@ kLevelUpLearnset_Shedinja:: @ 8258CBA
     level_up_move 45, MOVE_GRUDGE
     .2byte -1
 
-kLevelUpLearnset_Taillow:: @ 8258CD0
+kLevelUpLearnset_Taillow:: @ 8258CAC
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_GROWL
     level_up_move 4, MOVE_FOCUS_ENERGY
@@ -21278,7 +21282,7 @@ kLevelUpLearnset_Taillow:: @ 8258CD0
     level_up_move 43, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Swellow:: @ 8258CE4
+kLevelUpLearnset_Swellow:: @ 8258CC0
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_FOCUS_ENERGY
@@ -21292,7 +21296,7 @@ kLevelUpLearnset_Swellow:: @ 8258CE4
     level_up_move 49, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Shroomish:: @ 8258CFC
+kLevelUpLearnset_Shroomish:: @ 8258CD8
     level_up_move 1, MOVE_ABSORB
     level_up_move 4, MOVE_TACKLE
     level_up_move 7, MOVE_STUN_SPORE
@@ -21305,7 +21309,7 @@ kLevelUpLearnset_Shroomish:: @ 8258CFC
     level_up_move 54, MOVE_SPORE
     .2byte -1
 
-kLevelUpLearnset_Breloom:: @ 8258D12
+kLevelUpLearnset_Breloom:: @ 8258CEE
     level_up_move 1, MOVE_ABSORB
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_STUN_SPORE
@@ -21322,7 +21326,7 @@ kLevelUpLearnset_Breloom:: @ 8258D12
     level_up_move 54, MOVE_DYNAMIC_PUNCH
     .2byte -1
 
-kLevelUpLearnset_Spinda:: @ 8258D30
+kLevelUpLearnset_Spinda:: @ 8258D0C
     level_up_move 1, MOVE_TACKLE
     level_up_move 5, MOVE_UPROAR
     level_up_move 12, MOVE_FAINT_ATTACK
@@ -21336,7 +21340,7 @@ kLevelUpLearnset_Spinda:: @ 8258D30
     level_up_move 56, MOVE_THRASH
     .2byte -1
 
-kLevelUpLearnset_Wingull:: @ 8258D48
+kLevelUpLearnset_Wingull:: @ 8258D24
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 7, MOVE_SUPERSONIC
@@ -21347,7 +21351,7 @@ kLevelUpLearnset_Wingull:: @ 8258D48
     level_up_move 55, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Pelipper:: @ 8258D5A
+kLevelUpLearnset_Pelipper:: @ 8258D36
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 1, MOVE_WATER_SPORT
@@ -21363,7 +21367,7 @@ kLevelUpLearnset_Pelipper:: @ 8258D5A
     level_up_move 61, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Surskit:: @ 8258D76
+kLevelUpLearnset_Surskit:: @ 8258D52
     level_up_move 1, MOVE_BUBBLE
     level_up_move 7, MOVE_QUICK_ATTACK
     level_up_move 13, MOVE_SWEET_SCENT
@@ -21374,7 +21378,7 @@ kLevelUpLearnset_Surskit:: @ 8258D76
     level_up_move 37, MOVE_HAZE
     .2byte -1
 
-kLevelUpLearnset_Masquerain:: @ 8258D88
+kLevelUpLearnset_Masquerain:: @ 8258D64
     level_up_move 1, MOVE_BUBBLE
     level_up_move 1, MOVE_QUICK_ATTACK
     level_up_move 1, MOVE_SWEET_SCENT
@@ -21389,7 +21393,7 @@ kLevelUpLearnset_Masquerain:: @ 8258D88
     level_up_move 53, MOVE_WHIRLWIND
     .2byte -1
 
-kLevelUpLearnset_Wailmer:: @ 8258DA2
+kLevelUpLearnset_Wailmer:: @ 8258D7E
     level_up_move 1, MOVE_SPLASH
     level_up_move 5, MOVE_GROWL
     level_up_move 10, MOVE_WATER_GUN
@@ -21404,7 +21408,7 @@ kLevelUpLearnset_Wailmer:: @ 8258DA2
     level_up_move 50, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Wailord:: @ 8258DBC
+kLevelUpLearnset_Wailord:: @ 8258D98
     level_up_move 1, MOVE_SPLASH
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_WATER_GUN
@@ -21422,7 +21426,7 @@ kLevelUpLearnset_Wailord:: @ 8258DBC
     level_up_move 59, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Skitty:: @ 8258DDC
+kLevelUpLearnset_Skitty:: @ 8258DB8
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_TACKLE
     level_up_move 3, MOVE_TAIL_WHIP
@@ -21437,14 +21441,14 @@ kLevelUpLearnset_Skitty:: @ 8258DDC
     level_up_move 39, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Delcatty:: @ 8258DF6
+kLevelUpLearnset_Delcatty:: @ 8258DD2
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_ATTRACT
     level_up_move 1, MOVE_SING
     level_up_move 1, MOVE_DOUBLE_SLAP
     .2byte -1
 
-kLevelUpLearnset_Kecleon:: @ 8258E00
+kLevelUpLearnset_Kecleon:: @ 8258DDC
     level_up_move 1, MOVE_THIEF
     level_up_move 1, MOVE_TAIL_WHIP
     level_up_move 1, MOVE_ASTONISH
@@ -21460,7 +21464,7 @@ kLevelUpLearnset_Kecleon:: @ 8258E00
     level_up_move 49, MOVE_ANCIENT_POWER
     .2byte -1
 
-kLevelUpLearnset_Baltoy:: @ 8258E1C
+kLevelUpLearnset_Baltoy:: @ 8258DF8
     level_up_move 1, MOVE_CONFUSION
     level_up_move 3, MOVE_HARDEN
     level_up_move 5, MOVE_RAPID_SPIN
@@ -21474,7 +21478,7 @@ kLevelUpLearnset_Baltoy:: @ 8258E1C
     level_up_move 45, MOVE_EXPLOSION
     .2byte -1
 
-kLevelUpLearnset_Claydol:: @ 8258E34
+kLevelUpLearnset_Claydol:: @ 8258E10
     level_up_move 1, MOVE_TELEPORT
     level_up_move 1, MOVE_CONFUSION
     level_up_move 1, MOVE_HARDEN
@@ -21492,7 +21496,7 @@ kLevelUpLearnset_Claydol:: @ 8258E34
     level_up_move 55, MOVE_EXPLOSION
     .2byte -1
 
-kLevelUpLearnset_Nosepass:: @ 8258E54
+kLevelUpLearnset_Nosepass:: @ 8258E30
     level_up_move 1, MOVE_TACKLE
     level_up_move 7, MOVE_HARDEN
     level_up_move 13, MOVE_ROCK_THROW
@@ -21505,7 +21509,7 @@ kLevelUpLearnset_Nosepass:: @ 8258E54
     level_up_move 46, MOVE_LOCK_ON
     .2byte -1
 
-kLevelUpLearnset_Torkoal:: @ 8258E6A
+kLevelUpLearnset_Torkoal:: @ 8258E46
     level_up_move 1, MOVE_EMBER
     level_up_move 4, MOVE_SMOG
     level_up_move 7, MOVE_CURSE
@@ -21520,7 +21524,7 @@ kLevelUpLearnset_Torkoal:: @ 8258E6A
     level_up_move 46, MOVE_HEAT_WAVE
     .2byte -1
 
-kLevelUpLearnset_Sableye:: @ 8258E84
+kLevelUpLearnset_Sableye:: @ 8258E60
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_SCRATCH
     level_up_move 5, MOVE_FORESIGHT
@@ -21536,7 +21540,7 @@ kLevelUpLearnset_Sableye:: @ 8258E84
     level_up_move 45, MOVE_MEAN_LOOK
     .2byte -1
 
-kLevelUpLearnset_Barboach:: @ 8258EA0
+kLevelUpLearnset_Barboach:: @ 8258E7C
     level_up_move 1, MOVE_MUD_SLAP
     level_up_move 6, MOVE_MUD_SPORT
     level_up_move 6, MOVE_WATER_SPORT
@@ -21550,7 +21554,7 @@ kLevelUpLearnset_Barboach:: @ 8258EA0
     level_up_move 41, MOVE_FISSURE
     .2byte -1
 
-kLevelUpLearnset_Whiscash:: @ 8258EB8
+kLevelUpLearnset_Whiscash:: @ 8258E94
     level_up_move 1, MOVE_TICKLE
     level_up_move 1, MOVE_MUD_SLAP
     level_up_move 1, MOVE_MUD_SPORT
@@ -21567,7 +21571,7 @@ kLevelUpLearnset_Whiscash:: @ 8258EB8
     level_up_move 56, MOVE_FISSURE
     .2byte -1
 
-kLevelUpLearnset_Luvdisc:: @ 8258ED6
+kLevelUpLearnset_Luvdisc:: @ 8258EB2
     level_up_move 1, MOVE_TACKLE
     level_up_move 4, MOVE_CHARM
     level_up_move 12, MOVE_WATER_GUN
@@ -21579,7 +21583,7 @@ kLevelUpLearnset_Luvdisc:: @ 8258ED6
     level_up_move 48, MOVE_SAFEGUARD
     .2byte -1
 
-kLevelUpLearnset_Corphish:: @ 8258EEA
+kLevelUpLearnset_Corphish:: @ 8258EC6
     level_up_move 1, MOVE_BUBBLE
     level_up_move 7, MOVE_HARDEN
     level_up_move 10, MOVE_VICE_GRIP
@@ -21594,7 +21598,7 @@ kLevelUpLearnset_Corphish:: @ 8258EEA
     level_up_move 46, MOVE_GUILLOTINE
     .2byte -1
 
-kLevelUpLearnset_Crawdaunt:: @ 8258F04
+kLevelUpLearnset_Crawdaunt:: @ 8258EE0
     level_up_move 1, MOVE_BUBBLE
     level_up_move 1, MOVE_HARDEN
     level_up_move 1, MOVE_VICE_GRIP
@@ -21612,13 +21616,13 @@ kLevelUpLearnset_Crawdaunt:: @ 8258F04
     level_up_move 56, MOVE_GUILLOTINE
     .2byte -1
 
-kLevelUpLearnset_Feebas:: @ 8258F24
+kLevelUpLearnset_Feebas:: @ 8258F00
     level_up_move 1, MOVE_SPLASH
     level_up_move 15, MOVE_TACKLE
     level_up_move 30, MOVE_FLAIL
     .2byte -1
 
-kLevelUpLearnset_Milotic:: @ 8258F2C
+kLevelUpLearnset_Milotic:: @ 8258F08
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 5, MOVE_WRAP
     level_up_move 10, MOVE_WATER_SPORT
@@ -21632,7 +21636,7 @@ kLevelUpLearnset_Milotic:: @ 8258F2C
     level_up_move 50, MOVE_SAFEGUARD
     .2byte -1
 
-kLevelUpLearnset_Carvanha:: @ 8258F44
+kLevelUpLearnset_Carvanha:: @ 8258F20
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_BITE
     level_up_move 7, MOVE_RAGE
@@ -21645,7 +21649,7 @@ kLevelUpLearnset_Carvanha:: @ 8258F44
     level_up_move 43, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Sharpedo:: @ 8258F5A
+kLevelUpLearnset_Sharpedo:: @ 8258F36
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_RAGE
@@ -21662,7 +21666,7 @@ kLevelUpLearnset_Sharpedo:: @ 8258F5A
     level_up_move 53, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Trapinch:: @ 8258F78
+kLevelUpLearnset_Trapinch:: @ 8258F54
     level_up_move 1, MOVE_BITE
     level_up_move 9, MOVE_SAND_ATTACK
     level_up_move 17, MOVE_FAINT_ATTACK
@@ -21673,7 +21677,7 @@ kLevelUpLearnset_Trapinch:: @ 8258F78
     level_up_move 57, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Vibrava:: @ 8258F8A
+kLevelUpLearnset_Vibrava:: @ 8258F66
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_SAND_ATTACK
     level_up_move 1, MOVE_FAINT_ATTACK
@@ -21688,7 +21692,7 @@ kLevelUpLearnset_Vibrava:: @ 8258F8A
     level_up_move 57, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Flygon:: @ 8258FA4
+kLevelUpLearnset_Flygon:: @ 8258F80
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_SAND_ATTACK
     level_up_move 1, MOVE_FAINT_ATTACK
@@ -21703,7 +21707,7 @@ kLevelUpLearnset_Flygon:: @ 8258FA4
     level_up_move 65, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Makuhita:: @ 8258FBE
+kLevelUpLearnset_Makuhita:: @ 8258F9A
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_FOCUS_ENERGY
     level_up_move 4, MOVE_SAND_ATTACK
@@ -21719,7 +21723,7 @@ kLevelUpLearnset_Makuhita:: @ 8258FBE
     level_up_move 49, MOVE_REVERSAL
     .2byte -1
 
-kLevelUpLearnset_Hariyama:: @ 8258FDA
+kLevelUpLearnset_Hariyama:: @ 8258FB6
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_FOCUS_ENERGY
     level_up_move 1, MOVE_SAND_ATTACK
@@ -21737,7 +21741,7 @@ kLevelUpLearnset_Hariyama:: @ 8258FDA
     level_up_move 55, MOVE_REVERSAL
     .2byte -1
 
-kLevelUpLearnset_Electrike:: @ 8258FFA
+kLevelUpLearnset_Electrike:: @ 8258FD6
     level_up_move 1, MOVE_TACKLE
     level_up_move 4, MOVE_THUNDER_WAVE
     level_up_move 9, MOVE_LEER
@@ -21751,7 +21755,7 @@ kLevelUpLearnset_Electrike:: @ 8258FFA
     level_up_move 41, MOVE_CHARGE
     .2byte -1
 
-kLevelUpLearnset_Manectric:: @ 8259012
+kLevelUpLearnset_Manectric:: @ 8258FEE
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_THUNDER_WAVE
     level_up_move 1, MOVE_LEER
@@ -21768,7 +21772,7 @@ kLevelUpLearnset_Manectric:: @ 8259012
     level_up_move 53, MOVE_CHARGE
     .2byte -1
 
-kLevelUpLearnset_Numel:: @ 8259030
+kLevelUpLearnset_Numel:: @ 825900C
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_TACKLE
     level_up_move 11, MOVE_EMBER
@@ -21781,7 +21785,7 @@ kLevelUpLearnset_Numel:: @ 8259030
     level_up_move 49, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Camerupt:: @ 8259046
+kLevelUpLearnset_Camerupt:: @ 8259022
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_EMBER
@@ -21797,7 +21801,7 @@ kLevelUpLearnset_Camerupt:: @ 8259046
     level_up_move 55, MOVE_FISSURE
     .2byte -1
 
-kLevelUpLearnset_Spheal:: @ 8259062
+kLevelUpLearnset_Spheal:: @ 825903E
     level_up_move 1, MOVE_POWDER_SNOW
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_DEFENSE_CURL
@@ -21813,7 +21817,7 @@ kLevelUpLearnset_Spheal:: @ 8259062
     level_up_move 49, MOVE_SHEER_COLD
     .2byte -1
 
-kLevelUpLearnset_Sealeo:: @ 825907E
+kLevelUpLearnset_Sealeo:: @ 825905A
     level_up_move 1, MOVE_POWDER_SNOW
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_DEFENSE_CURL
@@ -21829,7 +21833,7 @@ kLevelUpLearnset_Sealeo:: @ 825907E
     level_up_move 55, MOVE_SHEER_COLD
     .2byte -1
 
-kLevelUpLearnset_Walrein:: @ 825909A
+kLevelUpLearnset_Walrein:: @ 8259076
     level_up_move 1, MOVE_POWDER_SNOW
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_DEFENSE_CURL
@@ -21845,7 +21849,7 @@ kLevelUpLearnset_Walrein:: @ 825909A
     level_up_move 61, MOVE_SHEER_COLD
     .2byte -1
 
-kLevelUpLearnset_Cacnea:: @ 82590B6
+kLevelUpLearnset_Cacnea:: @ 8259092
     level_up_move 1, MOVE_POISON_STING
     level_up_move 1, MOVE_LEER
     level_up_move 5, MOVE_ABSORB
@@ -21862,7 +21866,7 @@ kLevelUpLearnset_Cacnea:: @ 82590B6
     level_up_move 49, MOVE_DESTINY_BOND
     .2byte -1
 
-kLevelUpLearnset_Cacturne:: @ 82590D4
+kLevelUpLearnset_Cacturne:: @ 82590B0
     level_up_move 1, MOVE_REVENGE
     level_up_move 1, MOVE_POISON_STING
     level_up_move 1, MOVE_LEER
@@ -21882,7 +21886,7 @@ kLevelUpLearnset_Cacturne:: @ 82590D4
     level_up_move 59, MOVE_DESTINY_BOND
     .2byte -1
 
-kLevelUpLearnset_Snorunt:: @ 82590F8
+kLevelUpLearnset_Snorunt:: @ 82590D4
     level_up_move 1, MOVE_POWDER_SNOW
     level_up_move 1, MOVE_LEER
     level_up_move 7, MOVE_DOUBLE_TEAM
@@ -21896,7 +21900,7 @@ kLevelUpLearnset_Snorunt:: @ 82590F8
     level_up_move 43, MOVE_BLIZZARD
     .2byte -1
 
-kLevelUpLearnset_Glalie:: @ 8259110
+kLevelUpLearnset_Glalie:: @ 82590EC
     level_up_move 1, MOVE_POWDER_SNOW
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_DOUBLE_TEAM
@@ -21913,7 +21917,7 @@ kLevelUpLearnset_Glalie:: @ 8259110
     level_up_move 61, MOVE_SHEER_COLD
     .2byte -1
 
-kLevelUpLearnset_Lunatone:: @ 825912E
+kLevelUpLearnset_Lunatone:: @ 825910A
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_HARDEN
     level_up_move 7, MOVE_CONFUSION
@@ -21926,7 +21930,7 @@ kLevelUpLearnset_Lunatone:: @ 825912E
     level_up_move 49, MOVE_EXPLOSION
     .2byte -1
 
-kLevelUpLearnset_Solrock:: @ 8259144
+kLevelUpLearnset_Solrock:: @ 8259120
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_HARDEN
     level_up_move 7, MOVE_CONFUSION
@@ -21939,7 +21943,7 @@ kLevelUpLearnset_Solrock:: @ 8259144
     level_up_move 49, MOVE_EXPLOSION
     .2byte -1
 
-kLevelUpLearnset_Azurill:: @ 825915A
+kLevelUpLearnset_Azurill:: @ 8259136
     level_up_move 1, MOVE_SPLASH
     level_up_move 3, MOVE_CHARM
     level_up_move 6, MOVE_TAIL_WHIP
@@ -21948,7 +21952,7 @@ kLevelUpLearnset_Azurill:: @ 825915A
     level_up_move 21, MOVE_WATER_GUN
     .2byte -1
 
-kLevelUpLearnset_Spoink:: @ 8259168
+kLevelUpLearnset_Spoink:: @ 8259144
     level_up_move 1, MOVE_SPLASH
     level_up_move 7, MOVE_PSYWAVE
     level_up_move 10, MOVE_ODOR_SLEUTH
@@ -21962,7 +21966,7 @@ kLevelUpLearnset_Spoink:: @ 8259168
     level_up_move 43, MOVE_BOUNCE
     .2byte -1
 
-kLevelUpLearnset_Grumpig:: @ 8259180
+kLevelUpLearnset_Grumpig:: @ 825915C
     level_up_move 1, MOVE_SPLASH
     level_up_move 1, MOVE_PSYWAVE
     level_up_move 1, MOVE_ODOR_SLEUTH
@@ -21979,7 +21983,7 @@ kLevelUpLearnset_Grumpig:: @ 8259180
     level_up_move 55, MOVE_BOUNCE
     .2byte -1
 
-kLevelUpLearnset_Plusle:: @ 825919E
+kLevelUpLearnset_Plusle:: @ 825917A
     level_up_move 1, MOVE_GROWL
     level_up_move 4, MOVE_THUNDER_WAVE
     level_up_move 10, MOVE_QUICK_ATTACK
@@ -21993,7 +21997,7 @@ kLevelUpLearnset_Plusle:: @ 825919E
     level_up_move 47, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Minun:: @ 82591B6
+kLevelUpLearnset_Minun:: @ 8259192
     level_up_move 1, MOVE_GROWL
     level_up_move 4, MOVE_THUNDER_WAVE
     level_up_move 10, MOVE_QUICK_ATTACK
@@ -22007,7 +22011,7 @@ kLevelUpLearnset_Minun:: @ 82591B6
     level_up_move 47, MOVE_AGILITY
     .2byte -1
 
-kLevelUpLearnset_Mawile:: @ 82591CE
+kLevelUpLearnset_Mawile:: @ 82591AA
     level_up_move 1, MOVE_ASTONISH
     level_up_move 6, MOVE_FAKE_TEARS
     level_up_move 11, MOVE_BITE
@@ -22022,7 +22026,7 @@ kLevelUpLearnset_Mawile:: @ 82591CE
     level_up_move 46, MOVE_SPIT_UP
     .2byte -1
 
-kLevelUpLearnset_Meditite:: @ 82591E8
+kLevelUpLearnset_Meditite:: @ 82591C4
     level_up_move 1, MOVE_BIDE
     level_up_move 4, MOVE_MEDITATE
     level_up_move 9, MOVE_CONFUSION
@@ -22037,7 +22041,7 @@ kLevelUpLearnset_Meditite:: @ 82591E8
     level_up_move 44, MOVE_RECOVER
     .2byte -1
 
-kLevelUpLearnset_Medicham:: @ 8259202
+kLevelUpLearnset_Medicham:: @ 82591DE
     level_up_move 1, MOVE_FIRE_PUNCH
     level_up_move 1, MOVE_THUNDER_PUNCH
     level_up_move 1, MOVE_ICE_PUNCH
@@ -22058,7 +22062,7 @@ kLevelUpLearnset_Medicham:: @ 8259202
     level_up_move 56, MOVE_RECOVER
     .2byte -1
 
-kLevelUpLearnset_Swablu:: @ 8259228
+kLevelUpLearnset_Swablu:: @ 8259204
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_GROWL
     level_up_move 8, MOVE_ASTONISH
@@ -22072,7 +22076,7 @@ kLevelUpLearnset_Swablu:: @ 8259228
     level_up_move 48, MOVE_PERISH_SONG
     .2byte -1
 
-kLevelUpLearnset_Altaria:: @ 8259240
+kLevelUpLearnset_Altaria:: @ 825921C
     level_up_move 1, MOVE_PECK
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_ASTONISH
@@ -22090,7 +22094,7 @@ kLevelUpLearnset_Altaria:: @ 8259240
     level_up_move 59, MOVE_SKY_ATTACK
     .2byte -1
 
-kLevelUpLearnset_Wynaut:: @ 8259260
+kLevelUpLearnset_Wynaut:: @ 825923C
     level_up_move 1, MOVE_SPLASH
     level_up_move 1, MOVE_CHARM
     level_up_move 1, MOVE_ENCORE
@@ -22100,7 +22104,7 @@ kLevelUpLearnset_Wynaut:: @ 8259260
     level_up_move 15, MOVE_DESTINY_BOND
     .2byte -1
 
-kLevelUpLearnset_Duskull:: @ 8259270
+kLevelUpLearnset_Duskull:: @ 825924C
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_NIGHT_SHADE
     level_up_move 5, MOVE_DISABLE
@@ -22114,7 +22118,7 @@ kLevelUpLearnset_Duskull:: @ 8259270
     level_up_move 49, MOVE_FUTURE_SIGHT
     .2byte -1
 
-kLevelUpLearnset_Dusclops:: @ 8259288
+kLevelUpLearnset_Dusclops:: @ 8259264
     level_up_move 1, MOVE_BIND
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_NIGHT_SHADE
@@ -22131,7 +22135,7 @@ kLevelUpLearnset_Dusclops:: @ 8259288
     level_up_move 58, MOVE_FUTURE_SIGHT
     .2byte -1
 
-kLevelUpLearnset_Roselia:: @ 82592A6
+kLevelUpLearnset_Roselia:: @ 8259282
     level_up_move 1, MOVE_ABSORB
     level_up_move 5, MOVE_GROWTH
     level_up_move 9, MOVE_POISON_STING
@@ -22149,7 +22153,7 @@ kLevelUpLearnset_Roselia:: @ 82592A6
     level_up_move 57, MOVE_SYNTHESIS
     .2byte -1
 
-kLevelUpLearnset_Slakoth:: @ 82592C6
+kLevelUpLearnset_Slakoth:: @ 82592A2
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_YAWN
     level_up_move 7, MOVE_ENCORE
@@ -22161,7 +22165,7 @@ kLevelUpLearnset_Slakoth:: @ 82592C6
     level_up_move 43, MOVE_FLAIL
     .2byte -1
 
-kLevelUpLearnset_Vigoroth:: @ 82592DA
+kLevelUpLearnset_Vigoroth:: @ 82592B6
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_FOCUS_ENERGY
     level_up_move 1, MOVE_ENCORE
@@ -22176,7 +22180,7 @@ kLevelUpLearnset_Vigoroth:: @ 82592DA
     level_up_move 49, MOVE_REVERSAL
     .2byte -1
 
-kLevelUpLearnset_Slaking:: @ 82592F4
+kLevelUpLearnset_Slaking:: @ 82592D0
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_YAWN
     level_up_move 1, MOVE_ENCORE
@@ -22191,7 +22195,7 @@ kLevelUpLearnset_Slaking:: @ 82592F4
     level_up_move 43, MOVE_FLAIL
     .2byte -1
 
-kLevelUpLearnset_Gulpin:: @ 825930E
+kLevelUpLearnset_Gulpin:: @ 82592EA
     level_up_move 1, MOVE_POUND
     level_up_move 6, MOVE_YAWN
     level_up_move 9, MOVE_POISON_GAS
@@ -22205,7 +22209,7 @@ kLevelUpLearnset_Gulpin:: @ 825930E
     level_up_move 39, MOVE_SLUDGE_BOMB
     .2byte -1
 
-kLevelUpLearnset_Swalot:: @ 8259326
+kLevelUpLearnset_Swalot:: @ 8259302
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_YAWN
     level_up_move 1, MOVE_POISON_GAS
@@ -22223,7 +22227,7 @@ kLevelUpLearnset_Swalot:: @ 8259326
     level_up_move 48, MOVE_SLUDGE_BOMB
     .2byte -1
 
-kLevelUpLearnset_Tropius:: @ 8259346
+kLevelUpLearnset_Tropius:: @ 8259322
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_GUST
     level_up_move 7, MOVE_GROWTH
@@ -22237,7 +22241,7 @@ kLevelUpLearnset_Tropius:: @ 8259346
     level_up_move 47, MOVE_SYNTHESIS
     .2byte -1
 
-kLevelUpLearnset_Whismur:: @ 825935E
+kLevelUpLearnset_Whismur:: @ 825933A
     level_up_move 1, MOVE_POUND
     level_up_move 5, MOVE_UPROAR
     level_up_move 11, MOVE_ASTONISH
@@ -22251,7 +22255,7 @@ kLevelUpLearnset_Whismur:: @ 825935E
     level_up_move 45, MOVE_HYPER_VOICE
     .2byte -1
 
-kLevelUpLearnset_Loudred:: @ 8259376
+kLevelUpLearnset_Loudred:: @ 8259352
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_UPROAR
     level_up_move 1, MOVE_ASTONISH
@@ -22268,7 +22272,7 @@ kLevelUpLearnset_Loudred:: @ 8259376
     level_up_move 57, MOVE_HYPER_VOICE
     .2byte -1
 
-kLevelUpLearnset_Exploud:: @ 8259394
+kLevelUpLearnset_Exploud:: @ 8259370
     level_up_move 1, MOVE_POUND
     level_up_move 1, MOVE_UPROAR
     level_up_move 1, MOVE_ASTONISH
@@ -22286,14 +22290,14 @@ kLevelUpLearnset_Exploud:: @ 8259394
     level_up_move 63, MOVE_HYPER_VOICE
     .2byte -1
 
-kLevelUpLearnset_Clamperl:: @ 82593B4
+kLevelUpLearnset_Clamperl:: @ 8259390
     level_up_move 1, MOVE_CLAMP
     level_up_move 1, MOVE_WATER_GUN
     level_up_move 1, MOVE_WHIRLPOOL
     level_up_move 1, MOVE_IRON_DEFENSE
     .2byte -1
 
-kLevelUpLearnset_Huntail:: @ 82593BE
+kLevelUpLearnset_Huntail:: @ 825939A
     level_up_move 1, MOVE_WHIRLPOOL
     level_up_move 8, MOVE_BITE
     level_up_move 15, MOVE_SCREECH
@@ -22304,7 +22308,7 @@ kLevelUpLearnset_Huntail:: @ 82593BE
     level_up_move 50, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Gorebyss:: @ 82593D0
+kLevelUpLearnset_Gorebyss:: @ 82593AC
     level_up_move 1, MOVE_WHIRLPOOL
     level_up_move 8, MOVE_CONFUSION
     level_up_move 15, MOVE_AGILITY
@@ -22315,7 +22319,7 @@ kLevelUpLearnset_Gorebyss:: @ 82593D0
     level_up_move 50, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Absol:: @ 82593E2
+kLevelUpLearnset_Absol:: @ 82593BE
     level_up_move 1, MOVE_SCRATCH
     level_up_move 5, MOVE_LEER
     level_up_move 9, MOVE_TAUNT
@@ -22329,7 +22333,7 @@ kLevelUpLearnset_Absol:: @ 82593E2
     level_up_move 46, MOVE_PERISH_SONG
     .2byte -1
 
-kLevelUpLearnset_Shuppet:: @ 82593FA
+kLevelUpLearnset_Shuppet:: @ 82593D6
     level_up_move 1, MOVE_KNOCK_OFF
     level_up_move 8, MOVE_SCREECH
     level_up_move 13, MOVE_NIGHT_SHADE
@@ -22342,7 +22346,7 @@ kLevelUpLearnset_Shuppet:: @ 82593FA
     level_up_move 56, MOVE_GRUDGE
     .2byte -1
 
-kLevelUpLearnset_Banette:: @ 8259410
+kLevelUpLearnset_Banette:: @ 82593EC
     level_up_move 1, MOVE_KNOCK_OFF
     level_up_move 1, MOVE_SCREECH
     level_up_move 1, MOVE_NIGHT_SHADE
@@ -22358,7 +22362,7 @@ kLevelUpLearnset_Banette:: @ 8259410
     level_up_move 64, MOVE_GRUDGE
     .2byte -1
 
-kLevelUpLearnset_Seviper:: @ 825942C
+kLevelUpLearnset_Seviper:: @ 8259408
     level_up_move 1, MOVE_WRAP
     level_up_move 7, MOVE_LICK
     level_up_move 10, MOVE_BITE
@@ -22371,7 +22375,7 @@ kLevelUpLearnset_Seviper:: @ 825942C
     level_up_move 43, MOVE_HAZE
     .2byte -1
 
-kLevelUpLearnset_Zangoose:: @ 8259442
+kLevelUpLearnset_Zangoose:: @ 825941E
     level_up_move 1, MOVE_SCRATCH
     level_up_move 4, MOVE_LEER
     level_up_move 7, MOVE_QUICK_ATTACK
@@ -22385,7 +22389,7 @@ kLevelUpLearnset_Zangoose:: @ 8259442
     level_up_move 55, MOVE_FALSE_SWIPE
     .2byte -1
 
-kLevelUpLearnset_Relicanth:: @ 825945A
+kLevelUpLearnset_Relicanth:: @ 8259436
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_HARDEN
     level_up_move 8, MOVE_WATER_GUN
@@ -22399,7 +22403,7 @@ kLevelUpLearnset_Relicanth:: @ 825945A
     level_up_move 64, MOVE_HYDRO_PUMP
     .2byte -1
 
-kLevelUpLearnset_Aron:: @ 8259472
+kLevelUpLearnset_Aron:: @ 825944E
     level_up_move 1, MOVE_TACKLE
     level_up_move 4, MOVE_HARDEN
     level_up_move 7, MOVE_MUD_SLAP
@@ -22414,7 +22418,7 @@ kLevelUpLearnset_Aron:: @ 8259472
     level_up_move 44, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Lairon:: @ 825948C
+kLevelUpLearnset_Lairon:: @ 8259468
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_HARDEN
     level_up_move 1, MOVE_MUD_SLAP
@@ -22432,7 +22436,7 @@ kLevelUpLearnset_Lairon:: @ 825948C
     level_up_move 53, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Aggron:: @ 82594AC
+kLevelUpLearnset_Aggron:: @ 8259488
     level_up_move 1, MOVE_TACKLE
     level_up_move 1, MOVE_HARDEN
     level_up_move 1, MOVE_MUD_SLAP
@@ -22450,7 +22454,7 @@ kLevelUpLearnset_Aggron:: @ 82594AC
     level_up_move 63, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Castform:: @ 82594CC
+kLevelUpLearnset_Castform:: @ 82594A8
     level_up_move 1, MOVE_TACKLE
     level_up_move 10, MOVE_WATER_GUN
     level_up_move 10, MOVE_EMBER
@@ -22461,7 +22465,7 @@ kLevelUpLearnset_Castform:: @ 82594CC
     level_up_move 30, MOVE_WEATHER_BALL
     .2byte -1
 
-kLevelUpLearnset_Volbeat:: @ 82594DE
+kLevelUpLearnset_Volbeat:: @ 82594BA
     level_up_move 1, MOVE_TACKLE
     level_up_move 5, MOVE_CONFUSE_RAY
     level_up_move 9, MOVE_DOUBLE_TEAM
@@ -22474,7 +22478,7 @@ kLevelUpLearnset_Volbeat:: @ 82594DE
     level_up_move 37, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Illumise:: @ 82594F4
+kLevelUpLearnset_Illumise:: @ 82594D0
     level_up_move 1, MOVE_TACKLE
     level_up_move 5, MOVE_SWEET_SCENT
     level_up_move 9, MOVE_CHARM
@@ -22487,7 +22491,7 @@ kLevelUpLearnset_Illumise:: @ 82594F4
     level_up_move 37, MOVE_COVET
     .2byte -1
 
-kLevelUpLearnset_Lileep:: @ 825950A
+kLevelUpLearnset_Lileep:: @ 82594E6
     level_up_move 1, MOVE_ASTONISH
     level_up_move 8, MOVE_CONSTRICT
     level_up_move 15, MOVE_ACID
@@ -22500,7 +22504,7 @@ kLevelUpLearnset_Lileep:: @ 825950A
     level_up_move 50, MOVE_SWALLOW
     .2byte -1
 
-kLevelUpLearnset_Cradily:: @ 8259520
+kLevelUpLearnset_Cradily:: @ 82594FC
     level_up_move 1, MOVE_ASTONISH
     level_up_move 1, MOVE_CONSTRICT
     level_up_move 1, MOVE_ACID
@@ -22516,7 +22520,7 @@ kLevelUpLearnset_Cradily:: @ 8259520
     level_up_move 60, MOVE_SWALLOW
     .2byte -1
 
-kLevelUpLearnset_Anorith:: @ 825953C
+kLevelUpLearnset_Anorith:: @ 8259518
     level_up_move 1, MOVE_SCRATCH
     level_up_move 7, MOVE_HARDEN
     level_up_move 13, MOVE_MUD_SPORT
@@ -22529,7 +22533,7 @@ kLevelUpLearnset_Anorith:: @ 825953C
     level_up_move 55, MOVE_ROCK_BLAST
     .2byte -1
 
-kLevelUpLearnset_Armaldo:: @ 8259552
+kLevelUpLearnset_Armaldo:: @ 825952E
     level_up_move 1, MOVE_SCRATCH
     level_up_move 1, MOVE_HARDEN
     level_up_move 1, MOVE_MUD_SPORT
@@ -22545,7 +22549,7 @@ kLevelUpLearnset_Armaldo:: @ 8259552
     level_up_move 64, MOVE_ROCK_BLAST
     .2byte -1
 
-kLevelUpLearnset_Ralts:: @ 825956E
+kLevelUpLearnset_Ralts:: @ 825954A
     level_up_move 1, MOVE_GROWL
     level_up_move 6, MOVE_CONFUSION
     level_up_move 11, MOVE_DOUBLE_TEAM
@@ -22558,7 +22562,7 @@ kLevelUpLearnset_Ralts:: @ 825956E
     level_up_move 46, MOVE_DREAM_EATER
     .2byte -1
 
-kLevelUpLearnset_Kirlia:: @ 8259584
+kLevelUpLearnset_Kirlia:: @ 8259560
     level_up_move 1, MOVE_MAGICAL_LEAF
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_CONFUSION
@@ -22575,7 +22579,7 @@ kLevelUpLearnset_Kirlia:: @ 8259584
     level_up_move 54, MOVE_DREAM_EATER
     .2byte -1
 
-kLevelUpLearnset_Gardevoir:: @ 82595A2
+kLevelUpLearnset_Gardevoir:: @ 825957E
     level_up_move 1, MOVE_GROWL
     level_up_move 1, MOVE_CONFUSION
     level_up_move 1, MOVE_DOUBLE_TEAM
@@ -22591,7 +22595,7 @@ kLevelUpLearnset_Gardevoir:: @ 82595A2
     level_up_move 60, MOVE_DREAM_EATER
     .2byte -1
 
-kLevelUpLearnset_Bagon:: @ 82595BE
+kLevelUpLearnset_Bagon:: @ 825959A
     level_up_move 1, MOVE_RAGE
     level_up_move 5, MOVE_BITE
     level_up_move 9, MOVE_LEER
@@ -22605,7 +22609,7 @@ kLevelUpLearnset_Bagon:: @ 82595BE
     level_up_move 53, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Shelgon:: @ 82595D6
+kLevelUpLearnset_Shelgon:: @ 82595B2
     level_up_move 1, MOVE_RAGE
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_LEER
@@ -22623,7 +22627,7 @@ kLevelUpLearnset_Shelgon:: @ 82595D6
     level_up_move 78, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Salamence:: @ 82595F6
+kLevelUpLearnset_Salamence:: @ 82595D2
     level_up_move 1, MOVE_RAGE
     level_up_move 1, MOVE_BITE
     level_up_move 1, MOVE_LEER
@@ -22642,11 +22646,11 @@ kLevelUpLearnset_Salamence:: @ 82595F6
     level_up_move 93, MOVE_DOUBLE_EDGE
     .2byte -1
 
-kLevelUpLearnset_Beldum:: @ 8259618
+kLevelUpLearnset_Beldum:: @ 82595F4
     level_up_move 1, MOVE_TAKE_DOWN
     .2byte -1
 
-kLevelUpLearnset_Metang:: @ 825961C
+kLevelUpLearnset_Metang:: @ 82595F8
     level_up_move 1, MOVE_TAKE_DOWN
     level_up_move 20, MOVE_CONFUSION
     level_up_move 20, MOVE_METAL_CLAW
@@ -22659,7 +22663,7 @@ kLevelUpLearnset_Metang:: @ 825961C
     level_up_move 62, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Metagross:: @ 8259632
+kLevelUpLearnset_Metagross:: @ 825960E
     level_up_move 1, MOVE_TAKE_DOWN
     level_up_move 1, MOVE_CONFUSION
     level_up_move 1, MOVE_METAL_CLAW
@@ -22675,7 +22679,7 @@ kLevelUpLearnset_Metagross:: @ 8259632
     level_up_move 77, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Regirock:: @ 825964E
+kLevelUpLearnset_Regirock:: @ 825962A
     level_up_move 1, MOVE_EXPLOSION
     level_up_move 9, MOVE_ROCK_THROW
     level_up_move 17, MOVE_CURSE
@@ -22687,7 +22691,7 @@ kLevelUpLearnset_Regirock:: @ 825964E
     level_up_move 65, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Regice:: @ 8259662
+kLevelUpLearnset_Regice:: @ 825963E
     level_up_move 1, MOVE_EXPLOSION
     level_up_move 9, MOVE_ICY_WIND
     level_up_move 17, MOVE_CURSE
@@ -22699,7 +22703,7 @@ kLevelUpLearnset_Regice:: @ 8259662
     level_up_move 65, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Registeel:: @ 8259676
+kLevelUpLearnset_Registeel:: @ 8259652
     level_up_move 1, MOVE_EXPLOSION
     level_up_move 9, MOVE_METAL_CLAW
     level_up_move 17, MOVE_CURSE
@@ -22712,7 +22716,7 @@ kLevelUpLearnset_Registeel:: @ 8259676
     level_up_move 65, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Kyogre:: @ 825968C
+kLevelUpLearnset_Kyogre:: @ 8259668
     level_up_move 1, MOVE_WATER_PULSE
     level_up_move 5, MOVE_SCARY_FACE
     level_up_move 15, MOVE_ANCIENT_POWER
@@ -22726,7 +22730,7 @@ kLevelUpLearnset_Kyogre:: @ 825968C
     level_up_move 75, MOVE_WATER_SPOUT
     .2byte -1
 
-kLevelUpLearnset_Groudon:: @ 82596A4
+kLevelUpLearnset_Groudon:: @ 8259680
     level_up_move 1, MOVE_MUD_SHOT
     level_up_move 5, MOVE_SCARY_FACE
     level_up_move 15, MOVE_ANCIENT_POWER
@@ -22740,7 +22744,7 @@ kLevelUpLearnset_Groudon:: @ 82596A4
     level_up_move 75, MOVE_ERUPTION
     .2byte -1
 
-kLevelUpLearnset_Rayquaza:: @ 82596BC
+kLevelUpLearnset_Rayquaza:: @ 8259698
     level_up_move 1, MOVE_TWISTER
     level_up_move 5, MOVE_SCARY_FACE
     level_up_move 15, MOVE_ANCIENT_POWER
@@ -22754,7 +22758,7 @@ kLevelUpLearnset_Rayquaza:: @ 82596BC
     level_up_move 75, MOVE_HYPER_BEAM
     .2byte -1
 
-kLevelUpLearnset_Latias:: @ 82596D4
+kLevelUpLearnset_Latias:: @ 82596B0
     level_up_move 1, MOVE_PSYWAVE
     level_up_move 5, MOVE_WISH
     level_up_move 10, MOVE_HELPING_HAND
@@ -22768,7 +22772,7 @@ kLevelUpLearnset_Latias:: @ 82596D4
     level_up_move 50, MOVE_CHARM
     .2byte -1
 
-kLevelUpLearnset_Latios:: @ 82596EC
+kLevelUpLearnset_Latios:: @ 82596C8
     level_up_move 1, MOVE_PSYWAVE
     level_up_move 5, MOVE_MEMENTO
     level_up_move 10, MOVE_HELPING_HAND
@@ -22782,7 +22786,7 @@ kLevelUpLearnset_Latios:: @ 82596EC
     level_up_move 50, MOVE_DRAGON_DANCE
     .2byte -1
 
-kLevelUpLearnset_Jirachi:: @ 8259704
+kLevelUpLearnset_Jirachi:: @ 82596E0
     level_up_move 1, MOVE_WISH
     level_up_move 1, MOVE_CONFUSION
     level_up_move 5, MOVE_REST
@@ -22797,22 +22801,24 @@ kLevelUpLearnset_Jirachi:: @ 8259704
     level_up_move 50, MOVE_DOOM_DESIRE
     .2byte -1
 
-kLevelUpLearnset_Deoxys:: @ 825971E
+kLevelUpLearnset_Deoxys:: @ 82596FA
     level_up_move 1, MOVE_LEER
     level_up_move 1, MOVE_WRAP
     level_up_move 5, MOVE_NIGHT_SHADE
     level_up_move 10, MOVE_TELEPORT
-    level_up_move 15, MOVE_TAUNT
-    level_up_move 20, MOVE_PURSUIT
+    level_up_move 15, MOVE_KNOCK_OFF
+    level_up_move 20, MOVE_SPIKES
     level_up_move 25, MOVE_PSYCHIC
-    level_up_move 30, MOVE_SUPERPOWER
-    level_up_move 35, MOVE_COSMIC_POWER
-    level_up_move 40, MOVE_ZAP_CANNON
+    level_up_move 30, MOVE_SNATCH
+    level_up_move 35, MOVE_IRON_DEFENSE
+    level_up_move 35, MOVE_AMNESIA
+    level_up_move 40, MOVE_RECOVER
     level_up_move 45, MOVE_PSYCHO_BOOST
-    level_up_move 50, MOVE_HYPER_BEAM
+    level_up_move 50, MOVE_COUNTER
+    level_up_move 50, MOVE_MIRROR_COAT
     .2byte -1
 
-kLevelUpLearnset_Chimecho:: @ 8259738
+kLevelUpLearnset_Chimecho:: @ 8259718
     level_up_move 1, MOVE_WRAP
     level_up_move 6, MOVE_GROWL
     level_up_move 9, MOVE_ASTONISH
@@ -23293,7 +23299,11 @@ UNK_825E014:: @ 825E014
     .incbin "baserom.gba", 0x25E014, 0x12
 
 UNK_825E026:: @ 825E026
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x25E026, 0xC
+.else
+    .incbin "baserom-lg.gba", 0x25e006, 0xC
+.endif
 
 UNK_825E032:: @ 825E032
     .incbin "baserom.gba", 0x25E032, 0x22
@@ -24084,6 +24094,7 @@ kInGameTrades:: @ 826CF8C
     .2byte SPECIES_POLIWHIRL @ player mon species
     .space 2
 
+.ifeq (VERSION - VERSION_FIRERED)
     @ 826D02F
     .string "MS. NIDO$", 11 @ nickname
     .space 1
@@ -24102,6 +24113,26 @@ kInGameTrades:: @ 826CF8C
     .byte 10 @ sheen
     .2byte SPECIES_NIDORAN_M @ player mon species
     .space 2
+.else
+    @ 826D00F
+    .string "MR. NIDO$", 11 @ nickname
+    .space 1
+    .2byte SPECIES_NIDORAN_M @ NPC mon species
+    .byte 19, 25, 18, 22, 22, 15 @ IVs
+    .byte FALSE @ second ability
+    .space 3
+    .4byte 63184 @ OT ID
+    .byte 30, 5, 5, 5, 5 @ contest stats
+    .space 3
+    .4byte 0x4C970B9E @ personality value
+    .2byte ITEM_TINY_MUSHROOM @ held item
+    .byte -1 @ mail num
+    .string "SAIGE$", 11 @ OT name
+    .byte FEMALE @ OT gender
+    .byte 10 @ sheen
+    .2byte SPECIES_NIDORAN_F @ player mon species
+    .space 2
+.endif
 
     @ 826D06B
     .string "CH’DING$", 11 @ nickname
@@ -24122,6 +24153,7 @@ kInGameTrades:: @ 826CF8C
     .2byte SPECIES_SPEAROW @ player mon species
     .space 2
 
+.ifeq (VERSION - VERSION_FIRERED)
     @ 826D0A7
     .string "NINA$", 11 @ nickname
     .space 1
@@ -24140,6 +24172,26 @@ kInGameTrades:: @ 826CF8C
     .byte 10 @ sheen
     .2byte SPECIES_NIDORINO @ player mon species
     .space 2
+.else
+    @ 826D087
+    .string "NINO$", 11 @ nickname
+    .space 1
+    .2byte SPECIES_NIDORINO @ NPC mon species
+    .byte 19, 18, 25, 22, 15, 22 @ IVs
+    .byte FALSE @ second ability
+    .space 3
+    .4byte 13637 @ OT ID
+    .byte 5, 5, 5, 5, 30 @ contest stats
+    .space 3
+    .4byte 0xEECA19 @ personality value
+    .2byte ITEM_NONE @ held item
+    .byte -1 @ mail num
+    .string "TURNER$", 11 @ OT name
+    .byte MALE @ OT gender
+    .byte 10 @ sheen
+    .2byte SPECIES_NIDORINA @ player mon species
+    .space 2
+.endif
 
     @ 826D0E3
     .string "MARC$", 11 @ nickname
@@ -24157,7 +24209,11 @@ kInGameTrades:: @ 826CF8C
     .string "HADEN$", 11 @ OT name
     .byte MALE @ @ OT gender
     .byte 10 @ sheen
+.ifeq (VERSION - VERSION_FIRERED)
     .2byte SPECIES_GOLDUCK @ player mon species
+.else
+    .2byte SPECIES_SLOWBRO @ player mon species
+.endif
     .space 2
 
     @ 826D11F
@@ -59763,20 +59819,37 @@ UNK_83BF58C:: @ 83BF58C
     .incbin "baserom.gba", 0x3BF58C, 0x1C
 
 UNK_83BF5A8:: @ 83BF5A8
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x3BF5A8, 0xA4
+.else
+    .incbin "baserom-lg.gba", 0x3bf588, 172
+.endif
 
 unk_83BF64C:: @ 83BF64C
     .incbin "baserom.gba", 0x3BF64C, 0x130
 
 unk_83BF77C:: @ 83BF77C
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x3BF77C, 0x20
+.else
+    .incbin "baserom-lg.gba", 0x3bf764, 0x20
+.endif
 
 unk_83BF79C:: @ 83BF79C
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x3BF79C, 0x278
+.else
+    .incbin "baserom-lg.gba", 0x3bf784, 280
+.endif
 
 unk_83BFA14:: @ 83BFA14
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x3BFA14, 0xA0
+.else
+    .incbin "baserom-lg.gba", 0x3bf89c, 96
+.endif
 
+.ifeq (VERSION - VERSION_FIRERED)
 OAM_83BFAB4:: @ 83BFAB4
     .2byte 0x0000
     .2byte 0x4000
@@ -59816,6 +59889,56 @@ OAM_83BFB54:: @ 83BFB54
     .align 2
 SpriteTemplate_83BFB5C:: @ 83BFB5C
     spr_template 0x0003, 0x0002, OAM_83BFB54, AnimCmds_8231CF0, NULL, AffineAnimCmds_8231CFC, objc_nullsub
+.else
+
+OAM_83BF8FC:: @ 83BF8FC
+    .2byte 0x0000
+    .2byte 0x4000
+    .2byte 0x0C00
+
+    .incbin "baserom-lg.gba", 0x3BF902, 0x2
+
+AnimCmd_83BF904:: @ 83BF904
+    .incbin "baserom-lg.gba", 0x3BF904, 0x30
+
+AnimCmds_83BF934:: @ 83BF934
+    .4byte AnimCmd_83BF904
+
+SpriteTemplate_83BF938:: @ 83BF938
+    spr_template 0x0000, 0x0000, OAM_83BF8FC, AnimCmds_83BF934, NULL, AffineAnimCmds_8231CFC, objc_nullsub
+
+OAM_83BF950:: @ 83BF950
+    .2byte 0x4000
+    .2byte 0x8000
+    .2byte 0x0C00
+
+    .incbin "baserom-lg.gba", 0x3BF956, 0x2
+
+SpriteTemplate_83BF958:: @ 83BF958
+    spr_template 0x0001, 0x0000, OAM_83BF950, AnimCmds_8231CF0, NULL, AffineAnimCmds_8231CFC, objc_nullsub
+
+OAM_83BF970:: @ 83BF970
+    .2byte 0x8000
+    .2byte 0xC000
+    .2byte 0x0000
+
+    .incbin "baserom-lg.gba", 0x3BF976, 0x2
+
+SpriteTemplate_83BFB3C:: @ 83BF978
+    spr_template 0x0002, 0x0002, OAM_83BF970, AnimCmds_8231CF0, NULL, AffineAnimCmds_8231CFC, objc_nullsub
+
+OAM_83BF990:: @ 83BF990
+    .2byte 0x0800
+    .2byte 0xC000
+    .2byte 0x0000
+
+    .incbin "baserom-lg.gba", 0x3BF996, 0x2
+
+SpriteTemplate_83BFB5C:: @ 83BF998
+    spr_template 0x0003, 0x0002, OAM_83BF990, AnimCmds_8231CF0, NULL, AffineAnimCmds_8231CFC, objc_nullsub
+
+.endif
+
 
 UNK_83BFB74:: @ 83BFB74
     .incbin "baserom.gba", 0x3BFB74, 0x10
@@ -59830,9 +59953,17 @@ List_83BFB84:: @ 83BFB84
 
 bogo_83BFB9C:: @ 83BFB9C
     .4byte unk_83BF79C
+.ifeq (VERSION - VERSION_FIRERED)
     .2byte 0x0500, 0x0000
+.else
+    .2byte 0x0580, 0x0000
+.endif
     .4byte unk_83BFA14
+.ifeq (VERSION - VERSION_FIRERED)
     .2byte 0x0500, 0x0001
+.else
+    .2byte 0x0100, 0x0001
+.endif
     .4byte kUnkBin_8EAE4A8
     .2byte 0x0400, 0x0002
     .4byte unk_83BF64C
@@ -59847,7 +59978,11 @@ bogo_83BFBBC:: @ 83BFBBC
     .2byte 0x0000, 0x0000
 
 UNK_83BFBD4:: @ 83BFBD4
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x3BFBD4, 0x10
+.else
+    .incbin "baserom-lg.gba", 0x3bfa10, 0x10
+.endif
 
 _83BFBE4:: @ 83BFBE4
     .incbin "baserom.gba", 0x3BFBE4, 0x824
@@ -60368,8 +60503,7 @@ AnimCmds_83C7374:: @ 83C7374
 
 SpriteTemplate_83C7388:: @ 83C7388
     spr_template 0xFFFF, 0xFFFF, OAM_83C72A4, AnimCmds_83C7374, GfxTable_83C72AC, AffineAnimCmds_8231CFC, objc_exclamation_mark_probably
-
-Map2_27_LandMons:: @ 83C73A0
+Map2_27_LandMons:: @ 83C71DC
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
@@ -60383,11 +60517,11 @@ Map2_27_LandMons:: @ 83C73A0
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
 
-Map2_27_LandMonsInfo:: @ 83C73D0
+Map2_27_LandMonsInfo:: @ 83C720C
     .4byte 7 @ encounter rate
     .4byte Map2_27_LandMons
 
-Map2_28_LandMons:: @ 83C73D8
+Map2_28_LandMons:: @ 83C7214
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
@@ -60401,11 +60535,11 @@ Map2_28_LandMons:: @ 83C73D8
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
 
-Map2_28_LandMonsInfo:: @ 83C7408
+Map2_28_LandMonsInfo:: @ 83C7244
     .4byte 7 @ encounter rate
     .4byte Map2_28_LandMons
 
-Map2_29_LandMons:: @ 83C7410
+Map2_29_LandMons:: @ 83C724C
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
@@ -60419,11 +60553,11 @@ Map2_29_LandMons:: @ 83C7410
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
 
-Map2_29_LandMonsInfo:: @ 83C7440
+Map2_29_LandMonsInfo:: @ 83C727C
     .4byte 7 @ encounter rate
     .4byte Map2_29_LandMons
 
-Map2_30_LandMons:: @ 83C7448
+Map2_30_LandMons:: @ 83C7284
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
@@ -60437,11 +60571,11 @@ Map2_30_LandMons:: @ 83C7448
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
 
-Map2_30_LandMonsInfo:: @ 83C7478
+Map2_30_LandMonsInfo:: @ 83C72B4
     .4byte 7 @ encounter rate
     .4byte Map2_30_LandMons
 
-Map2_31_LandMons:: @ 83C7480
+Map2_31_LandMons:: @ 83C72BC
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
@@ -60455,11 +60589,11 @@ Map2_31_LandMons:: @ 83C7480
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
 
-Map2_31_LandMonsInfo:: @ 83C74B0
+Map2_31_LandMonsInfo:: @ 83C72EC
     .4byte 7 @ encounter rate
     .4byte Map2_31_LandMons
 
-Map2_32_LandMons:: @ 83C74B8
+Map2_32_LandMons:: @ 83C72F4
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
@@ -60473,11 +60607,11 @@ Map2_32_LandMons:: @ 83C74B8
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
 
-Map2_32_LandMonsInfo:: @ 83C74E8
+Map2_32_LandMonsInfo:: @ 83C7324
     .4byte 7 @ encounter rate
     .4byte Map2_32_LandMons
 
-Map2_33_LandMons:: @ 83C74F0
+Map2_33_LandMons:: @ 83C732C
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
@@ -60491,29 +60625,29 @@ Map2_33_LandMons:: @ 83C74F0
     wild_mon UNOWN, 25, 25
     wild_mon UNOWN, 25, 25
 
-Map2_33_LandMonsInfo:: @ 83C7520
+Map2_33_LandMonsInfo:: @ 83C735C
     .4byte 7 @ encounter rate
     .4byte Map2_33_LandMons
 
-ViridianForest_LandMons:: @ 83C7528
+ViridianForest_LandMons:: @ 83C7364
     wild_mon CATERPIE, 4, 4
     wild_mon WEEDLE, 4, 4
     wild_mon CATERPIE, 5, 5
     wild_mon WEEDLE, 5, 5
     wild_mon CATERPIE, 3, 3
     wild_mon WEEDLE, 3, 3
-    wild_mon METAPOD, 5, 5
     wild_mon KAKUNA, 5, 5
-    wild_mon KAKUNA, 4, 4
+    wild_mon METAPOD, 5, 5
+    wild_mon METAPOD, 4, 4
     wild_mon PIKACHU, 3, 3
-    wild_mon KAKUNA, 6, 6
+    wild_mon METAPOD, 6, 6
     wild_mon PIKACHU, 5, 5
 
-ViridianForest_LandMonsInfo:: @ 83C7558
+ViridianForest_LandMonsInfo:: @ 83C7394
     .4byte 14 @ encounter rate
     .4byte ViridianForest_LandMons
 
-Map1_1_LandMons:: @ 83C7560
+Map1_1_LandMons:: @ 83C739C
     wild_mon ZUBAT, 7, 7
     wild_mon ZUBAT, 8, 8
     wild_mon GEODUDE, 7, 7
@@ -60527,11 +60661,11 @@ Map1_1_LandMons:: @ 83C7560
     wild_mon ZUBAT, 7, 7
     wild_mon CLEFAIRY, 8, 8
 
-Map1_1_LandMonsInfo:: @ 83C7590
+Map1_1_LandMonsInfo:: @ 83C73CC
     .4byte 7 @ encounter rate
     .4byte Map1_1_LandMons
 
-Map1_2_LandMons:: @ 83C7598
+Map1_2_LandMons:: @ 83C73D4
     wild_mon PARAS, 7, 7
     wild_mon PARAS, 8, 8
     wild_mon PARAS, 5, 5
@@ -60545,11 +60679,11 @@ Map1_2_LandMons:: @ 83C7598
     wild_mon PARAS, 9, 9
     wild_mon PARAS, 10, 10
 
-Map1_2_LandMonsInfo:: @ 83C75C8
+Map1_2_LandMonsInfo:: @ 83C7404
     .4byte 5 @ encounter rate
     .4byte Map1_2_LandMons
 
-Map1_3_LandMons:: @ 83C75D0
+Map1_3_LandMons:: @ 83C740C
     wild_mon ZUBAT, 8, 8
     wild_mon GEODUDE, 9, 9
     wild_mon ZUBAT, 9, 9
@@ -60563,38 +60697,38 @@ Map1_3_LandMons:: @ 83C75D0
     wild_mon ZUBAT, 11, 11
     wild_mon CLEFAIRY, 12, 12
 
-Map1_3_LandMonsInfo:: @ 83C7600
+Map1_3_LandMonsInfo:: @ 83C743C
     .4byte 7 @ encounter rate
     .4byte Map1_3_LandMons
 
-Map1_4_WaterMons:: @ 83C7608
+Map1_4_WaterMons:: @ 83C7444
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-Map1_4_WaterMonsInfo:: @ 83C761C
+Map1_4_WaterMonsInfo:: @ 83C7458
     .4byte 1 @ encounter rate
     .4byte Map1_4_WaterMons
 
-Map1_4_FishingMons:: @ 83C7624
+Map1_4_FishingMons:: @ 83C7460
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon SHELLDER, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon STARYU, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon HORSEA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KRABBY, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Map1_4_FishingMonsInfo:: @ 83C764C
+Map1_4_FishingMonsInfo:: @ 83C7488
     .4byte 10 @ encounter rate
     .4byte Map1_4_FishingMons
 
-Map1_37_LandMons:: @ 83C7654
+Map1_37_LandMons:: @ 83C7490
     wild_mon DIGLETT, 18, 18
     wild_mon DIGLETT, 19, 19
     wild_mon DIGLETT, 17, 17
@@ -60608,166 +60742,166 @@ Map1_37_LandMons:: @ 83C7654
     wild_mon DIGLETT, 17, 17
     wild_mon DUGTRIO, 31, 31
 
-Map1_37_LandMonsInfo:: @ 83C7684
+Map1_37_LandMonsInfo:: @ 83C74C0
     .4byte 5 @ encounter rate
     .4byte Map1_37_LandMons
 
-VictoryRoad_1F_LandMons:: @ 83C768C
+VictoryRoad_1F_LandMons:: @ 83C74C8
     wild_mon MACHOP, 32, 32
     wild_mon GEODUDE, 32, 32
     wild_mon ONIX, 40, 40
     wild_mon ONIX, 43, 43
     wild_mon ONIX, 46, 46
     wild_mon ZUBAT, 32, 32
-    wild_mon ARBOK, 44, 44
+    wild_mon SANDSLASH, 44, 44
     wild_mon GOLBAT, 44, 44
     wild_mon MAROWAK, 44, 44
     wild_mon MACHOKE, 44, 44
     wild_mon MACHOKE, 46, 46
     wild_mon MAROWAK, 46, 46
 
-VictoryRoad_1F_LandMonsInfo:: @ 83C76BC
+VictoryRoad_1F_LandMonsInfo:: @ 83C74F8
     .4byte 7 @ encounter rate
     .4byte VictoryRoad_1F_LandMons
 
-VictoryRoad_2F_LandMons:: @ 83C76C4
+VictoryRoad_2F_LandMons:: @ 83C7500
     wild_mon MACHOP, 34, 34
     wild_mon GEODUDE, 34, 34
     wild_mon PRIMEAPE, 42, 42
     wild_mon ONIX, 45, 45
     wild_mon ONIX, 48, 48
     wild_mon ZUBAT, 34, 34
-    wild_mon ARBOK, 46, 46
+    wild_mon SANDSLASH, 46, 46
     wild_mon GOLBAT, 46, 46
     wild_mon MAROWAK, 46, 46
     wild_mon MACHOKE, 46, 46
     wild_mon MACHOKE, 48, 48
     wild_mon MAROWAK, 48, 48
 
-VictoryRoad_2F_LandMonsInfo:: @ 83C76F4
+VictoryRoad_2F_LandMonsInfo:: @ 83C7530
     .4byte 7 @ encounter rate
     .4byte VictoryRoad_2F_LandMons
 
-VictoryRoad_3F_LandMons:: @ 83C76FC
+VictoryRoad_3F_LandMons:: @ 83C7538
     wild_mon MACHOP, 32, 32
     wild_mon GEODUDE, 32, 32
     wild_mon ONIX, 40, 40
     wild_mon ONIX, 43, 43
     wild_mon ONIX, 46, 46
     wild_mon ZUBAT, 32, 32
-    wild_mon ARBOK, 44, 44
+    wild_mon SANDSLASH, 44, 44
     wild_mon GOLBAT, 44, 44
     wild_mon MAROWAK, 44, 44
     wild_mon MACHOKE, 44, 44
     wild_mon MACHOKE, 46, 46
     wild_mon MAROWAK, 46, 46
 
-VictoryRoad_3F_LandMonsInfo:: @ 83C772C
+VictoryRoad_3F_LandMonsInfo:: @ 83C7568
     .4byte 7 @ encounter rate
     .4byte VictoryRoad_3F_LandMons
 
-Map1_59_LandMons:: @ 83C7734
-    wild_mon KOFFING, 28, 28
-    wild_mon RATICATE, 32, 32
-    wild_mon KOFFING, 30, 30
-    wild_mon RATICATE, 36, 36
-    wild_mon GROWLITHE, 30, 30
-    wild_mon RATTATA, 28, 28
+Map1_59_LandMons:: @ 83C7570
     wild_mon GRIMER, 28, 28
-    wild_mon WEEZING, 32, 32
-    wild_mon GROWLITHE, 32, 32
+    wild_mon RATICATE, 32, 32
+    wild_mon GRIMER, 30, 30
+    wild_mon RATICATE, 36, 36
+    wild_mon VULPIX, 30, 30
+    wild_mon RATTATA, 28, 28
+    wild_mon KOFFING, 28, 28
+    wild_mon MUK, 32, 32
+    wild_mon VULPIX, 32, 32
     wild_mon RATTATA, 26, 26
-    wild_mon GROWLITHE, 32, 32
+    wild_mon VULPIX, 32, 32
     wild_mon RATTATA, 26, 26
 
-Map1_59_LandMonsInfo:: @ 83C7764
+Map1_59_LandMonsInfo:: @ 83C75A0
     .4byte 7 @ encounter rate
     .4byte Map1_59_LandMons
 
-Map1_60_LandMons:: @ 83C776C
-    wild_mon KOFFING, 28, 28
-    wild_mon RATICATE, 32, 32
-    wild_mon KOFFING, 30, 30
-    wild_mon RATICATE, 36, 36
-    wild_mon GROWLITHE, 30, 30
-    wild_mon RATTATA, 28, 28
+Map1_60_LandMons:: @ 83C75A8
     wild_mon GRIMER, 28, 28
-    wild_mon WEEZING, 32, 32
-    wild_mon GROWLITHE, 32, 32
+    wild_mon RATICATE, 32, 32
+    wild_mon GRIMER, 30, 30
+    wild_mon RATICATE, 36, 36
+    wild_mon VULPIX, 30, 30
+    wild_mon RATTATA, 28, 28
+    wild_mon KOFFING, 28, 28
+    wild_mon MUK, 32, 32
+    wild_mon VULPIX, 32, 32
     wild_mon RATTATA, 26, 26
-    wild_mon GROWLITHE, 32, 32
+    wild_mon VULPIX, 32, 32
     wild_mon RATTATA, 26, 26
 
-Map1_60_LandMonsInfo:: @ 83C779C
+Map1_60_LandMonsInfo:: @ 83C75D8
     .4byte 7 @ encounter rate
     .4byte Map1_60_LandMons
 
-Map1_61_LandMons:: @ 83C77A4
-    wild_mon KOFFING, 28, 28
-    wild_mon RATICATE, 32, 32
-    wild_mon KOFFING, 30, 30
-    wild_mon RATICATE, 36, 36
-    wild_mon GROWLITHE, 30, 30
-    wild_mon RATTATA, 28, 28
+Map1_61_LandMons:: @ 83C75E0
     wild_mon GRIMER, 28, 28
-    wild_mon WEEZING, 32, 32
-    wild_mon GROWLITHE, 32, 32
+    wild_mon RATICATE, 32, 32
+    wild_mon GRIMER, 30, 30
+    wild_mon RATICATE, 36, 36
+    wild_mon VULPIX, 30, 30
+    wild_mon RATTATA, 28, 28
+    wild_mon KOFFING, 28, 28
+    wild_mon MUK, 32, 32
+    wild_mon VULPIX, 32, 32
     wild_mon RATTATA, 26, 26
-    wild_mon GROWLITHE, 32, 32
+    wild_mon VULPIX, 32, 32
     wild_mon RATTATA, 26, 26
 
-Map1_61_LandMonsInfo:: @ 83C77D4
+Map1_61_LandMonsInfo:: @ 83C7610
     .4byte 7 @ encounter rate
     .4byte Map1_61_LandMons
 
-Map1_62_LandMons:: @ 83C77DC
-    wild_mon KOFFING, 28, 28
-    wild_mon RATICATE, 34, 34
-    wild_mon KOFFING, 30, 30
-    wild_mon DITTO, 30, 30
-    wild_mon GROWLITHE, 30, 30
-    wild_mon RATICATE, 38, 38
+Map1_62_LandMons:: @ 83C7618
     wild_mon GRIMER, 28, 28
-    wild_mon WEEZING, 34, 34
-    wild_mon GROWLITHE, 32, 32
+    wild_mon RATICATE, 34, 34
+    wild_mon GRIMER, 30, 30
+    wild_mon DITTO, 30, 30
+    wild_mon VULPIX, 30, 30
+    wild_mon RATICATE, 38, 38
+    wild_mon KOFFING, 28, 28
+    wild_mon MUK, 34, 34
+    wild_mon VULPIX, 32, 32
     wild_mon RATTATA, 26, 26
-    wild_mon GROWLITHE, 32, 32
+    wild_mon VULPIX, 32, 32
     wild_mon RATTATA, 26, 26
 
-Map1_62_LandMonsInfo:: @ 83C780C
+Map1_62_LandMonsInfo:: @ 83C7648
     .4byte 5 @ encounter rate
     .4byte Map1_62_LandMons
 
-Map1_63_LandMons:: @ 83C7814
+Map1_63_LandMons:: @ 83C7650
     wild_mon RHYHORN, 25, 25
-    wild_mon NIDORAN_M, 22, 22
+    wild_mon NIDORAN_F, 22, 22
     wild_mon EXEGGCUTE, 24, 24
     wild_mon EXEGGCUTE, 25, 25
     wild_mon VENONAT, 22, 22
-    wild_mon NIDORINO, 31, 31
     wild_mon NIDORINA, 31, 31
+    wild_mon NIDORINO, 31, 31
     wild_mon PARASECT, 30, 30
     wild_mon VENONAT, 22, 22
-    wild_mon SCYTHER, 23, 23
+    wild_mon PINSIR, 23, 23
     wild_mon VENONAT, 22, 22
     wild_mon CHANSEY, 23, 23
 
-Map1_63_LandMonsInfo:: @ 83C7844
+Map1_63_LandMonsInfo:: @ 83C7680
     .4byte 21 @ encounter rate
     .4byte Map1_63_LandMons
 
-Map1_63_WaterMons:: @ 83C784C
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 25, 30
-    wild_mon PSYDUCK, 30, 35
-    wild_mon PSYDUCK, 35, 40
+Map1_63_WaterMons:: @ 83C7688
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 25, 30
+    wild_mon SLOWPOKE, 30, 35
+    wild_mon SLOWPOKE, 35, 40
 
-Map1_63_WaterMonsInfo:: @ 83C7860
+Map1_63_WaterMonsInfo:: @ 83C769C
     .4byte 2 @ encounter rate
     .4byte Map1_63_WaterMons
 
-Map1_63_FishingMons:: @ 83C7868
+Map1_63_FishingMons:: @ 83C76A4
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon GOLDEEN, 5, 15
@@ -60776,43 +60910,43 @@ Map1_63_FishingMons:: @ 83C7868
     wild_mon GOLDEEN, 15, 25
     wild_mon SEAKING, 20, 30
     wild_mon DRATINI, 15, 25
-    wild_mon PSYDUCK, 15, 35
+    wild_mon SLOWPOKE, 15, 35
     wild_mon DRAGONAIR, 25, 35
 
-Map1_63_FishingMonsInfo:: @ 83C7890
+Map1_63_FishingMonsInfo:: @ 83C76CC
     .4byte 20 @ encounter rate
     .4byte Map1_63_FishingMons
 
-Map1_64_LandMons:: @ 83C7898
-    wild_mon NIDORAN_M, 24, 24
+Map1_64_LandMons:: @ 83C76D4
+    wild_mon NIDORAN_F, 24, 24
     wild_mon DODUO, 26, 26
     wild_mon EXEGGCUTE, 23, 23
     wild_mon EXEGGCUTE, 25, 25
     wild_mon PARAS, 22, 22
-    wild_mon NIDORINO, 33, 33
-    wild_mon NIDORAN_F, 24, 24
+    wild_mon NIDORINA, 33, 33
+    wild_mon NIDORAN_M, 24, 24
     wild_mon PARASECT, 25, 25
     wild_mon PARAS, 22, 22
     wild_mon KANGASKHAN, 25, 25
     wild_mon PARAS, 22, 22
-    wild_mon SCYTHER, 28, 28
+    wild_mon PINSIR, 28, 28
 
-Map1_64_LandMonsInfo:: @ 83C78C8
+Map1_64_LandMonsInfo:: @ 83C7704
     .4byte 21 @ encounter rate
     .4byte Map1_64_LandMons
 
-Map1_64_WaterMons:: @ 83C78D0
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 25, 30
-    wild_mon PSYDUCK, 30, 35
-    wild_mon PSYDUCK, 35, 40
+Map1_64_WaterMons:: @ 83C770C
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 25, 30
+    wild_mon SLOWPOKE, 30, 35
+    wild_mon SLOWPOKE, 35, 40
 
-Map1_64_WaterMonsInfo:: @ 83C78E4
+Map1_64_WaterMonsInfo:: @ 83C7720
     .4byte 2 @ encounter rate
     .4byte Map1_64_WaterMons
 
-Map1_64_FishingMons:: @ 83C78EC
+Map1_64_FishingMons:: @ 83C7728
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon GOLDEEN, 5, 15
@@ -60821,43 +60955,43 @@ Map1_64_FishingMons:: @ 83C78EC
     wild_mon GOLDEEN, 15, 25
     wild_mon SEAKING, 20, 30
     wild_mon DRATINI, 15, 25
-    wild_mon PSYDUCK, 15, 35
+    wild_mon SLOWPOKE, 15, 35
     wild_mon DRAGONAIR, 25, 35
 
-Map1_64_FishingMonsInfo:: @ 83C7914
+Map1_64_FishingMonsInfo:: @ 83C7750
     .4byte 20 @ encounter rate
     .4byte Map1_64_FishingMons
 
-Map1_65_LandMons:: @ 83C791C
+Map1_65_LandMons:: @ 83C7758
     wild_mon RHYHORN, 26, 26
-    wild_mon NIDORAN_M, 30, 30
+    wild_mon NIDORAN_F, 30, 30
     wild_mon EXEGGCUTE, 25, 25
     wild_mon EXEGGCUTE, 27, 27
     wild_mon PARAS, 23, 23
-    wild_mon NIDORINO, 30, 30
     wild_mon NIDORINA, 30, 30
+    wild_mon NIDORINO, 30, 30
     wild_mon VENOMOTH, 32, 32
     wild_mon PARAS, 23, 23
     wild_mon CHANSEY, 26, 26
     wild_mon PARAS, 23, 23
     wild_mon TAUROS, 28, 28
 
-Map1_65_LandMonsInfo:: @ 83C794C
+Map1_65_LandMonsInfo:: @ 83C7788
     .4byte 21 @ encounter rate
     .4byte Map1_65_LandMons
 
-Map1_65_WaterMons:: @ 83C7954
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 25, 30
-    wild_mon PSYDUCK, 30, 35
-    wild_mon PSYDUCK, 35, 40
+Map1_65_WaterMons:: @ 83C7790
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 25, 30
+    wild_mon SLOWPOKE, 30, 35
+    wild_mon SLOWPOKE, 35, 40
 
-Map1_65_WaterMonsInfo:: @ 83C7968
+Map1_65_WaterMonsInfo:: @ 83C77A4
     .4byte 2 @ encounter rate
     .4byte Map1_65_WaterMons
 
-Map1_65_FishingMons:: @ 83C7970
+Map1_65_FishingMons:: @ 83C77AC
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon GOLDEEN, 5, 15
@@ -60866,43 +61000,43 @@ Map1_65_FishingMons:: @ 83C7970
     wild_mon GOLDEEN, 15, 25
     wild_mon SEAKING, 20, 30
     wild_mon DRATINI, 15, 25
-    wild_mon PSYDUCK, 15, 35
+    wild_mon SLOWPOKE, 15, 35
     wild_mon DRAGONAIR, 25, 35
 
-Map1_65_FishingMonsInfo:: @ 83C7998
+Map1_65_FishingMonsInfo:: @ 83C77D4
     .4byte 20 @ encounter rate
     .4byte Map1_65_FishingMons
 
-Map1_66_LandMons:: @ 83C79A0
+Map1_66_LandMons:: @ 83C77DC
     wild_mon DODUO, 26, 26
-    wild_mon NIDORAN_M, 22, 22
+    wild_mon NIDORAN_F, 22, 22
     wild_mon EXEGGCUTE, 25, 25
     wild_mon EXEGGCUTE, 27, 27
     wild_mon VENONAT, 23, 23
-    wild_mon NIDORINO, 30, 30
-    wild_mon NIDORAN_F, 30, 30
+    wild_mon NIDORINA, 30, 30
+    wild_mon NIDORAN_M, 30, 30
     wild_mon VENOMOTH, 32, 32
     wild_mon VENONAT, 23, 23
     wild_mon TAUROS, 25, 25
     wild_mon VENONAT, 23, 23
     wild_mon KANGASKHAN, 28, 28
 
-Map1_66_LandMonsInfo:: @ 83C79D0
+Map1_66_LandMonsInfo:: @ 83C780C
     .4byte 21 @ encounter rate
     .4byte Map1_66_LandMons
 
-Map1_66_WaterMons:: @ 83C79D8
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 25, 30
-    wild_mon PSYDUCK, 30, 35
-    wild_mon PSYDUCK, 35, 40
+Map1_66_WaterMons:: @ 83C7814
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 25, 30
+    wild_mon SLOWPOKE, 30, 35
+    wild_mon SLOWPOKE, 35, 40
 
-Map1_66_WaterMonsInfo:: @ 83C79EC
+Map1_66_WaterMonsInfo:: @ 83C7828
     .4byte 2 @ encounter rate
     .4byte Map1_66_WaterMons
 
-Map1_66_FishingMons:: @ 83C79F4
+Map1_66_FishingMons:: @ 83C7830
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon GOLDEEN, 5, 15
@@ -60911,14 +61045,14 @@ Map1_66_FishingMons:: @ 83C79F4
     wild_mon GOLDEEN, 15, 25
     wild_mon SEAKING, 20, 30
     wild_mon DRATINI, 15, 25
-    wild_mon PSYDUCK, 15, 35
+    wild_mon SLOWPOKE, 15, 35
     wild_mon DRAGONAIR, 25, 35
 
-Map1_66_FishingMonsInfo:: @ 83C7A1C
+Map1_66_FishingMonsInfo:: @ 83C7858
     .4byte 20 @ encounter rate
     .4byte Map1_66_FishingMons
 
-CeruleanCave_1F_LandMons:: @ 83C7A24
+CeruleanCave_1F_LandMons:: @ 83C7860
     wild_mon MAGNETON, 49, 49
     wild_mon PARASECT, 49, 49
     wild_mon GOLBAT, 46, 46
@@ -60932,33 +61066,33 @@ CeruleanCave_1F_LandMons:: @ 83C7A24
     wild_mon PRIMEAPE, 61, 61
     wild_mon DITTO, 61, 61
 
-CeruleanCave_1F_LandMonsInfo:: @ 83C7A54
+CeruleanCave_1F_LandMonsInfo:: @ 83C7890
     .4byte 7 @ encounter rate
     .4byte CeruleanCave_1F_LandMons
 
-CeruleanCave_1F_WaterMons:: @ 83C7A5C
-    wild_mon PSYDUCK, 30, 40
-    wild_mon GOLDUCK, 40, 50
-    wild_mon GOLDUCK, 45, 55
-    wild_mon PSYDUCK, 40, 50
-    wild_mon PSYDUCK, 40, 50
+CeruleanCave_1F_WaterMons:: @ 83C7898
+    wild_mon SLOWPOKE, 30, 40
+    wild_mon SLOWBRO, 40, 50
+    wild_mon SLOWBRO, 45, 55
+    wild_mon SLOWPOKE, 40, 50
+    wild_mon SLOWPOKE, 40, 50
 
-CeruleanCave_1F_WaterMonsInfo:: @ 83C7A70
+CeruleanCave_1F_WaterMonsInfo:: @ 83C78AC
     .4byte 2 @ encounter rate
     .4byte CeruleanCave_1F_WaterMons
 
-CeruleanCave_1F_RockSmashMons:: @ 83C7A78
+CeruleanCave_1F_RockSmashMons:: @ 83C78B4
     wild_mon GEODUDE, 30, 40
     wild_mon GRAVELER, 40, 50
     wild_mon GRAVELER, 45, 55
     wild_mon GEODUDE, 40, 50
     wild_mon GEODUDE, 40, 50
 
-CeruleanCave_1F_RockSmashMonsInfo:: @ 83C7A8C
+CeruleanCave_1F_RockSmashMonsInfo:: @ 83C78C8
     .4byte 50 @ encounter rate
     .4byte CeruleanCave_1F_RockSmashMons
 
-CeruleanCave_1F_FishingMons:: @ 83C7A94
+CeruleanCave_1F_FishingMons:: @ 83C78D0
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon POLIWAG, 5, 15
@@ -60967,14 +61101,14 @@ CeruleanCave_1F_FishingMons:: @ 83C7A94
     wild_mon POLIWAG, 15, 25
     wild_mon POLIWHIRL, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-CeruleanCave_1F_FishingMonsInfo:: @ 83C7ABC
+CeruleanCave_1F_FishingMonsInfo:: @ 83C78F8
     .4byte 20 @ encounter rate
     .4byte CeruleanCave_1F_FishingMons
 
-CeruleanCave_2F_LandMons:: @ 83C7AC4
+CeruleanCave_2F_LandMons:: @ 83C7900
     wild_mon GOLBAT, 49, 49
     wild_mon MACHOKE, 49, 49
     wild_mon MAGNETON, 52, 52
@@ -60988,22 +61122,22 @@ CeruleanCave_2F_LandMons:: @ 83C7AC4
     wild_mon KADABRA, 64, 64
     wild_mon DITTO, 64, 64
 
-CeruleanCave_2F_LandMonsInfo:: @ 83C7AF4
+CeruleanCave_2F_LandMonsInfo:: @ 83C7930
     .4byte 7 @ encounter rate
     .4byte CeruleanCave_2F_LandMons
 
-CeruleanCave_2F_RockSmashMons:: @ 83C7AFC
+CeruleanCave_2F_RockSmashMons:: @ 83C7938
     wild_mon GEODUDE, 35, 45
     wild_mon GRAVELER, 45, 55
     wild_mon GRAVELER, 50, 60
     wild_mon GEODUDE, 45, 55
     wild_mon GEODUDE, 45, 55
 
-CeruleanCave_2F_RockSmashMonsInfo:: @ 83C7B10
+CeruleanCave_2F_RockSmashMonsInfo:: @ 83C794C
     .4byte 50 @ encounter rate
     .4byte CeruleanCave_2F_RockSmashMons
 
-CeruleanCave_B1F_LandMons:: @ 83C7B18
+CeruleanCave_B1F_LandMons:: @ 83C7954
     wild_mon KADABRA, 58, 58
     wild_mon DITTO, 58, 58
     wild_mon MAGNETON, 55, 55
@@ -61017,33 +61151,33 @@ CeruleanCave_B1F_LandMons:: @ 83C7B18
     wild_mon GOLBAT, 61, 61
     wild_mon WOBBUFFET, 61, 61
 
-CeruleanCave_B1F_LandMonsInfo:: @ 83C7B48
+CeruleanCave_B1F_LandMonsInfo:: @ 83C7984
     .4byte 7 @ encounter rate
     .4byte CeruleanCave_B1F_LandMons
 
-CeruleanCave_B1F_WaterMons:: @ 83C7B50
-    wild_mon PSYDUCK, 40, 50
-    wild_mon GOLDUCK, 50, 60
-    wild_mon GOLDUCK, 55, 65
-    wild_mon PSYDUCK, 50, 60
-    wild_mon PSYDUCK, 50, 60
+CeruleanCave_B1F_WaterMons:: @ 83C798C
+    wild_mon SLOWPOKE, 40, 50
+    wild_mon SLOWBRO, 50, 60
+    wild_mon SLOWBRO, 55, 65
+    wild_mon SLOWPOKE, 50, 60
+    wild_mon SLOWPOKE, 50, 60
 
-CeruleanCave_B1F_WaterMonsInfo:: @ 83C7B64
+CeruleanCave_B1F_WaterMonsInfo:: @ 83C79A0
     .4byte 2 @ encounter rate
     .4byte CeruleanCave_B1F_WaterMons
 
-CeruleanCave_B1F_RockSmashMons:: @ 83C7B6C
+CeruleanCave_B1F_RockSmashMons:: @ 83C79A8
     wild_mon GEODUDE, 40, 50
     wild_mon GRAVELER, 50, 60
     wild_mon GRAVELER, 55, 65
     wild_mon GEODUDE, 50, 60
     wild_mon GEODUDE, 50, 60
 
-CeruleanCave_B1F_RockSmashMonsInfo:: @ 83C7B80
+CeruleanCave_B1F_RockSmashMonsInfo:: @ 83C79BC
     .4byte 50 @ encounter rate
     .4byte CeruleanCave_B1F_RockSmashMons
 
-CeruleanCave_B1F_FishingMons:: @ 83C7B88
+CeruleanCave_B1F_FishingMons:: @ 83C79C4
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon POLIWAG, 5, 15
@@ -61052,14 +61186,14 @@ CeruleanCave_B1F_FishingMons:: @ 83C7B88
     wild_mon POLIWAG, 15, 25
     wild_mon POLIWHIRL, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
+    wild_mon SLOWPOKE, 15, 25
     wild_mon GYARADOS, 25, 35
 
-CeruleanCave_B1F_FishingMonsInfo:: @ 83C7BB0
+CeruleanCave_B1F_FishingMonsInfo:: @ 83C79EC
     .4byte 20 @ encounter rate
     .4byte CeruleanCave_B1F_FishingMons
 
-Map1_81_LandMons:: @ 83C7BB8
+Map1_81_LandMons:: @ 83C79F4
     wild_mon ZUBAT, 15, 15
     wild_mon GEODUDE, 16, 16
     wild_mon MANKEY, 16, 16
@@ -61073,11 +61207,11 @@ Map1_81_LandMons:: @ 83C7BB8
     wild_mon GEODUDE, 15, 15
     wild_mon ONIX, 15, 15
 
-Map1_81_LandMonsInfo:: @ 83C7BE8
+Map1_81_LandMonsInfo:: @ 83C7A24
     .4byte 7 @ encounter rate
     .4byte Map1_81_LandMons
 
-Map1_82_LandMons:: @ 83C7BF0
+Map1_82_LandMons:: @ 83C7A2C
     wild_mon ZUBAT, 16, 16
     wild_mon GEODUDE, 17, 17
     wild_mon MANKEY, 17, 17
@@ -61091,166 +61225,166 @@ Map1_82_LandMons:: @ 83C7BF0
     wild_mon GEODUDE, 15, 15
     wild_mon ONIX, 17, 17
 
-Map1_82_LandMonsInfo:: @ 83C7C20
+Map1_82_LandMonsInfo:: @ 83C7A5C
     .4byte 7 @ encounter rate
     .4byte Map1_82_LandMons
 
-Map1_82_RockSmashMons:: @ 83C7C28
+Map1_82_RockSmashMons:: @ 83C7A64
     wild_mon GEODUDE, 5, 20
     wild_mon GEODUDE, 10, 20
     wild_mon GEODUDE, 15, 30
     wild_mon GRAVELER, 25, 40
     wild_mon GRAVELER, 30, 40
 
-Map1_82_RockSmashMonsInfo:: @ 83C7C3C
+Map1_82_RockSmashMonsInfo:: @ 83C7A78
     .4byte 50 @ encounter rate
     .4byte Map1_82_RockSmashMons
 
-SeafomIslands_1F_LandMons:: @ 83C7C44
-    wild_mon PSYDUCK, 27, 27
-    wild_mon PSYDUCK, 29, 29
-    wild_mon PSYDUCK, 31, 31
+SeafomIslands_1F_LandMons:: @ 83C7A80
+    wild_mon SLOWPOKE, 27, 27
+    wild_mon SLOWPOKE, 29, 29
+    wild_mon SLOWPOKE, 31, 31
     wild_mon ZUBAT, 22, 22
     wild_mon ZUBAT, 22, 22
     wild_mon ZUBAT, 24, 24
     wild_mon GOLBAT, 26, 26
     wild_mon GOLBAT, 28, 28
-    wild_mon PSYDUCK, 33, 33
+    wild_mon SLOWPOKE, 33, 33
     wild_mon ZUBAT, 26, 26
-    wild_mon PSYDUCK, 26, 26
+    wild_mon SLOWPOKE, 26, 26
     wild_mon GOLBAT, 30, 30
 
-SeafomIslands_1F_LandMonsInfo:: @ 83C7C74
+SeafomIslands_1F_LandMonsInfo:: @ 83C7AB0
     .4byte 7 @ encounter rate
     .4byte SeafomIslands_1F_LandMons
 
-SeafomIslands_B1F_LandMons:: @ 83C7C7C
-    wild_mon PSYDUCK, 29, 29
-    wild_mon PSYDUCK, 31, 31
+SeafomIslands_B1F_LandMons:: @ 83C7AB8
+    wild_mon SLOWPOKE, 29, 29
+    wild_mon SLOWPOKE, 31, 31
     wild_mon SEEL, 28, 28
     wild_mon ZUBAT, 22, 22
     wild_mon ZUBAT, 22, 22
     wild_mon ZUBAT, 24, 24
     wild_mon GOLBAT, 26, 26
     wild_mon GOLBAT, 28, 28
-    wild_mon GOLDUCK, 33, 33
+    wild_mon SLOWBRO, 33, 33
     wild_mon ZUBAT, 26, 26
-    wild_mon GOLDUCK, 35, 35
+    wild_mon SLOWBRO, 35, 35
     wild_mon GOLBAT, 30, 30
 
-SeafomIslands_B1F_LandMonsInfo:: @ 83C7CAC
+SeafomIslands_B1F_LandMonsInfo:: @ 83C7AE8
     .4byte 7 @ encounter rate
     .4byte SeafomIslands_B1F_LandMons
 
-SeafomIslands_B2F_LandMons:: @ 83C7CB4
-    wild_mon PSYDUCK, 30, 30
-    wild_mon PSYDUCK, 32, 32
+SeafomIslands_B2F_LandMons:: @ 83C7AF0
+    wild_mon SLOWPOKE, 30, 30
+    wild_mon SLOWPOKE, 32, 32
     wild_mon SEEL, 30, 30
     wild_mon SEEL, 32, 32
     wild_mon ZUBAT, 22, 22
     wild_mon ZUBAT, 24, 24
     wild_mon GOLBAT, 26, 26
-    wild_mon GOLDUCK, 34, 34
-    wild_mon GOLDUCK, 32, 32
+    wild_mon SLOWBRO, 34, 34
+    wild_mon SLOWBRO, 32, 32
     wild_mon GOLBAT, 28, 28
-    wild_mon GOLDUCK, 32, 32
+    wild_mon SLOWBRO, 32, 32
     wild_mon GOLBAT, 30, 30
 
-SeafomIslands_B2F_LandMonsInfo:: @ 83C7CE4
+SeafomIslands_B2F_LandMonsInfo:: @ 83C7B20
     .4byte 7 @ encounter rate
     .4byte SeafomIslands_B2F_LandMons
 
-SeafomIslands_B3F_LandMons:: @ 83C7CEC
+SeafomIslands_B3F_LandMons:: @ 83C7B28
     wild_mon SEEL, 30, 30
     wild_mon SEEL, 32, 32
-    wild_mon PSYDUCK, 32, 32
-    wild_mon PSYDUCK, 30, 30
-    wild_mon GOLDUCK, 32, 32
+    wild_mon SLOWPOKE, 32, 32
+    wild_mon SLOWPOKE, 30, 30
+    wild_mon SLOWBRO, 32, 32
     wild_mon ZUBAT, 24, 24
     wild_mon GOLBAT, 26, 26
-    wild_mon GOLDUCK, 34, 34
+    wild_mon SLOWBRO, 34, 34
     wild_mon DEWGONG, 32, 32
     wild_mon GOLBAT, 28, 28
     wild_mon DEWGONG, 34, 34
     wild_mon GOLBAT, 30, 30
 
-SeafomIslands_B3F_LandMonsInfo:: @ 83C7D1C
+SeafomIslands_B3F_LandMonsInfo:: @ 83C7B58
     .4byte 7 @ encounter rate
     .4byte SeafomIslands_B3F_LandMons
 
-SeafomIslands_B3F_WaterMons:: @ 83C7D24
+SeafomIslands_B3F_WaterMons:: @ 83C7B60
     wild_mon SEEL, 25, 35
-    wild_mon HORSEA, 25, 30
+    wild_mon KRABBY, 25, 30
     wild_mon DEWGONG, 35, 40
-    wild_mon PSYDUCK, 30, 40
-    wild_mon GOLDUCK, 35, 40
+    wild_mon SLOWPOKE, 30, 40
+    wild_mon SLOWBRO, 35, 40
 
-SeafomIslands_B3F_WaterMonsInfo:: @ 83C7D38
+SeafomIslands_B3F_WaterMonsInfo:: @ 83C7B74
     .4byte 2 @ encounter rate
     .4byte SeafomIslands_B3F_WaterMons
 
-SeafomIslands_B3F_FishingMons:: @ 83C7D40
+SeafomIslands_B3F_FishingMons:: @ 83C7B7C
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 20, 30
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
+    wild_mon SLOWPOKE, 15, 25
     wild_mon GYARADOS, 25, 35
 
-SeafomIslands_B3F_FishingMonsInfo:: @ 83C7D68
+SeafomIslands_B3F_FishingMonsInfo:: @ 83C7BA4
     .4byte 20 @ encounter rate
     .4byte SeafomIslands_B3F_FishingMons
 
-SeafomIslands_B4F_LandMons:: @ 83C7D70
+SeafomIslands_B4F_LandMons:: @ 83C7BAC
     wild_mon SEEL, 30, 30
     wild_mon SEEL, 32, 32
-    wild_mon PSYDUCK, 32, 32
+    wild_mon SLOWPOKE, 32, 32
     wild_mon SEEL, 34, 34
-    wild_mon GOLDUCK, 32, 32
+    wild_mon SLOWBRO, 32, 32
     wild_mon GOLBAT, 26, 26
     wild_mon DEWGONG, 34, 34
-    wild_mon GOLDUCK, 34, 34
+    wild_mon SLOWBRO, 34, 34
     wild_mon DEWGONG, 36, 36
     wild_mon GOLBAT, 28, 28
     wild_mon DEWGONG, 36, 36
     wild_mon GOLBAT, 30, 30
 
-SeafomIslands_B4F_LandMonsInfo:: @ 83C7DA0
+SeafomIslands_B4F_LandMonsInfo:: @ 83C7BDC
     .4byte 7 @ encounter rate
     .4byte SeafomIslands_B4F_LandMons
 
-SeafomIslands_B4F_WaterMons:: @ 83C7DA8
+SeafomIslands_B4F_WaterMons:: @ 83C7BE4
     wild_mon SEEL, 25, 35
-    wild_mon HORSEA, 25, 30
+    wild_mon KRABBY, 25, 30
     wild_mon DEWGONG, 35, 40
-    wild_mon PSYDUCK, 30, 40
-    wild_mon GOLDUCK, 35, 40
+    wild_mon SLOWPOKE, 30, 40
+    wild_mon SLOWBRO, 35, 40
 
-SeafomIslands_B4F_WaterMonsInfo:: @ 83C7DBC
+SeafomIslands_B4F_WaterMonsInfo:: @ 83C7BF8
     .4byte 2 @ encounter rate
     .4byte SeafomIslands_B4F_WaterMons
 
-SeafomIslands_B4F_FishingMons:: @ 83C7DC4
+SeafomIslands_B4F_FishingMons:: @ 83C7C00
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 20, 30
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
+    wild_mon SLOWPOKE, 15, 25
     wild_mon GYARADOS, 25, 35
 
-SeafomIslands_B4F_FishingMonsInfo:: @ 83C7DEC
+SeafomIslands_B4F_FishingMonsInfo:: @ 83C7C28
     .4byte 20 @ encounter rate
     .4byte SeafomIslands_B4F_FishingMons
 
-Map1_90_LandMons:: @ 83C7DF4
+Map1_90_LandMons:: @ 83C7C30
     wild_mon GASTLY, 15, 15
     wild_mon GASTLY, 16, 16
     wild_mon GASTLY, 17, 17
@@ -61264,11 +61398,11 @@ Map1_90_LandMons:: @ 83C7DF4
     wild_mon GASTLY, 17, 17
     wild_mon HAUNTER, 20, 20
 
-Map1_90_LandMonsInfo:: @ 83C7E24
+Map1_90_LandMonsInfo:: @ 83C7C60
     .4byte 2 @ encounter rate
     .4byte Map1_90_LandMons
 
-Map1_91_LandMons:: @ 83C7E2C
+Map1_91_LandMons:: @ 83C7C68
     wild_mon GASTLY, 15, 15
     wild_mon GASTLY, 16, 16
     wild_mon GASTLY, 17, 17
@@ -61282,11 +61416,11 @@ Map1_91_LandMons:: @ 83C7E2C
     wild_mon GASTLY, 17, 17
     wild_mon GASTLY, 19, 19
 
-Map1_91_LandMonsInfo:: @ 83C7E5C
+Map1_91_LandMonsInfo:: @ 83C7C98
     .4byte 4 @ encounter rate
     .4byte Map1_91_LandMons
 
-Map1_92_LandMons:: @ 83C7E64
+Map1_92_LandMons:: @ 83C7CA0
     wild_mon GASTLY, 15, 15
     wild_mon GASTLY, 16, 16
     wild_mon GASTLY, 17, 17
@@ -61300,11 +61434,11 @@ Map1_92_LandMons:: @ 83C7E64
     wild_mon GASTLY, 17, 17
     wild_mon GASTLY, 19, 19
 
-Map1_92_LandMonsInfo:: @ 83C7E94
+Map1_92_LandMonsInfo:: @ 83C7CD0
     .4byte 6 @ encounter rate
     .4byte Map1_92_LandMons
 
-Map1_93_LandMons:: @ 83C7E9C
+Map1_93_LandMons:: @ 83C7CD8
     wild_mon GASTLY, 16, 16
     wild_mon GASTLY, 17, 17
     wild_mon GASTLY, 18, 18
@@ -61318,11 +61452,11 @@ Map1_93_LandMons:: @ 83C7E9C
     wild_mon GASTLY, 18, 18
     wild_mon HAUNTER, 23, 23
 
-Map1_93_LandMonsInfo:: @ 83C7ECC
+Map1_93_LandMonsInfo:: @ 83C7D08
     .4byte 8 @ encounter rate
     .4byte Map1_93_LandMons
 
-Map1_94_LandMons:: @ 83C7ED4
+Map1_94_LandMons:: @ 83C7D10
     wild_mon GASTLY, 16, 16
     wild_mon GASTLY, 17, 17
     wild_mon GASTLY, 18, 18
@@ -61336,11 +61470,11 @@ Map1_94_LandMons:: @ 83C7ED4
     wild_mon GASTLY, 18, 18
     wild_mon HAUNTER, 25, 25
 
-Map1_94_LandMonsInfo:: @ 83C7F04
+Map1_94_LandMonsInfo:: @ 83C7D40
     .4byte 10 @ encounter rate
     .4byte Map1_94_LandMons
 
-PowerPlant_LandMons:: @ 83C7F0C
+PowerPlant_LandMons:: @ 83C7D48
     wild_mon VOLTORB, 22, 22
     wild_mon MAGNEMITE, 22, 22
     wild_mon VOLTORB, 25, 25
@@ -61350,15 +61484,15 @@ PowerPlant_LandMons:: @ 83C7F0C
     wild_mon MAGNETON, 31, 31
     wild_mon MAGNETON, 34, 34
     wild_mon PIKACHU, 26, 26
-    wild_mon ELECTABUZZ, 32, 32
+    wild_mon MAGNETON, 31, 31
     wild_mon PIKACHU, 26, 26
-    wild_mon ELECTABUZZ, 35, 35
+    wild_mon MAGNETON, 34, 34
 
-PowerPlant_LandMonsInfo:: @ 83C7F3C
+PowerPlant_LandMonsInfo:: @ 83C7D78
     .4byte 7 @ encounter rate
     .4byte PowerPlant_LandMons
 
-Map1_97_LandMons:: @ 83C7F44
+Map1_97_LandMons:: @ 83C7D80
     wild_mon PONYTA, 30, 30
     wild_mon FEAROW, 38, 38
     wild_mon PONYTA, 33, 33
@@ -61367,27 +61501,27 @@ Map1_97_LandMons:: @ 83C7F44
     wild_mon GEODUDE, 33, 33
     wild_mon PONYTA, 36, 36
     wild_mon FEAROW, 40, 40
-    wild_mon SPEAROW, 30, 30
+    wild_mon MAGMAR, 38, 38
     wild_mon RAPIDASH, 39, 39
-    wild_mon SPEAROW, 30, 30
+    wild_mon MAGMAR, 40, 40
     wild_mon RAPIDASH, 42, 42
 
-Map1_97_LandMonsInfo:: @ 83C7F74
+Map1_97_LandMonsInfo:: @ 83C7DB0
     .4byte 21 @ encounter rate
     .4byte Map1_97_LandMons
 
-Map1_97_RockSmashMons:: @ 83C7F7C
+Map1_97_RockSmashMons:: @ 83C7DB8
     wild_mon GEODUDE, 5, 20
     wild_mon GEODUDE, 10, 20
     wild_mon GEODUDE, 15, 30
     wild_mon GRAVELER, 25, 40
     wild_mon GRAVELER, 30, 40
 
-Map1_97_RockSmashMonsInfo:: @ 83C7F90
+Map1_97_RockSmashMonsInfo:: @ 83C7DCC
     .4byte 50 @ encounter rate
     .4byte Map1_97_RockSmashMons
 
-Map1_98_LandMons:: @ 83C7F98
+Map1_98_LandMons:: @ 83C7DD4
     wild_mon GEODUDE, 33, 33
     wild_mon MACHOP, 35, 35
     wild_mon GEODUDE, 29, 29
@@ -61401,11 +61535,11 @@ Map1_98_LandMons:: @ 83C7F98
     wild_mon GEODUDE, 37, 37
     wild_mon MACHOP, 39, 39
 
-Map1_98_LandMonsInfo:: @ 83C7FC8
+Map1_98_LandMonsInfo:: @ 83C7E04
     .4byte 7 @ encounter rate
     .4byte Map1_98_LandMons
 
-Map1_99_LandMons:: @ 83C7FD0
+Map1_99_LandMons:: @ 83C7E0C
     wild_mon GEODUDE, 34, 34
     wild_mon MACHOP, 36, 36
     wild_mon GEODUDE, 30, 30
@@ -61419,22 +61553,22 @@ Map1_99_LandMons:: @ 83C7FD0
     wild_mon MACHOKE, 40, 40
     wild_mon MACHOKE, 40, 40
 
-Map1_99_LandMonsInfo:: @ 83C8000
+Map1_99_LandMonsInfo:: @ 83C7E3C
     .4byte 7 @ encounter rate
     .4byte Map1_99_LandMons
 
-Map1_99_RockSmashMons:: @ 83C8008
+Map1_99_RockSmashMons:: @ 83C7E44
     wild_mon GEODUDE, 5, 20
     wild_mon GEODUDE, 10, 20
     wild_mon GEODUDE, 15, 30
     wild_mon GRAVELER, 25, 40
     wild_mon GRAVELER, 30, 40
 
-Map1_99_RockSmashMonsInfo:: @ 83C801C
+Map1_99_RockSmashMonsInfo:: @ 83C7E58
     .4byte 50 @ encounter rate
     .4byte Map1_99_RockSmashMons
 
-Map1_100_LandMons:: @ 83C8024
+Map1_100_LandMons:: @ 83C7E60
     wild_mon GEODUDE, 33, 33
     wild_mon MACHOP, 35, 35
     wild_mon GEODUDE, 29, 29
@@ -61448,11 +61582,11 @@ Map1_100_LandMons:: @ 83C8024
     wild_mon GEODUDE, 37, 37
     wild_mon MACHOP, 39, 39
 
-Map1_100_LandMonsInfo:: @ 83C8054
+Map1_100_LandMonsInfo:: @ 83C7E90
     .4byte 7 @ encounter rate
     .4byte Map1_100_LandMons
 
-Map1_103_LandMons:: @ 83C805C
+Map1_103_LandMons:: @ 83C7E98
     wild_mon GEODUDE, 36, 36
     wild_mon MACHOP, 38, 38
     wild_mon GEODUDE, 32, 32
@@ -61466,22 +61600,22 @@ Map1_103_LandMons:: @ 83C805C
     wild_mon GEODUDE, 40, 40
     wild_mon MACHOKE, 42, 42
 
-Map1_103_LandMonsInfo:: @ 83C808C
+Map1_103_LandMonsInfo:: @ 83C7EC8
     .4byte 7 @ encounter rate
     .4byte Map1_103_LandMons
 
-Map1_103_RockSmashMons:: @ 83C8094
+Map1_103_RockSmashMons:: @ 83C7ED0
     wild_mon GEODUDE, 25, 35
     wild_mon GRAVELER, 30, 45
     wild_mon GRAVELER, 35, 50
     wild_mon GEODUDE, 30, 40
     wild_mon GEODUDE, 30, 40
 
-Map1_103_RockSmashMonsInfo:: @ 83C80A8
+Map1_103_RockSmashMonsInfo:: @ 83C7EE4
     .4byte 50 @ encounter rate
     .4byte Map1_103_RockSmashMons
 
-Map1_104_LandMons:: @ 83C80B0
+Map1_104_LandMons:: @ 83C7EEC
     wild_mon GEODUDE, 38, 38
     wild_mon GEODUDE, 36, 36
     wild_mon GEODUDE, 34, 34
@@ -61495,22 +61629,22 @@ Map1_104_LandMons:: @ 83C80B0
     wild_mon GEODUDE, 42, 42
     wild_mon SLUGMA, 30, 30
 
-Map1_104_LandMonsInfo:: @ 83C80E0
+Map1_104_LandMonsInfo:: @ 83C7F1C
     .4byte 7 @ encounter rate
     .4byte Map1_104_LandMons
 
-Map1_104_RockSmashMons:: @ 83C80E8
+Map1_104_RockSmashMons:: @ 83C7F24
     wild_mon GEODUDE, 25, 35
     wild_mon GRAVELER, 30, 45
     wild_mon GRAVELER, 35, 50
     wild_mon GEODUDE, 30, 40
     wild_mon GEODUDE, 30, 40
 
-Map1_104_RockSmashMonsInfo:: @ 83C80FC
+Map1_104_RockSmashMonsInfo:: @ 83C7F38
     .4byte 50 @ encounter rate
     .4byte Map1_104_RockSmashMons
 
-Map1_105_LandMons:: @ 83C8104
+Map1_105_LandMons:: @ 83C7F40
     wild_mon GEODUDE, 40, 40
     wild_mon SLUGMA, 26, 26
     wild_mon GEODUDE, 42, 42
@@ -61524,22 +61658,22 @@ Map1_105_LandMons:: @ 83C8104
     wild_mon GEODUDE, 44, 44
     wild_mon SLUGMA, 22, 22
 
-Map1_105_LandMonsInfo:: @ 83C8134
+Map1_105_LandMonsInfo:: @ 83C7F70
     .4byte 7 @ encounter rate
     .4byte Map1_105_LandMons
 
-Map1_105_RockSmashMons:: @ 83C813C
+Map1_105_RockSmashMons:: @ 83C7F78
     wild_mon GEODUDE, 25, 35
     wild_mon GRAVELER, 30, 45
     wild_mon GRAVELER, 35, 50
     wild_mon GEODUDE, 30, 40
     wild_mon GEODUDE, 30, 40
 
-Map1_105_RockSmashMonsInfo:: @ 83C8150
+Map1_105_RockSmashMonsInfo:: @ 83C7F8C
     .4byte 50 @ encounter rate
     .4byte Map1_105_RockSmashMons
 
-Map1_106_LandMons:: @ 83C8158
+Map1_106_LandMons:: @ 83C7F94
     wild_mon SLUGMA, 26, 26
     wild_mon SLUGMA, 28, 28
     wild_mon SLUGMA, 30, 30
@@ -61553,22 +61687,22 @@ Map1_106_LandMons:: @ 83C8158
     wild_mon SLUGMA, 36, 36
     wild_mon SLUGMA, 18, 18
 
-Map1_106_LandMonsInfo:: @ 83C8188
+Map1_106_LandMonsInfo:: @ 83C7FC4
     .4byte 7 @ encounter rate
     .4byte Map1_106_LandMons
 
-Map1_106_RockSmashMons:: @ 83C8190
+Map1_106_RockSmashMons:: @ 83C7FCC
     wild_mon SLUGMA, 15, 25
     wild_mon SLUGMA, 25, 35
     wild_mon MAGCARGO, 40, 45
     wild_mon MAGCARGO, 35, 45
     wild_mon MAGCARGO, 25, 35
 
-Map1_106_RockSmashMonsInfo:: @ 83C81A4
+Map1_106_RockSmashMonsInfo:: @ 83C7FE0
     .4byte 50 @ encounter rate
     .4byte Map1_106_RockSmashMons
 
-Map1_107_LandMons:: @ 83C81AC
+Map1_107_LandMons:: @ 83C7FE8
     wild_mon GEODUDE, 40, 40
     wild_mon SLUGMA, 26, 26
     wild_mon GEODUDE, 42, 42
@@ -61582,22 +61716,22 @@ Map1_107_LandMons:: @ 83C81AC
     wild_mon GEODUDE, 44, 44
     wild_mon SLUGMA, 22, 22
 
-Map1_107_LandMonsInfo:: @ 83C81DC
+Map1_107_LandMonsInfo:: @ 83C8018
     .4byte 7 @ encounter rate
     .4byte Map1_107_LandMons
 
-Map1_107_RockSmashMons:: @ 83C81E4
+Map1_107_RockSmashMons:: @ 83C8020
     wild_mon GEODUDE, 25, 35
     wild_mon GRAVELER, 30, 45
     wild_mon GRAVELER, 35, 50
     wild_mon GEODUDE, 30, 40
     wild_mon GEODUDE, 30, 40
 
-Map1_107_RockSmashMonsInfo:: @ 83C81F8
+Map1_107_RockSmashMonsInfo:: @ 83C8034
     .4byte 50 @ encounter rate
     .4byte Map1_107_RockSmashMons
 
-Map1_108_LandMons:: @ 83C8200
+Map1_108_LandMons:: @ 83C803C
     wild_mon GEODUDE, 38, 38
     wild_mon GEODUDE, 36, 36
     wild_mon GEODUDE, 34, 34
@@ -61611,51 +61745,51 @@ Map1_108_LandMons:: @ 83C8200
     wild_mon GEODUDE, 42, 42
     wild_mon SLUGMA, 30, 30
 
-Map1_108_LandMonsInfo:: @ 83C8230
+Map1_108_LandMonsInfo:: @ 83C806C
     .4byte 7 @ encounter rate
     .4byte Map1_108_LandMons
 
-Map1_108_RockSmashMons:: @ 83C8238
+Map1_108_RockSmashMons:: @ 83C8074
     wild_mon GEODUDE, 25, 35
     wild_mon GRAVELER, 30, 45
     wild_mon GRAVELER, 35, 50
     wild_mon GEODUDE, 30, 40
     wild_mon GEODUDE, 30, 40
 
-Map1_108_RockSmashMonsInfo:: @ 83C824C
+Map1_108_RockSmashMonsInfo:: @ 83C8088
     .4byte 50 @ encounter rate
     .4byte Map1_108_RockSmashMons
 
-Map1_109_LandMons:: @ 83C8254
+Map1_109_LandMons:: @ 83C8090
     wild_mon PIDGEOTTO, 37, 37
-    wild_mon GLOOM, 35, 35
+    wild_mon WEEPINBELL, 35, 35
     wild_mon PIDGEY, 32, 32
-    wild_mon ODDISH, 30, 30
+    wild_mon BELLSPROUT, 30, 30
     wild_mon VENONAT, 34, 34
     wild_mon DROWZEE, 34, 34
     wild_mon EXEGGCUTE, 35, 35
-    wild_mon PSYDUCK, 31, 31
+    wild_mon SLOWPOKE, 31, 31
     wild_mon VENOMOTH, 37, 37
     wild_mon HYPNO, 37, 37
     wild_mon VENOMOTH, 40, 40
     wild_mon HYPNO, 40, 40
 
-Map1_109_LandMonsInfo:: @ 83C8284
+Map1_109_LandMonsInfo:: @ 83C80C0
     .4byte 21 @ encounter rate
     .4byte Map1_109_LandMons
 
-Map1_109_WaterMons:: @ 83C828C
-    wild_mon PSYDUCK, 5, 20
-    wild_mon PSYDUCK, 20, 35
-    wild_mon PSYDUCK, 35, 40
-    wild_mon GOLDUCK, 35, 40
-    wild_mon GOLDUCK, 35, 40
+Map1_109_WaterMons:: @ 83C80C8
+    wild_mon SLOWPOKE, 5, 20
+    wild_mon SLOWPOKE, 20, 35
+    wild_mon SLOWPOKE, 35, 40
+    wild_mon SLOWBRO, 35, 40
+    wild_mon SLOWBRO, 35, 40
 
-Map1_109_WaterMonsInfo:: @ 83C82A0
+Map1_109_WaterMonsInfo:: @ 83C80DC
     .4byte 2 @ encounter rate
     .4byte Map1_109_WaterMons
 
-Map1_109_FishingMons:: @ 83C82A8
+Map1_109_FishingMons:: @ 83C80E4
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon GOLDEEN, 5, 15
@@ -61664,14 +61798,14 @@ Map1_109_FishingMons:: @ 83C82A8
     wild_mon GOLDEEN, 15, 25
     wild_mon SEAKING, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-Map1_109_FishingMonsInfo:: @ 83C82D0
+Map1_109_FishingMonsInfo:: @ 83C810C
     .4byte 20 @ encounter rate
     .4byte Map1_109_FishingMons
 
-Map1_110_LandMons:: @ 83C82D8
+Map1_110_LandMons:: @ 83C8114
     wild_mon SEEL, 43, 43
     wild_mon GOLBAT, 45, 45
     wild_mon SEEL, 45, 45
@@ -61679,28 +61813,28 @@ Map1_110_LandMons:: @ 83C82D8
     wild_mon ZUBAT, 40, 40
     wild_mon DEWGONG, 49, 49
     wild_mon DEWGONG, 51, 51
-    wild_mon PSYDUCK, 41, 41
+    wild_mon SLOWPOKE, 41, 41
     wild_mon GOLBAT, 48, 48
     wild_mon DEWGONG, 53, 53
     wild_mon GOLBAT, 48, 48
     wild_mon DEWGONG, 53, 53
 
-Map1_110_LandMonsInfo:: @ 83C8308
+Map1_110_LandMonsInfo:: @ 83C8144
     .4byte 7 @ encounter rate
     .4byte Map1_110_LandMons
 
-Map1_110_WaterMons:: @ 83C8310
+Map1_110_WaterMons:: @ 83C814C
     wild_mon SEEL, 5, 35
-    wild_mon PSYDUCK, 5, 35
+    wild_mon SLOWPOKE, 5, 35
     wild_mon DEWGONG, 35, 40
-    wild_mon WOOPER, 5, 15
-    wild_mon WOOPER, 5, 15
+    wild_mon MARILL, 5, 15
+    wild_mon MARILL, 5, 15
 
-Map1_110_WaterMonsInfo:: @ 83C8324
+Map1_110_WaterMonsInfo:: @ 83C8160
     .4byte 2 @ encounter rate
     .4byte Map1_110_WaterMons
 
-Map1_110_FishingMons:: @ 83C832C
+Map1_110_FishingMons:: @ 83C8168
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon POLIWAG, 5, 15
@@ -61709,50 +61843,50 @@ Map1_110_FishingMons:: @ 83C832C
     wild_mon POLIWAG, 15, 25
     wild_mon POLIWHIRL, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-Map1_110_FishingMonsInfo:: @ 83C8354
+Map1_110_FishingMonsInfo:: @ 83C8190
     .4byte 20 @ encounter rate
     .4byte Map1_110_FishingMons
 
-Map1_111_LandMons:: @ 83C835C
+Map1_111_LandMons:: @ 83C8198
     wild_mon SWINUB, 25, 25
     wild_mon GOLBAT, 45, 45
     wild_mon SEEL, 45, 45
     wild_mon SWINUB, 27, 27
     wild_mon ZUBAT, 40, 40
     wild_mon SWINUB, 29, 29
-    wild_mon DELIBIRD, 30, 30
+    wild_mon SNEASEL, 30, 30
     wild_mon SWINUB, 31, 31
     wild_mon GOLBAT, 48, 48
     wild_mon SWINUB, 23, 23
     wild_mon GOLBAT, 48, 48
     wild_mon SWINUB, 23, 23
 
-Map1_111_LandMonsInfo:: @ 83C838C
+Map1_111_LandMonsInfo:: @ 83C81C8
     .4byte 7 @ encounter rate
     .4byte Map1_111_LandMons
 
-Map1_112_LandMons:: @ 83C8394
+Map1_112_LandMons:: @ 83C81D0
     wild_mon SWINUB, 25, 25
     wild_mon GOLBAT, 45, 45
     wild_mon SEEL, 45, 45
     wild_mon SWINUB, 27, 27
     wild_mon ZUBAT, 40, 40
     wild_mon SWINUB, 29, 29
-    wild_mon DELIBIRD, 30, 30
+    wild_mon SNEASEL, 30, 30
     wild_mon SWINUB, 31, 31
     wild_mon GOLBAT, 48, 48
     wild_mon SWINUB, 23, 23
     wild_mon GOLBAT, 48, 48
     wild_mon SWINUB, 23, 23
 
-Map1_112_LandMonsInfo:: @ 83C83C4
+Map1_112_LandMonsInfo:: @ 83C8200
     .4byte 7 @ encounter rate
     .4byte Map1_112_LandMons
 
-Map1_113_LandMons:: @ 83C83CC
+Map1_113_LandMons:: @ 83C8208
     wild_mon SEEL, 43, 43
     wild_mon GOLBAT, 45, 45
     wild_mon SEEL, 45, 45
@@ -61760,62 +61894,62 @@ Map1_113_LandMons:: @ 83C83CC
     wild_mon ZUBAT, 40, 40
     wild_mon DEWGONG, 49, 49
     wild_mon DEWGONG, 51, 51
-    wild_mon PSYDUCK, 41, 41
+    wild_mon SLOWPOKE, 41, 41
     wild_mon GOLBAT, 48, 48
     wild_mon DEWGONG, 53, 53
     wild_mon GOLBAT, 48, 48
     wild_mon DEWGONG, 53, 53
 
-Map1_113_LandMonsInfo:: @ 83C83FC
+Map1_113_LandMonsInfo:: @ 83C8238
     .4byte 7 @ encounter rate
     .4byte Map1_113_LandMons
 
-Map1_113_WaterMons:: @ 83C8404
+Map1_113_WaterMons:: @ 83C8240
     wild_mon TENTACOOL, 5, 20
     wild_mon TENTACOOL, 20, 35
     wild_mon TENTACOOL, 35, 45
     wild_mon TENTACRUEL, 35, 45
     wild_mon LAPRAS, 30, 45
 
-Map1_113_WaterMonsInfo:: @ 83C8418
+Map1_113_WaterMonsInfo:: @ 83C8254
     .4byte 2 @ encounter rate
     .4byte Map1_113_WaterMons
 
-Map1_113_FishingMons:: @ 83C8420
+Map1_113_FishingMons:: @ 83C825C
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon SHELLDER, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon STARYU, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Map1_113_FishingMonsInfo:: @ 83C8448
+Map1_113_FishingMonsInfo:: @ 83C8284
     .4byte 20 @ encounter rate
     .4byte Map1_113_FishingMons
 
-Map1_121_LandMons:: @ 83C8450
-    wild_mon SPINARAK, 9, 9
+Map1_121_LandMons:: @ 83C828C
+    wild_mon LEDYBA, 9, 9
     wild_mon KAKUNA, 9, 9
-    wild_mon SPINARAK, 14, 14
+    wild_mon LEDYBA, 14, 14
     wild_mon CATERPIE, 6, 6
     wild_mon WEEDLE, 6, 6
     wild_mon HERACROSS, 15, 15
     wild_mon METAPOD, 9, 9
     wild_mon HERACROSS, 20, 20
-    wild_mon LEDYBA, 9, 9
+    wild_mon SPINARAK, 9, 9
     wild_mon HERACROSS, 25, 25
-    wild_mon LEDYBA, 14, 14
+    wild_mon SPINARAK, 14, 14
     wild_mon HERACROSS, 30, 30
 
-Map1_121_LandMonsInfo:: @ 83C8480
+Map1_121_LandMonsInfo:: @ 83C82BC
     .4byte 21 @ encounter rate
     .4byte Map1_121_LandMons
 
-Map2_13_LandMons:: @ 83C8488
+Map2_13_LandMons:: @ 83C82C4
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
@@ -61825,15 +61959,15 @@ Map2_13_LandMons:: @ 83C8488
     wild_mon GASTLY, 38, 38
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_13_LandMonsInfo:: @ 83C84B8
+Map2_13_LandMonsInfo:: @ 83C82F4
     .4byte 1 @ encounter rate
     .4byte Map2_13_LandMons
 
-Map2_14_LandMons:: @ 83C84C0
+Map2_14_LandMons:: @ 83C82FC
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
@@ -61843,15 +61977,15 @@ Map2_14_LandMons:: @ 83C84C0
     wild_mon GASTLY, 38, 38
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_14_LandMonsInfo:: @ 83C84F0
+Map2_14_LandMonsInfo:: @ 83C832C
     .4byte 2 @ encounter rate
     .4byte Map2_14_LandMons
 
-Map2_15_LandMons:: @ 83C84F8
+Map2_15_LandMons:: @ 83C8334
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
@@ -61861,15 +61995,15 @@ Map2_15_LandMons:: @ 83C84F8
     wild_mon GASTLY, 38, 38
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_15_LandMonsInfo:: @ 83C8528
+Map2_15_LandMonsInfo:: @ 83C8364
     .4byte 3 @ encounter rate
     .4byte Map2_15_LandMons
 
-Map2_16_LandMons:: @ 83C8530
+Map2_16_LandMons:: @ 83C836C
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
@@ -61879,15 +62013,15 @@ Map2_16_LandMons:: @ 83C8530
     wild_mon GASTLY, 38, 38
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_16_LandMonsInfo:: @ 83C8560
+Map2_16_LandMonsInfo:: @ 83C839C
     .4byte 4 @ encounter rate
     .4byte Map2_16_LandMons
 
-Map2_17_LandMons:: @ 83C8568
+Map2_17_LandMons:: @ 83C83A4
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
@@ -61897,15 +62031,15 @@ Map2_17_LandMons:: @ 83C8568
     wild_mon GASTLY, 38, 38
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_17_LandMonsInfo:: @ 83C8598
+Map2_17_LandMonsInfo:: @ 83C83D4
     .4byte 5 @ encounter rate
     .4byte Map2_17_LandMons
 
-Map2_18_LandMons:: @ 83C85A0
+Map2_18_LandMons:: @ 83C83DC
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
@@ -61915,15 +62049,15 @@ Map2_18_LandMons:: @ 83C85A0
     wild_mon GASTLY, 38, 38
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_18_LandMonsInfo:: @ 83C85D0
+Map2_18_LandMonsInfo:: @ 83C840C
     .4byte 6 @ encounter rate
     .4byte Map2_18_LandMons
 
-Map2_19_LandMons:: @ 83C85D8
+Map2_19_LandMons:: @ 83C8414
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
@@ -61933,15 +62067,15 @@ Map2_19_LandMons:: @ 83C85D8
     wild_mon GASTLY, 38, 38
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_19_LandMonsInfo:: @ 83C8608
+Map2_19_LandMonsInfo:: @ 83C8444
     .4byte 7 @ encounter rate
     .4byte Map2_19_LandMons
 
-Map2_20_LandMons:: @ 83C8610
+Map2_20_LandMons:: @ 83C844C
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
@@ -61951,15 +62085,15 @@ Map2_20_LandMons:: @ 83C8610
     wild_mon GASTLY, 38, 38
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_20_LandMonsInfo:: @ 83C8640
+Map2_20_LandMonsInfo:: @ 83C847C
     .4byte 8 @ encounter rate
     .4byte Map2_20_LandMons
 
-Map2_21_LandMons:: @ 83C8648
+Map2_21_LandMons:: @ 83C8484
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
@@ -61969,15 +62103,15 @@ Map2_21_LandMons:: @ 83C8648
     wild_mon GASTLY, 38, 38
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_21_LandMonsInfo:: @ 83C8678
+Map2_21_LandMonsInfo:: @ 83C84B4
     .4byte 9 @ encounter rate
     .4byte Map2_21_LandMons
 
-Map2_22_LandMons:: @ 83C8680
+Map2_22_LandMons:: @ 83C84BC
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
@@ -61987,87 +62121,87 @@ Map2_22_LandMons:: @ 83C8680
     wild_mon GASTLY, 38, 38
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_22_LandMonsInfo:: @ 83C86B0
+Map2_22_LandMonsInfo:: @ 83C84EC
     .4byte 10 @ encounter rate
     .4byte Map2_22_LandMons
 
-Map2_23_LandMons:: @ 83C86B8
+Map2_23_LandMons:: @ 83C84F4
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
     wild_mon HAUNTER, 46, 46
     wild_mon GOLBAT, 41, 41
-    wild_mon MURKROW, 15, 15
-    wild_mon MURKROW, 20, 20
+    wild_mon MISDREAVUS, 15, 15
+    wild_mon MISDREAVUS, 20, 20
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_23_LandMonsInfo:: @ 83C86E8
+Map2_23_LandMonsInfo:: @ 83C8524
     .4byte 5 @ encounter rate
     .4byte Map2_23_LandMons
 
-Map2_24_LandMons:: @ 83C86F0
+Map2_24_LandMons:: @ 83C852C
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
     wild_mon HAUNTER, 46, 46
     wild_mon GOLBAT, 41, 41
-    wild_mon MURKROW, 15, 15
-    wild_mon MURKROW, 20, 20
+    wild_mon MISDREAVUS, 15, 15
+    wild_mon MISDREAVUS, 20, 20
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_24_LandMonsInfo:: @ 83C8720
+Map2_24_LandMonsInfo:: @ 83C855C
     .4byte 5 @ encounter rate
     .4byte Map2_24_LandMons
 
-Map2_25_LandMons:: @ 83C8728
+Map2_25_LandMons:: @ 83C8564
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
     wild_mon HAUNTER, 46, 46
     wild_mon GOLBAT, 41, 41
-    wild_mon MURKROW, 15, 15
-    wild_mon MURKROW, 20, 20
+    wild_mon MISDREAVUS, 15, 15
+    wild_mon MISDREAVUS, 20, 20
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_25_LandMonsInfo:: @ 83C8758
+Map2_25_LandMonsInfo:: @ 83C8594
     .4byte 5 @ encounter rate
     .4byte Map2_25_LandMons
 
-Map2_26_LandMons:: @ 83C8760
+Map2_26_LandMons:: @ 83C859C
     wild_mon GASTLY, 40, 40
     wild_mon ZUBAT, 37, 37
     wild_mon HAUNTER, 44, 44
     wild_mon HAUNTER, 46, 46
     wild_mon GOLBAT, 41, 41
-    wild_mon MURKROW, 15, 15
-    wild_mon MURKROW, 20, 20
+    wild_mon MISDREAVUS, 15, 15
+    wild_mon MISDREAVUS, 20, 20
     wild_mon HAUNTER, 48, 48
     wild_mon HAUNTER, 50, 50
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
     wild_mon HAUNTER, 52, 52
-    wild_mon MURKROW, 22, 22
+    wild_mon MISDREAVUS, 22, 22
 
-Map2_26_LandMonsInfo:: @ 83C8790
+Map2_26_LandMonsInfo:: @ 83C85CC
     .4byte 5 @ encounter rate
     .4byte Map2_26_LandMons
 
-OneIsland_KindleRoad_LandMons:: @ 83C8798
+OneIsland_KindleRoad_LandMons:: @ 83C85D4
     wild_mon SPEAROW, 32, 32
     wild_mon PONYTA, 34, 34
     wild_mon FEAROW, 36, 36
@@ -62075,55 +62209,55 @@ OneIsland_KindleRoad_LandMons:: @ 83C8798
     wild_mon GEODUDE, 31, 31
     wild_mon MEOWTH, 31, 31
     wild_mon SPEAROW, 30, 30
-    wild_mon PSYDUCK, 34, 34
+    wild_mon SLOWPOKE, 34, 34
     wild_mon RAPIDASH, 37, 37
     wild_mon PERSIAN, 37, 37
     wild_mon RAPIDASH, 40, 40
     wild_mon PERSIAN, 40, 40
 
-OneIsland_KindleRoad_LandMonsInfo:: @ 83C87C8
+OneIsland_KindleRoad_LandMonsInfo:: @ 83C8604
     .4byte 21 @ encounter rate
     .4byte OneIsland_KindleRoad_LandMons
 
-OneIsland_KindleRoad_WaterMons:: @ 83C87D0
+OneIsland_KindleRoad_WaterMons:: @ 83C860C
     wild_mon TENTACOOL, 5, 20
     wild_mon TENTACOOL, 20, 35
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-OneIsland_KindleRoad_WaterMonsInfo:: @ 83C87E4
+OneIsland_KindleRoad_WaterMonsInfo:: @ 83C8620
     .4byte 2 @ encounter rate
     .4byte OneIsland_KindleRoad_WaterMons
 
-OneIsland_KindleRoad_RockSmashMons:: @ 83C87EC
+OneIsland_KindleRoad_RockSmashMons:: @ 83C8628
     wild_mon GEODUDE, 5, 20
     wild_mon GEODUDE, 10, 20
     wild_mon GEODUDE, 15, 30
     wild_mon GRAVELER, 25, 40
     wild_mon GRAVELER, 30, 40
 
-OneIsland_KindleRoad_RockSmashMonsInfo:: @ 83C8800
+OneIsland_KindleRoad_RockSmashMonsInfo:: @ 83C863C
     .4byte 25 @ encounter rate
     .4byte OneIsland_KindleRoad_RockSmashMons
 
-OneIsland_KindleRoad_FishingMons:: @ 83C8808
+OneIsland_KindleRoad_FishingMons:: @ 83C8644
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-OneIsland_KindleRoad_FishingMonsInfo:: @ 83C8830
+OneIsland_KindleRoad_FishingMonsInfo:: @ 83C866C
     .4byte 20 @ encounter rate
     .4byte OneIsland_KindleRoad_FishingMons
 
-OneIsland_TreasureBeach_LandMons:: @ 83C8838
+OneIsland_TreasureBeach_LandMons:: @ 83C8674
     wild_mon SPEAROW, 32, 32
     wild_mon TANGELA, 33, 33
     wild_mon SPEAROW, 31, 31
@@ -62131,73 +62265,73 @@ OneIsland_TreasureBeach_LandMons:: @ 83C8838
     wild_mon FEAROW, 36, 36
     wild_mon MEOWTH, 31, 31
     wild_mon FEAROW, 38, 38
-    wild_mon PSYDUCK, 31, 31
+    wild_mon SLOWPOKE, 31, 31
     wild_mon FEAROW, 40, 40
     wild_mon PERSIAN, 37, 37
     wild_mon FEAROW, 40, 40
     wild_mon PERSIAN, 40, 40
 
-OneIsland_TreasureBeach_LandMonsInfo:: @ 83C8868
+OneIsland_TreasureBeach_LandMonsInfo:: @ 83C86A4
     .4byte 21 @ encounter rate
     .4byte OneIsland_TreasureBeach_LandMons
 
-OneIsland_TreasureBeach_WaterMons:: @ 83C8870
+OneIsland_TreasureBeach_WaterMons:: @ 83C86AC
     wild_mon TENTACOOL, 5, 20
     wild_mon TENTACOOL, 20, 35
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-OneIsland_TreasureBeach_WaterMonsInfo:: @ 83C8884
+OneIsland_TreasureBeach_WaterMonsInfo:: @ 83C86C0
     .4byte 2 @ encounter rate
     .4byte OneIsland_TreasureBeach_WaterMons
 
-OneIsland_TreasureBeach_FishingMons:: @ 83C888C
+OneIsland_TreasureBeach_FishingMons:: @ 83C86C8
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-OneIsland_TreasureBeach_FishingMonsInfo:: @ 83C88B4
+OneIsland_TreasureBeach_FishingMonsInfo:: @ 83C86F0
     .4byte 20 @ encounter rate
     .4byte OneIsland_TreasureBeach_FishingMons
 
-TwoIsland_CapeBrink_LandMons:: @ 83C88BC
+TwoIsland_CapeBrink_LandMons:: @ 83C86F8
     wild_mon SPEAROW, 31, 31
-    wild_mon ODDISH, 30, 30
-    wild_mon ODDISH, 32, 32
-    wild_mon GLOOM, 36, 36
+    wild_mon BELLSPROUT, 30, 30
+    wild_mon BELLSPROUT, 32, 32
+    wild_mon WEEPINBELL, 36, 36
     wild_mon FEAROW, 36, 36
     wild_mon MEOWTH, 31, 31
-    wild_mon GLOOM, 38, 38
-    wild_mon PSYDUCK, 31, 31
-    wild_mon GOLDUCK, 37, 37
+    wild_mon WEEPINBELL, 38, 38
+    wild_mon SLOWPOKE, 31, 31
+    wild_mon SLOWBRO, 37, 37
     wild_mon PERSIAN, 37, 37
-    wild_mon GOLDUCK, 40, 40
+    wild_mon SLOWBRO, 40, 40
     wild_mon PERSIAN, 40, 40
 
-TwoIsland_CapeBrink_LandMonsInfo:: @ 83C88EC
+TwoIsland_CapeBrink_LandMonsInfo:: @ 83C8728
     .4byte 21 @ encounter rate
     .4byte TwoIsland_CapeBrink_LandMons
 
-TwoIsland_CapeBrink_WaterMons:: @ 83C88F4
-    wild_mon PSYDUCK, 5, 20
-    wild_mon PSYDUCK, 20, 35
-    wild_mon PSYDUCK, 35, 40
-    wild_mon GOLDUCK, 35, 40
-    wild_mon GOLDUCK, 35, 40
+TwoIsland_CapeBrink_WaterMons:: @ 83C8730
+    wild_mon SLOWPOKE, 5, 20
+    wild_mon SLOWPOKE, 20, 35
+    wild_mon SLOWPOKE, 35, 40
+    wild_mon SLOWBRO, 35, 40
+    wild_mon SLOWBRO, 35, 40
 
-TwoIsland_CapeBrink_WaterMonsInfo:: @ 83C8908
+TwoIsland_CapeBrink_WaterMonsInfo:: @ 83C8744
     .4byte 2 @ encounter rate
     .4byte TwoIsland_CapeBrink_WaterMons
 
-TwoIsland_CapeBrink_FishingMons:: @ 83C8910
+TwoIsland_CapeBrink_FishingMons:: @ 83C874C
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon POLIWAG, 5, 15
@@ -62206,59 +62340,59 @@ TwoIsland_CapeBrink_FishingMons:: @ 83C8910
     wild_mon POLIWAG, 15, 25
     wild_mon POLIWHIRL, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-TwoIsland_CapeBrink_FishingMonsInfo:: @ 83C8938
+TwoIsland_CapeBrink_FishingMonsInfo:: @ 83C8774
     .4byte 20 @ encounter rate
     .4byte TwoIsland_CapeBrink_FishingMons
 
-ThreeIsland_BondBridge_LandMons:: @ 83C8940
+ThreeIsland_BondBridge_LandMons:: @ 83C877C
     wild_mon PIDGEY, 32, 32
-    wild_mon ODDISH, 31, 31
+    wild_mon BELLSPROUT, 31, 31
     wild_mon PIDGEY, 29, 29
-    wild_mon GLOOM, 36, 36
+    wild_mon WEEPINBELL, 36, 36
     wild_mon PIDGEOTTO, 34, 34
     wild_mon MEOWTH, 31, 31
     wild_mon VENONAT, 34, 34
-    wild_mon PSYDUCK, 31, 31
+    wild_mon SLOWPOKE, 31, 31
     wild_mon PIDGEOTTO, 37, 37
     wild_mon PERSIAN, 37, 37
     wild_mon PIDGEOTTO, 40, 40
     wild_mon PERSIAN, 40, 40
 
-ThreeIsland_BondBridge_LandMonsInfo:: @ 83C8970
+ThreeIsland_BondBridge_LandMonsInfo:: @ 83C87AC
     .4byte 21 @ encounter rate
     .4byte ThreeIsland_BondBridge_LandMons
 
-ThreeIsland_BondBridge_WaterMons:: @ 83C8978
+ThreeIsland_BondBridge_WaterMons:: @ 83C87B4
     wild_mon TENTACOOL, 5, 20
     wild_mon TENTACOOL, 20, 35
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-ThreeIsland_BondBridge_WaterMonsInfo:: @ 83C898C
+ThreeIsland_BondBridge_WaterMonsInfo:: @ 83C87C8
     .4byte 2 @ encounter rate
     .4byte ThreeIsland_BondBridge_WaterMons
 
-ThreeIsland_BondBridge_FishingMons:: @ 83C8994
+ThreeIsland_BondBridge_FishingMons:: @ 83C87D0
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-ThreeIsland_BondBridge_FishingMonsInfo:: @ 83C89BC
+ThreeIsland_BondBridge_FishingMonsInfo:: @ 83C87F8
     .4byte 20 @ encounter rate
     .4byte ThreeIsland_BondBridge_FishingMons
 
-ThreeIsland_Port_LandMons:: @ 83C89C4
+ThreeIsland_Port_LandMons:: @ 83C8800
     wild_mon DUNSPARCE, 15, 15
     wild_mon DUNSPARCE, 15, 15
     wild_mon DUNSPARCE, 10, 10
@@ -62272,65 +62406,65 @@ ThreeIsland_Port_LandMons:: @ 83C89C4
     wild_mon DUNSPARCE, 5, 5
     wild_mon DUNSPARCE, 35, 35
 
-ThreeIsland_Port_LandMonsInfo:: @ 83C89F4
+ThreeIsland_Port_LandMonsInfo:: @ 83C8830
     .4byte 1 @ encounter rate
     .4byte ThreeIsland_Port_LandMons
 
-FiveIsland_ResortGorgeous_WaterMons:: @ 83C89FC
+FiveIsland_ResortGorgeous_WaterMons:: @ 83C8838
     wild_mon TENTACOOL, 5, 35
     wild_mon HOPPIP, 5, 15
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-FiveIsland_ResortGorgeous_WaterMonsInfo:: @ 83C8A10
+FiveIsland_ResortGorgeous_WaterMonsInfo:: @ 83C884C
     .4byte 2 @ encounter rate
     .4byte FiveIsland_ResortGorgeous_WaterMons
 
-FiveIsland_ResortGorgeous_FishingMons:: @ 83C8A18
+FiveIsland_ResortGorgeous_FishingMons:: @ 83C8854
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon QWILFISH, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon REMORAID, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-FiveIsland_ResortGorgeous_FishingMonsInfo:: @ 83C8A40
+FiveIsland_ResortGorgeous_FishingMonsInfo:: @ 83C887C
     .4byte 20 @ encounter rate
     .4byte FiveIsland_ResortGorgeous_FishingMons
 
-FiveIsland_WaterLabyrinth_WaterMons:: @ 83C8A48
-    wild_mon TENTACOOL, 5, 20
+FiveIsland_WaterLabyrinth_WaterMons:: @ 83C8884
+    wild_mon TENTACOOL, 5, 35
     wild_mon HOPPIP, 5, 15
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-FiveIsland_WaterLabyrinth_WaterMonsInfo:: @ 83C8A5C
+FiveIsland_WaterLabyrinth_WaterMonsInfo:: @ 83C8898
     .4byte 2 @ encounter rate
     .4byte FiveIsland_WaterLabyrinth_WaterMons
 
-FiveIsland_WaterLabyrinth_FishingMons:: @ 83C8A64
+FiveIsland_WaterLabyrinth_FishingMons:: @ 83C88A0
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon QWILFISH, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon REMORAID, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-FiveIsland_WaterLabyrinth_FishingMonsInfo:: @ 83C8A8C
+FiveIsland_WaterLabyrinth_FishingMonsInfo:: @ 83C88C8
     .4byte 20 @ encounter rate
     .4byte FiveIsland_WaterLabyrinth_FishingMons
 
-FiveIsland_Meadow_LandMons:: @ 83C8A94
+FiveIsland_Meadow_LandMons:: @ 83C88D0
     wild_mon PIDGEY, 44, 44
     wild_mon SENTRET, 10, 10
     wild_mon PIDGEOTTO, 48, 48
@@ -62338,44 +62472,44 @@ FiveIsland_Meadow_LandMons:: @ 83C8A94
     wild_mon SENTRET, 15, 15
     wild_mon MEOWTH, 41, 41
     wild_mon HOPPIP, 15, 15
-    wild_mon PSYDUCK, 41, 41
+    wild_mon SLOWPOKE, 41, 41
     wild_mon PIDGEOTTO, 50, 50
     wild_mon PERSIAN, 47, 47
     wild_mon PIDGEOTTO, 50, 50
     wild_mon PERSIAN, 50, 50
 
-FiveIsland_Meadow_LandMonsInfo:: @ 83C8AC4
+FiveIsland_Meadow_LandMonsInfo:: @ 83C8900
     .4byte 21 @ encounter rate
     .4byte FiveIsland_Meadow_LandMons
 
-FiveIsland_Meadow_WaterMons:: @ 83C8ACC
+FiveIsland_Meadow_WaterMons:: @ 83C8908
     wild_mon TENTACOOL, 5, 35
     wild_mon HOPPIP, 5, 15
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-FiveIsland_Meadow_WaterMonsInfo:: @ 83C8AE0
+FiveIsland_Meadow_WaterMonsInfo:: @ 83C891C
     .4byte 2 @ encounter rate
     .4byte FiveIsland_Meadow_WaterMons
 
-FiveIsland_Meadow_FishingMons:: @ 83C8AE8
+FiveIsland_Meadow_FishingMons:: @ 83C8924
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon QWILFISH, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon REMORAID, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-FiveIsland_Meadow_FishingMonsInfo:: @ 83C8B10
+FiveIsland_Meadow_FishingMonsInfo:: @ 83C894C
     .4byte 20 @ encounter rate
     .4byte FiveIsland_Meadow_FishingMons
 
-FiveIsland_MemorialPillar_LandMons:: @ 83C8B18
+FiveIsland_MemorialPillar_LandMons:: @ 83C8954
     wild_mon HOPPIP, 10, 10
     wild_mon HOPPIP, 12, 12
     wild_mon HOPPIP, 8, 8
@@ -62389,166 +62523,166 @@ FiveIsland_MemorialPillar_LandMons:: @ 83C8B18
     wild_mon HOPPIP, 8, 8
     wild_mon HOPPIP, 14, 14
 
-FiveIsland_MemorialPillar_LandMonsInfo:: @ 83C8B48
+FiveIsland_MemorialPillar_LandMonsInfo:: @ 83C8984
     .4byte 21 @ encounter rate
     .4byte FiveIsland_MemorialPillar_LandMons
 
-FiveIsland_MemorialPillar_WaterMons:: @ 83C8B50
+FiveIsland_MemorialPillar_WaterMons:: @ 83C898C
     wild_mon TENTACOOL, 5, 35
     wild_mon HOPPIP, 5, 15
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-FiveIsland_MemorialPillar_WaterMonsInfo:: @ 83C8B64
+FiveIsland_MemorialPillar_WaterMonsInfo:: @ 83C89A0
     .4byte 2 @ encounter rate
     .4byte FiveIsland_MemorialPillar_WaterMons
 
-FiveIsland_MemorialPillar_FishingMons:: @ 83C8B6C
+FiveIsland_MemorialPillar_FishingMons:: @ 83C89A8
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon QWILFISH, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon REMORAID, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-FiveIsland_MemorialPillar_FishingMonsInfo:: @ 83C8B94
+FiveIsland_MemorialPillar_FishingMonsInfo:: @ 83C89D0
     .4byte 20 @ encounter rate
     .4byte FiveIsland_MemorialPillar_FishingMons
 
-SixIsland_OutcastIsland_WaterMons:: @ 83C8B9C
+SixIsland_OutcastIsland_WaterMons:: @ 83C89D8
     wild_mon TENTACOOL, 5, 20
     wild_mon TENTACOOL, 20, 35
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-SixIsland_OutcastIsland_WaterMonsInfo:: @ 83C8BB0
+SixIsland_OutcastIsland_WaterMonsInfo:: @ 83C89EC
     .4byte 2 @ encounter rate
     .4byte SixIsland_OutcastIsland_WaterMons
 
-SixIsland_OutcastIsland_FishingMons:: @ 83C8BB8
+SixIsland_OutcastIsland_FishingMons:: @ 83C89F4
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon QWILFISH, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon REMORAID, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-SixIsland_OutcastIsland_FishingMonsInfo:: @ 83C8BE0
+SixIsland_OutcastIsland_FishingMonsInfo:: @ 83C8A1C
     .4byte 20 @ encounter rate
     .4byte SixIsland_OutcastIsland_FishingMons
 
-SixIsland_GreenPath_WaterMons:: @ 83C8BE8
+SixIsland_GreenPath_WaterMons:: @ 83C8A24
     wild_mon TENTACOOL, 5, 20
     wild_mon TENTACOOL, 20, 35
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-SixIsland_GreenPath_WaterMonsInfo:: @ 83C8BFC
+SixIsland_GreenPath_WaterMonsInfo:: @ 83C8A38
     .4byte 2 @ encounter rate
     .4byte SixIsland_GreenPath_WaterMons
 
-SixIsland_GreenPath_FishingMons:: @ 83C8C04
+SixIsland_GreenPath_FishingMons:: @ 83C8A40
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon QWILFISH, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon REMORAID, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-SixIsland_GreenPath_FishingMonsInfo:: @ 83C8C2C
+SixIsland_GreenPath_FishingMonsInfo:: @ 83C8A68
     .4byte 20 @ encounter rate
     .4byte SixIsland_GreenPath_FishingMons
 
-SixIsland_WaterPath_LandMons:: @ 83C8C34
+SixIsland_WaterPath_LandMons:: @ 83C8A70
     wild_mon SPEAROW, 44, 44
     wild_mon SENTRET, 10, 10
-    wild_mon ODDISH, 44, 44
+    wild_mon BELLSPROUT, 44, 44
     wild_mon FEAROW, 48, 48
     wild_mon SENTRET, 15, 15
     wild_mon MEOWTH, 41, 41
-    wild_mon GLOOM, 48, 48
-    wild_mon PSYDUCK, 41, 41
+    wild_mon WEEPINBELL, 48, 48
+    wild_mon SLOWPOKE, 41, 41
     wild_mon FEAROW, 50, 50
     wild_mon PERSIAN, 47, 47
     wild_mon FEAROW, 50, 50
     wild_mon PERSIAN, 50, 50
 
-SixIsland_WaterPath_LandMonsInfo:: @ 83C8C64
+SixIsland_WaterPath_LandMonsInfo:: @ 83C8AA0
     .4byte 21 @ encounter rate
     .4byte SixIsland_WaterPath_LandMons
 
-SixIsland_WaterPath_WaterMons:: @ 83C8C6C
+SixIsland_WaterPath_WaterMons:: @ 83C8AA8
     wild_mon TENTACOOL, 5, 20
     wild_mon TENTACOOL, 20, 35
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-SixIsland_WaterPath_WaterMonsInfo:: @ 83C8C80
+SixIsland_WaterPath_WaterMonsInfo:: @ 83C8ABC
     .4byte 2 @ encounter rate
     .4byte SixIsland_WaterPath_WaterMons
 
-SixIsland_WaterPath_FishingMons:: @ 83C8C88
+SixIsland_WaterPath_FishingMons:: @ 83C8AC4
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon QWILFISH, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon REMORAID, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-SixIsland_WaterPath_FishingMonsInfo:: @ 83C8CB0
+SixIsland_WaterPath_FishingMonsInfo:: @ 83C8AEC
     .4byte 20 @ encounter rate
     .4byte SixIsland_WaterPath_FishingMons
 
-SixIsland_RuinValley_LandMons:: @ 83C8CB8
+SixIsland_RuinValley_LandMons:: @ 83C8AF4
     wild_mon NATU, 15, 15
     wild_mon SPEAROW, 44, 44
     wild_mon YANMA, 18, 18
-    wild_mon WOOPER, 15, 15
+    wild_mon MARILL, 15, 15
     wild_mon FEAROW, 49, 49
     wild_mon MEOWTH, 43, 43
     wild_mon WOBBUFFET, 25, 25
-    wild_mon PSYDUCK, 41, 41
+    wild_mon SLOWPOKE, 41, 41
     wild_mon NATU, 20, 20
     wild_mon PERSIAN, 49, 49
     wild_mon NATU, 20, 20
     wild_mon PERSIAN, 52, 52
 
-SixIsland_RuinValley_LandMonsInfo:: @ 83C8CE8
+SixIsland_RuinValley_LandMonsInfo:: @ 83C8B24
     .4byte 21 @ encounter rate
     .4byte SixIsland_RuinValley_LandMons
 
-SixIsland_RuinValley_WaterMons:: @ 83C8CF0
-    wild_mon WOOPER, 5, 20
-    wild_mon WOOPER, 10, 20
-    wild_mon WOOPER, 15, 25
-    wild_mon WOOPER, 20, 25
-    wild_mon WOOPER, 20, 25
+SixIsland_RuinValley_WaterMons:: @ 83C8B2C
+    wild_mon MARILL, 5, 20
+    wild_mon MARILL, 10, 20
+    wild_mon MARILL, 15, 25
+    wild_mon MARILL, 20, 25
+    wild_mon MARILL, 20, 25
 
-SixIsland_RuinValley_WaterMonsInfo:: @ 83C8D04
+SixIsland_RuinValley_WaterMonsInfo:: @ 83C8B40
     .4byte 2 @ encounter rate
     .4byte SixIsland_RuinValley_WaterMons
 
-SixIsland_RuinValley_FishingMons:: @ 83C8D0C
+SixIsland_RuinValley_FishingMons:: @ 83C8B48
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon POLIWAG, 5, 15
@@ -62557,41 +62691,41 @@ SixIsland_RuinValley_FishingMons:: @ 83C8D0C
     wild_mon POLIWAG, 15, 25
     wild_mon POLIWHIRL, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-SixIsland_RuinValley_FishingMonsInfo:: @ 83C8D34
+SixIsland_RuinValley_FishingMonsInfo:: @ 83C8B70
     .4byte 20 @ encounter rate
     .4byte SixIsland_RuinValley_FishingMons
 
-SevenIsland_TrainerTower_WaterMons:: @ 83C8D3C
+SevenIsland_TrainerTower_WaterMons:: @ 83C8B78
     wild_mon TENTACOOL, 5, 20
     wild_mon TENTACOOL, 20, 35
-    wild_mon TENTACOOL, 35, 40
+    wild_mon MANTINE, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-SevenIsland_TrainerTower_WaterMonsInfo:: @ 83C8D50
+SevenIsland_TrainerTower_WaterMonsInfo:: @ 83C8B8C
     .4byte 2 @ encounter rate
     .4byte SevenIsland_TrainerTower_WaterMons
 
-SevenIsland_TrainerTower_FishingMons:: @ 83C8D58
+SevenIsland_TrainerTower_FishingMons:: @ 83C8B94
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon QWILFISH, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon REMORAID, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-SevenIsland_TrainerTower_FishingMonsInfo:: @ 83C8D80
+SevenIsland_TrainerTower_FishingMonsInfo:: @ 83C8BBC
     .4byte 20 @ encounter rate
     .4byte SevenIsland_TrainerTower_FishingMons
 
-SevenIsland_CanyonEntrance_LandMons:: @ 83C8D88
+SevenIsland_CanyonEntrance_LandMons:: @ 83C8BC4
     wild_mon SPEAROW, 44, 44
     wild_mon SENTRET, 10, 10
     wild_mon PHANPY, 10, 10
@@ -62599,17 +62733,17 @@ SevenIsland_CanyonEntrance_LandMons:: @ 83C8D88
     wild_mon SENTRET, 15, 15
     wild_mon MEOWTH, 41, 41
     wild_mon FEAROW, 50, 50
-    wild_mon PSYDUCK, 41, 41
+    wild_mon SLOWPOKE, 41, 41
     wild_mon PHANPY, 15, 15
     wild_mon PERSIAN, 47, 47
     wild_mon PHANPY, 15, 15
     wild_mon PERSIAN, 50, 50
 
-SevenIsland_CanyonEntrance_LandMonsInfo:: @ 83C8DB8
+SevenIsland_CanyonEntrance_LandMonsInfo:: @ 83C8BF4
     .4byte 21 @ encounter rate
     .4byte SevenIsland_CanyonEntrance_LandMons
 
-SevenIsland_SevaultCanyon_LandMons:: @ 83C8DC0
+SevenIsland_SevaultCanyon_LandMons:: @ 83C8BFC
     wild_mon GEODUDE, 46, 46
     wild_mon PHANPY, 15, 15
     wild_mon CUBONE, 46, 46
@@ -62617,55 +62751,55 @@ SevenIsland_SevaultCanyon_LandMons:: @ 83C8DC0
     wild_mon MAROWAK, 52, 52
     wild_mon MEOWTH, 43, 43
     wild_mon ONIX, 54, 54
-    wild_mon SKARMORY, 30, 30
+    wild_mon FEAROW, 50, 50
     wild_mon LARVITAR, 15, 15
     wild_mon PERSIAN, 49, 49
     wild_mon LARVITAR, 20, 20
     wild_mon PERSIAN, 52, 52
 
-SevenIsland_SevaultCanyon_LandMonsInfo:: @ 83C8DF0
+SevenIsland_SevaultCanyon_LandMonsInfo:: @ 83C8C2C
     .4byte 21 @ encounter rate
     .4byte SevenIsland_SevaultCanyon_LandMons
 
-SevenIsland_SevaultCanyon_RockSmashMons:: @ 83C8DF8
+SevenIsland_SevaultCanyon_RockSmashMons:: @ 83C8C34
     wild_mon GEODUDE, 25, 35
     wild_mon GRAVELER, 30, 45
     wild_mon GRAVELER, 35, 50
     wild_mon GEODUDE, 30, 40
     wild_mon GEODUDE, 30, 40
 
-SevenIsland_SevaultCanyon_RockSmashMonsInfo:: @ 83C8E0C
+SevenIsland_SevaultCanyon_RockSmashMonsInfo:: @ 83C8C48
     .4byte 25 @ encounter rate
     .4byte SevenIsland_SevaultCanyon_RockSmashMons
 
-SevenIsland_TanobyRuins_WaterMons:: @ 83C8E14
+SevenIsland_TanobyRuins_WaterMons:: @ 83C8C50
     wild_mon TENTACOOL, 5, 20
     wild_mon TENTACOOL, 20, 35
-    wild_mon TENTACOOL, 35, 40
+    wild_mon MANTINE, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-SevenIsland_TanobyRuins_WaterMonsInfo:: @ 83C8E28
+SevenIsland_TanobyRuins_WaterMonsInfo:: @ 83C8C64
     .4byte 2 @ encounter rate
     .4byte SevenIsland_TanobyRuins_WaterMons
 
-SevenIsland_TanobyRuins_FishingMons:: @ 83C8E30
+SevenIsland_TanobyRuins_FishingMons:: @ 83C8C6C
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon QWILFISH, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon REMORAID, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-SevenIsland_TanobyRuins_FishingMonsInfo:: @ 83C8E58
+SevenIsland_TanobyRuins_FishingMonsInfo:: @ 83C8C94
     .4byte 20 @ encounter rate
     .4byte SevenIsland_TanobyRuins_FishingMons
 
-Route1_LandMons:: @ 83C8E60
+Route1_LandMons:: @ 83C8C9C
     wild_mon PIDGEY, 3, 3
     wild_mon RATTATA, 3, 3
     wild_mon PIDGEY, 3, 3
@@ -62679,11 +62813,11 @@ Route1_LandMons:: @ 83C8E60
     wild_mon PIDGEY, 5, 5
     wild_mon RATTATA, 4, 4
 
-Route1_LandMonsInfo:: @ 83C8E90
+Route1_LandMonsInfo:: @ 83C8CCC
     .4byte 21 @ encounter rate
     .4byte Route1_LandMons
 
-Route2_LandMons:: @ 83C8E98
+Route2_LandMons:: @ 83C8CD4
     wild_mon RATTATA, 3, 3
     wild_mon PIDGEY, 3, 3
     wild_mon RATTATA, 4, 4
@@ -62697,121 +62831,121 @@ Route2_LandMons:: @ 83C8E98
     wild_mon CATERPIE, 5, 5
     wild_mon WEEDLE, 5, 5
 
-Route2_LandMonsInfo:: @ 83C8EC8
+Route2_LandMonsInfo:: @ 83C8D04
     .4byte 21 @ encounter rate
     .4byte Route2_LandMons
 
-Route3_LandMons:: @ 83C8ED0
+Route3_LandMons:: @ 83C8D0C
     wild_mon SPEAROW, 6, 6
     wild_mon PIDGEY, 6, 6
     wild_mon SPEAROW, 7, 7
     wild_mon MANKEY, 7, 7
-    wild_mon NIDORAN_M, 6, 6
+    wild_mon NIDORAN_F, 6, 6
     wild_mon PIDGEY, 7, 7
     wild_mon SPEAROW, 8, 8
     wild_mon JIGGLYPUFF, 3, 3
-    wild_mon NIDORAN_M, 7, 7
+    wild_mon NIDORAN_F, 7, 7
     wild_mon JIGGLYPUFF, 5, 5
-    wild_mon NIDORAN_F, 6, 6
+    wild_mon NIDORAN_M, 6, 6
     wild_mon JIGGLYPUFF, 7, 7
 
-Route3_LandMonsInfo:: @ 83C8F00
+Route3_LandMonsInfo:: @ 83C8D3C
     .4byte 21 @ encounter rate
     .4byte Route3_LandMons
 
-Route4_LandMons:: @ 83C8F08
+Route4_LandMons:: @ 83C8D44
     wild_mon SPEAROW, 10, 10
     wild_mon RATTATA, 10, 10
-    wild_mon EKANS, 6, 6
-    wild_mon EKANS, 10, 10
+    wild_mon SANDSHREW, 6, 6
+    wild_mon SANDSHREW, 10, 10
     wild_mon SPEAROW, 8, 8
     wild_mon RATTATA, 8, 8
     wild_mon SPEAROW, 12, 12
     wild_mon RATTATA, 12, 12
     wild_mon MANKEY, 10, 10
-    wild_mon EKANS, 8, 8
+    wild_mon SANDSHREW, 8, 8
     wild_mon MANKEY, 12, 12
-    wild_mon EKANS, 12, 12
+    wild_mon SANDSHREW, 12, 12
 
-Route4_LandMonsInfo:: @ 83C8F38
+Route4_LandMonsInfo:: @ 83C8D74
     .4byte 21 @ encounter rate
     .4byte Route4_LandMons
 
-Route4_WaterMons:: @ 83C8F40
+Route4_WaterMons:: @ 83C8D7C
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-Route4_WaterMonsInfo:: @ 83C8F54
+Route4_WaterMonsInfo:: @ 83C8D90
     .4byte 2 @ encounter rate
     .4byte Route4_WaterMons
 
-Route4_FishingMons:: @ 83C8F5C
+Route4_FishingMons:: @ 83C8D98
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon HORSEA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KRABBY, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Route4_FishingMonsInfo:: @ 83C8F84
+Route4_FishingMonsInfo:: @ 83C8DC0
     .4byte 20 @ encounter rate
     .4byte Route4_FishingMons
 
-Route5_LandMons:: @ 83C8F8C
+Route5_LandMons:: @ 83C8DC8
     wild_mon MEOWTH, 10, 10
     wild_mon PIDGEY, 13, 13
-    wild_mon ODDISH, 13, 13
+    wild_mon BELLSPROUT, 13, 13
     wild_mon MEOWTH, 12, 12
-    wild_mon ODDISH, 15, 15
+    wild_mon BELLSPROUT, 15, 15
     wild_mon PIDGEY, 15, 15
-    wild_mon ODDISH, 16, 16
+    wild_mon BELLSPROUT, 16, 16
     wild_mon PIDGEY, 16, 16
     wild_mon PIDGEY, 15, 15
     wild_mon MEOWTH, 14, 14
     wild_mon PIDGEY, 15, 15
     wild_mon MEOWTH, 16, 16
 
-Route5_LandMonsInfo:: @ 83C8FBC
+Route5_LandMonsInfo:: @ 83C8DF8
     .4byte 21 @ encounter rate
     .4byte Route5_LandMons
 
-Route6_LandMons:: @ 83C8FC4
+Route6_LandMons:: @ 83C8E00
     wild_mon MEOWTH, 10, 10
     wild_mon PIDGEY, 13, 13
-    wild_mon ODDISH, 13, 13
+    wild_mon BELLSPROUT, 13, 13
     wild_mon MEOWTH, 12, 12
-    wild_mon ODDISH, 15, 15
+    wild_mon BELLSPROUT, 15, 15
     wild_mon PIDGEY, 15, 15
-    wild_mon ODDISH, 16, 16
+    wild_mon BELLSPROUT, 16, 16
     wild_mon PIDGEY, 16, 16
     wild_mon PIDGEY, 15, 15
     wild_mon MEOWTH, 14, 14
     wild_mon PIDGEY, 15, 15
     wild_mon MEOWTH, 16, 16
 
-Route6_LandMonsInfo:: @ 83C8FF4
+Route6_LandMonsInfo:: @ 83C8E30
     .4byte 21 @ encounter rate
     .4byte Route6_LandMons
 
-Route6_WaterMons:: @ 83C8FFC
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 25, 30
-    wild_mon PSYDUCK, 30, 35
-    wild_mon PSYDUCK, 35, 40
+Route6_WaterMons:: @ 83C8E38
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 25, 30
+    wild_mon SLOWPOKE, 30, 35
+    wild_mon SLOWPOKE, 35, 40
 
-Route6_WaterMonsInfo:: @ 83C9010
+Route6_WaterMonsInfo:: @ 83C8E4C
     .4byte 2 @ encounter rate
     .4byte Route6_WaterMons
 
-Route6_FishingMons:: @ 83C9018
+Route6_FishingMons:: @ 83C8E54
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon POLIWAG, 5, 15
@@ -62820,284 +62954,284 @@ Route6_FishingMons:: @ 83C9018
     wild_mon POLIWAG, 15, 25
     wild_mon POLIWHIRL, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-Route6_FishingMonsInfo:: @ 83C9040
+Route6_FishingMonsInfo:: @ 83C8E7C
     .4byte 20 @ encounter rate
     .4byte Route6_FishingMons
 
-Route7_LandMons:: @ 83C9048
+Route7_LandMons:: @ 83C8E84
     wild_mon PIDGEY, 19, 19
     wild_mon MEOWTH, 17, 17
-    wild_mon ODDISH, 19, 19
+    wild_mon BELLSPROUT, 19, 19
     wild_mon MEOWTH, 18, 18
     wild_mon PIDGEY, 22, 22
-    wild_mon ODDISH, 22, 22
-    wild_mon GROWLITHE, 18, 18
-    wild_mon GROWLITHE, 20, 20
+    wild_mon BELLSPROUT, 22, 22
+    wild_mon VULPIX, 18, 18
+    wild_mon VULPIX, 20, 20
     wild_mon MEOWTH, 17, 17
     wild_mon MEOWTH, 19, 19
     wild_mon MEOWTH, 17, 17
     wild_mon MEOWTH, 20, 20
 
-Route7_LandMonsInfo:: @ 83C9078
+Route7_LandMonsInfo:: @ 83C8EB4
     .4byte 21 @ encounter rate
     .4byte Route7_LandMons
 
-Route8_LandMons:: @ 83C9080
+Route8_LandMons:: @ 83C8EBC
     wild_mon PIDGEY, 18, 18
     wild_mon MEOWTH, 18, 18
-    wild_mon GROWLITHE, 16, 16
+    wild_mon VULPIX, 16, 16
     wild_mon PIDGEY, 20, 20
     wild_mon MEOWTH, 20, 20
-    wild_mon EKANS, 17, 17
-    wild_mon GROWLITHE, 17, 17
-    wild_mon EKANS, 19, 19
-    wild_mon EKANS, 17, 17
-    wild_mon GROWLITHE, 15, 15
-    wild_mon EKANS, 17, 17
-    wild_mon GROWLITHE, 18, 18
+    wild_mon SANDSHREW, 17, 17
+    wild_mon VULPIX, 17, 17
+    wild_mon SANDSHREW, 19, 19
+    wild_mon SANDSHREW, 17, 17
+    wild_mon VULPIX, 15, 15
+    wild_mon SANDSHREW, 17, 17
+    wild_mon VULPIX, 18, 18
 
-Route8_LandMonsInfo:: @ 83C90B0
+Route8_LandMonsInfo:: @ 83C8EEC
     .4byte 21 @ encounter rate
     .4byte Route8_LandMons
 
-Route9_LandMons:: @ 83C90B8
+Route9_LandMons:: @ 83C8EF4
     wild_mon SPEAROW, 16, 16
     wild_mon RATTATA, 16, 16
-    wild_mon EKANS, 11, 11
-    wild_mon EKANS, 15, 15
+    wild_mon SANDSHREW, 11, 11
+    wild_mon SANDSHREW, 15, 15
     wild_mon SPEAROW, 13, 13
     wild_mon RATTATA, 14, 14
     wild_mon SPEAROW, 17, 17
     wild_mon RATTATA, 17, 17
     wild_mon RATTATA, 14, 14
-    wild_mon EKANS, 13, 13
+    wild_mon SANDSHREW, 13, 13
     wild_mon RATTATA, 14, 14
-    wild_mon EKANS, 17, 17
+    wild_mon SANDSHREW, 17, 17
 
-Route9_LandMonsInfo:: @ 83C90E8
+Route9_LandMonsInfo:: @ 83C8F24
     .4byte 21 @ encounter rate
     .4byte Route9_LandMons
 
-Route10_LandMons:: @ 83C90F0
+Route10_LandMons:: @ 83C8F2C
     wild_mon SPEAROW, 16, 16
     wild_mon VOLTORB, 16, 16
-    wild_mon EKANS, 11, 11
-    wild_mon EKANS, 15, 15
+    wild_mon SANDSHREW, 11, 11
+    wild_mon SANDSHREW, 15, 15
     wild_mon SPEAROW, 13, 13
     wild_mon VOLTORB, 14, 14
     wild_mon SPEAROW, 17, 17
     wild_mon VOLTORB, 17, 17
     wild_mon VOLTORB, 14, 14
-    wild_mon EKANS, 13, 13
+    wild_mon SANDSHREW, 13, 13
     wild_mon VOLTORB, 14, 14
-    wild_mon EKANS, 17, 17
+    wild_mon SANDSHREW, 17, 17
 
-Route10_LandMonsInfo:: @ 83C9120
+Route10_LandMonsInfo:: @ 83C8F5C
     .4byte 21 @ encounter rate
     .4byte Route10_LandMons
 
-Route10_WaterMons:: @ 83C9128
+Route10_WaterMons:: @ 83C8F64
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-Route10_WaterMonsInfo:: @ 83C913C
+Route10_WaterMonsInfo:: @ 83C8F78
     .4byte 2 @ encounter rate
     .4byte Route10_WaterMons
 
-Route10_FishingMons:: @ 83C9144
+Route10_FishingMons:: @ 83C8F80
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon HORSEA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KRABBY, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Route10_FishingMonsInfo:: @ 83C916C
+Route10_FishingMonsInfo:: @ 83C8FA8
     .4byte 20 @ encounter rate
     .4byte Route10_FishingMons
 
-Route11_LandMons:: @ 83C9174
-    wild_mon EKANS, 14, 14
+Route11_LandMons:: @ 83C8FB0
+    wild_mon SANDSHREW, 14, 14
     wild_mon SPEAROW, 15, 15
-    wild_mon EKANS, 12, 12
+    wild_mon SANDSHREW, 12, 12
     wild_mon SPEAROW, 13, 13
     wild_mon DROWZEE, 11, 11
     wild_mon DROWZEE, 13, 13
-    wild_mon EKANS, 15, 15
+    wild_mon SANDSHREW, 15, 15
     wild_mon SPEAROW, 17, 17
-    wild_mon EKANS, 12, 12
+    wild_mon SANDSHREW, 12, 12
     wild_mon DROWZEE, 15, 15
-    wild_mon EKANS, 12, 12
+    wild_mon SANDSHREW, 12, 12
     wild_mon DROWZEE, 15, 15
 
-Route11_LandMonsInfo:: @ 83C91A4
+Route11_LandMonsInfo:: @ 83C8FE0
     .4byte 21 @ encounter rate
     .4byte Route11_LandMons
 
-Route11_WaterMons:: @ 83C91AC
+Route11_WaterMons:: @ 83C8FE8
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-Route11_WaterMonsInfo:: @ 83C91C0
+Route11_WaterMonsInfo:: @ 83C8FFC
     .4byte 2 @ encounter rate
     .4byte Route11_WaterMons
 
-Route11_FishingMons:: @ 83C91C8
+Route11_FishingMons:: @ 83C9004
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon HORSEA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KRABBY, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Route11_FishingMonsInfo:: @ 83C91F0
+Route11_FishingMonsInfo:: @ 83C902C
     .4byte 20 @ encounter rate
     .4byte Route11_FishingMons
 
-Route12_LandMons:: @ 83C91F8
-    wild_mon ODDISH, 24, 24
+Route12_LandMons:: @ 83C9034
+    wild_mon BELLSPROUT, 24, 24
     wild_mon VENONAT, 24, 24
-    wild_mon ODDISH, 22, 22
+    wild_mon BELLSPROUT, 22, 22
     wild_mon PIDGEY, 23, 23
     wild_mon PIDGEY, 25, 25
     wild_mon VENONAT, 26, 26
-    wild_mon ODDISH, 26, 26
+    wild_mon BELLSPROUT, 26, 26
     wild_mon PIDGEY, 27, 27
     wild_mon PIDGEY, 23, 23
-    wild_mon GLOOM, 28, 28
+    wild_mon WEEPINBELL, 28, 28
     wild_mon PIDGEY, 23, 23
-    wild_mon GLOOM, 30, 30
+    wild_mon WEEPINBELL, 30, 30
 
-Route12_LandMonsInfo:: @ 83C9228
+Route12_LandMonsInfo:: @ 83C9064
     .4byte 21 @ encounter rate
     .4byte Route12_LandMons
 
-Route12_WaterMons:: @ 83C9230
+Route12_WaterMons:: @ 83C906C
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-Route12_WaterMonsInfo:: @ 83C9244
+Route12_WaterMonsInfo:: @ 83C9080
     .4byte 2 @ encounter rate
     .4byte Route12_WaterMons
 
-Route12_FishingMons:: @ 83C924C
+Route12_FishingMons:: @ 83C9088
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon HORSEA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KRABBY, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Route12_FishingMonsInfo:: @ 83C9274
+Route12_FishingMonsInfo:: @ 83C90B0
     .4byte 60 @ encounter rate
     .4byte Route12_FishingMons
 
-Route13_LandMons:: @ 83C927C
-    wild_mon ODDISH, 24, 24
+Route13_LandMons:: @ 83C90B8
+    wild_mon BELLSPROUT, 24, 24
     wild_mon VENONAT, 24, 24
-    wild_mon ODDISH, 22, 22
+    wild_mon BELLSPROUT, 22, 22
     wild_mon PIDGEY, 27, 27
     wild_mon PIDGEY, 25, 25
     wild_mon VENONAT, 26, 26
-    wild_mon ODDISH, 26, 26
+    wild_mon BELLSPROUT, 26, 26
     wild_mon DITTO, 25, 25
     wild_mon PIDGEOTTO, 29, 29
-    wild_mon GLOOM, 28, 28
+    wild_mon WEEPINBELL, 28, 28
     wild_mon PIDGEOTTO, 29, 29
-    wild_mon GLOOM, 30, 30
+    wild_mon WEEPINBELL, 30, 30
 
-Route13_LandMonsInfo:: @ 83C92AC
+Route13_LandMonsInfo:: @ 83C90E8
     .4byte 21 @ encounter rate
     .4byte Route13_LandMons
 
-Route13_WaterMons:: @ 83C92B4
+Route13_WaterMons:: @ 83C90F0
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-Route13_WaterMonsInfo:: @ 83C92C8
+Route13_WaterMonsInfo:: @ 83C9104
     .4byte 2 @ encounter rate
     .4byte Route13_WaterMons
 
-Route13_FishingMons:: @ 83C92D0
+Route13_FishingMons:: @ 83C910C
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon HORSEA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KRABBY, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Route13_FishingMonsInfo:: @ 83C92F8
+Route13_FishingMonsInfo:: @ 83C9134
     .4byte 20 @ encounter rate
     .4byte Route13_FishingMons
 
-Route14_LandMons:: @ 83C9300
-    wild_mon ODDISH, 24, 24
+Route14_LandMons:: @ 83C913C
+    wild_mon BELLSPROUT, 24, 24
     wild_mon VENONAT, 24, 24
-    wild_mon ODDISH, 22, 22
+    wild_mon BELLSPROUT, 22, 22
     wild_mon DITTO, 23, 23
     wild_mon PIDGEY, 27, 27
     wild_mon VENONAT, 26, 26
-    wild_mon ODDISH, 26, 26
-    wild_mon GLOOM, 30, 30
+    wild_mon BELLSPROUT, 26, 26
+    wild_mon WEEPINBELL, 30, 30
     wild_mon DITTO, 23, 23
     wild_mon PIDGEOTTO, 29, 29
     wild_mon DITTO, 23, 23
     wild_mon PIDGEOTTO, 29, 29
 
-Route14_LandMonsInfo:: @ 83C9330
+Route14_LandMonsInfo:: @ 83C916C
     .4byte 21 @ encounter rate
     .4byte Route14_LandMons
 
-Route15_LandMons:: @ 83C9338
-    wild_mon ODDISH, 24, 24
+Route15_LandMons:: @ 83C9174
+    wild_mon BELLSPROUT, 24, 24
     wild_mon VENONAT, 24, 24
-    wild_mon ODDISH, 22, 22
+    wild_mon BELLSPROUT, 22, 22
     wild_mon PIDGEY, 27, 27
     wild_mon PIDGEY, 25, 25
     wild_mon VENONAT, 26, 26
-    wild_mon ODDISH, 26, 26
+    wild_mon BELLSPROUT, 26, 26
     wild_mon DITTO, 25, 25
     wild_mon PIDGEOTTO, 29, 29
-    wild_mon GLOOM, 28, 28
+    wild_mon WEEPINBELL, 28, 28
     wild_mon PIDGEOTTO, 29, 29
-    wild_mon GLOOM, 30, 30
+    wild_mon WEEPINBELL, 30, 30
 
-Route15_LandMonsInfo:: @ 83C9368
+Route15_LandMonsInfo:: @ 83C91A4
     .4byte 21 @ encounter rate
     .4byte Route15_LandMons
 
-Route16_LandMons:: @ 83C9370
+Route16_LandMons:: @ 83C91AC
     wild_mon SPEAROW, 20, 20
     wild_mon DODUO, 18, 18
     wild_mon RATTATA, 18, 18
@@ -63111,11 +63245,11 @@ Route16_LandMons:: @ 83C9370
     wild_mon RATTATA, 18, 18
     wild_mon RATICATE, 25, 25
 
-Route16_LandMonsInfo:: @ 83C93A0
+Route16_LandMonsInfo:: @ 83C91DC
     .4byte 21 @ encounter rate
     .4byte Route16_LandMons
 
-Route17_LandMons:: @ 83C93A8
+Route17_LandMons:: @ 83C91E4
     wild_mon SPEAROW, 20, 20
     wild_mon DODUO, 24, 24
     wild_mon SPEAROW, 22, 22
@@ -63129,11 +63263,11 @@ Route17_LandMons:: @ 83C93A8
     wild_mon RATTATA, 22, 22
     wild_mon FEAROW, 27, 27
 
-Route17_LandMonsInfo:: @ 83C93D8
+Route17_LandMonsInfo:: @ 83C9214
     .4byte 21 @ encounter rate
     .4byte Route17_LandMons
 
-Route18_LandMons:: @ 83C93E0
+Route18_LandMons:: @ 83C921C
     wild_mon SPEAROW, 20, 20
     wild_mon DODUO, 24, 24
     wild_mon SPEAROW, 22, 22
@@ -63147,65 +63281,65 @@ Route18_LandMons:: @ 83C93E0
     wild_mon RATTATA, 22, 22
     wild_mon FEAROW, 29, 29
 
-Route18_LandMonsInfo:: @ 83C9410
+Route18_LandMonsInfo:: @ 83C924C
     .4byte 21 @ encounter rate
     .4byte Route18_LandMons
 
-Route19_WaterMons:: @ 83C9418
+Route19_WaterMons:: @ 83C9254
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-Route19_WaterMonsInfo:: @ 83C942C
+Route19_WaterMonsInfo:: @ 83C9268
     .4byte 2 @ encounter rate
     .4byte Route19_WaterMons
 
-Route19_FishingMons:: @ 83C9434
+Route19_FishingMons:: @ 83C9270
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Route19_FishingMonsInfo:: @ 83C945C
+Route19_FishingMonsInfo:: @ 83C9298
     .4byte 20 @ encounter rate
     .4byte Route19_FishingMons
 
-Route20_WaterMons:: @ 83C9464
+Route20_WaterMons:: @ 83C92A0
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-Route20_WaterMonsInfo:: @ 83C9478
+Route20_WaterMonsInfo:: @ 83C92B4
     .4byte 2 @ encounter rate
     .4byte Route20_WaterMons
 
-Route20_FishingMons:: @ 83C9480
+Route20_FishingMons:: @ 83C92BC
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Route20_FishingMonsInfo:: @ 83C94A8
+Route20_FishingMonsInfo:: @ 83C92E4
     .4byte 20 @ encounter rate
     .4byte Route20_FishingMons
 
-Route21_LandMons:: @ 83C94B0
+Route21_LandMons:: @ 83C92EC
     wild_mon TANGELA, 22, 22
     wild_mon TANGELA, 23, 23
     wild_mon TANGELA, 24, 24
@@ -63219,38 +63353,38 @@ Route21_LandMons:: @ 83C94B0
     wild_mon TANGELA, 17, 17
     wild_mon TANGELA, 28, 28
 
-Route21_LandMonsInfo:: @ 83C94E0
+Route21_LandMonsInfo:: @ 83C931C
     .4byte 14 @ encounter rate
     .4byte Route21_LandMons
 
-Route21_WaterMons:: @ 83C94E8
+Route21_WaterMons:: @ 83C9324
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-Route21_WaterMonsInfo:: @ 83C94FC
+Route21_WaterMonsInfo:: @ 83C9338
     .4byte 2 @ encounter rate
     .4byte Route21_WaterMons
 
-Route21_FishingMons:: @ 83C9504
+Route21_FishingMons:: @ 83C9340
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Route21_FishingMonsInfo:: @ 83C952C
+Route21_FishingMonsInfo:: @ 83C9368
     .4byte 20 @ encounter rate
     .4byte Route21_FishingMons
 
-Route21b_LandMons:: @ 83C9534
+Route21b_LandMons:: @ 83C9370
     wild_mon TANGELA, 22, 22
     wild_mon TANGELA, 23, 23
     wild_mon TANGELA, 24, 24
@@ -63264,38 +63398,38 @@ Route21b_LandMons:: @ 83C9534
     wild_mon TANGELA, 17, 17
     wild_mon TANGELA, 28, 28
 
-Route21b_LandMonsInfo:: @ 83C9564
+Route21b_LandMonsInfo:: @ 83C93A0
     .4byte 14 @ encounter rate
     .4byte Route21b_LandMons
 
-Route21b_WaterMons:: @ 83C956C
+Route21b_WaterMons:: @ 83C93A8
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-Route21b_WaterMonsInfo:: @ 83C9580
+Route21b_WaterMonsInfo:: @ 83C93BC
     .4byte 2 @ encounter rate
     .4byte Route21b_WaterMons
 
-Route21b_FishingMons:: @ 83C9588
+Route21b_FishingMons:: @ 83C93C4
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Route21b_FishingMonsInfo:: @ 83C95B0
+Route21b_FishingMonsInfo:: @ 83C93EC
     .4byte 20 @ encounter rate
     .4byte Route21b_FishingMons
 
-Route22_LandMons:: @ 83C95B8
+Route22_LandMons:: @ 83C93F4
     wild_mon RATTATA, 3, 3
     wild_mon MANKEY, 3, 3
     wild_mon RATTATA, 4, 4
@@ -63309,22 +63443,22 @@ Route22_LandMons:: @ 83C95B8
     wild_mon RATTATA, 5, 5
     wild_mon MANKEY, 5, 5
 
-Route22_LandMonsInfo:: @ 83C95E8
+Route22_LandMonsInfo:: @ 83C9424
     .4byte 21 @ encounter rate
     .4byte Route22_LandMons
 
-Route22_WaterMons:: @ 83C95F0
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 25, 30
-    wild_mon PSYDUCK, 30, 35
-    wild_mon PSYDUCK, 35, 40
+Route22_WaterMons:: @ 83C942C
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 25, 30
+    wild_mon SLOWPOKE, 30, 35
+    wild_mon SLOWPOKE, 35, 40
 
-Route22_WaterMonsInfo:: @ 83C9604
+Route22_WaterMonsInfo:: @ 83C9440
     .4byte 2 @ encounter rate
     .4byte Route22_WaterMons
 
-Route22_FishingMons:: @ 83C960C
+Route22_FishingMons:: @ 83C9448
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon POLIWAG, 5, 15
@@ -63333,43 +63467,43 @@ Route22_FishingMons:: @ 83C960C
     wild_mon POLIWAG, 15, 25
     wild_mon POLIWHIRL, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-Route22_FishingMonsInfo:: @ 83C9634
+Route22_FishingMonsInfo:: @ 83C9470
     .4byte 20 @ encounter rate
     .4byte Route22_FishingMons
 
-Route23_LandMons:: @ 83C963C
+Route23_LandMons:: @ 83C9478
     wild_mon MANKEY, 32, 32
     wild_mon FEAROW, 40, 40
     wild_mon MANKEY, 34, 34
     wild_mon SPEAROW, 34, 34
-    wild_mon EKANS, 32, 32
-    wild_mon EKANS, 34, 34
+    wild_mon SANDSHREW, 32, 32
+    wild_mon SANDSHREW, 34, 34
     wild_mon PRIMEAPE, 42, 42
-    wild_mon ARBOK, 44, 44
+    wild_mon SANDSLASH, 44, 44
     wild_mon SPEAROW, 32, 32
     wild_mon FEAROW, 42, 42
     wild_mon SPEAROW, 32, 32
     wild_mon FEAROW, 44, 44
 
-Route23_LandMonsInfo:: @ 83C966C
+Route23_LandMonsInfo:: @ 83C94A8
     .4byte 21 @ encounter rate
     .4byte Route23_LandMons
 
-Route23_WaterMons:: @ 83C9674
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 25, 30
-    wild_mon PSYDUCK, 30, 35
-    wild_mon PSYDUCK, 35, 40
+Route23_WaterMons:: @ 83C94B0
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 25, 30
+    wild_mon SLOWPOKE, 30, 35
+    wild_mon SLOWPOKE, 35, 40
 
-Route23_WaterMonsInfo:: @ 83C9688
+Route23_WaterMonsInfo:: @ 83C94C4
     .4byte 2 @ encounter rate
     .4byte Route23_WaterMons
 
-Route23_FishingMons:: @ 83C9690
+Route23_FishingMons:: @ 83C94CC
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon POLIWAG, 5, 15
@@ -63378,88 +63512,88 @@ Route23_FishingMons:: @ 83C9690
     wild_mon POLIWAG, 15, 25
     wild_mon POLIWHIRL, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-Route23_FishingMonsInfo:: @ 83C96B8
+Route23_FishingMonsInfo:: @ 83C94F4
     .4byte 20 @ encounter rate
     .4byte Route23_FishingMons
 
-Route24_LandMons:: @ 83C96C0
+Route24_LandMons:: @ 83C94FC
     wild_mon WEEDLE, 7, 7
     wild_mon CATERPIE, 7, 7
     wild_mon PIDGEY, 11, 11
-    wild_mon ODDISH, 12, 12
-    wild_mon ODDISH, 13, 13
+    wild_mon BELLSPROUT, 12, 12
+    wild_mon BELLSPROUT, 13, 13
     wild_mon ABRA, 10, 10
     wild_mon PIDGEY, 13, 13
-    wild_mon ODDISH, 14, 14
-    wild_mon KAKUNA, 8, 8
-    wild_mon ABRA, 8, 8
+    wild_mon BELLSPROUT, 14, 14
     wild_mon METAPOD, 8, 8
+    wild_mon ABRA, 8, 8
+    wild_mon KAKUNA, 8, 8
     wild_mon ABRA, 12, 12
 
-Route24_LandMonsInfo:: @ 83C96F0
+Route24_LandMonsInfo:: @ 83C952C
     .4byte 21 @ encounter rate
     .4byte Route24_LandMons
 
-Route24_WaterMons:: @ 83C96F8
+Route24_WaterMons:: @ 83C9534
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-Route24_WaterMonsInfo:: @ 83C970C
+Route24_WaterMonsInfo:: @ 83C9548
     .4byte 2 @ encounter rate
     .4byte Route24_WaterMons
 
-Route24_FishingMons:: @ 83C9714
+Route24_FishingMons:: @ 83C9550
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon HORSEA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KRABBY, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-Route24_FishingMonsInfo:: @ 83C973C
+Route24_FishingMonsInfo:: @ 83C9578
     .4byte 20 @ encounter rate
     .4byte Route24_FishingMons
 
-Route25_LandMons:: @ 83C9744
+Route25_LandMons:: @ 83C9580
     wild_mon WEEDLE, 8, 8
     wild_mon CATERPIE, 8, 8
     wild_mon PIDGEY, 13, 13
-    wild_mon ODDISH, 14, 14
-    wild_mon ODDISH, 13, 13
+    wild_mon BELLSPROUT, 14, 14
+    wild_mon BELLSPROUT, 13, 13
     wild_mon ABRA, 11, 11
     wild_mon PIDGEY, 11, 11
-    wild_mon ODDISH, 12, 12
-    wild_mon KAKUNA, 9, 9
-    wild_mon ABRA, 9, 9
+    wild_mon BELLSPROUT, 12, 12
     wild_mon METAPOD, 9, 9
+    wild_mon ABRA, 9, 9
+    wild_mon KAKUNA, 9, 9
     wild_mon ABRA, 13, 13
 
-Route25_LandMonsInfo:: @ 83C9774
+Route25_LandMonsInfo:: @ 83C95B0
     .4byte 21 @ encounter rate
     .4byte Route25_LandMons
 
-Route25_WaterMons:: @ 83C977C
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 25, 30
-    wild_mon PSYDUCK, 30, 35
-    wild_mon PSYDUCK, 35, 40
+Route25_WaterMons:: @ 83C95B8
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 25, 30
+    wild_mon SLOWPOKE, 30, 35
+    wild_mon SLOWPOKE, 35, 40
 
-Route25_WaterMonsInfo:: @ 83C9790
+Route25_WaterMonsInfo:: @ 83C95CC
     .4byte 2 @ encounter rate
     .4byte Route25_WaterMons
 
-Route25_FishingMons:: @ 83C9798
+Route25_FishingMons:: @ 83C95D4
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon POLIWAG, 5, 15
@@ -63468,52 +63602,52 @@ Route25_FishingMons:: @ 83C9798
     wild_mon POLIWAG, 15, 25
     wild_mon POLIWHIRL, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-Route25_FishingMonsInfo:: @ 83C97C0
+Route25_FishingMonsInfo:: @ 83C95FC
     .4byte 20 @ encounter rate
     .4byte Route25_FishingMons
 
-PalletTown_WaterMons:: @ 83C97C8
+PalletTown_WaterMons:: @ 83C9604
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-PalletTown_WaterMonsInfo:: @ 83C97DC
+PalletTown_WaterMonsInfo:: @ 83C9618
     .4byte 1 @ encounter rate
     .4byte PalletTown_WaterMons
 
-PalletTown_FishingMons:: @ 83C97E4
+PalletTown_FishingMons:: @ 83C9620
     wild_mon MAGIKARP, 5, 10
     wild_mon MAGIKARP, 5, 10
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon SHELLDER, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon STARYU, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-PalletTown_FishingMonsInfo:: @ 83C980C
+PalletTown_FishingMonsInfo:: @ 83C9648
     .4byte 10 @ encounter rate
     .4byte PalletTown_FishingMons
 
-ViridianCity_WaterMons:: @ 83C9814
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 25, 30
-    wild_mon PSYDUCK, 30, 35
-    wild_mon PSYDUCK, 35, 40
+ViridianCity_WaterMons:: @ 83C9650
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 25, 30
+    wild_mon SLOWPOKE, 30, 35
+    wild_mon SLOWPOKE, 35, 40
 
-ViridianCity_WaterMonsInfo:: @ 83C9828
+ViridianCity_WaterMonsInfo:: @ 83C9664
     .4byte 1 @ encounter rate
     .4byte ViridianCity_WaterMons
 
-ViridianCity_FishingMons:: @ 83C9830
+ViridianCity_FishingMons:: @ 83C966C
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon POLIWAG, 5, 15
@@ -63522,79 +63656,79 @@ ViridianCity_FishingMons:: @ 83C9830
     wild_mon POLIWAG, 15, 25
     wild_mon POLIWHIRL, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-ViridianCity_FishingMonsInfo:: @ 83C9858
+ViridianCity_FishingMonsInfo:: @ 83C9694
     .4byte 10 @ encounter rate
     .4byte ViridianCity_FishingMons
 
-CeruleanCity_WaterMons:: @ 83C9860
+CeruleanCity_WaterMons:: @ 83C969C
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-CeruleanCity_WaterMonsInfo:: @ 83C9874
+CeruleanCity_WaterMonsInfo:: @ 83C96B0
     .4byte 1 @ encounter rate
     .4byte CeruleanCity_WaterMons
 
-CeruleanCity_FishingMons:: @ 83C987C
+CeruleanCity_FishingMons:: @ 83C96B8
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon HORSEA, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon KRABBY, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon HORSEA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KRABBY, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-CeruleanCity_FishingMonsInfo:: @ 83C98A4
+CeruleanCity_FishingMonsInfo:: @ 83C96E0
     .4byte 10 @ encounter rate
     .4byte CeruleanCity_FishingMons
 
-VermillionCity_WaterMons:: @ 83C98AC
+VermillionCity_WaterMons:: @ 83C96E8
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-VermillionCity_WaterMonsInfo:: @ 83C98C0
+VermillionCity_WaterMonsInfo:: @ 83C96FC
     .4byte 1 @ encounter rate
     .4byte VermillionCity_WaterMons
 
-VermillionCity_FishingMons:: @ 83C98C8
+VermillionCity_FishingMons:: @ 83C9704
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon SHELLDER, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon STARYU, 15, 25
     wild_mon GYARADOS, 15, 25
     wild_mon HORSEA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-VermillionCity_FishingMonsInfo:: @ 83C98F0
+VermillionCity_FishingMonsInfo:: @ 83C972C
     .4byte 10 @ encounter rate
     .4byte VermillionCity_FishingMons
 
-CeladonCity_WaterMons:: @ 83C98F8
-    wild_mon PSYDUCK, 5, 10
-    wild_mon PSYDUCK, 10, 20
-    wild_mon PSYDUCK, 20, 30
-    wild_mon PSYDUCK, 30, 40
+CeladonCity_WaterMons:: @ 83C9734
+    wild_mon SLOWPOKE, 5, 10
+    wild_mon SLOWPOKE, 10, 20
+    wild_mon SLOWPOKE, 20, 30
+    wild_mon SLOWPOKE, 30, 40
     wild_mon KOFFING, 30, 40
 
-CeladonCity_WaterMonsInfo:: @ 83C990C
+CeladonCity_WaterMonsInfo:: @ 83C9748
     .4byte 1 @ encounter rate
     .4byte CeladonCity_WaterMons
 
-CeladonCity_FishingMons:: @ 83C9914
+CeladonCity_FishingMons:: @ 83C9750
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 15
@@ -63606,22 +63740,22 @@ CeladonCity_FishingMons:: @ 83C9914
     wild_mon MAGIKARP, 25, 35
     wild_mon GRIMER, 30, 40
 
-CeladonCity_FishingMonsInfo:: @ 83C993C
+CeladonCity_FishingMonsInfo:: @ 83C9778
     .4byte 10 @ encounter rate
     .4byte CeladonCity_FishingMons
 
-FuchsiaCity_WaterMons:: @ 83C9944
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 20, 25
-    wild_mon PSYDUCK, 25, 30
-    wild_mon PSYDUCK, 30, 35
-    wild_mon PSYDUCK, 35, 40
+FuchsiaCity_WaterMons:: @ 83C9780
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 20, 25
+    wild_mon SLOWPOKE, 25, 30
+    wild_mon SLOWPOKE, 30, 35
+    wild_mon SLOWPOKE, 35, 40
 
-FuchsiaCity_WaterMonsInfo:: @ 83C9958
+FuchsiaCity_WaterMonsInfo:: @ 83C9794
     .4byte 1 @ encounter rate
     .4byte FuchsiaCity_WaterMons
 
-FuchsiaCity_FishingMons:: @ 83C9960
+FuchsiaCity_FishingMons:: @ 83C979C
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon GOLDEEN, 5, 15
@@ -63630,79 +63764,79 @@ FuchsiaCity_FishingMons:: @ 83C9960
     wild_mon GOLDEEN, 15, 25
     wild_mon SEAKING, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-FuchsiaCity_FishingMonsInfo:: @ 83C9988
+FuchsiaCity_FishingMonsInfo:: @ 83C97C4
     .4byte 10 @ encounter rate
     .4byte FuchsiaCity_FishingMons
 
-CinnabarIsland_WaterMons:: @ 83C9990
+CinnabarIsland_WaterMons:: @ 83C97CC
     wild_mon TENTACOOL, 5, 10
     wild_mon TENTACOOL, 10, 20
     wild_mon TENTACOOL, 20, 30
     wild_mon TENTACOOL, 30, 35
     wild_mon TENTACOOL, 35, 40
 
-CinnabarIsland_WaterMonsInfo:: @ 83C99A4
+CinnabarIsland_WaterMonsInfo:: @ 83C97E0
     .4byte 1 @ encounter rate
     .4byte CinnabarIsland_WaterMons
 
-CinnabarIsland_FishingMons:: @ 83C99AC
+CinnabarIsland_FishingMons:: @ 83C97E8
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
-    wild_mon MAGIKARP, 5, 15
     wild_mon KRABBY, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon SHELLDER, 15, 25
+    wild_mon MAGIKARP, 5, 15
+    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon STARYU, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWBRO, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-CinnabarIsland_FishingMonsInfo:: @ 83C99D4
+CinnabarIsland_FishingMonsInfo:: @ 83C9810
     .4byte 10 @ encounter rate
     .4byte CinnabarIsland_FishingMons
 
-OneIsland_WaterMons:: @ 83C99DC
+OneIsland_WaterMons:: @ 83C9818
     wild_mon TENTACOOL, 5, 20
     wild_mon TENTACOOL, 20, 35
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-OneIsland_WaterMonsInfo:: @ 83C99F0
+OneIsland_WaterMonsInfo:: @ 83C982C
     .4byte 1 @ encounter rate
     .4byte OneIsland_WaterMons
 
-OneIsland_FishingMons:: @ 83C99F8
+OneIsland_FishingMons:: @ 83C9834
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon SHELLDER, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon STARYU, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-OneIsland_FishingMonsInfo:: @ 83C9A20
+OneIsland_FishingMonsInfo:: @ 83C985C
     .4byte 10 @ encounter rate
     .4byte OneIsland_FishingMons
 
-FourIsland_WaterMons:: @ 83C9A28
-    wild_mon WOOPER, 5, 15
-    wild_mon PSYDUCK, 5, 35
-    wild_mon WOOPER, 15, 25
-    wild_mon WOOPER, 15, 25
-    wild_mon WOOPER, 15, 25
+FourIsland_WaterMons:: @ 83C9864
+    wild_mon MARILL, 5, 15
+    wild_mon SLOWPOKE, 5, 35
+    wild_mon MARILL, 15, 25
+    wild_mon MARILL, 15, 25
+    wild_mon MARILL, 15, 25
 
-FourIsland_WaterMonsInfo:: @ 83C9A3C
+FourIsland_WaterMonsInfo:: @ 83C9878
     .4byte 2 @ encounter rate
     .4byte FourIsland_WaterMons
 
-FourIsland_FishingMons:: @ 83C9A44
+FourIsland_FishingMons:: @ 83C9880
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
     wild_mon POLIWAG, 5, 15
@@ -63711,41 +63845,41 @@ FourIsland_FishingMons:: @ 83C9A44
     wild_mon POLIWAG, 15, 25
     wild_mon POLIWHIRL, 20, 30
     wild_mon GYARADOS, 15, 25
-    wild_mon PSYDUCK, 15, 25
-    wild_mon PSYDUCK, 25, 35
+    wild_mon SLOWPOKE, 15, 25
+    wild_mon SLOWPOKE, 25, 35
 
-FourIsland_FishingMonsInfo:: @ 83C9A6C
+FourIsland_FishingMonsInfo:: @ 83C98A8
     .4byte 20 @ encounter rate
     .4byte FourIsland_FishingMons
 
-FiveIsland_WaterMons:: @ 83C9A74
+FiveIsland_WaterMons:: @ 83C98B0
     wild_mon TENTACOOL, 5, 35
     wild_mon HOPPIP, 5, 15
     wild_mon TENTACOOL, 35, 40
     wild_mon TENTACRUEL, 35, 40
     wild_mon TENTACRUEL, 35, 40
 
-FiveIsland_WaterMonsInfo:: @ 83C9A88
+FiveIsland_WaterMonsInfo:: @ 83C98C4
     .4byte 1 @ encounter rate
     .4byte FiveIsland_WaterMons
 
-FiveIsland_FishingMons:: @ 83C9A90
+FiveIsland_FishingMons:: @ 83C98CC
     wild_mon MAGIKARP, 5, 5
     wild_mon MAGIKARP, 5, 5
-    wild_mon HORSEA, 5, 15
+    wild_mon KRABBY, 5, 15
     wild_mon MAGIKARP, 5, 15
-    wild_mon HORSEA, 5, 15
-    wild_mon HORSEA, 15, 25
-    wild_mon SHELLDER, 15, 25
+    wild_mon KRABBY, 5, 15
+    wild_mon KRABBY, 15, 25
+    wild_mon STARYU, 15, 25
     wild_mon GYARADOS, 15, 25
-    wild_mon SEADRA, 25, 35
-    wild_mon PSYDUCK, 25, 35
+    wild_mon KINGLER, 25, 35
+    wild_mon SLOWPOKE, 25, 35
 
-FiveIsland_FishingMonsInfo:: @ 83C9AB8
+FiveIsland_FishingMonsInfo:: @ 83C98F4
     .4byte 10 @ encounter rate
     .4byte FiveIsland_FishingMons
 
-Map1_122a_LandMons:: @ 83C9AC0
+Map1_122a_LandMons:: @ 83C98FC
     wild_mon ZUBAT, 10, 10
     wild_mon ZUBAT, 12, 12
     wild_mon ZUBAT, 8, 8
@@ -63759,11 +63893,11 @@ Map1_122a_LandMons:: @ 83C9AC0
     wild_mon ZUBAT, 8, 8
     wild_mon ZUBAT, 14, 14
 
-Map1_122a_LandMonsInfo:: @ 83C9AF0
-    .4byte 5 @ encounter rate
+Map1_122a_LandMonsInfo:: @ 83C992C
+    .4byte 7 @ encounter rate
     .4byte Map1_122a_LandMons
 
-Map1_122b_LandMons:: @ 83C9AF8
+Map1_122b_LandMons:: @ 83C9934
     wild_mon MAREEP, 7, 7
     wild_mon MAREEP, 9, 9
     wild_mon MAREEP, 5, 5
@@ -63777,11 +63911,11 @@ Map1_122b_LandMons:: @ 83C9AF8
     wild_mon MAREEP, 5, 5
     wild_mon MAREEP, 11, 11
 
-Map1_122b_LandMonsInfo:: @ 83C9B28
-    .4byte 5 @ encounter rate
+Map1_122b_LandMonsInfo:: @ 83C9964
+    .4byte 7 @ encounter rate
     .4byte Map1_122b_LandMons
 
-Map1_122c_LandMons:: @ 83C9B30
+Map1_122c_LandMons:: @ 83C996C
     wild_mon PINECO, 23, 23
     wild_mon PINECO, 25, 25
     wild_mon PINECO, 22, 22
@@ -63795,11 +63929,11 @@ Map1_122c_LandMons:: @ 83C9B30
     wild_mon PINECO, 21, 21
     wild_mon PINECO, 27, 27
 
-Map1_122c_LandMonsInfo:: @ 83C9B60
-    .4byte 5 @ encounter rate
+Map1_122c_LandMonsInfo:: @ 83C999C
+    .4byte 7 @ encounter rate
     .4byte Map1_122c_LandMons
 
-Map1_122d_LandMons:: @ 83C9B68
+Map1_122d_LandMons:: @ 83C99A4
     wild_mon HOUNDOUR, 16, 16
     wild_mon HOUNDOUR, 18, 18
     wild_mon HOUNDOUR, 14, 14
@@ -63813,11 +63947,11 @@ Map1_122d_LandMons:: @ 83C9B68
     wild_mon HOUNDOUR, 14, 14
     wild_mon HOUNDOUR, 20, 20
 
-Map1_122d_LandMonsInfo:: @ 83C9B98
-    .4byte 5 @ encounter rate
+Map1_122d_LandMonsInfo:: @ 83C99D4
+    .4byte 7 @ encounter rate
     .4byte Map1_122d_LandMons
 
-Map1_122e_LandMons:: @ 83C9BA0
+Map1_122e_LandMons:: @ 83C99DC
     wild_mon TEDDIURSA, 22, 22
     wild_mon TEDDIURSA, 24, 24
     wild_mon TEDDIURSA, 20, 20
@@ -63831,11 +63965,11 @@ Map1_122e_LandMons:: @ 83C9BA0
     wild_mon TEDDIURSA, 20, 20
     wild_mon TEDDIURSA, 26, 26
 
-Map1_122e_LandMonsInfo:: @ 83C9BD0
-    .4byte 5 @ encounter rate
+Map1_122e_LandMonsInfo:: @ 83C9A0C
+    .4byte 7 @ encounter rate
     .4byte Map1_122e_LandMons
 
-Map1_122f_LandMons:: @ 83C9BD8
+Map1_122f_LandMons:: @ 83C9A14
     wild_mon AIPOM, 22, 22
     wild_mon AIPOM, 24, 24
     wild_mon AIPOM, 20, 20
@@ -63849,11 +63983,11 @@ Map1_122f_LandMons:: @ 83C9BD8
     wild_mon AIPOM, 20, 20
     wild_mon AIPOM, 26, 26
 
-Map1_122f_LandMonsInfo:: @ 83C9C08
-    .4byte 5 @ encounter rate
+Map1_122f_LandMonsInfo:: @ 83C9A44
+    .4byte 7 @ encounter rate
     .4byte Map1_122f_LandMons
 
-Map1_122g_LandMons:: @ 83C9C10
+Map1_122g_LandMons:: @ 83C9A4C
     wild_mon SHUCKLE, 22, 22
     wild_mon SHUCKLE, 24, 24
     wild_mon SHUCKLE, 20, 20
@@ -63867,11 +64001,11 @@ Map1_122g_LandMons:: @ 83C9C10
     wild_mon SHUCKLE, 20, 20
     wild_mon SHUCKLE, 26, 26
 
-Map1_122g_LandMonsInfo:: @ 83C9C40
-    .4byte 5 @ encounter rate
+Map1_122g_LandMonsInfo:: @ 83C9A7C
+    .4byte 7 @ encounter rate
     .4byte Map1_122g_LandMons
 
-Map1_122h_LandMons:: @ 83C9C48
+Map1_122h_LandMons:: @ 83C9A84
     wild_mon STANTLER, 22, 22
     wild_mon STANTLER, 24, 24
     wild_mon STANTLER, 20, 20
@@ -63885,11 +64019,11 @@ Map1_122h_LandMons:: @ 83C9C48
     wild_mon STANTLER, 20, 20
     wild_mon STANTLER, 26, 26
 
-Map1_122h_LandMonsInfo:: @ 83C9C78
-    .4byte 5 @ encounter rate
+Map1_122h_LandMonsInfo:: @ 83C9AB4
+    .4byte 7 @ encounter rate
     .4byte Map1_122h_LandMons
 
-Map1_122i_LandMons:: @ 83C9C80
+Map1_122i_LandMons:: @ 83C9ABC
     wild_mon SMEARGLE, 22, 22
     wild_mon SMEARGLE, 24, 24
     wild_mon SMEARGLE, 20, 20
@@ -63903,11 +64037,11 @@ Map1_122i_LandMons:: @ 83C9C80
     wild_mon SMEARGLE, 20, 20
     wild_mon SMEARGLE, 26, 26
 
-Map1_122i_LandMonsInfo:: @ 83C9CB0
-    .4byte 5 @ encounter rate
+Map1_122i_LandMonsInfo:: @ 83C9AEC
+    .4byte 7 @ encounter rate
     .4byte Map1_122i_LandMons
 
-kWildMonHeaders:: @ 83C9CB8
+kWildMonHeaders:: @ 83C9AF4
     map Map2_27
     .2byte 0 @ padding
     .4byte Map2_27_LandMonsInfo
@@ -74887,11 +75021,20 @@ Menu_83E01B8:: @ 83E01B8
     .4byte Text_8417C4B, 0
 
 Menu_83E01C8:: @ 83E01C8
+Menu_83E01C8: @ 83E01C8
+.ifeq (VERSION - VERSION_FIRERED)
     .4byte Text_8417C55, 0
     .4byte Text_8417C6A, 0
     .4byte Text_8417C83, 0
     .4byte Text_8417C9D, 0
     .4byte Text_8417CB7, 0
+.else
+    .4byte Text_8417CD1, 0
+    .4byte Text_8417CE6, 0
+    .4byte Text_8417CFF, 0
+    .4byte Text_8417D18, 0
+    .4byte Text_8417D32, 0
+.endif
     .4byte Text_8417D4C, 0
 
 Menu_83E01F8:: @ 83E01F8

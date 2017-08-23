@@ -16,7 +16,11 @@
 
     .section .rodata
 Data:: @ 81E9F10
-        .incbin "baserom.gba", 0x1E9F10, 0x1
+.ifeq (VERSION - VERSION_FIRERED)
+    .byte 4
+.else
+    .byte 5
+.endif
 
 unk_81E9F11:: @ 81E9F11
     .incbin "baserom.gba", 0x1E9F11, 0x3
@@ -32,7 +36,11 @@ ascii_81E9F14:: @ 81E9F14
     .incbin "baserom.gba", 0x1E9F25, 0x3
 
     .include "data/data1.inc"
+.ifeq (VERSION - VERSION_FIRERED)
     .include "data/data.inc"
+.else
+    .include "data/pokedex-lg.inc"
+.endif
     .include "data/data3.inc"
 
     .section .rodata2, "aw", %progbits

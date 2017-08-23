@@ -1,3 +1,6 @@
+	.include "constants/gba_constants.inc"
+	.include "constants/misc_constants.inc"
+
     .section .gfx_data, "aw", %progbits
 
 GfxData::
@@ -11840,7 +11843,11 @@ kMonFootprint_Jirachi:: @ 0x8E3956C
 
     .align 2
 kMonFrontPic_Deoxys:: @ 0x8E3958C (LZ)
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "graphics/pokemon/386-deoxys/front.4bpp.lz"
+.else
+    .incbin "graphics-lg/pokemon/386-deoxys/front.4bpp.lz"
+.endif
 
     .align 2
 kMonPalette_Deoxys:: @ 0x8E39D48 (LZ)
@@ -11848,7 +11855,11 @@ kMonPalette_Deoxys:: @ 0x8E39D48 (LZ)
 
     .align 2
 kMonBackPic_Deoxys:: @ 0x8E39D70 (LZ)
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "graphics/pokemon/386-deoxys/back.4bpp.lz"
+.else
+    .incbin "graphics-lg/pokemon/386-deoxys/back.4bpp.lz"
+.endif
 
     .align 2
 kMonShinyPalette_Deoxys:: @ 0x8E3A360 (LZ)
@@ -11860,7 +11871,11 @@ kMonIcon_Deoxys:: @ 0x8E3A388
 
     .align 2
 kUnkGfx_8E3A788:: @ 0x8E3A788
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "graphics/unknown/unknown_8e3a788.4bpp"
+.else
+    .incbin "graphics-lg/pokemon/386-deoxys/icon.4bpp"
+.endif
 
     .align 2
 kMonFootprint_Deoxys:: @ 0x8E3AB88
@@ -16512,31 +16527,59 @@ kUnkBin_8EAB30C:: @ 0x8EAB30C (LZ)
 
     .align 2
 kUnkPal_8EAB6C4:: @ 0x8EAB6C4
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "graphics/unknown/unknown_8eab6c4.gbapal"
+.else
+    .incbin "graphics-lg/unknown/unknown_8eab6c4.gbapal"
+.endif
 
     .align 2
 kUnkGfx_8EAB8C4:: @ 0x8EAB8C4 (LZ)
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "graphics/unknown/unknown_8eab8c4.8bpp.lz"
+.else
+    .incbin "graphics-lg/unknown/unknown_8eab8c4.8bpp.lz"
+.endif
 
     .align 2
 kUnkBin_8EAD390:: @ 0x8EAD390 (LZ)
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "graphics/unknown/unknown_8ead390.bin.lz"
+.else
+    .incbin "graphics-lg/unknown/unknown_8ead390.bin.lz"
+.endif
 
     .align 2
 kUnkPal_8EAD5E8:: @ 0x8EAD5E8
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "graphics/unknown/unknown_8ead5e8.gbapal"
+.else
+    .incbin "graphics-lg/unknown/unknown_8ead5e8.gbapal"
+.endif
 
     .align 2
 kUnkGfx_8EAD608:: @ 0x8EAD608 (LZ)
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "graphics/unknown/unknown_8ead608.4bpp.lz"
+.else
+    .incbin "graphics-lg/unknown/unknown_8ead608.4bpp.lz"
+.endif
 
     .align 2
 kUnkBin_8EADEE4:: @ 0x8EADEE4 (LZ)
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "graphics/unknown/unknown_8eadee4.bin.lz"
+.else
+    .incbin "graphics-lg/unknown/unknown_8eadee4.bin.lz"
+.endif
 
     .align 2
 kUnkPal_8EAE094:: @ 0x8EAE094
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "graphics/unknown/unknown_8eae094.gbapal"
+.else
+    .incbin "graphics-lg/unknown/unknown_8eae094.gbapal"
+.endif
 
     .align 2
 kUnkGfx_8EAE0B4:: @ 0x8EAE0B4 (LZ)
@@ -16548,7 +16591,11 @@ kUnkBin_8EAE374:: @ 0x8EAE374 (LZ)
 
     .align 2
 kUnkPal_8EAE488:: @ 0x8EAE488
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "graphics/unknown/unknown_8eae488.gbapal"
+.else
+    .incbin "graphics-lg/unknown/unknown_8eae488.gbapal"
+.endif
 
     .align 2
 kUnkBin_8EAE4A8:: @ 0x8EAE4A8 (LZ)

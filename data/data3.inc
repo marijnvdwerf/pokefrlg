@@ -6967,7 +6967,11 @@ UNK_845FD44:: @ 845FD44
     .incbin "baserom.gba", 0x45FD44, 0x10
 
 UNK_845FD54:: @ 845FD54
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x45FD54, 0x814
+.else
+    .incbin "baserom-lg.gba", 0x45f774, 0x814
+.endif
 
 UNK_8460568:: @ 8460568
     .incbin "baserom.gba", 0x460568, 0x80
@@ -7147,11 +7151,19 @@ List_8463074:: @ 8463074
     .4byte Text_81C5981
 
 List_846308C:: @ 846308C
+.ifeq (VERSION - VERSION_FIRERED)
     .4byte Text_81C575E
     .4byte Text_81C5767
     .4byte Text_81C577A
     .4byte Text_81C577E
     .4byte Text_81C5783
+.else
+    .4byte Text_81C5758
+    .4byte Text_81C5762
+    .4byte Text_81C576C
+    .4byte Text_81C5771
+    .4byte Text_81C5775
+.endif
     .4byte Text_81C5788
     .4byte Text_81C578C
     .4byte Text_81C5792
@@ -7168,8 +7180,13 @@ List_846308C:: @ 846308C
     .4byte Text_81C57CB
 
 List_84630D8:: @ 84630D8
+.ifeq (VERSION - VERSION_FIRERED)
     .4byte Text_81C575E
     .4byte Text_81C5767
+.else
+    .4byte Text_81C5758
+    .4byte Text_81C5762
+.endif
     .4byte Text_81C57D0
     .4byte Text_81C57D4
     .4byte Text_81C57D9
@@ -7189,10 +7206,17 @@ List_84630D8:: @ 84630D8
     .4byte Text_81C5828
 
 List_8463124:: @ 8463124
+.ifeq (VERSION - VERSION_FIRERED)
     .4byte Text_81C5758
     .4byte Text_81C576C
     .4byte Text_81C5771
     .4byte Text_81C5775
+.else
+    .4byte Text_81C575E
+    .4byte Text_81C577A
+    .4byte Text_81C577E
+    .4byte Text_81C5783
+.endif
 
 UNK_8463134:: @ 8463134
     .incbin "baserom.gba", 0x463134, 0xC
@@ -7963,19 +7987,35 @@ unk_84649F4:: @ 84649F4
     .incbin "baserom.gba", 0x4649F4, 0x20
 
 unk_8464A14:: @ 8464A14
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x464A14, 0x638
+.else
+    .incbin "baserom-lg.gba", 0x464434, 1512
+.endif
 
 unk_846504C:: @ 846504C
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x46504C, 0x20
+.else
+    .incbin "baserom-lg.gba", 0x464a1c, 0x20
+.endif
 
 unk_846506C:: @ 846506C
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x46506C, 0x4B8
+.else
+    .incbin "baserom-lg.gba", 0x464a3c, 1140
+.endif
 
 unk_8465524:: @ 8465524
     .incbin "baserom.gba", 0x465524, 0x20
 
 unk_8465544:: @ 8465544
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x465544, 0x6C
+.else
+    .incbin "baserom-lg.gba", 0x464ed0, 108
+.endif
 
 bogo_84655B0:: @ 84655B0
     .4byte unk_8464A14
@@ -8004,7 +8044,11 @@ bogo_84655C8:: @ 84655C8
     .2byte 0x0000, 0x0000
 
 UNK_8465608:: @ 8465608
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x465608, 0xE
+.else
+    .incbin "baserom-lg.gba", 0x464f94, 0xE
+.endif
 
 UNK_8465616:: @ 8465616
     .incbin "baserom.gba", 0x465616, 0xC0
@@ -8174,22 +8218,46 @@ List_84658F0:: @ 84658F0
     .4byte sub_8141764+1
 
 UNK_8465930:: @ 8465930
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x465930, 0x20
+.else
+    .incbin "baserom-lg.gba", 0x4652bc, 0x20
+.endif
 
 UNK_8465950:: @ 8465950
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x465950, 0x80
+.else
+    .incbin "baserom-lg.gba", 0x4652dc, 0x80
+.endif
 
 UNK_84659D0:: @ 84659D0
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x4659D0, 0x804
+.else
+    .incbin "baserom-lg.gba", 0x46535c, 1884
+.endif
 
 UNK_84661D4:: @ 84661D4
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x4661D4, 0x2E8
+.else
+    .incbin "baserom-lg.gba", 0x0465ab8, 740
+.endif
 
 UNK_84664BC:: @ 84664BC
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x4664BC, 0x20
+.else
+    .incbin "baserom-lg.gba", 0x465d9c, 0x20
+.endif
 
 UNK_84664DC:: @ 84664DC
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x4664DC, 0x60
+.else
+    .incbin "baserom-lg.gba", 0x465dbc, 0x60
+.endif
 
 UNK_846653C:: @ 846653C
     .incbin "baserom.gba", 0x46653C, 0x84
@@ -8198,10 +8266,18 @@ UNK_84665C0:: @ 84665C0
     .incbin "baserom.gba", 0x4665C0, 0x60
 
 UNK_8466620:: @ 8466620
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x466620, 0x378
+.else
+    .incbin "baserom-lg.gba", 0x0465f00, 0x378
+.endif
 
 UNK_8466998:: @ 8466998
+.ifeq (VERSION - VERSION_FIRERED)
     .incbin "baserom.gba", 0x466998, 0x178
+.else
+    .incbin "baserom-lg.gba", 0x466278, 372
+.endif
 
 UNK_8466B10:: @ 8466B10
     .incbin "baserom.gba", 0x466B10, 0x10
