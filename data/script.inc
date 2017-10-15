@@ -56476,8 +56476,13 @@ Text_81B752C:: @ 81B752C
     .string "   the POKéDEX list.\n"
     .string "{SYMBOL_NO_2} A caught POKéMON will provide a\n"
     .string "   large amount of data.\n"
+.ifeq (REVISION - 0)
     .string "{SYMBOL_NO_3} Select “AREA” to display the TOWN\n"
     .string "   MAP with the POKéMON’s habitat(s).$"
+.else
+    .string "{SYMBOL_NO_3} Select “NEXT DATA” to display the\n"
+    .string "   TOWN MAP with its habitat(s).$"
+.endif
 
 Text_81B7611:: @ 81B7611
     .string "{SYMBOL_NO_1} Go up to the PC at home, then press\n"
