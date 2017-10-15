@@ -27719,7 +27719,7 @@ EventScript_8170A97:: @ 8170A97
     applymovement 0x00FF, Movement_8170B22
     waitmovement 0x0000
     special 235
-    loadword 0, Text_2021D18
+    loadword 0, 0x2021D18
     callstd 4
     closemessage
     setvar 0x8004, 2
@@ -63688,7 +63688,7 @@ EventScript_81C50C2:: @ 81C50C2
     setvar 0x8005, 2
     setvar 0x8006, 0
     special 404
-    loadword 0, Text_2021D18
+    loadword 0, 0x2021D18
     callstd 4
     closemessage
     goto EventScript_81C5219
@@ -63698,7 +63698,7 @@ EventScript_81C510D:: @ 81C510D
     setvar 0x8005, 2
     copyvar 0x8006, 0x4003
     special 404
-    loadword 0, Text_2021D18
+    loadword 0, 0x2021D18
     callstd 4
     setvar 0x8004, 1
     setvar 0x8005, 2
@@ -63710,7 +63710,7 @@ EventScript_81C510D:: @ 81C510D
 EventScript_81C5146:: @ 81C5146
     copyvar 0x8006, 0x4003
     special 404
-    loadword 0, Text_2021D18
+    loadword 0, 0x2021D18
     callstd 4
     closemessage
     goto EventScript_81C5219
@@ -63761,7 +63761,7 @@ EventScript_81C51FE:: @ 81C51FE
     setvar 0x8005, 2
     copyvar 0x8006, 0x4001
     special 404
-    loadword 0, Text_2021D18
+    loadword 0, 0x2021D18
     callstd 4
     closemessage
 
@@ -63881,7 +63881,7 @@ EventScript_81C5391:: @ 81C5391
     special 404
     lock
     faceplayer
-    loadword 0, Text_2021D18
+    loadword 0, 0x2021D18
     callstd 4
     release
     return
