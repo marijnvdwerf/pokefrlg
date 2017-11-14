@@ -2,6 +2,7 @@
     .include "asm/macros.inc"
 	.include "asm/macros/m4a.inc"
 	.include "asm/macros/music_voice.inc"
+	.include "asm/macros/event.inc"
     .include "constants/constants.inc"
     .include "constants/map_constants.inc"
     .text
@@ -32,8 +33,15 @@ ascii_81E9F14:: @ 81E9F14
     .incbin "baserom.gba", 0x1E9F25, 0x3
 
     .include "data/data1.inc"
-    .include "data/data.inc"
+    .include "data/data1-2.inc"
+    .include "data/data2.inc"
+    .include "data/pokedex-descriptions.inc"
+    .align 2
+    .include "data/pokedex-entries.inc"
     .include "data/data3.inc"
+
+    .include "constants/MPlayDef.s"
+    .include "data/songs.inc"
 
     .section .rodata2, "aw", %progbits
 
