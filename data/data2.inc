@@ -9062,11 +9062,15 @@ kRBoxBar_840C23C:: @ 840C23C
 UNK_840C240:: @ 840C240
     .incbin "baserom.gba", 0x40C240, 0x8 @ null
 
-UNK_840C248:: @ 840C248
-    .incbin "baserom.gba", 0x40C248, 0x10 @ null
+kObjTiles_840C248:: @ 840C248
+    obj_tiles kUnkGfx_8D2D5FC, 0x220, 1001
 
-UNK_840C258:: @ 840C258
-    .incbin "baserom.gba", 0x40C258, 0x10 @ null
+    .incbin "baserom.gba", 0x40C250, 0x8 @ unknown
+
+kObjPal_840C258:: @ 840C258
+    obj_pal kUnkPal_8D2D71C, 1001
+
+    .incbin "baserom.gba", 0x40C260, 0x8 @ unknown
 
 kBasicItem_840C268:: @ 840C268
     .2byte 0x0078, 0x00D2, 0x0078, 0x0028, 0x0146, 0x00DC, 0x0038, 0x0028, 0xFFAA
@@ -9704,7 +9708,25 @@ kLzTilemap_84154E8:: @ 84154E8
 kPalette_8415954:: @ 8415954
     .incbin "baserom.gba", 0x415954, 0x40
 
-    .incbin "baserom.gba", 0x415994, 0x70 @ unknown
+kText_8415994:: @ 8415994
+    .string "{HIGHLIGHT TRANSPARENT}プレイヤー$"
+
+kText_841599D:: @ 841599D
+    .string "{HIGHLIGHT TRANSPARENT}さま$"
+
+kText_84159A3:: @ 84159A3
+    .string "{HIGHLIGHT TRANSPARENT}ホ{PKMN}ン$"
+
+kText_84159AB:: @ 84159AB
+    .string "{HIGHLIGHT TRANSPARENT}ぜんこく$"
+
+kText_84159B3:: @ 84159B3
+    .string "{HIGHLIGHT TRANSPARENT}　　　　　ポケモンずかんを\n"
+    .string "みごと　かんせい　させた\n"
+    .string "いだいなこうせきを　たたえ\n"
+    .string "ここに　しょうめい　します$"
+
+    .incbin "baserom.gba", 0x4159ED, 0x17 @ unknown
 
 kRBoxBar_8415A04:: @ 8415A04
     .byte 0x00, 0x02, 0x03

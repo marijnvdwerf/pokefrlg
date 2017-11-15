@@ -24770,11 +24770,11 @@ kPointer_825089C:: @ 825089C
 UNK_8250980:: @ 8250980
     .incbin "baserom.gba", 0x250980, 0xC @ null
 
-UNK_825098C:: @ 825098C
-    .incbin "baserom.gba", 0x25098C, 0x8 @ null
+kObjTiles_825098C:: @ 825098C
+    obj_tiles kUnkGfx_8D0162C, 0x180, 55019
 
-UNK_8250994:: @ 8250994
-    .incbin "baserom.gba", 0x250994, 0x8 @ null
+kObjPal_8250994:: @ 8250994
+    obj_pal kUnkPal_8D0170C, 55019
 
 kOAM_825099C:: @ 825099C
     .2byte 0x0000
@@ -29464,359 +29464,359 @@ kSpindaSpotGraphics:: @ 825265C
     .2byte 0b0000000000000000
 
 
-kUnknown_82526EC:: @ 82526EC
+kItemEffect_82526EC:: @ 82526EC
     .incbin "baserom.gba", 0x2526EC, 0x7 @ null
 
-kUnknown_82526F3:: @ 82526F3
+kItemEffect_82526F3:: @ 82526F3
     .incbin "baserom.gba", 0x2526F3, 0x6 @ null
 
-kUnknown_82526F9:: @ 82526F9
+kItemEffect_82526F9:: @ 82526F9
     .incbin "baserom.gba", 0x2526F9, 0x6 @ null
 
-kUnknown_82526FF:: @ 82526FF
+kItemEffect_82526FF:: @ 82526FF
     .incbin "baserom.gba", 0x2526FF, 0x6 @ null
 
-kUnknown_8252705:: @ 8252705
+kItemEffect_8252705:: @ 8252705
     .incbin "baserom.gba", 0x252705, 0x6 @ null
 
-kUnknown_825270B:: @ 825270B
+kItemEffect_825270B:: @ 825270B
     .incbin "baserom.gba", 0x25270B, 0x6 @ null
 
-kUnknown_8252711:: @ 8252711
+kItemEffect_8252711:: @ 8252711
     .incbin "baserom.gba", 0x252711, 0x7 @ null
 
-kUnknown_8252718:: @ 8252718
+kItemEffect_8252718:: @ 8252718
     .incbin "baserom.gba", 0x252718, 0x7 @ null
 
-kUnknown_825271F:: @ 825271F
+kItemEffect_825271F:: @ 825271F
     .incbin "baserom.gba", 0x25271F, 0x7 @ null
 
-kUnknown_8252726:: @ 8252726
+kItemEffect_8252726:: @ 8252726
     .incbin "baserom.gba", 0x252726, 0x7 @ null
 
-kUnknown_825272D:: @ 825272D
+kItemEffect_825272D:: @ 825272D
     .incbin "baserom.gba", 0x25272D, 0x6 @ null
 
-kUnknown_8252733:: @ 8252733
+kItemEffect_8252733:: @ 8252733
     .incbin "baserom.gba", 0x252733, 0x7 @ null
 
-kUnknown_825273A:: @ 825273A
+kItemEffect_825273A:: @ 825273A
     .incbin "baserom.gba", 0x25273A, 0x7 @ null
 
-kUnknown_8252741:: @ 8252741
+kItemEffect_8252741:: @ 8252741
     .incbin "baserom.gba", 0x252741, 0x7 @ null
 
-kUnknown_8252748:: @ 8252748
+kItemEffect_8252748:: @ 8252748
     .incbin "baserom.gba", 0x252748, 0x7 @ null
 
-kUnknown_825274F:: @ 825274F
+kItemEffect_825274F:: @ 825274F
     .incbin "baserom.gba", 0x25274F, 0x7 @ null
 
-kUnknown_8252756:: @ 8252756
+kItemEffect_8252756:: @ 8252756
     .incbin "baserom.gba", 0x252756, 0x7 @ null
 
-kUnknown_825275D:: @ 825275D
+kItemEffect_825275D:: @ 825275D
     .incbin "baserom.gba", 0x25275D, 0xA @ null
 
-kUnknown_8252767:: @ 8252767
+kItemEffect_8252767:: @ 8252767
     .incbin "baserom.gba", 0x252767, 0xA @ null
 
-kUnknown_8252771:: @ 8252771
+kItemEffect_8252771:: @ 8252771
     .incbin "baserom.gba", 0x252771, 0x9 @ null
 
-kUnknown_825277A:: @ 825277A
+kItemEffect_825277A:: @ 825277A
     .incbin "baserom.gba", 0x25277A, 0xA @ null
 
-kUnknown_8252784:: @ 8252784
+kItemEffect_8252784:: @ 8252784
     .incbin "baserom.gba", 0x252784, 0x7 @ null
 
-kUnknown_825278B:: @ 825278B
+kItemEffect_825278B:: @ 825278B
     .incbin "baserom.gba", 0x25278B, 0x7 @ null
 
-kUnknown_8252792:: @ 8252792
+kItemEffect_8252792:: @ 8252792
     .incbin "baserom.gba", 0x252792, 0x7 @ null
 
-kUnknown_8252799:: @ 8252799
+kItemEffect_8252799:: @ 8252799
     .incbin "baserom.gba", 0x252799, 0x7 @ null
 
-kUnknown_82527A0:: @ 82527A0
+kItemEffect_82527A0:: @ 82527A0
     .incbin "baserom.gba", 0x2527A0, 0x6 @ null
 
-kUnknown_82527A6:: @ 82527A6
+kItemEffect_82527A6:: @ 82527A6
     .incbin "baserom.gba", 0x2527A6, 0x6 @ null
 
-kUnknown_82527AC:: @ 82527AC
+kItemEffect_82527AC:: @ 82527AC
     .incbin "baserom.gba", 0x2527AC, 0x6 @ null
 
-kUnknown_82527B2:: @ 82527B2
+kItemEffect_82527B2:: @ 82527B2
     .incbin "baserom.gba", 0x2527B2, 0x6 @ null
 
-kUnknown_82527B8:: @ 82527B8
+kItemEffect_82527B8:: @ 82527B8
     .incbin "baserom.gba", 0x2527B8, 0x7 @ null
 
-kUnknown_82527BF:: @ 82527BF
+kItemEffect_82527BF:: @ 82527BF
     .incbin "baserom.gba", 0x2527BF, 0x7 @ null
 
-kUnknown_82527C6:: @ 82527C6
+kItemEffect_82527C6:: @ 82527C6
     .incbin "baserom.gba", 0x2527C6, 0xA @ null
 
-kUnknown_82527D0:: @ 82527D0
+kItemEffect_82527D0:: @ 82527D0
     .incbin "baserom.gba", 0x2527D0, 0xA @ null
 
-kUnknown_82527DA:: @ 82527DA
+kItemEffect_82527DA:: @ 82527DA
     .incbin "baserom.gba", 0x2527DA, 0xA @ null
 
-kUnknown_82527E4:: @ 82527E4
+kItemEffect_82527E4:: @ 82527E4
     .incbin "baserom.gba", 0x2527E4, 0xA @ null
 
-kUnknown_82527EE:: @ 82527EE
+kItemEffect_82527EE:: @ 82527EE
     .incbin "baserom.gba", 0x2527EE, 0xA @ null
 
-kUnknown_82527F8:: @ 82527F8
+kItemEffect_82527F8:: @ 82527F8
     .incbin "baserom.gba", 0x2527F8, 0xA @ null
 
-kUnknown_8252802:: @ 8252802
+kItemEffect_8252802:: @ 8252802
     .incbin "baserom.gba", 0x252802, 0x9 @ null
 
-kUnknown_825280B:: @ 825280B
+kItemEffect_825280B:: @ 825280B
     .incbin "baserom.gba", 0x25280B, 0xA @ null
 
-kUnknown_8252815:: @ 8252815
+kItemEffect_8252815:: @ 8252815
     .incbin "baserom.gba", 0x252815, 0x9 @ null
 
-kUnknown_825281E:: @ 825281E
+kItemEffect_825281E:: @ 825281E
     .incbin "baserom.gba", 0x25281E, 0x8 @ null
 
-kUnknown_8252826:: @ 8252826
+kItemEffect_8252826:: @ 8252826
     .incbin "baserom.gba", 0x252826, 0x8 @ null
 
-kUnknown_825282E:: @ 825282E
+kItemEffect_825282E:: @ 825282E
     .incbin "baserom.gba", 0x25282E, 0x8 @ null
 
-kUnknown_8252836:: @ 8252836
+kItemEffect_8252836:: @ 8252836
     .incbin "baserom.gba", 0x252836, 0x8 @ null
 
-kUnknown_825283E:: @ 825283E
+kItemEffect_825283E:: @ 825283E
     .incbin "baserom.gba", 0x25283E, 0x8 @ null
 
-kUnknown_8252846:: @ 8252846
+kItemEffect_8252846:: @ 8252846
     .incbin "baserom.gba", 0x252846, 0x8 @ null
 
-kUnknown_825284E:: @ 825284E
+kItemEffect_825284E:: @ 825284E
     .incbin "baserom.gba", 0x25284E, 0x8 @ null
 
-kUnknown_8252856:: @ 8252856
+kItemEffect_8252856:: @ 8252856
     .incbin "baserom.gba", 0x252856, 0x6 @ null
 
-kUnknown_825285C:: @ 825285C
+kItemEffect_825285C:: @ 825285C
     .incbin "baserom.gba", 0x25285C, 0x6 @ null
 
-kUnknown_8252862:: @ 8252862
+kItemEffect_8252862:: @ 8252862
     .incbin "baserom.gba", 0x252862, 0x6 @ null
 
-kUnknown_8252868:: @ 8252868
+kItemEffect_8252868:: @ 8252868
     .incbin "baserom.gba", 0x252868, 0x6 @ null
 
-kUnknown_825286E:: @ 825286E
+kItemEffect_825286E:: @ 825286E
     .incbin "baserom.gba", 0x25286E, 0x6 @ null
 
-kUnknown_8252874:: @ 8252874
+kItemEffect_8252874:: @ 8252874
     .incbin "baserom.gba", 0x252874, 0x6 @ null
 
-kUnknown_825287A:: @ 825287A
+kItemEffect_825287A:: @ 825287A
     .incbin "baserom.gba", 0x25287A, 0x6 @ null
 
-kUnknown_8252880:: @ 8252880
+kItemEffect_8252880:: @ 8252880
     .incbin "baserom.gba", 0x252880, 0x6 @ null
 
-kUnknown_8252886:: @ 8252886
+kItemEffect_8252886:: @ 8252886
     .incbin "baserom.gba", 0x252886, 0x6 @ null
 
-kUnknown_825288C:: @ 825288C
+kItemEffect_825288C:: @ 825288C
     .incbin "baserom.gba", 0x25288C, 0x6 @ null
 
-kUnknown_8252892:: @ 8252892
+kItemEffect_8252892:: @ 8252892
     .incbin "baserom.gba", 0x252892, 0x6 @ null
 
-kUnknown_8252898:: @ 8252898
+kItemEffect_8252898:: @ 8252898
     .incbin "baserom.gba", 0x252898, 0x7 @ null
 
-kUnknown_825289F:: @ 825289F
+kItemEffect_825289F:: @ 825289F
     .incbin "baserom.gba", 0x25289F, 0x7 @ null
 
-kUnknown_82528A6:: @ 82528A6
+kItemEffect_82528A6:: @ 82528A6
     .incbin "baserom.gba", 0x2528A6, 0x6 @ null
 
-kUnknown_82528AC:: @ 82528AC
+kItemEffect_82528AC:: @ 82528AC
     .incbin "baserom.gba", 0x2528AC, 0x6 @ null
 
-kUnknown_82528B2:: @ 82528B2
+kItemEffect_82528B2:: @ 82528B2
     .incbin "baserom.gba", 0x2528B2, 0xA @ null
 
 kItemEffectTable:: @ 82528BC
-    .4byte kUnknown_82526EC @ 82526EC
-    .4byte kUnknown_82526F3 @ 82526F3
-    .4byte kUnknown_82526F9 @ 82526F9
-    .4byte kUnknown_82526FF @ 82526FF
-    .4byte kUnknown_8252705 @ 8252705
-    .4byte kUnknown_825270B @ 825270B
-    .4byte kUnknown_8252711 @ 8252711
-    .4byte kUnknown_8252718 @ 8252718
-    .4byte kUnknown_825271F @ 825271F
-    .4byte kUnknown_8252726 @ 8252726
-    .4byte kUnknown_825272D @ 825272D
-    .4byte kUnknown_8252733 @ 8252733
-    .4byte kUnknown_825273A @ 825273A
-    .4byte kUnknown_8252741 @ 8252741
-    .4byte kUnknown_8252748 @ 8252748
-    .4byte kUnknown_825274F @ 825274F
-    .4byte kUnknown_8252756 @ 8252756
-    .4byte kUnknown_825275D @ 825275D
-    .4byte kUnknown_8252767 @ 8252767
-    .4byte kUnknown_8252771 @ 8252771
-    .4byte kUnknown_825277A @ 825277A
-    .4byte kUnknown_8252784 @ 8252784
-    .4byte kUnknown_825278B @ 825278B
-    .4byte kUnknown_8252792 @ 8252792
-    .4byte kUnknown_8252799 @ 8252799
-    .4byte kUnknown_82527A0 @ 82527A0
-    .4byte kUnknown_82527A6 @ 82527A6
-    .4byte kUnknown_82527AC @ 82527AC
-    .4byte kUnknown_82527B2 @ 82527B2
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte kUnknown_82527B8 @ 82527B8
-    .4byte kUnknown_82527BF @ 82527BF
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte kUnknown_82527C6 @ 82527C6
-    .4byte kUnknown_82527D0 @ 82527D0
-    .4byte kUnknown_82527DA @ 82527DA
-    .4byte kUnknown_82527E4 @ 82527E4
-    .4byte kUnknown_82527EE @ 82527EE
-    .4byte kUnknown_82527F8 @ 82527F8
-    .4byte kUnknown_8252802 @ 8252802
-    .4byte kUnknown_825280B @ 825280B
-    .4byte kUnknown_8252815 @ 8252815
-    .4byte NULL @ 0
-    .4byte kUnknown_825281E @ 825281E
-    .4byte kUnknown_8252826 @ 8252826
-    .4byte kUnknown_825282E @ 825282E
-    .4byte kUnknown_8252836 @ 8252836
-    .4byte kUnknown_825283E @ 825283E
-    .4byte kUnknown_8252846 @ 8252846
-    .4byte kUnknown_825284E @ 825284E
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte kUnknown_8252856 @ 8252856
-    .4byte kUnknown_825285C @ 825285C
-    .4byte kUnknown_8252862 @ 8252862
-    .4byte kUnknown_8252868 @ 8252868
-    .4byte kUnknown_825286E @ 825286E
-    .4byte kUnknown_8252874 @ 8252874
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte kUnknown_825287A @ 825287A
-    .4byte kUnknown_8252880 @ 8252880
-    .4byte kUnknown_8252886 @ 8252886
-    .4byte kUnknown_825288C @ 825288C
-    .4byte kUnknown_8252892 @ 8252892
-    .4byte kUnknown_8252898 @ 8252898
-    .4byte kUnknown_825289F @ 825289F
-    .4byte kUnknown_82528A6 @ 82528A6
-    .4byte kUnknown_82528AC @ 82528AC
-    .4byte kUnknown_82528B2 @ 82528B2
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
-    .4byte NULL @ 0
+    .4byte kItemEffect_82526EC
+    .4byte kItemEffect_82526F3
+    .4byte kItemEffect_82526F9
+    .4byte kItemEffect_82526FF
+    .4byte kItemEffect_8252705
+    .4byte kItemEffect_825270B
+    .4byte kItemEffect_8252711
+    .4byte kItemEffect_8252718
+    .4byte kItemEffect_825271F
+    .4byte kItemEffect_8252726
+    .4byte kItemEffect_825272D
+    .4byte kItemEffect_8252733
+    .4byte kItemEffect_825273A
+    .4byte kItemEffect_8252741
+    .4byte kItemEffect_8252748
+    .4byte kItemEffect_825274F
+    .4byte kItemEffect_8252756
+    .4byte kItemEffect_825275D
+    .4byte kItemEffect_8252767
+    .4byte kItemEffect_8252771
+    .4byte kItemEffect_825277A
+    .4byte kItemEffect_8252784
+    .4byte kItemEffect_825278B
+    .4byte kItemEffect_8252792
+    .4byte kItemEffect_8252799
+    .4byte kItemEffect_82527A0
+    .4byte kItemEffect_82527A6
+    .4byte kItemEffect_82527AC
+    .4byte kItemEffect_82527B2
+    .4byte NULL
+    .4byte NULL
+    .4byte kItemEffect_82527B8
+    .4byte kItemEffect_82527BF
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte kItemEffect_82527C6
+    .4byte kItemEffect_82527D0
+    .4byte kItemEffect_82527DA
+    .4byte kItemEffect_82527E4
+    .4byte kItemEffect_82527EE
+    .4byte kItemEffect_82527F8
+    .4byte kItemEffect_8252802
+    .4byte kItemEffect_825280B
+    .4byte kItemEffect_8252815
+    .4byte NULL
+    .4byte kItemEffect_825281E
+    .4byte kItemEffect_8252826
+    .4byte kItemEffect_825282E
+    .4byte kItemEffect_8252836
+    .4byte kItemEffect_825283E
+    .4byte kItemEffect_8252846
+    .4byte kItemEffect_825284E
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte kItemEffect_8252856
+    .4byte kItemEffect_825285C
+    .4byte kItemEffect_8252862
+    .4byte kItemEffect_8252868
+    .4byte kItemEffect_825286E
+    .4byte kItemEffect_8252874
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte kItemEffect_825287A
+    .4byte kItemEffect_8252880
+    .4byte kItemEffect_8252886
+    .4byte kItemEffect_825288C
+    .4byte kItemEffect_8252892
+    .4byte kItemEffect_8252898
+    .4byte kItemEffect_825289F
+    .4byte kItemEffect_82528A6
+    .4byte kItemEffect_82528AC
+    .4byte kItemEffect_82528B2
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
+    .4byte NULL
 
 kNatureStatTable:: @ 8252B48
     .byte 0, 0, 0, 0, 0
@@ -48081,11 +48081,15 @@ kObjPal_826047C:: @ 826047C
     obj_pal kUnkPal_8D11B84, 55056
     obj_pal kUnkPal_8D11B84, 55057
 
-UNK_826048C:: @ 826048C
-    .incbin "baserom.gba", 0x26048C, 0x10 @ null
+kObjPal_826048C:: @ 826048C
+    obj_pal kUnkPal_8D11BA4, 55058
+    obj_pal kUnkPal_8D11BA4, 55059
 
-UNK_826049C:: @ 826049C
-    .incbin "baserom.gba", 0x26049C, 0x18 @ null
+kObjTiles_826049C:: @ 826049C
+    obj_tiles kUnkGfx_8D11BC4+0x840, 0x80, 55060
+    obj_tiles kUnkGfx_8D11BC4+0x840, 0x80, 55061
+
+    .incbin "baserom.gba", 0x2604AC, 0x8 @ unknown
 
 kOAM_82604B4:: @ 82604B4
     .2byte 0x0000
