@@ -17,3 +17,8 @@
 	.macro ec_pokemon2 name
 	.2byte (EC_GROUP_POKEMON2 << 9) | SPECIES_\name
 	.endm
+
+	.macro ec_duplicates count
+	.2byte 0xffff
+	.2byte \count
+	.endm

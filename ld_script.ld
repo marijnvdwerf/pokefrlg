@@ -36,6 +36,7 @@ gFlashNumRemainingBytes = 0x3007428;
 gPokemonCrySongs = 0x3006F00;
 gFlashTimeoutFlag = 0x3007410;
 gMPlayJumpTable = 0x3006FF0;
+Data2 = kPokedexEntries;
 
 SECTIONS {
 

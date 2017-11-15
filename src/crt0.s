@@ -112,10 +112,10 @@ GPIOPortReadEnable: @ 80000C8
 	.4byte kMonPaletteTable
 	.4byte kMonShinyPaletteTable
 	.4byte kMonIconTable
-	.4byte UNK_83D3E80
-	.4byte borg_83D4038
-	.4byte UNK_8245EE0
-	.4byte UNK_8247094
+	.4byte kMonIconPaletteIndices
+	.4byte kObjPal_83D4038
+	.4byte kSpeciesNames
+	.4byte kMoveNames
 	.4byte kDecorations
 	.4byte 0xEE0
 	.4byte 0x1000
@@ -144,13 +144,13 @@ GPIOPortReadEnable: @ 80000C8
 	.4byte 0x30BB
 	.4byte 0x30A7
 	.4byte 0
-	.4byte UNK_8254784
-	.4byte UNK_824FC40
-	.4byte List_824FB08
+	.4byte kBaseStats
+	.4byte kAbilityNames
+	.4byte kAbilityDescriptions
 	.4byte kItems
-	.4byte UNK_8250C04
-	.4byte UNK_826056C
-	.4byte UNK_82605CC
+	.4byte kBattleMoves
+	.4byte kObjTiles_826056C
+	.4byte kObjPal_82605CC
 	.4byte 0xA8
 	.4byte 0x82C
 	.4byte 0x83B

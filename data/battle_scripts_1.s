@@ -308,7 +308,7 @@ BattleScript_1D69BE:: @T 81D69BE
 
 BattleScript_1D69CC:: @T 81D69CC
     pause 32
-    printfromtable BattleTextList_83FE576
+    printfromtable kBattleTextList_83FE576
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -350,7 +350,7 @@ BattleScript_1D6A2B:: @T 81D6A2B
     graphicalhpupdate USER
     datahpupdate USER
     jumpifbyte 4, 0x2023dcc, 41, BattleScript_1D6A42
-    printfromtable BattleTextList_83FE5DC
+    printfromtable kBattleTextList_83FE5DC
     waitmessage 64
 
 BattleScript_1D6A42:: @T 81D6A42
@@ -513,7 +513,7 @@ BattleScript_1D6BBC:: @T 81D6BBC
     playanimation USER, 1, 0x2023fd4
 
 BattleScript_1D6BC4:: @T 81D6BC4
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D6BCC:: @T 81D6BCC
@@ -521,7 +521,7 @@ BattleScript_1D6BCC:: @T 81D6BCC
 
 BattleScript_1D6BD1:: @T 81D6BD1
     playanimation 2, 1, 0x2023fd4
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
     return
 
@@ -563,7 +563,7 @@ BattleScript_1D6C4B:: @T 81D6C4B
     playanimation TARGET, 1, 0x2023fd4
 
 BattleScript_1D6C55:: @T 81D6C55
-    printfromtable BattleTextList_83FE588
+    printfromtable kBattleTextList_83FE588
     waitmessage 64
 
 BattleScript_1D6C5D:: @T 81D6C5D
@@ -571,7 +571,7 @@ BattleScript_1D6C5D:: @T 81D6C5D
 
 unk_1d6c62:: @T 81d6c62
     playanimation 2, 1, 0x2023fd4
-    printfromtable BattleTextList_83FE588
+    printfromtable kBattleTextList_83FE588
     waitmessage 64
     return
 
@@ -763,7 +763,7 @@ MoveEffect_Rest:: @ 81D6E88
     jumpifcannotsleep BattleScript_1D6EB2
     setrest BattleScript_1D7DD1
     pause 32
-    printfromtable BattleTextList_83FE562
+    printfromtable kBattleTextList_83FE562
     waitmessage 64
     atk98 1
     waitstateatk
@@ -771,7 +771,7 @@ MoveEffect_Rest:: @ 81D6E88
 
 BattleScript_1D6EB2:: @T 81D6EB2
     pause 64
-    printfromtable BattleTextList_83FE576
+    printfromtable kBattleTextList_83FE576
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -794,7 +794,7 @@ MoveEffect_Ohko:: @ 81D6ED0
 
 BattleScript_1D6EF1:: @T 81D6EF1
     pause 64
-    printfromtable BattleTextList_83FE5D4
+    printfromtable kBattleTextList_83FE5D4
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -825,7 +825,7 @@ BattleScript_1D6F58:: @T 81D6F58
     setbyte 0x2023e85, 76
     seteffecttarget
     copyarray 0x2023e87, 0x2023fd3, 1
-    printfromtable BattleTextList_83FE590
+    printfromtable kBattleTextList_83FE590
     waitmessage 64
     return
 
@@ -906,7 +906,7 @@ MoveEffect_Mist:: @ 81D7062
     setmisteffect
     attackanimation
     waitanimation
-    printfromtable BattleTextList_83FE5AC
+    printfromtable kBattleTextList_83FE5AC
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -918,7 +918,7 @@ MoveEffect_FocusEnergy:: @ 81D7075
     setincreasedcriticalchance
     attackanimation
     waitanimation
-    printfromtable BattleTextList_83FE5B0
+    printfromtable kBattleTextList_83FE5B0
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -978,7 +978,7 @@ MoveEffect_Transform:: @ 81D712F
     transformdataexecution
     attackanimation
     waitanimation
-    printfromtable BattleTextList_83FE5B4
+    printfromtable kBattleTextList_83FE5B4
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -1008,7 +1008,7 @@ MoveEffect_Reflect:: @ 81D716E
 BattleScript_1D7172:: @T 81D7172
     attackanimation
     waitanimation
-    printfromtable BattleTextList_83FE54C
+    printfromtable kBattleTextList_83FE54C
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -1128,7 +1128,7 @@ BattleScript_1D730E:: @T 81D730E
     datahpupdate USER
 
 BattleScript_1D7314:: @T 81D7314
-    printfromtable BattleTextList_83FE5B8
+    printfromtable kBattleTextList_83FE5B8
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -1196,7 +1196,7 @@ BattleScript_1D73C5:: @T 81D73C5
     setleechseed
     attackanimation
     waitanimation
-    printfromtable BattleTextList_83FE558
+    printfromtable kBattleTextList_83FE558
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -1401,7 +1401,7 @@ MoveEffect_HealBell:: @ 81D75A1
     waitstateatk
     attackanimation
     waitanimation
-    printfromtable BattleTextList_83FE5E4
+    printfromtable kBattleTextList_83FE5E4
     waitmessage 64
     jumpifhalfword 1, 0x2023d4a, 215, BattleScript_1D75DE
     jumpifbyte 5, 0x2023e87, 1, BattleScript_1D75CD
@@ -1541,19 +1541,19 @@ BattleScript_1D7772:: @T 81D7772
     waitanimation
     setbyte 0x2023fde, 147
     statbuffchange 65, BattleScript_1D7798
-    printfromtable BattleTextList_83FE588
+    printfromtable kBattleTextList_83FE588
     waitmessage 64
 
 BattleScript_1D7798:: @T 81D7798
     setbyte 0x2023fde, 17
     statbuffchange 65, BattleScript_1D77AC
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D77AC:: @T 81D77AC
     setbyte 0x2023fde, 18
     statbuffchange 65, BattleScript_1D77C0
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D77C0:: @T 81D77C0
@@ -1588,7 +1588,7 @@ MoveEffect_Protect:: @ 81D7816
     setprotect
     attackanimation
     waitanimation
-    printfromtable BattleTextList_83FE546
+    printfromtable kBattleTextList_83FE546
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -1674,7 +1674,7 @@ MoveEffect_Swagger:: @ 81D78BB
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D78FE
     atk47
     playanimation TARGET, 1, 0x2023fd4
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D78FE:: @T 81D78FE
@@ -1808,7 +1808,7 @@ MoveEffect_RainDance:: @ 81D7A10
 BattleScript_1D7A14:: @T 81D7A14
     attackanimation
     waitanimation
-    printfromtable BattleTextList_83FE528
+    printfromtable kBattleTextList_83FE528
     waitmessage 64
     callatk BattleScript_1D92DC
     jump BattleScript_EndTurn
@@ -1877,7 +1877,7 @@ MoveEffect_SkullBash:: @ 81D7A9F
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D7AE9
     atk47
     playanimation USER, 1, 0x2023fd4
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D7AE9:: @T 81D7AE9
@@ -1953,7 +1953,7 @@ MoveEffect_FutureSight:: @ 81D7B97
     setfutureattack BattleScript_ButItFailed
     attackanimation
     waitanimation
-    printfromtable BattleTextList_83FE5EE
+    printfromtable kBattleTextList_83FE5EE
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -2173,7 +2173,7 @@ MoveEffect_Stockpile:: @ 81D7E36
     stockpile
     attackanimation
     waitanimation
-    printfromtable BattleTextList_83FE56A
+    printfromtable kBattleTextList_83FE56A
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -2212,7 +2212,7 @@ MoveEffect_Swallow:: @ 81D7E8B
 
 BattleScript_1D7E98:: @T 81D7E98
     pause 32
-    printfromtable BattleTextList_83FE572
+    printfromtable kBattleTextList_83FE572
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -2249,7 +2249,7 @@ MoveEffect_Flatter:: @ 81D7ECD
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D7F10
     atk47
     playanimation TARGET, 1, 0x2023fd4
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D7F10:: @T 81D7F10
@@ -2304,7 +2304,7 @@ MoveEffect_Memento:: @ 81D7F9F
     setbyte 0x2023fde, 161
     statbuffchange 1, BattleScript_1D7FEC
     jumpifbyte 2, 0x2023e87, 1, BattleScript_1D7FEC
-    printfromtable BattleTextList_83FE588
+    printfromtable kBattleTextList_83FE588
     waitmessage 64
 
 BattleScript_1D7FEC:: @T 81D7FEC
@@ -2312,7 +2312,7 @@ BattleScript_1D7FEC:: @T 81D7FEC
     setbyte 0x2023fde, 164
     statbuffchange 1, BattleScript_1D800F
     jumpifbyte 2, 0x2023e87, 1, BattleScript_1D800F
-    printfromtable BattleTextList_83FE588
+    printfromtable kBattleTextList_83FE588
     waitmessage 64
 
 BattleScript_1D800F:: @T 81D800F
@@ -2429,7 +2429,7 @@ MoveEffect_Trick:: @ 81D80F8
     waitanimation
     printstring BATTLE_TEXT_SwitchedItems
     waitmessage 64
-    printfromtable BattleTextList_83FE64A
+    printfromtable kBattleTextList_83FE64A
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -2727,7 +2727,7 @@ MoveEffect_MudSport:: @ 81D83F3
     settypebasedhalvers BattleScript_ButItFailed
     attackanimation
     waitanimation
-    printfromtable BattleTextList_83FE5E0
+    printfromtable kBattleTextList_83FE5E0
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -2760,7 +2760,7 @@ BattleScript_1D843B:: @T 81D843B
     setbyte 0x2023fde, 145
     statbuffchange 1, BattleScript_1D8471
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D8471
-    printfromtable BattleTextList_83FE588
+    printfromtable kBattleTextList_83FE588
     waitmessage 64
 
 BattleScript_1D8471:: @T 81D8471
@@ -2768,7 +2768,7 @@ BattleScript_1D8471:: @T 81D8471
     setbyte 0x2023fde, 146
     statbuffchange 1, BattleScript_1D8494
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D8494
-    printfromtable BattleTextList_83FE588
+    printfromtable kBattleTextList_83FE588
     waitmessage 64
 
 BattleScript_1D8494:: @T 81D8494
@@ -2796,14 +2796,14 @@ BattleScript_1D84C2:: @T 81D84C2
     setbyte 0x2023fde, 18
     statbuffchange 65, BattleScript_1D84ED
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D84ED
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D84ED:: @T 81D84ED
     setbyte 0x2023fde, 21
     statbuffchange 65, BattleScript_1D850C
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D850C
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D850C:: @T 81D850C
@@ -2828,14 +2828,14 @@ BattleScript_1D8534:: @T 81D8534
     setbyte 0x2023fde, 17
     statbuffchange 65, BattleScript_1D855F
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D855F
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D855F:: @T 81D855F
     setbyte 0x2023fde, 18
     statbuffchange 65, BattleScript_1D857E
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D857E
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D857E:: @T 81D857E
@@ -2857,14 +2857,14 @@ BattleScript_1D8598:: @T 81D8598
     setbyte 0x2023fde, 20
     statbuffchange 65, BattleScript_1D85C3
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D85C3
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D85C3:: @T 81D85C3
     setbyte 0x2023fde, 21
     statbuffchange 65, BattleScript_1D85E2
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D85E2
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D85E2:: @T 81D85E2
@@ -2892,14 +2892,14 @@ BattleScript_1D8610:: @T 81D8610
     setbyte 0x2023fde, 17
     statbuffchange 65, BattleScript_1D863B
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D863B
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D863B:: @T 81D863B
     setbyte 0x2023fde, 19
     statbuffchange 65, BattleScript_1D865A
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D865A
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D865A:: @T 81D865A
@@ -3096,7 +3096,7 @@ BattleScript_1D8884:: @T 81D8884
 BattleScript_1D8896:: @T 81D8896
     atk76 USER, 8
     jumpifbyte 0, 0x2023e87, 0, BattleScript_1D88B4
-    printfromtable BattleTextList_83FE65C
+    printfromtable kBattleTextList_83FE65C
     waitmessage 64
     atk76 USER, 9
     waitstateatk
@@ -3164,12 +3164,12 @@ BattleScript_1D8936:: @T 81D8936
     end2
 
 unk_81D893A:: @81D893A
-    printfromtable BattleTextList_83FE51E
+    printfromtable kBattleTextList_83FE51E
     waitmessage 64
     end2
 
 unk_81D8943:: @81D8943
-    printfromtable2 BattleTextList_83FE51E
+    printfromtable2 kBattleTextList_83FE51E
     atk44
 
 unk_81D8949:: @81D8949
@@ -3293,7 +3293,7 @@ BattleScript_1D8A63:: @T 81D8A63
     return
 
 unk_81D8A64:: @81D8A64
-    printfromtable BattleTextList_83FE540
+    printfromtable kBattleTextList_83FE540
     waitmessage 64
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D8A7E
     playanimation USER, 10, 0x0
@@ -3302,7 +3302,7 @@ BattleScript_1D8A7E:: @T 81D8A7E
     end2
 
 unk_81D8A7F:: @81D8A7F
-    printfromtable BattleTextList_83FE534
+    printfromtable kBattleTextList_83FE534
     waitmessage 64
     atk46 1, 0x2023fd4, 0x0
     setbyte 0x2023e82, 0
@@ -3311,7 +3311,7 @@ BattleScript_1D8A97:: @T 81D8A97
     atk32 0x2023d6b, 0x2023bde, 0x2023e82, 1
     weatherdamage
     jumpifword 0, 0x2023d50, 0x0, BattleScript_1D8AD8
-    printfromtable BattleTextList_83FE538
+    printfromtable kBattleTextList_83FE538
     waitmessage 64
     orword 0x2023dd0, 0x1100120
     missmessage
@@ -3331,7 +3331,7 @@ BattleScript_1D8AF7:: @T 81D8AF7
     end2
 
 unk_81D8B01:: @81D8B01
-    printfromtable BattleTextList_83FE53C
+    printfromtable kBattleTextList_83FE53C
     waitmessage 64
     end2
 
@@ -3347,7 +3347,7 @@ unk_81D8B18:: @81D8B18
     end2
 
 unk_81D8B1F:: @81D8B1F
-    printfromtable BattleTextList_83FE5FA
+    printfromtable kBattleTextList_83FE5FA
     waitmessage 64
     atk46 1, 0x2023fd4, 0x0
     end3
@@ -3387,7 +3387,7 @@ BattleScript_1D8B85:: @T 81D8B85
     orword 0x2023dd0, 0x100100
     graphicalhpupdate TARGET
     datahpupdate TARGET
-    printfromtable BattleTextList_83FE558
+    printfromtable kBattleTextList_83FE558
     waitmessage 64
     faintpokemon USER, 0, 0x0
     faintpokemon TARGET, 0, 0x0
@@ -3568,31 +3568,31 @@ BattleScript_1D8D82:: @T 81D8D82
     playstatchangeanimation USER, 62, 0
     setbyte 0x2023fde, 17
     statbuffchange 65, BattleScript_1D8DA0
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D8DA0:: @T 81D8DA0
     setbyte 0x2023fde, 18
     statbuffchange 65, BattleScript_1D8DB4
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D8DB4:: @T 81D8DB4
     setbyte 0x2023fde, 19
     statbuffchange 65, BattleScript_1D8DC8
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D8DC8:: @T 81D8DC8
     setbyte 0x2023fde, 20
     statbuffchange 65, BattleScript_1D8DDC
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D8DDC:: @T 81D8DDC
     setbyte 0x2023fde, 21
     statbuffchange 65, BattleScript_1D8DF0
-    printfromtable BattleTextList_83FE57C
+    printfromtable kBattleTextList_83FE57C
     waitmessage 64
 
 BattleScript_1D8DF0:: @T 81D8DF0
@@ -3738,7 +3738,7 @@ unk_81D8F35:: @81D8F35
     setbyte 0x2023fde, 145
     statbuffchange 193, BattleScript_1D8F62
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D8F62
-    printfromtable BattleTextList_83FE588
+    printfromtable kBattleTextList_83FE588
     waitmessage 64
 
 BattleScript_1D8F62:: @T 81D8F62
@@ -3746,7 +3746,7 @@ BattleScript_1D8F62:: @T 81D8F62
     setbyte 0x2023fde, 146
     statbuffchange 193, BattleScript_1D8F85
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D8F85
-    printfromtable BattleTextList_83FE588
+    printfromtable kBattleTextList_83FE588
     waitmessage 64
 
 BattleScript_1D8F85:: @T 81D8F85
@@ -3809,7 +3809,7 @@ unk_81D8FEB:: @81D8FEB
     setbyte 0x2023fde, 164
     statbuffchange 193, BattleScript_1D9014
     jumpifbyte 0, 0x2023e87, 2, BattleScript_1D9014
-    printfromtable BattleTextList_83FE588
+    printfromtable kBattleTextList_83FE588
     waitmessage 64
 
 BattleScript_1D9014:: @T 81D9014
@@ -3831,7 +3831,7 @@ unk_81D9029:: @81D9029
 
 unk_81D9036:: @81D9036
     bicword 0x2023dd0, 0x10
-    printfromtable BattleTextList_83FE56E
+    printfromtable kBattleTextList_83FE56E
     waitmessage 64
     atk98 1
     return
@@ -3871,7 +3871,7 @@ unk_81D9080:: @81D9080
     jump BattleScript_EndTurn
 
 unk_81D908D:: @81D908D
-    printfromtable BattleTextList_83FE5D0
+    printfromtable kBattleTextList_83FE5D0
     waitmessage 64
     atk98 1
     return
@@ -3895,7 +3895,7 @@ unk_81D90B1:: @81D90B1
     jump BattleScript_EndTurn
 
 unk_81D90BC:: @81D90BC
-    printfromtable BattleTextList_83FE566
+    printfromtable kBattleTextList_83FE566
     waitmessage 64
     end2
 
@@ -4001,9 +4001,9 @@ unk_81D91A1:: @81D91A1
     waitmessage 64
     end2
 
-MoveScript_81D91B9:: @ 81D91B9
+kUnknown_81D91B9:: @ 81D91B9
 	statusanimation 2
-	printfromtable BattleTextList_83FE5C4
+	printfromtable kBattleTextList_83FE5C4
 	waitmessage 64
 
 BattleScript_1D91C3:: @ 81D91C3
@@ -4020,58 +4020,58 @@ unk_81D91C7:: @81D91C7
     atk6f 2
     end2
 
-MoveScript_81D91D5:: @ 81D91D5
+kUnknown_81D91D5:: @ 81D91D5
 	statusanimation 2
-	printfromtable BattleTextList_83FE5BC
+	printfromtable kBattleTextList_83FE5BC
 	waitmessage 64
 	jump BattleScript_1D91C3
 
-MoveScript_81D91E4:: @ 81D91E4
+kUnknown_81D91E4:: @ 81D91E4
 	statusanimation 2
-	printfromtable BattleTextList_83FE5C8
+	printfromtable kBattleTextList_83FE5C8
 	waitmessage 64
 	jump BattleScript_1D91C3
 
-MoveScript_81D91F3:: @ 81D91F3
+kUnknown_81D91F3:: @ 81D91F3
 	statusanimation 2
-	printfromtable BattleTextList_83FE5CC
+	printfromtable kBattleTextList_83FE5CC
 	waitmessage 64
 	jump BattleScript_1D91C3
 
-MoveScript_81D9202:: @ 81D9202
+kUnknown_81D9202:: @ 81D9202
 	statusanimation 2
-	printfromtable BattleTextList_83FE5C0
+	printfromtable kBattleTextList_83FE5C0
 	waitmessage 64
 	jump BattleScript_1D91C3
 
-MoveScript_81D9211:: @ 81D9211
+kUnknown_81D9211:: @ 81D9211
 	printstring BATTLE_TEXT_UproarCaused
 	waitmessage 64
 	return
 
-MoveScript_81D9218:: @ 81D9218
+kUnknown_81D9218:: @ 81D9218
 	statusanimation 2
 	printstring BATTLE_TEXT_BadlyPoisoned
 	waitmessage 64
 	jump BattleScript_1D91C3
 
-MoveScript_81D9225:: @ 81D9225
+kUnknown_81D9225:: @ 81D9225
 	printstring BATTLE_TEXT_CoinScatter
 	waitmessage 64
 	return
 
-MoveScript_81D922C:: @ 81D922C
-	printfromtable BattleTextList_83FE5A0
+kUnknown_81D922C:: @ 81D922C
+	printfromtable kBattleTextList_83FE5A0
 	waitmessage 64
 	return
 
-MoveScript_81D9235:: @ 81D9235
+kUnknown_81D9235:: @ 81D9235
 	atk66 2, 1, S_CONFUSED
 	printstring BATTLE_TEXT_BecameConfused
 	waitmessage 64
 	return
 
-MoveScript_81D9243:: @ 81D9243
+kUnknown_81D9243:: @ 81D9243
 	jumpifhalfword 0, 0x2023d4a, 165, BattleScript_1D9256
 	jumpifability USER, ABILITY_ROCK_HEAD, BattleScript_1D9270
 
@@ -4251,7 +4251,7 @@ unk_81D93F6:: @81D93F6
 unk_81D93F7:: @81D93F7
     attackstring
     pause 32
-    printfromtable BattleTextList_83FE650
+    printfromtable kBattleTextList_83FE650
     waitmessage 64
     jump BattleScript_EndTurn
 
@@ -4269,19 +4269,19 @@ unk_81D9416:: @81D9416
 
 BattleScript_1D9420:: @81D9420
     pause 32
-    printfromtable BattleTextList_83FE638
+    printfromtable kBattleTextList_83FE638
     waitmessage 64
     return
 
 BattleScript_1D942C:: @81D942C
     pause 32
-    printfromtable BattleTextList_83FE63E
+    printfromtable kBattleTextList_83FE63E
     waitmessage 64
     return
 
 BattleScript_1D9438:: @81D9438
     pause 32
-    printfromtable BattleTextList_83FE644
+    printfromtable kBattleTextList_83FE644
     waitmessage 64
     return
 
@@ -4373,7 +4373,7 @@ unk_81D94EA:: @81D94EA
     jumptoattack TARGET
 
 unk_81D94F2:: @81D94F2
-    printfromtable BattleTextList_83FE61A
+    printfromtable kBattleTextList_83FE61A
     waitmessage 64
     setbyte 0x2023fd8, 0
     atk49 2, 16
@@ -4489,7 +4489,7 @@ unk_81D95C5:: @81D95C5
 
 unk_81D95C5:: @T 81D95C5
     playanimation 10, 7, 0x0
-    printfromtable BattleTextList_83FE634
+    printfromtable kBattleTextList_83FE634
     waitmessage 64
     atk98 10
     removeitem 10

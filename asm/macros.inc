@@ -19,6 +19,12 @@
 	.2byte \tag
 	.endm
 
+	.macro coord x, y, offset
+	.byte  \x | (\y << 4)
+	.byte \offset
+	.2byte 0 @ padding
+	.endm
+
 	.macro obj_pal address, tag
 	.4byte \address
 	.2byte \tag
@@ -91,7 +97,8 @@
 	.4byte 0 @ padding
 	.endm
 
-	.macro obj_rot_scal_anim_end
+	.macro obj_rot_scal_anim_end unknown=0
 	.2byte 0x7fff
-	.fill 6 @ padding
+	.2byte \unknown
+	.fill 4 @ padding
 	.endm

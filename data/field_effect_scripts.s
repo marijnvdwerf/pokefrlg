@@ -92,11 +92,11 @@ FieldEffectScript_03:: @ 81D97D6
     end
 
 FieldEffectScript_04:: @ 81D97DC
-    loadfadedpal_callnative borg_83A5348, oei_04_grass_normal
+    loadfadedpal_callnative kObjPal_83A5348, oei_04_grass_normal
     end
 
 FieldEffectScript_05:: @ 81D97E6
-    loadfadedpal_callnative borg_83A5348, oei_05_ripples
+    loadfadedpal_callnative kObjPal_83A5348, oei_05_ripples
     end
 
 FieldEffectScript_06:: @ 81D97F0
@@ -104,7 +104,7 @@ FieldEffectScript_06:: @ 81D97F0
     end
 
 FieldEffectScript_07:: @ 81D97F6
-    loadfadedpal_callnative borg_83A5348, oei_07_ash
+    loadfadedpal_callnative kObjPal_83A5348, oei_07_ash
     end
 
 FieldEffectScript_08:: @ 81D9800
@@ -116,54 +116,54 @@ FieldEffectScript_09:: @ 81D9806
     end
 
 FieldEffectScript_0A:: @ 81D980C
-    loadfadedpal_callnative borg_83A5340, oei_0A_80DC740
+    loadfadedpal_callnative kObjPal_83A5340, oei_0A_80DC740
     end
 
 FieldEffectScript_0B:: @ 81D9816
     end
 
 FieldEffectScript_0C:: @ 81D9817
-    loadfadedpal_callnative borg_83A5348, oei_0C_80DB4F4
+    loadfadedpal_callnative kObjPal_83A5348, oei_0C_80DB4F4
     end
 
 FieldEffectScript_0D:: @ 81D9821
-    loadfadedpal_callnative borg_83A5340, oei_0D_80DB9A0
+    loadfadedpal_callnative kObjPal_83A5340, oei_0D_80DB9A0
     end
 
 FieldEffectScript_0E:: @ 81D982B
-    loadfadedpal_callnative borg_83A5340, oei_0E_water_drop_tall
+    loadfadedpal_callnative kObjPal_83A5340, oei_0E_water_drop_tall
     end
 
 FieldEffectScript_0F:: @ 81D9835
-    loadfadedpal_callnative borg_83A5340, oei_0F_80DBB88
+    loadfadedpal_callnative kObjPal_83A5340, oei_0F_80DBB88
     end
 
 FieldEffectScript_10:: @ 81D983F
-    loadfadedpal_callnative borg_83A5340, oei_10_80DBCB8
+    loadfadedpal_callnative kObjPal_83A5340, oei_10_80DBCB8
     end
 
 FieldEffectScript_11:: @ 81D9849
-    loadfadedpal_callnative borg_83A5348, oei_11_grass_tall
+    loadfadedpal_callnative kObjPal_83A5348, oei_11_grass_tall
     end
 
 FieldEffectScript_12:: @ 81D9853
-    loadfadedpal_callnative borg_83A5348, oei_12_80DB798
+    loadfadedpal_callnative kObjPal_83A5348, oei_12_80DB798
     end
 
 FieldEffectScript_13:: @ 81D985D
-    loadfadedpal_callnative borg_83A5348, oei_13_80DC08C
+    loadfadedpal_callnative kObjPal_83A5348, oei_13_80DC08C
     end
 
 FieldEffectScript_14:: @ 81D9867
-    loadfadedpal_callnative borg_83A5348, oei_14_80DC0F8
+    loadfadedpal_callnative kObjPal_83A5348, oei_14_80DC0F8
     end
 
 FieldEffectScript_15:: @ 81D9871
-    loadfadedpal_callnative borg_83A5340, oei_15_80DC164
+    loadfadedpal_callnative kObjPal_83A5340, oei_15_80DC164
     end
 
 FieldEffectScript_16:: @ 81D987B
-    loadfadedpal_callnative borg_83A5340, oei_16_80DC1D0
+    loadfadedpal_callnative kObjPal_83A5340, oei_16_80DC1D0
     end
 
 FieldEffectScript_17:: @ 81D9885
@@ -171,12 +171,12 @@ FieldEffectScript_17:: @ 81D9885
     end
 
 FieldEffectScript_18:: @ 81D988B
-    loadfadedpal_callnative borg_83A5340, oei_18_80DBA14
+    loadfadedpal_callnative kObjPal_83A5340, oei_18_80DBA14
     end
 
 FieldEffectScript_19:: @ 81D9895
-    loadfadedpal borg_83CBE9C
-    loadfadedpal_callnative borg_83A5340, oei_19_8083B8C
+    loadfadedpal kObjPal_83CBE9C
+    loadfadedpal_callnative kObjPal_83A5340, oei_19_8083B8C
     end
 
 FieldEffectScript_1A:: @ 81D98A4
@@ -210,11 +210,11 @@ FieldEffectScript_21:: @ 81D98C4
     end
 
 FieldEffectScript_22:: @ 81D98CA
-    loadfadedpal_callnative borg_83A5340, oei_22_80DBD98
+    loadfadedpal_callnative kObjPal_83A5340, oei_22_80DBD98
     end
 
 FieldEffectScript_23:: @ 81D98D4
-    loadfadedpal_callnative borg_83A5340, oei_23_80DBA88
+    loadfadedpal_callnative kObjPal_83A5340, oei_23_80DBA88
     end
 
 FieldEffectScript_24:: @ 81D98DE
@@ -234,15 +234,15 @@ FieldEffectScript_26:: @ 81D98F0
     end
 
 FieldEffectScript_27:: @ 81D98F6
-    loadfadedpal_callnative borg_83A5340, oei_27_80DC7B0
+    loadfadedpal_callnative kObjPal_83A5340, oei_27_80DC7B0
     end
 
 FieldEffectScript_29:: @ 81D9900
-    loadfadedpal_callnative borg_83A5348, oei_29_micrograss
+    loadfadedpal_callnative kObjPal_83A5348, oei_29_micrograss
     end
 
 FieldEffectScript_2A:: @ 81D990A
-    loadfadedpal_callnative borg_83A5348, oei_2A_80DBF50
+    loadfadedpal_callnative kObjPal_83A5348, oei_2A_80DBF50
     end
 
 FieldEffectScript_2B:: @ 81D9914
@@ -254,7 +254,7 @@ FieldEffectScript_2C:: @ 81D991A
     end
 
 FieldEffectScript_2D:: @ 81D9920
-    loadpal bogo_83FA658
+    loadpal kObjPal_83FA658
     callnative oei_2D_80D1504
     end
 
@@ -269,11 +269,11 @@ FieldEffectScript_30:: @ 81D9932
     end
 
 FieldEffectScript_31:: @ 81D9933
-    loadfadedpal_callnative borg_83A5ED8, oei_31_water_drop_heavy
+    loadfadedpal_callnative kObjPal_83A5ED8, oei_31_water_drop_heavy
     end
 
 FieldEffectScript_32:: @ 81D993D
-    loadfadedpal_callnative borg_83A5ED8, oei_32_water_drop_light
+    loadfadedpal_callnative kObjPal_83A5ED8, oei_32_water_drop_light
     end
 
 FieldEffectScript_33:: @ 81D9947
@@ -284,11 +284,11 @@ FieldEffectScript_34:: @ 81D994D
     end
 
 FieldEffectScript_35:: @ 81D994E
-    loadfadedpal_callnative borg_83A5340, oei_35_80DC938
+    loadfadedpal_callnative kObjPal_83A5340, oei_35_80DC938
     end
 
 FieldEffectScript_36:: @ 81D9958
-    loadfadedpal_callnative borg_83A5FF8, oei_36_80DCC1C
+    loadfadedpal_callnative kObjPal_83A5FF8, oei_36_80DCC1C
     end
 
 FieldEffectScript_37:: @ 81D9962
@@ -301,7 +301,7 @@ FieldEffectScript_39:: @ 81D9964
     end
 
 FieldEffectScript_3A:: @ 81D9965
-    loadfadedpal_callnative borg_83D4144, oei_3A_08097A48
+    loadfadedpal_callnative kObjPal_83D4144, oei_3A_08097A48
     end
 
 FieldEffectScript_3B:: @ 81D996F
@@ -315,8 +315,8 @@ FieldEffectScript_3D:: @ 81D9976
     end
 
 FieldEffectScript_3E:: @ 81D9977
-    loadfadedpal borg_83CBE9C
-    loadfadedpal_callnative borg_83CBEA4, oei_3E_8083CE0
+    loadfadedpal kObjPal_83CBE9C
+    loadfadedpal_callnative kObjPal_83CBEA4, oei_3E_8083CE0
     end
 
 FieldEffectScript_3F:: @ 81D9986
